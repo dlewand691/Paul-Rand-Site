@@ -1,0 +1,37 @@
+extends ../__MIXINS/_layout-default.pug
+
+block vars
+    - var pageTitle = 'Search Results'
+    - var bodyID    = ''
+    - var bodyClass = ''
+
+block main-content
+    .cd-main-content
+        //- ==========  BODY  ==========
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-12.medium-9.small-12.cell.entry-content
+                    h1.text-center!= pageTitle
+
+                    script.
+                        (function() {
+                        var cx = '011487101369328532888:kz5jb581cii';
+                        var gcse = document.createElement('script');
+                        gcse.type = 'text/javascript';
+                        gcse.async = true;
+                        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(gcse, s);
+                        })();
+                    gcse:searchresults-only
+
+
+
+
+
+
+
+
+    //- /*-----  End of BODY  ------*/
+
+    include ../__MIXINS/_include-social-media.pug

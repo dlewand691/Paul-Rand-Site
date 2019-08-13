@@ -1,0 +1,91 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Trademark Design'
+    - var bodyID    = 'writing'
+    - var bodyClass = 'books'
+
+block main-content
+    - var bookSubhead           = '1951, unpublished'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'CHANGE_ME'
+    - var abe                   = 'yes'
+    - var abeLink               = 'CHANGE_ME'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'CHANGE_ME'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'Thoughts on Design, 2nd Edition'
+    - var nextDate              = '1951'
+    - var nextDescription       = 'The second edition, including new work samples and edited text.'
+    - var nextLink              = '/writing/books/thoughts-on-design-2nd-edition.html'
+
+    - var relatedItemLink1      = '/writing/books/the-trademarks-of-paul-rand.html'
+    - var relatedItemTitle1     = 'The Trademarks of Paul Rand — A Selection'
+    - var relatedItemFootnote1  = 'First (only) edition; limited to 450 copies'
+
+    - var relatedItemLink2      = '/writing/books/a-paul-rand-miscellany.html'
+    - var relatedItemTitle2     = 'A Paul Rand Miscellany'
+    - var relatedItemFootnote2  = 'Design Quarterly, 1984'
+
+    - var relatedItemLink3      = '/writing/books/some-thoughts-some-tribulations.html'
+    - var relatedItemTitle3     = 'Some Thoughts… and Some Tribulations about the Design of a Logo'
+    - var relatedItemFootnote3  = '1991'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= bookSubhead
+
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Writing/Books/1951%20Trademark%20Design/Web/Trademark%20Design%2C%201951-450.jpg",
+                            "https://assets.paulrand.design/Writing/Books/1951%20Trademark%20Design/Web/Trademark%20Design%2C%201951.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            //- include ../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Unpublished cover to an article pamphlet.
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        //- include ../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

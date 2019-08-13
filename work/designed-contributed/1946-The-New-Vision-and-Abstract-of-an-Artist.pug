@@ -1,0 +1,114 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'The New Vision and Abstract of an Artist'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var bookSubhead           = 'Laszlo Moholy-Nagy'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/26270783'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3DThe%2BNew%2BVision%2Band%2BAbstract%2Bof%2Ban%2BArtist'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1XyKeva'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_nkw%3DThe%2520New%2520Vision%2520and%2520Abstract%2520of%2520an%2520Artist'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'Kindergarten Chats and Other Writings'
+    - var nextLink              = '1947-Kindergarten-Chats-Other-Writings'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2C%20front-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2C%20front.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2C%20back-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2C%20back.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2010.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= bookSubhead
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2C%20front-970.jpg",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2C%20front.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            include ../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Cover design and typography by Paul Rand
+
+                        1928 fourth revised edition 1947
+
+                        #### From the introduction:
+
+                        At any given moment man’s position is defined by everything he does. This position is determined by his biological nature and by his participation in a given culture. This is quite apart from his personal satisfaction, which is grounded in the successful expression of his emotional pattern. This expression will be fruitful if it carries with it an "objective" meaning for all people. Upon this depends his contribution to the development of culture.
+
+                        The more he can approximate the standards which actualize that objective quality, the greater his contribution will be. The individual’s emotional existence flows here into historical continuity; the actual and momentary are transcended in the permanent structure of civilization.
+
+                        In art education at present we are striving toward those timeless biological fundamentals of expression which are meaningful to everyone. This is the first step to creative production before the meaning of any culture (the values of an historical development) can be introduced. We are not, therefore, immediately interested in the personal quality of expression which is usually called "art," but in its primordial, basic elements, the ABC of expression itself.
+
+                        This does not mean that "art" is put aside, nor that the values within its domain are to be questioned. On the contrary, it is precisely these values which are firmly anchored in the biological. Still, for the majority of people this fact is obscured by a tendency to regard art as something unique and entirely individualistic.
+
+                        We observe art because of its basic and common roots permeating life. We shall attempt to clarify them—at least in their essential points—without distressing our selves unduly if at times we must make a detour in approaching the center of the problem, i.e., articulating the means of expression. From there we may then proceed to their individual interpretation.
+
+                        **Contents:**
+
+                        + Biographical chronology, Bibliography of L. Moholy-Nagy, Books on the Bauhaus
+                        + The New Vision
+                        + Forewords to the second and third English editions
+                        + Introduction
+                        + I. Preliminaries
+                        + II. The material (surface treatment, painting)
+                        + III. Volume (sculpture)
+                        + IV. Space (architecture)
+                        + Abstract of an Artist
+                        + Obituary note by Walter Gropius
+                        + Index
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../__MIXINS/_include-next-work.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

@@ -1,0 +1,106 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'The Graphic Art of Paul Rand'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'IBM Gallery'
+    - var pageSubtitle2         = 'May 18 – June 20, 1970'
+
+    - var nextType              = 'Exhibit'
+    - var nextTitle             = 'Art / Play / Design - An Exhibition of Corporate Design, Trademarks, Book Design, Posters, Drawings, and Teaching by Paul Rand'
+    - var nextDate              = '1979'
+    - var nextLink              = '1979-art-play-design'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery%20exhibit-%20The%20Graphic%20Art%20of%20Paul%20Rand%2C%20interior.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery%20exhibit-%20The%20Graphic%20Art%20of%20Paul%20Rand%2C%20interior.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery%20exhibit-%20The%20Graphic%20Art%20of%20Paul%20Rand%2C%20back.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery%20exhibit-%20The%20Graphic%20Art%20of%20Paul%20Rand%2C%20back.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2014-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand%2014.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+
+                    br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery%20exhibit-%20The%20Graphic%20Art%20of%20Paul%20Rand%2C%20front.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery%20exhibit-%20The%20Graphic%20Art%20of%20Paul%20Rand%2C%20front.jpg"
+                            )
+
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            IBM is pleased to present an exhibition of the work of Paul Rand, one of the most innovative and influential designers of the twentieth century. Called by Print magazine “The first American designer to apply the Bauhaus values of simplicity and abstraction both consistently and effectively,” he is considered one of the pioneers of the “look” of contemporary graphic design. In the process, he has helped redefine the role of the art director from that of a middle-man, who put together the work of others (writer, illustrator, letterer, and typographer) to that of a de-signer of a total concept, concerned with both form and content. In a career covering more than thirty-five years, he has won international recognition for his designs for advertisements, books, posters, packaging, trademarks, and for corpo-rate design programs, as well as for his abilities as an illustrator, writer and teacher. 
+
+                            The nature and quality of his work is perhaps best characterized by Gibson A. Danes, Dean of the School of Art and Architecture at Yale University when Rand taught there. “At a moment when we are surfeited with the mundane and the mediocre,” he has written, “Paul Rand’s precise, elegant and often witty visual statements are like a spring breeze. He can make the ordinary, extraordinary; the mundane becomes magical. All of this happens with a clarity and intuitive logic that makes the compact solution seem inevitable because it is right. Perhaps the real touchstone of his imaginative power is his rigorous awareness of quality. Whatever he does somehow seems to be a qualitative improvement upon what was there before.” 
+
+                            Born in New York City, Rand studied at Pratt Institute, Parsons School of Design, and at the Art Students League under George Grosz. At the age of twenty-three, he became art director of Esquire/Apparel Arts and later of the Weintraub Advertising Agency. He has taught at Pratt Institute and Cooper Union, and from 1956 to 1969 was professor of graphic design at Yale University. For many years he has been a consultant to several major corporations, among them IBM.
+
+                            Paul Rand’s achievements have been recognized in many ways. In 1966 he received the Gold Medal of the American Institute of Graphic Arts. He received a citation from the Philadelphia College of Art in 1962, and was made an honorary professor of Tama University, Tokyo in 1958. In 1959 the book, “Paul Rand,” by Yusaku Kamekura, was published by Zokeisha Publications, Tokyo, and Alfred A. Knopf, New York. 
+
+                            Rand’s book, “Thoughts on Design,” which was published in 1947, is being issued both here and abroad in revised form as a paperback this year. He is also the author of “The Trademarks of Paul Rand” and “Design and the Play Instinct,” as well as numerous papers on design, advertising and typography, and has illustrated a series of child-dren’s books published by Harcourt, Brace &amp; World. 
+
+                            Mr. Rand is a Benjamin Franklin Fellow of the Royal Society of Arts, a member of Alliance Graphique Internationale, The Industrial Designers Society of America, The New York Art Directors Club, The Society of Typographic Arts, and The Typophiles. He is a past member of the Fulbright Scholarship Jury, and an adviser on art eduacnation to the Philadelphia College of Art and The Museum School of the Museum of Fine Arts, Boston. 
+
+                            *“He is an idealist and a realist, using the language of the poet and the business man. He thinks in terms of need and function. He is able to analyze his problems but his fantasy is boundless.”*  
+                            … Ladislav Moholy-Nagy 
+
+                            *“In his work I find constant evidence of total dedication, such as can be given only by an individual who devotes body and soul, capacity and experience to the work he has chosen: a man who is constantly aware of what is going on around him, who is interested in what others think, and who studies what the past can teach him. These are the qualities that distinguish a graphic artist from the amateur and give his work a claim to nobility.”*  
+                            … Giovanni Pintori, Milan 
+
+                            *“Paul Rand, by the very premise of his work, has been a severe critic of the average level in advertising presentation and design. He has proved the value of his convictions not by words or theories, but by actual work and courage.”*  
+                            … E. McKnight Kauffer
+
+                            *“His simple forms and fresh colors reveal a purity possessed only by very great art; it is this purity which forms a link between his work and the essence of Japanese art tradition. We love Paul Rand and his art, not only for their own sake, but as a symbol of the freshness and vitality of American life and culture.”*  
+                            … Yusaku Kamekura, Tokyo 
+
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        ### Gallery Information
+
+                        IBM Gallery  
+                        16 E. 57th St.  
+                        New York N. Y. 10022
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

@@ -1,0 +1,121 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'From Lascaux to Brooklyn'
+    - var bodyID    = 'writing'
+    - var bodyClass = 'books'
+
+block main-content
+    - var bookSubhead           = 'Yale University Press, 1996'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/34523279'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3Dpaul%2Brand%2Blascaux%2Bto%2Bbrooklyn%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1QNabTs'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/w/from-lascaux-to-brooklyn-paul-rand/1000443448?ean=9780300066760'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2050601.m570.l1313.TR0.TRC0.H0.XFrom%2BLascaux%2Bto%2BBrooklyn%2BPaul%2BRand.TRS0%26_nkw%3DFrom%2BLascaux%2Bto%2BBrooklyn%2BPaul%2BRand%26_sacat%3D0'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'Thoughts on Design, 4th Edition'
+    - var nextDate              = '2014'
+    - var nextDescription       = 'An updated version to the 1970 edition with a foreword from Michael Beirut'
+    - var nextLink              = '/writing/books/thoughts-on-design-4th-edition.html'
+
+    - var relatedItemLink1      = '/writing/books/thoughts-on-design-4th-edition.html'
+    - var relatedItemTitle1     = 'Thoughts on Design, 3rd Edition'
+    - var relatedItemFootnote1  = 'The original 3rd edition from 1970'
+
+    - var relatedItemLink2      = '/writing/books/sparkle-and-spin.html'
+    - var relatedItemTitle2     = 'Sparkle and Spin'
+    - var relatedItemFootnote2  = 'Sparkle and Spin takes readers on a delightful journey through the fascinating world of words.'
+
+    - var relatedItemLink3      = '/writing/books/this-is-the-stafford-stallion.html'
+    - var relatedItemTitle3     = 'This… Is the Stafford Stallion'
+    - var relatedItemFootnote3  = '15 full-page four-color reproductions of the Stafford Fabrics Nationwide ads designed by Rand during 1944.'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= bookSubhead
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Writing/Books/1996%20From%20Lascaux%20to%20Brooklyn/Web/From%20Lascaux%20to%20Brooklyn,%20front.jpg",
+                            "https://assets.paulrand.design/Writing/Books/1996%20From%20Lascaux%20to%20Brooklyn/Web/From%20Lascaux%20to%20Brooklyn,%20front.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            include ../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Back to basics is Rand’s refrain in this latest volume of his Yale series (e.g., Design, Form and Chaos, 1993; A Designer’s Art, 1985). Visually and verbally arresting, the present title successfully distills major tenets from Rand’s critically acclaimed career in graphic design, advertising, and academia.
+
+                        The first half is a primer, complete with large type, of fundamental aesthetic and design principles as appropriate for children, according to the author, as it is for adults. The second half connects elements of quality design to real-world problems through conceptual studies of logo designs, a typographic debate, and an appraisal and elaboration of Henry Petroski’s The Evolution of Useful Things (LJ 12/92).
+
+                        ##### Contents:
+
+                        + Preface
+                        + Question...
+                        + Answer...
+                        + Ideas, or the Life of Form
+                        + Direction Magazine
+                        + Poster (Art?)
+                        + Corporate Decorum
+                        + The Logo as Illustration
+                        + Four Presentations
+                        + Okasan Securities Company
+                        + EF English First
+                        + Hub TV
+                        + Cummins Engine Company
+                        + Tschichold versus Bill
+                        + Object Lessons
+                        + More about the Grid
+                        + Born in Brooklyn
+                        + Select Bibliography
+
+                        Discriminating, erudite, and eclectic in its examples, this work clearly and convincingly communicates Rand’s commonsense approach to the pursuit of quality in design theory and process. Highly recommended for all academic libraries.
+
+                    .footnote — Russell T. Clement 
+                        br
+                        | Univ. of Tennessee, Knoxville 
+                        br
+                        | Copyright 1996 Reed Business Information, Inc.
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

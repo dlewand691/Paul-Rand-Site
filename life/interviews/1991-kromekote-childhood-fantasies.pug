@@ -1,0 +1,126 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Childhood Fantasies'
+    - var bodyID    = 'life'
+    - var bodyClass = 'interviews'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Interviews/1991%20Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies/Web/Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies%201991%2C%20front-450.jpg'
+
+    - var articleAuthor         = 'CHANGE_ME'
+    - var publishedInTitle      = 'Champion Kromekote 2000'
+    - var publishedInSubtitle   = 'Champion Papers, 1991'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1991%20Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies/Web/Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies%201991%2C%20front-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1991%20Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies/Web/Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies%201991%2C%20front.jpg', title: ''})
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/938708284'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3DChildhood%2BFantasies%2BChampion%2BPapers%252C%2B1991%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/28TfxNe'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_odkw%3DChampion%2BKromekote%2B2000%2BChampion%2BPapers%252C%2B1991%26_osacat%3D267%26_from%3DR40%26_trksid%3Dp2045573.m570.l1313.TR0.TRC0.H0.XChildhood%2BFantasies%2BChampion%2BPapers%252C%2B1991.TRS0%26_nkw%3DChildhood%2BFantasies%2BChampion%2BPapers%252C%2B1991%26_sacat%3D267'
+
+    - var nextType              = 'Interview'
+    - var nextTitle             = 'Paul Rand: A Profile'
+    - var nextDate              = '1993'
+    - var nextDescription       = 'Janet Abrams interviews Rand for I.D. Magazine.'
+    - var nextLink              = '/life/interviews/1993-id-magazine.html'
+
+    - var relatedItemLink1      = '/life/interviews/1989-Type-Talks-interview.html'
+    - var relatedItemTitle1     = 'Type Talks Interview'
+    - var relatedItemFootnote1  = 'By Mario Rampone'
+
+    - var relatedItemLink2      = '/life/interviews/1988-artograph.html'
+    - var relatedItemTitle2     = 'Artograph No. 6'
+    - var relatedItemFootnote2  = 'Contains a classic Rand interview by Viriginia Smith which has been recently republished in Franc Nunoo-Quarcoo’s “Paul Rand: Modernist Designer”.'
+
+    - var relatedItemLink3      = '/life/interviews/1988-id-magazine.html'
+    - var relatedItemTitle3     = 'Logos, Technique and Trends'
+    - var relatedItemFootnote3  = 'A look back over 50 years to explain the meaning of logos, technique and trends.'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1991%20Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies/Web/Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1991%20Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies/Web/Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1991%20Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies/Web/Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1991%20Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies/Web/Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1991%20Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies/Web/Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1991%20Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies/Web/Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1991%20Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies/Web/Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1991%20Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies/Web/Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1991%20Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies/Web/Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1991%20Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies/Web/Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1991%20Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies/Web/Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1991%20Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies/Web/Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies%2006.jpg', title: ''})
+
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            unless articleAuthor == 'CHANGE_ME'
+                p.reveal-enter-bottom!= 'By ' + articleAuthor
+
+            p.reveal-enter-bottom!= publishedInTitle
+                unless publishedInSubtitle == 'CHANGE_ME'
+                    br
+                    !=publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    !=publishedInSubtitle2
+
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+            //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center#original-article
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            I never wanted to be anything other than what I am, an artist. As far back as I can remember — three or four years old — I used to draw using a chair as my desk. We were poor kids, and my parents never encouraged me. They would say, you can't make a living making pictures. Yet, that was my dream —&nbsp;to paint and make a living at it. I wasn't interested in anything else, and I'm still not today.
+
+                            As a kid I learned to draw and paint by copying pictures from the Sunday section of *The World*, posters at my father's grocery store, and later *Saturday Evening Post* covers.
+
+                            When I was about ten, my twin brother and I used to watch a sign painter work. We would stand silently for hours marveling at how he used a flat brush and never made a mistake. After that, we got into the sign painting business ourselves. We painted a truck, a moving van, a gas station, and my father's grocery store. I always insisted that his store should look like the A&amp;P, but despite my best efforts of painting price tickets and building shelves, it never did.
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-image-carousel.pug
+
+        include ../../__MIXINS/_include-published-in.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug

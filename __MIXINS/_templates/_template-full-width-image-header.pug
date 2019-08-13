@@ -1,0 +1,36 @@
+doctype html
+html.no-js(lang='en' dir='ltr')
+
+    include ../../__MIXINS/_include-head.pug
+
+    body#work(data-grid-framework="f4" data-grid-color="pink" data-grid-opacity="0.2" data-grid-zindex="10" data-grid-gutterwidth="30px" data-grid-nbcols="12")
+
+        include ../../__MIXINS/_include-headerNav-secondaryNav.pug
+
+        .animsition
+            .cd-main-content
+
+                .progress-container
+                    .progress-bar
+
+                //- ===============================================
+                //- =            FULL WIDTH IMAGE HEADER            =
+                //- ===============================================
+                .imageHeader-full.bg-black
+                    .grid-x.grid-margin-x
+                        .cell
+                            h1 Black in the Visual Arts
+                            p: br
+
+                            p.bottomAlign This version of the article was originally published in “Graphic Forms: The Arts as Related to the Book”, 1949. It was revised and reprinted in “A Designer’s Art”, 1985.
+
+                //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+                .grid-x.grid-margin-x
+                    .large-7.medium-9.small-12.cell
+
+
+            include ../../__MIXINS/_include-footer.pug
+
+        include ../../__MIXINS/_include-closingScript.pug 
+

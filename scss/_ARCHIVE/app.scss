@@ -1,0 +1,3678 @@
+@charset 'utf-8';
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+@include foundation-global-styles;
+// @include foundation-grid;
+@include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-card;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+// @include foundation-badge;
+// @include foundation-breadcrumbs;
+// @include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-menu;
+// @include foundation-menu-icon;
+// @include foundation-drilldown-menu;
+// @include foundation-dropdown;
+// @include foundation-dropdown-menu;
+@include foundation-flex-video;
+// @include foundation-label;
+// @include foundation-media-object;
+// @include foundation-off-canvas;
+// @include foundation-orbit;
+// @include foundation-pagination;
+// @include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+// @include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+// @include foundation-switch;
+// @include foundation-table;
+@include foundation-tabs;
+// @include foundation-thumbnail;
+// @include foundation-title-bar;
+// @include foundation-tooltip;
+// @include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-flex-classes;
+// @include motion-ui-transitions;
+// @include motion-ui-animations;
+
+/* ==============================================================================================================
+██████  ███████ ██████  ██    ██  ██████   ██████  ██ ███    ██  ██████
+██   ██ ██      ██   ██ ██    ██ ██       ██       ██ ████   ██ ██
+██   ██ █████   ██████  ██    ██ ██   ███ ██   ███ ██ ██ ██  ██ ██   ███
+██   ██ ██      ██   ██ ██    ██ ██    ██ ██    ██ ██ ██  ██ ██ ██    ██
+██████  ███████ ██████   ██████   ██████   ██████  ██ ██   ████  ██████
+============================================================================================================== */
+* {
+    // background-color: rgba(0,255,0,0.1);
+}
+/* ----  End of DEBUGGING  -------------------------------------------------------------------------- */
+
+/*=====================================
+
+███████  █████  ███████ ███████     ██ ███    ██  ██████ ██      ██    ██ ██████  ███████ ███████
+██      ██   ██ ██      ██          ██ ████   ██ ██      ██      ██    ██ ██   ██ ██      ██
+███████ ███████ ███████ ███████     ██ ██ ██  ██ ██      ██      ██    ██ ██   ██ █████   ███████
+     ██ ██   ██      ██      ██     ██ ██  ██ ██ ██      ██      ██    ██ ██   ██ ██           ██
+███████ ██   ██ ███████ ███████     ██ ██   ████  ██████ ███████  ██████  ██████  ███████ ███████
+
+=====================================*/
+@import "../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "../bower_components/_IMPORTED CSS/animsition.scss";
+@import "../bower_components/_IMPORTED CSS/plyr.scss";
+@import "../bower_components/_IMPORTED CSS/selection-sharer.scss";
+@import "../bower_components/_IMPORTED CSS/chocolat.scss";
+@import "../bower_components/rrssb/scss/rrssb.scss";
+@import "../bower_components/select2/src/scss/core.scss";
+@import "../bower_components/slick-carousel/slick/slick.scss";
+@import "../bower_components/slick-carousel/slick/slick-theme.scss";
+
+/*-----  End of SASS INCLUDES  ------*/
+
+/* ==============================================================================================================
+ ██████  ██████  ██       ██████  ██████  ███████
+██      ██    ██ ██      ██    ██ ██   ██ ██
+██      ██    ██ ██      ██    ██ ██████  ███████
+██      ██    ██ ██      ██    ██ ██   ██      ██
+ ██████  ██████  ███████  ██████  ██   ██ ███████
+============================================================================================================== */
+
+$blue: #1463A2;
+$brown: #B2846A;
+$green: #097E44;
+$gold: #E29D2E;
+$pink: #DD6A92;
+$red: #E34C37;
+$gray-dark1: #222222;
+$gray-dark2: #333333;
+$gray-medium: #666666;
+$gray-light1: #999999;
+$gray-light2: #c4c4c4;
+$gray-light3: #f1f1f1;
+
+$colors: ("blue", $blue), ("brown", $brown), ("green", $green), ("gold", $gold), ("pink", $pink), ("red", $red), ("white", $white), ("black", $black), (gray-dark1, $gray-dark1), (gray-dark2, $gray-dark2), (gray-medium, $gray-medium), (gray-light1, $gray-light1), (gray-light2, $gray-light2), (gray-light3, $gray-light3);
+
+/* ----  End of COLORS  -------------------------------------------------------------------------- */
+
+/*=============================================================================================
+
+ ██████  ██████   █████   ██████ ██ ████████ ██    ██
+██    ██ ██   ██ ██   ██ ██      ██    ██     ██  ██
+██    ██ ██████  ███████ ██      ██    ██      ████
+██    ██ ██      ██   ██ ██      ██    ██       ██
+ ██████  ██      ██   ██  ██████ ██    ██       ██
+
+=============================================================================================*/
+
+$opacities: 11;
+@for $i from 1 through $opacities {
+    .opacity-#{$i} {
+        opacity: $i*.1 !important;
+    }
+}
+
+// -----  End of OPACITY  ---------------------------------------------
+
+/*==============================================================================================
+
+██    ██ ████████ ██ ██      ██ ████████ ██    ██
+██    ██    ██    ██ ██      ██    ██     ██  ██
+██    ██    ██    ██ ██      ██    ██      ████
+██    ██    ██    ██ ██      ██    ██       ██
+ ██████     ██    ██ ███████ ██    ██       ██
+
+=================================================================================================*/
+
+.animsition {
+    overflow: hidden;
+}
+@media screen and #{breakpoint(small only)} {
+    .sm-w100 {
+        width  : 100%;
+        display: inline-block;
+    }
+}
+
+.h100 {
+    height: 100%;
+}
+
+.h100vh {
+    height: 100vh;
+}
+
+.inline {
+    display: inline !important;
+}
+
+.block {
+    display: block !important;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.inline-block {
+    display: inline-block !important;
+}
+
+.relative {
+    position: relative !important;
+}
+
+.absolute {
+    position: absolute !important;
+}
+
+iframe {
+    border: none;
+}
+
+$hover-glow: 0 0 50px darken($white, 5%);
+
+.search {
+    display      : inline-block;
+    position     : relative;
+    height       : 15px;
+    width        : 10px;
+    box-sizing   : border-box;
+    margin       : 0 18px 0 10px;
+    padding      : 5px;
+    border       : 3px solid $white;
+    border-radius: 15px;
+    transition   : all 250ms ease;
+    cursor       : text;
+    top          : 7px;
+
+    &:after {
+        content      : "";
+        position     : absolute;
+        width        : 3px;
+        height       : 10px;
+        right        : -5px;
+        top          : 8px;
+        background   : $white;
+        border-radius: 3px;
+        transform    : rotate(-45deg);
+        transition   : all 250ms easeOut;
+    }
+
+    &.active,
+    &:hover {
+        width : 100%;
+        // margin-right: 5px;
+        height: 30px;
+        // top         : 3px;
+        &:after {
+            height: 0;
+        }
+    }
+
+    .gsc-input-box,
+    input {
+        width        : 100%;
+        border       : none;
+        color        : inherit !important;
+        background   : transparent !important;
+        outline-width: 0;
+        height       : 25px;
+        position     : relative;
+        top          : -5px;
+        // font-size    : 14px;
+        font-weight  : bold;
+        // box-shadow   : none;
+        font-family  : $font-family-sans-serif;
+
+        &:focus {
+            background: transparent;
+            color     : $white !important;
+        }
+    }
+}
+
+figure {
+    margin  : 0;
+    padding : 0;
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+}
+
+figcaption {
+    @extend .footnote;
+    margin-left: 10px;
+}
+
+figcaption + img {
+    bottom: 31px !important;
+}
+
+figcaption + .icon-zoom-boxed {
+    right: 0;
+}
+
+.question {
+    // @extend .medium-mln3;
+    @extend .sans-serif;
+    @extend .text-bold;
+}
+
+.panelCallout {
+    box-shadow: 0 5px 50px rgba($black, 0.1);
+    padding   : 4rem;
+    background: $white;
+    margin    : 2rem 0;
+}
+
+/*-----  End of UTILITY  ------------------------------------------------------------------*/
+
+/* ===========================================================================================================
+██    ██ ██ ███████ ██ ██████  ██ ██      ██ ████████ ██ ███████ ███████
+██    ██ ██ ██      ██ ██   ██ ██ ██      ██    ██    ██ ██      ██
+██    ██ ██ ███████ ██ ██████  ██ ██      ██    ██    ██ █████   ███████
+ ██  ██  ██      ██ ██ ██   ██ ██ ██      ██    ██    ██ ██           ██
+  ████   ██ ███████ ██ ██████  ██ ███████ ██    ██    ██ ███████ ███████
+============================================================================================================ */
+
+.hidden {
+    display: none;
+    // opacity: 0;
+}
+
+.shown {
+    display   : visible !important;
+    transition: all 0.5s ease-out;
+    opacity   : 1;
+}
+
+/* ----  End of VISIBILITIES  --------------------------------------------------------------------- */
+
+/* ===========================================================================================================
+██████   ██████  ███████ ██ ████████ ██  ██████  ███    ██ ███████
+██   ██ ██    ██ ██      ██    ██    ██ ██    ██ ████   ██ ██
+██████  ██    ██ ███████ ██    ██    ██ ██    ██ ██ ██  ██ ███████
+██      ██    ██      ██ ██    ██    ██ ██    ██ ██  ██ ██      ██
+██       ██████  ███████ ██    ██    ██  ██████  ██   ████ ███████
+============================================================================================================ */
+@include breakpoint(medium up) {
+    .relative {
+        position: relative !important;
+    }
+
+    .absolute {
+        position: absolute !important;
+    }
+
+    .fixed {
+        position: fixed !important;
+    }
+
+    .top {
+        top: 0 !important;
+    }
+
+    .bottom {
+        bottom: 0 !important;
+    }
+}
+
+.overflow-scroll {
+    overflow: scroll;
+}
+
+.overflow-scroll-y {
+    overflow-y: scroll;
+}
+
+.block {
+    display: block !important;
+}
+
+.inline-block {
+    display: inline-block !important;
+}
+
+.flex {
+    display: flex !important;
+}
+/* ----  End of POSITIONS  --------------------------------------------------------------------- */
+
+/* ===========================================================================================================
+██     ██ ██ ██████  ████████ ██   ██
+██     ██ ██ ██   ██    ██    ██   ██
+██  █  ██ ██ ██   ██    ██    ███████
+██ ███ ██ ██ ██   ██    ██    ██   ██
+ ███ ███  ██ ██████     ██    ██   ██
+ ██████  ██    ██ ███████ ██████  ██████  ██ ██████  ███████ ███████
+██    ██ ██    ██ ██      ██   ██ ██   ██ ██ ██   ██ ██      ██
+██    ██ ██    ██ █████   ██████  ██████  ██ ██   ██ █████   ███████
+██    ██  ██  ██  ██      ██   ██ ██   ██ ██ ██   ██ ██           ██
+ ██████    ████   ███████ ██   ██ ██   ██ ██ ██████  ███████ ███████
+============================================================================================================ */
+$widths: 20;
+@for $i from 1 through $widths {
+    .w#{$i*5} {
+        min-width: $i*5% !important;
+        max-width: $i*5% !important;
+    }
+}
+
+.w66 {
+    min-width: 66% !important;
+    max-width: 66% !important;
+}
+
+.w33 {
+    min-width: 33% !important;
+    max-width: 33% !important;
+}
+
+.w100px {
+    width: 100px;
+}
+/* ----  End of WIDTH OVERRIDES  --------------------------------------------------------------------- */
+
+/* ===========================================================================================================
+██   ██ ███████ ██  ██████  ██   ██ ████████
+██   ██ ██      ██ ██       ██   ██    ██
+███████ █████   ██ ██   ███ ███████    ██
+██   ██ ██      ██ ██    ██ ██   ██    ██
+██   ██ ███████ ██  ██████  ██   ██    ██
+ ██████  ██    ██ ███████ ██████  ██████  ██ ██████  ███████ ███████
+██    ██ ██    ██ ██      ██   ██ ██   ██ ██ ██   ██ ██      ██
+██    ██ ██    ██ █████   ██████  ██████  ██ ██   ██ █████   ███████
+██    ██  ██  ██  ██      ██   ██ ██   ██ ██ ██   ██ ██           ██
+ ██████    ████   ███████ ██   ██ ██   ██ ██ ██████  ███████ ███████
+============================================================================================================ */
+
+$heights: 20;
+@for $i from 1 through $heights {
+    .height-#{$i} {
+        height: $i + px !important;
+    }
+}
+@for $i from 1 through $heights {
+    .h#{$i*5}vh {
+        height: $i*5 + vh !important;
+    }
+}
+
+.h100 {
+    height: 100%;
+}
+
+/* =============================================================================================
+
+███████      ██ ███    ██ ██████  ███████ ██   ██
+   ███       ██ ████   ██ ██   ██ ██       ██ ██
+  ███  █████ ██ ██ ██  ██ ██   ██ █████     ███
+ ███         ██ ██  ██ ██ ██   ██ ██       ██ ██
+███████      ██ ██   ████ ██████  ███████ ██   ██
+
+=============================================================================================*/
+
+$zindexes: 11;
+@for $i from 0 through $zindexes {
+    .z#{$i} {
+        z-index: $i;
+    }
+}
+
+// -----  End of Z-INDEX  ---------------------------------------------
+
+/* ----  End of HEIGHT OVERRIDES  --------------------------------------------------------------------- */
+
+/* =============================================================================================
+███████ ██      ███████ ██   ██
+██      ██      ██       ██ ██
+█████   ██      █████     ███
+██      ██      ██       ██ ██
+██      ███████ ███████ ██   ██
+ ██████  ██████  ██ ██████
+██       ██   ██ ██ ██   ██
+██   ███ ██████  ██ ██   ██
+██    ██ ██   ██ ██ ██   ██
+ ██████  ██   ██ ██ ██████
+ █████  ██████  ██████  ██ ████████ ██  ██████  ███    ██ ███████
+██   ██ ██   ██ ██   ██ ██    ██    ██ ██    ██ ████   ██ ██
+███████ ██   ██ ██   ██ ██    ██    ██ ██    ██ ██ ██  ██ ███████
+██   ██ ██   ██ ██   ██ ██    ██    ██ ██    ██ ██  ██ ██      ██
+██   ██ ██████  ██████  ██    ██    ██  ██████  ██   ████ ███████
+============================================================================================= */
+@include breakpoint(small only) {
+    .small-align-top {
+        align-items: flex-start;
+    }
+}
+@include breakpoint(medium only) {
+    .medium-align-top {
+        align-items: flex-start;
+    }
+}
+
+.shrink {
+    flex: 0 0 auto !important;
+}
+
+/* -----  End of FLEX GRID ADDITIONS  --------------------------------------------- */
+
+/* =============================================================================================
+██     ██ ██   ██ ██ ████████ ███████
+██     ██ ██   ██ ██    ██    ██
+██  █  ██ ███████ ██    ██    █████
+██ ███ ██ ██   ██ ██    ██    ██
+ ███ ███  ██   ██ ██    ██    ███████
+███████ ██████   █████   ██████ ███████
+██      ██   ██ ██   ██ ██      ██
+███████ ██████  ███████ ██      █████
+     ██ ██      ██   ██ ██      ██
+███████ ██      ██   ██  ██████ ███████
+================================================================================================== */
+$whitespace: 6;
+/* ==============================  MARGINS  ============================== */
+$margin-sides-all-positive: (m);
+$margin-sides-all-negative: (mn);
+$margin-sides-positive: (mt, top), (mr, right), (mb, bottom), (ml, left);
+$margin-sides-negative: (mtn, top), (mrn, right), (mbn, bottom), (mln, left);
+$margin-x-positive: (mx);
+$margin-y-positive: (my);
+$margin-x-negative: (mxn);
+$margin-y-negative: (myn);
+@each $size in $breakpoint-classes {
+     @include breakpoint($size){
+        @for $i from 0 to $whitespace {
+             @each $side in $margin-sides-all-positive{
+                @if $size != $-zf-zero-breakpoint {
+                    .#{$size}-#{$side}#{$i} {
+                        margin: #{$i}rem !important;
+                    }
+                }
+                @else {
+                    .#{$side}#{$i} {
+                        margin: #{$i}rem !important;
+                    }
+                }
+            }
+            @each $side in $margin-sides-all-negative {
+                 @if $size != $-zf-zero-breakpoint{
+                    .#{$size}-#{$side}#{$i} {
+                        margin: -#{$i}rem !important;
+                    }
+                }
+                @else {
+                    .#{$side}#{$i} {
+                        margin: -#{$i}rem !important;
+                    }
+                }
+            }
+            @each $side, $sideFull in $margin-sides-positive {
+                 @if $size != $-zf-zero-breakpoint{
+                    .#{$size}-#{$side}#{$i} {
+                        margin-#{$sideFull}: #{$i}rem !important;
+                    }
+                }
+                @else {
+                    .#{$side}#{$i} {
+                        margin-#{$sideFull}: #{$i}rem !important;
+                    }
+                }
+            }
+            @each $side, $sideFull in $margin-sides-negative {
+                 @if $size != $-zf-zero-breakpoint{
+                    .#{$size}-#{$side}#{$i} {
+                        margin-#{$sideFull}: -#{$i}rem !important;
+                    }
+                }
+                @else {
+                    .#{$side}#{$i} {
+                        margin-#{$sideFull}: -#{$i}rem !important;
+                    }
+                }
+            }
+            @each $side in $margin-x-positive {
+                 @if $size != $-zf-zero-breakpoint{
+                    .#{$size}-#{$side}#{$i} {
+                        margin-left : #{$i}rem !important;
+                        margin-right: #{$i}rem !important;
+                    }
+                }
+                @else {
+                    .#{$side}#{$i} {
+                        margin-left : #{$i}rem !important;
+                        margin-right: #{$i}rem !important;
+                    }
+                }
+            }
+            @each $side in $margin-x-negative {
+                 @if $size != $-zf-zero-breakpoint{
+                    .#{$size}-#{$side}#{$i} {
+                        margin-left : -#{$i}rem !important;
+                        margin-right: -#{$i}rem !important;
+                    }
+                }
+                @else {
+                    .#{$side}#{$i} {
+                        margin-left : -#{$i}rem !important;
+                        margin-right: -#{$i}rem !important;
+                    }
+                }
+            }
+            @each $side in $margin-y-positive {
+                 @if $size != $-zf-zero-breakpoint{
+                    .#{$size}-#{$side}#{$i} {
+                        margin-top   : #{$i}rem !important;
+                        margin-bottom: #{$i}rem !important;
+                    }
+                }
+                @else {
+                    .#{$side}#{$i} {
+                        margin-top   : #{$i}rem !important;
+                        margin-bottom: #{$i}rem !important;
+                    }
+                }
+            }
+            @each $side in $margin-y-negative {
+                 @if $size != $-zf-zero-breakpoint{
+                    .#{$size}-#{$side}#{$i} {
+                        margin-top   : -#{$i}rem !important;
+                        margin-bottom: -#{$i}rem !important;
+                    }
+                }
+                @else {
+                    .#{$side}#{$i} {
+                        margin-top   : -#{$i}rem !important;
+                        margin-bottom: -#{$i}rem !important;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+/* ============================  PADDINGS  ============================== */
+$padding-sides-all: (p);
+$padding-sides: (pt, top), (pr, right), (pb, bottom), (pl, left);
+$padding-x: (px);
+$padding-y: (py);
+@each $size in $breakpoint-classes {
+     @include breakpoint($size){
+        @for $i from 0 to $whitespace {
+             @each $side, $sideFull in $padding-sides{
+                @if $size != $-zf-zero-breakpoint {
+                    .#{$size}-#{$side}#{$i} {
+                        padding-#{$sideFull}: #{$i}rem !important;
+                    }
+                }
+                @else {
+                    .#{$side}#{$i} {
+                        padding-#{$sideFull}: #{$i}rem !important;
+                    }
+                }
+            }
+            @each $side in $padding-sides-all {
+                 @if $size != $-zf-zero-breakpoint{
+                    .#{$size}-#{$side}#{$i} {
+                        padding: #{$i}rem !important;
+                    }
+                }
+                @else {
+                    .#{$side}#{$i} {
+                        padding: #{$i}rem !important;
+                    }
+                }
+            }
+            @each $side in $padding-x {
+                 @if $size != $-zf-zero-breakpoint{
+                    .#{$size}-#{$side}#{$i} {
+                        padding-left : #{$i}rem !important;
+                        padding-right: #{$i}rem !important;
+                    }
+                }
+                @else {
+                    .#{$side}#{$i} {
+                        padding-left : #{$i}rem !important;
+                        padding-right: #{$i}rem !important;
+                    }
+                }
+            }
+            @each $side in $padding-y {
+                 @if $size != $-zf-zero-breakpoint{
+                    .#{$size}-#{$side}#{$i} {
+                        padding-top   : #{$i}rem !important;
+                        padding-bottom: #{$i}rem !important;
+                    }
+                }
+                @else {
+                    .#{$side}#{$i} {
+                        padding-top   : #{$i}rem !important;
+                        padding-bottom: #{$i}rem !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@each $side, $sideHalf in $margin-sides-positive {
+    .#{$side}-half {
+        margin-#{$sideHalf}: 0.5rem !important;
+    }
+}
+@each $side in $margin-x-positive {
+    .#{$side}-half {
+        margin-left : 0.5rem !important;
+        margin-right: 0.5rem !important;
+    }
+}
+@each $side in $margin-y-positive {
+    .#{$side}-half {
+        margin-top   : 0.5rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+}
+@each $side, $sideHalf in $padding-sides {
+    .#{$side}-half {
+        padding-#{$sideHalf}: 0.5rem !important;
+    }
+}
+@each $side in $padding-x {
+    .#{$side}-half {
+        padding-left : 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+}
+@each $side in $padding-y {
+    .#{$side}-half {
+        padding-top   : 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+}
+
+.p-half {
+    padding: 0.5rem !important;
+}
+// 
+// .p-half-x {
+//     padding: 0 0.5rem !important;
+// }
+// 
+// .p-half-y {
+//     padding: 0.5rem 0 !important;
+// }
+
+/* ----  End of WHITESPACES  -------------------------------------------------------------------------- */
+
+/* ===========================================================================================================
+██████   ██████  ██████  ██████  ███████ ██████  ███████
+██   ██ ██    ██ ██   ██ ██   ██ ██      ██   ██ ██
+██████  ██    ██ ██████  ██   ██ █████   ██████  ███████
+██   ██ ██    ██ ██   ██ ██   ██ ██      ██   ██      ██
+██████   ██████  ██   ██ ██████  ███████ ██   ██ ███████
+============================================================================================================ */
+
+$border-side: (t, top), (r, right), (b, bottom), (l, left);
+$border-width: 5;
+@for $i from 0 through $border-width {
+    .bd#{$i} {
+        border: $i + px solid $gray-light2;
+    }
+}
+@for $i from 0 through $border-width {
+     @each $side-name, $side in $border-side{
+        @each $color-name, $color in $colors {
+            .bd-#{$side-name}-#{$color-name}#{$i} {
+                border-#{$side}: $i + px $color solid !important;
+            }
+        }
+    }
+}
+@for $i from 0 through $border-width {
+     @each $side-name, $side in $border-side{
+        .bd-#{$side-name}#{$i} {
+            border-#{$side}: $i + px $gray-light2 solid;
+        }
+    }
+}
+@include breakpoint(small only) {
+     @for $i from 0 through $border-width{
+        @each $side-name, $side in $border-side {
+            .sm-bd-#{$side-name}#{$i} {
+                border-#{$side}: $i + px $gray-light2 solid;
+            }
+        }
+    }
+}
+@include breakpoint(medium only) {
+     @for $i from 0 through $border-width{
+        @each $side-name, $side in $border-side {
+            .medium-bd-#{$side-name}#{$i} {
+                border-#{$side}: $i + px $gray-light2 solid;
+            }
+        }
+    }
+}
+@include breakpoint(large up) {
+     @for $i from 0 through $border-width{
+        @each $side-name, $side in $border-side {
+            .lg-bd-#{$side-name}#{$i} {
+                border-#{$side}: $i + px $gray-light2 solid;
+            }
+        }
+    }
+}
+@for $i from 0 through $border-width {
+     @each $color-name, $color in $colors{
+        .bd-#{$color-name}#{$i} {
+            border: $i + px solid $color;
+        }
+    }
+}
+@each $color-name, $color in $colors {
+    .bd-#{$color-name} {
+        border: 2px solid $color;
+    }
+}
+@for $i from 0 through $border-width {
+    .bd-gradient#{$i} {
+        // background: #eee;
+        border            : $i + px solid transparent;
+        border-image      : linear-gradient(to right, $blue 0%, $green 100%);
+        border-image-slice: 1;
+    }
+}
+
+/* ----  End of BORDERS  --------------------------------------------------------------------- */
+
+/* ==============================================================================================================
+██████   █████   ██████ ██   ██  ██████  ██████   ██████  ██    ██ ███    ██ ██████  ███████
+██   ██ ██   ██ ██      ██  ██  ██       ██   ██ ██    ██ ██    ██ ████   ██ ██   ██ ██
+██████  ███████ ██      █████   ██   ███ ██████  ██    ██ ██    ██ ██ ██  ██ ██   ██ ███████
+██   ██ ██   ██ ██      ██  ██  ██    ██ ██   ██ ██    ██ ██    ██ ██  ██ ██ ██   ██      ██
+██████  ██   ██  ██████ ██   ██  ██████  ██   ██  ██████   ██████  ██   ████ ██████  ███████
+ ██████  ██████  ██       ██████  ██████
+██      ██    ██ ██      ██    ██ ██   ██
+██      ██    ██ ██      ██    ██ ██████
+██      ██    ██ ██      ██    ██ ██   ██
+ ██████  ██████  ███████  ██████  ██   ██
+============================================================================================================== */
+@each $color-name, $color in $colors {
+    .bg-#{$color-name} {
+        background-color: $color !important;
+    }
+}
+
+.bg-blue-dark,
+.bg-gray-dark1,
+.bg-gray-dark2,
+.bg-gray-medium,
+.bg-green-dark,
+.bg-orange-dark,
+.bg-purple,
+.bg-red {
+    color: $white !important;
+}
+
+.bg-transparent {
+    background: transparent !important;
+}
+
+/* ----  End of BACKGROUND COLOR ------------------------------------------------------------------------------ */
+
+/*=============================================================================================
+
+██████   █████   ██████ ██   ██  ██████  ██████   ██████  ██    ██ ███    ██ ██████
+██   ██ ██   ██ ██      ██  ██  ██       ██   ██ ██    ██ ██    ██ ████   ██ ██   ██
+██████  ███████ ██      █████   ██   ███ ██████  ██    ██ ██    ██ ██ ██  ██ ██   ██
+██   ██ ██   ██ ██      ██  ██  ██    ██ ██   ██ ██    ██ ██    ██ ██  ██ ██ ██   ██
+██████  ██   ██  ██████ ██   ██  ██████  ██   ██  ██████   ██████  ██   ████ ██████
+████████ ██ ███    ██ ████████ ███████
+   ██    ██ ████   ██    ██    ██
+   ██    ██ ██ ██  ██    ██    ███████
+   ██    ██ ██  ██ ██    ██         ██
+   ██    ██ ██   ████    ██    ███████
+
+=============================================================================================*/
+
+$background-tints: 5;
+@for $i from 1 through $background-tints {
+     @each $color-name, $color in $colors{
+        .bg-#{$color-name}-tint#{$i} {
+            background-color: lighten($color, percentage($i / 10));
+        }
+    }
+}
+
+// -----  End of BACKGROUND TINTS  ---------------------------------------------
+
+/*=============================================================================================
+
+██████   █████   ██████ ██   ██  ██████  ██████   ██████  ██    ██ ███    ██ ██████
+██   ██ ██   ██ ██      ██  ██  ██       ██   ██ ██    ██ ██    ██ ████   ██ ██   ██
+██████  ███████ ██      █████   ██   ███ ██████  ██    ██ ██    ██ ██ ██  ██ ██   ██
+██   ██ ██   ██ ██      ██  ██  ██    ██ ██   ██ ██    ██ ██    ██ ██  ██ ██ ██   ██
+██████  ██   ██  ██████ ██   ██  ██████  ██   ██  ██████   ██████  ██   ████ ██████
+████████ ██ ███    ██ ████████ ███████
+   ██    ██ ████   ██    ██    ██
+   ██    ██ ██ ██  ██    ██    ███████
+   ██    ██ ██  ██ ██    ██         ██
+   ██    ██ ██   ████    ██    ███████
+
+=============================================================================================*/
+
+$background-shades: 5;
+@for $i from 1 through $background-shades {
+     @each $color-name, $color in $colors{
+        .bg-#{$color-name}-shade#{$i} {
+            background-color: darken($color, percentage($i / 20));
+        }
+    }
+}
+
+// -----  End of BACKGROUND SHADES  ---------------------------------------------
+
+/*=============================================================================================
+
+███████ ██ ██      ██          ██   ██ ███████ ██  ██████  ██   ██ ████████
+██      ██ ██      ██          ██   ██ ██      ██ ██       ██   ██    ██
+█████   ██ ██      ██          ███████ █████   ██ ██   ███ ███████    ██
+██      ██ ██      ██          ██   ██ ██      ██ ██    ██ ██   ██    ██
+██      ██ ███████ ███████     ██   ██ ███████ ██  ██████  ██   ██    ██
+
+=============================================================================================*/
+@include breakpoint(medium up) {
+    .fill-height {
+        min-height    : 100vh;
+        display       : flex;
+        flex-direction: column;
+
+        > * {
+            // these are flex items
+
+            // flex: 1; same as:
+            // flex-grow: 1;
+            // flex-shrink: 1;
+            // flex-basis: auto;
+            // flex: 1 1 auto;
+            flex           : 1;
+
+            display        : flex;
+            flex-direction : column;
+            justify-content: center;
+
+            > div {
+                // also flex items 
+            }
+        }
+    }
+};
+
+// -----  End of FILL HEIGHT  ---------------------------------------------
+
+/*===============================================================================================
+=			/*
+████████ ██    ██ ██████   ██████   ██████  ██████   █████  ██████  ██   ██ ██    ██
+   ██     ██  ██  ██   ██ ██    ██ ██       ██   ██ ██   ██ ██   ██ ██   ██  ██  ██
+   ██      ████   ██████  ██    ██ ██   ███ ██████  ███████ ██████  ███████   ████
+   ██       ██    ██      ██    ██ ██    ██ ██   ██ ██   ██ ██      ██   ██    ██
+   ██       ██    ██       ██████   ██████  ██   ██ ██   ██ ██      ██   ██    ██
+*/
+// ==================================================================================================*/
+
+* {
+    // hyphens                      : auto;
+    font-variant-ligatures: common-ligatures;
+    font-feature-settings : "liga", "clig";
+    // font-variant-ligatures       : contextual;
+    // font-feature-settings        : "calt";
+    font-variant-ligatures: discretionary-ligatures;
+    font-feature-settings : "dlig";
+    // font-feature-settings        : "salt";
+    font-kerning          : normal;
+    font-feature-settings : "kern";
+    // font-variant-numeric         : lining-nums;
+    // font-feature-settings        : "lnum";
+    font-variant-numeric  : oldstyle-nums;
+    font-feature-settings : "onum";
+    // font-variant-numeric         : diagonal-fractions;
+    // font-feature-settings        : "frac";
+    // font-variant-numeric         : ordinal;
+    // font-feature-settings        : "ordn";
+    // font-feature-settings        : "ss01";
+    font-feature-settings : “ital”;
+}
+
+// $font-family-sans-serif  : "freight-sans-pro", Helvetica, sans-serif !default;
+// $font-family-serif       : "kepler-std", Georgia, serif !default;
+@each $color-name, $color in $colors {
+    .text-#{$color-name} {
+        color: $color !important;
+    }
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-weight   : 300;
+    font-family   : $font-family-sans-serif;
+    font-style    : italic;
+    letter-spacing: -3px;
+    line-height   : 1;
+    // margin-bottom : 0;
+    // mix-blend-mode: overlay;
+}
+
+h3 {
+    line-height: 1.1;
+}
+
+h4 {
+    font-weight: 700;
+}
+
+h5 {
+    font-weight: 700;
+    font-style : italic;
+}
+
+h6 {
+    font-style: italic;
+}
+
+.footnote {
+    font-weight: 100;
+    @extend small;
+    font-style : italic;
+    color      : lighten($black, 50%);
+}
+
+.serif {
+    font-family: $font-family-serif;
+}
+
+.sans-serif {
+    font-family: $font-family-sans-serif;
+}
+
+.text-caps {
+    text-transform: uppercase;
+}
+
+.text-small-caps {
+    font-variant-caps    : small-caps;
+    font-feature-settings: "smcp";
+}
+
+.text-bold,
+b,
+strong {
+    font-weight: 700;
+}
+
+.text-heavy {
+    font-weight: 900;
+}
+
+.text-italic {
+    font-style           : italic;
+    font-feature-settings: “ital”;
+}
+
+.text-normal {
+    font-style : normal !important;
+    font-weight: normal !important;
+}
+
+.text-bold-italic {
+    font-weight: 700;
+    font-style : italic;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.small,
+small {
+    font-size: $small-font-size;
+    // line-height: 60% !important;
+}
+
+sup {
+    color                : $red;
+    font-size            : 10px;
+    font-variant-position: super;
+    font-feature-settings: "sups";
+    font-variant-numeric : ordinal;
+    font-feature-settings: "ordn";
+    margin-left          : 3px;
+}
+
+sub {
+    font-variant-position: sub;
+    font-feature-settings: "subs";
+}
+
+// $blockquote-color: $red !default;
+
+.blockquote,
+blockquote {
+    @extend .sans-serif;
+    @extend .text-italic;
+    @extend .text-bold;
+    // font-size   : 1.5em;
+    // line-height : $header-lineheight;
+    color       : $red;
+    border-width: 0;
+    margin      : 3rem 10% 3rem -10%;
+    padding     : 3rem;
+    position    : relative;
+}
+
+.blockquote::before,
+blockquote::before {
+    content   : "";
+    position  : absolute;
+    width     : 33%;
+    height    : 1px; // suit your need
+    top       : 0;
+    left      : 5%;
+    background: rgba($black, .3);
+}
+
+.blockquote::after,
+blockquote::after {
+    content   : "";
+    position  : absolute;
+    width     : 33%;
+    height    : 1px; // suit your need
+    top       : 100%;
+    left      : 5%;
+    background: rgba($black, .3);
+}
+
+blockquote q {
+    margin-left: -1rem !important;
+}
+
+blockquote p {
+    color: inherit;
+}
+
+/*-----  End of TYPOGRAPHY  ------------------------------------------------------------------*/
+
+/*=======================================================
+
+███████  █████  ███    ██  ██████ ██    ██     ██      ██ ███    ██ ██   ██ ███████
+██      ██   ██ ████   ██ ██       ██  ██      ██      ██ ████   ██ ██  ██  ██
+█████   ███████ ██ ██  ██ ██        ████       ██      ██ ██ ██  ██ █████   ███████
+██      ██   ██ ██  ██ ██ ██         ██        ██      ██ ██  ██ ██ ██  ██       ██
+██      ██   ██ ██   ████  ██████    ██        ███████ ██ ██   ████ ██   ██ ███████
+
+=======================================================*/
+a:active,
+a:focus,
+a:link,
+a:visited {
+    color     : $blue;
+    transition: all, 0.3s;
+}
+
+a:hover {
+    color: lighten($blue, 25%);
+}
+
+a {
+    text-decoration: none;
+}
+
+a[data-src="screenshot"] {
+    cursor: pointer;
+}
+
+[data-underline] {
+    box-shadow     : inset 0 -0.13em 0 0 #fff, inset 0 -.15em 0 0 rgba(255, 255, 255, 0), inset 0 -.15em 0 0 red;
+    text-decoration: none;
+    text-shadow    : 0.05em 0 #fff, -0.05em 0 #fff, 1.5px 0 #fff, -1.5px 0 #fff;
+}
+
+/*-----  End of FANCY LINKS  ------------------------------------------------------------------*/
+
+/* ==============================================================================================================
+██████  ██ ██    ██ ██ ██████  ███████ ██████  ███████
+██   ██ ██ ██    ██ ██ ██   ██ ██      ██   ██ ██
+██   ██ ██ ██    ██ ██ ██   ██ █████   ██████  ███████
+██   ██ ██  ██  ██  ██ ██   ██ ██      ██   ██      ██
+██████  ██   ████   ██ ██████  ███████ ██   ██ ███████
+============================================================================================================== */
+hr {
+    margin   : 2rem auto;
+    max-width: 100%;
+}
+
+$hr-widths: 6;
+@for $i from 1 through $hr-widths {
+    .hr-#{$i} {
+        border-width: $i;
+    }
+}
+
+hr-light {
+    border-color: rgba(255,255,255,.35);
+}
+
+hr-dark {
+    border-color: rgba(0,0,0,.35);
+}
+@each $color-name, $color in $colors {
+    hr-#{$color-name} {
+        border-bottom-color: $color;
+    }
+}
+
+/* ----  End of DIVIDERS  -------------------------------------------------------------------------- */
+
+/*==============================================================================================
+
+██████  ██    ██ ████████ ████████  ██████  ███    ██ ███████
+██   ██ ██    ██    ██       ██    ██    ██ ████   ██ ██
+██████  ██    ██    ██       ██    ██    ██ ██ ██  ██ ███████
+██   ██ ██    ██    ██       ██    ██    ██ ██  ██ ██      ██
+██████   ██████     ██       ██     ██████  ██   ████ ███████
+
+=================================================================================================*/
+
+.button,
+button {
+    // text-shadow     : none !important;
+    // background-image: none !important;
+    font-family: $font-family-sans-serif;
+    font-weight: $global-weight-bold;
+    // 
+    // & a {
+    // 	background-image: none;
+    // }
+
+    &.arrow {
+        &::after {
+            content    : "\02192";
+            font-family: $font-family-sans-serif;
+            margin-left: 2rem;
+            float      : right;
+            font-weight: 100;
+        }
+    }
+
+    &.down-arrow {
+        &::after {
+            content: "\021E3";
+        }
+    }
+
+    &#Reset {
+        &::after {
+            content    : "\000D7";
+            font-size  : 18px;
+            line-height: 1;
+        }
+    }
+}
+
+a.button {
+    // text-shadow: none;
+    color: white;
+}
+
+.button.blue,
+button.blue {
+    background: $blue;
+
+    &:hover {
+        background: lighten($blue, 15%);
+    }
+}
+
+.button.red,
+button.red {
+    background: $red;
+
+    &:hover {
+        background: darken($red, 15%);
+    }
+}
+
+.button.white,
+button.white {
+    background: $white;
+    color     : $blue;
+
+    &:hover {
+        background: darken($white, 10%);
+    }
+}
+
+.button.brown {
+    background: $brown;
+
+    &:hover {
+        background: darken($brown, 15%);
+    }
+}
+
+/*-----  End of BUTTONS  ------------------------------------------------------------------*/
+
+/*==============================================================================================
+
+██       ██████   ██████   ██████
+██      ██    ██ ██       ██    ██
+██      ██    ██ ██   ███ ██    ██
+██      ██    ██ ██    ██ ██    ██
+███████  ██████   ██████   ██████
+
+==================================================================================================*/
+.logo {
+    height     : 50px;
+    position   : fixed;
+    top        : 0;
+    left       : 0;
+    z-index    : 11;
+    transition : all, 0.25s, easeOut;
+    will-change: transform;
+}
+
+.nameBlock {
+    background : $red;
+    height     : 50px;
+    margin     : 0;
+    color      : $white;
+    font-family: $font-family-sans-serif;
+}
+
+.name {
+    font-style   : italic;
+    font-weight  : 700;
+    font-size    : 16px;
+    margin-bottom: 0;
+    margin-top   : 3px;
+    line-height  : 3px;
+    height       : auto;
+}
+
+.dates {
+    font-weight: 500;
+    font-size  : 12px;
+}
+@media screen and #{breakpoint(small only)} {
+    .logo {
+        float: left;
+    }
+}
+@media screen and #{breakpoint(medium only)} {
+    .nameBlock {
+        width  : 140px;
+        padding: 13px 0 0 55px;
+    }
+}
+@media screen and #{breakpoint(large up)} {
+    .logo {
+        height: 60px;
+    }
+
+    .nameBlock {
+        background : $red;
+        width      : 120px;
+        height     : 60px;
+        padding    : 12px 20px 10px 10px;
+        position   : fixed;
+        top        : 0;
+        left       : 60px;
+        will-change: transform;
+
+        .name {
+            font-size  : 18px;
+            margin-top : 4px;
+            line-height: 14px;
+        }
+    }
+}
+
+/*-----  End of LOGO  ------------------------------------------------------------------*/
+
+/*==============================================================================================
+
+███    ██  █████  ██    ██
+████   ██ ██   ██ ██    ██
+██ ██  ██ ███████ ██    ██
+██  ██ ██ ██   ██  ██  ██
+██   ████ ██   ██   ████
+
+==================================================================================================*/
+
+.nav-life-off,
+.nav-resources-off,
+.nav-work-off,
+.nav-writing-off {
+    display: none;
+}
+
+.nav-life-on,
+.nav-resources-on,
+.nav-work-on,
+.nav-writing-on {
+    h3 {
+        color: $white;
+    }
+
+    label {
+        text-transform: uppercase;
+        font-style    : italic;
+        color         : lighten($black, 50%);
+    }
+    @include breakpoint(large up) {
+        height: 60px;
+
+        h3 {
+            color: $black;
+        }
+    }
+}
+
+/*============================================
+
+███████ ███████  ██████  ██████  ███    ██ ██████   █████  ██████  ██    ██
+██      ██      ██      ██    ██ ████   ██ ██   ██ ██   ██ ██   ██  ██  ██
+███████ █████   ██      ██    ██ ██ ██  ██ ██   ██ ███████ ██████    ████
+     ██ ██      ██      ██    ██ ██  ██ ██ ██   ██ ██   ██ ██   ██    ██
+███████ ███████  ██████  ██████  ██   ████ ██████  ██   ██ ██   ██    ██
+
+███    ██  █████  ██    ██ ██  ██████   █████  ████████ ██  ██████  ███    ██
+████   ██ ██   ██ ██    ██ ██ ██       ██   ██    ██    ██ ██    ██ ████   ██
+██ ██  ██ ███████ ██    ██ ██ ██   ███ ███████    ██    ██ ██    ██ ██ ██  ██
+██  ██ ██ ██   ██  ██  ██  ██ ██    ██ ██   ██    ██    ██ ██    ██ ██  ██ ██
+██   ████ ██   ██   ████   ██  ██████  ██   ██    ██    ██  ██████  ██   ████
+
+============================================*/
+
+header {
+    position        : fixed;
+    z-index         : 10;
+    height          : 50px;
+    width           : 100%;
+    top             : 0;
+    left            : 0;
+    background-color: $red;
+    margin-bottom   : 4rem;
+    will-change     : transform;
+
+    /* Force Hardware Acceleration */
+    @include transform(translateZ(0));
+    @include backface-visibility(hidden);
+    @include transition(transform 0.3s);
+
+    &.nav-is-visible {
+        @include transform(translateX(-70%));
+    }
+
+    &::before {
+        /* never visible - this is used in jQuery to check the current MQ */
+        display: none;
+        content: "mobile";
+    }
+    @include breakpoint(large) {
+        height: 60px;
+
+        &.nav-revealed {
+            transform : translateY(-70px);
+            box-shadow: 0 5px 50px rgba($black, 0.1);
+        }
+
+        &::before {
+            content: "desktop";
+        }
+    }
+}
+
+/*==========  DYNAMICALLY ADDED CLASSES TO TRIGGER SCROLL HIDE/SHOW ANIMATIONS  ==========*/
+.nav-up {
+    transform  : translateY(-70px);
+    position   : fixed;
+    will-change: transform;
+    transition : all 200ms ease-out 0.5s;
+    box-shadow : 0 0 0 rgba($black, 0.0);
+}
+
+.nav-down {
+    box-shadow: 0 5px 50px rgba($black, 0.1);
+    transform : translateY(0px);
+    transition: all 200ms ease-out;
+}
+
+.cd-logo {
+    display: inline-block;
+    height : 100%;
+
+    /* remove jump on iOS devices - when we fire the navigation */
+    @include transform(translateZ(0));
+    @include backface-visibility(hidden);
+
+    img {
+        display  : block;
+        max-width: 100%;
+    }
+    @include breakpoint(large) {
+        position: absolute;
+        z-index : 2;
+    }
+}
+
+/*==========  NAV TOGGLE BLOCK  ==========*/
+.cd-nav-trigger {
+    display         : block;
+    position        : absolute;
+    right           : 0;
+    top             : 0;
+    height          : 100%;
+    width           : 50px;
+
+    /* hide text */
+    overflow        : hidden;
+    white-space     : nowrap;
+    color           : transparent;
+    text-shadow     : none;
+    background-image: none;
+
+    /*==========  hamburger icon created in CSS  ==========*/
+    span {
+        position        : absolute;
+        height          : 4px;
+        width           : 30px;
+        top             : 50%;
+        margin-top      : -4px;
+        left            : 50%;
+        margin-left     : -20px;
+        background-color: $white;
+        transition      : background-color 0.3s 0.3s;
+
+        /*==========  upper and lower lines of the menu icon  ==========*/
+        &::after,
+        &::before {
+            content         : "";
+            position        : absolute;
+            width           : 100%;
+            height          : 100%;
+            background-color: $white;
+
+            /*==========  Force Hardware Acceleration  ==========*/
+            transform       : translateZ(0);
+            // @include backface-visibility(hidden);
+            transition      : transform 0.3s 0.3s;
+        }
+
+        &::before {
+            transform: translateY(-8px);
+        }
+
+        &::after {
+            transform: translateY(8px);
+        }
+    }
+
+    .nav-is-visible & span {
+        background-color: transparent;
+
+        &::before {
+            transform: translateY(0) rotate(-45deg);
+        }
+
+        &::after {
+            transform: translateY(0) rotate(45deg);
+        }
+    }
+    @include breakpoint(large) {
+        display: none;
+    }
+}
+
+/*=====================================================================================================================
+
+███    ███  █████  ██ ███    ██     ███    ██  █████  ██    ██     ██████   ██████  ██████  ██    ██
+████  ████ ██   ██ ██ ████   ██     ████   ██ ██   ██ ██    ██     ██   ██ ██    ██ ██   ██  ██  ██
+██ ████ ██ ███████ ██ ██ ██  ██     ██ ██  ██ ███████ ██    ██     ██████  ██    ██ ██   ██   ████
+██  ██  ██ ██   ██ ██ ██  ██ ██     ██  ██ ██ ██   ██  ██  ██      ██   ██ ██    ██ ██   ██    ██
+██      ██ ██   ██ ██ ██   ████     ██   ████ ██   ██   ████       ██████   ██████  ██████     ██
+
+=====================================================================================================================*/
+.cd-main-nav {
+    position                  : fixed;
+    z-index                   : 1;
+    top                       : 0;
+    right                     : 0;
+    width                     : 70%;
+    height                    : 100vh;
+    padding-top               : 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    visibility                : hidden;
+    background                : $black;
+    will-change               : transform;
+    transition                : visibility 0s 0.3s;
+    overflow                  : hidden;
+
+    a:not(.button) {
+        // display         : block;
+        font-family: $font-family-sans-serif;
+        padding    : 0.3rem 0;
+        color      : $white;
+        transition : transform 0.3s, opacity 0.3s;
+    }
+
+    h5 {
+        color: white;
+    }
+
+    ul {
+        margin: 0 !important;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    li ul {
+        position       : absolute;
+        top            : 0;
+        left           : 0;
+        width          : 100%;
+        list-style-type: none;
+        margin         : 0;
+        padding        : 0 1em;
+        background     : $black;
+        height         : 100%;
+        transition     : transform 0.3s;
+        transform      : translateX(100%);
+    }
+
+    &.nav-is-visible {
+        visibility: visible;
+        transition: visibility 0s 0s;
+
+        a {
+            display: block;
+        }
+    }
+
+    &.moves-out > li > a {
+        /* push the navigation items to the left - and lower down opacity - when secondary nav slides in */
+        transform: translateX(-100%);
+        opacity  : 0;
+    }
+
+    &.moves-out > li > ul {
+        transform: translateX(0);
+    }
+
+    select {
+        margin       : 0;
+        font-family  : $font-family-sans-serif;
+        border       : 2px solid $black;
+        text-overflow: ellipsis;
+
+    }
+
+    /*==========  Arrow at the bottom of the off-canvas nav  ==========*/
+    .cd-subnav-trigger,
+    .go-back a {
+        position  : relative;
+        color     : $white;
+        background: $red;
+        padding   : 0.7rem !important;
+
+        &::after,
+        &::before {
+            /* arrow icon in CSS */
+            content            : "";
+            position           : absolute;
+            top                : 14px;
+            display            : inline-block;
+            height             : 2px;
+            width              : 10px;
+            background         : $white;
+            backface-visibility: hidden;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+
+    .cd-subnav-trigger::after,
+    .cd-subnav-trigger::before {
+        /* arrow goes on the right side - children navigation */
+        right           : 20px;
+        transform-origin: 9px 50%;
+    }
+
+    /*==========  Arrow at the top of the off-canvas menu  ==========*/
+
+    .go-back a {
+        // padding       : 16px 0 0 20px;
+        font-family   : $font-family-sans-serif;
+        text-transform: uppercase;
+        margin-bottom : 1rem;
+        background    : $black;
+        position      : relative;
+
+        &::after,
+        &::before {
+            /* arrow goes on the left side - go back button */
+            background      : $red;
+            left            : 0;
+            top             : 26px;
+            transform-origin: 1px 50%;
+        }
+    }
+
+    .placeholder {
+        /* never visible or clickable- it is used to take up the same space as the .cd-subnav-trigger */
+        display: none;
+    }
+    @include breakpoint(large) {
+        position   : fixed;
+        visibility : visible;
+        width      : 100%;
+        height     : 60px;
+        padding    : 0 0 0 195px;
+        background : transparent;
+        text-align : left;
+        box-shadow : none;
+        will-change: transform;
+
+        a {
+            // display: initial;
+            // padding: initial;
+        }
+
+        h5 {
+            color: $black;
+        }
+
+        li {
+            height: inherit;
+        }
+
+        /*==========  SUB NAV RIGHT SECTION  ==========*/
+        .go-back {
+            display: none;
+        }
+
+        /*==========  X and DOWN ARROW BLOCK  ==========*/
+        .cd-subnav-trigger {
+            transition   : border 0.3s;
+            z-index      : 1;
+            border-radius: $global-radius;
+            background   : darken($red, 10%);
+            position     : absolute;
+            right        : 7px;
+            top          : 8px;
+            padding      : 1em !important;
+
+            &:hover {
+                background: darken($red, 30%);
+            }
+
+            /*==========  DOWN ARROW- RIGHT SIDE  ==========*/
+            &::after,
+            &::before {
+                top             : 21px;
+                right           : 14px;
+                background-color: $white;
+                /* change transform-origin to rotate the arrow */
+                transform-origin: 50% 50%;
+                transition      : transform 0.3s, width 0.3s, right 0.3s;
+            }
+
+            /*==========  DOWN ARROW- LEFT SIDE  ==========*/
+            &::before {
+                right: 20px;
+            }
+        }
+
+        .cd-subnav-trigger,
+        .placeholder {
+            padding: 1em;
+        }
+
+        li ul {
+            height          : 60px;
+            background-color: $white;
+            margin          : 0;
+            padding         : 0 0 0 185px;
+            transform       : translateY(-105px);
+            transition      : transform 0.3s 0.2s;
+        }
+
+        li ul li {
+            opacity     : 0;
+            padding-left: 1em;
+            transform   : translateY(-20px);
+            transition  : transform 0.3s 0s, opacity 0.3s 0s;
+            height      : inherit;
+        }
+
+        .placeholder {
+            /* never visible or clickable- it is used to take up the same space as the .cd-subnav-trigger */
+            display      : block;
+            visibility   : hidden;
+            opacity      : 0;
+            pointer-event: none;
+        }
+
+        &.moves-out > li > a {
+            transform: translateX(0);
+            opacity  : 1;
+        }
+
+        &.moves-out > li > ul {
+            transition: transform 0.3s;
+            transform : translateY(0);
+        }
+
+        &.moves-out > li ul li {
+            opacity   : 1;
+            transform : translateY(0);
+            transition: transform 0.3s 0.2s, opacity 0.3s 0.2s;
+        }
+
+        &.moves-out .cd-subnav-trigger {
+            ///*==========   MENU "X" POSITION  ==========*/
+            &::after,
+            &::before {
+                width: 16px;
+                right: 14px;
+                top  : 21px;
+            }
+
+            &::before {
+                transform: rotate(225deg);
+            }
+
+            &::after {
+                transform: rotate(135deg);
+            }
+        }
+    }
+}
+
+.cd-main-content::before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    display: none;
+    // content: 'mobile';
+    @include breakpoint(large) {
+        // content: 'desktop';
+    }
+}
+
+/*==========  BODY AREA  ==========*/
+.cd-main-content {
+    position        : relative;
+    z-index         : 4;
+    min-height      : 100vh;
+    padding-top     : 4rem;
+    padding-bottom  : 40px;
+    overflow        : hidden;
+    transition      : transform 0.3s;
+    background-color: $white;
+
+    &.nav-is-visible {
+        transform: translateX(-70%);
+    }
+    @include breakpoint(medium) {
+        padding-top  : 5rem;
+        margin-bottom: 420px;
+
+        &.nav-is-visible {
+            transform: translateX(-70%);
+        }
+    }
+    @include breakpoint(large) {
+        padding-top  : 6rem;
+        margin-bottom: 420px;
+
+        &.nav-is-visible {
+            transform: translateX(0);
+        }
+    }
+}
+
+.no-js .cd-nav-trigger,
+.no-js .cd-subnav-trigger {
+    display: none;
+}
+
+.no-js header {
+    position: relative;
+    height  : auto;
+}
+
+.no-js .cd-logo img {
+    margin-bottom: 14px;
+}
+
+.no-js .cd-main-nav {
+    position  : static;
+    width     : 100%;
+    height    : auto;
+    visibility: visible;
+    overflow  : visible;
+
+    li {
+        display: inline-block;
+
+        &:last-child {
+            display: block;
+        }
+    }
+
+    .go-back {
+        display: none;
+    }
+
+    li ul {
+        position : static;
+        width    : 100%;
+        transform: translateX(0);
+    }
+    @include breakpoint(large) {
+        height: 60px;
+
+        li ul {
+            position: absolute;
+            top     : 60px;
+        }
+
+        li ul li {
+            transform: translateY(0);
+            opacity  : 1;
+
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+}
+
+.no-js .cd-main-content {
+    padding-top: 0;
+    @include breakpoint(large) {
+        padding-top: 60px;
+    }
+}
+
+/*-----  End of SECONDARY NAVIGATION  ------*/
+
+/*-----  End of NAV  ------------------------------------------------------------------*/
+
+/*===========================================================================================
+
+███████ ██ ███    ██ ██████      ██████   ██████  ██     ██
+██      ██ ████   ██ ██   ██     ██   ██ ██    ██ ██     ██
+█████   ██ ██ ██  ██ ██   ██     ██████  ██    ██ ██  █  ██
+██      ██ ██  ██ ██ ██   ██     ██   ██ ██    ██ ██ ███ ██
+██      ██ ██   ████ ██████      ██   ██  ██████   ███ ███
+
+==============================================================================================*/
+
+// .findRow {
+// 	margin-top: 4rem;
+// 	border-top: 2px solid $black;
+// 	// padding   : 60px 0 0;
+// }
+
+/*-----  End of FIND ROW  ------------------------------------------------------------------*/
+
+/*===========================================================================================
+
+███    ██ ███████ ██   ██ ████████     ██████   ██████  ██     ██
+████   ██ ██       ██ ██     ██        ██   ██ ██    ██ ██     ██
+██ ██  ██ █████     ███      ██        ██████  ██    ██ ██  █  ██
+██  ██ ██ ██       ██ ██     ██        ██   ██ ██    ██ ██ ███ ██
+██   ████ ███████ ██   ██    ██        ██   ██  ██████   ███ ███
+
+==============================================================================================*/
+
+// .nextRow {
+// 	background: $black;
+// 	margin    : 3rem 0;
+// 	height    : 17px;
+// 
+// 	p {
+// 		margin        : -3px 0 0;
+// 		padding       : 0 20px;
+// 		background    : $white;
+// 		color         : $black;
+// 		font-size     : 14px;
+// 		line-height   : $global-lineheight;
+// 		font-style    : normal;
+// 		font-weight   : 700;
+// 		text-transform: uppercase;
+// 	}
+// }
+
+/*-----  End of NEXT ROW  ------------------------------------------------------------------*/
+
+/*===========================================================================================
+
+██████  ██    ██ ██████   ██████ ██   ██  █████  ███████ ███████     ██      ██ ███    ██ ██   ██ ███████
+██   ██ ██    ██ ██   ██ ██      ██   ██ ██   ██ ██      ██          ██      ██ ████   ██ ██  ██  ██
+██████  ██    ██ ██████  ██      ███████ ███████ ███████ █████       ██      ██ ██ ██  ██ █████   ███████
+██      ██    ██ ██   ██ ██      ██   ██ ██   ██      ██ ██          ██      ██ ██  ██ ██ ██  ██       ██
+██       ██████  ██   ██  ██████ ██   ██ ██   ██ ███████ ███████     ███████ ██ ██   ████ ██   ██ ███████
+
+==============================================================================================*/
+
+// .publishedIn,
+// .purchaseLinks {
+// 	.button {
+// 		margin-right : 10px;
+// 		margin-bottom: 10px;
+// 		text-align   : left;
+// 	}
+// 
+// 	.button:last-of-type {
+// 		margin-right : 0;
+// 		margin-bottom: 0;
+// 	}
+// }
+// 
+// .purchaseButtons {
+// 	.button,
+// 	button {
+// 		width    : 100%;
+// 		min-width: 150px;
+// 		max-width: 250px;
+// 	}
+// }
+
+/*-----  End of PURCHASE LINKS  ------------------------------------------------------------------*/
+
+/*===========================================================================================
+
+██    ██ ███████ ██████  ████████ ██  ██████  █████  ██          ██████  ██ ██    ██ ██ ██████  ███████ ██████
+██    ██ ██      ██   ██    ██    ██ ██      ██   ██ ██          ██   ██ ██ ██    ██ ██ ██   ██ ██      ██   ██
+██    ██ █████   ██████     ██    ██ ██      ███████ ██          ██   ██ ██ ██    ██ ██ ██   ██ █████   ██████
+ ██  ██  ██      ██   ██    ██    ██ ██      ██   ██ ██          ██   ██ ██  ██  ██  ██ ██   ██ ██      ██   ██
+  ████   ███████ ██   ██    ██    ██  ██████ ██   ██ ███████     ██████  ██   ████   ██ ██████  ███████ ██   ██
+
+==============================================================================================*/
+
+.vertical-divider {
+    position      : absolute;
+    z-index       : 10;
+    top           : 50%;
+    left          : 50%;
+    margin        : 0;
+    padding       : 0;
+    width         : auto;
+    height        : 50%;
+    line-height   : 0;
+    text-align    : center;
+    text-transform: uppercase;
+    transform     : translateX(-50%);
+}
+
+.vertical-divider:after,
+.vertical-divider:before {
+    position    : absolute;
+    left        : 50%;
+    content     : "";
+    z-index     : 9;
+    border-left : 1px solid darken($white, 10%);
+    border-right: 1px solid darken($white, 10%);
+    width       : 0;
+    height      : calc(0px + 6rem);
+    margin      : 1rem 0;
+}
+
+.vertical-divider:before {
+    // top: -100%;
+}
+
+.vertical-divider:after {
+    top   : auto;
+    bottom: 0;
+}
+
+/*-----  End of VERTICAL DIVIDER  ------------------------------------------------------------------*/
+
+/*=============================================================================================
+
+██████   ██████  ██   ██     ███████ ██   ██  █████  ██████   ██████  ██     ██
+██   ██ ██    ██  ██ ██      ██      ██   ██ ██   ██ ██   ██ ██    ██ ██     ██
+██████  ██    ██   ███       ███████ ███████ ███████ ██   ██ ██    ██ ██  █  ██
+██   ██ ██    ██  ██ ██           ██ ██   ██ ██   ██ ██   ██ ██    ██ ██ ███ ██
+██████   ██████  ██   ██     ███████ ██   ██ ██   ██ ██████   ██████   ███ ███
+██   ██  ██████  ██    ██ ███████ ██████
+██   ██ ██    ██ ██    ██ ██      ██   ██
+███████ ██    ██ ██    ██ █████   ██████
+██   ██ ██    ██  ██  ██  ██      ██   ██
+██   ██  ██████    ████   ███████ ██   ██
+
+=============================================================================================*/
+@mixin box-shadow-hover() {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    &:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+        transform : scale(1.01);
+    }
+}
+
+.box-shadow-hover {
+    @include box-shadow-hover();
+}
+
+// -----  End of BOX SHADOW HOVER  ---------------------------------------------
+
+/*===========================================================================================
+
+ ██████   █████  ██      ██      ███████ ██████  ██    ██     ██      ██  ██████  ██   ██ ████████
+██       ██   ██ ██      ██      ██      ██   ██  ██  ██      ██      ██ ██       ██   ██    ██
+██   ███ ███████ ██      ██      █████   ██████    ████       ██      ██ ██   ███ ███████    ██
+██    ██ ██   ██ ██      ██      ██      ██   ██    ██        ██      ██ ██    ██ ██   ██    ██
+ ██████  ██   ██ ███████ ███████ ███████ ██   ██    ██        ███████ ██  ██████  ██   ██    ██
+
+==============================================================================================*/
+
+// .galleryLight {
+//     @include box-shadow-hover();
+// }
+// @include breakpoint(small only) {
+//     .galleryLight {
+//         margin-bottom: 3rem;
+//         background   : $white;
+//         float        : left;
+//         text-align   : center;
+// 
+//         img {
+//             margin-top: 0;
+//         }
+// 
+//         .textLabel {
+//             padding   : 30px;
+//             background: $white;
+//         }
+//     }
+// }
+// @include breakpoint(medium only) {
+//     .galleryLight {
+//         text-align: left;
+// 
+//         img {
+//             // margin-top: 3rem;
+//         }
+//     }
+// }
+// @include breakpoint(large up) {
+//     .galleryLight {
+//         margin-bottom: 3rem;
+//         background   : $white;
+//         text-align   : left;
+// 
+//         img {
+//             margin-top: 0;
+//         }
+// 
+//         .textLabel {
+//             padding   : 30px;
+//             background: $white;
+//         }
+//     }
+// }
+
+/*-----  End of GALLERY LIGHT  ------------------------------------------------------------------*/
+
+/*============================================================================================
+
+ ██████   █████  ██      ██      ███████ ██████  ██    ██     ███    ███ ███████ ██████  ██ ██    ██ ███    ███
+██       ██   ██ ██      ██      ██      ██   ██  ██  ██      ████  ████ ██      ██   ██ ██ ██    ██ ████  ████
+██   ███ ███████ ██      ██      █████   ██████    ████       ██ ████ ██ █████   ██   ██ ██ ██    ██ ██ ████ ██
+██    ██ ██   ██ ██      ██      ██      ██   ██    ██        ██  ██  ██ ██      ██   ██ ██ ██    ██ ██  ██  ██
+ ██████  ██   ██ ███████ ███████ ███████ ██   ██    ██        ██      ██ ███████ ██████  ██  ██████  ██      ██
+
+===============================================================================================*/
+
+.galleryMedium {
+    @include box-shadow-hover();
+
+    img {
+        width     : 100%;
+        height    : 500px;
+        object-fit: contain;
+    }
+}
+
+/*-----  End of GALLERY MEDIUM  ------------------------------------------------------------------*/
+
+/*===========================================================================================
+
+ ██████   █████  ██      ██      ███████ ██████  ██    ██
+██       ██   ██ ██      ██      ██      ██   ██  ██  ██
+██   ███ ███████ ██      ██      █████   ██████    ████
+██    ██ ██   ██ ██      ██      ██      ██   ██    ██
+ ██████  ██   ██ ███████ ███████ ███████ ██   ██    ██
+ 
+██   ██ ███████  █████  ██    ██ ██    ██
+██   ██ ██      ██   ██ ██    ██  ██  ██
+███████ █████   ███████ ██    ██   ████
+██   ██ ██      ██   ██  ██  ██     ██
+██   ██ ███████ ██   ██   ████      ██
+
+==============================================================================================*/
+
+.galleryHeavy img {
+    // @include box-shadow-hover();
+}
+
+img[src$=".svg"] {
+    box-shadow: none !important;
+    border    : none !important;
+}
+
+/*-----  End of GALLERY HEAVY  ------------------------------------------------------------------*/
+
+/*==============================================================================================
+
+ █████  ██████  ████████ ██  ██████ ██      ███████
+██   ██ ██   ██    ██    ██ ██      ██      ██
+███████ ██████     ██    ██ ██      ██      █████
+██   ██ ██   ██    ██    ██ ██      ██      ██
+██   ██ ██   ██    ██    ██  ██████ ███████ ███████
+
+==============================================================================================*/
+
+.sidenoteLeft + .sidenoteLeft,
+.sidenoteRight + .sidenoteRight {
+    // margin-top: 4rem;
+    // clear: both;
+}
+
+.sidenoteLeft,
+.sidenoteRight {
+    font-weight: 100;
+    font-size  : 14px;
+    font-style : italic;
+    color      : lighten($black, 50%);
+    font-family: $font-family-serif;
+}
+@include breakpoint(medium up) {
+    .icon-zoom-boxed {
+        position     : absolute;
+        bottom       : 0;
+        z-index      : 1000;
+        width        : 40px;
+        height       : 40px;
+        margin-left  : -40px !important;
+        /* right: 0; */
+        margin-bottom: 23px !important;
+    }
+
+    .articleImageLeft {
+        width       : 435px;
+        float       : left;
+        position    : relative;
+        margin-right: -10%;
+        right       : 15%;
+    }
+
+    .articleImageRight {
+        width      : 435px;
+        float      : right;
+        position   : relative;
+        margin-left: -10%;
+        left       : 15%;
+    }
+}
+@include breakpoint(large up) {
+    .articleImageLeft {
+        max-width   : 435px;
+        float       : left;
+        position    : relative;
+        margin-right: -25%;
+        right       : 33%;
+    }
+
+    .articleImageRight {
+        max-width  : 435px;
+        float      : right;
+        position   : relative;
+        margin-left: -25%;
+        left       : 33%;
+    }
+
+    .sidenoteLeft {
+        font-weight: 100;
+        font-size  : 14px;
+        font-style : italic;
+        color      : lighten($black, 50%);
+        max-width  : 150px;
+        line-height: $header-lineheight;
+        float      : left;
+        margin-left: -30%;
+        padding    : 10px;
+        // margin-top : -10%;
+    }
+
+    .sidenoteRight {
+        font-weight : 100;
+        font-size   : 14px;
+        font-style  : italic;
+        color       : lighten($black, 50%);
+        max-width   : 150px;
+        line-height : $header-lineheight;
+        float       : right;
+        margin-right: -30%;
+        padding     : 10px;
+        font-weight : 100;
+    }
+}
+@include breakpoint(small only) {
+    .icon-zoom-boxed {
+        width   : 30px;
+        height  : 30px;
+        position: absolute;
+        float   : right;
+        bottom  : 0;
+        right   : 0;
+        z-index : 1000;
+    }
+}
+
+/*-----  End of ARTICLE  ------------------------------------------------------------------*/
+
+/*==============================================================================================
+
+██████   ██████   ██████  ██   ██
+██   ██ ██    ██ ██    ██ ██  ██
+██████  ██    ██ ██    ██ █████
+██   ██ ██    ██ ██    ██ ██  ██
+██████   ██████   ██████  ██   ██
+
+██████  ███████ ████████  █████  ██ ██
+██   ██ ██         ██    ██   ██ ██ ██
+██   ██ █████      ██    ███████ ██ ██
+██   ██ ██         ██    ██   ██ ██ ██
+██████  ███████    ██    ██   ██ ██ ███████
+
+==============================================================================================*/
+
+/*-----  End of BOOK DETAIL  ------------------------------------------------------------------*/
+
+/*==============================================================================================
+
+██      ██ ███████ ████████
+██      ██ ██         ██
+██      ██ ███████    ██
+██      ██      ██    ██
+███████ ██ ███████    ██
+
+==============================================================================================*/
+
+.listItem {
+    margin-bottom: 2rem;
+    color        : $black;
+    @include box-shadow-hover();
+
+    img {
+        margin-top: 0;
+    }
+}
+
+.listItemLabel {
+    padding: 20px 30px;
+
+    h4 {
+        color : $blue;
+        margin: 0;
+    }
+
+    p {
+        color : $black;
+        margin: 0;
+    }
+}
+@include breakpoint(medium only) {
+    .listItem {}
+}
+@include breakpoint(small only) {
+    .listItem {
+        text-align: center;
+        display   : block;
+
+        img {
+            margin-top: 30px;
+        }
+    }
+
+}
+
+/*-----  End of LIST  ------------------------------------------------------------------*/
+
+/*==============================================================================================
+
+██      ██ ███████ ████████
+██      ██ ██         ██
+██      ██ ███████    ██
+██      ██      ██    ██
+███████ ██ ███████    ██
+
+██     ██ ██ ████████ ██   ██
+██     ██ ██    ██    ██   ██
+██  █  ██ ██    ██    ███████
+██ ███ ██ ██    ██    ██   ██
+ ███ ███  ██    ██    ██   ██
+ 
+████████ ██   ██ ██    ██ ███    ███ ██████  ███    ██  █████  ██ ██      ███████
+   ██    ██   ██ ██    ██ ████  ████ ██   ██ ████   ██ ██   ██ ██ ██      ██
+   ██    ███████ ██    ██ ██ ████ ██ ██████  ██ ██  ██ ███████ ██ ██      ███████
+   ██    ██   ██ ██    ██ ██  ██  ██ ██   ██ ██  ██ ██ ██   ██ ██ ██           ██
+   ██    ██   ██  ██████  ██      ██ ██████  ██   ████ ██   ██ ██ ███████ ███████
+
+==============================================================================================*/
+
+.listItem-thumb {
+    @include box-shadow-hover();
+    color  : $black;
+    padding: 2rem;
+
+    img {
+        margin-top : 0;
+        width      : 170px;
+        flex-shrink: 0;
+        padding    : 20px;
+    }
+}
+
+.listItemLabel-thumb {
+    h4 {
+        color : $blue;
+        margin: 0;
+    }
+
+    p {
+        color : $black;
+        margin: 0;
+    }
+}
+@include breakpoint(medium only) {
+    .listItem-thumb {}
+}
+@include breakpoint(small only) {
+    .listItem-thumb {
+        text-align: center;
+        display   : block;
+
+        img {
+            margin-top: 30px;
+        }
+    }
+
+}
+
+/*-----  End of  LIST WITH THUMBNAILS  ------------------------------------------------------------------*/
+
+/*================================================================================================================     
+
+██      ██ ███████ ████████     ██     ██ ██ ████████ ██   ██
+██      ██ ██         ██        ██     ██ ██    ██    ██   ██
+██      ██ ███████    ██        ██  █  ██ ██    ██    ███████
+██      ██      ██    ██        ██ ███ ██ ██    ██    ██   ██
+███████ ██ ███████    ██         ███ ███  ██    ██    ██   ██
+████████ ██   ██ ██    ██ ███    ███ ██████  ███    ██  █████  ██ ██
+   ██    ██   ██ ██    ██ ████  ████ ██   ██ ████   ██ ██   ██ ██ ██
+   ██    ███████ ██    ██ ██ ████ ██ ██████  ██ ██  ██ ███████ ██ ██
+   ██    ██   ██ ██    ██ ██  ██  ██ ██   ██ ██  ██ ██ ██   ██ ██ ██
+   ██    ██   ██  ██████  ██      ██ ██████  ██   ████ ██   ██ ██ ███████
+ █████  ███    ██ ██████      ██████  ██    ██ ████████ ████████  ██████  ███    ██ ███████
+██   ██ ████   ██ ██   ██     ██   ██ ██    ██    ██       ██    ██    ██ ████   ██ ██
+███████ ██ ██  ██ ██   ██     ██████  ██    ██    ██       ██    ██    ██ ██ ██  ██ ███████
+██   ██ ██  ██ ██ ██   ██     ██   ██ ██    ██    ██       ██    ██    ██ ██  ██ ██      ██
+██   ██ ██   ████ ██████      ██████   ██████     ██       ██     ██████  ██   ████ ███████
+
+=============================================================================================================*/
+
+.listItem-thumb-buttons {
+    color           : $black;
+    padding         : 2rem;
+    background-color: $white;
+    @include box-shadow-hover();
+
+    .button {
+        display        : flex;
+        margin         : 0 1rem 0.25rem 0;
+        flex           : 0 1 100%;
+        justify-content: space-between;
+    }
+
+    .button + .button {
+        margin-bottom: 0;
+    }
+}
+
+/*-----  End of LIST WITH THUMBNAIL AND BUTTONS  ---------------------------------------------------------------------------------------*/
+
+/*==============================================================================================
+
+ ██
+███
+ ██
+ ██
+ ██
+ 
+ ██████  ██████  ██      ██    ██ ███    ███ ███    ██
+██      ██    ██ ██      ██    ██ ████  ████ ████   ██
+██      ██    ██ ██      ██    ██ ██ ████ ██ ██ ██  ██
+██      ██    ██ ██      ██    ██ ██  ██  ██ ██  ██ ██
+ ██████  ██████  ███████  ██████  ██      ██ ██   ████
+ 
+ ██████  ██████  ███    ██ ████████ ███████ ███    ██ ████████
+██      ██    ██ ████   ██    ██    ██      ████   ██    ██
+██      ██    ██ ██ ██  ██    ██    █████   ██ ██  ██    ██
+██      ██    ██ ██  ██ ██    ██    ██      ██  ██ ██    ██
+ ██████  ██████  ██   ████    ██    ███████ ██   ████    ██
+
+=================================================================================================*/
+
+/*-----  End of 1 COLUMN CONTENT  ------------------------------------------------------------------*/
+
+/*==============================================================================================
+
+███████  ██████   ██████  ████████ ███████ ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+█████   ██    ██ ██    ██    ██    █████   ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+██       ██████   ██████     ██    ███████ ██   ██
+
+==============================================================================================*/
+
+footer {
+    background : #DEDEDE;
+    padding-top: 40px;
+    bottom     : 0;
+    width      : 100%;
+    z-index    : 0;
+    box-shadow : inset 0 50px 50px -50px rgba(0, 0, 0, 0.1);
+    // will-change: transform;
+    // visibility: hidden;
+
+    a {
+        text-shadow: 3px 0 0 #DEDEDE, -3px 0 0 #DEDEDE;
+    }
+    @include breakpoint(medium up) {
+        bottom  : -30vh;
+        position: fixed;
+        z-index : 3;
+        // will-change: transform;
+    }
+
+    a,
+    h5 {
+        font-size  : 12px;
+        display    : block;
+        line-height: $global-lineheight;
+    }
+
+    h5 {
+        color      : $black;
+        font-weight: 700;
+        font-style : normal;
+        font-family: $font-family-sans-serif;
+    }
+}
+
+/*-----  End of FOOTER  ------------------------------------------------------------------*/
+
+/*=====================================================================================================
+
+███████ ██    ██ ██      ██          ██     ██ ██ ██████  ████████ ██   ██
+██      ██    ██ ██      ██          ██     ██ ██ ██   ██    ██    ██   ██
+█████   ██    ██ ██      ██          ██  █  ██ ██ ██   ██    ██    ███████
+██      ██    ██ ██      ██          ██ ███ ██ ██ ██   ██    ██    ██   ██
+██       ██████  ███████ ███████      ███ ███  ██ ██████     ██    ██   ██
+
+██ ███    ███  █████   ██████  ███████     ██   ██ ███████  █████  ██████  ███████ ██████
+██ ████  ████ ██   ██ ██       ██          ██   ██ ██      ██   ██ ██   ██ ██      ██   ██
+██ ██ ████ ██ ███████ ██   ███ █████       ███████ █████   ███████ ██   ██ █████   ██████
+██ ██  ██  ██ ██   ██ ██    ██ ██          ██   ██ ██      ██   ██ ██   ██ ██      ██   ██
+██ ██      ██ ██   ██  ██████  ███████     ██   ██ ███████ ██   ██ ██████  ███████ ██   ██
+
+========================================================================================================*/
+.wrapper-parallax {
+    height: 85vh;
+}
+
+.imageHeader-full {
+    width          : 100vw;
+    display        : flex;
+    flex-direction : column;
+    flex-wrap      : nowrap;
+    justify-content: center;
+    align-content  : center;
+    align-items    : center;
+    text-align     : center;
+    overflow       : hidden;
+    // background      : $black;
+
+    & button {
+        top: 25%;
+    }
+
+    img {
+        // @extend .w100;
+        position   : fixed;
+        bottom     : 0;
+        left       : 0;
+        z-index    : -10;
+        filter : blur(20px) brightness(0.7);
+        transform  : scale(1.1,1.1);
+        min-width  : 100%;
+        min-height : 100%;
+        will-change: transform;
+    }
+
+    h1,
+    p {
+        color   : $white;
+        position: relative;
+        // text-shadow: 0 0 40px rgba(0,0,0,0.9);
+    }
+}
+@include breakpoint(small) {
+    .imageHeader-full {
+        height     : 95vh;
+        top        : 0;
+        position   : fixed;
+        z-index    : 2;
+        padding-top: 25px;
+        will-change: transform;
+        transform  : translateZ(0);
+        transition : transform 0.3s;
+
+        &.nav-is-visible {
+            transform: translateX(-70%);
+        }
+
+        +.cd-main-content {
+            top        : 95vh;
+            padding-top: 1em;
+            box-shadow : 0 -5px 50px rgba(0, 0, 0, 0.15);
+            overflow   : hidden;
+            margin-top : 0;
+        }
+
+        & button {
+            top: 0;
+        }
+    }
+}
+@include breakpoint(medium) {
+    .imageHeader-full {
+        height : 100vh;
+        padding: 4rem;
+
+        &.nav-is-visible {
+            transform: translateX(-70%);
+        }
+    }
+
+    .wrapper-parallax + .cd-main-content {
+        margin-top: 0;
+    }
+}
+
+/*-----  End of FULL WIDTH IMAGE HEADER  ------------------------------------------------------------------*/
+
+/*========================================================================================================
+
+███████  ██████ ██████   ██████  ██      ██          ██    ██ ██████
+██      ██      ██   ██ ██    ██ ██      ██          ██    ██ ██   ██
+███████ ██      ██████  ██    ██ ██      ██          ██    ██ ██████
+     ██ ██      ██   ██ ██    ██ ██      ██          ██    ██ ██
+███████  ██████ ██   ██  ██████  ███████ ███████      ██████  ██
+
+===========================================================================================================*/
+
+#scrollUp {
+    bottom    : 200px;
+    right     : 0;
+    background: rgba(0,0,0,.1) url("../img/scrollUp.svg") no-repeat;
+    width     : 48px;
+    height    : 48px;
+    z-index   : 10;
+}
+
+/*-----  End of SCROLL UP  ------------------------------------------------------------------*/
+
+/*========================================================================================================
+
+██████  ███████  █████  ██████  ██ ███    ██  ██████
+██   ██ ██      ██   ██ ██   ██ ██ ████   ██ ██
+██████  █████   ███████ ██   ██ ██ ██ ██  ██ ██   ███
+██   ██ ██      ██   ██ ██   ██ ██ ██  ██ ██ ██    ██
+██   ██ ███████ ██   ██ ██████  ██ ██   ████  ██████
+
+██████  ██████   ██████   ██████  ██████  ███████ ███████ ███████
+██   ██ ██   ██ ██    ██ ██       ██   ██ ██      ██      ██
+██████  ██████  ██    ██ ██   ███ ██████  █████   ███████ ███████
+██      ██   ██ ██    ██ ██    ██ ██   ██ ██           ██      ██
+██      ██   ██  ██████   ██████  ██   ██ ███████ ███████ ███████
+
+██ ███    ██ ██████  ██  ██████  █████  ████████  ██████  ██████
+██ ████   ██ ██   ██ ██ ██      ██   ██    ██    ██    ██ ██   ██
+██ ██ ██  ██ ██   ██ ██ ██      ███████    ██    ██    ██ ██████
+██ ██  ██ ██ ██   ██ ██ ██      ██   ██    ██    ██    ██ ██   ██
+██ ██   ████ ██████  ██  ██████ ██   ██    ██     ██████  ██   ██
+
+===========================================================================================================*/
+
+progress {
+    /* Positioning */
+    position          : fixed;
+    left              : 0;
+    top               : 0;
+    will-change       : transform;
+
+    /* Dimensions */
+    width             : 100%;
+    height            : 3px;
+
+    /* Reset the apperance */
+    -webkit-appearance: none;
+    -moz-appearance   : none;
+    appearance        : none;
+
+    /* Get rid of the default border in Firefox/Opera. */
+    border            : none;
+
+    /* For Firefox/IE10+ */
+    background-color  : transparent;
+
+    /* For IE10+, color of the progress bar */
+    color             : $red;
+    z-index           : 11;
+}
+
+progress::-webkit-progress-bar {
+    background-color: transparent;
+}
+
+.flat::-webkit-progress-value {
+    background-color: $red;
+}
+
+.flat::-moz-progress-bar {
+    background-color: $red;
+}
+
+.progress-container {
+    width           : 100%;
+    background-color: transparent;
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    height          : 3px;
+    display         : block;
+    will-change     : transform;
+}
+
+.progress-bar {
+    background-color: $red;
+    width           : 50%;
+    display         : block;
+    height          : inherit;
+}
+
+/*-----  End of READING PROGRESS INDICATOR  ------------------------------------------------------------------*/
+
+/*==================================================================================================================
+
+███████ ██      ██  ██████ ██   ██
+██      ██      ██ ██      ██  ██
+███████ ██      ██ ██      █████
+     ██ ██      ██ ██      ██  ██
+███████ ███████ ██  ██████ ██   ██
+ ██████  █████  ██████   ██████  ██    ██ ███████ ███████ ██
+██      ██   ██ ██   ██ ██    ██ ██    ██ ██      ██      ██
+██      ███████ ██████  ██    ██ ██    ██ ███████ █████   ██
+██      ██   ██ ██   ██ ██    ██ ██    ██      ██ ██      ██
+ ██████ ██   ██ ██   ██  ██████   ██████  ███████ ███████ ███████
+
+=============================================================================================================*/
+
+.slick-slider {
+    margin: 0 -5px;
+}
+
+.slick-slide {
+    // padding:1px;
+    // background-color:red;
+    // text-align:center;
+    margin-right: 5px;
+    margin-left : 5px;
+}
+
+.slick-slide.slick-active:first-child,
+.slick-slide.slick-active:last-child {
+    // margin: 0;
+}
+
+.slick-track {
+    margin: 0 auto;
+}
+
+.slick-track img {
+    margin: 0 10px;
+}
+
+.slick-dots {
+    position: relative;
+
+    & li {
+        margin: 3px;
+
+        & button:before {
+            font-size: 30px;
+        }
+    }
+}
+
+.slick-next,
+.slick-prev {
+    width     : 60px;
+    height    : 80px;
+    transition: all 0.5s ease;
+}
+
+.slick-prev {
+    left: -80px;
+
+    &:before {
+        color     : rgba(0,0,0,0);
+        font-size : 75px;
+        opacity   : 1;
+        background: transparent url("/img/icon-arrow-left.svg") no-repeat 33% center;
+    }
+
+    &:hover {
+        background: #DEDEDE url("/img/icon-arrow-left.svg") no-repeat 33% center;
+    }
+}
+
+.slick-next {
+    right: -80px;
+
+    &:before {
+        color     : rgba(0,0,0,0);
+        font-size : 75px;
+        opacity   : 1;
+        background: transparent url("/img/icon-arrow-right.svg") no-repeat 38% center;
+    }
+
+    &:hover {
+        background: #DEDEDE url("/img/icon-arrow-right.svg") no-repeat 38% center;
+    }
+}
+
+/*-----  End of SLICK CAROUSEL  ---------------------------------------------------------------------------------------*/
+
+/*====================================================================================================
+
+ ██████  █████  ██████  ██████  ███████
+██      ██   ██ ██   ██ ██   ██ ██
+██      ███████ ██████  ██   ██ ███████
+██      ██   ██ ██   ██ ██   ██      ██
+ ██████ ██   ██ ██   ██ ██████  ███████
+
+=======================================================================================================*/
+
+.card-large,
+.card-medium,
+.card-small {
+    @include box-shadow-hover();
+
+    background: white;
+    text-align: center;
+    border    : none;
+
+    &:hover {
+        z-index: 100;
+    }
+};
+@include breakpoint(medium up) {
+    .card-small {
+        @include grid-column($columns:3);
+    }
+
+    .card-medium {
+        @include grid-column($columns:4);
+    }
+
+    .card-large {
+        @include grid-column($columns:8);
+    }
+};
+
+/*-----  End of CARDS  ------------------------------------------------------------------*/
+
+/*==============================================
+
+ █████  ███    ██ ██      ██ ███████
+██   ██ ████   ██ ██      ██ ██
+███████ ██ ██  ██ ██      ██ ███████
+██   ██ ██  ██ ██ ██ ██   ██      ██
+██   ██ ██   ████ ██  █████  ███████
+
+ █████  ███    ██ ██ ███    ███  █████  ████████ ██  ██████  ███    ██
+██   ██ ████   ██ ██ ████  ████ ██   ██    ██    ██ ██    ██ ████   ██
+███████ ██ ██  ██ ██ ██ ████ ██ ███████    ██    ██ ██    ██ ██ ██  ██
+██   ██ ██  ██ ██ ██ ██  ██  ██ ██   ██    ██    ██ ██    ██ ██  ██ ██
+██   ██ ██   ████ ██ ██      ██ ██   ██    ██    ██  ██████  ██   ████
+
+████████ ██     ██ ███████  █████  ██   ██ ███████
+   ██    ██     ██ ██      ██   ██ ██  ██  ██
+   ██    ██  █  ██ █████   ███████ █████   ███████
+   ██    ██ ███ ██ ██      ██   ██ ██  ██       ██
+   ██     ███ ███  ███████ ██   ██ ██   ██ ███████
+
+===============================================*/
+.animated {
+    animation-duration : 1s;
+    animation-fill-mode: both;
+}
+
+/*animation-delay: the delay before our animation will start.*/
+
+.delay-xs {
+    animation-delay: 0.25s;
+}
+
+.delay-sm {
+    animation-delay: 0.5s;
+}
+
+.delay-md {
+    animation-delay: 1s;
+}
+
+.delay-lg {
+    animation-delay: 2s;
+}
+
+.delay-xl {
+    animation-delay: 4s;
+}
+
+/*
+ *@name fadeIn
+ *@className fadeIn animated
+ *@cssCode true
+ *@editionLink codepen.io
+ *@author Dan Eden
+ *@source Animate.css
+ *@sourceUrl http://daneden.github.io/animate.css/
+ *@issues https://github.com/daneden/animate.css/issues
+ *@license MIT
+ */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+/*
+ *@name fadeInLeft
+ *@className fadeInLeft animated
+ *@cssCode true
+ *@editionLink codepen.io
+ *@author Dan Eden
+ *@source Animate.css
+ *@sourceUrl http://daneden.github.io/animate.css/
+ *@issues https://github.com/daneden/animate.css/issues
+ *@license MIT
+ */
+@keyframes fadeInLeftSmall {
+    0% {
+        opacity  : 0;
+        transform: translate3d(-15%, 0, 0);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: none;
+    }
+}
+
+.fadeInLeftSmall {
+    animation-name: fadeInLeftSmall;
+}
+
+/*
+ *@name fadeInRight
+ *@className fadeInRight animated
+ *@cssCode true
+ *@editionLink codepen.io
+ *@author Dan Eden
+ *@source Animate.css
+ *@sourceUrl http://daneden.github.io/animate.css/
+ *@issues https://github.com/daneden/animate.css/issues
+ *@license MIT
+ */
+@keyframes fadeInRightSmall {
+    0% {
+        opacity  : 0;
+        transform: translate3d(15%, 0, 0);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: none;
+    }
+}
+
+.fadeInRightSmall {
+    animation-name: fadeInRightSmall;
+}
+
+/*
+ *@name fadeInUp
+ *@className fadeInUp animated
+ *@cssCode true
+ *@editionLink codepen.io
+ *@author Dan Eden
+ *@source Animate.css
+ *@sourceUrl http://daneden.github.io/animate.css/
+ *@issues https://github.com/daneden/animate.css/issues
+ *@license MIT
+ */
+@keyframes fadeInUpSmall {
+    0% {
+        opacity  : 0;
+        transform: translate3d(0, 15%, 0);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: none;
+    }
+}
+
+.fadeInUpSmall {
+    animation-name: fadeInUpSmall;
+}
+
+/*
+ *@name fadeOutDown
+ *@className fadeOutDown animated
+ *@cssCode true
+ *@editionLink codepen.io
+ *@author Dan Eden
+ *@source Animate.css
+ *@sourceUrl http://daneden.github.io/animate.css/
+ *@issues https://github.com/daneden/animate.css/issues
+ *@license MIT
+ */
+@keyframes fadeOutDownSmall {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity  : 0;
+        transform: translate3d(0, 15%, 0);
+    }
+}
+
+.fadeOutDownSmall {
+    animation-name: fadeOutDownSmall;
+}
+
+/*-----  End of ANIJS ANIMATION TWEAKS  ------*/
+
+// /*-----  End of MAGNIFIC POPUP  ------*/
+
+/*================================================================================================================
+
+ ██████ ██   ██  ██████   ██████  ██████  ██       █████  ████████
+██      ██   ██ ██    ██ ██      ██    ██ ██      ██   ██    ██
+██      ███████ ██    ██ ██      ██    ██ ██      ███████    ██
+██      ██   ██ ██    ██ ██      ██    ██ ██      ██   ██    ██
+ ██████ ██   ██  ██████   ██████  ██████  ███████ ██   ██    ██
+ 
+ ██████   █████  ██      ██      ███████ ██████  ██    ██
+██       ██   ██ ██      ██      ██      ██   ██  ██  ██
+██   ███ ███████ ██      ██      █████   ██████    ████
+██    ██ ██   ██ ██      ██      ██      ██   ██    ██
+ ██████  ██   ██ ███████ ███████ ███████ ██   ██    ██
+
+==================================================================================================================*/
+
+.chocolat-overlay {
+    // background: $black;
+    background: $white;
+    opacity   : 0.98;
+    cursor    : url(/img/close.svg), auto;
+}
+
+.chocolat-bottom {
+    color: $black;
+}
+
+.chocolat-wrapper .chocolat-bottom {
+    background: rgba(0,0,0,.5);
+}
+
+img.chocolat-img {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border    : 1px solid lighten($black, 80%);
+}
+
+.chocolat-image {
+    // display    : flex;
+    // max-height : 350px;
+    // align-items:center;
+}
+
+.chocolat-image img {
+    max-height: 90vh;
+    width     : auto;
+    margin    : 0 auto;
+    // min-height: 350px;
+    // object-fit: cover;
+}
+
+.chocolat-image,
+.chocolat-image img {
+    cursor: url(/img/plus.svg), auto;
+}
+
+.chocolat-zoomable,
+.chocolat-zoomable .chocolat-img {
+    cursor: url(/img/zoom-in.svg), auto;
+}
+
+.chocolat-zoomable.chocolat-zoomed,
+.chocolat-zoomable.chocolat-zoomed .chocolat-img {
+    cursor: url(/img/zoom-out.svg), auto;
+}
+
+.chocolat-zoomable.chocolat-zoomed .chocolat-img {
+    padding: 50px;
+}
+
+.chocolat-description,
+.chocolat-pagination,
+.chocolat-set-title {
+    color: $white;
+}
+
+// .chocolat-loader{
+//     background:url(../images/loader.gif);
+// }
+.chocolat-loader {
+    background-image         : none;
+    background-color         : transparent;
+    border-top               : 5px solid rgba(0, 0, 0, 0.2);
+    border-right             : 5px solid rgba(0, 0, 0, 0.2);
+    border-bottom            : 5px solid rgba(0, 0, 0, 0.2);
+    border-left              : 5px solid #eeeeee;
+    border-radius            : 100%;
+    transform                : translateZ(0);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration       : 0.8s;
+    animation-name           : chocolat-loader;
+}
+@-webkit-keyframes chocolat-loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes chocolat-loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*-----  End of CHOCOLAT GALLERY  ---------------------------------------------------------------------------*/
+
+/*=======================================
+
+███████ ██   ██  █████  ██████  ██ ███    ██  ██████
+██      ██   ██ ██   ██ ██   ██ ██ ████   ██ ██
+███████ ███████ ███████ ██████  ██ ██ ██  ██ ██   ███
+     ██ ██   ██ ██   ██ ██   ██ ██ ██  ██ ██ ██    ██
+███████ ██   ██ ██   ██ ██   ██ ██ ██   ████  ██████
+██████  ██    ██ ████████ ████████  ██████  ███    ██ ███████
+██   ██ ██    ██    ██       ██    ██    ██ ████   ██ ██
+██████  ██    ██    ██       ██    ██    ██ ██ ██  ██ ███████
+██   ██ ██    ██    ██       ██    ██    ██ ██  ██ ██      ██
+██████   ██████     ██       ██     ██████  ██   ████ ███████
+
+========================================*/
+
+.rrssb-buttons a {
+    font-family     : $font-family-sans-serif;
+    text-shadow     : none;
+    background-image: none;
+}
+
+/*-----  End of SHARING BUTTONS  ------*/
+
+/*================================================================================================================
+
+███████ ███████ ██      ███████  ██████ ████████ ██████
+██      ██      ██      ██      ██         ██         ██
+███████ █████   ██      █████   ██         ██     █████
+     ██ ██      ██      ██      ██         ██    ██
+███████ ███████ ███████ ███████  ██████    ██    ███████
+
+====================================================================================================================*/
+
+.used-number {
+    width     : 25px;
+    float     : right;
+    border    : 1px solid #000;
+    text-align: center;
+}
+
+.select2-highlighted .used-number {
+    border-color: #fff;
+}
+
+.select2-container {
+    width: 100% !important;
+    // min-width    : 172px !important;
+    // max-width    : 172px !important;
+    // margin-bottom: 0.4rem;
+}
+
+.select2-dropdown {
+    border: 2px solid $black;
+}
+
+.select2-container--default .select2-results > .select2-results__options {
+    max-height: 75vh;
+}
+
+.select2-search__field {
+    border       : initial;
+    margin-bottom: 0;
+    margin-top   : 10px;
+}
+
+.select2-results {
+    border-radius: 0;
+}
+
+.select2-selection__placeholder {
+    color: $black !important;
+}
+
+.select2-results__group {
+    color         : $red;
+    text-transform: uppercase;
+    border-top    : 1px solid lighten($black, 80%);
+    margin        : 10px 0;
+    padding-top   : 20px !important;
+}
+
+.select2-results__option--highlighted[aria-selected] {
+    background-color: $red !important;
+    color           : $white !important;
+}
+
+.select2-results__option[aria-selected=true] {
+    background-color: $light-gray !important;
+    color           : $black !important;
+}
+
+.select2-results,
+.select2-results__option,
+.select2-results__option--highlighted,
+.select2-search,
+.select2-search--dropdown {
+    color        : $black;
+    padding      : 10px !important;
+    font-size    : 18px;
+    // font-weight  : 300;
+    border-radius: 0;
+    line-height  : 1.2;
+}
+
+.select2-container--default .select2-selection--single {
+    border       : 2px solid $black;
+    color        : $black;
+    padding      : 5px 10px;
+    font-size    : 16px;
+    font-weight  : 300;
+    border-radius: 0;
+    height       : 42px;
+}
+
+.select2-selection__arrow {
+    height: 38px !important;
+    right : 8px !important;
+}
+
+/*-----  End of SELECT2 STYLES  ---------------------------------------------------------------------------------------*/
+
+/*================================================================================================================
+
+████████  █████  ██████  ███████
+   ██    ██   ██ ██   ██ ██
+   ██    ███████ ██████  ███████
+   ██    ██   ██ ██   ██      ██
+   ██    ██   ██ ██████  ███████
+
+==================================================================================================================*/
+
+.tabs {
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    justify-content: flex-start;
+    align-items    : space-around;
+}
+
+.tabs li {
+    flex-grow: 2;
+}
+
+.tabs a {
+    background-image: none;
+    line-height     : $global-lineheight;
+    text-align      : center;
+    width           : 100%;
+}
+
+.tabs-title > a {
+    font-size: 1em;
+}
+
+.tabs-title.is-active > a {
+    color: $red;
+}
+
+.tabs-title {
+    border-top   : none;
+    border-right : none;
+    border-bottom: 3px solid white;
+    border-left  : none;
+}
+
+.tabs-title.is-active {
+    font-weight  : 900;
+    font-style   : italic;
+    border-top   : 3px solid white;
+    border-right : 3px solid white;
+    border-bottom: none;
+    border-left  : 3px solid white;
+}
+
+/*-----  End of TABS  ---------------------------------------------------------------------------------------*/
+
+/*==================================================================================================================
+
+██████  ██   ██    ██ ██████
+██   ██ ██    ██  ██  ██   ██
+██████  ██     ████   ██████
+██      ██      ██    ██   ██
+██      ███████ ██    ██  
+
+=============================================================================================================*/
+.plyr button:after {
+    content    : "";
+    margin-left: 0;
+}
+
+.plyr__progress--seek {
+    z-index: 100 !important;
+}
+
+/*-----  End of PLYR  ---------------------------------------------------------------------------------------*/
+
+/* =============================================================================================
+
+ ██████  █████  ██████  ██████  ███████
+██      ██   ██ ██   ██ ██   ██ ██
+██      ███████ ██████  ██   ██ ███████
+██      ██   ██ ██   ██ ██   ██      ██
+ ██████ ██   ██ ██   ██ ██████  ███████
+
+============================================================================================= */
+
+.card {
+    flex-grow: 1;
+}
+
+// -----  End of CARDS  ---------------------------------------------
+
+/* =============================================================================================
+
+███    ███  █████   ██████  ███████ ██      ██       █████  ███    ██
+████  ████ ██   ██ ██       ██      ██      ██      ██   ██ ████   ██
+██ ████ ██ ███████ ██   ███ █████   ██      ██      ███████ ██ ██  ██
+██  ██  ██ ██   ██ ██    ██ ██      ██      ██      ██   ██ ██  ██ ██
+██      ██ ██   ██  ██████  ███████ ███████ ███████ ██   ██ ██   ████
+
+============================================================================================= */
+
+.menu > li > a.magellan-active {
+    background: $blue;
+    color     : white;
+}
+// -----  End of MAGELLAN  ---------------------------------------------
+
+/* =============================================================================================
+
+ ██████   ██████   ██████   ██████  ██      ███████     ███████ ███████  █████  ██████   ██████ ██   ██
+██       ██    ██ ██    ██ ██       ██      ██          ██      ██      ██   ██ ██   ██ ██      ██   ██
+██   ███ ██    ██ ██    ██ ██   ███ ██      █████       ███████ █████   ███████ ██████  ██      ███████
+██    ██ ██    ██ ██    ██ ██    ██ ██      ██               ██ ██      ██   ██ ██   ██ ██      ██   ██
+ ██████   ██████   ██████   ██████  ███████ ███████     ███████ ███████ ██   ██ ██   ██  ██████ ██   ██
+
+=============================================================================================*/
+
+#___gcse_0 *,
+#___gcse_1 * {
+    font-family    : inherit !important;
+    background     : none;
+    font-size      : 1rem;
+    font-family    : inherit !important;
+    // background     : none !important;
+    // border         : none !important;
+    height         : auto;
+    line-height    : inherit;
+    // font-style     : inherit !important;
+    text-decoration: inherit !important;
+    transition     : all 0.5s;
+}
+
+.gsc-wrapper {
+    // background: white !important;
+    // padding   : 2rem !important;
+}
+
+.cse .gsc-control-cse,
+.gsc-control-cse {
+    border: none !important;
+}
+
+.gsc-result-info {
+    font-size: 80% !important;
+}
+
+.gsc-orderby-container > * {
+    display: none;
+}
+
+.gsc-webResult.gsc-result {
+    border    : none !important;
+    padding   : 2rem 0 !important;
+    border-top: 1px solid $gray-light2 !important;
+    // width     : 100% !important;
+    margin    : 0 !important;
+}
+
+.gsc-adBlock {
+    margin     : 0 2rem !important;
+    padding-top: 2rem !important;
+    height     : auto !important;
+}
+
+.gsc-results {
+    padding: 1rem 2rem !important;
+    margin : 0 !important;
+    width  : 100% !important;
+}
+
+.gs-title {
+    font-weight: bold !important;
+    text-align : left;
+}
+
+.gsc-tabsArea {
+    border: none !important;
+}
+
+.gsc-tabHeader {
+    padding: 1rem 2rem !important;
+    margin : 0 !important;
+}
+
+.gsc-refinementsArea {
+    // background   : white !important;
+    margin-bottom: 0 !important;
+    margin-top   : -14px !important;
+    border-bottom: 2px solid white !important;
+}
+
+.gsc-above-wrapper-area {
+    // background: white !important;
+    padding: 0.5rem 2rem !important;
+    // border    : none !important;
+}
+
+.gcsc-branding {
+    padding: 1rem 2rem 0 !important;
+}
+
+.gcsc-branding-text {
+    font-size: 60% !important;
+
+}
+
+.gsc-tabhActive {
+    background : white !important;
+    color      : $red !important;
+    font-style : italic !important;
+    font-weight: bold !important;
+}
+
+.gcsc-branding-img-noclear {
+    top: -21px !important;
+}
+
+.gsc-selected-option-container {
+    // position: relative !important;
+}
+
+.gsc-option,
+.gsc-selected-option-container {
+    // padding: 0.5rem 1rem !important;
+}
+
+.gsc-url-top * {
+    font-size    : 80% !important;
+    font-style   : italic !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.gsc-imageResult-classic,
+.gsc-imageResult-column {
+    border: none !important;
+}
+
+.gs-imageResult div.gs-visibleUrl,
+.gs-webResult div.gs-visibleUrl {
+    font-size : 80% !important;
+    font-style: italic !important;
+
+}
+
+.gs-image-box {
+    height       : inherit !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.gs-imageResult .gs-text-box > * {
+    text-align: center !important;
+}
+
+.gsc-results .gsc-imageResult {
+    width: 33.3333% !important;
+}
+
+.gs-image-box.gs-web-image-box.gs-web-image-box-portrait,
+img.gs-image {
+    min-width: 200px !important;
+    height   : inherit !important;
+}
+
+img.gs-image {
+    max-width : 200px !important;
+    max-height: inherit !important;
+}
+
+.gsc-table-cell-snippet-close,
+.gsc-table-cell-snippet-open {
+    padding: 0 1rem !important;
+}
+
+.gsc-imageResult {
+    // background: white !important;
+    padding: 1rem 2rem !important;
+    // width     : 100% !important;
+    margin : 0 !important;
+}
+
+.gs-imageResult .gs-size {
+    font-size : 80% !important;
+    font-style: italic !important;
+}
+
+// ==============================  INPUT  ==============================
+.gsc-input {
+    box-shadow: none !important;
+    font-size : 4rem !important;
+    // padding   : 0.5rem 1rem !important;
+    // background-color: transparent !important;
+
+    border    : none !important;
+    margin    : 0 !important;
+
+}
+
+input.gsc-input {
+    padding            : 1rem;
+    background-position: 1rem center !important;
+    text-indent        : 3rem !important;
+    margin             : 0 !important;
+    width              : 100% !important;
+
+}
+
+input.gsc-input-focus {
+    text-indent: 20px !important;
+}
+
+.gsc-input-box {
+    border: none !important;
+    // padding: 0 !important;
+}
+
+.gsc-input-box-focus,
+.gsc-input-box-hover {
+    box-shadow: none !important;
+
+}
+
+.gsib_a {
+    // padding: 0.5rem 1rem !important;
+}
+
+// ==============================  SEARCH BUTTON  ==============================
+.gsc-search-button {
+    background: $red !important;
+    border    : none !important;
+    color     : transparent !important;
+    // text-align: center !important;
+}
+
+input.gsc-search-button {
+    width              : 40px !important;
+    padding            : 0 !important;
+    background         : $red url("../img/search.svg") no-repeat !important;
+    background-position: center center !important;
+    background-size    : contain !important;
+    height             : 40px !important;
+    margin             : 1rem !important;
+    cursor             : pointer !important;
+}
+
+// ==============================  PAGINATION  ==============================
+.gsc-results .gsc-cursor-box {
+    text-align: center !important;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+    background: white !important;
+    color     : $red !important;
+}
+
+.gsc-cursor-page {
+    padding   : 0.5rem 1rem;
+    transition: all 0.5s;
+}
+
+.gsc-cursor-page:hover {
+    background: white !important;
+
+}
+
+// -----  End of GOOGLE SEARCH  ---------------------------------------------

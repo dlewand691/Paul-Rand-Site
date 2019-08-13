@@ -1,0 +1,4079 @@
+$font-family-sans-serif: "IBM Plex Sans", Helvetica, sans-serif;
+$font-family-serif: "IBM Plex Serif", Georgia, serif;
+
+@charset 'utf-8';
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+@include foundation-global-styles;
+//@include foundation-grid;
+@include foundation-flex-grid;
+@include foundation-xy-grid-classes;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+// @include foundation-badge;
+// @include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-close-button;
+@include foundation-menu;
+// @include foundation-menu-icon;
+// @include foundation-drilldown-menu;
+// @include foundation-dropdown;
+// @include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+// @include foundation-label;
+// @include foundation-media-object;
+// @include foundation-off-canvas;
+// @include foundation-orbit;
+// @include foundation-pagination;
+// @include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+// @include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+// @include foundation-switch;
+// @include foundation-table;
+@include foundation-tabs;
+// @include foundation-thumbnail;
+// @include foundation-title-bar;
+// @include foundation-tooltip;
+// @include foundation-top-bar;
+@include foundation-visibility-classes;
+// @include foundation-float-classes;
+@include foundation-flex-classes;
+// @include foundation-prototype-classes;
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+body {
+    cursor: default !important;
+}
+/* =============================================================================================================
+██████  ███████ ██████  ██    ██  ██████   ██████  ██ ███    ██  ██████
+██   ██ ██      ██   ██ ██    ██ ██       ██       ██ ████   ██ ██
+██   ██ █████   ██████  ██    ██ ██   ███ ██   ███ ██ ██ ██  ██ ██   ███
+██   ██ ██      ██   ██ ██    ██ ██    ██ ██    ██ ██ ██  ██ ██ ██    ██
+██████  ███████ ██████   ██████   ██████   ██████  ██ ██   ████  ██████
+============================================================================================================= */
+* {
+    // background-color: rgba(0,255,0,0.1);
+}
+// Forgot the alt attribute
+
+img [alt=""],
+img:not([alt]) {
+    // border: .25rem dashed #c00;
+}
+
+img {
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.img-fit {
+    object-fit: contain;
+}
+/* ----  End of DEBUGGING  -------------------------------------------------------------------------- */
+
+/*=====================================
+
+███████  █████  ███████ ███████     ██ ███    ██  ██████ ██      ██    ██ ██████  ███████ ███████
+██      ██   ██ ██      ██          ██ ████   ██ ██      ██      ██    ██ ██   ██ ██      ██
+███████ ███████ ███████ ███████     ██ ██ ██  ██ ██      ██      ██    ██ ██   ██ █████   ███████
+     ██ ██   ██      ██      ██     ██ ██  ██ ██ ██      ██      ██    ██ ██   ██ ██           ██
+███████ ██   ██ ███████ ███████     ██ ██   ████  ██████ ███████  ██████  ██████  ███████ ███████
+
+=====================================*/
+@import "../node_modules/rrssb/scss/rrssb";
+@import "../node_modules/select2/src/scss/core";
+@import "../node_modules/share-this/style/scss/share-this";
+@import "../node_modules/aos/src/sass/aos";
+$font-prefix: '/node_modules/@ibm/plex';
+@import '../node_modules/@ibm/plex/scss/ibm-plex';
+/*-----  End of SASS INCLUDES  ------*/
+
+// ===================================================================================
+//  ██████ ███████ ███████     ██ ███    ██  ██████ ██      ██    ██ ██████  ███████ ███████
+// ██      ██      ██          ██ ████   ██ ██      ██      ██    ██ ██   ██ ██      ██
+// ██      ███████ ███████     ██ ██ ██  ██ ██      ██      ██    ██ ██   ██ █████   ███████
+// ██           ██      ██     ██ ██  ██ ██ ██      ██      ██    ██ ██   ██ ██           ██
+//  ██████ ███████ ███████     ██ ██   ████  ██████ ███████  ██████  ██████  ███████ ███████
+// ===================================================================================
+@import "../node_modules/selection-sharer/dist/selection-sharer";
+@import '../node_modules/swiper/dist/css/swiper.min.css';
+@import "../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css";
+// -----  End of CSS INCLUDES  -----------------------------------
+
+/* =============================================================================================================
+ ██████  ██████  ██       ██████  ██████  ███████
+██      ██    ██ ██      ██    ██ ██   ██ ██
+██      ██    ██ ██      ██    ██ ██████  ███████
+██      ██    ██ ██      ██    ██ ██   ██      ██
+ ██████  ██████  ███████  ██████  ██   ██ ███████
+============================================================================================================= */
+$blue: #1463A2;
+$brown: #B2846A;
+$green: #097E44;
+$gold: #E29D2E;
+$pink: #DD6A92;
+$red: #E34C37;
+$gray-dark1: #222222;
+$gray-dark2: #333333;
+$gray-medium: #8a8a8a;
+$gray-light1: #cacaca;
+$gray-light2: #e6e6e6;
+$gray-light3: #f9f9f9;
+$colors: (
+    "blue"     : $blue,
+    "brown"    : $brown,
+    "green"    : $green,
+    "gold"     : $gold,
+    "pink"     : $pink,
+    "red"      : $red,
+    "white"    : $white,
+    "black"    : $black,
+    gray-dark1 : $gray-dark1,
+    gray-dark2 : $gray-dark2,
+    gray-medium: $gray-medium,
+    gray-light1: $gray-light1,
+    gray-light2: $gray-light2,
+    gray-light3: $gray-light3
+);
+/* ----  End of COLORS  -------------------------------------------------------------------------- */
+/*============================================================================================
+
+ ██████  ██████   █████   ██████ ██ ████████ ██    ██
+██    ██ ██   ██ ██   ██ ██      ██    ██     ██  ██
+██    ██ ██████  ███████ ██      ██    ██      ████
+██    ██ ██      ██   ██ ██      ██    ██       ██
+ ██████  ██      ██   ██  ██████ ██    ██       ██
+
+============================================================================================*/
+$opacities: 11;
+@for $i from 1 through $opacities {
+    .opacity-#{$i} {
+        opacity: $i*.1 !important;
+    }
+}
+// -----  End of OPACITY  ---------------------------------------------
+/*=============================================================================================
+
+██    ██ ████████ ██ ██      ██ ████████ ██    ██
+██    ██    ██    ██ ██      ██    ██     ██  ██
+██    ██    ██    ██ ██      ██    ██      ████
+██    ██    ██    ██ ██      ██    ██       ██
+ ██████     ██    ██ ███████ ██    ██       ██
+
+================================================================================================*/
+.animsition {
+    // overflow: hidden;
+}
+@media screen and #{breakpoint(small only)} {
+    .sm-w100 {
+        width  : 100%;
+        display: inline-block;
+    }
+}
+
+.h100 {
+    height: 100% !important;
+}
+
+.h100vh {
+    height: 100vh !important;
+}
+
+.h80vh {
+    height: 80vh !important;
+}
+
+.inline {
+    display: inline !important;
+}
+
+.block {
+    display: block !important;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.inline-block {
+    display: inline-block !important;
+}
+
+.relative {
+    position: relative !important;
+}
+
+.absolute {
+    position: absolute !important;
+}
+
+iframe {
+    border: none;
+}
+$hover-glow: 0 0 2.5rem darken($white, 5%);
+
+figcaption {
+    @extend %footnote;
+    margin-left: 0.5rem;
+}
+
+figcaption + img {
+    bottom: 31px !important;
+}
+
+figcaption + .icon-zoom-boxed {
+    right: 0;
+}
+
+.question {
+    // @extend .medium-mln3;
+    @extend %sans-serif;
+    @extend %text-bold;
+}
+
+.panelCallout {
+    box-shadow: 0 0.25rem 2.5rem rgba($black, 0.1);
+    // padding   : 4rem;
+    background: $white;
+    margin    : 2rem 0;
+}
+
+.alert.callout {
+    border-color: $alert-color;
+}
+
+.bx-shadow1 {
+    box-shadow: 0 0.5rem 1rem rgba($black, 0.25);
+}
+
+/*-----  End of UTILITY  ------------------------------------------------------------------*/
+/* ==========================================================================================================
+██    ██ ██ ███████ ██ ██████  ██ ██      ██ ████████ ██ ███████ ███████
+██    ██ ██ ██      ██ ██   ██ ██ ██      ██    ██    ██ ██      ██
+██    ██ ██ ███████ ██ ██████  ██ ██      ██    ██    ██ █████   ███████
+ ██  ██  ██      ██ ██ ██   ██ ██ ██      ██    ██    ██ ██           ██
+  ████   ██ ███████ ██ ██████  ██ ███████ ██    ██    ██ ███████ ███████
+=========================================================================================================== */
+.hidden {
+    display: none;
+    // opacity: 0;
+}
+
+.shown {
+    display   : visible !important;
+    transition: all 0.5s ease-out;
+    opacity   : 1;
+}
+/* ----  End of VISIBILITIES  --------------------------------------------------------------------- */
+/* ==========================================================================================================
+██████   ██████  ███████ ██ ████████ ██  ██████  ███    ██ ███████
+██   ██ ██    ██ ██      ██    ██    ██ ██    ██ ████   ██ ██
+██████  ██    ██ ███████ ██    ██    ██ ██    ██ ██ ██  ██ ███████
+██      ██    ██      ██ ██    ██    ██ ██    ██ ██  ██ ██      ██
+██       ██████  ███████ ██    ██    ██  ██████  ██   ████ ███████
+=========================================================================================================== */
+@include breakpoint(medium up) {
+    .relative {
+        position: relative !important;
+    }
+
+    .absolute {
+        position: absolute !important;
+    }
+
+    .fixed {
+        position: fixed !important;
+    }
+
+    .top {
+        top: 0 !important;
+    }
+
+    .bottom {
+        bottom: 0 !important;
+    }
+}
+
+.overflow-scroll {
+    overflow: scroll;
+}
+
+.overflow-scroll-y {
+    overflow-y: scroll;
+}
+
+.block {
+    display: block !important;
+}
+
+.inline-block {
+    display: inline-block !important;
+}
+
+.flex {
+    display: flex !important;
+}
+/* ----  End of POSITIONS  --------------------------------------------------------------------- */
+/* ==========================================================================================================
+██     ██ ██ ██████  ████████ ██   ██
+██     ██ ██ ██   ██    ██    ██   ██
+██  █  ██ ██ ██   ██    ██    ███████
+██ ███ ██ ██ ██   ██    ██    ██   ██
+ ███ ███  ██ ██████     ██    ██   ██
+ ██████  ██    ██ ███████ ██████  ██████  ██ ██████  ███████ ███████
+██    ██ ██    ██ ██      ██   ██ ██   ██ ██ ██   ██ ██      ██
+██    ██ ██    ██ █████   ██████  ██████  ██ ██   ██ █████   ███████
+██    ██  ██  ██  ██      ██   ██ ██   ██ ██ ██   ██ ██           ██
+ ██████    ████   ███████ ██   ██ ██   ██ ██ ██████  ███████ ███████
+=========================================================================================================== */
+$widths: 20;
+@for $i from 1 through $widths {
+    .w#{$i*5} {
+        min-width: $i*5% !important;
+        max-width: $i*5% !important;
+    }
+}
+
+.w66 {
+    min-width: 66% !important;
+    max-width: 66% !important;
+}
+
+.w33 {
+    min-width: 33% !important;
+    max-width: 33% !important;
+}
+
+.w100px {
+    width: 100px;
+}
+/* ----  End of WIDTH OVERRIDES  --------------------------------------------------------------------- */
+/* ==========================================================================================================
+██   ██ ███████ ██  ██████  ██   ██ ████████
+██   ██ ██      ██ ██       ██   ██    ██
+███████ █████   ██ ██   ███ ███████    ██
+██   ██ ██      ██ ██    ██ ██   ██    ██
+██   ██ ███████ ██  ██████  ██   ██    ██
+ ██████  ██    ██ ███████ ██████  ██████  ██ ██████  ███████ ███████
+██    ██ ██    ██ ██      ██   ██ ██   ██ ██ ██   ██ ██      ██
+██    ██ ██    ██ █████   ██████  ██████  ██ ██   ██ █████   ███████
+██    ██  ██  ██  ██      ██   ██ ██   ██ ██ ██   ██ ██           ██
+ ██████    ████   ███████ ██   ██ ██   ██ ██ ██████  ███████ ███████
+=========================================================================================================== */
+$heights: 20;
+@for $i from 1 through $heights {
+    .height-#{$i} {
+        height: $i + px !important;
+    }
+}
+@for $i from 1 through $heights {
+    .h#{$i*5}vh {
+        height: $i*5 + vh !important;
+    }
+}
+
+.h100 {
+    height: 100%;
+}
+/* ============================================================================================
+
+███████      ██ ███    ██ ██████  ███████ ██   ██
+   ███       ██ ████   ██ ██   ██ ██       ██ ██
+  ███  █████ ██ ██ ██  ██ ██   ██ █████     ███
+ ███         ██ ██  ██ ██ ██   ██ ██       ██ ██
+███████      ██ ██   ████ ██████  ███████ ██   ██
+
+============================================================================================*/
+$zindexes: 11;
+@for $i from 0 through $zindexes {
+    .z#{$i} {
+        z-index: $i;
+    }
+}
+// -----  End of Z-INDEX  ---------------------------------------------
+/* ----  End of HEIGHT OVERRIDES  --------------------------------------------------------------------- */
+/* ============================================================================================
+███████ ██      ███████ ██   ██
+██      ██      ██       ██ ██
+█████   ██      █████     ███
+██      ██      ██       ██ ██
+██      ███████ ███████ ██   ██
+ ██████  ██████  ██ ██████
+██       ██   ██ ██ ██   ██
+██   ███ ██████  ██ ██   ██
+██    ██ ██   ██ ██ ██   ██
+ ██████  ██   ██ ██ ██████
+ █████  ██████  ██████  ██ ████████ ██  ██████  ███    ██ ███████
+██   ██ ██   ██ ██   ██ ██    ██    ██ ██    ██ ████   ██ ██
+███████ ██   ██ ██   ██ ██    ██    ██ ██    ██ ██ ██  ██ ███████
+██   ██ ██   ██ ██   ██ ██    ██    ██ ██    ██ ██  ██ ██      ██
+██   ██ ██████  ██████  ██    ██    ██  ██████  ██   ████ ███████
+============================================================================================ */
+@include breakpoint(small only) {
+    .small-align-top {
+        align-items: flex-start;
+    }
+}
+@include breakpoint(medium only) {
+    .medium-align-top {
+        align-items: flex-start;
+    }
+}
+
+.shrink {
+    flex: 0 0 auto !important;
+}
+
+.flex-wrap {
+    flex-wrap: wrap !important;
+}
+
+.flex-grow {
+    flex-grow: 1 !important;
+}
+@each $size in $breakpoint-classes {
+    @include breakpoint($size) {
+        @if $size != $-zf-zero-breakpoint {
+            .flex-container-#{$size} {
+                display: flex !important;
+            }
+        }
+    }
+}
+@each $size in $breakpoint-classes {
+    @include breakpoint($size) {
+        @if $size != $-zf-zero-breakpoint {
+            .#{$size}-shrink {
+                flex     : 0 0 auto;
+                max-width: 100%;
+            }
+        }
+    }
+}
+/* -----  End of FLEX GRID ADDITIONS  --------------------------------------------- */
+/* =============================================================================================
+██     ██ ██   ██ ██ ████████ ███████
+██     ██ ██   ██ ██    ██    ██
+██  █  ██ ███████ ██    ██    █████
+██ ███ ██ ██   ██ ██    ██    ██
+ ███ ███  ██   ██ ██    ██    ███████
+███████ ██████   █████   ██████ ███████
+██      ██   ██ ██   ██ ██      ██
+███████ ██████  ███████ ██      █████
+     ██ ██      ██   ██ ██      ██
+███████ ██      ██   ██  ██████ ███████
+================================================================================================== */
+$whitespace: 12;
+/* ==============================  MARGINS  ============================== */
+$margin-sides-all-positive: (m);
+$margin-sides-all-negative: (mn);
+$margin-sides-positive: (
+    mt: top,
+    mr: right,
+    mb: bottom,
+    ml: left
+);
+$margin-sides-negative: (
+    mtn: top,
+    mrn: right,
+    mbn: bottom,
+    mln: left
+);
+$margin-x-positive: (mx);
+$margin-y-positive: (my);
+$margin-x-negative: (mxn);
+$margin-y-negative: (myn);
+@each $size in $breakpoint-classes {
+    @include breakpoint($size) {
+        @for $i from 0 to $whitespace {
+            @each $side in $margin-sides-all-positive {
+                .#{$size}-#{$side}#{$i} {
+                    margin: #{$i}rem !important;
+                }
+            }
+            @each $side in $margin-sides-all-negative {
+                .#{$size}-#{$side}#{$i} {
+                    margin: -#{$i}rem !important;
+                }
+            }
+            @each $side, $sideFull in $margin-sides-positive {
+                .#{$size}-#{$side}#{$i} {
+                    margin-#{$sideFull}: #{$i}rem !important;
+                }
+            }
+            @each $side, $sideFull in $margin-sides-negative {
+                .#{$size}-#{$side}#{$i} {
+                    margin-#{$sideFull}: -#{$i}rem !important;
+                }
+            }
+            @each $side in $margin-x-positive {
+                .#{$size}-#{$side}#{$i} {
+                    margin-left : #{$i}rem !important;
+                    margin-right: #{$i}rem !important;
+                }
+            }
+            @each $side in $margin-x-negative {
+                .#{$size}-#{$side}#{$i} {
+                    margin-left : -#{$i}rem !important;
+                    margin-right: -#{$i}rem !important;
+                }
+            }
+            @each $side in $margin-y-positive {
+                .#{$size}-#{$side}#{$i} {
+                    margin-top   : #{$i}rem !important;
+                    margin-bottom: #{$i}rem !important;
+                }
+            }
+            @each $side in $margin-y-negative {
+                .#{$size}-#{$side}#{$i} {
+                    margin-top   : -#{$i}rem !important;
+                    margin-bottom: -#{$i}rem !important;
+                }
+            }
+        }
+    }
+}
+/* ============================  PADDINGS  ============================== */
+$padding-sides-all: (p);
+$padding-sides: (
+    pt: top,
+    pr: right,
+    pb: bottom,
+    pl: left
+);
+$padding-x: (px);
+$padding-y: (py);
+@each $size in $breakpoint-classes {
+    @include breakpoint($size) {
+        @for $i from 0 to $whitespace {
+            @each $side, $sideFull in $padding-sides {
+                .#{$size}-#{$side}#{$i} {
+                    padding-#{$sideFull}: #{$i}rem !important;
+                }
+            }
+            @each $side in $padding-sides-all {
+                .#{$size}-#{$side}#{$i} {
+                    padding: #{$i}rem !important;
+
+                }
+            }
+            @each $side in $padding-x {
+                .#{$size}-#{$side}#{$i} {
+                    padding-left : #{$i}rem !important;
+                    padding-right: #{$i}rem !important;
+                }
+            }
+            @each $side in $padding-y {
+                .#{$size}-#{$side}#{$i} {
+                    padding-top   : #{$i}rem !important;
+                    padding-bottom: #{$i}rem !important;
+                }
+            }
+        }
+    }
+}
+// ==============================  HALF SIZES  ==============================
+@each $size in $breakpoint-classes {
+    @include breakpoint($size) {
+        @each $side in $margin-sides-all-positive {
+            .#{$size}-#{$side}-half {
+                margin: 0.5rem;
+            }
+        }
+        @each $side, $sideHalf in $margin-sides-positive {
+            .#{$size}-#{$side}-half {
+                margin-#{$sideHalf}: 0.5rem;
+            }
+        }
+        @each $side, $sideHalf in $margin-x-positive {
+            .#{$size}-#{$side}-half {
+                margin-left : 0.5rem;
+                margin-right: 0.5rem;
+            }
+        }
+        @each $side, $sideHalf in $margin-y-positive {
+            .#{$size}-#{$side}-half {
+                margin-top   : 0.5rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+        @each $side in $padding-sides-all {
+            .#{$size}-#{$side}-half {
+                padding: 0.5rem;
+            }
+        }
+        @each $side, $sideHalf in $padding-sides {
+            .#{$size}-#{$side}-half {
+                padding-#{$sideHalf}: 0.5rem;
+            }
+        }
+        @each $side in $padding-x {
+            .#{$size}-#{$side}-half {
+                padding-left : 0.5rem;
+                padding-right: 0.5rem;
+            }
+        }
+        @each $side in $padding-y {
+            .#{$size}-#{$side}-half {
+                padding-top   : 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+        }
+    }
+}
+
+.mxn1-5 {
+    margin: 0 -1.5rem !important;
+}
+/* ----  End of WHITESPACES  -------------------------------------------------------------------------- */
+/* ===========================================================================================================
+██████   ██████  ██████  ██████  ███████ ██████  ███████
+██   ██ ██    ██ ██   ██ ██   ██ ██      ██   ██ ██
+██████  ██    ██ ██████  ██   ██ █████   ██████  ███████
+██   ██ ██    ██ ██   ██ ██   ██ ██      ██   ██      ██
+██████   ██████  ██   ██ ██████  ███████ ██   ██ ███████
+================================================================================================== */
+$border-side: (
+    "t": top,
+    "r": right,
+    "b": bottom,
+    "l": left
+);
+
+$border-width: 5;
+@each $size in $breakpoint-classes {
+    @include breakpoint($size) {
+        @for $i from 0 through $border-width {
+            .#{$size}-bd#{$i} {
+                border: $i + px solid $gray-light2 !important;
+            }
+        }
+        @for $i from 0 through $border-width {
+            @each $side-name, $side in $border-side {
+                @each $color-name, $color in $colors {
+                    .#{$size}-bd-#{$side-name}-#{$color-name}#{$i} {
+                        border-#{$side}: $i + px $color solid !important;
+                    }
+                }
+            }
+        }
+        @for $i from 0 through $border-width {
+            @each $side-name, $side in $border-side {
+                .#{$size}-bd-#{$side-name}#{$i} {
+                    border-#{$side}: $i + px $gray-light2 solid !important;
+                }
+            }
+        }
+        @for $i from 0 through $border-width {
+            @each $color-name, $color in $colors {
+                .#{$size}-bd-#{$color-name}#{$i} {
+                    border: $i + px solid $color !important;
+                }
+            }
+        }
+        @each $color-name, $color in $colors {
+            .#{$size}-bd-#{$color-name} {
+                border: 2px solid $color !important;
+            }
+        }
+        @for $i from 0 through $border-width {
+            .#{$size}-bd-gradient#{$i} {
+                border-width      : $i + px;
+                border-style      : solid;
+                border-image      : linear-gradient(to right, $blue 0%, $green 100%);
+                border-image-slice: 1;
+            }
+        }
+    }
+}
+/* ----  End of BORDERS  --------------------------------------------------------------------- */
+/* =============================================================================================================
+██████   █████   ██████ ██   ██  ██████  ██████   ██████  ██    ██ ███    ██ ██████  ███████
+██   ██ ██   ██ ██      ██  ██  ██       ██   ██ ██    ██ ██    ██ ████   ██ ██   ██ ██
+██████  ███████ ██      █████   ██   ███ ██████  ██    ██ ██    ██ ██ ██  ██ ██   ██ ███████
+██   ██ ██   ██ ██      ██  ██  ██    ██ ██   ██ ██    ██ ██    ██ ██  ██ ██ ██   ██      ██
+██████  ██   ██  ██████ ██   ██  ██████  ██   ██  ██████   ██████  ██   ████ ██████  ███████
+ ██████  ██████  ██       ██████  ██████
+██      ██    ██ ██      ██    ██ ██   ██
+██      ██    ██ ██      ██    ██ ██████
+██      ██    ██ ██      ██    ██ ██   ██
+ ██████  ██████  ███████  ██████  ██   ██
+============================================================================================================= */
+@each $color-name, $color in $colors {
+    .bg-#{$color-name} {
+        background-color: $color !important;
+    }
+}
+
+.bg-blue-dark,
+.bg-gray-dark1,
+.bg-gray-dark2,
+.bg-gray-medium,
+.bg-green-dark,
+.bg-orange-dark,
+.bg-purple,
+.bg-red {
+    color: $white !important;
+}
+
+.bg-transparent {
+    background: transparent !important;
+}
+/* ----  End of BACKGROUND COLOR ------------------------------------------------------------------------------ */
+/*============================================================================================
+
+██████   █████   ██████ ██   ██  ██████  ██████   ██████  ██    ██ ███    ██ ██████
+██   ██ ██   ██ ██      ██  ██  ██       ██   ██ ██    ██ ██    ██ ████   ██ ██   ██
+██████  ███████ ██      █████   ██   ███ ██████  ██    ██ ██    ██ ██ ██  ██ ██   ██
+██   ██ ██   ██ ██      ██  ██  ██    ██ ██   ██ ██    ██ ██    ██ ██  ██ ██ ██   ██
+██████  ██   ██  ██████ ██   ██  ██████  ██   ██  ██████   ██████  ██   ████ ██████
+████████ ██ ███    ██ ████████ ███████
+   ██    ██ ████   ██    ██    ██
+   ██    ██ ██ ██  ██    ██    ███████
+   ██    ██ ██  ██ ██    ██         ██
+   ██    ██ ██   ████    ██    ███████
+
+============================================================================================*/
+$background-tints: 5;
+@for $i from 1 through $background-tints {
+    @each $color-name, $color in $colors {
+        .bg-#{$color-name}-tint#{$i} {
+            background-color: lighten($color, percentage($i / 10));
+        }
+    }
+}
+// -----  End of BACKGROUND TINTS  ---------------------------------------------
+/*============================================================================================
+
+██████   █████   ██████ ██   ██  ██████  ██████   ██████  ██    ██ ███    ██ ██████
+██   ██ ██   ██ ██      ██  ██  ██       ██   ██ ██    ██ ██    ██ ████   ██ ██   ██
+██████  ███████ ██      █████   ██   ███ ██████  ██    ██ ██    ██ ██ ██  ██ ██   ██
+██   ██ ██   ██ ██      ██  ██  ██    ██ ██   ██ ██    ██ ██    ██ ██  ██ ██ ██   ██
+██████  ██   ██  ██████ ██   ██  ██████  ██   ██  ██████   ██████  ██   ████ ██████
+████████ ██ ███    ██ ████████ ███████
+   ██    ██ ████   ██    ██    ██
+   ██    ██ ██ ██  ██    ██    ███████
+   ██    ██ ██  ██ ██    ██         ██
+   ██    ██ ██   ████    ██    ███████
+
+============================================================================================*/
+$background-shades: 5;
+@for $i from 1 through $background-shades {
+    @each $color-name, $color in $colors {
+        .bg-#{$color-name}-shade#{$i} {
+            background-color: darken($color, percentage($i / 20));
+        }
+    }
+}
+// -----  End of BACKGROUND SHADES  ---------------------------------------------
+/*============================================================================================
+
+███████ ██ ██      ██          ██   ██ ███████ ██  ██████  ██   ██ ████████
+██      ██ ██      ██          ██   ██ ██      ██ ██       ██   ██    ██
+█████   ██ ██      ██          ███████ █████   ██ ██   ███ ███████    ██
+██      ██ ██      ██          ██   ██ ██      ██ ██    ██ ██   ██    ██
+██      ██ ███████ ███████     ██   ██ ███████ ██  ██████  ██   ██    ██
+
+============================================================================================*/
+@include breakpoint(medium up) {
+    .fill-height {
+        min-height    : 100vh;
+        display       : flex;
+        flex-direction: column;
+
+        > * {
+            // these are flex items
+            // flex: 1; same as:
+            // flex-grow: 1;
+            // flex-shrink: 1;
+            // flex-basis: auto;
+            // flex: 1 1 auto;
+            // flex           : 1;
+            // display        : flex;
+            // flex-direction : column;
+            // justify-content: center;
+            > div {
+                // also flex items 
+            }
+        }
+    }
+}; // -----  End of FILL HEIGHT  ---------------------------------------------
+/*==============================================================================================
+=			/*
+████████ ██    ██ ██████   ██████   ██████  ██████   █████  ██████  ██   ██ ██    ██
+   ██     ██  ██  ██   ██ ██    ██ ██       ██   ██ ██   ██ ██   ██ ██   ██  ██  ██
+   ██      ████   ██████  ██    ██ ██   ███ ██████  ███████ ██████  ███████   ████
+   ██       ██    ██      ██    ██ ██    ██ ██   ██ ██   ██ ██      ██   ██    ██
+   ██       ██    ██       ██████   ██████  ██   ██ ██   ██ ██      ██   ██    ██
+*/
+// =================================================================================================*/
+
+@mixin text-crop($line-height: 1.3, $top-adjustment: 0px, $bottom-adjustment: 0) {
+    // Configured in Step 1
+    $top-crop           : 13;
+    $bottom-crop        : 12;
+    $crop-font-size     : 51;
+    $crop-line-height   : 1.2;
+
+    // Apply values to calculate em-based margins that work with any font size
+    $dynamic-top-crop   : max(($top-crop + ($line-height - $crop-line-height) * ($crop-font-size / 2)), 0) / $crop-font-size;
+    $dynamic-bottom-crop: max(($bottom-crop + ($line-height - $crop-line-height) * ($crop-font-size / 2)), 0) / $crop-font-size;
+
+    // Mixin output
+    line-height         : $line-height;
+
+    &::after,
+    &::before {
+        content: '';
+        display: block;
+        height : 0;
+        width  : 0;
+    }
+
+    &::before {
+        margin-bottom: calc(-#{$dynamic-top-crop}em + #{$top-adjustment});
+    }
+
+    &::after {
+        margin-top: calc(-#{$dynamic-bottom-crop}em + #{$bottom-adjustment});
+    }
+}
+// Mixin generated at: http://text-crop.eightshapes.com/?typeface-selection=custom-font&typeface=Lato&custom-typeface-name=IBM%20Plex%20Serif&custom-typeface-url=http%3A%2F%2Fwww.paulrand.design%2Fhome%2Fdlewand691%2Fwww.paulrand.design%2Fnode_modules%2F%40ibm%2Fplex%2FIBM-Plex-Serif%2Ffonts%2Fsplit%2Fwoff2%2FIBMPlexSerif-Regular-Latin1.woff2&custom-typeface-weight=400&custom-typeface-style=normal&weight-and-style=100&size=51&line-height=1.2&top-crop=13&bottom-crop=12
+
+/* Usage Examples
+    .my-level-1-heading-class {
+        @include text-crop; // Will use default line height of 1.3
+        font-size: 48px;
+        margin: 0 0 0 16px;
+    }
+
+    .my-level-2-heading-class {
+        @include text-crop; // Will use default line height of 1.3
+        font-size: 32px; // Don't need to change any settings, will work with any font size automatically
+        margin: 0 0 0 16px;
+    }
+
+    .my-body-copy-class {
+        @include text-crop($line-height: 2); // Larger line height desired, set the line height via the mixin
+        font-size: 16px;
+    }
+
+    // Sometimes depending on the font-size, the rendering, the browser, etc. you may need to tweak the output. 
+    // You can adjust the top and bottom cropping when invoking the component using the $top-adjustment and $bottom-adjustment settings 
+    
+    .slight-adjustment-needed {
+        @include text-crop($top-adjustment: -0.5px, $bottom-adjustment: 2px);
+        font-size: 17px;
+    }
+
+    .dont-do-this {
+        @include text-crop;
+        font-size: 16px;
+        line-height: 3; // DO NOT set line height outside of the mixin, the mixin needs the line height value to calculate the crop correctly
+    }
+*/
+
+@mixin lhCrop($line-height, $capital-letter: 1) {
+    &::before {
+        content   : '';
+        display   : block;
+        height    : 0;
+        width     : 0;
+        margin-top: calc((#{$capital-letter} - #{$line-height}) * 0.5em);
+    }
+}
+
+.text-to-crop {
+    @include lhCrop(1.2, 0.75); //using Roboto font family
+}
+
+// RFS mixin.
+//
+// Automated font-resizing.
+//
+// See https://github.com/MartijnCuppens/rfs.
+// See configuration for options
+// Minimum fontsize.
+$rfs-base-font-size: 15px;
+$rfs-font-size-unit: px;
+
+// Breakpoint at where font-size starts decreasing if screen width is smaller.
+$rfs-breakpoint: 1400px;
+$rfs-breakpoint-unit: px;
+
+// Resize font-size based on screen height and width.
+$rfs-two-dimensional: false;
+
+// Generate enable or disable classes. Possibilities: false, "enable" or "disable"
+$rfs-class: "disable";
+
+@import "../node_modules/rfs/scss.scss";
+
+* {
+    // hyphens                      : auto;
+    font-variant-ligatures: common-ligatures;
+    font-feature-settings : "liga", "clig";
+    // font-variant-ligatures       : contextual;
+    // font-feature-settings        : "calt";
+    font-variant-ligatures: discretionary-ligatures;
+    font-feature-settings : "dlig";
+    // font-feature-settings        : "salt";
+    font-kerning          : normal;
+    font-feature-settings : "kern";
+    // font-variant-numeric         : lining-nums;
+    // font-feature-settings        : "lnum";
+    font-variant-numeric  : oldstyle-nums;
+    font-feature-settings : "onum";
+    // font-variant-numeric         : diagonal-fractions;
+    // font-feature-settings        : "frac";
+    // font-variant-numeric         : ordinal;
+    // font-feature-settings        : "ordn";
+    // font-feature-settings        : "ss01";
+    font-feature-settings : “ital”;
+}
+// $font-family-sans-serif  : "freight-sans-pro", Helvetica, sans-serif !default;
+// $font-family-serif       : "kepler-std", Georgia, serif !default;
+
+@each $size in $breakpoint-classes {
+    @include breakpoint($size) {
+        @each $color-name, $color in $colors {
+            @if $size != $-zf-zero-breakpoint {
+                .text-#{$color-name}-#{$size} {
+                    color: $color !important;
+                }
+            } @else {
+                .text-#{$color-name} {
+                    color: $color !important;
+                }
+            }
+        }
+    }
+}
+
+body,
+html {
+    // @include responsive-font-size(20);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-weight   : 200;
+    font-family   : $font-family-sans-serif;
+    font-style    : italic;
+    @include responsive-font-size(84);
+    @include breakpoint(small only) {
+        letter-spacing: -1px;
+    };
+    letter-spacing: -3px;
+    line-height   : 1;
+    // margin-bottom : 0;
+    // mix-blend-mode: overlay;
+}
+
+h2 {
+    @include responsive-font-size(63);
+    // letter-spacing: -2px;
+}
+
+h3 {
+    @include responsive-font-size(47);
+    line-height: 1;
+    // letter-spacing: -2px;
+}
+
+h4 {
+    @include responsive-font-size(36);
+    font-weight: 700;
+}
+
+h5 {
+    @include responsive-font-size(27);
+    font-weight: 700;
+    font-style : italic;
+}
+
+h6 {
+    @include responsive-font-size(20);
+    font-style: italic;
+}
+
+p {
+    @include responsive-font-size(20);
+    // line-height: 1.8;
+    // hyphens              : auto;
+    // hyphenate-limit-chars: 6 3 3;
+    // hyphenate-limit-lines: 2;
+    // hyphenate-limit-last : always;
+    // hyphenate-limit-zone : 8%;
+}
+
+.lh0 {
+    line-height: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+%serif,
+.serif {
+    font-family: $font-family-serif;
+}
+
+%sans-serif,
+.sans-serif {
+    font-family: $font-family-sans-serif;
+}
+
+%text-caps,
+.text-caps {
+    text-transform: uppercase;
+}
+
+%text-small-caps,
+.text-small-caps {
+    font-variant-caps    : small-caps;
+    font-feature-settings: "smcp";
+}
+
+%text-bold,
+.text-bold,
+b,
+strong {
+    font-weight: 700;
+}
+
+.text-heavy {
+    font-weight: 900;
+}
+
+%text-italic,
+.text-italic {
+    // font-family          : $font-family-serif;
+    font-style: italic;
+    // font-feature-settings: “ital”;
+}
+
+%text-normal,
+.text-normal {
+    font-style : normal !important;
+    font-weight: normal !important;
+}
+
+%text-normal-bold,
+.text-normal-bold {
+    font-style : normal !important;
+    font-weight: 700 !important;
+}
+
+%text-bold-italic,
+.text-bold-italic {
+    font-weight: 700;
+    font-style : italic;
+}
+
+%text-left,
+.text-left {
+    text-align: left !important;
+}
+
+%text-center,
+.text-center {
+    text-align: center !important;
+}
+
+%small,
+.small,
+small {
+    // font-size: $small-font-size;
+    // line-height: 60% !important;
+    @include responsive-font-size(15);
+}
+
+sup {
+    color                : $red;
+    @include responsive-font-size(11);
+    font-variant-position: super;
+    font-feature-settings: "sups";
+    font-variant-numeric : ordinal;
+    font-feature-settings: "ordn";
+    margin-left          : 3px;
+}
+
+sub {
+    font-variant-position: sub;
+    font-feature-settings: "subs";
+}
+// $blockquote-color: $red !default;
+
+.blockquote,
+blockquote {
+    @extend %sans-serif;
+    @extend %text-italic;
+    @extend %text-bold;
+    @include responsive-font-size(36);
+    // font-size   : 1.5em;
+    line-height : 1.5;
+    color       : $red;
+    border-width: 0;
+    margin      : 3rem 10% 3rem -10%;
+    padding     : 3rem;
+    position    : relative;
+}
+
+.blockquote::before,
+blockquote::before {
+    content   : "";
+    position  : absolute;
+    width     : 33%;
+    height    : 1px; // suit your need
+    top       : 0;
+    left      : 5%;
+    background: rgba($black, .3);
+}
+
+.blockquote::after,
+blockquote::after {
+    content   : "";
+    position  : absolute;
+    width     : 33%;
+    height    : 1px; // suit your need
+    top       : 100%;
+    left      : 5%;
+    background: rgba($black, .3);
+}
+
+blockquote q {
+    margin-left: -1rem !important;
+}
+
+blockquote p {
+    color: inherit;
+}
+
+%footnote,
+.footnote {
+    font-weight: 300;
+    @extend %small;
+    font-style : italic;
+    color      : lighten($black, 50%);
+}
+/*-----  End of TYPOGRAPHY  ------------------------------------------------------------------*/
+
+// =============================================================================================
+// ███████  ██████  ██████  ███    ███ ███████
+// ██      ██    ██ ██   ██ ████  ████ ██
+// █████   ██    ██ ██████  ██ ████ ██ ███████
+// ██      ██    ██ ██   ██ ██  ██  ██      ██
+// ██       ██████  ██   ██ ██      ██ ███████
+// =============================================================================================
+
+select {
+    // height         : 2.25rem;
+    padding-right   : 2rem;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='10' height='6' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpath d='M9.958 2.417L5.167 7.833c-.042.042-.084.084-.167.084s-.125-.042-.167-.084L.042 2.417C0 2.375 0 2.292 0 2.208a.23.23 0 0 1 .208-.125h9.584a.23.23 0 0 1 .208.125v.084c0 .041 0 .083-.042.125z' id='a'/%3E%3C/defs%3E%3Cg transform='translate(0 -2)' fill='none' fill-rule='evenodd'%3E%3Cmask id='b' fill='%23fff'%3E%3Cuse xlink:href='%23a'/%3E%3C/mask%3E%3Cuse fill='%23000' fill-rule='nonzero' xlink:href='%23a'/%3E%3Cg mask='url(%23b)' fill='%23999'%3E%3Cpath d='M0 0h10v10H0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") no-repeat right 1rem bottom 50%;
+    background-size : 15px;
+}
+
+// -----  End of FORMS  ---------------------------------------------
+
+/*=======================================================
+
+███████  █████  ███    ██  ██████ ██    ██     ██      ██ ███    ██ ██   ██ ███████
+██      ██   ██ ████   ██ ██       ██  ██      ██      ██ ████   ██ ██  ██  ██
+█████   ███████ ██ ██  ██ ██        ████       ██      ██ ██ ██  ██ █████   ███████
+██      ██   ██ ██  ██ ██ ██         ██        ██      ██ ██  ██ ██ ██  ██       ██
+██      ██   ██ ██   ████  ██████    ██        ███████ ██ ██   ████ ██   ██ ███████
+
+=======================================================*/
+a:active,
+a:focus,
+a:link,
+a:visited {
+    color     : $blue;
+    transition: all, 0.3s;
+}
+
+a:hover {
+    color: lighten($blue, 25%);
+}
+
+a {
+    text-decoration: none;
+}
+
+a[data-src="screenshot"] {
+    cursor: pointer;
+}
+
+[data-underline] {
+    box-shadow     : inset 0 -0.13em 0 0 #fff, inset 0 -.15em 0 0 rgba(255, 255, 255, 0), inset 0 -.15em 0 0 red;
+    text-decoration: none;
+    text-shadow    : 0.05em 0 #fff, -0.05em 0 #fff, 1.5px 0 #fff, -1.5px 0 #fff;
+}
+/*-----  End of FANCY LINKS  ------------------------------------------------------------------*/
+/* =============================================================================================================
+██████  ██ ██    ██ ██ ██████  ███████ ██████  ███████
+██   ██ ██ ██    ██ ██ ██   ██ ██      ██   ██ ██
+██   ██ ██ ██    ██ ██ ██   ██ █████   ██████  ███████
+██   ██ ██  ██  ██  ██ ██   ██ ██      ██   ██      ██
+██████  ██   ████   ██ ██████  ███████ ██   ██ ███████
+============================================================================================================= */
+hr {
+    margin   : 2rem auto;
+    max-width: 100%;
+}
+$hr-widths: 6;
+@for $i from 1 through $hr-widths {
+    .hr-#{$i} {
+        border-width: $i;
+    }
+}
+
+hr-light {
+    border-color: rgba(255,255,255,.35);
+}
+
+hr-dark {
+    border-color: rgba(0,0,0,.35);
+}
+@each $color-name, $color in $colors {
+    hr-#{$color-name} {
+        border-bottom-color: $color;
+    }
+}
+/* ----  End of DIVIDERS  -------------------------------------------------------------------------- */
+/*=============================================================================================
+
+██████  ██    ██ ████████ ████████  ██████  ███    ██ ███████
+██   ██ ██    ██    ██       ██    ██    ██ ████   ██ ██
+██████  ██    ██    ██       ██    ██    ██ ██ ██  ██ ███████
+██   ██ ██    ██    ██       ██    ██    ██ ██  ██ ██      ██
+██████   ██████     ██       ██     ██████  ██   ████ ███████
+
+================================================================================================*/
+.button,
+[type='submit'],
+[type='button'],
+button,
+ {
+    // text-shadow     : none !important;
+    // background-image: none !important;
+    font-family: $font-family-sans-serif;
+    font-weight: $global-weight-bold;
+    // 
+    // & a {
+    // 	background-image: none;
+    // }
+    &.arrow {
+        &::after {
+            content    : "\02192";
+            font-family: $font-family-sans-serif;
+            margin-left: 2rem;
+            float      : right;
+            font-weight: 400;
+        }
+    }
+
+    &.down-arrow {
+        &::after {
+            content: "\021E3";
+        }
+    }
+
+    &#Reset {
+        &::after {
+            content    : "\000D7";
+            // font-size  : 18px;
+            @include responsive-font-size(20);
+            line-height: 1;
+        }
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 2px white, 0 0 2px 4px lighten($blue, 30%);
+    }
+}
+
+a.arrow {
+    display    : inline-block;
+    font-family: $font-family-sans-serif;
+    font-weight: $global-weight-bold;
+
+    &::after {
+        content    : "\02192";
+        font-family: $font-family-sans-serif;
+        margin-left: 0.5rem;
+        float      : right;
+        font-weight: 400;
+    }
+}
+
+a.button {
+    // text-shadow: none;
+    color: white;
+}
+
+.button.blue,
+button.blue {
+    background: $blue;
+
+    &:hover {
+        background: lighten($blue, 15%);
+    }
+}
+
+.button.red,
+button.red {
+    background: $red;
+
+    &:hover {
+        background: darken($red, 15%);
+    }
+}
+
+.button.white,
+button.white {
+    background: $white;
+    color     : $blue;
+
+    &:hover {
+        background: darken($white, 10%);
+    }
+}
+
+.button.brown {
+    background: $brown;
+
+    &:hover {
+        background: darken($brown, 15%);
+    }
+}
+/*-----  End of BUTTONS  ------------------------------------------------------------------*/
+/*=============================================================================================
+
+██       ██████   ██████   ██████
+██      ██    ██ ██       ██    ██
+██      ██    ██ ██   ███ ██    ██
+██      ██    ██ ██    ██ ██    ██
+███████  ██████   ██████   ██████
+
+=================================================================================================*/
+.logo {
+    height    : 2.5rem;
+    position  : fixed;
+    top       : 0;
+    left      : 0;
+    z-index   : 11;
+    transition: all, 0.25s, easeOut;
+    // will-change: auto;
+    // transform          : translateZ(0);
+}
+
+.nameBlock {
+    background : $red;
+    // height     : 2.5rem;
+    margin     : 0;
+    color      : $white;
+    font-family: $font-family-sans-serif;
+}
+
+.name {
+    font-style   : italic;
+    font-weight  : 700;
+    // font-size    : 16px;
+    @include responsive-font-size(15);
+    margin-bottom: 0;
+    margin-top   : 7px;
+    line-height  : 10px;
+    height       : auto;
+}
+
+.dates {
+    font-weight: 500;
+    // font-size  : 12px;
+    @include responsive-font-size(11)
+}
+@media screen and #{breakpoint(small only)} {
+    .logo {
+        float: left;
+    }
+}
+@media screen and #{breakpoint(medium only)} {
+    .nameBlock {
+        width  : 140px;
+        padding: 0 0 0 55px;
+    }
+}
+@media screen and #{breakpoint(large up)} {
+    .logo {
+        height: 60px;
+    }
+
+    .nameBlock {
+        background: $red;
+        width     : 6rem;
+        height    : 60px;
+        padding   : 12px 1rem 0.5rem 0.5rem;
+        position  : fixed;
+        top       : 0;
+        left      : 60px;
+        // will-change: auto;
+        // transform          : translateZ(0);
+
+        .name {
+            // font-size  : 18px;
+            @include responsive-font-size(18);
+            margin-top : 4px;
+            line-height: 14px;
+        }
+    }
+}
+/*-----  End of LOGO  ------------------------------------------------------------------*/
+/*=============================================================================================
+
+███    ██  █████  ██    ██
+████   ██ ██   ██ ██    ██
+██ ██  ██ ███████ ██    ██
+██  ██ ██ ██   ██  ██  ██
+██   ████ ██   ██   ████
+
+=================================================================================================*/
+.nav-life-off,
+.nav-resources-off,
+.nav-work-off,
+.nav-writing-off {
+    display: none;
+}
+
+.nav-life-on,
+.nav-resources-on,
+.nav-work-on,
+.nav-writing-on {
+    h3 {
+        color: $white;
+    }
+
+    label {
+        text-transform: uppercase;
+        font-style    : italic;
+        color         : lighten($black, 50%);
+    }
+    @include breakpoint(large up) {
+        height: 60px;
+
+        h3 {
+            color: $black;
+        }
+    }
+}
+/*============================================
+
+███████ ███████  ██████  ██████  ███    ██ ██████   █████  ██████  ██    ██
+██      ██      ██      ██    ██ ████   ██ ██   ██ ██   ██ ██   ██  ██  ██
+███████ █████   ██      ██    ██ ██ ██  ██ ██   ██ ███████ ██████    ████
+     ██ ██      ██      ██    ██ ██  ██ ██ ██   ██ ██   ██ ██   ██    ██
+███████ ███████  ██████  ██████  ██   ████ ██████  ██   ██ ██   ██    ██
+
+███    ██  █████  ██    ██ ██  ██████   █████  ████████ ██  ██████  ███    ██
+████   ██ ██   ██ ██    ██ ██ ██       ██   ██    ██    ██ ██    ██ ████   ██
+██ ██  ██ ███████ ██    ██ ██ ██   ███ ███████    ██    ██ ██    ██ ██ ██  ██
+██  ██ ██ ██   ██  ██  ██  ██ ██    ██ ██   ██    ██    ██ ██    ██ ██  ██ ██
+██   ████ ██   ██   ████   ██  ██████  ██   ██    ██    ██  ██████  ██   ████
+
+============================================*/
+header {
+    position           : fixed;
+    z-index            : 10;
+    height             : 2.5rem;
+    width              : 100%;
+    top                : 0;
+    left               : 0;
+    background-color   : $red;
+    margin-bottom      : 4rem;
+    // will-change        : transform;
+    /* Force Hardware Acceleration */
+    transform          : translateZ(0);
+    backface-visibility: hidden;
+    transition         : transform(0.3s) ease;
+    @include responsive-font-size(20);
+
+    &.nav-is-visible {
+        transform: translateX(-75%);
+    }
+
+    &::before {
+        /* never visible - this is used in jQuery to check the current MQ */
+        display: none;
+        content: "mobile";
+    }
+    @include breakpoint(large) {
+        height: 60px;
+
+        &.nav-revealed {
+            transform : translateY(-70px);
+            box-shadow: 0 0.25rem 2.5rem rgba($black, 0.1);
+        }
+
+        &::before {
+            content: "desktop";
+        }
+    }
+}
+/*==========  DYNAMICALLY ADDED CLASSES TO TRIGGER SCROLL HIDE/SHOW ANIMATIONS  ==========*/
+.nav-up {
+    transform  : translateY(-70px);
+    position   : fixed;
+    will-change: transform;
+    transition : all 200ms ease-out 0.5s;
+    box-shadow : 0 0 0 rgba($black, 0.0);
+}
+
+.nav-down {
+    box-shadow: 0 0.25rem 2.5rem rgba($black, 0.1);
+    transform : translateY(0px);
+    transition: all 200ms ease-out;
+}
+
+.cd-logo {
+    display            : inline-block;
+    height             : 100%;
+    /* remove jump on iOS devices - when we fire the navigation */
+    transform          : translateZ(0);
+    backface-visibility: hidden;
+
+    img {
+        display  : block;
+        max-width: 100%;
+    }
+    @include breakpoint(large) {
+        position: absolute;
+        z-index : 2;
+    }
+}
+/*==========  NAV TOGGLE BLOCK  ==========*/
+.cd-nav-trigger {
+    display         : block;
+    position        : absolute;
+    right           : 0;
+    top             : 0;
+    height          : 100%;
+    width           : 2.5rem;
+    /* hide text */
+    overflow        : hidden;
+    white-space     : nowrap;
+    color           : transparent;
+    text-shadow     : none;
+    background-image: none;
+    /*==========  hamburger icon created in CSS  ==========*/
+    span {
+        position        : absolute;
+        height          : 4px;
+        width           : 1.5rem;
+        top             : 50%;
+        margin-top      : -4px;
+        left            : 50%;
+        margin-left     : -1rem;
+        background-color: $white;
+        transition      : background-color 0.3s 0.3s ease;
+        /*==========  upper and lower lines of the menu icon  ==========*/
+        &::after,
+        &::before {
+            content         : "";
+            position        : absolute;
+            width           : 100%;
+            height          : 100%;
+            background-color: $white;
+            /*==========  Force Hardware Acceleration  ==========*/
+            transform       : translateZ(0);
+            // backface-visibility: hidden;
+            transition      : transform 0.3s 0.3s ease;
+        }
+
+        &::before {
+            transform: translateY(-8px);
+        }
+
+        &::after {
+            transform: translateY(8px);
+        }
+    }
+
+    .nav-is-visible & span {
+        background-color: transparent;
+
+        &::before {
+            transform: translateY(0) rotate(-45deg);
+        }
+
+        &::after {
+            transform: translateY(0) rotate(45deg);
+        }
+    }
+    @include breakpoint(large) {
+        display: none;
+    }
+}
+/*==============================================================================================
+
+███    ███  █████  ██ ███    ██     ███    ██  █████  ██    ██     ██████   ██████  ██████  ██    ██
+████  ████ ██   ██ ██ ████   ██     ████   ██ ██   ██ ██    ██     ██   ██ ██    ██ ██   ██  ██  ██
+██ ████ ██ ███████ ██ ██ ██  ██     ██ ██  ██ ███████ ██    ██     ██████  ██    ██ ██   ██   ████
+██  ██  ██ ██   ██ ██ ██  ██ ██     ██  ██ ██ ██   ██  ██  ██      ██   ██ ██    ██ ██   ██    ██
+██      ██ ██   ██ ██ ██   ████     ██   ████ ██   ██   ████       ██████   ██████  ██████     ██
+
+==============================================================================================*/
+.cd-main-nav {
+    position                  : fixed;
+    z-index                   : 1;
+    top                       : 0;
+    right                     : 0;
+    width                     : 75%;
+    height                    : 100vh;
+    // padding-top               : 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    visibility                : hidden;
+    background                : $black;
+    // will-change               : transform;
+    // transform          : translateZ(0);
+    transition                : visibility 0s 0.3s ease;
+    overflow                  : hidden;
+    padding                   : 0 1rem;
+
+    a:not(.button) {
+        // display         : block;
+        font-family: $font-family-sans-serif;
+        padding    : 0.3rem 0;
+        color      : $white;
+        transition : transform 0.3s, opacity 0.3s ease;
+    }
+
+    h5 {
+        color: white;
+    }
+
+    ul {
+        margin: 0 !important;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    li ul {
+        position       : absolute;
+        top            : 0;
+        left           : 0;
+        width          : 100%;
+        list-style-type: none;
+        margin         : 0;
+        // padding        : 0 1em;
+        background     : $black;
+        height         : 100%;
+        transition     : transform 0.3s ease;
+        transform      : translateX(100%);
+    }
+
+    &.nav-is-visible {
+        visibility: visible;
+        transition: visibility 0.3s 0s ease;
+
+        a {
+            display: block;
+        }
+    }
+
+    &.moves-out > li > a {
+        /* push the navigation items to the left - and lower down opacity - when secondary nav slides in */
+        transform: translateX(-100%);
+        opacity  : 0;
+    }
+
+    &.moves-out > li > ul {
+        transform: translateX(0);
+    }
+
+    select {
+        margin       : 0;
+        font-family  : $font-family-sans-serif;
+        border       : 2px solid $black;
+        text-overflow: ellipsis;
+    }
+    /*==========  Arrow at the bottom of the off-canvas nav  ==========*/
+    .cd-subnav-trigger,
+    .go-back a {
+        position  : relative;
+        color     : $white;
+        background: $red;
+        padding   : 0.5rem 0.8rem;
+
+        &::after,
+        &::before {
+            /* arrow icon in CSS */
+            content            : "";
+            position           : absolute;
+            top                : 17px;
+            display            : inline-block;
+            height             : 2px;
+            width              : 0.5rem;
+            background         : $white;
+            backface-visibility: hidden;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+
+    .cd-subnav-trigger::after,
+    .cd-subnav-trigger::before {
+        /* arrow goes on the right side - children navigation */
+        right           : 0.75rem;
+        transform-origin: 9px 50%;
+    }
+    /*==========  Arrow at the top of the off-canvas menu  ==========*/
+    .go-back {
+        padding: 0 0.5rem;
+    }
+
+    .go-back a {
+        // padding       : 16px 0 0 1rem;
+        font-family   : $font-family-sans-serif;
+        text-transform: uppercase;
+        margin-bottom : 1rem;
+        background    : $black;
+        position      : relative;
+
+        &::after,
+        &::before {
+            /* arrow goes on the left side - go back button */
+            background      : $red;
+            left            : 0;
+            top             : 1.2rem;
+            transform-origin: 1px 50%;
+        }
+    }
+
+    .placeholder {
+        /* never visible or clickable- it is used to take up the same space as the .cd-subnav-trigger */
+        display: none;
+    }
+    @include breakpoint(large) {
+        position  : fixed;
+        visibility: visible;
+        width     : 100%;
+        height    : 60px;
+        padding   : 0 0 0 195px;
+        background: transparent;
+        text-align: left;
+        box-shadow: none;
+        // will-change: transform;
+        // transform          : translateZ(0);
+
+        a {
+            // display: initial;
+            // padding: initial;
+        }
+
+        h5 {
+            color: $black;
+        }
+
+        li {
+            height: inherit;
+        }
+        /*==========  SUB NAV RIGHT SECTION  ==========*/
+        .go-back {
+            display: none;
+        }
+        /*==========  X and DOWN ARROW BLOCK  ==========*/
+        .cd-subnav-trigger {
+            transition   : $button-transition !important;
+            z-index      : 1;
+            border-radius: $global-radius;
+            background   : darken($red, 20%);
+            position     : absolute;
+            right        : 10px;
+            top          : 0.5rem;
+            padding      : 1em !important;
+
+            &:hover {
+                background: darken($red, 35%);
+                transition: $button-transition !important;
+            }
+            /*==========  DOWN ARROW- RIGHT SIDE  ==========*/
+            &::after,
+            &::before {
+                width           : 12px;
+                top             : 19px;
+                right           : 10px;
+                background-color: $white;
+                /* change transform-origin to rotate the arrow */
+                transform-origin: 50% 50%;
+                transition      : transform 0.3s, width 0.3s, right 0.3s ease;
+            }
+            /*==========  DOWN ARROW- LEFT SIDE  ==========*/
+            &::before {
+                right: 17px;
+            }
+        }
+
+        .cd-subnav-trigger,
+        .placeholder {
+            padding: 1em;
+        }
+
+        li ul {
+            height          : 60px;
+            background-color: $white;
+            margin          : 0;
+            padding         : 0 0 0 185px;
+            transform       : translateY(-105px);
+            transition      : transform 0.3s 0.2s ease;
+        }
+
+        li ul li {
+            opacity     : 0;
+            padding-left: 1em;
+            transform   : translateY(-1rem);
+            transition  : transform 0.3s 0s, opacity 0.3s 0s ease;
+            height      : inherit;
+        }
+
+        .placeholder {
+            /* never visible or clickable- it is used to take up the same space as the .cd-subnav-trigger */
+            display      : block;
+            visibility   : hidden;
+            opacity      : 0;
+            pointer-event: none;
+        }
+
+        &.moves-out > li > a {
+            transform: translateX(0);
+            opacity  : 1;
+        }
+
+        &.moves-out > li > ul {
+            transition: transform 0.3s ease;
+            transform : translateY(0);
+        }
+
+        &.moves-out > li ul li {
+            opacity   : 1;
+            transform : translateY(0);
+            transition: transform 0.3s 0.2s, opacity 0.3s 0.2s ease;
+        }
+
+        &.moves-out .cd-subnav-trigger {
+            ///*==========   MENU "X" POSITION  ==========*/
+            &::after,
+            &::before {
+                width: 20px;
+                right: 10px;
+                top  : 19px;
+            }
+
+            &::before {
+                transform: rotate(225deg);
+            }
+
+            &::after {
+                transform: rotate(135deg);
+            }
+        }
+    }
+}
+
+.cd-main-content::before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    display: none;
+    // content: 'mobile';
+    @include breakpoint(large) {
+        // content: 'desktop';
+    }
+}
+/*==========  BODY AREA  ==========*/
+.cd-main-content {
+    position        : relative;
+    z-index         : 4;
+    min-height      : 100vh;
+    padding-top     : 4rem;
+    padding-bottom  : 1rem;
+    overflow        : hidden;
+    transition      : transform 0.3s ease;
+    background-color: $body-background;
+    // transform       : translate3d(0, 0, 0);
+    // contain         : content;
+    // will-change     : auto;
+    // transform          : translateZ(0);
+
+    &.nav-is-visible {
+        transform: translateX(-75%);
+    }
+    @include breakpoint(medium) {
+        padding-top: 5rem;
+        // margin-bottom: 420px;
+
+        &.nav-is-visible {
+            transform: translateX(-75%);
+        }
+    }
+    @include breakpoint(large) {
+        padding-top: 6rem;
+        // margin-bottom: 420px;
+
+        &.nav-is-visible {
+            transform: translateX(0);
+        }
+    }
+}
+
+.no-js .cd-nav-trigger,
+.no-js .cd-subnav-trigger {
+    display: none;
+}
+
+.no-js header {
+    position: relative;
+    height  : auto;
+}
+
+.no-js .cd-logo img {
+    margin-bottom: 14px;
+}
+
+.no-js .cd-main-nav {
+    position  : static;
+    width     : 100%;
+    height    : auto;
+    visibility: visible;
+    overflow  : visible;
+
+    li {
+        display: inline-block;
+
+        &:last-child {
+            display: block;
+        }
+    }
+
+    .go-back {
+        display: none;
+    }
+
+    li ul {
+        position : static;
+        width    : 100%;
+        transform: translateX(0);
+    }
+    @include breakpoint(large) {
+        height: 60px;
+
+        li ul {
+            position: absolute;
+            top     : 60px;
+        }
+
+        li ul li {
+            transform: translateY(0);
+            opacity  : 1;
+
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+}
+
+.no-js .cd-main-content {
+    padding-top: 0;
+    @include breakpoint(large) {
+        padding-top: 60px;
+    }
+}
+/*-----  End of SECONDARY NAVIGATION  ------*/
+/*-----  End of NAV  ------------------------------------------------------------------*/
+/*==========================================================================================
+
+███████ ██ ███    ██ ██████      ██████   ██████  ██     ██
+██      ██ ████   ██ ██   ██     ██   ██ ██    ██ ██     ██
+█████   ██ ██ ██  ██ ██   ██     ██████  ██    ██ ██  █  ██
+██      ██ ██  ██ ██ ██   ██     ██   ██ ██    ██ ██ ███ ██
+██      ██ ██   ████ ██████      ██   ██  ██████   ███ ███
+
+=============================================================================================*/
+// .findRow {
+// 	margin-top: 4rem;
+// 	border-top: 2px solid $black;
+// 	// padding   : 60px 0 0;
+// }
+/*-----  End of FIND ROW  ------------------------------------------------------------------*/
+/*==========================================================================================
+
+███    ██ ███████ ██   ██ ████████     ██████   ██████  ██     ██
+████   ██ ██       ██ ██     ██        ██   ██ ██    ██ ██     ██
+██ ██  ██ █████     ███      ██        ██████  ██    ██ ██  █  ██
+██  ██ ██ ██       ██ ██     ██        ██   ██ ██    ██ ██ ███ ██
+██   ████ ███████ ██   ██    ██        ██   ██  ██████   ███ ███
+
+=============================================================================================*/
+// .nextRow {
+// 	background: $black;
+// 	margin    : 3rem 0;
+// 	height    : 17px;
+// 
+// 	p {
+// 		margin        : -3px 0 0;
+// 		padding       : 0 .5rem;
+// 		background    : $white;
+// 		color         : $black;
+// 		font-size     : 14px;
+// 		line-height   : $global-lineheight;
+// 		font-style    : normal;
+// 		font-weight   : 700;
+// 		text-transform: uppercase;
+// 	}
+// }
+/*-----  End of NEXT ROW  ------------------------------------------------------------------*/
+/*==========================================================================================
+
+██████  ██    ██ ██████   ██████ ██   ██  █████  ███████ ███████     ██      ██ ███    ██ ██   ██ ███████
+██   ██ ██    ██ ██   ██ ██      ██   ██ ██   ██ ██      ██          ██      ██ ████   ██ ██  ██  ██
+██████  ██    ██ ██████  ██      ███████ ███████ ███████ █████       ██      ██ ██ ██  ██ █████   ███████
+██      ██    ██ ██   ██ ██      ██   ██ ██   ██      ██ ██          ██      ██ ██  ██ ██ ██  ██       ██
+██       ██████  ██   ██  ██████ ██   ██ ██   ██ ███████ ███████     ███████ ██ ██   ████ ██   ██ ███████
+
+=============================================================================================*/
+// .publishedIn,
+// .purchaseLinks {
+// 	.button {
+// 		margin-right : .5rem;
+// 		margin-bottom: .5rem;
+// 		text-align   : left;
+// 	}
+// 
+// 	.button:last-of-type {
+// 		margin-right : 0;
+// 		margin-bottom: 0;
+// 	}
+// }
+// 
+// .purchaseButtons {
+// 	.button,
+// 	button {
+// 		width    : 100%;
+// 		min-width: 150px;
+// 		max-width: 250px;
+// 	}
+// }
+/*-----  End of PURCHASE LINKS  ------------------------------------------------------------------*/
+/*==========================================================================================
+
+██    ██ ███████ ██████  ████████ ██  ██████  █████  ██          ██████  ██ ██    ██ ██ ██████  ███████ ██████
+██    ██ ██      ██   ██    ██    ██ ██      ██   ██ ██          ██   ██ ██ ██    ██ ██ ██   ██ ██      ██   ██
+██    ██ █████   ██████     ██    ██ ██      ███████ ██          ██   ██ ██ ██    ██ ██ ██   ██ █████   ██████
+ ██  ██  ██      ██   ██    ██    ██ ██      ██   ██ ██          ██   ██ ██  ██  ██  ██ ██   ██ ██      ██   ██
+  ████   ███████ ██   ██    ██    ██  ██████ ██   ██ ███████     ██████  ██   ████   ██ ██████  ███████ ██   ██
+
+=============================================================================================*/
+.vertical-divider {
+    position      : absolute;
+    z-index       : 10;
+    top           : 50%;
+    left          : 50%;
+    margin        : 0;
+    padding       : 0;
+    width         : auto;
+    height        : 50%;
+    line-height   : 0;
+    text-align    : center;
+    text-transform: uppercase;
+    transform     : translateX(-50%);
+}
+
+.vertical-divider:after,
+.vertical-divider:before {
+    position    : absolute;
+    left        : 50%;
+    content     : "";
+    z-index     : 9;
+    border-left : 1px solid darken($white, 10%);
+    border-right: 1px solid darken($white, 10%);
+    width       : 0;
+    height      : calc(0px + 6rem);
+    margin      : 1rem 0;
+}
+
+.vertical-divider:before {
+    // top: -100%;
+}
+
+.vertical-divider:after {
+    top   : auto;
+    bottom: 0;
+}
+/*-----  End of VERTICAL DIVIDER  ------------------------------------------------------------------*/
+/*============================================================================================
+
+██████   ██████  ██   ██     ███████ ██   ██  █████  ██████   ██████  ██     ██
+██   ██ ██    ██  ██ ██      ██      ██   ██ ██   ██ ██   ██ ██    ██ ██     ██
+██████  ██    ██   ███       ███████ ███████ ███████ ██   ██ ██    ██ ██  █  ██
+██   ██ ██    ██  ██ ██           ██ ██   ██ ██   ██ ██   ██ ██    ██ ██ ███ ██
+██████   ██████  ██   ██     ███████ ██   ██ ██   ██ ██████   ██████   ███ ███
+██   ██  ██████  ██    ██ ███████ ██████
+██   ██ ██    ██ ██    ██ ██      ██   ██
+███████ ██    ██ ██    ██ █████   ██████
+██   ██ ██    ██  ██  ██  ██      ██   ██
+██   ██  ██████    ████   ███████ ██   ██
+
+============================================================================================*/
+@mixin box-shadow-hover() {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    &:hover {
+        box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+        transform : scale(1.01);
+    }
+}
+
+.box-shadow-hover {
+    @include box-shadow-hover();
+}
+// -----  End of BOX SHADOW HOVER  ---------------------------------------------
+/*==========================================================================================
+
+ ██████   █████  ██      ██      ███████ ██████  ██    ██     ██      ██  ██████  ██   ██ ████████
+██       ██   ██ ██      ██      ██      ██   ██  ██  ██      ██      ██ ██       ██   ██    ██
+██   ███ ███████ ██      ██      █████   ██████    ████       ██      ██ ██   ███ ███████    ██
+██    ██ ██   ██ ██      ██      ██      ██   ██    ██        ██      ██ ██    ██ ██   ██    ██
+ ██████  ██   ██ ███████ ███████ ███████ ██   ██    ██        ███████ ██  ██████  ██   ██    ██
+
+=============================================================================================*/
+// .galleryLight {
+//     @include box-shadow-hover();
+// }
+// @include breakpoint(small only) {
+//     .galleryLight {
+//         margin-bottom: 3rem;
+//         background   : $white;
+//         float        : left;
+//         text-align   : center;
+// 
+//         img {
+//             margin-top: 0;
+//         }
+// 
+//         .textLabel {
+//             padding   : 1.5rem;
+//             background: $white;
+//         }
+//     }
+// }
+// @include breakpoint(medium only) {
+//     .galleryLight {
+//         text-align: left;
+// 
+//         img {
+//             // margin-top: 3rem;
+//         }
+//     }
+// }
+// @include breakpoint(large up) {
+//     .galleryLight {
+//         margin-bottom: 3rem;
+//         background   : $white;
+//         text-align   : left;
+// 
+//         img {
+//             margin-top: 0;
+//         }
+// 
+//         .textLabel {
+//             padding   : 1.5rem;
+//             background: $white;
+//         }
+//     }
+// }
+/*-----  End of GALLERY LIGHT  ------------------------------------------------------------------*/
+/*===========================================================================================
+
+ ██████   █████  ██      ██      ███████ ██████  ██    ██     ███    ███ ███████ ██████  ██ ██    ██ ███    ███
+██       ██   ██ ██      ██      ██      ██   ██  ██  ██      ████  ████ ██      ██   ██ ██ ██    ██ ████  ████
+██   ███ ███████ ██      ██      █████   ██████    ████       ██ ████ ██ █████   ██   ██ ██ ██    ██ ██ ████ ██
+██    ██ ██   ██ ██      ██      ██      ██   ██    ██        ██  ██  ██ ██      ██   ██ ██ ██    ██ ██  ██  ██
+ ██████  ██   ██ ███████ ███████ ███████ ██   ██    ██        ██      ██ ███████ ██████  ██  ██████  ██      ██
+
+==============================================================================================*/
+.galleryCardImage {
+    @include box-shadow-hover();
+
+    img {
+        width     : 100%;
+        object-fit: contain;
+    }
+    @include breakpoint(small) {
+        img {
+            height: 200px;
+        }
+    }
+    @include breakpoint(medium) {
+        img {
+            height: 350px;
+        }
+    }
+    @include breakpoint(large) {
+        img {
+            height: 500px;
+        }
+    }
+}
+/*-----  End of GALLERY MEDIUM  ------------------------------------------------------------------*/
+/*==========================================================================================
+
+ ██████   █████  ██      ██      ███████ ██████  ██    ██
+██       ██   ██ ██      ██      ██      ██   ██  ██  ██
+██   ███ ███████ ██      ██      █████   ██████    ████
+██    ██ ██   ██ ██      ██      ██      ██   ██    ██
+ ██████  ██   ██ ███████ ███████ ███████ ██   ██    ██
+ 
+██   ██ ███████  █████  ██    ██ ██    ██
+██   ██ ██      ██   ██ ██    ██  ██  ██
+███████ █████   ███████ ██    ██   ████
+██   ██ ██      ██   ██  ██  ██     ██
+██   ██ ███████ ██   ██   ████      ██
+
+=============================================================================================*/
+.galleryHeavy img {
+    // @include box-shadow-hover();
+}
+
+img[src$=".svg"] {
+    box-shadow: none !important;
+    border    : none !important;
+}
+/*-----  End of GALLERY HEAVY  ------------------------------------------------------------------*/
+/*=============================================================================================
+
+ █████  ██████  ████████ ██  ██████ ██      ███████
+██   ██ ██   ██    ██    ██ ██      ██      ██
+███████ ██████     ██    ██ ██      ██      █████
+██   ██ ██   ██    ██    ██ ██      ██      ██
+██   ██ ██   ██    ██    ██  ██████ ███████ ███████
+
+=============================================================================================*/
+.sidenoteLeft + .sidenoteLeft,
+.sidenoteRight + .sidenoteRight {
+    // margin-top: 4rem;
+    // clear: both;
+}
+
+.sidenoteLeft,
+.sidenoteRight {
+    @include responsive-font-size(15);
+    font-style : italic;
+    color      : lighten($black, 50%);
+    font-family: $font-family-serif;
+    max-width  : 150px;
+    line-height: $header-lineheight;
+}
+@include breakpoint(medium up) {
+    .icon-zoom-boxed {
+        position     : absolute;
+        bottom       : 0;
+        z-index      : 1000;
+        width        : 40px;
+        height       : 40px;
+        margin-left  : -40px !important;
+        margin-bottom: 23px !important;
+    }
+
+    .articleImageLeft {
+        width        : 435px;
+        float        : left;
+        position     : relative;
+        margin-right : -10%;
+        margin-bottom: 1rem;
+        margin-top   : 0.5rem;
+        right        : 15%;
+    }
+
+    .articleImageRight {
+        width      : 435px;
+        float      : right;
+        position   : relative;
+        margin-left: -10%;
+        left       : 15%;
+    }
+}
+@include breakpoint(large up) {
+    .articleImageLeft {
+        max-width   : 435px;
+        float       : left;
+        position    : relative;
+        margin-right: -25%;
+        right       : 33%;
+    }
+
+    .articleImageRight {
+        max-width  : 435px;
+        float      : right;
+        position   : relative;
+        margin-left: -25%;
+        left       : 33%;
+    }
+
+    .sidenoteLeft {
+        float      : left;
+        margin-left: -30%;
+        padding    : 0.5rem;
+    }
+
+    .sidenoteRight {
+        float       : right;
+        margin-right: -30%;
+        padding     : 0.5rem;
+    }
+}
+@include breakpoint(small only) {
+    .icon-zoom-boxed {
+        width   : 1.5rem;
+        height  : 1.5rem;
+        position: absolute;
+        float   : right;
+        bottom  : 0;
+        right   : 0;
+        z-index : 1000;
+    }
+}
+/*-----  End of ARTICLE  ------------------------------------------------------------------*/
+/*=============================================================================================
+
+██████   ██████   ██████  ██   ██
+██   ██ ██    ██ ██    ██ ██  ██
+██████  ██    ██ ██    ██ █████
+██   ██ ██    ██ ██    ██ ██  ██
+██████   ██████   ██████  ██   ██
+
+██████  ███████ ████████  █████  ██ ██
+██   ██ ██         ██    ██   ██ ██ ██
+██   ██ █████      ██    ███████ ██ ██
+██   ██ ██         ██    ██   ██ ██ ██
+██████  ███████    ██    ██   ██ ██ ███████
+
+=============================================================================================*/
+/*-----  End of BOOK DETAIL  ------------------------------------------------------------------*/
+/*=============================================================================================
+
+██      ██ ███████ ████████
+██      ██ ██         ██
+██      ██ ███████    ██
+██      ██      ██    ██
+███████ ██ ███████    ██
+
+=============================================================================================*/
+.listItem {
+    margin-bottom: 2rem;
+    color        : $black;
+    @include box-shadow-hover();
+
+    img {
+        margin-top: 0;
+    }
+}
+
+.listItemLabel {
+    padding: 0.5rem 1.5rem;
+
+    h4 {
+        color : $blue;
+        margin: 0;
+    }
+
+    p {
+        color : $black;
+        margin: 0;
+    }
+}
+@include breakpoint(medium only) {
+    .listItem {}
+}
+@include breakpoint(small only) {
+    .listItem {
+        text-align: center;
+        display   : block;
+
+        img {
+            margin-top: 1.5rem;
+        }
+    }
+}
+/*-----  End of LIST  ------------------------------------------------------------------*/
+/*=============================================================================================
+
+██      ██ ███████ ████████
+██      ██ ██         ██
+██      ██ ███████    ██
+██      ██      ██    ██
+███████ ██ ███████    ██
+
+██     ██ ██ ████████ ██   ██
+██     ██ ██    ██    ██   ██
+██  █  ██ ██    ██    ███████
+██ ███ ██ ██    ██    ██   ██
+ ███ ███  ██    ██    ██   ██
+ 
+████████ ██   ██ ██    ██ ███    ███ ██████  ███    ██  █████  ██ ██      ███████
+   ██    ██   ██ ██    ██ ████  ████ ██   ██ ████   ██ ██   ██ ██ ██      ██
+   ██    ███████ ██    ██ ██ ████ ██ ██████  ██ ██  ██ ███████ ██ ██      ███████
+   ██    ██   ██ ██    ██ ██  ██  ██ ██   ██ ██  ██ ██ ██   ██ ██ ██           ██
+   ██    ██   ██  ██████  ██      ██ ██████  ██   ████ ██   ██ ██ ███████ ███████
+
+=============================================================================================*/
+.listItem-thumb {
+    @include box-shadow-hover();
+    color  : $black;
+    padding: 2rem;
+    display: flex;
+
+    img {
+        margin-top : 0;
+        width      : 170px;
+        flex-shrink: 0;
+        padding    : 0.5rem;
+    }
+}
+
+.listItemLabel-thumb {
+    h4 {
+        color        : $blue;
+        margin       : 0;
+        // line-height  : 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        color : $black;
+        margin: 0;
+    }
+}
+@include breakpoint(medium only) {
+    .listItem-thumb {}
+}
+@include breakpoint(small only) {
+    .listItem-thumb {
+        text-align: center;
+        display   : block;
+
+        img {
+            margin-top: 1.5rem;
+        }
+    }
+}
+/*-----  End of  LIST WITH THUMBNAILS  ------------------------------------------------------------------*/
+/*=========================================================================================     
+
+██      ██ ███████ ████████     ██     ██ ██ ████████ ██   ██
+██      ██ ██         ██        ██     ██ ██    ██    ██   ██
+██      ██ ███████    ██        ██  █  ██ ██    ██    ███████
+██      ██      ██    ██        ██ ███ ██ ██    ██    ██   ██
+███████ ██ ███████    ██         ███ ███  ██    ██    ██   ██
+████████ ██   ██ ██    ██ ███    ███ ██████  ███    ██  █████  ██ ██
+   ██    ██   ██ ██    ██ ████  ████ ██   ██ ████   ██ ██   ██ ██ ██
+   ██    ███████ ██    ██ ██ ████ ██ ██████  ██ ██  ██ ███████ ██ ██
+   ██    ██   ██ ██    ██ ██  ██  ██ ██   ██ ██  ██ ██ ██   ██ ██ ██
+   ██    ██   ██  ██████  ██      ██ ██████  ██   ████ ██   ██ ██ ███████
+ █████  ███    ██ ██████      ██████  ██    ██ ████████ ████████  ██████  ███    ██ ███████
+██   ██ ████   ██ ██   ██     ██   ██ ██    ██    ██       ██    ██    ██ ████   ██ ██
+███████ ██ ██  ██ ██   ██     ██████  ██    ██    ██       ██    ██    ██ ██ ██  ██ ███████
+██   ██ ██  ██ ██ ██   ██     ██   ██ ██    ██    ██       ██    ██    ██ ██  ██ ██      ██
+██   ██ ██   ████ ██████      ██████   ██████     ██       ██     ██████  ██   ████ ███████
+
+============================================================================================================*/
+.listItem-thumb-buttons {
+    color           : $black;
+    padding         : 2rem;
+    background-color: $white;
+    @include box-shadow-hover();
+
+    .button {
+        display        : flex;
+        margin         : 0 1rem 0.25rem 0;
+        flex           : 0 1 100%;
+        justify-content: space-between;
+    }
+
+    .button + .button {
+        margin-bottom: 0;
+    }
+}
+/*-----  End of LIST WITH THUMBNAIL AND BUTTONS  ---------------------------------------------------------------------------------------*/
+/*=============================================================================================
+
+ ██
+███
+ ██
+ ██
+ ██
+ 
+ ██████  ██████  ██      ██    ██ ███    ███ ███    ██
+██      ██    ██ ██      ██    ██ ████  ████ ████   ██
+██      ██    ██ ██      ██    ██ ██ ████ ██ ██ ██  ██
+██      ██    ██ ██      ██    ██ ██  ██  ██ ██  ██ ██
+ ██████  ██████  ███████  ██████  ██      ██ ██   ████
+ 
+ ██████  ██████  ███    ██ ████████ ███████ ███    ██ ████████
+██      ██    ██ ████   ██    ██    ██      ████   ██    ██
+██      ██    ██ ██ ██  ██    ██    █████   ██ ██  ██    ██
+██      ██    ██ ██  ██ ██    ██    ██      ██  ██ ██    ██
+ ██████  ██████  ██   ████    ██    ███████ ██   ████    ██
+
+================================================================================================*/
+/*-----  End of 1 COLUMN CONTENT  ------------------------------------------------------------------*/
+/*=============================================================================================
+
+███████  ██████   ██████  ████████ ███████ ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+█████   ██    ██ ██    ██    ██    █████   ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+██       ██████   ██████     ██    ███████ ██   ██
+
+=============================================================================================*/
+footer {
+    background : #DEDEDE;
+    padding-top: 40px;
+    bottom     : 0;
+    width      : 100%;
+    position   : relative;
+    box-shadow : inset 0 2.5rem 2.5rem -2.5rem rgba(0, 0, 0, 0.1);
+    // will-change: transform;
+    // transform          : translateZ(0);
+    // visibility: hidden;
+    a {
+        text-shadow: 3px 0 0 #DEDEDE, -3px 0 0 #DEDEDE;
+    }
+    @include breakpoint(medium up) {
+        // bottom  : -30vh;
+        // position: fixed;
+        // z-index : 3;
+        // will-change: transform;
+        // transform          : translateZ(0);
+    }
+
+    a,
+    h5 {
+        // font-size  : 12px;
+        @include responsive-font-size(11);
+        display    : block;
+        line-height: $global-lineheight;
+    }
+
+    h5 {
+        color      : $black;
+        font-weight: 700;
+        font-style : normal;
+        font-family: $font-family-sans-serif;
+    }
+}
+/*-----  End of FOOTER  ------------------------------------------------------------------*/
+/*====================================================================================================
+
+███████ ██    ██ ██      ██          ██     ██ ██ ██████  ████████ ██   ██
+██      ██    ██ ██      ██          ██     ██ ██ ██   ██    ██    ██   ██
+█████   ██    ██ ██      ██          ██  █  ██ ██ ██   ██    ██    ███████
+██      ██    ██ ██      ██          ██ ███ ██ ██ ██   ██    ██    ██   ██
+██       ██████  ███████ ███████      ███ ███  ██ ██████     ██    ██   ██
+
+██ ███    ███  █████   ██████  ███████     ██   ██ ███████  █████  ██████  ███████ ██████
+██ ████  ████ ██   ██ ██       ██          ██   ██ ██      ██   ██ ██   ██ ██      ██   ██
+██ ██ ████ ██ ███████ ██   ███ █████       ███████ █████   ███████ ██   ██ █████   ██████
+██ ██  ██  ██ ██   ██ ██    ██ ██          ██   ██ ██      ██   ██ ██   ██ ██      ██   ██
+██ ██      ██ ██   ██  ██████  ███████     ██   ██ ███████ ██   ██ ██████  ███████ ██   ██
+
+=======================================================================================================*/
+.wrapper-parallax {
+    height: 85vh;
+    // position : relative;
+}
+
+.imageHeader-full {
+    position       : fixed;
+    width          : 100vw;
+    display        : flex;
+    flex-direction : column;
+    flex-wrap      : nowrap;
+    justify-content: center;
+    align-content  : center;
+    align-items    : center;
+    text-align     : center;
+    overflow       : hidden;
+    transform      : translate3d(0, 0, 0);
+    // background      : $black;
+    & button {
+        top: 25%;
+    }
+
+    img {
+        position  : fixed;
+        bottom    : 0;
+        left      : 0;
+        z-index   : -10;
+        filter : blur(.5rem) brightness(0.7);
+        transform : scale(1.1,1.1);
+        min-width : 100%;
+        min-height: 100%;
+        // will-change: transform;
+        // transform          : translateZ(0);
+    }
+
+    h1,
+    p {
+        color   : $white;
+        position: relative;
+        // text-shadow: 0 0 40px rgba(0,0,0,0.9);
+    }
+}
+@include breakpoint(small) {
+    .imageHeader-full {
+        height     : 95vh;
+        top        : 0;
+        position   : fixed;
+        // z-index    : 2;
+        padding-top: 25px;
+        // will-change: transform;
+        // transform          : translateZ(0);
+        transition : transform 0.3s ease;
+
+        &.nav-is-visible {
+            transform: translateX(-80%);
+        }
+
+        +.cd-main-content {
+            top        : 95vh;
+            padding-top: 1em;
+            box-shadow : 0 -.25rem 2.5rem rgba(0, 0, 0, 0.15);
+            overflow   : hidden;
+            margin-top : 0;
+        }
+
+        & button {
+            top: 0;
+        }
+    }
+}
+@include breakpoint(medium) {
+    .imageHeader-full {
+        height : 100vh;
+        padding: 4rem;
+
+        &.nav-is-visible {
+            transform: translateX(-80%);
+        }
+    }
+
+    .wrapper-parallax + .cd-main-content {
+        margin-top: 0;
+    }
+}
+/*-----  End of FULL WIDTH IMAGE HEADER  ------------------------------------------------------------------*/
+/*=======================================================================================================
+
+███████  ██████ ██████   ██████  ██      ██          ██    ██ ██████
+██      ██      ██   ██ ██    ██ ██      ██          ██    ██ ██   ██
+███████ ██      ██████  ██    ██ ██      ██          ██    ██ ██████
+     ██ ██      ██   ██ ██    ██ ██      ██          ██    ██ ██
+███████  ██████ ██   ██  ██████  ███████ ███████      ██████  ██
+
+==========================================================================================================*/
+#scrollUp {
+    bottom    : 200px;
+    right     : 0;
+    background: rgba(0,0,0,.1) url("../img/scrollUp.svg") no-repeat;
+    width     : 48px;
+    height    : 48px;
+    z-index   : 10;
+}
+/*-----  End of SCROLL UP  ------------------------------------------------------------------*/
+
+// =============================================================================================
+// ███████ ███████  █████  ██████   ██████ ██   ██
+// ██      ██      ██   ██ ██   ██ ██      ██   ██
+// ███████ █████   ███████ ██████  ██      ███████
+//      ██ ██      ██   ██ ██   ██ ██      ██   ██
+// ███████ ███████ ██   ██ ██   ██  ██████ ██   ██
+// =============================================================================================
+
+// .search {
+//     display : inline-block;
+//     position: relative;
+//     height       : 15px;
+//     width        : 0.5rem;
+//     box-sizing   : border-box;
+//     margin       : 0 18px 0 0.5rem;
+//     padding      : 0.25rem;
+//     border       : 3px solid $white;
+//     border-radius: 15px;
+//     transition   : all 250ms ease;
+//     cursor       : text;
+//     top          : 7px;
+// 
+//     &:after {
+//         content      : "";
+//         position     : absolute;
+//         width        : 3px;
+//         height       : 0.5rem;
+//         right        : -.25rem;
+//         top          : 8px;
+//         background: $white;
+//         border-radius: 3px;
+//         transform    : rotate(-45deg);
+//         transition   : all 250ms easeOut;
+//     }
+// 
+//     &.active,
+//     &:hover {
+//         width : 100%;
+//         // margin-right: .25rem;
+//         height: 1.5rem;
+//         // top         : 3px;
+//         &:after {
+//             height: 0;
+//         }
+//     }
+// }
+// -----  End of SEARCH  ---------------------------------------------
+
+/*=======================================================================================================
+
+██████  ███████  █████  ██████  ██ ███    ██  ██████
+██   ██ ██      ██   ██ ██   ██ ██ ████   ██ ██
+██████  █████   ███████ ██   ██ ██ ██ ██  ██ ██   ███
+██   ██ ██      ██   ██ ██   ██ ██ ██  ██ ██ ██    ██
+██   ██ ███████ ██   ██ ██████  ██ ██   ████  ██████
+
+██████  ██████   ██████   ██████  ██████  ███████ ███████ ███████
+██   ██ ██   ██ ██    ██ ██       ██   ██ ██      ██      ██
+██████  ██████  ██    ██ ██   ███ ██████  █████   ███████ ███████
+██      ██   ██ ██    ██ ██    ██ ██   ██ ██           ██      ██
+██      ██   ██  ██████   ██████  ██   ██ ███████ ███████ ███████
+
+██ ███    ██ ██████  ██  ██████  █████  ████████  ██████  ██████
+██ ████   ██ ██   ██ ██ ██      ██   ██    ██    ██    ██ ██   ██
+██ ██ ██  ██ ██   ██ ██ ██      ███████    ██    ██    ██ ██████
+██ ██  ██ ██ ██   ██ ██ ██      ██   ██    ██    ██    ██ ██   ██
+██ ██   ████ ██████  ██  ██████ ██   ██    ██     ██████  ██   ██
+
+==========================================================================================================*/
+// progress {
+//     /* Positioning */
+//     position          : fixed;
+//     left              : 0;
+//     top               : 0;
+//     will-change       : transform;
+//     /* Dimensions */
+//     width             : 100%;
+//     height            : 3px;
+//     /* Reset the apperance */
+//     -webkit-appearance: none;
+//     -moz-appearance   : none;
+//     appearance        : none;
+//     /* Get rid of the default border in Firefox/Opera. */
+//     border            : none;
+//     /* For Firefox/IE10+ */
+//     background-color  : transparent;
+//     /* For IE10+, color of the progress bar */
+//     color             : $red;
+//     z-index           : 11;
+// }
+// 
+// progress::-webkit-progress-bar {
+//     background-color: transparent;
+// }
+// 
+// .flat::-webkit-progress-value {
+//     background-color: $red;
+// }
+// 
+// .flat::-moz-progress-bar {
+//     background-color: $red;
+// }
+// 
+// .progress-container {
+//     width           : 100%;
+//     background-color: transparent;
+//     position        : fixed;
+//     top             : 0;
+//     left            : 0;
+//     height          : 3px;
+//     display         : block;
+//     will-change     : transform;
+// }
+// 
+// .progress-bar {
+//     background-color: $red;
+//     width           : 50%;
+//     display         : block;
+//     height          : inherit;
+// }
+
+// .progress-container {
+//     left            : 0;
+//     width           : 100%;
+//     height          : 0.2rem;
+//     margin-bottom   : 0;
+//     position        : fixed;
+//     top             : 0;
+//     overflow        : hidden;
+//     background-color: none;
+//     content         : "";
+//     display         : table;
+//     table-layout    : fixed;
+//     z-index         : 999;
+//     will-change     : transform;
+// }
+
+// .progress-bar {
+//     width           : 0;
+//     float           : left;
+//     height          : 100%;
+//     z-index         : 99;
+//     max-width       : 100%;
+//     background-color: $red;
+//     will-change     : transform;
+//     // transition      : width 0.5s ease;
+// }// .progress-bar {
+//     width           : 0;
+//     float           : left;
+//     height          : 100%;
+//     z-index         : 99;
+//     max-width       : 100%;
+//     background-color: $red;
+//     will-change     : transform;
+//     // transition      : width 0.5s ease;
+// }
+
+.progress-bar {
+    background       : linear-gradient(to right, $red var(--scroll), transparent 0);
+    background-repeat: no-repeat;
+    position         : fixed;
+    width            : 100%;
+    height           : 0.2rem;
+    z-index          : 99;
+    // will-change      : auto;
+    // transform          : translateZ(0);
+    // contain          : content;
+}
+
+/*-----  End of READING PROGRESS INDICATOR  ------------------------------------------------------------------*/
+// ============================================================================================
+// ███████  █████  ███    ██  ██████ ██    ██ ██████   ██████  ██   ██
+// ██      ██   ██ ████   ██ ██       ██  ██  ██   ██ ██    ██  ██ ██
+// █████   ███████ ██ ██  ██ ██        ████   ██████  ██    ██   ███
+// ██      ██   ██ ██  ██ ██ ██         ██    ██   ██ ██    ██  ██ ██
+// ██      ██   ██ ██   ████  ██████    ██    ██████   ██████  ██   ██
+// ============================================================================================
+[data-fancybox] img {
+    // max-height: 90vh;
+}
+
+.fancybox-button[disabled] {
+    // opacity: 0.2;
+}
+// -----  End of FANCYBOX  ---------------------------------------------
+/*===========================================================================================
+
+███████ ██      ██  ██████ ██   ██
+██      ██      ██ ██      ██  ██
+███████ ██      ██ ██      █████
+     ██ ██      ██ ██      ██  ██
+███████ ███████ ██  ██████ ██   ██
+ ██████  █████  ██████   ██████  ██    ██ ███████ ███████ ██
+██      ██   ██ ██   ██ ██    ██ ██    ██ ██      ██      ██
+██      ███████ ██████  ██    ██ ██    ██ ███████ █████   ██
+██      ██   ██ ██   ██ ██    ██ ██    ██      ██ ██      ██
+ ██████ ██   ██ ██   ██  ██████   ██████  ███████ ███████ ███████
+
+============================================================================================================*/
+@include breakpoint (small) {
+    .slick-slider {
+        margin: 0 4rem;
+    }
+};
+@include breakpoint (medium) {
+    .slick-slider {
+        margin: 0 2rem;
+    }
+};
+
+.slick-slide {
+    text-align  : center !important;
+    margin-right: 0.25rem;
+    margin-left : 0.25rem;
+    outline     : none;
+
+    img {
+        display: initial;
+    }
+}
+
+.slick-slide.slick-active:first-child,
+.slick-slide.slick-active:last-child {
+    margin: 0;
+}
+
+.slick-track {
+    margin: 0 auto;
+}
+
+@include breakpoint (medium) {
+    .slick-track img {
+        margin: 0 0.5rem;
+        // min-height: 200px !important;
+        // height    : 100% !important;
+    }
+};
+
+.slick-dots {
+    position: relative;
+
+    & li {
+        margin: 3px;
+
+        & button:before {
+            // font-size: 1.5rem;
+            @include responsive-font-size(12);
+        }
+    }
+}
+
+@include breakpoint (medium) {
+    .slick-list {
+        margin: 0 3rem;
+    }
+};
+
+.slick-next,
+.slick-prev {
+    @include breakpoint (small) {
+        width : 30px;
+        height: 40px;
+    }
+    @include breakpoint (medium) {
+        width : 60px;
+        height: 80px;
+    }
+    transition: all 0.5s ease;
+}
+
+.slick-prev {
+    @include breakpoint (small only) {
+        left: -90px;
+    };
+
+    &:before {
+        @include breakpoint (small) {
+            font-size: 20px;
+        }
+        @include breakpoint (medium) {
+            font-size: 64px;
+        }
+        color          : rgba(0,0,0,0);
+        opacity        : 1;
+        background     : transparent url("/img/icon-arrow-left.svg") no-repeat 42% center;
+        background-size: contain;
+    }
+
+    &:hover {
+        background: #DEDEDE;
+    }
+}
+
+.slick-next {
+    @include breakpoint (small only) {
+        right: -90px;
+    };
+
+    &:before {
+        @include breakpoint (small) {
+            font-size: 20px;
+        }
+        @include breakpoint (medium) {
+            font-size: 64px;
+        }
+        color          : rgba(0,0,0,0);
+        opacity        : 1;
+        background     : transparent url("/img/icon-arrow-right.svg") no-repeat 50% center;
+        background-size: contain;
+    }
+
+    &:hover {
+        background: #DEDEDE;
+    }
+}
+
+/*-----  End of SLICK CAROUSEL  ---------------------------------------------------------------------------------------*/
+/*===================================================================================================
+
+ ██████  █████  ██████  ██████  ███████
+██      ██   ██ ██   ██ ██   ██ ██
+██      ███████ ██████  ██   ██ ███████
+██      ██   ██ ██   ██ ██   ██      ██
+ ██████ ██   ██ ██   ██ ██████  ███████
+
+======================================================================================================*/
+.card-section + .card-section {
+    padding-top: 0;
+}
+
+.card-large,
+.card-medium,
+.card-small {
+    @include box-shadow-hover();
+    background: white;
+    text-align: center;
+    border    : none;
+
+    &:hover {
+        z-index: 100;
+    }
+};
+@include breakpoint(medium up) {
+    .card-small {
+        @include grid-column($columns:3);
+    }
+
+    .card-medium {
+        @include grid-column($columns:4);
+    }
+
+    .card-large {
+        @include grid-column($columns:8);
+    }
+};
+/*-----  End of CARDS  ------------------------------------------------------------------*/
+/*==============================================
+
+ █████  ███    ██ ██      ██ ███████
+██   ██ ████   ██ ██      ██ ██
+███████ ██ ██  ██ ██      ██ ███████
+██   ██ ██  ██ ██ ██ ██   ██      ██
+██   ██ ██   ████ ██  █████  ███████
+
+ █████  ███    ██ ██ ███    ███  █████  ████████ ██  ██████  ███    ██
+██   ██ ████   ██ ██ ████  ████ ██   ██    ██    ██ ██    ██ ████   ██
+███████ ██ ██  ██ ██ ██ ████ ██ ███████    ██    ██ ██    ██ ██ ██  ██
+██   ██ ██  ██ ██ ██ ██  ██  ██ ██   ██    ██    ██ ██    ██ ██  ██ ██
+██   ██ ██   ████ ██ ██      ██ ██   ██    ██    ██  ██████  ██   ████
+
+████████ ██     ██ ███████  █████  ██   ██ ███████
+   ██    ██     ██ ██      ██   ██ ██  ██  ██
+   ██    ██  █  ██ █████   ███████ █████   ███████
+   ██    ██ ███ ██ ██      ██   ██ ██  ██       ██
+   ██     ███ ███  ███████ ██   ██ ██   ██ ███████
+
+===============================================*/
+.animated {
+    animation-duration : 1s;
+    animation-fill-mode: both;
+}
+/*animation-delay: the delay before our animation will start.*/
+.delay-xs {
+    animation-delay: 0.25s;
+}
+
+.delay-sm {
+    animation-delay: 0.5s;
+}
+
+.delay-md {
+    animation-delay: 1s;
+}
+
+.delay-lg {
+    animation-delay: 2s;
+}
+
+.delay-xl {
+    animation-delay: 4s;
+}
+/*
+ *@name fadeIn
+ *@className fadeIn animated
+ *@cssCode true
+ *@editionLink codepen.io
+ *@author Dan Eden
+ *@source Animate.css
+ *@sourceUrl http://daneden.github.io/animate.css/
+ *@issues https://github.com/daneden/animate.css/issues
+ *@license MIT
+ */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+/*
+ *@name fadeInLeft
+ *@className fadeInLeft animated
+ *@cssCode true
+ *@editionLink codepen.io
+ *@author Dan Eden
+ *@source Animate.css
+ *@sourceUrl http://daneden.github.io/animate.css/
+ *@issues https://github.com/daneden/animate.css/issues
+ *@license MIT
+ */
+@keyframes fadeInLeftSmall {
+    0% {
+        opacity  : 0;
+        transform: translate3d(-15%, 0, 0);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: none;
+    }
+}
+
+.fadeInLeftSmall {
+    animation-name: fadeInLeftSmall;
+}
+/*
+ *@name fadeInRight
+ *@className fadeInRight animated
+ *@cssCode true
+ *@editionLink codepen.io
+ *@author Dan Eden
+ *@source Animate.css
+ *@sourceUrl http://daneden.github.io/animate.css/
+ *@issues https://github.com/daneden/animate.css/issues
+ *@license MIT
+ */
+@keyframes fadeInRightSmall {
+    0% {
+        opacity  : 0;
+        transform: translate3d(15%, 0, 0);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: none;
+    }
+}
+
+.fadeInRightSmall {
+    animation-name: fadeInRightSmall;
+}
+/*
+ *@name fadeInUp
+ *@className fadeInUp animated
+ *@cssCode true
+ *@editionLink codepen.io
+ *@author Dan Eden
+ *@source Animate.css
+ *@sourceUrl http://daneden.github.io/animate.css/
+ *@issues https://github.com/daneden/animate.css/issues
+ *@license MIT
+ */
+@keyframes fadeInUpSmall {
+    0% {
+        opacity  : 0;
+        transform: translate3d(0, 15%, 0);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: none;
+    }
+}
+
+.fadeInUpSmall {
+    animation-name: fadeInUpSmall;
+}
+/*
+ *@name fadeOutDown
+ *@className fadeOutDown animated
+ *@cssCode true
+ *@editionLink codepen.io
+ *@author Dan Eden
+ *@source Animate.css
+ *@sourceUrl http://daneden.github.io/animate.css/
+ *@issues https://github.com/daneden/animate.css/issues
+ *@license MIT
+ */
+@keyframes fadeOutDownSmall {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity  : 0;
+        transform: translate3d(0, 15%, 0);
+    }
+}
+
+.fadeOutDownSmall {
+    animation-name: fadeOutDownSmall;
+}
+/*-----  End of ANIJS ANIMATION TWEAKS  ------*/
+// /*-----  End of MAGNIFIC POPUP  ------*/
+
+/*=======================================
+
+███████ ██   ██  █████  ██████  ██ ███    ██  ██████
+██      ██   ██ ██   ██ ██   ██ ██ ████   ██ ██
+███████ ███████ ███████ ██████  ██ ██ ██  ██ ██   ███
+     ██ ██   ██ ██   ██ ██   ██ ██ ██  ██ ██ ██    ██
+███████ ██   ██ ██   ██ ██   ██ ██ ██   ████  ██████
+██████  ██    ██ ████████ ████████  ██████  ███    ██ ███████
+██   ██ ██    ██    ██       ██    ██    ██ ████   ██ ██
+██████  ██    ██    ██       ██    ██    ██ ██ ██  ██ ███████
+██   ██ ██    ██    ██       ██    ██    ██ ██  ██ ██      ██
+██████   ██████     ██       ██     ██████  ██   ████ ███████
+
+========================================*/
+.rrssb-buttons a {
+    font-family     : $font-family-sans-serif;
+    text-shadow     : none;
+    background-image: none;
+}
+/*-----  End of SHARING BUTTONS  ------*/
+/*=========================================================================================
+
+███████ ███████ ██      ███████  ██████ ████████ ██████
+██      ██      ██      ██      ██         ██         ██
+███████ █████   ██      █████   ██         ██     █████
+     ██ ██      ██      ██      ██         ██    ██
+███████ ███████ ███████ ███████  ██████    ██    ███████
+
+=============================================================================================*/
+.used-number {
+    // width     : 25px;
+    // float     : right;
+    // border    : 1px solid #000;
+    // text-align: center;
+}
+
+.select2-highlighted .used-number {
+    // border-color: #fff;
+}
+
+.select2-container {
+    width    : 100% !important;
+    max-width: 100% !important;
+    @include responsive-font-size(18);
+}
+
+@include breakpoint(small only) {
+    .select2-container {
+        // max-width: 100% !important;
+        // width    : 100% !important;
+    }
+}
+
+@include breakpoint(medium only) {
+    .select2-container {
+        // max-width: 700px !important;
+        // width    : 100% !important;
+    }
+}
+
+.select2-dropdown {
+    border: 2px solid $black;
+}
+
+.select2-search__field {
+    border       : initial;
+    margin-bottom: 0;
+    margin-top   : 0.5rem;
+}
+
+.select2-results {
+    border-radius: 0;
+    color        : $black;
+    // padding      : .5rem !important;
+    /* Turn on custom 8px wide scrollbar */
+    ::-webkit-scrollbar {
+        width                : 0.5rem;
+        /* 1px wider than Lion. */
+        /* This is more usable for users trying to click it. */
+        background-color     : rgba(0,0,0,0);
+        -webkit-border-radius: 100px;
+    }
+    /* hover effect for both scrollbar area, and scrollbar 'thumb' */
+    ::-webkit-scrollbar:hover {
+        background-color: rgba(0, 0, 0, 0.09);
+    }
+    /* The scrollbar 'thumb' ...that marque oval shape in a scrollbar */
+    ::-webkit-scrollbar-thumb:vertical {
+        /* This is the EXACT color of Mac OS scrollbars. 
+     Yes, I pulled out digital color meter */
+        // background           : rgba(0,0,0,0.5);
+        background           : rgba($red,0.5);
+        -webkit-border-radius: 100px;
+        background-clip      : padding-box;
+        border               : 2px solid rgba(0, 0, 0, 0);
+        min-height           : 0.5rem;
+        /*Prevent it from getting too small */
+    }
+
+    ::-webkit-scrollbar-thumb:vertical:active {
+        // background           : rgba(0,0,0,0.61);
+        background           : rgba($red, 0.61);
+        /* Some darker color when you click it */
+        -webkit-border-radius: 100px;
+    }
+}
+
+.select2-results__options {
+    // font-size  : initial;
+    padding    : 0.5rem !important;
+    line-height: 1.5;
+    // max-height : 90vh !important;
+}
+
+.select2-results__option {
+    padding: 12px 0.5rem !important;
+
+    li {
+        // padding: 0.5rem !important;
+    }
+}
+
+.select2-results__options--nested {
+    padding: 12px 0 !important;
+    margin : 0 -.5rem !important;
+}
+
+.select2-container--default .select2-results__option .select2-results__option {
+    padding: 0.5rem !important;
+}
+
+.select2-selection__placeholder {
+    color: $black !important;
+}
+
+.select2-results__group {
+    color      : $red;
+    // text-transform: uppercase;
+    border-top : 1px solid lighten($black, 80%);
+    padding-top: 0.5rem !important;
+}
+
+.select2-results__option[aria-selected=true] {
+    background-color: $light-gray !important;
+    color           : $black !important;
+    font-weight     : 300;
+}
+
+.select2-results__option--highlighted[aria-selected] {
+    background-color: $red !important;
+    color           : $white !important;
+    font-weight     : 400;
+}
+
+.select2-results__option--highlighted[aria-selected] .footnote {
+    color      : $white !important;
+    font-weight: 400;
+}
+
+.select2-search,
+.select2-search--dropdown {
+    padding: 1rem;
+}
+
+.select2-container--default .select2-selection--single {
+    border       : 2px solid $black;
+    color        : $black;
+    padding      : 0.25rem 0.5rem;
+    // font-size    : $small-font-size;
+    font-weight  : 300;
+    border-radius: 0;
+    height       : 42px;
+}
+
+.select2-selection__arrow {
+    height: 38px !important;
+    right : 8px !important;
+}
+
+.select2-selection__arrow {
+    height: 100% !important;
+    right : 18px !important;
+    top   : -2px !important;
+
+    b {
+        border-color: $gray-medium transparent transparent transparent !important;
+        border-style: solid;
+        border-width: 9px 8px 0 8px !important;
+    }
+}
+
+.select2-container--open {
+    .select2-selection--single {
+        .select2-selection__arrow {
+            b {
+                border-color: transparent transparent $gray-medium transparent !important;
+                border-width: 0 8px 9px 8px !important;
+            }
+        }
+    }
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 3px;
+}
+
+.select2-selection--single {
+    overflow     : hidden;
+    text-overflow: ellipse;
+}
+/*-----  End of SELECT2 STYLES  ---------------------------------------------------------------------------------------*/
+/*=========================================================================================
+
+████████  █████  ██████  ███████
+   ██    ██   ██ ██   ██ ██
+   ██    ███████ ██████  ███████
+   ██    ██   ██ ██   ██      ██
+   ██    ██   ██ ██████  ███████
+
+===========================================================================================*/
+.tabs {
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    justify-content: flex-start;
+    align-items    : space-around;
+}
+
+.tabs li {
+    flex-grow: 2;
+}
+
+.tabs a {
+    background-image: none;
+    line-height     : $global-lineheight;
+    text-align      : center;
+    width           : 100%;
+}
+
+.tabs-title > a {
+    font-size: 1em;
+}
+
+.tabs-title.is-active > a {
+    color: $red;
+}
+
+.tabs-title {
+    border-top   : none;
+    border-right : none;
+    border-bottom: 3px solid white;
+    border-left  : none;
+}
+
+.tabs-title.is-active {
+    font-weight  : 900;
+    font-style   : italic;
+    border-top   : 3px solid white;
+    border-right : 3px solid white;
+    border-bottom: none;
+    border-left  : 3px solid white;
+}
+/*-----  End of TABS  ---------------------------------------------------------------------------------------*/
+/*===========================================================================================
+
+██████  ██   ██    ██ ██████
+██   ██ ██    ██  ██  ██   ██
+██████  ██     ████   ██████
+██      ██      ██    ██   ██
+██      ███████ ██    ██  
+
+============================================================================================================*/
+// .plyr button:after {
+//     content    : "";
+//     margin-left: 0;
+// }
+// 
+// .plyr__progress--seek {
+//     z-index: 100 !important;
+// }
+// ==========================================================================
+// Colors
+// ==========================================================================
+
+$plyr-color-main: $blue;
+$plyr-color-gunmetal: $gray-dark2;
+$plyr-color-fiord: $gray-medium;
+$plyr-color-lynch: $gray-light1;
+$plyr-color-heather: $gray-light3;
+
+// ==========================================================================
+// Typography
+// ==========================================================================
+
+$plyr-font-family: $font-family-sans-serif, Helvetica, sans-serif;
+$plyr-font-size-base: 20px;
+$plyr-font-size-small: 15px;
+$plyr-font-size-large: 27px;
+$plyr-font-size-xlarge: 36px;
+
+$plyr-font-size-time: $plyr-font-size-small;
+$plyr-font-size-badge: 10px;
+$plyr-font-size-menu: $plyr-font-size-small;
+
+$plyr-font-weight-regular: 500;
+$plyr-font-weight-bold: 600;
+
+$plyr-line-height: 1.5;
+
+@import "../node_modules/plyr/src/sass/plyr.scss";
+
+/*-----  End of PLYR  ---------------------------------------------------------------------------------------*/
+/* ============================================================================================
+
+ ██████  █████  ██████  ██████  ███████
+██      ██   ██ ██   ██ ██   ██ ██
+██      ███████ ██████  ██   ██ ███████
+██      ██   ██ ██   ██ ██   ██      ██
+ ██████ ██   ██ ██   ██ ██████  ███████
+
+============================================================================================ */
+.card {
+    flex-grow: 1;
+}
+// -----  End of CARDS  ---------------------------------------------
+/* ============================================================================================
+
+███    ███  █████   ██████  ███████ ██      ██       █████  ███    ██
+████  ████ ██   ██ ██       ██      ██      ██      ██   ██ ████   ██
+██ ████ ██ ███████ ██   ███ █████   ██      ██      ███████ ██ ██  ██
+██  ██  ██ ██   ██ ██    ██ ██      ██      ██      ██   ██ ██  ██ ██
+██      ██ ██   ██  ██████  ███████ ███████ ███████ ██   ██ ██   ████
+
+============================================================================================ */
+.menu > li > a.magellan-active {
+    background: $blue;
+    color     : white;
+}
+// -----  End of MAGELLAN  ---------------------------------------------
+/* ============================================================================================
+
+ ██████   ██████   ██████   ██████  ██      ███████     ███████ ███████  █████  ██████   ██████ ██   ██
+██       ██    ██ ██    ██ ██       ██      ██          ██      ██      ██   ██ ██   ██ ██      ██   ██
+██   ███ ██    ██ ██    ██ ██   ███ ██      █████       ███████ █████   ███████ ██████  ██      ███████
+██    ██ ██    ██ ██    ██ ██    ██ ██      ██               ██ ██      ██   ██ ██   ██ ██      ██   ██
+ ██████   ██████   ██████   ██████  ███████ ███████     ███████ ███████ ██   ██ ██   ██  ██████ ██   ██
+
+============================================================================================*/
+#___gcse_0 *,
+#___gcse_1 *,
+.gs-title,
+.gsc-control-cse,
+.gsc-control-cse .gsc-table-result,
+.gsc-imageResult:hover,
+.gsc-results .gsc-imageResult,
+.gsc-webResult .gsc-result,
+.gsc-webResult.gsc-result,
+.gsc-webResult.gsc-result:hover {
+    @include responsive-font-size(20);
+    font-family    : unset !important;
+    // font-weight    : initial !important;
+    line-height    : initial !important;
+    transition     : all 0.5s;
+    height         : unset !important;
+    text-decoration: none !important;
+    background     : transparent !important;
+    // border         : none !important;
+}
+
+.gsc-control-cse {
+    background-color: transparent !important;
+    border-width    : 0 !important;
+}
+
+.gs-title,
+.gs-title:link {
+    font-weight: 700 !important;
+    // @include responsive-font-size(27, true);
+}
+
+.gsc-url-top {
+    font-style   : italic !important;
+    margin-bottom: 0.5rem;
+}
+
+.gs-visibleUrl-long {
+    @include responsive-font-size(15, true);
+}
+
+.gsc-results .gsc-imageResult,
+.gsc-webResult .gsc-result {
+    margin-bottom      : 1rem !important;
+    padding-bottom     : 1.5rem !important;
+    border-bottom-color: $gray-light1 !important;
+}
+
+.gs-richsnippet-box {
+    display: none !important;
+}
+// 
+// .gsc-wrapper {
+//     // background: white !important;
+//     // padding   : 2rem !important;
+// }
+// 
+// .cse .gsc-control-cse,
+// .gsc-control-cse {
+//     border: none !important;
+// }
+// 
+// .gsc-result-info {
+//     font-size: 80% !important;
+// }
+// 
+// .gsc-orderby-container > * {
+//     display: none;
+// }
+// 
+// .gsc-webResult.gsc-result {
+//     border    : none !important;
+//     padding   : 2rem 0 !important;
+//     border-top: 1px solid $gray-light2 !important;
+//     // width     : 100% !important;
+//     margin    : 0 !important;
+// }
+// 
+// .gsc-adBlock {
+//     margin     : 0 2rem !important;
+//     padding-top: 2rem !important;
+//     height     : auto !important;
+// }
+// 
+// .gsc-results {
+//     padding: 1rem 2rem !important;
+//     margin : 0 !important;
+//     width  : 100% !important;
+// }
+// 
+// .gs-result .gs-title,
+// .gs-result .gs-title * {
+//     font-weight    : bold !important;
+//     text-align     : left;
+//     text-decoration: none !important;
+// }
+// 
+// .gs-richsnippet-box {
+//     display   : none !important;
+//     visibility: hidden !important;
+// }
+// 
+// .gsc-tabsArea {
+//     border: none !important;
+// }
+// 
+// .gsc-tabHeader {
+//     padding: 1rem 2rem !important;
+//     margin : 0 !important;
+// }
+// 
+// .gsc-tabsArea > .gsc-tabHeader {
+//     height: auto !important;
+// }
+// 
+// .gsc-refinementsArea {
+//     // background   : white !important;
+//     margin-bottom: 0 !important;
+//     margin-top   : -14px !important;
+//     border-bottom: 2px solid white !important;
+// }
+// 
+// .gsc-above-wrapper-area {
+//     // background: white !important;
+//     padding: 0.5rem 2rem !important;
+//     // border    : none !important;
+// }
+// 
+// .gcsc-branding {
+//     padding: 1rem 2rem 0 !important;
+// }
+// 
+// .gcsc-branding-text {
+//     font-size: 60% !important;
+// }
+// 
+// .gsc-tabhActive {
+//     background : white !important;
+//     color      : $red !important;
+//     font-style : italic !important;
+//     font-weight: bold !important;
+// }
+// 
+// .gcsc-branding-img-noclear {
+//     top: -21px !important;
+// }
+// 
+// .gsc-selected-option-container {
+//     // position: relative !important;
+// }
+// 
+// .gsc-option,
+// .gsc-selected-option-container {
+//     // padding: 0.5rem 1rem !important;
+// }
+// 
+// .gsc-url-top * {
+//     font-size    : 80% !important;
+//     font-style   : italic !important;
+//     margin-bottom: 0.5rem !important;
+// }
+// 
+// .gsc-imageResult-classic,
+// .gsc-imageResult-column {
+//     border: none !important;
+// }
+// 
+// .gs-imageResult div.gs-visibleUrl,
+// .gs-webResult div.gs-visibleUrl {
+//     font-size : 80% !important;
+//     font-style: italic !important;
+// }
+// 
+// .gs-image-box {
+//     height       : inherit !important;
+//     margin-bottom: 0.5rem !important;
+// }
+// 
+// .gs-imageResult .gs-text-box > * {
+//     text-align: center !important;
+// }
+// 
+// .gsc-results .gsc-imageResult {
+//     width: 33.3333% !important;
+// }
+// 
+// .gs-image-box.gs-web-image-box.gs-web-image-box-portrait,
+// img.gs-image {
+//     // min-width: 200px !important;
+//     // height   : inherit !important;
+// }
+// 
+// img.gs-image {
+//     // max-width : 200px !important;
+//     // max-height: inherit !important;
+// }
+// 
+// .gsc-table-cell-snippet-close,
+// .gsc-table-cell-snippet-open {
+//     // padding: 0 1rem !important;
+// }
+// 
+// .gsc-imageResult {
+//     // background: white !important;
+//     // padding: 1rem 2rem !important;
+//     // width     : 100% !important;
+//     // margin : 0 !important;
+// }
+// 
+// .gs-imageResult .gs-size {
+//     font-size : 80% !important;
+//     font-style: italic !important;
+// }
+// ==============================  INPUT  ==============================
+
+td.gsc-input {
+    border: none;
+}
+
+.gsc-input {
+    box-shadow : none !important;
+    font-size  : 4rem !important;
+    line-height: 0;
+
+    & .gsc-input {
+        border-bottom: 2px solid $gray-light1;
+    }
+
+    &::-webkit-input-placeholder,
+    &::placeholder {
+        content  : "Type to search…" !important;
+        font-size: 4rem !important;
+        color    : $gray-medium !important;
+    }
+}
+
+.gsc-input-focus {
+    text-indent: 1rem !important;
+}
+
+.gsc-input-box {
+    // padding: 4rem 2rem !important;
+    border: none !important;
+    // padding: 0 !important;
+}
+
+.gsc-input-box-focus,
+.gsc-input-box-hover {
+    box-shadow: none !important;
+}
+
+span.gscb_a {
+    font-size: 2rem !important;
+}
+
+// ==============================  SEARCH BUTTON  ==============================
+
+td.gsc-search-button {
+    :hover {
+        background: darken($red, 15%);
+    }
+}
+
+.gsc-search-button,
+.gsc-search-button-v2 {
+    background : $red;
+    line-height: 0;
+    margin     : 0 !important;
+    border     : 0 solid transparent !important;
+    cursor     : pointer;
+    height     : 13rem;
+
+    svg {
+        width : 2rem !important;
+        height: 2rem !important;
+    }
+}
+// ==============================  PAGINATION  ==============================
+
+.gsc-results .gsc-cursor-box {
+    text-align: center !important;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+    background: white !important;
+    color     : $red !important;
+}
+
+.gsc-cursor-page {
+    padding   : 0.5rem 1rem;
+    transition: all 0.5s;
+}
+
+.gsc-cursor-page:hover {
+    background: white !important;
+}
+// -----  End of GOOGLE SEARCH  ---------------------------------------------
+/* ============================================================================================
+
+███████ ██   ██  █████  ██████  ███████
+██      ██   ██ ██   ██ ██   ██ ██
+███████ ███████ ███████ ██████  █████
+     ██ ██   ██ ██   ██ ██   ██ ██
+███████ ██   ██ ██   ██ ██   ██ ███████
+███████ ███████ ██      ███████  ██████ ████████ ██  ██████  ███    ██
+██      ██      ██      ██      ██         ██    ██ ██    ██ ████   ██
+███████ █████   ██      █████   ██         ██    ██ ██    ██ ██ ██  ██
+     ██ ██      ██      ██      ██         ██    ██ ██    ██ ██  ██ ██
+███████ ███████ ███████ ███████  ██████    ██    ██  ██████  ██   ████
+
+============================================================================================ */
+@keyframes share-this-intro {
+    0% {
+        transform: translateY(-.35em);
+        opacity  : 0;
+    }
+
+    80% {
+        // transform: translateY(.5em);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.share-this-popover {
+    z-index                   : 1000;
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    /* easeOutCubic */
+}
+// -----  End of SHARE SELECTION  ---------------------------------------------
+// ============================================================================================
+// ██       █████  ███████ ██    ██ ██       ██████   █████  ██████
+// ██      ██   ██    ███   ██  ██  ██      ██    ██ ██   ██ ██   ██
+// ██      ███████   ███     ████   ██      ██    ██ ███████ ██   ██
+// ██      ██   ██  ███       ██    ██      ██    ██ ██   ██ ██   ██
+// ███████ ██   ██ ███████    ██    ███████  ██████  ██   ██ ██████
+// ============================================================================================
+
+.lazyload {
+    opacity: 0;
+}
+
+.lazyloading {
+    opacity   : 1;
+    transition: opacity 300ms;
+    background: url("/img/loading-spin.svg") no-repeat center;
+    // background-position: center center;
+    // background-size    : 60px 60px;
+}
+
+.lazyloaded {
+    opacity   : 1;
+    transition: opacity 300ms;
+}
+// -----  End of LAZYLOAD  ---------------------------------------------
+
+// =============================================================================================
+// ███████ ██     ██ ██    ██ ██████
+// ██      ██     ██ ██    ██ ██   ██
+// ███████ ██  █  ██ ██    ██ ██████
+//      ██ ██ ███ ██ ██    ██ ██
+// ███████  ███ ███   ██████  ██
+// =============================================================================================
+
+// .swup-transition-fade {
+//     transition: 0.4s;
+//     opacity   : 1;
+// }
+// 
+// html.is-animating .swup-transition-fade {
+//     opacity: 0;
+// }
+
+// -----  End of SWUP  ---------------------------------------------
+
+// ===================================================================================
+// ███████ ██      ██  ██████ ██   ██ ██ ████████ ██    ██
+// ██      ██      ██ ██      ██  ██  ██    ██     ██  ██
+// █████   ██      ██ ██      █████   ██    ██      ████
+// ██      ██      ██ ██      ██  ██  ██    ██       ██
+// ██      ███████ ██  ██████ ██   ██ ██    ██       ██
+// ===================================================================================
+// @import "../node_modules/flickity/dist/flickity.min.css";
+// 
+// .flickity-viewport {
+//     transition: height 0.2s;
+// }
+// /* fade in image when loaded */
+// .carousel-cell-image {
+//     transition: opacity 0.4s;
+//     opacity   : 0;
+// }
+// 
+// .carousel-cell-image.flickity-lazyerror,
+// .carousel-cell-image.flickity-lazyloaded {
+//     opacity: 1;
+// }
+
+// -----  End of FLICKITY  -----------------------------------
+
+// ===================================================================================
+//  ██████  ██      ██ ██████  ███████
+// ██       ██      ██ ██   ██ ██
+// ██   ███ ██      ██ ██   ██ █████
+// ██    ██ ██      ██ ██   ██ ██
+//  ██████  ███████ ██ ██████  ███████
+// ===================================================================================
+
+// @import "../node_modules/@glidejs/glide/dist/css/glide.core.min.css";
+// @import "../node_modules/@glidejs/glide/dist/css/glide.theme.min.css";
+
+// -----  End of GLIDE  -----------------------------------
+
+// ===================================================================================
+// ███████ ██     ██ ██ ██████  ███████ ██████
+// ██      ██     ██ ██ ██   ██ ██      ██   ██
+// ███████ ██  █  ██ ██ ██████  █████   ██████
+//      ██ ██ ███ ██ ██ ██      ██      ██   ██
+// ███████  ███ ███  ██ ██      ███████ ██   ██
+// ===================================================================================
+
+.swiper-slide {
+    // background: $gray-light1;
+
+    img {
+        display: block !important;
+        width  : 100%;
+
+        &.swiper-lazy {
+            opacity    : 0;
+            will-change: opacity;
+            transition : opacity 0.15s ease-in-out;
+        }
+
+        &.swiper-lazy-loaded {
+            opacity: 1;
+        }
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    padding: 2rem 1.3rem;
+}
+
+.swiper-button-next {
+    background: rgba($white,0.75) url("/img/icon-arrow-right.svg") no-repeat 58% center;
+    // background-size: contain;
+    @include breakpoint(medium down) {
+        right    : -.75rem;
+        transform: scale(0.75);
+    }
+}
+
+.swiper-button-prev {
+    background: rgba($white,0.75) url("/img/icon-arrow-left.svg") no-repeat 42% center;
+    // background-size: contain;
+    @include breakpoint(medium down) {
+        left     : -.75rem;
+        transform: scale(0.75);
+    }
+}
+
+.swiper-pagination-white {
+    .swiper-pagination-bullet {
+        // background: $white;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: $red;
+        // box-shadow: 0 0 0 2px $white;
+    }
+}
+
+// -----  End of SWIPER  -----------------------------------

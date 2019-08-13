@@ -1,0 +1,218 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Posters'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = 'CHANGE_ME'
+    - var nextType  = 'Client'
+    - var nextTitle = 'ABC'
+    - var nextLink  = 'ABC'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  BOOK COVERS  ==============================*/
+                    .grid-x.grid-margin-x
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Photography/Web/Abacus%20Photogram-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Photography/Web/Abacus%20Photogram.jpg",
+                            title: "Abacus Photogram"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Posters/Book%20Week/Web/Book%20Week-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Posters/Book%20Week/Web/Book%20Week.jpg",
+                            title: "Book Week",
+                            footnote1: "1958"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Posters/Dada/Web/DADA%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Posters/Dada/Web/DADA%2001.jpg",
+                            title: "DADA",
+                            footnote1: "1951"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Posters/Death%20Mask/Web/Death%20Mask%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Posters/Death%20Mask/Web/Death%20Mask%2001.jpg",
+                            title: "Death Mask",
+                            footnote1: "1969"
+                            })
+
+
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Posters/Death%20Mask/Sketches/Web/Death%20Mask%20Poster%20Sketch%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Posters/Death%20Mask/Sketches/Web/Death%20Mask%20Poster%20Sketch%2001.jpg",
+                            title: "Death Mask Sketches",
+                            footnote1: "(4 Images)",
+                            footnote2: "Courtesy of Wright Auction House, Chicago, IL."
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Death Mask Sketches #2", hideMe: "https://assets.paulrand.design/Works/_Posters/Death%20Mask/Sketches/Web/Death%20Mask%20Poster%20Sketch%2002.jpg"},
+                            {title: "Death Mask Sketches #3", hideMe: "https://assets.paulrand.design/Works/_Posters/Death%20Mask/Sketches/Web/Death%20Mask%20Poster%20Sketch%2003.jpg"},
+                            {title: "Death Mask Sketches #4", hideMe: "https://assets.paulrand.design/Works/_Posters/Death%20Mask/Sketches/Web/Death%20Mask%20Poster%20Sketch%2004.jpg"}
+                            )
+
+
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Posters/Earth%20Day%201995/Web/Earth%20Day%201995%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Posters/Earth%20Day%201995/Web/Earth%20Day%201995%2001.jpg",
+                            title: "Earth Day, v1",
+                            footnote1: "1995"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Posters/Earth%20Day%201995/Web/Earth%20Day%201995%2002-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Posters/Earth%20Day%201995/Web/Earth%20Day%201995%2002.jpg",
+                            title: "Earth Day, v2",
+                            footnote1: "1995"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Posters/Exposicion%20de%20pintra/Web/Exposicion%20Poster-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Posters/Exposicion%20de%20pintra/Web/Exposicion%20Poster.jpg",
+                            title: "Exposicion Pintra",
+                            footnote1: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Posters/HL%20Mencken/Web/HL%20Mencken%20Poster-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Posters/HL%20Mencken/Web/HL%20Mencken%20Poster.jpg",
+                            title: "H.L. Mencken",
+                            footnote1: "1958"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Posters/Ice%20Cream%20Cone/Web/Ice%20Cream%20Cone%20Poster-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Posters/Ice%20Cream%20Cone/Web/Ice%20Cream%20Cone%20Poster.jpg",
+                            title: "Ice Cream Cone",
+                            footnote1: "1956"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Posters/Igor%20Stravinsky/Web/Igor%20Stravinsky%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Posters/Igor%20Stravinsky/Web/Igor%20Stravinsky%2001.jpg",
+                            title: "Igor Stravinsky",
+                            footnote1: "1956"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Posters/I%20Know/Web/I%20Know%20Poster-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Posters/I%20Know/Web/I%20Know%20Poster.jpg",
+                            title: "I Know",
+                            footnote1: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Posters/Industrial%20Arts%20Exposition/Web/Industrial%20Arts%20Exposition-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Posters/Industrial%20Arts%20Exposition/Web/Industrial%20Arts%20Exposition.jpg",
+                            title: "Industrial Arts Exposition",
+                            footnote1: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Posters/Joseph%20Addison%20Quote/Web/Joseph%20Addison%20quote%20laughter-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Posters/Joseph%20Addison%20Quote/Web/Joseph%20Addison%20quote%20laughter.jpg",
+                            title: "Joseph Addison Quote — Laughter",
+                            footnote1: "CHANGE_ME",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Posters/Leger/Web/Leger-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Posters/Leger/Web/Leger.jpg",
+                            title: "Léger",
+                            footnote1: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Posters/Listen%21%20Listen%21/Web/Listen%20Listen%20Illustration-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Posters/Listen%21%20Listen%21/Web/Listen%20Listen%20Illustration.jpg",
+                            title: "Listen! Listen! Illustration",
+                            footnote1: "1969"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Posters/Oil%20Lamp/Web/Oil%20Lamp%20poster%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Posters/Oil%20Lamp/Web/Oil%20Lamp%20poster%2001.jpg",
+                            title: "Oil Lamp",
+                            footnote1: "1956"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Posters/Red%20Heart%20Beige%20Circle/Web/Red%20Heart%20Beige%20Circle%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Posters/Red%20Heart%20Beige%20Circle/Web/Red%20Heart%20Beige%20Circle%2001.jpg",
+                            title: "Red Heart, Beige Circle",
+                            footnote1: "1957"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Posters/Running%20Dog/Web/Running%20Dog%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Posters/Running%20Dog/Web/Running%20Dog%2001.jpg",
+                            title: "Running Dog",
+                            footnote1: "1969"
+                            })
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

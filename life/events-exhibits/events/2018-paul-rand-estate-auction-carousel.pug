@@ -1,0 +1,127 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Paul Rand: The Art of Design'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'Wright Auction house, Chicago, IL.'
+    - var pageSubtitle2         = 'September 13, 2018, 12PM CT'
+
+    - var nextType              = 'Exhibit'
+    - var nextTitle             = 'Steven Heller: Paul Rand: A Designer’s Scribbles'
+    - var nextDate              = '2019'
+    - var nextLink              = '2019-steven-heller-designers-scribbles'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x
+                .cell.text-center
+                    //- .flickity-carousel
+                        .carousel-cell
+                            a(href="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2000.jpg" data-fancybox="images" data-caption="pageTitle")
+                                img(src="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2000-800.jpg")
+                        .carousel-cell
+                            a(href="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2000.jpg" data-fancybox="images" data-caption="pageTitle")
+                                img(src="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2001-800.jpg")
+                        .carousel-cell
+                            a(href="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2000.jpg" data-fancybox="images" data-caption="pageTitle")
+                                img(src="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2003-800.jpg")
+                        .carousel-cell
+                            a(href="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2000.jpg" data-fancybox="images" data-caption="pageTitle")
+                                img(src="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2003-800.jpg")
+
+            .swiper-container
+                .swiper-wrapper
+                    .swiper-slide
+                        a(href="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2000.jpg" data-fancybox="images")
+                            img.swiper-lazy(data-src="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2000-800.jpg")
+                    .swiper-slide
+                        a(href="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2002.jpg" data-fancybox="images")
+                            img.swiper-lazy(data-src="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2002-800.jpg")
+                    .swiper-slide
+                        a(href="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2001.jpg" data-fancybox="images")
+                            img.swiper-lazy(data-src="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2001-800.jpg")
+                    .swiper-slide
+                        a(href="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2003.jpg" data-fancybox="images")
+                            img.swiper-lazy(data-src="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2003-800.jpg")
+                    .swiper-slide
+                        a(href="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2004.jpg" data-fancybox="images")
+                            img.swiper-lazy(data-src="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2004-800.jpg")
+
+                .swiper-pagination.swiper-pagination-white
+                .swiper-button-prev
+                .swiper-button-next
+            //- .swiper-container(style="width: 1200px; min-height: 400px;")
+            //-     .swiper-wrapper
+            //-         .swiper-slide
+            //-             img.lazy(data-src="https://picsum.photos/id/1000/320/240", width="320", height="240")
+            //-             //- .swiper-lazy-preloader
+            //-         .swiper-slide
+            //-             img.lazy(data-src="https://picsum.photos/id/1001/320/240", width="320", height="240")
+            //-             //- .swiper-lazy-preloader
+            //-         .swiper-slide
+            //-             img.lazy(data-src="https://picsum.photos/id/1002/320/240", width="320", height="240")
+            //-             //- .swiper-lazy-preloader
+            //-         .swiper-slide
+            //-             img.lazy(data-src="https://picsum.photos/id/1003/320/240", width="320", height="240")
+            //-             //- .swiper-lazy-preloader
+            //-         .swiper-slide
+            //-             img.lazy(data-src="https://picsum.photos/id/1004/320/240", width="320", height="240")
+            //-             //- .swiper-lazy-preloader
+            //-         .swiper-slide
+            //-             img.lazy(data-src="https://picsum.photos/id/1005/320/240", width="320", height="240")
+            //-             //- .swiper-lazy-preloader
+            //-         .swiper-slide
+            //-             img.lazy(data-src="https://picsum.photos/id/1006/320/240", width="320", height="240")
+            //-             //- .swiper-lazy-preloader
+            //-         .swiper-slide
+            //-             img.lazy(data-src="https://picsum.photos/id/1007/320/240", width="320", height="240")
+            //-             //- .swiper-lazy-preloader
+            //-         .swiper-slide
+            //-             img.lazy(data-src="https://picsum.photos/id/1008/320/240", width="320", height="240")
+            //-             //- .swiper-lazy-preloader
+            //-         .swiper-slide
+            //-             img.lazy(data-src="https://picsum.photos/id/1009/320/240", width="320", height="240")
+            //-             //- .swiper-lazy-preloader
+            //-     .swiper-button-prev
+            //-     .swiper-button-next
+            //- .swiper-container
+            //-     .swiper-wrapper
+            //-         .swiper-slide
+            //-             // Required swiper-lazy class and image source specified in data-src attribute
+            //-             img.swiper-lazy(data-src="http://lorempixel.com/1600/1200/nature/1/")
+            //-             // Preloader image
+            //-             .swiper-lazy-preloader
+            //-         .swiper-slide
+            //-             img.swiper-lazy(data-src="http://lorempixel.com/1600/1200/nature/2/")
+            //-             .swiper-lazy-preloader
+            //-         .swiper-slide
+            //-             img.swiper-lazy(data-src="http://lorempixel.com/1600/1200/nature/3/")
+            //-             .swiper-lazy-preloader
+            //-         .swiper-slide
+            //-             img.swiper-lazy(data-src="http://lorempixel.com/1600/1200/nature/4/")
+            //-             .swiper-lazy-preloader
+            //-         .swiper-slide
+            //-             img.swiper-lazy(data-src="http://lorempixel.com/1600/1200/nature/5/")
+            //-             .swiper-lazy-preloader
+            //-         .swiper-slide
+            //-             img.swiper-lazy(data-src="http://lorempixel.com/1600/1200/nature/6/")
+            //-             .swiper-lazy-preloader
+            //-     // Add Pagination
+            //-     .swiper-pagination
+            //-     // Navigation
+            //-     .swiper-button-next
+            //-     .swiper-button-prev
+
+
+
+
+        //- /*-----  End of BODY  ------*/
+

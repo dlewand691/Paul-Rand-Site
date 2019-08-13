@@ -1,0 +1,79 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Chico State University: Paul Rand Retrospective'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'CSU, Chico’s Albert E. Warrens Reception Center'
+    - var pageSubtitle2         = 'April 2 – 25, 2003'
+
+    - var nextType              = 'Exhibit'
+    - var nextTitle             = 'Paul Rand: An exhibition presented by the International Poster and Graphic Arts Festival and the City of Chaumont'
+    - var nextDate              = '2007'
+    - var nextLink              = '2007-chaumont'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2003%20Paul%20Rand%20Retrospective/Web/2003%20Rand%20Retrospective%20Poster.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2003%20Paul%20Rand%20Retrospective/Web/2003%20Rand%20Retrospective%20Poster.jpg"
+                            )
+
+            //- include ../../../__MIXINS/_include-image-carousel.pug
+
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Thanks to the efforts of Communication Design faculty Barbara Sudick and Frank Armstrong, California State University, Chico will pay tribute next month to the late Paul Rand, the professors’ former teacher and world-renowned graphic designer.
+
+                        Rand, who died in 1996 at the age of 82, was one of the pioneers of American graphic design. In a field with little name recognition, Rand nevertheless created symbols almost universally recognized: the familiar corporate logos for companies such as IBM, UPS, Westinghouse, NeXt, and Enron.
+
+                        Steeped in European Modernism and equally adept at whimsy and simplicity, Rand was terrifically influential as a designer, illustrator, author, and teacher. “He was the American graphic designer,” said Sudick, a graduate student of Rand’s at Yale University.
+
+                        Sudick and her husband, communication design instructor Frank Armstrong, both attended classes with Rand and have written on Rand’s importance in American graphic design.
+
+                        “Paul Rand in Context,” a series of April events celebrating his life and legacy, are as follows:
+
+                        + Paul Rand Retrospective, an exhibit of approximately 50 works by Rand, will be on display April 2–25 in CSU, Chico’s Albert E. Warrens Reception Center, Tuesday–Thursday, 2–6 pm (except April 23), and Saturday, noon–4 pm. The exhibit is on loan from Yale.
+                        + Designer Kyle Cooper, co-founder of digital media design firm Imagi- nary Forces and a former student of Rand’s, will speak Friday, April 18, at 8 pm in the BMU Auditorium. (A reception for Cooper will be held prior to his talk from 5:30 to 7:30 pm in the Warrens Reception Center.) Cooper is well known for his design and direction of titles for films such as Seven, Spider-Man, and Mission Impossible. 
+                        + “Rand in Context,” a gallery talk by Sudick and Armstrong, will be Wednesday, April 9, at 4 pm in the Warrens Reception Center. The idea of context—whether it meant constructing meaning or understanding history—was vital to Rand. 
+                        + Rand &amp; Play, an exhibition of books designed by CSU, Chico students, will be on display April 2–25 on the second floor of the Meriam Library. The students used the Rand essay “Design and the Play Instinct” as inspiration.
+
+                        ---
+
+                        ### Gallery Information
+
+                        Albert E. Warrens Reception Center  
+                        Mansion Ave  
+                        Chico, CA 95926
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

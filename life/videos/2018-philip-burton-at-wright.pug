@@ -1,0 +1,57 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Philip Burton on Paul Rand at Wright'
+    - var bodyID    = 'life'
+    - var bodyClass = 'videos'
+
+block main-content
+    - var nextType             = 'Video'
+    - var nextTitle            = 'Graphic Design at Yale'
+    - var nextDate             = '1960'
+    - var nextDescription      = 'Rand critiques students and discusses the design program at Yale.'
+    - var nextLink             = '/life/videos/1960-graphic-design-at-yale.html'
+
+    - var relatedItemLink1     = '/life/videos/1996-cooper-union.html'
+    - var relatedItemTitle1    = 'Cooper Union interview with Steven Heller'
+    - var relatedItemFootnote1 = 'One of Rand’s final public appearances.'
+
+    - var relatedItemLink2     = '/life/videos/1996-conversations-with-paul-rand.html'
+    - var relatedItemTitle2    = 'Conversations with Paul Rand'
+    - var relatedItemFootnote2 = 'A Film by Preston McClanahan'
+
+    - var relatedItemLink3     = '/life/videos/1996-MIT.html'
+    - var relatedItemTitle3    = 'MIT interview with John Maeda'
+    - var relatedItemFootnote3 = 'Rand’s final public appearance before his death.'
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                //- ==========  TITLE  ==========
+                .large-8.medium-11.cell
+                    .grid-x.grid-margin-x
+                        .large-12.cell.text-center
+                            h1= pageTitle
+                            p.text-gray.t16: em September 11, 2018
+
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Philip Burton shares his thoughts about Paul Rand and their long-time frienship via Instagram Live and Wright auction house in Chicago, IL.
+
+            //- ==========  VIDEO  ==========
+            .grid-x.grid-margin-x.align-center
+                .cell
+                    .small-mb3
+                        div.plyr-js(data-plyr-embed-id="V4gCwKqtTf8" data-plyr-provider="youtube")
+
+            //- ==========  BODY  ==========
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-9.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+
+
+        //- /*-----  End of BODY  ------*/
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug

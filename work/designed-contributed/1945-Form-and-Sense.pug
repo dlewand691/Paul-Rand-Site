@@ -1,0 +1,83 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Form and Sense'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var bookSubhead           = 'Problems of Contemporary Art, No. 1, 1945'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/832428'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3D%2522Form%2Band%2BSense%2522%2B%2522Problems%2Bof%2BContemporary%2BArt%2522%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/28KGgng'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_odkw%3DForm%2Band%2BSense%2BProblems%2Bof%2BContemporary%2BArt%26_osacat%3D0%26_from%3DR40%26_trksid%3Dp2045573.m570.l1313.TR0.TRC0.H0.X%2522Form%2Band%2BSense%2522%2BProblems%2Bof%2BContemporary%2BArt.TRS0%26_nkw%3D%2522Form%2Band%2BSense%2522%2BProblems%2Bof%2BContemporary%2BArt%26_sacat%3D0'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'The Grass Roots of Art'
+    - var nextLink              = '1946-The-Grass-Roots-of-Art'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= bookSubhead
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20Problems%20of%20Contemporary%20Art%2C%20Form%20and%20Sense/Web/Problems%20of%20Contemporary%20Art%2C%20Form%20and%20Sense-970.jpg",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20Problems%20of%20Contemporary%20Art%2C%20Form%20and%20Sense/Web/Problems%20of%20Contemporary%20Art%2C%20Form%20and%20Sense.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            //- include ../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Wolfgang Paalen
+
+                        Cover design and typography by Paul Rand
+
+                        7.5 x 10 book, with 66 pages and 30 b/w photos. Includes 8 essays, articles and interviews which first appeared in Paalens magazine DYN published from 1941 to 1946. The art journal DYN (derived from the Greek Dynaton ? "that which is possible") was the result of Paalen’s intense work during his first years of exile in Mexico. In its first issue he publicly announces to his friend Breton his Farewell to Surrealism. In the second issue he scandalised his former advocate again by publishing a survey on Dialectical Materialism and an article with the provocative title The dialectical Gospel. In DYN Paalen theoretically hedged his concept of possibility on various levels, with quantum theory, with an own concept of totemism, gestalt-theory, with his criticisms of dialectical materialism and western dualistic concepts, with his analysis of cave painting etc.. Good stuff from start to finish.
+
+                        In an early issue of GRAPHIS, Max Bill reviewed Motherwell’s Documents of Modern Art series by stating it was the most important series of modern art documents since Gropius and Moholy-Nagy published the Bauhuasbuchers.
+
+                    .footnote — Randall Ross of modernism101.com
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../__MIXINS/_include-next-work.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

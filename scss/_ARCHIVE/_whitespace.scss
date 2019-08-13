@@ -1,0 +1,395 @@
+/*===============================================================================================
+=
+/*
+██     ██ ██   ██ ██ ████████ ███████
+██     ██ ██   ██ ██    ██    ██
+██  █  ██ ███████ ██    ██    █████
+██ ███ ██ ██   ██ ██    ██    ██
+ ███ ███  ██   ██ ██    ██    ███████
+███████ ██████   █████   ██████ ███████
+██      ██   ██ ██   ██ ██      ██
+███████ ██████  ███████ ██      █████
+     ██ ██      ██   ██ ██      ██
+███████ ██      ██   ██  ██████ ███████
+*/
+// ==================================================================================================*/
+
+// @mixin generate-sizes($class, $small, $medium, $big) {
+//     .#{$class}-small { font-size: $small; }
+//     .#{$class}-medium { font-size: $medium; }
+//     .#{$class}-big { font-size: $big; }
+// }
+// @include generate-sizes("header-text", 12px, 20px, 40px);
+
+// 0rem: 0 !default;
+// 1rem: 1rem !default;
+// 2rem: 2rem !default;
+// 3rem: 3rem !default;
+// 4rem: 4rem !default;
+
+/* =============================================================================================
+██     ██ ██   ██ ██ ████████ ███████
+██     ██ ██   ██ ██    ██    ██
+██  █  ██ ███████ ██    ██    █████
+██ ███ ██ ██   ██ ██    ██    ██
+ ███ ███  ██   ██ ██    ██    ███████
+███████ ██████   █████   ██████ ███████
+██      ██   ██ ██   ██ ██      ██
+███████ ██████  ███████ ██      █████
+     ██ ██      ██   ██ ██      ██
+███████ ██      ██   ██  ██████ ███████
+================================================================================================== */
+$whitespace: 21;
+/* ==============================  MARGINS  ============================== */
+$margin-sides-all-positive: (m);
+$margin-sides-all-negative: (mn);
+$margin-sides-positive: (mt, top), (mr, right), (mb, bottom), (ml, left);
+$margin-sides-negative: (mtn, top), (mrn, right), (mbn, bottom), (mln, left);
+$margin-x-positive: (mx);
+$margin-y-positive: (my);
+$margin-x-negative: (mxn);
+$margin-y-negative: (myn);
+@for $i from 0 to $whitespace {
+	 @each $side in $margin-sides-all-positive{
+		.#{$side}#{$i} {
+			margin: #{$i}rem !important;
+		}
+	}
+	@each $side in $margin-sides-all-negative {
+		.#{$side}#{$i} {
+			margin: -#{$i}rem !important;
+		}
+	}
+	@each $side, $sideFull in $margin-sides-positive {
+		.#{$side}#{$i} {
+			margin-#{$sideFull}: #{$i}rem !important;
+		}
+	}
+	@each $side, $sideFull in $margin-sides-negative {
+		.#{$side}#{$i} {
+			margin-#{$sideFull}: -#{$i}rem !important;
+		}
+	}
+	@each $side in $margin-x-positive {
+		.#{$side}#{$i} {
+			margin-left : #{$i}rem !important;
+			margin-right: #{$i}rem !important;
+		}
+	}
+	@each $side in $margin-x-negative {
+		.#{$side}#{$i} {
+			margin-left : -#{$i}rem !important;
+			margin-right: -#{$i}rem !important;
+		}
+	}
+	@each $side in $margin-y-positive {
+		.#{$side}#{$i} {
+			margin-top   : #{$i}rem !important;
+			margin-bottom: #{$i}rem !important;
+		}
+	}
+	@each $side in $margin-y-negative {
+		.#{$side}#{$i} {
+			margin-top   : -#{$i}rem !important;
+			margin-bottom: -#{$i}rem !important;
+		}
+	}
+}
+@include breakpoint(small only) {
+	 @for $i from 0 to $whitespace{
+		@each $side in $margin-sides-all-positive {
+			.sm-#{$side}#{$i} {
+				margin: #{$i}rem !important;
+			}
+		}
+		@each $side in $margin-sides-all-negative {
+			.sm-#{$side}#{$i} {
+				margin: -#{$i}rem !important;
+			}
+		}
+		@each $side, $sideFull in $margin-sides-positive {
+			.sm-#{$side}#{$i} {
+				margin-#{$sideFull}: #{$i}rem !important;
+			}
+		}
+		@each $side, $sideFull in $margin-sides-negative {
+			.sm-#{$side}#{$i} {
+				margin-#{$sideFull}: -#{$i}rem !important;
+			}
+		}
+		@each $side in $margin-x-positive {
+			.sm-#{$side}#{$i} {
+				margin-left : #{$i}rem !important;
+				margin-right: #{$i}rem !important;
+			}
+		}
+		@each $side in $margin-x-negative {
+			.sm-#{$side}#{$i} {
+				margin-left : -#{$i}rem !important;
+				margin-right: -#{$i}rem !important;
+			}
+		}
+		@each $side in $margin-y-positive {
+			.sm-#{$side}#{$i} {
+				margin-top   : #{$i}rem !important;
+				margin-bottom: #{$i}rem !important;
+			}
+		}
+		@each $side in $margin-y-negative {
+			.sm-#{$side}#{$i} {
+				margin-top   : -#{$i}rem !important;
+				margin-bottom: -#{$i}rem !important;
+			}
+		}
+	}
+}
+@include breakpoint(medium up) {
+	 @for $i from 0 to $whitespace{
+		@each $side in $margin-sides-all-positive {
+			.medium-#{$side}#{$i} {
+				margin: #{$i}rem !important;
+			}
+		}
+		@each $side in $margin-sides-all-negative {
+			.medium-#{$side}#{$i} {
+				margin: -#{$i}rem !important;
+			}
+		}
+		@each $side, $sideFull in $margin-sides-positive {
+			.medium-#{$side}#{$i} {
+				margin-#{$sideFull}: #{$i}rem !important;
+			}
+		}
+		@each $side, $sideFull in $margin-sides-negative {
+			.medium-#{$side}#{$i} {
+				margin-#{$sideFull}: -#{$i}rem !important;
+			}
+		}
+		@each $side in $margin-x-positive {
+			.medium-#{$side}#{$i} {
+				margin-left : #{$i}rem !important;
+				margin-right: #{$i}rem !important;
+			}
+		}
+		@each $side in $margin-x-negative {
+			.medium-#{$side}#{$i} {
+				margin-left : -#{$i}rem !important;
+				margin-right: -#{$i}rem !important;
+			}
+		}
+		@each $side in $margin-y-positive {
+			.medium-#{$side}#{$i} {
+				margin-top   : #{$i}rem !important;
+				margin-bottom: #{$i}rem !important;
+			}
+		}
+		@each $side in $margin-y-negative {
+			.medium-#{$side}#{$i} {
+				margin-top   : -#{$i}rem !important;
+				margin-bottom: -#{$i}rem !important;
+			}
+		}
+	}
+}
+@include breakpoint(large up) {
+	 @for $i from 0 to $whitespace{
+		@each $side in $margin-sides-all-positive {
+			.lg-#{$side}#{$i} {
+				margin: #{$i}rem !important;
+			}
+		}
+		@each $side in $margin-sides-all-negative {
+			.lg-#{$side}#{$i} {
+				margin: -#{$i}rem !important;
+			}
+		}
+		@each $side, $sideFull in $margin-sides-positive {
+			.lg-#{$side}#{$i} {
+				margin-#{$sideFull}: #{$i}rem !important;
+			}
+		}
+		@each $side, $sideFull in $margin-sides-negative {
+			.lg-#{$side}#{$i} {
+				margin-#{$sideFull}: -#{$i}rem !important;
+			}
+		}
+		@each $side in $margin-x-positive {
+			.lg-#{$side}#{$i} {
+				margin-left : #{$i}rem !important;
+				margin-right: #{$i}rem !important;
+			}
+		}
+		@each $side in $margin-x-negative {
+			.lg-#{$side}#{$i} {
+				margin-left : -#{$i}rem !important;
+				margin-right: -#{$i}rem !important;
+			}
+		}
+		@each $side in $margin-y-positive {
+			.lg-#{$side}#{$i} {
+				margin-top   : #{$i}rem !important;
+				margin-bottom: #{$i}rem !important;
+			}
+		}
+		@each $side in $margin-y-negative {
+			.lg-#{$side}#{$i} {
+				margin-top   : -#{$i}rem !important;
+				margin-bottom: -#{$i}rem !important;
+			}
+		}
+	}
+}
+
+/* ============================  PADDINGS  ============================== */
+$padding-sides-all: (p);
+$padding-sides: (pt, top), (pr, right), (pb, bottom), (pl, left);
+$padding-x: (px);
+$padding-y: (py);
+@for $i from 0 to $whitespace {
+	 @each $side, $sideFull in $padding-sides{
+		.#{$side}#{$i} {
+			padding-#{$sideFull}: #{$i}rem !important;
+		}
+	}
+	@each $side in $padding-sides-all {
+		.#{$side}#{$i} {
+			padding: #{$i}rem !important;
+		}
+	}
+	@each $side in $padding-x {
+		.#{$side}#{$i} {
+			padding-left : #{$i}rem !important;
+			padding-right: #{$i}rem !important;
+		}
+	}
+	@each $side in $padding-y {
+		.#{$side}#{$i} {
+			padding-top   : #{$i}rem !important;
+			padding-bottom: #{$i}rem !important;
+		}
+	}
+}
+@include breakpoint(small up) {
+	 @for $i from 0 to $whitespace{
+		@each $side, $sideFull in $padding-sides {
+			.sm-#{$side}#{$i} {
+				padding-#{$sideFull}: #{$i}rem !important;
+			}
+		}
+		@each $side in $padding-sides-all {
+			.sm-#{$side}#{$i} {
+				padding: #{$i}rem !important;
+			}
+		}
+		@each $side in $padding-x {
+			.sm-#{$side}#{$i} {
+				padding-left : #{$i}rem !important;
+				padding-right: #{$i}rem !important;
+			}
+		}
+		@each $side in $padding-y {
+			.sm-#{$side}#{$i} {
+				padding-top   : #{$i}rem !important;
+				padding-bottom: #{$i}rem !important;
+			}
+		}
+	}
+}
+@include breakpoint(medium up) {
+	 @for $i from 0 to $whitespace{
+		@each $side, $sideFull in $padding-sides {
+			.medium-#{$side}#{$i} {
+				padding-#{$sideFull}: #{$i}rem !important;
+			}
+		}
+		@each $side in $padding-sides-all {
+			.medium-#{$side}#{$i} {
+				padding: #{$i}rem !important;
+			}
+		}
+		@each $side in $padding-x {
+			.medium-#{$side}#{$i} {
+				padding-left : #{$i}rem !important;
+				padding-right: #{$i}rem !important;
+			}
+		}
+		@each $side in $padding-y {
+			.medium-#{$side}#{$i} {
+				padding-top   : #{$i}rem !important;
+				padding-bottom: #{$i}rem !important;
+			}
+		}
+	}
+}
+@include breakpoint(large up) {
+	 @for $i from 0 to $whitespace{
+		@each $side, $sideFull in $padding-sides {
+			.lg-#{$side}#{$i} {
+				padding-#{$sideFull}: #{$i}rem !important;
+			}
+		}
+		@each $side in $padding-sides-all {
+			.lg-#{$side}#{$i} {
+				padding: #{$i}rem !important;
+			}
+		}
+		@each $side in $padding-x {
+			.lg-#{$side}#{$i} {
+				padding-left : #{$i}rem !important;
+				padding-right: #{$i}rem !important;
+			}
+		}
+		@each $side in $padding-y {
+			.lg-#{$side}#{$i} {
+				padding-top   : #{$i}rem !important;
+				padding-bottom: #{$i}rem !important;
+			}
+		}
+	}
+}
+
+.p-half {
+	padding: 0.5rem !important;
+}
+
+.p-half-x {
+	padding: 0 0.5rem !important;
+}
+
+.p-half-y {
+	padding: 0.5rem 0 !important;
+}
+
+/* ----  End of WHITESPACES  -------------------------------------------------------------------------- */
+
+/* ===========================================================================================================
+██     ██ ██ ██████  ████████ ██   ██
+██     ██ ██ ██   ██    ██    ██   ██
+██  █  ██ ██ ██   ██    ██    ███████
+██ ███ ██ ██ ██   ██    ██    ██   ██
+ ███ ███  ██ ██████     ██    ██   ██
+ ██████  ██    ██ ███████ ██████  ██████  ██ ██████  ███████ ███████
+██    ██ ██    ██ ██      ██   ██ ██   ██ ██ ██   ██ ██      ██
+██    ██ ██    ██ █████   ██████  ██████  ██ ██   ██ █████   ███████
+██    ██  ██  ██  ██      ██   ██ ██   ██ ██ ██   ██ ██           ██
+ ██████    ████   ███████ ██   ██ ██   ██ ██ ██████  ███████ ███████
+============================================================================================================ */
+$widths: 20;
+@for $i from 1 through $widths {
+	.w#{$i*5} {
+		width: $i*5% !important;
+	}
+}
+
+.w66 {
+	width: 66% !important;
+}
+
+.w33 {
+	width: 33% !important;
+}
+
+.w100px {
+	width: 100px;
+}
+/* ----  End of WIDTH OVERRIDES  --------------------------------------------------------------------- */

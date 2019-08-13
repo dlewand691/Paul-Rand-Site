@@ -1,0 +1,86 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Advance Guard of Advertising Artists'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'Katharine Kuh Gallery'
+    - var pageSubtitle2         = 'October, 1941'
+
+    - var nextType              = 'Exhibit'
+    - var nextTitle             = 'AD Gallery Presents- Paul Rand'
+    - var nextDate              = '1947'
+    - var nextLink              = '1947-ad-gallery'
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+
+                    br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1941%20Advance%20Guard%20of%20Advertising%20Artists/Web/Advance%20Guard%20of%20Advertising%20Artists%20Exhibit%2C%20front-800.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1941%20Advance%20Guard%20of%20Advertising%20Artists/Web/Advance%20Guard%20of%20Advertising%20Artists%20Exhibit%2C%20front.jpg"
+                            )
+
+            +carouselImages(
+                "The Original " + nextType,
+                "",
+                {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1941%20Advance%20Guard%20of%20Advertising%20Artists/Web/Advance%20Guard%20of%20Advertising%20Artists%20Exhibit%2C%20front-450.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/1941%20Advance%20Guard%20of%20Advertising%20Artists/Web/Advance%20Guard%20of%20Advertising%20Artists%20Exhibit%2C%20front.jpg"},
+                {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1941%20Advance%20Guard%20of%20Advertising%20Artists/Web/Advance%20Guard%20of%20Advertising%20Artists%20Exhibit%2C%20interior-450.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/1941%20Advance%20Guard%20of%20Advertising%20Artists/Web/Advance%20Guard%20of%20Advertising%20Artists%20Exhibit%2C%20interior.jpg"},
+                {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1941%20Advance%20Guard%20of%20Advertising%20Artists/Web/Advance%20Guard%20of%20Advertising%20Artists%20Exhibit%2C%20back-450.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/1941%20Advance%20Guard%20of%20Advertising%20Artists/Web/Advance%20Guard%20of%20Advertising%20Artists%20Exhibit%2C%20back.jpg"}
+                )
+
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Katharine Kuh: ADVANCE GUARD OF ADVERTISING ARTISTS. Chicago: Katharine Kuh Gallery, October 1941. First (only) edition. A very good to near-fine exhibition catalogue in saddle-stitched printed wrappers with deckled edge on shortened frontis. Light wear to spine and tiny chip to one corner. Catalogue design by Gyorgy Kepes. An exceptionally rare and significant title.
+
+                        The ADVANCE GUARD Show at the Katharine Kuh Gallery was the first time Paul Rand’s work was exhibited in a gallery setting. In Heller’s Paul Rand monograph, the location of the Gallery is incorrectly listed as New York City (page 242).
+
+                        8.5 x 11 softcover catalogue with 28 pages and 20 examples of advertising art printed on various paper stocks. Souvenir exhibition catalog with complete list of works shown, short biographies and an introductory essay by Miss Kuh. Katherine Kuh was Curator of the Gallery of Art interpretation and Associate Curator of Painting and Sculpture at the Art Institute of Chicago, as well as the Editor of the Institute’s quarterly publication, The Bulletin.
+
+                        This exhibition marked the first signs of the assimilation of the European Avant-Garde into mainstream American Advertising. For the first time Bauhaus refugees Bayer and Moholy-Nagy as well as Kepes and Sutnar were placed on the same level as the homegrown heroes Beall, Rand, Kauffer and Barr. Of particular interest is the Chicago location of the exhibit — no doubt instigated by Kepes and Moholy at the fledgling Institute of Design (New Bauhaus).
+
+                        Kepes catalog design is an amazing integration of the European avant-garde spirit with the no-nonsense midwestern sensibility: the fine press history of Chicago’s Printers Row is referenced by the deckled edge and the repetitous eyeball engavings on the catalog cover; but European functionalism orders the interior, with Tschichold’s New Typography very much in evidence.
+
+                        An early exhibition guide showcasing the avant-garde advertising design of:
+
+                        + Frank Barr
+                        + Herbert Bayer
+                        + Lester Beall
+                        + Gyorgy Kepes
+                        + E. McKnight Kauffer
+                        + Herbert Matter
+                        + Laszlo Moholy-Nagy
+                        + Paul Rand
+                        + Ladislav Sutnar
+
+                        A review of the show from A-D Volume 8, Number 1: October-November 1941: “An exhibition of the work of “The Advance Guard of Advertising Artists” at the Katherine Kuh Gallery, 540 N. Michigan Avenue, during October was one of the most successful ever held at that Gallery, according to Miss Kuh. Business men jammed the space, especially during lunch hour.”
+
+                        Chicago wasn’t always a midwestern bastion of modernism. Back in the 1930s, modernism was viewed as a foreign plague to be fought at every turn. A group of wealthy, conservative women who called themselves Sanity in Art existed for the sole purpose of combatting modernism not only through behind-the-scenes pressure and letter-writing campaigns but also by sending small groups to the modern art gallery of Katherine Kuh in order to harass potential buyers. I always thought the painting “Hogs Killing a Rattlesnake” by John Steuart Curry hanging alongside Wood’s “American Gothic” at the Art Institute was a wry commentary on this mindset.
+
+                    .footnote — Randall Ross of modernism101.com
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

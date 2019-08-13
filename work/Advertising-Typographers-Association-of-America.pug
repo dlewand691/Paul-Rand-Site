@@ -1,0 +1,58 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Advertising Typographers Association of America- Type Talks'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = '1964'
+    - var nextType  = 'Client'
+    - var nextTitle = 'AIGA (American Institute of Graphic Arts)'
+    - var nextLink  = 'AIGA'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "CHANGE_ME",
+                        "top", "1","1",
+                        {SM: "https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964-970.jpg",
+                        LG:"https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2001.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2002.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2003.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2004.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2005.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2006.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2007.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2008.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2009.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2010-450.jpg", LG:"https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2010.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2011-450.jpg", LG:"https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2011.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2012-450.jpg", LG:"https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2012.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2013-450.jpg", LG:"https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964%2013.jpg"}
+                        )
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

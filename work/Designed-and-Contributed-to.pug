@@ -1,0 +1,521 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Designed and/or Contributed to by Rand'
+    - var bodyID    = 'work'
+    - var bods = ''
+
+block main-content
+    - var dates     = 'CHANGE_ME'
+    - var nextType  = 'CHANGE_ME'
+    - var nextTitle = 'Logos'
+    - var nextLink  = 'Logos'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb4
+                .small-12.cell
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    .grid-x.grid-margin-x.align-center
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair.jpg",
+                            title: "A Student’s Guide to the New York World’s Fair",
+                            footnote1: "PM Magazine insert, Vol 5, No 2",
+                            footnote2: "1939"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair%2001.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair%2002.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair%2003.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair%2004.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair%2005.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair%2006.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair%2007.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair%2008.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair%2009.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair%2010.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair%2011.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair%2012.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair%2013.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair%2014.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair%2015.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair%2016.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair%2017.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair%2018.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair%2019.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair%2020.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair%2021.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/1939%20PM%20Magazine%20Vol%205%20No%202%2001.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/1939%20PM%20Magazine%20Vol%205%20No%202%2002.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/1939%20PM%20Magazine%20Vol%205%20No%202%2003.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/1939%20PM%20Magazine%20Vol%205%20No%202%2004.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/1939%20PM%20Magazine%20Vol%205%20No%202%2005.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/1939%20PM%20Magazine%20Vol%205%20No%202%2006.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/1939%20PM%20Magazine%20Vol%205%20No%202%2007.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/1939%20PM%20Magazine%20Vol%205%20No%202%2008.jpg"},
+                            {title: "A Student’s Guide to the New York World’s Fair", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/1939%20PM%20Magazine%20Vol%205%20No%202%2009.jpg"}
+                            )
+
+                        +galleryItem-cardImageZoom(
+                            "designed-contributed/1944-The-Cubist-Painters.html",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2C%20front-450.jpg",
+                            "The Cubist Painters- Aesthetic Meditations 1913",
+                            "The Documents of Modern Art",
+                            "1944"
+                            )
+
+                        +galleryItem-cardImageZoom(
+                            "designed-contributed/1945-Form-and-Sense.html",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20Problems%20of%20Contemporary%20Art%2C%20Form%20and%20Sense/Web/Problems%20of%20Contemporary%20Art%2C%20Form%20and%20Sense.jpg",
+                            "Form & Sense",
+                            "Problems of Contemporary Art",
+                            "1945"
+                            )
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Documents%20of%20Modern%20Art-%20Plastic%20Art%20and%20Pure%20Plastic%20Art/Web/The%20Documents%20of%20Modern%20Art%20-%20Plastic%20Art%20and%20the%20Pure%20Plastic%20Art-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Documents%20of%20Modern%20Art-%20Plastic%20Art%20and%20Pure%20Plastic%20Art/Web/The%20Documents%20of%20Modern%20Art%20-%20Plastic%20Art%20and%20the%20Pure%20Plastic%20Art.jpg",
+                            title: "Plastic Art and Pure Plastic Art",
+                            footnote1: "The Documents of Modern Art",
+                            footnote2: "1945"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2C%20front-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2C%20front.jpg",
+                            title: "The Tables of the Law",
+                            footnote1: "1945"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2C%20front.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2C%20back.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2001.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2002.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2003.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2004.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2005.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2006.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2007.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2008.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2009.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2010.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2011.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2012.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2013.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2014.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2015.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2016.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2017.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2018.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%2019.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%20Sketches/Tables%20of%20the%20Law%20Sketches%2001.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%20Sketches/Tables%20of%20the%20Law%20Sketches%2002.jpg"},
+                            {title: "The Tables of the Law", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1945%20The%20Tables%20of%20the%20Law/Web/Tables%20of%20the%20Law%20Sketches/Tables%20of%20the%20Law%20Sketches%2003.jpg"}
+                            )
+
+                        +galleryItem-cardImageZoom(
+                            "designed-contributed/1946-The-Grass-Roots-of-Art.html",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Problems%20of%20Contemporary%20Art%2C%20The%20Grass%20Roots%20of%20Art/Web/Problems%20of%20Contemporary%20Art%2C%20The%20Grass%20Roots%20of%20Art-450.jpg",
+                            "The Grass Roots of Art",
+                            "Problems of Contemporary Art",
+                            "1946"
+                            )
+
+                        +galleryItem-cardImageZoom(
+                            "designed-contributed/1946-The-New-Vision-and-Abstract-of-an-Artist.html",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist/Web/The%20Documents%20of%20Modern%20Art-%20The%20New%20Vision%20and%20Abstract%20of%20an%20Artist%2C%20front-450.jpg",
+                            "The New Vision and Abstract of an Artist",
+                            "The Documents of Modern Art",
+                            "1946"
+                            )
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Stork%20Club%20Bar%20Book/Web/Stork%20Club%20Bar%20Book%201946%2C%20cover-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Stork%20Club%20Bar%20Book/Web/Stork%20Club%20Bar%20Book%201946%2C%20cover.jpg",
+                            title: "The Stork Club Bar Book",
+                            footnote1: "1946",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "The Stork Club Bar Book", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Stork%20Club%20Bar%20Book/Web/Stork%20Club%20Bar%20Book%201946%2C%20cover%20cloth.jpg"},
+                            {title: "The Stork Club Bar Book", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Stork%20Club%20Bar%20Book/Web/Stork%20Club%20Bar%20Book%201946%2001.jpg"},
+                            {title: "The Stork Club Bar Book", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Stork%20Club%20Bar%20Book/Web/Stork%20Club%20Bar%20Book%201946%2002.jpg"},
+                            {title: "The Stork Club Bar Book", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Stork%20Club%20Bar%20Book/Web/Stork%20Club%20Bar%20Book%201946%2003.jpg"},
+                            {title: "The Stork Club Bar Book", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Stork%20Club%20Bar%20Book/Web/Stork%20Club%20Bar%20Book%201946%2004.jpg"},
+                            {title: "The Stork Club Bar Book", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Stork%20Club%20Bar%20Book/Web/Stork%20Club%20Bar%20Book%201946%2005.jpg"},
+                            {title: "The Stork Club Bar Book", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Stork%20Club%20Bar%20Book/Web/Stork%20Club%20Bar%20Book%201946%2006.jpg"},
+                            {title: "The Stork Club Bar Book", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Stork%20Club%20Bar%20Book/Web/Stork%20Club%20Bar%20Book%201946%2007.jpg"},
+                            {title: "The Stork Club Bar Book", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Stork%20Club%20Bar%20Book/Web/Stork%20Club%20Bar%20Book%201946%2008.jpg"},
+                            {title: "The Stork Club Bar Book", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Stork%20Club%20Bar%20Book/Web/Stork%20Club%20Bar%20Book%201946%2009.jpg"},
+                            {title: "The Stork Club Bar Book", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Stork%20Club%20Bar%20Book/Web/Stork%20Club%20Bar%20Book%201946%2010.jpg"},
+                            {title: "The Stork Club Bar Book", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Stork%20Club%20Bar%20Book/Web/Stork%20Club%20Bar%20Book%201946%2011.jpg"},
+                            {title: "The Stork Club Bar Book", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Stork%20Club%20Bar%20Book/Web/Stork%20Club%20Bar%20Book%201946%2012.jpg"},
+                            {title: "The Stork Club Bar Book", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Stork%20Club%20Bar%20Book/Web/Stork%20Club%20Bar%20Book%201946%2013.jpg"},
+                            {title: "The Stork Club Bar Book", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Stork%20Club%20Bar%20Book/Web/Stork%20Club%20Bar%20Book%201946%2014.jpg"},
+                            {title: "The Stork Club Bar Book", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Stork%20Club%20Bar%20Book/Web/Stork%20Club%20Bar%20Book%201946%2015.jpg"},
+                            {title: "The Stork Club Bar Book", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Stork%20Club%20Bar%20Book/Web/Stork%20Club%20Bar%20Book%201946%2016.jpg"},
+                            {title: "The Stork Club Bar Book", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Stork%20Club%20Bar%20Book/Web/Stork%20Club%20Bar%20Book%201946%2017.jpg"},
+                            {title: "The Stork Club Bar Book", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1946%20The%20Stork%20Club%20Bar%20Book/Web/Stork%20Club%20Bar%20Book%201946%2018.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1947%20Problems%20of%20Contemporary%20Art%2C%20Possibilities%201/Web/Problems%20of%20Contemporary%20Art%2C%20Possibilities%201-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1947%20Problems%20of%20Contemporary%20Art%2C%20Possibilities%201/Web/Problems%20of%20Contemporary%20Art%2C%20Possibilities%201.jpg",
+                            title: "Possibilities 1",
+                            footnote1: "Problems of Contemporary Art",
+                            footnote2: "1947"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1947%20The%20Documents%20of%20Modern%20Art-%20Concerning%20the%20Spiritual%20in%20Art/Web/The%20Documents%20of%20Modern%20Art%20-%20Concerning%20The%20Spiritaul%20in%20Art-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1947%20The%20Documents%20of%20Modern%20Art-%20Concerning%20the%20Spiritual%20in%20Art/Web/The%20Documents%20of%20Modern%20Art%20-%20Concerning%20The%20Spiritaul%20in%20Art.jpg",
+                            title: "Concerning the Spiritual in Art",
+                            footnote1: "The Documents of Modern Art",
+                            footnote2: "1947"
+                            })
+
+                        +galleryItem-cardImageZoom(
+                            "designed-contributed/1947-Kindergarten-Chats-Other-Writings.html",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1947%20The%20Documents%20of%20Modern%20Art-%20Kindergarten%20Chats%20and%20Other%20Writings/Web/The%20Documents%20of%20Modern%20Art%20-%20Kindergarten%20Chats%20and%20Other%20Writings-450.jpg",
+                            "Kindergarten Chats and Other Writings",
+                            "The Documents of Modern Art",
+                            "1947"
+                            )
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Book%20Jacket%20Designers%20Guild%2C%20First%20Exhibition/Web/Book%20Jacket%20Designers%20Guild%2C%201st%20annual%20exhibit%20catalog%2C%20cover-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Book%20Jacket%20Designers%20Guild%2C%20First%20Exhibition/Web/Book%20Jacket%20Designers%20Guild%2C%201st%20annual%20exhibit%20catalog%2C%20cover.jpg",
+                            title: "Book Jacket Designers Guild, First Exhibition",
+                            footnote1: "1948",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Book Jacket Designers Guild, First Exhibition", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Book%20Jacket%20Designers%20Guild%2C%20First%20Exhibition/Web/Book%20Jacket%20Designers%20Guild%2C%201st%20annual%20exhibit%20catalog%2001.jpg"},
+                            {title: "Book Jacket Designers Guild, First Exhibition", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Book%20Jacket%20Designers%20Guild%2C%20First%20Exhibition/Web/Book%20Jacket%20Designers%20Guild%2C%201st%20annual%20exhibit%20catalog%2002.jpg"},
+                            {title: "Book Jacket Designers Guild, First Exhibition", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Book%20Jacket%20Designers%20Guild%2C%20First%20Exhibition/Web/Book%20Jacket%20Designers%20Guild%2C%201st%20annual%20exhibit%20catalog%2003.jpg"},
+                            {title: "Book Jacket Designers Guild, First Exhibition", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Book%20Jacket%20Designers%20Guild%2C%20First%20Exhibition/Web/Book%20Jacket%20Designers%20Guild%2C%201st%20annual%20exhibit%20catalog%2004.jpg"},
+                            {title: "Book Jacket Designers Guild, First Exhibition", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Book%20Jacket%20Designers%20Guild%2C%20First%20Exhibition/Web/Book%20Jacket%20Designers%20Guild%2C%201st%20annual%20exhibit%20catalog%2005.jpg"},
+                            {title: "Book Jacket Designers Guild, First Exhibition", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Book%20Jacket%20Designers%20Guild%2C%20First%20Exhibition/Web/Book%20Jacket%20Designers%20Guild%2C%201st%20annual%20exhibit%20catalog%2006.jpg"},
+                            {title: "Book Jacket Designers Guild, First Exhibition", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Book%20Jacket%20Designers%20Guild%2C%20First%20Exhibition/Web/Book%20Jacket%20Designers%20Guild%2C%201st%20annual%20exhibit%20catalog%2007.jpg"},
+                            {title: "Book Jacket Designers Guild, First Exhibition", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Book%20Jacket%20Designers%20Guild%2C%20First%20Exhibition/Web/Book%20Jacket%20Designers%20Guild%2C%201st%20annual%20exhibit%20catalog%2008.jpg"},
+                            {title: "Book Jacket Designers Guild, First Exhibition", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Book%20Jacket%20Designers%20Guild%2C%20First%20Exhibition/Web/Book%20Jacket%20Designers%20Guild%2C%201st%20annual%20exhibit%20catalog%2009.jpg"},
+                            {title: "Book Jacket Designers Guild, First Exhibition", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Book%20Jacket%20Designers%20Guild%2C%20First%20Exhibition/Web/Book%20Jacket%20Designers%20Guild%2C%201st%20annual%20exhibit%20catalog%2010.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Life%20of%20Forms%20in%20Art/Web/The%20Life%20of%20Forms%20in%20Art%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Life%20of%20Forms%20in%20Art/Web/The%20Life%20of%20Forms%20in%20Art%2001.jpg",
+                            title: "Life of Forms in Art",
+                            footnote1: "1948",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Life of Forms in Art", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Life%20of%20Forms%20in%20Art/Web/The%20Life%20of%20Forms%20in%20Art%2001.jpg"},
+                            {title: "Life of Forms in Art", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Life%20of%20Forms%20in%20Art/Web/The%20Life%20of%20Forms%20in%20Art%2002.jpg"},
+                            {title: "Life of Forms in Art", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Life%20of%20Forms%20in%20Art/Web/The%20Life%20of%20Forms%20in%20Art%2003.jpg"},
+                            {title: "Life of Forms in Art", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Life%20of%20Forms%20in%20Art/Web/The%20Life%20of%20Forms%20in%20Art%2004.jpg"},
+                            {title: "Life of Forms in Art", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Life%20of%20Forms%20in%20Art/Web/The%20Life%20of%20Forms%20in%20Art%2005.jpg"},
+                            {title: "Life of Forms in Art", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Life%20of%20Forms%20in%20Art/Web/The%20Life%20of%20Forms%20in%20Art%2006.jpg"},
+                            {title: "Life of Forms in Art", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Life%20of%20Forms%20in%20Art/Web/The%20Life%20of%20Forms%20in%20Art%2007.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Problems%20of%20Contemporary%20Art%2C%20Paintings%20Sculptures%20Reflections/Web/Problems%20of%20Contemporary%20Art%2C%20Paintings%20Sculptures%20Reflections-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Problems%20of%20Contemporary%20Art%2C%20Paintings%20Sculptures%20Reflections/Web/Problems%20of%20Contemporary%20Art%2C%20Paintings%20Sculptures%20Reflections.jpg",
+                            title: "Paintings Sculptures Reflections",
+                            footnote1: "Problems of Contemporary Art",
+                            footnote2: "1948"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20The%20Documents%20of%20Modern%20Art-%20Beyond%20Painting%20and%20Other%20Writings%20By%20the%20Artist%20and%20His%20Friends/Web/The%20Documents%20of%20Modern%20Art%20-%20Beyond%20Painting-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20The%20Documents%20of%20Modern%20Art-%20Beyond%20Painting%20and%20Other%20Writings%20By%20the%20Artist%20and%20His%20Friends/Web/The%20Documents%20of%20Modern%20Art%20-%20Beyond%20Painting.jpg",
+                            title: "Beyond Painting and Other Writings By the Artist and His Friends",
+                            footnote1: "The Documents of Modern Art",
+                            footnote2: "1948"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20The%20Documents%20of%20Modern%20Art-%20On%20My%20Way/Web/The%20Documents%20of%20Modern%20Art%20-%20Arp%2C%20On%20My%20Way%2C%20Poetry%20and%20Essays%201912-1947-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20The%20Documents%20of%20Modern%20Art-%20On%20My%20Way/Web/The%20Documents%20of%20Modern%20Art%20-%20Arp%2C%20On%20My%20Way%2C%20Poetry%20and%20Essays%201912-1947.jpg",
+                            title: "On My Way",
+                            footnote1: "The Documents of Modern Art",
+                            footnote2: "1948"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "On My Way", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20The%20Documents%20of%20Modern%20Art-%20On%20My%20Way/Web/Documents%20of%20Modern%20Art%2C%20Arp%2001.jpg"},
+                            {title: "On My Way", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20The%20Documents%20of%20Modern%20Art-%20On%20My%20Way/Web/Documents%20of%20Modern%20Art%2C%20Arp%2002.jpg"},
+                            {title: "On My Way", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20The%20Documents%20of%20Modern%20Art-%20On%20My%20Way/Web/Documents%20of%20Modern%20Art%2C%20Arp%2003.jpg"},
+                            {title: "On My Way", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20The%20Documents%20of%20Modern%20Art-%20On%20My%20Way/Web/Documents%20of%20Modern%20Art%2C%20Arp%2004.jpg"},
+                            {title: "On My Way", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20The%20Documents%20of%20Modern%20Art-%20On%20My%20Way/Web/Documents%20of%20Modern%20Art%2C%20Arp%2005.jpg"},
+                            {title: "On My Way", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20The%20Documents%20of%20Modern%20Art-%20On%20My%20Way/Web/Documents%20of%20Modern%20Art%2C%20Arp%2006.jpg"},
+                            {title: "On My Way", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20The%20Documents%20of%20Modern%20Art-%20On%20My%20Way/Web/Documents%20of%20Modern%20Art%2C%20Arp%2007.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%20cover-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%20cover.jpg",
+                            title: "Women- A Collaboration of Artists and Writers",
+                            footnote1: "1948",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2001.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2002.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2003.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2004.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2005.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2006.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2007.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2008.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2009.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2010.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2011.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2012.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2013.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2014.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2015.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2016.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2017.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2018.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2019.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2020.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2021.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2022.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2023.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2024.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2025.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2026.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2027.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2028.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2029.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2030.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2031.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2032.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2033.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2034.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2035.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2036.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2037.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2038.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2039.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2040.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2041.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2042.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2043.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2044.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2045.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2046.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2047.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2048.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2049.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2050.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2051.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2052.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2053.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2054.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2055.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2056.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2057.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2058.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2059.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2060.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2061.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2062.jpg"},
+                            {title: "Women- A Collaboration of Artists and Writers", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1948%20Women-%20A%20Collaboration%20of%20Artists%20and%20Writers/Web/Women-%20A%20Collaboration%20of%20Artists%20and%20Writers%201948%2063.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%2020th%20Century%20Art%2C%20Arensberg%20Collection/Web/20th%20Century%20Art%2C%20Arensberg%20Collection-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%2020th%20Century%20Art%2C%20Arensberg%20Collection/Web/20th%20Century%20Art%2C%20Arensberg%20Collection.jpg",
+                            title: "20th Century Art, Arensberg Collection",
+                            footnote1: "1949",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "20th Century Art, Arensberg Collection", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%2020th%20Century%20Art%2C%20Arensberg%20Collection/Web/20th%20Century%20Art%2C%20Arensberg%20Collection%2001.jpg"},
+                            {title: "20th Century Art, Arensberg Collection", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%2020th%20Century%20Art%2C%20Arensberg%20Collection/Web/20th%20Century%20Art%2C%20Arensberg%20Collection%2002.jpg"},
+                            {title: "20th Century Art, Arensberg Collection", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%2020th%20Century%20Art%2C%20Arensberg%20Collection/Web/20th%20Century%20Art%2C%20Arensberg%20Collection%2003.jpg"},
+                            {title: "20th Century Art, Arensberg Collection", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%2020th%20Century%20Art%2C%20Arensberg%20Collection/Web/20th%20Century%20Art%2C%20Arensberg%20Collection%2004.jpg"},
+                            {title: "20th Century Art, Arensberg Collection", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%2020th%20Century%20Art%2C%20Arensberg%20Collection/Web/20th%20Century%20Art%2C%20Arensberg%20Collection%2005.jpg"},
+                            {title: "20th Century Art, Arensberg Collection", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%2020th%20Century%20Art%2C%20Arensberg%20Collection/Web/20th%20Century%20Art%2C%20Arensberg%20Collection%2006.jpg"},
+                            {title: "20th Century Art, Arensberg Collection", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%2020th%20Century%20Art%2C%20Arensberg%20Collection/Web/20th%20Century%20Art%2C%20Arensberg%20Collection%2007.jpg"},
+                            {title: "20th Century Art, Arensberg Collection", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%2020th%20Century%20Art%2C%20Arensberg%20Collection/Web/20th%20Century%20Art%2C%20Arensberg%20Collection%2008.jpg"},
+                            {title: "20th Century Art, Arensberg Collection", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%2020th%20Century%20Art%2C%20Arensberg%20Collection/Web/20th%20Century%20Art%2C%20Arensberg%20Collection%2009.jpg"},
+                            {title: "20th Century Art, Arensberg Collection", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%2020th%20Century%20Art%2C%20Arensberg%20Collection/Web/20th%20Century%20Art%2C%20Arensberg%20Collection%2010.jpg"},
+                            {title: "20th Century Art, Arensberg Collection", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%2020th%20Century%20Art%2C%20Arensberg%20Collection/Web/20th%20Century%20Art%2C%20Arensberg%20Collection%2011.jpg"},
+                            {title: "20th Century Art, Arensberg Collection", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%2020th%20Century%20Art%2C%20Arensberg%20Collection/Web/20th%20Century%20Art%2C%20Arensberg%20Collection%2012.jpg"},
+                            {title: "20th Century Art, Arensberg Collection", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%2020th%20Century%20Art%2C%20Arensberg%20Collection/Web/20th%20Century%20Art%2C%20Arensberg%20Collection%2013.jpg"},
+                            {title: "20th Century Art, Arensberg Collection", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%2020th%20Century%20Art%2C%20Arensberg%20Collection/Web/20th%20Century%20Art%2C%20Arensberg%20Collection%2014.jpg"}
+                            )
+
+                        +galleryItem-cardImageZoom(
+                            "designed-contributed/1949-Graphic-Forms-The-Arts-as-Related-to-the-Book.html",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book-450.jpg",
+                            "Graphic Forms The Arts as Related to the Book",
+                            "1949",
+                            "CHANGE_ME_DATE"
+                            )
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2C%20cover-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2C%20cover.jpg",
+                            title: "Modern Art in Your Life",
+                            footnote1: "1949",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2001.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2002.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2003.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2004.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2005.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2006.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2007.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2008.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2009.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2010.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2011.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2012.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2013.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2014.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2015.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2016.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2017.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2018.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2019.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2020.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2021.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2022.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2023.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2024.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2025.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2026.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2027.jpg"},
+                            {title: "Modern Art in Your Life", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Modern%20Art%20in%20Your%20Life/Web/Modern%20Art%20in%20Your%20Life%2028.jpg"}
+                            )
+
+                        +galleryItem-cardImageZoom(
+                            "designed-contributed/1949-Paul-Klee-Paintings-Drawings-and-Prints.html",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2C%20cover-450.jpg",
+                            "Paul Klee- Paintings, Drawings and Prints",
+                            "1949",
+                            "CHANGE_ME_DATE"
+                            )
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20The%20Documents%20of%20Modern%20Art-%20The%20Rise%20of%20Cubism/Web/The%20Documents%20of%20Modern%20Art%20-%20The%20Rise%20of%20Cubism-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20The%20Documents%20of%20Modern%20Art-%20The%20Rise%20of%20Cubism/Web/The%20Documents%20of%20Modern%20Art%20-%20The%20Rise%20of%20Cubism.jpg",
+                            title: "The Rise of Cubism",
+                            footnote1: "The Documents of Modern Art",
+                            footnote2: "1949"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20From%20Baudelaire%20to%20Surrealism/Web/The%20Documents%20of%20Modern%20Art%20-%20From%20Baudelaire%20to%20Surrealism-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20From%20Baudelaire%20to%20Surrealism/Web/The%20Documents%20of%20Modern%20Art%20-%20From%20Baudelaire%20to%20Surrealism.jpg",
+                            title: "From Baudelaire to Surrealism",
+                            footnote1: "The Documents of Modern Art",
+                            footnote2: "1950"
+                            })
+
+                        +galleryItem-cardImageZoom(
+                            "designed-contributed/1950-The-Fauvist-Painters.html",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2C%20front-450.jpg",
+                            "The Fauvist Painters",
+                            "The Documents of Modern Art",
+                            "1950"
+                            )
+
+                        +galleryItem-cardImageZoom(
+                            "designed-contributed/1951-The-Dada-Painters-and-Poets-An-Anthology.html",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology-450.jpg",
+                            "The Dada Painters and Poets, An Anthology",
+                            "The Documents of Modern Art",
+                            "1951"
+                            )
+
+                        +galleryItem-cardImageZoom(
+                            "designed-contributed/1952-Modern-Art-in-Advertising.html",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2C%20cover-450.jpg",
+                            "Modern Art in Advertising Container Corp of America",
+                            "1952",
+                            "CHANGE_ME_DATE"
+                            )
+
+                        +galleryItem-cardImageZoom(
+                            "designed-contributed/1968-Homage-to-the-Book.html",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book-%20Cover-450.jpg",
+                            "Homage to the Book",
+                            "1968",
+                            "CHANGE_ME_DATE"
+                            )
+
+                        +galleryItem-cardImageZoom(
+                            "designed-contributed/1984-For-The-Love-of-Letters.html",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2C%20front-450.jpg",
+                            "For The Love of Letters",
+                            "1984",
+                            "CHANGE_ME_DATE"
+                            )
+
+                        +galleryItem-cardImageZoom(
+                            "designed-contributed/1984-For-The-Love-of-Letters.html",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book-450.jpg",
+                            "Twenty Four Page Book",
+                            "Type Directors Club",
+                            "1987"
+                            )
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

@@ -1,0 +1,179 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Maeda @ Media'
+    - var bodyID    = 'life'
+    - var bodyClass = 'interviews'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Interviews/2001%20Maeda%20at%20Media/Web/Maeda%20at%20Media-450.jpg'
+
+    - var articleAuthor         = 'John Maeda'
+    - var publishedInTitle      = 'Maeda@Media'
+    - var publishedInSubtitle   = 'Universe Press, 2000'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/2001%20Maeda%20at%20Media/Web/Maeda%20at%20Media-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/2001%20Maeda%20at%20Media/Web/Maeda%20at%20Media.jpg', title: ''})
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/45468587'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://www.abebooks.com/servlet/SearchResults?kn=Maeda%40Media&sts=t'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1ZRcLMe'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'Maeda@Media'
+
+    - var nextType              = 'Interview'
+    - var nextTitle             = 'Paul Rand: Imperishable Champion'
+    - var nextDate              = '1985'
+    - var nextDescription       = 'Gutenberg & Family: The Newsletter of the Type Director’s Club'
+    - var nextLink              = '/life/interviews/1985-guttenberg-and-family.html'
+
+    - var relatedItemLink1      = '/life/interviews/1995-Portfolio-Center.html'
+    - var relatedItemTitle1     = 'Interview with a Portfolio Center Student'
+    - var relatedItemFootnote1  = 'His short, witty answers to probing questions.'
+
+    - var relatedItemLink2      = '/life/interviews/1998-Paul-Rand-on-the-Play-Instinct.html'
+    - var relatedItemTitle2     = 'Paul Rand on the Play Instinct'
+    - var relatedItemFootnote2  = 'With design as the common thread, each exchange opens an individual perspective on the visual culture at large.'
+
+    - var relatedItemLink3      = '/life/interviews/1988-id-magazine.html'
+    - var relatedItemTitle3     = 'Logos, Technique and Trends'
+    - var relatedItemFootnote3  = 'A look back over 50 years to explain the meaning of logos, technique and trends.'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            unless articleAuthor == 'CHANGE_ME'
+                p.reveal-enter-bottom!= 'By ' + articleAuthor
+
+            p.reveal-enter-bottom!= publishedInTitle
+                unless publishedInSubtitle == 'CHANGE_ME'
+                    br
+                    !=publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    !=publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+            //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        At once a manifesto, a manual and a sourcebook, this volume presents the entire output of an artist with a fascination for the untapped artistic power of computer programming. Maeda's discoveries took him from computer studies at Massachusetts Institute of Technology to art school in Japan.
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center#original-article
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            John Maeda was a former student and friend of Paul Rand’s. On November 14, 1996, he participated in Rand’s final interview in front of a packed auditorium at M.I.T.’s Media Laboratory. In his book, he talks briefly about the evening and excerpts some questions posed to Rand.
+
+                            ---
+
+                            As a graduate student at M.I.T., I stumbled upon a thin, nondescript book called Thoughts on Design by Paul Rand. At the time I was trying to build a reputation for myself as a graphical user interface designer. But as I flipped through Rand’s book, I was humbled by the power with which he manipulated space and the clarity of his prose. I was immediately inspired to pursue the field of graphic design, not necessarily pertaining to the computer.
+
+                            It was fitting that eight years later, I would return to M.I.T. as a professor of design, and that I would host a lecture by Paul Rand at M.I.T. The time for the lecture was set at ten in the morning. An early lecture in American universities is rare because students usually study late into the night and are less apt to attend early events. But Rand insisted that he speak in the morning. He said, “If someone isn’t willing to wake up to hear me to speak, I don’t want to speak to them!”
+
+                            The auditorium was packed beyond capacity with people from all over New England, some waking up as early as five in the morning to arrive in time for the lecture. The Director of the Media Lab, Nicholas Negroponte, later remarked that during his career at M.I.T. he had never seen such an overwhelming audience for a morning lecture. Although the lecture hall was crowded, complete silence reigned as everyone’s attention was completely focused on Rand.
+
+                            The night before the lecture we had dinner together. Afterwards he asked me, “So, what are we going to talk about tomorrow?” My immediate reply was, “We?” He said, “Yes, it’s boring if I just get up there and talk. So let’s have a conversation first.” Following Rand’s request, I began with some very basic questions.
+
+                            ---
+
+                        p
+                            strong.text-red PAUL RAND: 
+                            | I’ve waited eighty-two years to come to this place. I knew Gyorgy Kepes and Muriel Cooper, but they never invited me. I’m wondering why Mr. Maeda invited me at this late date, but I’ll do my best.
+
+                        p.question JOHN MAEDA: What is design?
+
+                        p
+                            strong.text-red PR: 
+                            | Design is the method of putting form and content together. Design, just as art, has multiple definitions, there is no single definition. Design can be art. Design can be aesthetics. Design is so simple, that’s why it is so complicated.
+
+                        p.question JM: What is the difference between a designer and an artist?
+
+                        p
+                            strong.text-red PR: 
+                            | There is no difference between a designer and an artist. They both work with form and content. I try to create art, whether I make it or not is not up to me, it’s up to God.
+
+                        p.question JM: What is the difference between good design and bad design?
+
+                        p
+                            strong.text-red PR: 
+                            | A bad design is irrelevant. It is superficial, pretentious…basically like all the stuff you see out there today.
+
+                        p.question JM: What are the fundamental skills of a designer?
+
+                        p
+                            strong.text-red PR: 
+                            | The fundamental skill is talent. Talent is a rare commodity. It’s all intuition. And you can’t teach intuition.
+
+                        p.question JM: Most of your designs have lasted for several decades. What would you say is your secret?
+
+                        p
+                            strong.text-red PR: 
+                            | Keeping it simple. Being honest, I mean, completely objective about your work. Working very hard at it.
+
+                        p.question JM: How did you get started as a young designer?
+
+                        p
+                            strong.text-red PR: 
+                            | (raising his eyebrows) I think you should ask instead, “How did I get started as a baby?”
+
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            ---
+
+                            After his lecture, Rand offered autograph copies of his books and there was a line that did not clear up until an hour later. I tried to shuttle him off to a private reception but he refused to leave until all the people in line were signed and served.
+
+                            His lecture was so well received at M.I.T. that Dean William Mitchell and Negroponte suggested that Rand join the faculty at the Media Lab and we immediately began the process of appointing him. Negroponte wanted me to confirm Rand’s interest in joining the Lab, after which we faxed Rand explaining the situation. He replied, **“Of course I accept the position.”** A few days later he passed away.
+
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        //- include ../../__MIXINS/_include-image-carousel.pug
+
+        include ../../__MIXINS/_include-published-in.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug

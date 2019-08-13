@@ -1,0 +1,114 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Dubonnet'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = 'CHANGE_ME'
+    - var nextType  = 'Client'
+    - var nextTitle = 'Dubouchett Cordials'
+    - var nextLink  = 'Dubouchett-Cordials'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Dubonnet-1942.svg", LG:"https://assets.paulrand.design/Works/Dubonnet/Dubonnet-1942.svg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Advertising",
+                        "top","3","2",
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20a%20fresh%20n%20frosty%20summer%20drink-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20a%20fresh%20n%20frosty%20summer%20drink.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20a%20fresh%20n%20frosty%20summer%20drink%20B-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20a%20fresh%20n%20frosty%20summer%20drink%20B.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20before%20or%20after%20that%20thanksgiving%20dinner-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20before%20or%20after%20that%20thanksgiving%20dinner.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20Beyond%20Your%20mildest%20expectations-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20Beyond%20Your%20mildest%20expectations.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20cool%20dubonnet%20drinks-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20cool%20dubonnet%20drinks.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20cool%20off%20with%20these%20fresh%20and%20frosty%20summer%20drinks-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20cool%20off%20with%20these%20fresh%20and%20frosty%20summer%20drinks.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20cool%20off%20with%20these%20fresh%20and%20frosty%20summer%20drinks%20B-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20cool%20off%20with%20these%20fresh%20and%20frosty%20summer%20drinks%20B.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20for%20your%20pre-dinner%20pleasure%20say-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20for%20your%20pre-dinner%20pleasure%20say.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20fresh%20n%20frosty%20summer%20drinks-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20fresh%20n%20frosty%20summer%20drinks.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20goes%20usa-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20goes%20usa.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20made%20to%20order%20for%20summer-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20made%20to%20order%20for%20summer.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20makes%20only%20two%20products%2C%20Fall-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20makes%20only%20two%20products%2C%20Fall.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20makes%20only%20two%20products-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20makes%20only%20two%20products.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20makes%20two%20products%20only%2C%20Christmas-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20makes%20two%20products%20only%2C%20Christmas.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20prescription%20for%20pleasure-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20prescription%20for%20pleasure.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20prescription%20for%20pleasure%20B-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20prescription%20for%20pleasure%20B.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%202-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%202.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%20to%20say%20make%20your%20drink-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%20to%20say%20make%20your%20drink.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%20to%20say-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%20to%20say.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%20with%20cool%20dubonnet%20drinks-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%20with%20cool%20dubonnet%20drinks.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%20with%20dubonnet%20and%20soda%20B-W-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%20with%20dubonnet%20and%20soda%20B-W.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%20with%20dubonnet%20and%20soda%20Color-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%20with%20dubonnet%20and%20soda%20Color.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%20with%20merry%20dubonnet%20drinks-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%20with%20merry%20dubonnet%20drinks.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%20with%20practical%20dubonnet%20drinks-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%20with%20practical%20dubonnet%20drinks.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%20with%20tangy%20dubonnet%20drinks-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%20with%20tangy%20dubonnet%20drinks.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%20with%20wonderful%20all%20way%20dubonnet%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%20with%20wonderful%20all%20way%20dubonnet%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%20with%20wonderful%20all%20way%20dubonnet%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20that%20man%20is%20here%20again%20with%20wonderful%20all%20way%20dubonnet%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20the%20favorite%20toast%20for%20the%20holiday%20host-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20the%20favorite%20toast%20for%20the%20holiday%20host.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20the%20favorite%20toast%20for%20the%20holiday%20host%202-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20the%20favorite%20toast%20for%20the%20holiday%20host%202.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20the%20perfect%20apertif-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20the%20perfect%20apertif.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20versatile%20in%20cocktails%2C%20tall%20drinks%20or%20straight%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20versatile%20in%20cocktails%2C%20tall%20drinks%20or%20straight%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20versatile%20in%20cocktails%2C%20tall%20drinks%20or%20straight%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20versatile%20in%20cocktails%2C%20tall%20drinks%20or%20straight%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20whenever%20you%20give%2C%20give%20dubonnet%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20whenever%20you%20give%2C%20give%20dubonnet%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20whenever%20you%20give%2C%20give%20dubonnet%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20whenever%20you%20give%2C%20give%20dubonnet%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20whenever%20you%20give%2C%20give%20dubonnet%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20whenever%20you%20give%2C%20give%20dubonnet%2003.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20your%20bar%20in%20a%20bottle-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20your%20bar%20in%20a%20bottle.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20your%20bar%20in%20a%20bottle%202-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20-%20your%20bar%20in%20a%20bottle%202.jpg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Labels",
+                        "top","2","2",
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20Label%2001-800.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20Label%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20Label%2002-800.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Web/Dubonnet%20Label%2002.jpg", title: "", footnote: ""}
+                        )
+
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Blonde Bottle",
+                        "middle", "1", "1",
+                        {SM: "https://assets.paulrand.design/Works/Dubonnet/Dubonnet%20Blonde%20Bottle%20Label/Web/Dubonnet%20Blonde%20Bottle%20Label%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Dubonnet%20Blonde%20Bottle%20Label/Web/Dubonnet%20Blonde%20Bottle%20Label%2001.jpg", title: "", footnote: ""}
+                        )
+
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title:"Blonde Bottle", SM: "https://assets.paulrand.design/Works/Dubonnet/Dubonnet%20Blonde%20Bottle%20Label/Web/Dubonnet%20Blonde%20Bottle%20Label%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Dubonnet%20Blonde%20Bottle%20Label/Web/Dubonnet%20Blonde%20Bottle%20Label%2001.jpg"},
+                        {Title:"Blonde Bottle", SM: "https://assets.paulrand.design/Works/Dubonnet/Dubonnet%20Blonde%20Bottle%20Label/Web/Dubonnet%20Blonde%20Bottle%20Label%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Dubonnet%20Blonde%20Bottle%20Label/Web/Dubonnet%20Blonde%20Bottle%20Label%2002.jpg"},
+                        {Title:"Blonde Bottle", SM: "https://assets.paulrand.design/Works/Dubonnet/Dubonnet%20Blonde%20Bottle%20Label/Web/Dubonnet%20Blonde%20Bottle%20Label%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Dubonnet%20Blonde%20Bottle%20Label/Web/Dubonnet%20Blonde%20Bottle%20Label%2003.jpg"},
+                        {Title:"Blonde Bottle", SM: "https://assets.paulrand.design/Works/Dubonnet/Dubonnet%20Blonde%20Bottle%20Label/Web/Dubonnet%20Blonde%20Bottle%20Label%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Dubonnet%20Blonde%20Bottle%20Label/Web/Dubonnet%20Blonde%20Bottle%20Label%2004.jpg"},
+                        {Title:"Blonde Bottle", SM: "https://assets.paulrand.design/Works/Dubonnet/Dubonnet%20Blonde%20Bottle%20Label/Web/Dubonnet%20Blonde%20Bottle%20Label%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Dubonnet%20Blonde%20Bottle%20Label/Web/Dubonnet%20Blonde%20Bottle%20Label%2005.jpg"},
+                        {Title:"Blonde Bottle", SM: "https://assets.paulrand.design/Works/Dubonnet/Dubonnet%20Blonde%20Bottle%20Label/Web/Dubonnet%20Blonde%20Bottle%20Label%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Dubonnet%20Blonde%20Bottle%20Label/Web/Dubonnet%20Blonde%20Bottle%20Label%2006.jpg"},
+                        {Title:"Blonde Bottle", SM: "https://assets.paulrand.design/Works/Dubonnet/Dubonnet%20Blonde%20Bottle%20Label/Web/Dubonnet%20Blonde%20Bottle%20Label%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Dubonnet%20Blonde%20Bottle%20Label/Web/Dubonnet%20Blonde%20Bottle%20Label%2007.jpg"},
+                        {Title:"Blonde Bottle", SM: "https://assets.paulrand.design/Works/Dubonnet/Dubonnet%20Blonde%20Bottle%20Label/Web/Dubonnet%20Blonde%20Bottle%20Label%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Dubonnet/Dubonnet%20Blonde%20Bottle%20Label/Web/Dubonnet%20Blonde%20Bottle%20Label%2008.jpg"}
+                        )
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

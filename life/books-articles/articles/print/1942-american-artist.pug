@@ -1,0 +1,135 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Paul Rand — Advertising Artist'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1942%20American%20Artist%20magazine%2C%20June/Web/American%20Artist%20magazine%2C%20June%201942-450.jpg'
+
+    - var articleAuthor         = 'Percy Seitlin'
+    - var publishedInTitle      = 'American Artist Magazine'
+    - var publishedInSubtitle   = 'Watson-Guptill, Volume 6, Number 6, June 1942'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1942%20American%20Artist%20magazine%2C%20June/Web/American%20Artist%20magazine%2C%20June%201942-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1942%20American%20Artist%20magazine%2C%20June/Web/American%20Artist%20magazine%2C%20June%201942.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/1479320'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3DAmerican%2BArtist%2BMagazine%2Bjune%2B1942%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1UkKxas'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/s/American+Artist+Magazine+june+1942?_requestid=434428'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Paul Rand by Georgine Oeri'
+    - var nextDate              = '1947'
+    - var nextDescription       = 'Graphis, Vol. 3, No. 18'
+    - var nextLink              = '/life/books-articles/articles/print/1947-graphis.html'
+
+    - var relatedItemLink1      = '/life/books-articles/articles/print/1955-international-art-advertising-idea-magazine.html'
+    - var relatedItemTitle1     = 'International Advertising Art Idea magazine'
+    - var relatedItemFootnote1  = 'March 1955'
+
+    - var relatedItemLink2      = '/life/books-articles/articles/print/1989-connecticuts-finest.html'
+    - var relatedItemTitle2     = 'The Graphic Genius of Paul Rand'
+    - var relatedItemFootnote2  = 'Connecticut’s Finest, Whittle Communications, Winter 1989'
+
+    - var relatedItemLink3      = '/life/books-articles/articles/print/1997-logocentrism.html'
+    - var relatedItemTitle3     = 'Logocentrism'
+    - var relatedItemFootnote3  = 'New Republic, December 29, 1997, Vol. 217, Issue 26'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1942%20American%20Artist%20magazine%2C%20June/Web/American%20Artist%20magazine%2C%20June%201942%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1942%20American%20Artist%20magazine%2C%20June/Web/American%20Artist%20magazine%2C%20June%201942%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1942%20American%20Artist%20magazine%2C%20June/Web/American%20Artist%20magazine%2C%20June%201942%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1942%20American%20Artist%20magazine%2C%20June/Web/American%20Artist%20magazine%2C%20June%201942%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1942%20American%20Artist%20magazine%2C%20June/Web/American%20Artist%20magazine%2C%20June%201942%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1942%20American%20Artist%20magazine%2C%20June/Web/American%20Artist%20magazine%2C%20June%201942%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1942%20American%20Artist%20magazine%2C%20June/Web/American%20Artist%20magazine%2C%20June%201942%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1942%20American%20Artist%20magazine%2C%20June/Web/American%20Artist%20magazine%2C%20June%201942%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1942%20American%20Artist%20magazine%2C%20June/Web/American%20Artist%20magazine%2C%20June%201942%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1942%20American%20Artist%20magazine%2C%20June/Web/American%20Artist%20magazine%2C%20June%201942%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1942%20American%20Artist%20magazine%2C%20June/Web/American%20Artist%20magazine%2C%20June%201942%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1942%20American%20Artist%20magazine%2C%20June/Web/American%20Artist%20magazine%2C%20June%201942%2006.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content#original-article
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        8.75 x 11.75 saddle-stitched magazine with 36 pages of advertising and editorial content. Cover feature on Leon Kroll, but the issue highlight is a 3-page profile of 27-year-old Art Director Paul Rand written by Percy Seitlin.
+
+                        The 3-page article reproduced 11 examples of Rand’s work and was laid out by Rand himself.
+
+                    .footnote — Randall Ross of modernism101.com
+
+
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            I write of. . . . . . . . **paul rand**
+
+                            artist for industry, who is pretty much in a class by himself. . . . . . . . He is an artist’s artist, yet he delights the man in the street with his wit, inventiveness, and showmanship.
+
+                            It is quite an accomplishment to make art and entertainment out of advertising. The art-artisit sits alone with his easel and paints. His own conscience and aesthetic sensibilities determine what he is to do. With the advertising artist it’s different. His work is a collaboration; and, besides, he must always meet mechanical requirements since his copy must be prepared for reproduction. He must know type, paper, engravings, and how to work with other people in the advertising business.
+
+                            These three pages are examples of layout by Paul Rand. They also exemplify the kind of collaboration between copywriter and artist that is an everyday requirement of the career of art for industry. To appreciate fully the ingenuity and fine craftsmanship of Paul Rand jobs you would have to see the jobs themselves. They range the whole keyboard of the graphic arts. Every ingredient gets a subtle twist…the type, the illustration, the colors, the paper, the binding. Paul Rand finds ways to fold a brochure that other designers somehow never think of; he does things with varnishing, embossing, and finishing that are startling in their novelty. Yet, it is not mere novelty that he is after. Rather he strives for unity, expressiveness and utility. He knows, also, that an advertising artist must be a showman.
+
+                            Apropos of Paul Rand’s showmanship; it used to be pointed out that you could always lay ‘em in the aisles if you got the horse to stand up on his hind legs and dance. People would think that a horse dancing in such a way was a remarkable spectacle. Absorbed in the wonder of the feat, they would forget to ask whether the horse danced well. All that is changed now. Paul Rand knows that today the horse must not only dance but he must dance like a man!
+
+
+                        .footnote — Percy Seitlin, 1942
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+
+
+
+        include ../../../../__MIXINS/_include-image-carousel.pug
+
+        include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

@@ -1,0 +1,331 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Exhibits and Events'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    .cd-main-content
+        .grid-container
+
+            //- ======================================
+            //- =            EXHIBIS AND EVENTS           =
+            //- ======================================
+
+            .grid-x.grid-margin-x.align-center
+                .small-12.cell
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+
+                    // Tabs
+                    ul.tabs#tabs(data-tabs data-deep-link="true")
+                        li.tabs-title.is-active
+                            a(href='#exhibits') Exhibits
+                        li.tabs-title
+                            a(href='#events') Events
+
+                    // Tab content
+                    .tabs-content(data-tabs-content="tabs")
+                        //- /*===============================================================================================================================
+                        //- 					
+                        //- ███████ ██   ██ ██   ██ ██ ██████  ██ ████████ ███████ 
+                        //- ██       ██ ██  ██   ██ ██ ██   ██ ██    ██    ██      
+                        //- █████     ███   ███████ ██ ██████  ██    ██    ███████ 
+                        //- ██       ██ ██  ██   ██ ██ ██   ██ ██    ██         ██ 
+                        //- ███████ ██   ██ ██   ██ ██ ██████  ██    ██    ███████ 
+                        //-
+                        //- ================================================================================================================================*/
+                        .tabs-panel.is-active#exhibits
+                            +listItem-thumb(
+                                "exhibits/1941-advance-guard.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1941%20Advance%20Guard%20of%20Advertising%20Artists/Web/Advance%20Guard%20of%20Advertising%20Artists%20Exhibit%2C%20front-200.jpg",
+                                "Advance Guard of Advertising Artists",
+                                "1941",
+                                "Katharine Kuh Gallery"
+                                )
+
+                            +listItem-thumb(
+                                "exhibits/1947-ad-gallery.html",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2001-200.jpg",
+                                "AD Gallery Presents: Paul Rand",
+                                "1947",
+                                "A wonderful, rare keepsake that’s quite small."
+                                )
+
+                            +listItem-thumb(
+                                "exhibits/1953-paul-rand-designers-art-design-gallery.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1953%20Design%20Gallery%20Exhibit/Web/1986%20Design%20Gallery%20Exhibit%2001-200.jpg",
+                                "#358 Design Gallery 1953 “Paul Rand: A Designer’s Art”",
+                                "1953",
+                                "An early exhibit in Japan."
+                                )
+
+                            +listItem-thumb(
+                                "exhibits/1970-graphic-art-of-paul-rand-ibm-gallery.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1970%20IBM%20Gallery-%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/IBM%20Gallery%20exhibit-%20The%20Graphic%20Art%20of%20Paul%20Rand%2C%20front-200.jpg",
+                                "IBM Gallery- The Graphic Art of Paul Rand",
+                                "1970",
+                                "An exhibit of work at the famous IBM Gallery."
+                                )
+
+                            +listItem-thumb(
+                                "exhibits/1978-graphic-art-of-paul-rand-pratt-gallery.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1978%20The%20Graphic%20Art%20of%20Paul%20Rand%2C%20Pratt%20Gallery/Web/The%20Graphic%20Art%20of%20Paul%20Rand%2C%20Pratt%20Gallery-200.jpg",
+                                "The Graphic Art of Paul Rand",
+                                "1978",
+                                "Pratt Gallery presents Paul Rand."
+                                )
+
+                            +listItem-thumb(
+                                "exhibits/1979-art-play-design.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1979%20Philadelphia%20College%20of%20Art/Web/Poster%2C%20Art%2C%20Play%2C%20Design-%20An%20Exhibition%20Of%20Corporate%20Design%20Trademarks%2C%20Book%20Design%20Posters%2C%20Drawings%20And%20Teachings%20By%20Paul%20Rand%2C%201979-200.jpg",
+                                "Art/Play/Design",
+                                "1979",
+                                "Rand exhibited in Philadelphia."
+                                )
+
+                            +listItem-thumb(
+                                "exhibits/1984-itc-center-typographic-treasures.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2002-200.jpg",
+                                "ITC Center Typographic Treasures",
+                                "1984",
+                                "Fifty years of typography and graphic design."
+                                    )
+
+                            //- +listItem-thumb(
+                                "exhibits/1988-sva-announcement.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20SVA%20Exhibit%20Announcement/Web/SVA%20Announcement%2002-200.jpg",
+                                "SVA Exhibit Announcement",
+                                "1988",
+                                "3 pictures of the invitation to an exhibit of Rand's work at the School of Visual Arts in New York City."
+                                    )
+
+                            +listItem-thumb(
+                                "exhibits/1988-sva.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%2004-200.jpg",
+                                "School of Visual Arts Masters Series: Paul Rand",
+                                "1988",
+                                "Held at the School of Visual Arts Museum, New York."
+                                )
+
+                            +listItem-thumb(
+                                "exhibits/1990-graphic-art-of-paul-rand.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1990%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/Graphic%20Art%20of%20Paul%20Rand%2C%20exhibit%20invite%2C%20front-200.jpg",
+                                "The Graphic Art of Paul Rand",
+                                "1990",
+                                "3 pictures of the invitation to the gallery opening at the University of Hartford, West Hartford, CT."
+                                )
+
+                            +listItem-thumb(
+                                "exhibits/1992-ginza-graphic-gallery.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1992%20Ginza%20Graphic%20Gallery/Web/1992%20Ginza%20Graphic%20Gallery%2001-200.jpg",
+                                "Ginza Graphic Gallery",
+                                "1992",
+                                "79th exhibition featuring Paul Rand, Japan."
+                                )
+
+                            +listItem-thumb(
+                                "exhibits/1994-paul-rand-weston-ct.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20Paul%20Rand%20exhibit%20in%20Westport%2C%20CT/Web/Westport%20invite%2C%20cover-200.jpg",
+                                "Paul Rand exhibit in Westport, CT",
+                                "1994",
+                                "Invitation to the gallery opening at the Westport Arts Center, Westport, CT."
+                                )
+
+                            +listItem-thumb(
+                                "exhibits/1996-cooper-union-retrospective.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union/Web/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union%20Herb%20Lubalin%20Study%20Center%20Brochure%2001-200.jpg",
+                                "Cooper Union Retrospective",
+                                "1996",
+                                "Cooper Union celebrates Paul Rand, his life and work."
+                                )
+
+                            +listItem-thumb(
+                                "exhibits/2003-chico.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2003%20Paul%20Rand%20Retrospective/Web/2003%20Rand%20Retrospective%20Poster-200.jpg",
+                                "Paul Rand Retrospective",
+                                "2003",
+                                "Paul Rand Retrospective at California State University, Chico"
+                                )
+
+                            +listItem-thumb(
+                                "exhibits/2007-ucla.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2001-200.jpg",
+                                "Catalog Covers of UCLA Extension: Masters of Graphic Design",
+                                "2007",
+                                "An exhibit showcasing the covers of UCLA's Extension program, from 1990-2007."
+                                )
+
+                            +listItem-thumb(
+                                "exhibits/2007-chaumont.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%2018th%20International%20Poster%20and%20Graphic%20Design%20Festival%20of%20Chaumont%2C%20Paul%20Rand%20at%20Les%20Silos/Web/Chaumont%20International%20Poster%20and%20Graphic%20Design%20Festival%2002-200.jpg",
+                                "18th International Poster and Graphic Design Festival of Chaumont, Paul Rand at Les Silos",
+                                "2007",
+                                "Exhibit showcasing Paul Rand's more prominent works."
+                                )
+
+                            +listItem-thumb(
+                                "exhibits/2011-brands.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs,%20The%20Early%20Years/Web/2011%20bRANDs,%20The%20Early%20Years%2001-200.jpg",
+                                "bRANDs: The Early Years",
+                                "2011",
+                                "This exhibition features trademarks, character-marks, print advertising, P.O.P, packaging and signage from 18 of Rand's brands."
+                                )
+
+                            +listItem-thumb(
+                                "exhibits/2012-dont-try-to-be-original.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2001-200.jpg",
+                                "Curate and Design",
+                                "2012",
+                                "A small exhibit in Edinburgh, Scotland."
+                                )
+
+                            +listItem-thumb(
+                                "exhibits/2013-defining-design.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2013%20Paul%20Rand%20Defining%20Design/Exhibit%20Photos/Exhibit%20Title%20Image/Web/Paul%20Rand%20Defining%20Design-200.jpg",
+                                "Paul Rand: Defining Design",
+                                "2013",
+                                "An Atlanta exhibit based on Rand's writings and how he defined design."
+                                )
+
+                            +listItem-thumb(
+                                "exhibits/2014-pioneer-by-design-yale.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Pioneer%20by%20Design%2C%20Yale/Web/Pioneer%20of%20Design%20Exhibit%20Image-200.jpg",
+                                "Pioneer of Design",
+                                "2014",
+                                "Yale digs into their collection to showcase rare work."
+                                )
+
+                            +listItem-thumb(
+                                "exhibits/2015-everything-is-design.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2003-200.jpg",
+                                "Paul Rand: Everything is Design",
+                                "2015",
+                                "Rand returns to New York City to an exhibit at the Museum of the City of New York."
+                                )
+
+                            +listItem-thumb(
+                                "exhibits/2018-designers-task.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2001-200.jpg",
+                                "Paul Rand: The Designer’s Task",
+                                "2018",
+                                "UMMA presents a small exhibit of posters, brochures and sketches."
+                                )
+
+                            +listItem-thumb(
+                                "exhibits/2018-serious-play.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Book%2000-200.jpg",
+                                "Serious Play: Design in Midcentury America",
+                                "2018",
+                                "Explores the projects of over 40 designers who advocated for playfulness and whimsy within their creations."
+                                )
+
+                        //- /*===============================================================================================================================
+                        //- 
+                        //- ███████ ██    ██ ███████ ███    ██ ████████ ███████ 
+                        //- ██      ██    ██ ██      ████   ██    ██    ██      
+                        //- █████   ██    ██ █████   ██ ██  ██    ██    ███████ 
+                        //- ██       ██  ██  ██      ██  ██ ██    ██         ██ 
+                        //- ███████   ████   ███████ ██   ████    ██    ███████ 
+                        //- 
+                        //- ================================================================================================================================*/
+                        .tabs-panel#events
+                            +listItem-thumb(
+                                "events/1991-cooper-union.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1991%20Cooper%20Union%20PAUL%20RAND%20Interviewed%20by%20Keith%20Godard%20POSTCARD%20Announcement/Web/1991%20Cooper%20Union%20Paul%20Rand%20Interviewed%20By%20Keith%20Godard%20Postcard%20Announcement-200.jpg",
+                                "Cooper Union",
+                                "1991",
+                                "Announcement postcard for a Cooper Union Event"
+                                )
+
+                            +listItem-thumb(
+                                "events/1994-cincinnati-art-directors-club.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20Cincinnati%20Art%20Directors%20Club/Web/1994%20Cincinnati%20Art%20Directors%20Club%20Poster-200.jpg",
+                                "Cincinnati Art Director’s Club",
+                                "1994",
+                                "Poster for a lecture in Cincinnati."
+                                )
+
+                            +listItem-thumb(
+                                "events/1994-minneapolis.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20Poster%2C%20front-200.jpg",
+                                "St. Paul Minneapolis",
+                                "1994",
+                                "Poster for a lecture in Minneapolis."
+                                )
+
+                            +listItem-thumb(
+                                "events/1994-philadelphia-lecture.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20Lecture%20in%20Philadelphia%20Pennsylvania/Web/Lecture%20in%20Philadelphia%20Pennsylvania%201994-200.jpg",
+                                "Philadelphia Lecture",
+                                "1994",
+                                "Poster for a lecture in Philadelphia."
+                                )
+
+                            +listItem-thumb(
+                                "events/1996-paul-rand-milton-glaser.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20and%20Milton%20Glaser/Web/1996%20Paul%20Rand%20and%20Milton%20Glaser%20Announcement%20Postcard%2C%20front-200.jpg",
+                                "Paul Rand and Milton Glaser Conversation",
+                                "1996",
+                                "2 pictures of the invitation to the gallery opening at the Westport Arts Center, Westport, CT."
+                                )
+
+                            +listItem-thumb(
+                                "events/2013-MODA-steven-heller-afternoon.html",
+                                "/life/img/_video-assets/video-moda-heller.jpg",
+                                "Steven Heller Talks to Students",
+                                "2013",
+                                "Steven Heller talks to a crowd of students and educators about all things design."
+                                )
+
+                            +listItem-thumb(
+                                "events/2013-MODA-steven-heller.html",
+                                "/life/img/_video-assets/video-moda-heller.jpg",
+                                "Learning from Rand",
+                                "2013",
+                                "Steven Heller’s speech to a sold-out crowd in conjunction with the MODA exhibit in Atlanta."
+                                )
+
+                            +listItem-thumb(
+                                "events/2014-kit-hinrichs-on-paul-rand.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2003-200.jpg",
+                                "Kit Hinrichs on Paul Rand",
+                                "2014",
+                                "Kit Hinrichs talks about Rand and his contemporaries."
+                                )
+
+                            +listItem-thumb(
+                                "events/2014-paul-rand-workshop.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Paul%20Rand%20Workshop/Web/RandWorkshop-200.jpg",
+                                "Paul Rand Workshop",
+                                "2014",
+                                "A 2-day event celebrating design."
+                                )
+
+                            +listItem-thumb(
+                                "events/2014-standing-on-the-shoulders-of-giants.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2001-200.jpg",
+                                "Standing on the Shoulders of Giants",
+                                "2014",
+                                "Michael Skjei shares his personal collection of logo presentation books."
+                                )
+
+                            +listItem-thumb(
+                                "events/2018-paul-rand-estate-auction.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2000.jpg",
+                                "Paul Rand: The Art of Design (Estate Auction)",
+                                "2018",
+                                "Wright Auction house in Chicago, IL. sells personal items from the Rand estate."
+                                )
+
+                            +listItem-thumb(
+                                "events/2019-steven-heller-designers-scribbles.html",
+                                "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2019%20Steven%20Heller-%20A%20Designer%27s%20Scribbles/Web/Steven%20Heller%20at%20UMMA%2001-200.jpg",
+                                "Steven Heller: Paul Rand: A Designer’s Scribbles",
+                                "2019",
+                                "Steven Heller shares never-before-seen sketches."
+                                )
+
+
+

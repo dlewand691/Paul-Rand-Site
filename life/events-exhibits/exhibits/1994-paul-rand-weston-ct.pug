@@ -1,0 +1,77 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Paul Rand Exhibit in Weston, CT'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'Westport Arts Center'
+    - var pageSubtitle2         = 'March 11 – April 2, 1994'
+
+    - var nextType              = 'Exhibit'
+    - var nextTitle             = 'Cooper Union Retrospective'
+    - var nextDate              = '1996'
+    - var nextLink              = '1996-cooper-union-retrospective'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20Paul%20Rand%20exhibit%20in%20Westport%2C%20CT/Web/Westport%20invite%2C%20cover.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20Paul%20Rand%20exhibit%20in%20Westport%2C%20CT/Web/Westport%20invite%2C%20cover.jpg"
+                            )
+
+                    .small-mt3.small-mb2
+                        h6 Inside
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20Paul%20Rand%20exhibit%20in%20Westport%2C%20CT/Web/Westport%20invite%2C%20interior.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20Paul%20Rand%20exhibit%20in%20Westport%2C%20CT/Web/Westport%20invite%2C%20interior.jpg"
+                            )
+
+                    .small-mt3.small-mb2
+                        h6 Back
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20Paul%20Rand%20exhibit%20in%20Westport%2C%20CT/Web/Westport%20invite%2C%20back.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20Paul%20Rand%20exhibit%20in%20Westport%2C%20CT/Web/Westport%20invite%2C%20back.jpg"
+                            )
+
+            //- include ../../../__MIXINS/_include-image-carousel.pug
+
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        ### Gallery Information
+
+                        Westport Arts Center  
+                        Chesebrough-Pond’s Gallery  
+                        17 Morningside Drive South  
+                        Westport, CT 06880
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

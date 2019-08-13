@@ -1,0 +1,156 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'A Designer’s Art'
+    - var bodyID    = 'writing'
+    - var bodyClass = 'books'
+
+block main-content
+    - var bookSubhead           = 'Yale University Press, 1985'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/12975201'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3Dpaul%2Brand%2Ba%2Bdesigner%2527s%2Bart%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/2eBtW5D'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/fragment/productInfoTabs/http://www.barnesandnoble.com/w/paul-rand-paul-rand/1123427792?ean=9781616894863'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_odkw%3DA%2BDesigner%25E2%2580%2599s%2BArt%26_osacat%3D0%26_from%3DR40%26_trksid%3Dp2045573.m570.l1313.TR0.TRC0.H0.Xpaul%2Brand%2BA%2BDesigner%25E2%2580%2599s%2BArt.TRS0%26_nkw%3Dpaul%2Brand%2BA%2BDesigner%25E2%2580%2599s%2BArt%26_sacat%3D0'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'Good Design is Good Will'
+    - var nextDate              = '1987'
+    - var nextDescription       = 'Rand discusses corporate design decisions and how they can impact their bottom line.'
+    - var nextLink              = '/writing/books/good-design-is-good-will.html'
+
+    - var relatedItemLink1      = '/writing/books/the-trademarks-of-paul-rand.html'
+    - var relatedItemTitle1     = 'The Trademarks of Paul Rand — A Selection'
+    - var relatedItemFootnote1  = 'First (only) edition; limited to 450 copies.'
+
+    - var relatedItemLink2      = '/writing/books/some-thoughts-some-tribulations.html'
+    - var relatedItemTitle2     = 'Some Thoughts… and Some Tribulations about the Design of a Logo'
+    - var relatedItemFootnote2  = 'A rewrite of his “Logos, Flags, and Escutcheons” article, speaking about the design and development of logos.'
+
+    - var relatedItemLink3      = '/writing/books/this-is-the-stafford-stallion.html'
+    - var relatedItemTitle3     = 'This… Is the Stafford Stallion'
+    - var relatedItemFootnote3  = 'This booklet represents the most complete collection of these influential advertisements available.'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0005-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0008-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0010-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0013-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0015-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0019-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0019.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0027-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0027.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0032-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0032.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0043-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0043.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0055-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0055.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0062-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0062.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0065-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0065.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0077-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0077.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0085-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0085.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0099-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0099.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0109-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0109.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0112-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0112.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0115-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0115.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0118-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/8119.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0119-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/0119.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= bookSubhead
+
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/designers%20art%20front.jpg",
+                            "https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/designers%20art%20front.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            include ../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        7.75 x 10 hardcover edition with 240 pages and 153 b/w illustrations and 55 color plates of work samples by the author. 27 Collected essays and illustrations of the work of possibly the most influential graphic designer of them all. This book is a revised and updated version of Thoughts on Design, Rand’s legendary first book from 1947.
+
+                        Paul Rand was the first recipient of the Florence Prize for Visual Communication in 1987.
+
+                        ##### Contents:
+
+                        + Art for Art's Sake
+                        + The Beautiful and the Useful
+                        + The Designer's Problem
+                        + The Symbol in Visual Communication
+                        + Versatility of the Symbol
+                        + The Trademark
+                        + Seeing Stripes
+                        + Imagination and the Image
+                        + Integrating Form and Content
+                        + Ideas About Ideas
+                        + The Meaningof Repitition
+                        + The Role of Humor
+                        + The Rebus and the Visual Pun
+                        + Collage and Montage
+                        + Yesterday and Today
+                        + Typographic Form and Expression
+                        + About Legibility
+                        + The Good Old Neue Typografie
+                        + Design and the Play Instinct
+                        + Black Black Black
+                        + The Art of the Package: Tomorrow and Yesterday
+                        + The Third Dimension
+                        + The Complexity of Color
+                        + Word Pictures
+                        + The Lesson of Cezanne
+                        + Politics of Design
+                        + Integrity and Invention
+
+                    p.small-mb0 “A monograph-cum-manifesto by America’s leading modernist designer and corporate communications pioneer… . This book describes design as a formal, aesthetic, and conceptual marriage of rationalism and wit.”
+                        .footnote —Lingua Franca
+
+                    p.small-mb0 … [He] describes his work with the same precision, economy, and passion he displays in his graphic designs, and he lets us understand the nature of his relationships with his clients, his audience, and his art.”
+                        .footnote —Alan Fern, New York Times Book Review
+
+                    p.small-mb0 “The outstanding design book of the year.”
+                        .footnote —Thomas Hine, The Philadelphia Inquirer
+
+                    p.small-mb0 “In a profession that is constantly pulled toward the banal, the trivial, and the predictable, the history of [Rand’s] accomplishment keeps us honest.”
+                        .footnote —Milton Glaser
+
+                    p.small-mb0 “In the future I will present this book to our Swiss printers as the measure of quality.”
+                        .footnote —Josef Muller-Brockman, Zurich
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

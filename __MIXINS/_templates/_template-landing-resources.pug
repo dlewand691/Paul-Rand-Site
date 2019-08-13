@@ -1,0 +1,43 @@
+doctype html
+html.no-js(lang='en' dir='ltr')
+
+    include ../../__MIXINS/_include-head.pug
+
+    body(data-grid-framework="f4" data-grid-color="pink" data-grid-opacity="0.2" data-grid-zindex="10" data-grid-gutterwidth="30px" data-grid-nbcols="12")
+
+        .animsition
+            include ../../__MIXINS/_include-headerNav-secondaryNav.pug
+
+            .cd-main-content
+
+                //- ======================================
+                //- =            RESOURCES            =
+                //- ======================================
+
+                .grid-x.grid-margin-x
+                    .large-12.small-12.cell
+                        h1.text-center.reveal-enter-bottom Paul Rand Resources
+
+                        a.card-medium.large-offset-1.bg-red(href="#")
+                            //- img(src="http://placehold.it/500x500")
+                            h2  Find Items Online
+
+                        a.card-large.small-mt4.bg-gold(href="#")
+                            //- img(src="http://placehold.it/500x500")
+                            h3 Articles, Interviews & Information
+
+                        a.card-medium.small-mtn2.large-offset-2.bg-green(href="#")
+                            //- img(src="http://placehold.it/500x500")
+                            h5 Paul Rand's Work Today
+
+                        a.card-small.small-mt4.bg-blue.large-pull-1(href="#")
+                            //- img(src="http://placehold.it/500x500")
+                            h4 Tributes and Personal Experiences
+
+
+
+                //- /*-----  End of RESOURCES  ------*/
+
+            include ../../__MIXINS/_include-footer.pug
+
+        include ../../__MIXINS/_include-closingScript.pug 

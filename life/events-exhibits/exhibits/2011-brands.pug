@@ -1,0 +1,107 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'bRANDs: The Early Years'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'CVA (College of Visual Arts), St. Paul Minnesota'
+    - var pageSubtitle2         = 'February 17 – August 31, 2011'
+
+    - var nextType              = 'Exhibit'
+    - var nextTitle             = 'Curate and Design'
+    - var nextDate              = '2012'
+    - var nextLink              = '2012-dont-try-to-be-original'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2014-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2015-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2016-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2016.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2017-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2017.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2018-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2018.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2019-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2019.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2020-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2020.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2021-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2021.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2022-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2022.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2023-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2023.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2024-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2024.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2025-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2025.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2026-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2026.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2027-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2027.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2028-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2028.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2029-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2029.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2030-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2030.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2031-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2031.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2032-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2032.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2033-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2033.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2034-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2034.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2035-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2035.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2036-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2036.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2037-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2037.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2038-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2038.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2039-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/2011%20bRANDs%2C%20The%20Early%20Years%2039.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/bRANDs%20Poster-800.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2011%20bRANDs%2C%20The%20Early%20Years/Web/bRANDs%20Poster.jpg"
+                            )
+
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        BEFORE IBM, UPS AND ABC there was Dubonnet, Stafford and El Producto. The exhibition “bRANDs: The Early Years” opened the evening of February 17th, 2011 to the largest crowd the CVA Gallery has ever had. It was a great night for curators Kolean Pitner and Michael Skjei (pronounced “Shay”) who’s personal collection of amazing and rare Rand ephemera was on display. The exhibit focused on a rarely discussed time of Rand’s career at the Weintraub agency in New York, from 1941-1955. There he was Art Director of the esteemed agency where he redefined the role and relationship of graphic designer/art director and copywriter. It was also a time when Rand developed his prowess for branding.
+
+                        At that time, “branding” was not a commonplace term and was not understood as widely as it is today. Rand was very much at the forefront of establishing how brands are created, nutured and promoted. Much of the work being done today can be attributed to this shift.
+
+                        Many of the projects during this time began with the creation of a logo. This in turn spawned a full brand campaign that spanned not only advertising, but packaging, products and many other pieces of collateral. Many of these logo centered around the creation of a “brand character”. The El Producto cigar, Dubonnet man (based on the original character created by AM Cassandre), and the Coronet Brandy waiter were some of the most famous. There were many, many more, but the exhibit focused on 18 of the most notable.
+
+                        Showcased in the intimate gallery of the CVA (College of Visual Arts) in St. Paul MN, it was fascinating to see the breadth of Rand’s work across so many clients. Some of the work has rarely been seen or published so visitors had the fortunate experience to view them first-hand. His work was created for every day people to consume, so finding the pieces took many years to collect. What was included was only small selection of Michael Skjei’s extensive collection, but stunning nonetheless. Many ads were framed within the full page of the original magazine which sometimes showcased a typical ad from the period, next to a Rand ad—the contrasts were stunning.
+
+                    blockquote
+                        | His groundbreaking work had a distinctly different creative approach that profoundly changed the aesthetics of advertising, marketing and graphic design. By translating the intellectual ideas of European modernism into deceptively simple and sophisticated retail personalities, Rand created a new kind of brand-marketing that had never been seen before.
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Overall the exhibit is another testament to the power of simple ideas, creative execution, and bold leadership by Rand.
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

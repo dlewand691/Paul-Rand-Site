@@ -1,0 +1,61 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Cooper Union interview with Steven Heller'
+    - var bodyID    = 'life'
+    - var bodyClass = 'videos'
+
+block main-content
+    - var nextType             = 'Video'
+    - var nextTitle            = 'MIT interview with John Maeda'
+    - var nextDate             = '1996'
+    - var nextDescription      = 'Rand’s final public appearance.'
+    - var nextLink             = '/life/videos/1996-MIT.html'
+
+    - var relatedItemLink1     = '/life/videos/1994-steven-heller.html'
+    - var relatedItemTitle1    = 'Steven Heller Interviews Paul Rand'
+    - var relatedItemFootnote1 = 'Filmed at the Fitzgerald Theater in downtown St. Paul Minnesota'
+
+    - var relatedItemLink2     = '/life/videos/2007-one-club-hall-of-fame.html'
+    - var relatedItemTitle2    = 'Induction to the One Club Hall Of Fame'
+    - var relatedItemFootnote2 = 'Imaginary Forces created a four-minute film capturing some of Rand’s best work'
+
+    - var relatedItemLink3     = '/life/videos/2010-encounters-with-paul-rand.html'
+    - var relatedItemTitle3    = 'Encounters with Paul Rand'
+    - var relatedItemFootnote3 = 'Sarah Brody shares a video of her interviewing Rand during a visit to Art Center College of Design in Montreux, Switzerland.'
+
+
+    //- =============================
+    //- =            VIDEO            =
+    //- =============================
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                //- ==========  TITLE  ==========
+                .large-8.medium-11.cell
+                    .grid-x.grid-margin-x
+                        .large-12.cell.text-center
+                            h1= pageTitle
+                            p.text-gray.t16: em 1996
+
+            //- ==========  VIDEO  ==========
+            .grid-x.grid-margin-x.align-center
+                .large-12.cell
+                    .small-mb3
+                        div.plyr-js(data-plyr-embed-id="FnNc_06EfEY" data-plyr-provider="youtube")
+
+                    //- .flex-video
+                    //-     iframe(src="//www.youtube.com/embed/FnNc_06EfEY" frameborder="0" allowfullscreen)
+
+            //- ==========  BODY  ==========
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-9.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+
+
+        //- /*-----  End of BODY  ------*/
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug

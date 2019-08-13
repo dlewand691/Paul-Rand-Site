@@ -1,0 +1,110 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Don’t try to be original, just try to be good.'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'CHANGE_ME'
+    - var pageSubtitle2         = 'CHANGE_ME'
+
+    - var nextType              = 'Exhibit'
+    - var nextTitle             = 'Paul Rand: Defining Design'
+    - var nextDate              = '2013'
+    - var nextLink              = '2013-defining-design'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2014-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2015-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2016-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2016.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2017-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2017.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2018-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2018.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2019-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2019.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2020-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2020.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2021-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2021.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2022-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2022.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2023-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2023.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2024-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2024.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2025-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2025.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2026-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2026.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2027-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2027.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2028-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2028.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2029-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2029.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2030-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2030.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2031-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2031.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2032-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2032.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2033-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2033.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2034-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2034.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2035-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2035.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2036-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2036.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2037-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2037.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2038-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2038.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2039-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2039.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2040-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2040.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2041-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2041.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2042-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2042.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2002-800.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%2002.jpg"
+                            )
+
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        This exhibition – which runs as part of Design Week 2012 – will feature a range of material from American graphic designer Paul Rand’s career. Approximately 30 original pieces by Rand will be on display (including book jackets, print ads, packaging and posters) alongside a selection of work on loan from international archives such as Yale University. The exhibition will include the screening of an animation of Paul Rand’s work by New York studio Imaginary Forces produced for the One Club Hall of Fame. The exhibition will also include a specially commissioned print from two Irish artists: one from Johnny Kelly, which demonstrates the impact of Rand’s work on his own design ideology; and one from Inputout’s James Earley. The exhibition is created especially for Design Week Dublin by Curate and Design, who ran 2011’s Less But Better Dieter Rams exhibition in Dublin. Curate and Design was founded in 2011 with a mission to stage quality and informative free shows in Ireland showing retrospectives of international and local design heroes.
+
+                        ‘Don’t Try To Be Original, Just Try To Be Good’ was crowd funded in five weeks through Irish site www.fundit.ie. Jeff Piazza, creative director of Behavior Design, Brooklyn, and former student of Paul Rand, said: “What I remember most about Paul Rand was his critiques of our work. Each session looked at how visual marks convey messages which become the platform to tell powerful stories. It was a wonderful privilege to have had him as a teacher. I use many of the principles that he taught us from that class in my work today. The experience is something my fellow classmates and I will never forget.” Event co-curator Shane O’Donoghue said: “We are very happy to be able to bring the work of such an influential designer to Dublin. Rand’s playful use of simple shapes and colours make his work stand out – even in today’s cluttered visual environment of signs and messages. I hope that visitors to the show will enjoy learning about his long life and career.”
+
+                        ### Exhibition Information
+                        ** Title:** ‘Don’t try to be original, just try to be good.’ A Paul Rand exhibition by Curate and Design.  
+                        ** Date:** November 2nd -16th 2012  
+                        ** Location:** Ebow Gallery, 1 Castle St., Dublin 2  
+                        ** Opening Hours:** Mon/Tues: Closed Wed, Fri, Sat, Sun: 12-5pm Thurs: 12-8pm  
+                        ** Admission:** Free
+                        ** Contributors:** Curators: Shane O’ Donoghue and James Earley Prints: Johnny Kelly, James Earley Identity/Website: James Earley Products On Loan From: Yale University Library, Steven A Heller and private collectors of Paul Rand’s work.
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

@@ -1,0 +1,73 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Paul Rand: A Designer’s Art'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'CHANGE_ME'
+    - var pageSubtitle2         = 'CHANGE_ME'
+
+    - var nextType              = 'Exhibit'
+    - var nextTitle             = 'The Graphic Art of Paul Rand'
+    - var nextDate              = '1970'
+    - var nextLink              = '1970-graphic-art-of-paul-rand-ibm-gallery'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1953%20Design%20Gallery%20Exhibit/Web/1986%20Design%20Gallery%20Exhibit%2001.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1953%20Design%20Gallery%20Exhibit/Web/1986%20Design%20Gallery%20Exhibit%2001.jpg"
+                            )
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1953%20Design%20Gallery%20Exhibit/Web/1986%20Design%20Gallery%20Exhibit%2002.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1953%20Design%20Gallery%20Exhibit/Web/1986%20Design%20Gallery%20Exhibit%2002.jpg"
+                            )
+
+            //- include ../../../__MIXINS/_include-image-carousel.pug
+
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        When you look to think looking back, traditional Japanese beauty was we always have a significant impact on my work. Without exception, and all of its form in Te at, Japanese design we are representative of the most elegant interpretation of the designer of art. Japan is, we are proud that my work and who have recognized as appropriate to or exhibited or published. (Paul Rand)
+
+                        **Title:** #358 times Design Gallery 1953 “Paul Rand: A Designer’s Art”  
+                        **Dates:** August 29 - September 10, 1986  
+                        **Venue:** Matsuya Ginza 7F &middot; Design Gallery 1953  
+                        **Organizer:** Japan Design Committee  
+                        **Trade **Contact: Shigeo Fukuda  
+                        **Sponsor:** Robun-do  
+                        **Cooperation:** Niijima real
+
+                    a.button.radius.blue.text-caps(href="http://designcommittee.jp/1986/08/3581953paul-randa-designers-art.html") More Information
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

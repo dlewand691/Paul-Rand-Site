@@ -1,0 +1,165 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'CREATION no. 1 (International Graphic Design, Art and Illustration)'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine-450.jpg'
+
+    - var articleAuthor         = 'Shigeo Fukuda'
+    - var publishedInTitle      = 'Tokyo: Recruit Co., Ltd.'
+    - var publishedInSubtitle   = '1989'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/816188571'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3DCREATION%2Bno.%2B1%2B%2528International%2BGraphic%2BDesign%252C%2BArt%2Band%2BIllustration%2529%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1SEWZ5u'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/w/creation-yusaku-kamekura/1003623711?ean=9784897371740'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Paul Rand: Old Master'
+    - var nextDate              = 'August 16, 1991'
+    - var nextDescription       = 'Originally featured in Design Week magazine'
+
+    - var nextLink              = '1991-design-week.html'
+
+    - var relatedItemLink1      = '1953-esquire-magazine.html'
+    - var relatedItemTitle1     = 'A House to Live With'
+    - var relatedItemFootnote1  = 'Esquire Magazine, August, 1953'
+
+    - var relatedItemLink2      = '1997-logocentrism.html'
+    - var relatedItemTitle2     = 'Logocentrism'
+    - var relatedItemFootnote2  = 'New Republic, December 29, 1997, Vol. 217, Issue 26'
+
+    - var relatedItemLink3      = '1997-modern-painters-magazine.html'
+    - var relatedItemTitle3     = 'Paul Rand, The Magician'
+    - var relatedItemFootnote3  = 'Modern Painters Magazine, Spring 1997'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2014-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2015-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2016-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2016.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2017-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2017.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2018-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine%2018.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content#original-article
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        First edition. Text in English and Japanese.
+
+                        9 x 11.75 softcover book with 168 pages devoted to International graphic design, art and illustration. CREATION was the brainchild of editor Yusaku Kamekura, who envisioned an arts magazine with no advertising (like Brodovitch’s PORTFOLIO) and a limited life span. The first issue of CREATION clearly stated that the series would end with issue 20. And it did; but while CREATION was around, it was a true heavyweight in its presentation of both vintage and contemporary graphic design. Each issue profiled a half-dozen designers with a one-page text introduction and biography, followed by 20 + pages of the designers work in glorious full color.
+
+                        Each issue of CREATION is a real treat in terms of content and production and all are highly recommended.
+
+                        ##### CREATION no. 1 Contents include:
+
+                        Ikko Tanaka by Mamoru Yonekura: 30 pages of full-page color work reproductions.  
+                        Paul Rand by Shigeo Fukuda: 26 pages of full-page color work reproductions. Paul Rand had a longstanding friendship with Shigeo Fukuda (born Tokyo, 1932). He has said of Fukuda, “A playful heart requires no translation”. Shigeo Fukuda has frequently written on Paul Rand and quotes by him are frequently found on the book-jackets of Paul Rand’s books. Shigeo Fukuda has said; “Paul Rand is a man who has shaped and influenced the course of 20th century graphic design to a remarkable degree.” Yusaku Kamekura first met Paul Rand in 1954. As well as seeing the “genius” in Rand’s work, Kamekura also recognized something essentially Japanese in his style: “When we Japanese look at Paul Rand’s work and ponder the futility of our struggle to absorb western culture, we are stunned to recognize traditional Japanese styles - styles which we Japanese have long forgotten - running beautifully and refreshingly through them (FromYusaku Kamekura: His Works. Bijutsu Shuppan-sha, 1971.). “It is no secret that Rand was a great admirer of Japanese design and would regularly remind his students that the Japanese were, in his mind, entirely unparalleled the field.
+
+                        ##### Artists profiles
+
+                        Yusaku Kamekura (1915-1997) was one of the pioneers of Japanese graphic design who was at the forefront in promoting graphic design as an essential factor of modern society, culture and art, and whose achievements helped to establish the reputation of Japanese graphic design internationally.
+
+                    .footnote — Randall Ross of modernism101.com
+
+
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            Every designer must possess three highly demanding traits. Each is unquestionably desirable in any individual seeking to pursue a career in design, yet none are easily acquired.
+
+                            First, a designer must have a flair for form. This is not an acquired skill but rather an innate sensitivity. Second, a designer must have insight, an inborn wisdom which transcends knowledge and enables prediction of the trends and social fabric of the future. Third, the designer must have a clear doctrine vis-a-vis design. This doctrine may be understood as an awareness that design constitutes culture.
+
+                            Paul Rand is an American designer who is blessed with all three of these traits. He is also a man who has shaped and influenced the course of 20th century graphic design to a remarkable degree. His talent, wisdom and philosophy fuse to produce a designer of rare individuality, a designer who sets a shining example for graphic designers not only in America but around the world.
+
+                            Paul Rand has scored his professional successes in the highly competitive vortex of New York, one of the most demanding arenas for design work. His creative activities and design philosophy are totally integrated and ideally balanced in everything he does, colored by a sense of humor emanating from his inner warmth. His achievements are as surprising as they are awe-inspiring.
+
+                            Among the highlights of Paul Rands many accomplishments are the following: cover design for *Direction magazine* (1938); book jacket for *Modern Art in Your Life*, published by the New York Museum of Modern Art (1949); *No Way Out* poster for 20th Century-Fox (1950); symbol marks for IBM and Westinghouse (1956); Cover design for *AIGA 50 Books* (1972); *The Prepared* *Professional* poster for the World Design Conference in Aspen (1982); and third International Exhibition poster for the New York ADC (1988).
+
+                            A successful design, it has been said, has the power to stir emotions in any age, spanning all time frames. Retracing Paul Rand’s long path of creative endeavor, we discover that his designs indeed transcend time in this way. Even today they shine bright above our heads like stars in the firmament Each of his works, regardless of date of origin, shares the spry wit that characterizes his brand of design to perfection.
+
+                            The supreme source of Paul Rand’s achievement lies in his vast knowledge of his field and his rigorous design philosophy. Yet at the same time, one cannot overlook his brilliant accomplishments in design education. For many years he has devoted himself, with the same enthusiasm as to his creative activities, to teaching graphic arts to students at Cooper Union, Pratt Institute and Yale University.
+
+                            Perhaps Paul Rand’s foremost greatness, however, is found elsewhere than his talent, wisdom and convictions and the way they all entwine to form a distinctly individual style. Nor is his greatness the manner in which his style has enabled him to establish his own niche in the world of graphic design. His greatness rests rather in his never-abating enthusiasm, despite all his many achievements, to continue creating and pursuing new challenges in his field.
+
+                            To me, Paul Rand is a grand master who has infused new culture into the graphic design of the 20th century. Through his individuality and unique philosophy, he has raised graphic design to the pinnacle of its development as we know it today.
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+
+
+
+        include ../../../../__MIXINS/_include-image-carousel.pug
+
+        include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

@@ -1,0 +1,289 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Interview with Janet Abrams'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997-450.jpg'
+
+    - var articleAuthor         = 'Janet Abrams'
+    - var publishedInTitle      = 'Looking Closer 2'
+    - var publishedInSubtitle   = 'Originally published in I.D. Magazine'
+    - var publishedInSubtitle2  = '1997'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/37145224'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3Dlooking%2Bcloser%2B2'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1QumWhy'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/w/books/1112148188?ean=9781880559567'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Paul Rand, The Magician'
+    - var nextDate              = 'Spring 1997'
+    - var nextDescription       = 'Modern Painters Magazine'
+
+    - var nextLink              = '1997-modern-painters-magazine.html'
+
+    - var relatedItemLink1      = '1997-design-literacy-next.html'
+    - var relatedItemTitle1     = 'NeXT'
+    - var relatedItemFootnote1  = 'Design Literacy, 1997'
+
+    - var relatedItemLink2      = '1993-print-magazine.html'
+    - var relatedItemTitle2     = 'Thoughts on Rand'
+    - var relatedItemFootnote2  = 'Print Magazine, May/June 1997, Vol. 51, Issue 3'
+
+    - var relatedItemLink3      = '1993-how-magazine.html'
+    - var relatedItemTitle3     = 'Masters of Design'
+    - var relatedItemFootnote3  = 'HOW Magazine, February 1993'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997%2009.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content#original-article
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Looking Closer 2 offers more of the best recent writing on graphic design, covering new and important issues in design language, education, intellectual property, new media, the state of the business, and the place of design in society. The collection presents a stimulating look at how design issues are affected by and affecting changes in contemporary culture.
+
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            THE POWER OF CONVICTION
+
+                            People who act on the strength of their convictions tend to get noticed. In designers, we admire those who are unswerving in their principles, because we equate this quality with persons of vision. Yet we know, from any cursory look at the careers of our design luminaries, that these resolute heroes are often the hardest to live with. They are contentious when encountered face to face.
+
+                            It is this stubbornness that we respect in Paul Rand — the subject of this issues profile by Janet Abrams — and it is exactly what makes him such a frustration. Interviewing Rand, Abrams reports, is “like a boxing match”. Anyone who tries to engage him in debate had better be prepared for tough combat. At 79, Rand is one of the last of the living legends of American graphic design, an influence on three decades of Yale students and author of some of the most memorable graphics and logos of our time. True, his adherence to formalist dogma borders on the archaic at a time when design has never been more diverse. For this he is open to criticism. But Rand’s steadfastness provides a rare example for designers everywhere, making an indelible mark on the professions short history.
+
+                            ---
+
+                            ##### A living monument of American graphics, Paul Rand turned 79 last month. Age has hardly withered him, nor lessened his legendary feistiness. Built like a bullet with short white hair and a tanned face, there is something about him that reminds one of a sun-ripened coffee bean: a hard nut, seasoned with time, but capable of yielding pungent flavor, even with sufficient loving care, an addictive mellowness.
+
+                            Talking to Paul Rand over two days in May, shortly after the publication of his third book, *Design, Form, and Chaos*, I could appreciate why one of his clients, Steve Jobs of NeXT Computers would describe him (in a forthcoming film profile) as having “the exterior of a curmudgeon but a heart of gold.” And how he could inspire such contradictory feelings among those who have encountered him during an exceptionally long career as a designer and educator: on the one hand, undying devotion from many former students and colleagues; on the other, a kind of weary resignation, invariably “not for quotation,” on the part of those who regard him as an unreconstructed Modernist, rigid in his views and dismissive of new approaches to graphic design.
+
+                            Now professor emeritus at Yale University, Rand continues to work solo, as he has done for some 30 years, from a studio at his home in Weston, Connecticut. Here, under a bright-red Le Corbusier-inspired skylight, illuminating a long wooden desk, the dialogue begins. 
+
+                            If I had been looking forward to a friendly chat about some of the ideas in Rand’s new book, I was in for a surprise. After only a few minutes it becomes clear that his conversational style and writing style are two entirely different things. Face-to-face conversation is like a boxing match, with swift jabs back and forth. Rand doesn’t suffer fools gladly, and those who try to engage him in debate had better be prepared for tough combat. Slight deafness tends to exacerbate a characteristic gruffness, and his tone becomes thoroughly stentorian when you cross him, with firm thumps to the table supplied for emphasis. Rand bluntly repeats the terms of enquiry when he prefers not to answer, frequently asserts that “it’s obvious” until pressed to offer elucidation of a given point and, when push comes to shove, throws back **“So, what’s the question?”** by way of response.
+
+                            On certain topics, however, his voice abruptly softens, his right hand settles on his right cheek, and you can tell that the curmudgeonly exterior is just defensive armor-plating to a vulnerable, even endearing, core. Often, he’ll finish sentences with a sort of schoolboy chuckle, a mischievous wheeze of amusement — sometimes denoting self-deprecation, sometimes egging on the questioner to take up a particularly egregious challenge. Ten minutes into the interview, he decides to call it off; an hour and a half later, he’s suggesting we meet again the following day to carry on the conversation, which we duly do, this time on the beach a few miles from his home.
+
+                            Readers must use their imagination to identify his bêtes noires, since Rand follows up his more unbuttoned flourishes with instructions that the foregoing remarks are not for publication. Suffice it to say that Armin Hofmann, London-based designers Abram Games, Derek Birdsall and the late Hans Schleger figure highly in his pantheon of admired associates, former students Lorraine Wild (now teaching at CalArts) and Sheila Levrant de Bretteville (current head of graphics at Yale) do not. Though he was on the Yale faculty from 1961 to 1992, Rand resigned shortly after de Bretteville took up her appointment, and professes disdain for academia and its denizens. (He still teaches the first week at Brissago, Yale’s summer school in Switzerland.)
+
+                            But he reserves his greatest scorn for design critics and theorists, because they take things “literally” and lack hands-on experience of the process of design; on the scale of things, they are scarcely higher than the marketing executives who come in for a drubbing in his essay “Good Design is Goodwill”, the first in his new book. **“People who write about art and are not artists are very suspect in my library,”** he remarks.
+
+                            In contrast to his pugnacious spoken persona, Rand’s own essays are lucid and eloquent, larded with references from Vasari to Bacardi by way of the Brothers James and Alfred North Whitehead. On closer examination, they are also studded with arbitrary value judgments passing for objective analysis, and statements that might be considered merely sententious if they did not happen to issue from one of the *Grands Seigneurs* of graphic design.
+
+                            Nevertheless, the carefully hewn prose is obviously the fruit of long cogitation. On the dashboard of Rand’s gray BMW a small notepad is fixed at the ready for any passing *pensée*: its front sheet currently declares “Depends on the context” in slightly jerky, on-the-move pencil script, an insight he mentions is destined for his next book.
+
+                            In consistently reflecting on his own work, starting with *Thoughts on Design* of 1946 [1947], Rand is one of the few practitioners who has seriously attempted to codify a theoretical position, and his writings have served to consolidate his reputation. Yet he is not necessarily willing to discuss his ideas, once committed to print, still less to acknowledge differences of opinion. **“This is very serious stuff,”** he tells me later. **“I don’t write for your benefit. I’m writing for myself, to understand. The by-product is a book for other people.”**
+
+                            Over the years, Rand has worked in magazines and advertising, as well as on corporate identity programs, producing benchmark logos for IBM, Westinghouse, ABC television and United Parcel Service. At the precocious age of 23 he was art director of Esquire magazine, which he left in 1940 to join Elkan Kauffman and Bill Weintraub in a new advertising agency, launched with funds from Weintraub’s sale of his 50 percent interest in Esquire. Rand clearly relished the variety and hectic pace at the agency, where jobs often had to be executed in a matter of hours for the following day’s publication. **“Its good experience to work fast and efficiently. That’s the thing about design — or art: you have to have your hand in it, or you lose the immediacy of good work, which is what makes the job pleasant.”**
+
+                            During the next 14 years, Rand produced some of his most memorable advertising designs, for El Producto cigars, Dubonnet, Ancient Age and Disney (the other Disney) hatmakers. He also turned out a prolific assortment of book jackets and magazine covers, perhaps the most celebrated being those for *Direction*, from 1938 to 1945. Identities for Cummins, The Limited, IDEO and NeXT are all documented in Rand’s new book, and he continues to design posters for various institutions.
+
+                            The “later,” pared-down Rand typically deploys figurative and geometric forms in a bright paintbox palette on a simple white plane, or plays photographic and typographic elements against each other to produce a visual pun. To an eye acclimated to the work of younger designers, whose experiments he finds so dismaying, Rand’s recent work is tempered, but in its restrained formal clarity, sometimes leaves one wishing for more.
+
+                            On the Sunday just prior to our meeting, the *New York Times* had carried not only design historian Victor Margolin’s review of *Design, Form, and Chaos*, but also an op-ed piece on why, as Rand so delicately puts it to me, “corporate design stinks.” In it, he basically bemoans the absence of great corporate design programs in contemporary America — the kind in which he had been involved at IBM and Westinghouse — and argues that this is due to a lack of great business leaders as well as of good designers. The brief duration of many such programs “is no evidence that design is impotent. What is evident is that somebody is not minding the store, and that management does not really appreciate the contribution that design (art) can make, socially, aesthetically and economically.”
+
+                            Rand’s article inadvertently invites us to consider the role played by the all-powerful paternalistic company chairman — an oft-celebrated, if rare, species — whose obsessive passion for order and identity tends to have been a prerequisite for noteworthy corporate design. But which comes first: the design program that makes a company look organized, coherent and impressive (when it may be a managerial shambles), or the corporate culture that merits such representation? Lamenting the lack of good design programs seems a bit like looking through the wrong end of the telescope. I put it to Rand that surely what’s actually at stake has less to do with design per se than with the transformation of American culture in the years since Companies like IBM rose to become unassailable benchmarks of white-collar capitalism. Rand is quiet for a few moments. Then, having sized me up, he begins an oration. **“The questions you are asking me are unanswerable. Its like asking ‘What is art?’”**
+
+                            That was going to be my next question.
+
+                            **“Oh, I know what it is. Art is an idea that has found its perfect visual expression. And design is the vehicle by which this expression is made possible. Art is a noun, and design is a noun and also a verb. Art is a product and design is a process. Design is the foundation of all the arts.”**
+
+                            A splenetic outburst about Victor Margolin follows.
+
+                            **“The review of my book was written by an academe character, not a practicing artist. He makes absolutely irresponsible statements about me at the end of the essay: that I’m not interested in social things and that it’s too bad I’m not interested in the latest stuff. He’s dead wrong. I could flunk this guy in two minutes on a design history test.”**
+
+                            What would you ask him?
+
+                            **“I would ask him things that he doesn’t know. Listen, I’ve lectured to Germans in Berlin about German design. Things they knew nothing about. “**
+
+                            Fortunately, the tirade is interrupted by a phone call.
+
+                            Rand returns, and resumes. “See, my life is what I do. When people start picking on me I get very angry. And to be accused publicly of not being interested in social issues is an outrage.”
+
+                            I discern that I have, unwittingly, aroused his wrath.
+
+                            **“The very fact that this guy gave me a good review and then starts criticizing me means that he doesn’t know what he’s talking about. It’s completely untrue what he’s saying, because he doesn’t read things properly.”**
+
+                            I read out loud the offending section of the review in which, in fact, Margolin has taken exemplary care to present Rand’s position accurately. Far from misrepresenting him, Margolin has merely stepped on his Achilles heel.
+
+                            “Part of the problem, he believes,” writes Margolin, “is that design classrooms have been turned into forums for social and political issues.”
+
+                            **“Absolutely,” Rand confirms. “And its the reason I left Yale. I resigned.”**
+
+                            Turning to what I hope will be a less inflammatory topic, I ask Rand what he thought of Thomas Watson Jr., whom he credits in his op-ed piece with having “almost single-handedly put the IBM design program to work.” The tactic proves effective. Rand immediately softens. **“This guy was the reverse of Jefferson’s definition that all men are created equal,”** he chuckles. **“This guy was not created equal: Thomas Watson was handsome rich, tall and bright. Still is. He’s my age, maybe a couple of months older.”**
+
+                            Presumably he worked quite closely with Watson?
+
+                            **“No I don’t know much about him. I would see him, you know, in the hallway. I had dinner once at his house on the occasion of his giving Eliot Noyes and Charles Eames and me a trophy.”**
+
+                            Convinced of the importance of access to the company chairman, Rand has actually forfeited work rather than deal with underlings — or rather Marion Swannie, who runs his business, has done so. (Rand’s second wife, known affectionately as Swan, was manager of design at IBM for 30 years, relinquishing the post when they got married. Her department would pay us but the work came from the different divisions. She never used her influence for me. In fact I got 10 times as much work after she left the company.)
+
+                            During the late 1980s, in one of the country’s most fascinating outbreaks of mass superstition, rumors began to circulate that Procter &amp; Gambles century-old logo, comprising a Man-in-the-Moon and 13 stars, was a coded sign for the devil. **“Two people from Procter &amp; Gamble came to me because they were having problems with their logo. My wife wrote these guys and said ‘We don’t deal with anybody unless he’s the CEO.’ She just gave up the job. We know that in order to get anything done, you have to deal with the top guy.”**
+
+                            Rand has a simple template for what makes a good client: they don’t interfere, done tell you what to do and appreciate whatever the designer proposes without questioning it. So much for the ideal situation, with a hot line to the top. **“Most clients are nice clients. It’s the people in between who give you the problems: the account executives, the marketing people. They destroy people’s work: ‘this should be bigger, this should be up here, there should be a sun here with a price.’ What else have they got to show for their accomplishments? If they don’t change your work all they can say is you’ve done a good job. It’s much more convincing to show something graphic! “**
+
+                            Another noteworthy aspect of Rand’s relationship with his clients is his fee structure. His compensation has entered graphic-design mythology, he is said to have commanded more than $100,000 for doing the NeXT logo. While he insists that he has no interest in the financial side of life (“My wife is the money girl in this family; if I need money I have to ask her”), Rand is nevertheless attuned to his own market value. **“When somebody pays me a lot of money, he’s not doing so because he likes to. He pays me because this is what I deserve.”**
+
+                            How much would he have charged for doing a new logo for P&amp;G, I wondered.
+
+                            **ldquo;One or two hundred thousand.”**
+
+                            And what do you actually buy with that?
+
+                            **“You buy a logo. I write a brochure, go through the steps, like in the book. That’s the market value: what studios get, though some get $300,000.”**
+
+                            Whats the fee measured on?
+
+                            **It’s measured on nothing. If it takes me an hour, I do it in an hour. If it takes me a year, it takes me a year. I don’t work on time. You give me the problem, I let the idea come. Most of the time its immediate. I don’t start making sketches — that throws you.”**
+
+                            No second thoughts?
+
+                            **“Very rarely.”**
+
+                            On occasion, however, Rand has looked back and seen fit to revise a design, as with the logo for UPS, originally created in just one week in 1961. **“I offered to make some modest changes,”** he explains, **“to make it right. I changed the bow and the drawing of the ‘P.’ It wasn’t right before. If there’s something wrong with the drawing, then you change it.” But UPS stood firm, and declined. “They didn’t give any reasons. They just said no.”**
+
+                            It would be quite far-reaching and costly to implement such a change, given the extensive applications — surely something of an indulgence unless the company had undergone managerial changes that it wished to express visually.
+
+                            **“It’s not far-reaching to change the shape of a bow. Nobody would notice it.”**
+
+                            Then why bother doing it?
+
+                            **“Because it bothers me. Just as much as it bothered my mother not to clean above a molding that you didn’t see. It’s just not right.”**
+
+                            One of the more intriguing aspects of Rand’s life is how this son of a Viennese immigrant fabric cutter, brought up in a very poor, strictly orthodox Jewish household, turned out to be the graven-image maker to *echt*-WASP America in its most institutional form: the great corporations of the ‘50s and ‘60s. Born and bred in Brownsville, Brooklyn, Rand had an older sister and a twin brother who became a professional jazz musician, playing sax and clarinet. “Guy Lombardo!” Rand chuckles, recalling the kind of music he played. Then, in an undertone, **“He’s gone … killed in an accident.” She died years ago. My family’s gone. Everybody’ s dead.”** A few more sentences pass between us, and the mood has grown suddenly so poignant I can hardly hold back tears. **“It’s sad,”** he concedes, and at such moments one cannot but forgive this man his usual hectoring manner. 
+
+                            Though he is at pains to keep his observances a private matter, he is clearly a devoutly religious man. On each of our two days of conversation he thrusts his left arm toward me, proud to show the impression of his tefillin, the ritual thongs bound around a man’s arm for daily morning prayers. It is hard to resist making a connection between his deeply held religious tenets and the strength of his commitment to orthodox Modernism: both rigorous systems of belief, each in their way strivings toward a kind of mortal perfection. When l asked him how he chose to become a designer, his answer was unequivocal: **“I didn’t choose. God chose.”** There is no trace of guile when he explains that he performs these rituals **“because I want to. Because I think God is more important than I am. Its important to be modest in the World. To think theres somebody who is better than we are, and more significant. Right?”**
+
+                            A major portion of our first meeting is taken up with discussing the importance of doing pro-bono work, and donating to charity. He relates at some length, and in his customarily pugnacious storytelling mode, the occasion when he was moved to give his copier-machine repair man several thousand dollars, to help bring the latter’s family out of the Soviet Union. “And I didn’t even know this guy.” I remark that his gesture seems very generous. But he’s off again.
+
+                            **“This is a social issue, right? Or is it not? It has nothing whatsoever to do with design. Design issues are form and content and proportion. And color. And texture. And scale. You cant say any of these things about social issues. Design can help elucidate or explain social issues. Social issues are not design issues, though the visual arts have done a hell of a lot for social issues. They’re two separate things, as different as milk and corn beef. (And as we know from the scriptures, thou shalt not souse a kid in its mothers milk.)**
+
+                            It’s not that Rand isn’t interested in social issues. Rather, he has made his own decisions about which ones matter to him, and attends to them in his own, sometimes narrowly focused, idiosyncratic way. And he vehemently rejects what he sees as the corruption of design education, that is as he conceives it and practiced it at Yale. **“They don’t teach design because they don’t understand what design is. They’ll give you a poster to do, let’s say, for some social issue and they consider that teaching design.”**
+
+                            OK. So if we accept that design issues are only form and content…
+
+                            **“That’s all they are. They’re never anything else.”**
+
+                            … then, what if the content of the poster is a social issue?
+
+                            **“Then… then… Then the designer deals with it. He uses the power of design to express the social issue.”**
+
+                            Hoping to steer back to safer ground, I ask which pieces of work he’s most pleased with, meaning, of course, his own work. The answer, needless to say, is indirect.
+
+                            **“I don’t know. If I’d done this” — he points toward a lively abstract print by Henryk Tomaszewski on the wall behind me. “I’d probably be most pleased. I’m going to use it in my next book as an example. I think its terrific.”**
+
+                            Why?
+
+                            **“Here, I have this little note and I was going to print it.” He rummages on the desk for a scrap of paper, then reads aloud: “Better to be silent and have folks think you are a fool than to speak and remove all doubt.”**
+
+                            He looks up. “If I start talking about it, then maybe I’d better not. I think it’s obvious.”
+
+                            But what’s obvious, Why is it terrific?
+
+                            ***_“The colors. They happen to be the colors I always use, red and green. The way it’s done. The idea, which is very expressive of circus activities calisthenics, twirling and twisting. This childlike quality that it has. Not childish. The distinction is tremendous. It has all the good qualities that children have: honesty, spontaneity — Most people who try to imitate that kind of stuff do lousy drawings, rather than understanding the spirit of child-like drawings, I mean, as in Klee, Picasso, Miro. Picasso said about Miro that he ought to stop playing with his hoop. In other words, grow up. But I think Miro was a genius, as was Picasso.”**
+
+                            For Rand, as for his heroes, childhood creativity is still vivid. “I always drew. Since I was a little kid — three or four years old. During the first World War. I used to use a chair as a drawing table. I’d sit on a little tiny stool or on my knees, and draw soldiers and trenches and photographs. My education was mostly from books, and magazines, not from teachers. I used to be so admiring of people, I would stand in the rain, I would just stand there looking, for hours, in the drugstore, for example, or the gasoline station.” Rand studied with George Grosz for a while when the German artist first came here, at the Art Students League. “He didn’t even speak English. He would say a few simple words. But design I just picked up. From libraries, bookshops. Prom magazines. German magazines.”
+
+                            In *A Mentor* (on the typographer Ian Tschichold), Rand mentions the initial indifference or outright hostility that greeted painters, architects and designers of the modern period, before their work became recognized and subsequently acclaimed. Yet, in *Cassandre to Chaos*, the most indignant and bare-knuckled of the essays in his new book, he fulminates against (unspecified) designers who are experimenting with formal vocabularies and production technology. This bevy of depressing images collage of chaos and confusion art deco rip-offs, sleazy textures indecipherable, zany typography” is mostly confined to pro-bono work, small boutiques, fledgling studios, trendy publishers, misguided educational institutions, anxious graphic arts associations and a few innocent paper manufacturers comforted by the illusion that this must be progress. But such rhetoric puts him at risk of proving as blind to innovation as were the critics of his early 20th-century heroes. Isn’t he being a bit harsh toward todays young innovators? 
+
+                            **“I don’t consider these young innovators innovators. I consider them a pack of undisciplined gibberish. I’m not going to mention any names mostly posters for the AIGA and crap like that. The difference is a difference of talent. These people are untalented people. “**
+
+                            How does he measure talent
+
+                            **“By looking.”**
+
+                            That, I find, is a rather haughty position.
+
+                            **“Well, I’m haughty.”**
+
+                            Its potentially a very unpleasant attitude.
+
+                            **“I know it is, but that’s the way it is. I’ve been doing it 60, 70 years. I am the judge of a good designer. I don’t consider myself an old fuddy-duddy. I haven’t changed my mind about things and I don’t consider it a weakness. I’ll debate with people that I respect and do good work, and if I think their work is lousy I want nothing to do with it because we don’t talk the same language. I have my track record. If you like it, fine. If you don’t like it, that’s too bad. I expect a certain kind of respect from people. Not only because I’m a great designer —which is not my opinion, this is the world’s opinion. But because I’m older than you are. You question me in a way which elicits a doubt. What did you major in — psychology?”**
+
+                            I smile. We sit across from each other in silence, enjoying a temporary ceasefire. Despite his vexatious and, by his own declaration, “impatient” mien, I have to admit I’m warming to this guy. I can imagine why his students — especially the one who, according to Yale lore, once punched Rand on the nose after a particularly fractious crit — would never forget him. From time to time it’s crossed my mind that perhaps Paul Rand has no sense of humor. But actually he does, it just takes patience. Just then, he pipes up.
+
+                            **“See, I know what your problem is. You lack humor. That’s your problem. You take things too seriously. Le Corbusier — you know who he was? — he said that to me. He said ‘young man, you’re much too serious.’ So I can say it to you.”**
+
+                            We’re made for each other
+
+                            Returning to Manhattan after our second meeting, I catch a serendipitous image through the train window: a huge parking lot in which dozens of UPS delivery  vans stand in serried  ranks,  like mechanical cows in a paddock, presumably a distribution hub. There is Rand’s logo, multiplied dozens of times, receding into the distance — a cattle brand on each van’s haunch. I’m forced to think afresh about the design, to notice rather than merely perceive it out of the corner of my eye, a reliable motif for an ubiquitous service. The dark brown livery, the spindly lower-case letter forms, the grace note of the bow: altogether the identity looks dated, a vestige of another era, that age of men in hats and men in charge. Yet strangely timeless, by now a piece of the visual landscape, a bearing mark against which America goes about its business. To have been the creator of that symbol must be a very satisfying feeling, a bit like naming a species.
+
+                            I think about Rand’s wish to perfect what has already served quite well for a long while. If it were suddenly changed, even only slightly, the entire edifice of trust that inheres in that arrangement of lines on a surface might suffer a seismic jolt.
+
+                            Rand would surely enjoy the scene, having extolled (in *A Designer’s Art*) the exciting spectacle of marching soldiers neatly arranged flower beds, crowds at football games, rows of methodically placed packages on the grocers shelf. I think about his appreciation of repetition, with respect both to the arrangement of items in space (that is, as a formal device), and in terms of regular activity — as much in the ritual of daily prayer as in creative practice.
+
+                            As the train rushes past, I realize what’s missing from the UPS logo, and yet scarcely needs adding: that loop-ing signature, like the vapor trail from an aerial acrobatics display, whose freehand strokes — childlike but not childish — appear on much of his earlier work. An unmistakable trademark: the artist’s guarantee of authenticity. *
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+
+
+
+        include ../../../../__MIXINS/_include-image-carousel.pug
+
+        include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

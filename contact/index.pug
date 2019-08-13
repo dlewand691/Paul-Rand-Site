@@ -1,0 +1,150 @@
+extends ../__MIXINS/_layout-default.pug
+
+block vars
+    - var pageTitle = 'Contact'
+    - var bodyID    = ''
+    - var bodyClass = ''
+
+block main-content
+    .cd-main-content
+        .grid-x.grid-margin-x.expanded.align-center
+            .cell
+                h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-top Contact
+
+        .grid-x.grid-margin-x.align-center
+            .small-12.medium-6.cell
+                //- .callout.alert
+                    p.small ATTENTION! If you're looking for politician 
+                        strong: em RAND PAUL
+                        | , please do not use this form. This site is for graphic designer 
+                        strong: em Paul Rand 
+                        | and has no affiliation with politics. Thank you.
+                .callout.warning
+                    p.small Please note, if you are looking for permissions to reproduce any of Mr. Rand’s work, the client he created the work for typically holds the copyright and would need to give permission. I cannot grant any permissions whatsoever but am happy to try to help in any way possible.
+                form(data-abide novalidate action="https://formspree.io/dlewandowski38@yahoo.com" method="POST")
+                    .alert.callout(data-abide-error style="display: none;")
+                        p
+                            i.fi-alert
+                            | Whoops! There's some errors that need fixing
+                    label
+                        | Name
+                        input(name="Name" type="text" placeholder="Jonathan Smith" aria-describedby="exampleHelpText" required data-live-validate="true" data-validate-on-blur="true")
+                        span.form-error
+                            | Sorry, but need to know your name so I can reply. They call you…
+                    //- p#exampleHelpText.help-text Here&apos;s how you use this input field!
+                    label
+                        | Email
+                        input(name="_replyto" type="text" placeholder="email@website.com" aria-describedby="exampleHelpText" required data-live-validate="true" data-validate-on-blur="true" pattern="email")
+                        span.form-error
+                            | Sorry, but need your email so I can reply. Fill it in here, please.
+                    label.small-mb1
+                        | Subject
+                        select(name="_subject" placeholder="Please select a topic…" required data-live-validate="true" data-validate-on-blur="true")
+                            option(value="" disabled selected) Please select a topic…
+                            option(value="Just saying “Hi”") Just saying “Hi”
+                            option(value="Story to Share") Story to Share
+                            option(value="Problem with the site (technical or something not working properly)") Problem with the site (technical or something not working properly)
+                            option(value="Problem with the content (words or images)") Problem with the content (words or images)
+                        span.form-error
+                            | Why are you writing? Please select…
+                    label
+                        | Message
+                        textarea(name="Message" placeholder="" rows="4" required data-live-validate="true" data-validate-on-blur="true")
+                        span.form-error
+                            | No blank messages, please. How can I help?
+
+                    input(type="text" name="_gotcha" style="display:none")
+
+                    .text-center
+                        input.button.arrow.large(type="submit" value="SEND IT")
+                        .footnote Powered by Formspree.io
+
+
+        //- .grid-x.grid-margin-x.align-center
+        //-     .small-12.medium-6.cell.container.jf-form
+        //-         form#jqueryform-ec8e1e(data-abide, data-licensekey="", name="jqueryform-ec8e1e", action="admin.php", method="post", enctype="multipart/form-data", novalidate="", autocomplete="off")
+        //-             input(type="hidden", name="method", value="validateForm")
+        //-             input#serverValidationFields(type="hidden", name="serverValidationFields", value="")
+        //-             .alert.callout(data-abide-error, style="display: none;")
+        //-                 p
+        //-                     i.fi-alert
+        //-                     | Whoops! There's some errors that need fixing
+        //-             .f1(data-fid="f1")
+        //-                 label(for="f1") Name
+        //-                     input#f1(name="f1", type="text", value="", placeholder="Who are you?", required, data-live-validate="true", data-validate-on-blur="true", pattern="alpha", data-rule-required="true", data-msg-required="Sorry, but need to know your name so I can reply. They call you…")
+        //-                     span.form-error
+        //-                         | Sorry, but need to know your name so I can reply. They call you…
+        //-             .f2(data-fid="f2")
+        //-                 label(for="f2")
+        //-                     | Email
+        //-                     input#f2(name="f2", type="email", value="", placeholder="Where are you?", required, data-live-validate="true", data-validate-on-blur="true", pattern="email", data-rule-email="true", 
+        //-                     data-rule-required="true", data-msg-required="Sorry, but need your email so I can reply. Fill it in here, please.")
+        //-                     span.form-error
+        //-                         | Sorry, but need your email so I can reply. Fill it in here, please.
+        //-             .f4(data-fid="f4")
+        //-                 label(for="f4").small-mb1
+        //-                     | Subject
+        //-                     select#f4(name="f4", placeholder="Why are you writing?", required, data-live-validate="true", data-validate-on-blur="true", data-rule-required="true", data-msg-required="Why are you writing? Please select…" )
+        //-                         option(value="") Why are you writing?
+        //-                         option(value="Just saying “Hi”") Just saying “Hi”
+        //-                         option(value="Problem with the site (technical or something not working properly)") Problem with the site (technical or something not working properly)
+        //-                         option(value="Problem with the content (words or images)") Problem with the content (words or images)
+        //-                     span.form-error
+        //-                         | Why are you writing? Please select…
+        //-             .f3(data-fid="f3")
+        //-                 label(for="f3")
+        //-                     | Message
+        //-                     textarea#f3(name="f3", placeholder="What’s up?", rows="4", required, data-live-validate="true", data-validate-on-blur="true", pattern="alpha_numeric", data-rule-required="true", data-msg-required="No blank messages, please. How can I help?")
+        //-                     span.form-error
+        //-                         | No blank messages, please. How can I help?
+        //-             .f5(data-fid="f5")
+        //-                 label(for="f5") Share a file (optional, but certainly appreciated)&mldr;
+        //-                 input#f5(type="file", name="f5[]", data-multiple="true", multiple="", value="", data-showupload="true", data-showzoom="true")
+        //-             .f0.text-center(data-fid="f0")
+        //-                 button.button.arrow(type="submit" style="z-index: 1;") SEND IT
+        //-             .container.jf-thankyou(style="display:none;", data-redirect="thanks.html", data-seconds="3")
+        //-                 h3
+        //-                     | Your message has been sent. I&apos;ll get back to you shortly.
+        //-                     | Thank You!
+        //-                     | Danny Lewandowski
+        //-             //- -----------------------------------------------
+        //-             script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+        //-             script(src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js")
+        //-             script(src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/additional-methods.min.js")
+        //-             script(src="vendor.js")
+        //-             script(src="jqueryform.com.min.js?ver=v2.1.0&id=jqueryform-ec8e1e")
+        //-             script(type="text/javascript").
+        //-                 //- start jqueryform initialization
+        //-                 //- --------------------------------
+        //-                 JF.init('#jqueryform-ec8e1e');
+
+
+        //- .grid-x.grid-margin-x.align-center
+            .small-12.medium-6.cell
+                .responsive-embed.small-pt6
+                    //- iframe(src="/contact/form.html", style="border:none;", allowtransparency="true")
+                    iframe(src="/contact/form-php/form.php", style="border:none;", allowtransparency="true")
+        .grid-x.grid-margin-x.align-center.small-mb2
+            .small-12.medium-6.cell
+                hr
+                h5.text-center Support the site with a donation
+                p This site is created and maintained purely as a labor of love and all by hand (seriously). Your support will help pay for on-going hosting charges, maintenance, sample additions and other tasks required to maintain everything here. 
+
+                .text-center
+                    strong
+                        em Thank you in advance for your generosity!
+
+                    form.small-my1(action="https://www.paypal.com/cgi-bin/webscr", method="post", target="_top")
+                        input(type="hidden", name="cmd", value="_s-xclick")
+                        input(type="hidden", name="hosted_button_id", value="TKMS8SURGQ93U")
+                        input(type="image", src="http://www.paulrand.design/img/paypal-donate.svg", border="0", name="submit", alt="PayPal - The safer, easier way to pay online!")
+                        img(alt="", border="0", src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif", width="1", height="1")
+                    .footnote Clicking the button above will direct you to PayPal to make your donation. 
+                        br
+                        | Don't have a PayPal account? Sign up 
+                        a(href="https://www.paypal.com/us/webapps/mpp/account-selection") here.
+
+
+
+
+

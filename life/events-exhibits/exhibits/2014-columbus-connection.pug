@@ -1,0 +1,78 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Paul Rand: The Columbus Connection'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'Yale University, Sterling Memorial Library, Memorabilia Room'
+    - var pageSubtitle2         = 'Monday, October 27, 2014 - Friday, January 30, 2015'
+
+    - var nextType              = 'Exhibit'
+    - var nextTitle             = 'Everything Is Design: The Work of Paul Rand'
+    - var nextDate              = '2015'
+    - var nextLink              = '2015-everything-is-design'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    //- - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Pioneer%20by%20Design%2C%20Yale/Web/Pioneer%20by%20Design%2C%20Yale%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Pioneer%20by%20Design%2C%20Yale/Web/Pioneer%20by%20Design%2C%20Yale%2001.jpg', title: ''})
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Pioneer%20by%20Design%2C%20Yale/Web/Pioneer%20of%20Design%20Exhibit%20Image-800.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Pioneer%20by%20Design%2C%20Yale/Web/Pioneer%20of%20Design%20Exhibit%20Image.jpg"
+                            )
+
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Paul Rand was one of the most famous designers of the twentieth century. The designs featured on these panels depict a portion of his legacy and his connection to Columbus. Rand produced numerous iconic designs for annual reports, logos and brands that connected our city to the international design world.
+
+                        Thanks to the donation of this collection by Randy Tucker, Columbus is the beneficiary of a significant collection of original work by Mr. Rand including many annual report designs for Cummins. The collection also includes rare limited edition books used to present identity programs such as the logo for NeXT computers to Steven Jobs.
+
+                        These and many other artworks will be on exhibit at the Gallery at Hotel Indigo (March 1–April 15) and Ivy Tech Gallery of Fine Arts & Design (March 31–April 15).
+
+                        Paul Rand: The Columbus Collection exhibit, commemorating the original works of Paul Rand for Cummins, the City of Columbus, and Tipton Lakes, will run from April 1 until May 31 in the Gallery of Fine Arts & Design at Ivy Tech Community College-Columbus. Rand was one of the most famous graphic designers of the twentieth century. His work spanned six decades, three generations, and numerous chapters of design history. Rand’s influence on commercial art, advertising, book and magazine cover design, and graphic identity for major corporations was immense. In addition to his work for organizations in Columbus, he created some of the world’s most enduring corporate logos, including IBM, UPS, ABC, and Westinghouse.
+
+                        Rand’s designs, including original notes and markings, as well as presentation booklets he designed for “NeXT Computers” for Steven Jobs, are displayed. This exhibit is possible through the donation of Rand’s works to the Ivy Tech gallery by Randy Tucker, former public relations executive with Cummins.
+
+                        The gallery is open Monday through Thursday, from 9:00 a.m. until 6:00 p.m., and Friday, from 9:00 a.m. until 4:30 p.m.
+
+                        Information: Lloyd Brooks, rbrooks12@ivytech.edu or 812-374-5139.
+
+                        About Ivy Tech Community College
+                        Ivy Tech Community College is the state’s largest public postsecondary institution and the nation’s largest singly accredited statewide community college system serving nearly 200,000 students annually. Ivy Tech has campuses throughout Indiana. It serves as the state’s engine of workforce development, offering affordable degree programs and training that are aligned with the needs of its communities. In addition, its courses and programs transfer to other colleges and universities in Indiana. It is accredited by the Higher Learning Commission and is a member of the North Central Association.
+
+                        IVY TECH COMMUNITY COLLEGE
+                        COLUMBUS REGION
+                        4475 Central Avenue, Columbus, Indiana 47203
+                        812-372-9925 • www.ivytech.edu
+
+                        + GOOGLE CALENDAR+ ICAL EXPORT
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

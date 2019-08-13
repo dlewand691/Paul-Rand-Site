@@ -1,0 +1,130 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Paul Rand: Conversations with Students'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var author                = 'Michael Kroeger'
+    - var bookSubhead           = 'Princeton Architectural Press, 2008'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/769114778'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3Dpaul%2Brand%2Bconversations%2Bwith%2Bstudents%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1QN9ppJ'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/w/paul-rand-michael-kroeger/1008552728?ean=9781568987255'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2050601.m570.l1313.TR0.TRC0.H0.TRS0%26_nkw%3DPaul%2BRand%253A%2BConversations%2Bwith%2BStudents%26_sacat%3D0'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'A Designer’s Eye: Paul Rand'
+    - var nextDate              = '2015'
+    - var nextDescription       = 'By J.P. Williams'
+    - var nextLink              = '/life/books-articles/books/2015-a-designers-eye.html'
+
+    - var relatedItemLink1      = '/life/books-articles/books/1998-a-designers-words.html'
+    - var relatedItemTitle1     = 'A Designer’s Words'
+    - var relatedItemFootnote1  = 'From the Paul Rand Symposium on April 3, 1998 at the School of Visual Arts in New York.'
+
+    - var relatedItemLink2      = '/life/books-articles/books/2000-paul-rand.html'
+    - var relatedItemTitle2     = 'Paul Rand'
+    - var relatedItemFootnote2  = 'By Steven Heller'
+
+    - var relatedItemLink3      = '/life/books-articles/books/2002-the-works-of-paul-rand.html'
+    - var relatedItemTitle3     = 'Paul Rand: The Works of Paul Rand'
+    - var relatedItemFootnote3  = 'Exhibition at Play Mountain, Sept. 15 - Nov. 4, 2001'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2014-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2015-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2016-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2016.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2017-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2017.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2018-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2018.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2019-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2019.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2020-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2020.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2021-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand%2C%20Conversations%20with%20Students%202007%2021.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= 'By ' + author
+                    br
+                    em.text-gray.t16!= bookSubhead
+
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand-%20Conversations%20with%20Students%2C%20front.jpg",
+                            "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand-%20Conversations%20with%20Students%2C%20front.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        As one of the most influential and inspirational graphic designers of the twentieth century, Paul Rand defined modern American graphic design. His iconic logo designs for IBM, UPS, and the ABC television network distilled the essences of modernity for his corporate patrons. His body of work includes advertising, poster, magazine, and book designs characterized by simplicity and a wit uniquely his own. His ability to discuss design with insight and humor made him one of the most revered design educators of our time.
+
+                        This latest volume of the popular Conversations with Students series presents Rand’s last interview, recorded at Arizona State University one year before his death in 1996. Beginners and seasoned design professionals alike will be informed by Rand’s words and thoughts on varied topics ranging from design philosophy to design education.
+
+                        ##### Contents:
+
+                        + Foreword by Wolfgang Weingart
+                        + Preface
+                        + Acknowledgments
+                        + Conversation One
+                        + Conversation Two
+                        + Thoughts on Paul Rand:
+                            + Philip Burton
+                            + Jessica Helfand
+                            + Steff Geissbuhler
+                            + Gordon Salchow
+                            + Armin Hoffman
+                        + Bibliography
+                        + Credits
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../../__MIXINS/_include-next-item.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

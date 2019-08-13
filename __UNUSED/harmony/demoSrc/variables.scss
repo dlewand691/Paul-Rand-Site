@@ -1,0 +1,35 @@
+$breakpoints: (
+    min: 320px,
+    xs: 340px,
+    sm: 600px,
+    md: 900px,
+    lg: 1300px,
+    xl: 1600px,
+    xxl: 1900px,
+    xxxl: 2200px
+);
+
+$default-container-padding-left: (
+    sm: 16px,
+    xxxl: 320px
+);
+
+$default-container-padding-right: $default-container-padding-left;
+
+$default-horizontal-base-unit: (
+    sm: 8px,
+    xxxl: 48px
+);
+
+$default-vertical-base-unit: $default-horizontal-base-unit;
+
+$font-sizes: (
+    min: 12px,
+    xxxl: 18px
+);
+
+$cap-heights: (
+    Inter: 0.7
+);
+
+$overlay-columns: 12 !default;

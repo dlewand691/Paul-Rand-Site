@@ -1,0 +1,779 @@
+extends ../__MIXINS/_layout-default.pug
+
+block vars
+    - var pageTitle = 'Suggested Readings'
+    - var bodyID    = 'writing'
+    - var bodyClass = 'suggested-readings'
+
+block main-content
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .small-12.cell
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    // Tabs
+                    ul.tabs#tabs(data-tabs data-deep-link="true")
+                        li.tabs-title.is-active
+                            a(href='#general') General
+                        li.tabs-title
+                            a(href='#modern') Modern Art
+                        li.tabs-title
+                            a(href='#type') Type
+                        li.tabs-title
+                            a(href='#social') Social
+                        li.tabs-title
+                            a(href='#bios') Bios
+                        li.tabs-title
+                            a(href='#architecture') Architecture
+                        li.tabs-title
+                            a(href='#history') History
+                        li.tabs-title
+                            a(href='#geometry') Geometry
+                        li.tabs-title
+                            a(href='#film') Film
+
+                    // Tab content
+                    .tabs-content.text-center(data-tabs-content="tabs")
+                        //- /*==============================  GENERAL  ==============================*/
+                        .tabs-panel.is-active#general
+                            h3.small-my3 General Art Theory and Philosophy
+                            p The Use and Abuse of Art
+                                em.t16.block.text-gray — Jacques Barzun
+
+                            p Aesthetics: Problems in the Philosophy of Criticism
+                                br
+                                | Aesthetics from Classical Greece to the Present
+                                em.t16.block.text-gray — Monroe C. Beardsley
+
+                            p The Western Canon: The Books and School of the Ages
+                                em.t16.block.text-gray — Harold Bloom
+
+                            p A History of Aesthetic
+                                em.t16.block.text-gray — Bernard Bosanquet
+
+                            p Philosophies of Beauty
+                                em.t16.block.text-gray — E.F. Carritt
+
+                            p The Principles of Art
+                                em.t16.block.text-gray — R.G. Collingwood
+
+                            p A Companion to Aesthetics
+                                em.t16.block.text-gray — David Cooper
+
+                            p Aesthetic.
+                                em.t16.block.text-gray — Benedetto Croce
+
+                            p The Journal of Eugene Delacroix
+                                em.t16.block.text-gray — Eugene Delacroix
+
+                            p Art as Experience
+                                em.t16.block.text-gray — John Dewey
+
+                            p A Dictionary of Philosophy
+                                em.t16.block.text-gray — Anthony Flew
+
+                            p Vision and Design
+                                em.t16.block.text-gray — Roger Fry
+
+                            p The Philosophy of Art
+                                em.t16.block.text-gray — Giovanni Gentile
+
+                            p Painting and Reality
+                                em.t16.block.text-gray — Etienne Gilson
+
+                            p Language of Art
+                                em.t16.block.text-gray — Nelson Goodman
+
+                            p System and Dialects of Art
+                                em.t16.block.text-gray — John D. Graham
+
+                            p The Art and the Art of Criticism
+                                em.t16.block.text-gray — Theodore M. Greene
+
+                            p Form and Function: Remarks on Art
+                                em.t16.block.text-gray — Horatio Greenough
+
+                            p Art in Theory
+                                em.t16.block.text-gray — P. Wood/C. Harrison
+
+                            p The Philosophy of Fine Arts
+                                em.t16.block.text-gray — G.W.F. Hegel
+
+                            p Das Problem Der Form
+                                em.t16.block.text-gray — Adolf Hildebrand
+
+                            p Introductory Readings in Aesthetics
+                                em.t16.block.text-gray — John Hospers
+
+                            p Decline of the New
+
+                            p The Idea of the Modern in Literature and the Arts
+                                em.t16.block.text-gray — Irving Howe
+
+                            p Homo Ludens
+                                em.t16.block.text-gray — Johan Huizinga
+
+                            p Guide to Philosophy
+                                em.t16.block.text-gray — Cyril E. Joad
+
+                            p Art and Freedom
+                                em.t16.block.text-gray — Horace Kallen
+
+                            p Studies in Ancient American and European Art
+                                em.t16.block.text-gray — George Kubler
+
+                            p Problems of Art: Ten Philosophical Lectures
+                                em.t16.block.text-gray — Susanne Langer
+
+                            p Museum Without Walls
+                                br
+                                | The Voices of Silence
+                                em.t16.block.text-gray — Andre Malraux
+
+                            p The Meaning of Meaning
+                                em.t16.block.text-gray — I.A. Richards/C. Ogden
+
+                            p The Meaning in Visual Arts
+                                em.t16.block.text-gray — Erwin Panofsky
+
+                            p The Demands of Art
+                                em.t16.block.text-gray — Max Raphael
+
+                            p Principle of Literary Criticism
+                                em.t16.block.text-gray — I.A. Richards
+
+                            p The De-definition of Art
+                                em.t16.block.text-gray — Harold Rosenberg
+
+                            p Theory and Philosophy of Art
+                                em.t16.block.text-gray — Meyer Schapiro
+
+                            p Against the Interpretation and Other Essays
+                                em.t16.block.text-gray — Susan Sontag
+
+                            p The Art of Thought
+                                em.t16.block.text-gray — Graham Wallas
+
+                            p Axel’s Castle
+                                em.t16.block.text-gray — Edmund Wilson
+
+                            p The Art of the Italian Renaissance
+                                br
+                                | Principles of Art History
+                                br
+                                | Renaissance and Baroque
+                                br
+                                | The Sense of Form in Art
+                                em.t16.block.text-gray — Heinrich Wolfflin
+
+                            p Abstraction and Empathy
+                                em.t16.block.text-gray — Wilhelm Worringer
+
+                            p The Essential Kant
+                                em.t16.block.text-gray — Arnulf Zweig
+
+                        //- /*==============================  MODERN ART HISTORY AND MOVEMENTS  ==============================*/
+                        .tabs-panel#modern
+                            h3.small-my3 Modern Art History and Movements
+                            p Apollinaire on Art: Essays and Reviews 
+                                em.t16.block.text-gray — G. Apollinaire
+
+                            p Futurist Manifestos 
+                                em.t16.block.text-gray — Umbro Apollonio
+
+                            p Cubism and Abstract Art 
+                                em.t16.block.text-gray — Alfred Barr
+
+                            p The Mirror of Art 
+                                em.t16.block.text-gray — Charles Baudelaire
+
+                            p Art 
+                                em.t16.block.text-gray — Clive Bell
+
+                            p Modernism, 1890-1930 
+                                em.t16.block.text-gray — J. McFarlance/M. Bradbury
+
+                            p Theories of Modern Art 
+                                em.t16.block.text-gray — H.B. Chipp
+
+                            p The Cubist Epoch 
+                                em.t16.block.text-gray — Douglas Cooper
+
+                            p Modern Art and Modernism 
+                                em.t16.block.text-gray — C. Harrison/F. Frascina
+
+                            p This is Not a Pipe 
+                                em.t16.block.text-gray — Michel Foucault
+
+                            p Progress in Art 
+                                em.t16.block.text-gray — Suzi Gablik
+
+                            p Visions of the Modern 
+                                em.t16.block.text-gray — John Golding
+
+                            p The Great Experiment: Russian Art 
+                                em.t16.block.text-gray — Camilla Gray
+
+                            p 19th and 20th Century Art 
+                                em.t16.block.text-gray — George H. Hamilton
+
+                            p The Social History of Art 
+                                em.t16.block.text-gray — Arnold Hauser
+
+                            p Modern Artists on Art 
+                                em.t16.block.text-gray — Robert L. Herbert
+
+                            p De Stijl: 1917-1931 
+                                em.t16.block.text-gray — Hans L.C. Jaffe
+
+                            p Modern Art and the Object 
+                                em.t16.block.text-gray — Ellen H. Johnson
+
+                            p Modern Times 
+                                em.t16.block.text-gray — Paul Johnson
+
+                            p The Dada Painters and Poets 
+                                em.t16.block.text-gray — F. Marc/W. Kandinsky
+
+                            p Dadaism and Futurism 
+                                em.t16.block.text-gray — Max Kozloff
+
+                            p The Symbolist Aesthetic in France. 1885-1895. 
+                                em.t16.block.text-gray — A.G. Lehmann
+
+                            p Ulm Design: The Morality of Objects 
+                                em.t16.block.text-gray — Herbert Lindinger
+
+                            p Wallace Stevens and Modern Art 
+                                em.t16.block.text-gray — Glen McLeod
+
+                            p The Dada Painters and Poets 
+                                em.t16.block.text-gray — Robert Motherwell
+
+                            p Foundations of Modern Art 
+                                em.t16.block.text-gray — Amedee Ozenfant
+
+                            p The History of Impressionism
+                                br
+                                | Post Impressionism 
+                                em.t16.block.text-gray — John Rewald
+
+                            p Concepts of Modern Art 
+                                em.t16.block.text-gray — N. Stagnos/A. Richardson
+
+                            p A History of the Modern Movement 
+                                em.t16.block.text-gray — Kurt Rowland
+
+                            p Modern Art, 19th and 20th Century
+                                br
+                                |  Nature of Abstract Art 
+                                em.t16.block.text-gray — Meyer Schapiro
+
+                            p Wiener Werkstaette, Design in Vienna 
+                                em.t16.block.text-gray — J. Werner Schweiger
+
+                            p The Banquet Years 
+                                em.t16.block.text-gray — Roger Shattuck
+
+                            p Skyscraper Primitives 
+                                em.t16.block.text-gray — Dickran Tashjian
+
+                            p Art After Modernism 
+                                em.t16.block.text-gray — Brian Wallis
+
+                            p The Bauhaus: Weimar, Dessau, Berlin, Chicago 
+                                em.t16.block.text-gray — Hans M. Wingler
+
+
+                        //- /*==============================  TYPOGRAPHY AND DESIGN  ==============================*/
+                        .tabs-panel#type
+                            h3.small-my3 Typography and Design
+
+                            p William Caslon: 1693-1766 
+                                em.t16.block.text-gray — Johnson Ball
+
+                            p Postscripts on Dwiggins. Essays and Recollections 
+                                em.t16.block.text-gray — Paul A. Bennett
+
+                            p Line and Form 
+                                em.t16.block.text-gray — Walter Crane
+
+                            p Visual Language 
+                                em.t16.block.text-gray — P. Thompson/P. Davenport
+
+                            p Practice of Typography: Correct Composition 
+                                em.t16.block.text-gray — Theodore De Vinne
+
+                            p Layout in Advertising 
+                                em.t16.block.text-gray — William A. Dwiggins
+
+                            p Typographie 
+                                em.t16.block.text-gray — Ottl Eicher
+
+                            p The New Graphic Design 
+                                em.t16.block.text-gray — M. Kutter/K. Gersner
+
+                            p An Essay on Typography 
+                                em.t16.block.text-gray — Eric Gill
+
+                            p Graphic Design 
+                                em.t16.block.text-gray — Milton Glaser
+
+                            p Seymour Chwast, The Left Handed Designer 
+                                em.t16.block.text-gray — Steven Heller
+
+                            p Graphic Design Manual 
+                                em.t16.block.text-gray — Armin Hofmann
+
+                            p American Alphabets 
+                                em.t16.block.text-gray — Paul Hollister
+
+                            p The Printer’s Terms 
+                                em.t16.block.text-gray — Rudolf Hostettler
+
+                            p Graphic Design 
+                                em.t16.block.text-gray — Werner Jeker
+
+                            p Writing and Illuminating and Lettering 
+                                em.t16.block.text-gray — Edward Johnston
+
+                            p The Art of the Poster 
+                                em.t16.block.text-gray — E. McKnight Kauffer
+
+                            p The Place, the Times and the Point 
+                                em.t16.block.text-gray — Uwe Loesch
+
+                            p The Art of Advertising 
+                                em.t16.block.text-gray — George Lois
+
+                            p Eric Gill
+                                br
+                                | William Morris 
+                                em.t16.block.text-gray — Fiona MacCarthy
+
+                            p Typographers on Type 
+                                em.t16.block.text-gray — Ruari McLean
+
+                            p The Function of Esthetic Research 
+                                em.t16.block.text-gray — Enzo Mari
+
+                            p A History of Graphic Design 
+                                em.t16.block.text-gray — Philip Meggs
+
+                            p Graphic Design, Mendell & Oberer 
+                                em.t16.block.text-gray — Pierre Mendell
+
+                            p Letterforms. Typography and Scriptorial
+                                br
+                                | On Type Design: Past and Present 
+                                em.t16.block.text-gray — Stanley Morrison
+
+                            p A.M. Cassandre 
+                                em.t16.block.text-gray — Henri Mouron
+
+                            p The Graphic Designer and His Design Problems 
+                                em.t16.block.text-gray — Joseph Muller-Brockman
+
+                            p Graphic Design 
+                                em.t16.block.text-gray — R. Tissi/S. Odermatt
+
+                            p Max Huber 
+                                em.t16.block.text-gray — Carlo Pirovano
+
+                            p Images sans Paroles 
+                                em.t16.block.text-gray — Gunther Rambow
+
+                            p Advertisement: Ad Vivum, Ad Hominum? 
+                                em.t16.block.text-gray — Paul Rand
+
+                            p Die Kunst der Typographie 
+                                em.t16.block.text-gray — Paul Renner
+
+                            p A Theory of Pure Design 
+                                em.t16.block.text-gray — Denman W. Ross
+
+                            p Typography 
+                                em.t16.block.text-gray — Emil Ruder
+
+                            p Basic Typography: Design with Letters 
+                                em.t16.block.text-gray — Ruedi Ruegg
+
+                            p Visuelle Kommunication: Ein Design-Handbuch 
+                                em.t16.block.text-gray — Anton Stankowski
+
+                            p Bruno Munari: Design as Art 
+                                em.t16.block.text-gray — Aldo Tanchis
+
+                            p Designing Books
+                                br
+                                | The New Typography
+                                br
+                                | Treasury of Alphabets and Lettering 
+                                em.t16.block.text-gray — Jan Tschichold
+
+                            p Printing Types 
+                                em.t16.block.text-gray — Daniel B. Updike
+
+                            p Design 
+                                em.t16.block.text-gray — Massimo Vignelli
+
+                            p Typographer and Designer 
+                                em.t16.block.text-gray — Wolfgang Weignart
+
+                            p Henryk Tomaszewski 
+                                em.t16.block.text-gray — Stanislaw Wieczorek
+
+                            p Ein Areitsbericht 
+                                em.t16.block.text-gray — Hermann Zapf
+
+                        //- /*==============================  GENERAL, SOCIOLOGY  ==============================*/
+                        .tabs-panel#social
+                            h3.small-my3 General, Sociology
+                            p Flatland. A Romance of Many Dimensions 
+                                em.t16.block.text-gray — Edwin A. Abbott
+
+                            p Art and Visual Perception
+                                br
+                                | Entropy & Art
+                                br
+                                | New Essays on the Psychology of Art
+                                br
+                                | The Power of the Center
+                                br
+                                | Toward a Psychology of Art
+                                br
+                                | Visual Thinking 
+                                em.t16.block.text-gray — Rudolf Arnheim
+
+                            p The Art in Painting 
+                                em.t16.block.text-gray — Albert C. Barnes
+
+                            p Begin Here
+                                br
+                                | A Stroll with William James 
+                                em.t16.block.text-gray — Jacques Barzun
+
+                            p Cultural Contradictions of Capitalism 
+                                em.t16.block.text-gray — Daniel Bell
+
+                            p Aspects of Language 
+                                em.t16.block.text-gray — D.A. Sears/ D. Bolinger
+
+                            p The Beautiful Necessity 
+                                em.t16.block.text-gray — Claude Bragdon
+
+                            p All Consuming Images 
+                                em.t16.block.text-gray — Stuart Ewen
+
+                            p Objects of Desire: Design and Society 
+                                em.t16.block.text-gray — Adrian Forty
+
+                            p Eye and Brain: The Psychology of Seeing
+
+                            p The Intelligent Eye 
+                                em.t16.block.text-gray — Richard L. Gregory
+
+                            p On Looking into the Abyss 
+                                em.t16.block.text-gray — Gertrude Himmelfarb
+
+                            p Culture of Complaint
+                                br
+                                | Nothing if Not Critical 
+                                em.t16.block.text-gray — Robert Hughes
+
+                            p The Painter’s Eye 
+                                em.t16.block.text-gray — Henry James
+
+                            p Pragmatism and the Meaning of Truth 
+                                em.t16.block.text-gray — William James
+
+                            p Tenured Radicals 
+                                em.t16.block.text-gray — Roger Kimball
+
+                            p Gestalt Psychology 
+                                em.t16.block.text-gray — Franz Koffka
+
+                            p Beer Can by the Highway
+                                br
+                                | Made in America 
+                                em.t16.block.text-gray — John A. Kouwenhoven
+
+                            p The Age of the Avant-Garde 
+                                em.t16.block.text-gray — Hilton Kramer
+
+                            p Signs of the Times 
+                                em.t16.block.text-gray — David Lehman
+
+                            p The Age of Missing Information 
+                                em.t16.block.text-gray — Bill McKibben
+
+                            p The Book of Tea 
+                                em.t16.block.text-gray — Kakuzo Okakura
+
+                            p The Evolution of Useful Things
+
+                            p The Pencil 
+                                em.t16.block.text-gray — Henry Petroski
+
+                            p Amusing Ourselves to Death
+                                br
+                                | The Disappearance of Childhood
+                                br
+                                | Technopoly: The Surrender of Culture to Technology 
+                                em.t16.block.text-gray — Neil Postman
+
+                            p Design for Escape 
+                                em.t16.block.text-gray — I.A. Richards
+
+                            p 246 Little Clouds 
+                                em.t16.block.text-gray — Dieter Roth
+
+                            p Readings in Art History 
+                                em.t16.block.text-gray — Harold Spencer
+
+                            p Elements of Style 
+                                em.t16.block.text-gray — E.B. White/W. Jr. Strunk
+
+                            p Productive Thinking 
+                                em.t16.block.text-gray — Max Wertheimer
+
+                            p Architectural Principles in the Age of Humanism
+                                br
+                                | Born Under Saturn
+                                br
+                                | The Divine Michelangelo
+                                br
+                                | Gothic Versus Classic
+                                br
+                                | Idea and Image: Studies in Italian Renaissance
+                                br
+                                | Palladino and Palladionism 
+                                em.t16.block.text-gray — Rudolf Wittkower
+
+                            p On Writing Well 
+                                em.t16.block.text-gray — William Zinsser
+
+
+                        //- /*==============================  ART BIOGRAPHIES AND MONOGRAPHS  ==============================*/
+                        .tabs-panel#bios
+                            h3.small-my3 Art Biographies and Monographs
+                            p The Art of Cezanne 
+                                em.t16.block.text-gray — Karl Badt
+
+                            p Theo Van Doesburg 
+                                em.t16.block.text-gray — Joost Baljeu
+
+                            p Le Corbusier: Oeuvre Complete 
+                                em.t16.block.text-gray — W. Boesiger
+
+                            p Dialogues with Marcel Duchamp 
+                                em.t16.block.text-gray — Pierre Cabanne
+
+                            p Dubuffet 
+                                em.t16.block.text-gray — Andreas Franzke
+
+                            p Cezanne: A Study of His Development 
+                                em.t16.block.text-gray — Roger Fry
+
+                            p Magritte 
+                                em.t16.block.text-gray — Suzi Gablik
+
+                            p Life with Picasso 
+                                em.t16.block.text-gray — C. Lake/ F. Gilot
+
+                            p Brodovitch 
+                                em.t16.block.text-gray — Andy Grundberg
+
+                            p Gauguin 
+                                em.t16.block.text-gray — Rene Huyghe
+
+                            p Le Corbusier and the Tragic View of Architecture 
+                                em.t16.block.text-gray — Charles Jencks
+
+                            p Juan Gris 
+                                em.t16.block.text-gray — Daniel Kahnweiler
+
+                            p Point and Line to Plane 
+                                em.t16.block.text-gray — Wassily Kandinsky
+
+                            p The Paul Klee Notebooks, Vol 2: The Nature of Nature 
+                                em.t16.block.text-gray — Paul Klee
+
+                            p Functions of Painting 
+                                em.t16.block.text-gray — Fernand Leger
+
+                            p El Lissitzky 
+                                em.t16.block.text-gray — Sophie Lissitzky-Kuppers
+
+                            p Cezanne’s Compositions 
+                                em.t16.block.text-gray — Erle Loren
+
+                            p William Morris 
+                                em.t16.block.text-gray — Fiona MacCarthy
+
+                            p Essays on Art, 3 vols.
+                                br
+                                | The Non-Objective World 
+                                em.t16.block.text-gray — Kasimir Malevich
+
+                            p Select Writings 
+                                em.t16.block.text-gray — Filippo Tommaso Marinetti
+
+                            p A Throw of the Dice: Life of Stephane Mallarme 
+                                em.t16.block.text-gray — Gordon Millan
+
+                            p Degas, The Artist’s Mind 
+                                em.t16.block.text-gray — Theodore Reff
+
+                            p Cezanne: A Biography
+                                br
+                                | Cezanne Letters 
+                                em.t16.block.text-gray — John Rewald
+
+                            p Picasso in the Collection of the Museum of Modern Art 
+                                em.t16.block.text-gray — William Rubin
+
+                            p Kurt Schwitters 
+                                em.t16.block.text-gray — Werner Schmalenbach
+
+                            p Mies van der Rohe: A Critical Biography 
+                                em.t16.block.text-gray — Franz Schulze
+
+                            p Mondrian 
+                                em.t16.block.text-gray — Michel Seuphor
+
+                            p Max Ernst, Loplop 
+                                em.t16.block.text-gray — Werner Spies
+
+                            p William Morris: Romantic to Revolutionary 
+                                em.t16.block.text-gray — Edward P. Thompson
+
+                            p Magritte: Ideas and Images 
+                                em.t16.block.text-gray — Harry Torczyner
+
+                            p Principles of Neo-Plastic Art 
+                                em.t16.block.text-gray — Theodore Van Doesburg
+
+                            p Van Gogh Letters 
+                                em.t16.block.text-gray — Vincent Van Gogh
+
+                            p Giorgio Morandi 
+                                em.t16.block.text-gray — Lamberto Vitali
+
+                            p John Dewey and American Democracy 
+                                em.t16.block.text-gray — Robert B. Westbrook
+
+                            p The Masterpiece 
+                                em.t16.block.text-gray — Emile Zola
+
+                        //- /*==============================  ARCHITECTURE  ==============================*/
+                        .tabs-panel#architecture
+                            h3.small-my3 Architecture
+                            p Notes on the Synthesis of Form 
+                                em.t16.block.text-gray — Christopher Alexander
+
+                            p The Dynamics of Architectural Form 
+                                em.t16.block.text-gray — Rudolf Arnheim
+
+                            p Adolf Loos: Theory and Works 
+                                em.t16.block.text-gray — Benedetto Gravagnuolo
+
+                            p The City of Tomorrow and Its Planning
+                                br
+                                | The Modulor 1 and Modulor 2
+                                br
+                                | Towards a New Architecture 
+                                em.t16.block.text-gray — Le Corbusier
+
+                            p Japanese Homes and Their Surroundings 
+                                em.t16.block.text-gray — Edward S. Morse
+
+                            p Katsura, A Princely Retreat 
+                                em.t16.block.text-gray — Akira Naito
+
+                            p Shaker Built 
+                                em.t16.block.text-gray — J. Sprigg/P. Rocheleau
+
+                            p Houses and People of Japan 
+                                em.t16.block.text-gray — Bruno Taut
+
+                        //- /*==============================  DESIGN HISTORY AND THEORY ==============================*/
+                        .tabs-panel#history
+                            h3.small-my3 General Art Theory and Philosophy
+                            p Theory and Design in the First Machine Age 
+                                em.t16.block.text-gray — R. Banham
+
+                            p Space, Time, and Architecture 
+                                em.t16.block.text-gray — Sigfried Giedion
+
+                            p The Image and the Eye
+                                br
+                                | In Search of Cultural History
+                                br
+                                | Meditations on a Hobby Horse
+                                br
+                                | The Sense of Order
+                                br
+                                | Tributes: Interpreters of Our Cultural Tradition 
+                                em.t16.block.text-gray — E.H. Gombrich
+
+                            p The Language of Vision 
+                                em.t16.block.text-gray — Gyorgy Kepes
+
+                            p Art: The Revealing Experience 
+                                em.t16.block.text-gray — Kurt Kranz
+
+                            p The New Vision
+                                br
+                                | Vision in Motion 
+                                em.t16.block.text-gray — Laszlo Moholy-Nagy
+
+                            p Technics and Civilization 
+                                em.t16.block.text-gray — Lewis Mumford
+
+                            p Design for the Real World 
+                                em.t16.block.text-gray — Victor Papanek
+
+
+                        //- /*==============================  GEOMETRY AND DESIGN  ==============================*/
+                        .tabs-panel#geometry
+                            h3.small-my3 Geometry and Design
+                            p The Painter’s Geometry 
+                                em.t16.block.text-gray — Charles Bouleau
+
+                            p The Golden Number 
+                                em.t16.block.text-gray — Miloutine Borissavlievitch
+
+                            p Space in Medieval Painting 
+                                em.t16.block.text-gray — Miriam Schild Bunim
+
+                            p The Geometry of Art and Life 
+                                em.t16.block.text-gray — Matela Ghyka
+
+                            p Art & Geometry 
+                                em.t16.block.text-gray — William M. Ivins
+
+                            p The Theory of Proportion in Architecture 
+                                em.t16.block.text-gray — P.H. Scholfield
+
+                            p The Ten Books on Architecture 
+                                em.t16.block.text-gray — Vitruvius
+
+                            p Symmetry 
+                                em.t16.block.text-gray — Herman Weyl
+
+                            p Systems of Proportion 
+                                em.t16.block.text-gray — Rudolf Wittkower
+
+                        //- /*==============================  FILM  ==============================*/
+                        .tabs-panel#film
+                            h3.small-my3 Film
+                            p Film as Art 
+                                em.t16.block.text-gray — Rudolf Arnheim
+
+                            p Film Essays
+                                br
+                                | Film Form: Essays in Film Theory
+                                br
+                                |  The Film Sense 
+                                em.t16.block.text-gray — Sergei Eisenstein

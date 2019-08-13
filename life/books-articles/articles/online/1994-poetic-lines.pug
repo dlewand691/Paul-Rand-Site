@@ -1,0 +1,176 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Poetic Lines From The Graphics-Art Drawing Board'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1994%20Poetic%20Lines%20from%20the%20graphics-art%20drawing%20board/Web/Poetic%20Lines%20From%20The%20Graphics%20art%20Drawing%20Board%2C%20Philly.com-450.jpg'
+
+    - var articleAuthor         = 'Jessica Helfand'
+    - var publishedInTitle      = 'Articles.Philly.com'
+    - var publishedInSubtitle   = 'February 13, 1994'
+    - var publishedInSubtitle2  = 'http://articles.philly.com/1994-02-13/news/25857386_1_logo-paul-rand-design'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1994%20Poetic%20Lines%20from%20the%20graphics-art%20drawing%20board/Web/Poetic%20Lines%20From%20The%20Graphics%20art%20Drawing%20Board%2C%20Philly.com-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1994%20Poetic%20Lines%20from%20the%20graphics-art%20drawing%20board/Web/Poetic%20Lines%20From%20The%20Graphics%20art%20Drawing%20Board%2C%20Philly.com.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'CHANGE_ME'
+    - var abe                   = 'yes'
+    - var abeLink               = 'CHANGE_ME'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'CHANGE_ME'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Paul Rand, Writer'
+    - var nextDate              = 'Spring 1997'
+    - var nextDescription       = 'Critique Magazine'
+
+    - var nextLink              = '1997-critique-magazine.html'
+
+    - var relatedItemLink1      = '1971-NYC-ADC-Hall-of-Fame.html'
+    - var relatedItemTitle1     = '1971 Art Director’s Club of New York Hall of Fame Inception'
+    - var relatedItemFootnote1  = 'Watson-Guptill Publications, 1971'
+
+    - var relatedItemLink2      = '1950-portfolio-magazine.html'
+    - var relatedItemTitle2     = 'Trademarks by Paul Rand'
+    - var relatedItemFootnote2  = 'Portfolio Magazine, Vol. 1, No. 1, 1950'
+
+    - var relatedItemLink3      = '1977-ulc.html'
+    - var relatedItemTitle3     = 'Pro.Files: The Great Graphic Innovators'
+    - var relatedItemFootnote3  = 'U&lc Magazine, International Typeface Corporation, March 1977'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        INTRO
+
+
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            Paul Rand, arguably one of the world’s most distinguished graphic designers, a man whose logos are seen daily by tens of millions of people, was my adviser in graduate school. As I plugged through my second year as a master’s candidate in the graphic-design program at Yale, my thesis topic was an endless treatise on the history of the geometric square. At 192 pages and counting, it was, to say the least, a theme that baffled (and bored) most of my professors.
+
+                            Not Rand.
+
+                            A devout modernist with a penchant for purism, he was a virtual treasure trove of information. I would visit him in his Connecticut home, and we would sit at his kitchen table and drink tea and talk about aesthetics.
+
+                            **“You can’t criticize geometry,”** he would say, matter-of-factly. **“It’s never wrong.”**
+
+                            Rand, who will come here in the spring to lecture at the University of the Arts, is famous for such declarations. Recently, in an interview with a distinguished design journal, he was asked to explain how he chose to be a graphic designer.
+
+                            **“I didn’t choose,”** he replied, without missing a beat. **“God chose.”**
+
+                            He reminded me then, as he still does, of both of my grandfathers: small and solidly built, acerbic, opinionated and fiercely intelligent, with a heart as big as the whole world. And Rand has an impressive library, to boot. **“And another thing you should read,”** he would begin, padding off to retrieve yet another stack of books, all of which he had read, and knew, intimately.
+
+                            We talked about painting, architecture and graphic design, about intuition and imagination, and about ideas. Rand is passionate about ideas, (which he refers to as the designer’s raison d’etre), especially his own and especially when they’re about design.
+
+                            **“To design,”** he writes, primer-style in his latest book, *Design, Form and Chaos* (Yale University Press), **“is much more than simply to assemble, to order, or even to edit: it is to add value and meaning, to illuminate, to simplify, to clarify, to modify, to dignify, to dramatize, to persuade, and perhaps even to amuse. To design is to transform prose into poetry.”**
+
+                            For Rand, design is poetry. It is rhythm, balance, proportion, repetition, contrast, harmony and scale. It is process as well as product, borne of a vocabulary composed of simple form, specific function and symbolic content. In Rand’s vision, a circle can be a globe, an apple, the moon, a face; a square becomes a package (the UPS trademark), or a child’s toy (the ColorForm trademark.)
+
+                            That’s just the beginning. There’s the logo for IBM. There’s the logo for ABC. There are the Westinghouse logo, the logo for NeXT computers, the logo of The Limited. There are posters and packaging, book covers, magazine spreads and countless illustrations. The prolific portfolio spans more than half a century and shows no signs of diminishing, except for a few hours April 21, when Rand will lecture here - the final lecture in the series Dialogues on Design, co-sponsored by the University of the Arts and the Philadelphia chapter of the American Institute of Graphic Arts.
+
+                            Perhaps more than any other designer of his generation, Rand is credited with bringing the modernist design aesthetic to postwar America. He was able to combine art and design and could distill the essence of a company or a product to its most salient form - thereby giving it an instant identity to consumers. Rand, who was born in Brooklyn and educated at the Pratt Institute, the Parsons School of Art and the Art Students League in New York, was named art director of Esquire magazine in 1937. Three years later, still in his early 20s, he left to join the William H. Weintraub &amp; Co. advertising agency, where he spent 13 years producing ads for, among others, Producto and Dubonnet.
+
+                            He was hired by Josef Albers to teach at Yale shortly after the graduate program in graphic design was founded there in the early 1950s, and he continues to teach in Yale’s summer program in Brissago, Switzerland. He has written several books, including Thoughts on Design (1946), Paul Rand: A Designer’s Art (1985) and the current critically acclaimed Design, Form and Chaos. He has received numerous awards for his distinguished contributions to graphic design. His work has been exhibited internationally and is in the permanent collections of museums in the United States, Europe and Japan.
+
+                            Rand was influenced by the European modernists - Klee and Picasso, Calder and Miro, among others - and his design vocabulary signaled a new era. Using photography and montage, cut paper and asymmetrical typography, he developed a body of work that can be characterized largely by clarity. The ideas, though intellectually complex, are distilled to their most salient forms. The style is playful, the message immediate, the communication undeniably direct. The results are engaging, effective and memorable.
+
+                            Despite the many changes going on in the world around him, Rand’s work has changed very little over the last few decades, a fact about which he is proudest. It is the ultimate manifestation of his opposition to trends, an endorsement of his supreme advocacy of content - which he calls the “raw material” of design.”
+
+                            **“Good design doesn’t date,”** he is quick to point out. **“Bad design does.”**
+
+                            As my thesis adviser, he argued with me constantly and disagreed with me about everything. He disagreed with himself about everything.
+
+                            He still does. **“Design,”** he said on the phone the other day, **“has nothing to do with the success of anything.”**
+
+                            His conversation is peppered with just such contradictory observations. Though he openly professes to despise academia, he was a devoted member of the Yale design faculty for 30-odd years and remains close to many of his former students. Despite his staunch criticisms of market research, he conceded recently that some market research might be beneficial.
+
+                            **“There’s a certain kind of research you have to listen to - the factual stuff, not opinion,”** he said. **“Facts are facts. Sugar is sweet - it’s not a matter of opinion. It just is.”**
+
+                            Rand remains one of the few distinguished practitioners of graphic design who have seen fit (or found time) to publish on the subject. More important, he is perhaps the only designer of his generation to develop a theory on graphic design - a purist, even orthodox, approach to design passionately articulated in his current book, a series of critical essays that support what design historian Steven Heller has called Randism: “a rare blend of rationalism, purism, formalism and street smarts.”
+
+                            Heller, who will be interviewing Rand at his April 21 appearance here, believes that one of his subject’s greatest accomplishments is the work itself. Rand “raised graphic design from a service to an art,&quot; writes Heller in a recent issue of the American Institute of Graphic Arts Journal. “His work promoted the cause louder than any words, and yet his words to students and professionals helped forge the inextricable bond between applied and formal arts that underlies the modern ethic.”
+
+                            Rand’s fervent devotion to upholding this ethic may well account for his continued success in a field that, like many others, has suffered the turbulent consequences of a long recession. Despite the rattled economy, Rand is famous for commanding a six-figure fee for a logo design. He has remained both popular with his clients and true to himself - an enviable position, indeed.
+
+                            And he remains busy. He is designing a new identity program for a major American corporation. He is lecturing in Philadelphia. And he is already thinking about his next book.
+
+                            Rand will turn 80 in the summer. How does he spend his time? **“I work,”** he said when I asked him several days ago. **“What else should I be doing?”**
+
+                            IF YOU GO
+
+                            Paul Rand’s lecture on design will be at 7 p.m. April 21 at the University of the Arts, Broad and Pine Streets. Admission is $15, and $8 for the American Institute of Graphic Arts members. Information: 215-885-9906.
+
+                    +imageZoomSingleHeader(
+                        "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1994%20Poetic%20Lines%20from%20the%20graphics-art%20drawing%20board/Web/Poetic%20Lines%20From%20The%20Graphics%20art%20Drawing%20Board%2C%20Philly.com.jpg", 
+                        "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1994%20Poetic%20Lines%20from%20the%20graphics-art%20drawing%20board/Web/Poetic%20Lines%20From%20The%20Graphics%20art%20Drawing%20Board%2C%20Philly.com.jpg"
+                        )
+
+                    p.text-center
+                        a.button.radius.red.text-caps.large.small-mt4.external(href="http://articles.philly.com/1994-02-13/news/25857386_1_logo-paul-rand-design" target="_blank" rel=noopener) Visit the Original Article
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+
+
+
+        //- include ../../../../__MIXINS/_include-image-carousel.pug
+
+        //- include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

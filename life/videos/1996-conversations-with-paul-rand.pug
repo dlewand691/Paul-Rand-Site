@@ -1,0 +1,128 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Conversations with Paul Rand'
+    - var bodyID    = 'life'
+    - var bodyClass = 'videos'
+
+block main-content
+    - var nextType             = 'Video'
+    - var nextTitle            = 'Cooper Union interview with Steven Heller'
+    - var nextDate             = '1996'
+    - var nextDescription      = 'One of Rand’s final public appearances before his death in 1996.'
+    - var nextLink             = '/life/videos/1996-cooper-union.html'
+
+    - var relatedItemLink1     = '/life/videos/2010-encounters-with-paul-rand.html'
+    - var relatedItemTitle1    = 'Encounters with Paul Rand'
+    - var relatedItemFootnote1 = 'This video provided courtesy of Sarah Brody on Vimeo'
+
+    - var relatedItemLink2     = '/life/videos/1993-steve-jobs.html'
+    - var relatedItemTitle2    = 'Steve Jobs interview about working with Paul Rand'
+    - var relatedItemFootnote2 = 'This video provided courtesy of youareworthy on YouTube'
+
+    - var relatedItemLink3     = '/life/interviews/2001-MIT.html'
+    - var relatedItemTitle3    = 'Maeda @ Media, Interview excerpt'
+    - var relatedItemFootnote3 = 'With John Maeda'
+
+
+    //- =============================
+    //- =            VIDEO            =
+    //- =============================
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                //- ==========  TITLE  ==========
+                .large-8.medium-11.cell
+                    .grid-x.grid-margin-x
+                        .large-12.cell.text-center
+                            h1= pageTitle
+                            p.text-gray.t16: em 1996
+
+            //- ==========  VIDEO  ==========
+            .grid-x.grid-margin-x.align-center.small-mb3
+                .large-12.cell
+                    .small-mb3
+                        div.plyr-js(data-plyr-embed-id="7ZzVyL_OpSI" data-plyr-provider="youtube")
+
+                    //- .flex-video
+                    //- 	iframe(src="//www.youtube.com/embed/7ZzVyL_OpSI" frameborder="0" allowfullscreen)
+
+
+            //- /*==============================  SAMPLE FRAMES  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-9.small-12.cell
+                    p.text-center.text-caps.text-bold.small-m0.medium-m0: small Some samples frames
+                    .grid-x.grid-margin-x.small-up-3
+                        .cell
+                            img(src="/life/img/conversations0.jpg")
+                        .cell
+                            img(src="/life/img/conversations1.jpg")
+                        .cell
+                            img(src="/life/img/conversations2.jpg")
+                        .cell
+                            img(src="/life/img/conversations3.jpg")
+                        .cell
+                            img(src="/life/img/conversations4.jpg")
+                        .cell
+                            img(src="/life/img/conversations5.jpg")
+
+                    //- hr.w33.horizontal-center.small-mt3.small-mb3.hr-red
+
+                    //- ==========  BODY  ==========
+                    .bg-gold.small-p3.text-white.medium-mb3.text-center
+                        p.text-bold.small-m0 DVD Now Available
+                        h2.small-m0 $40.00 
+                        small
+                            em.subheader (Includes shipping)
+
+                    .text-center
+                        h5 Title Information
+
+                        p Conversations with Paul Rand
+                            br
+                            | 28 minutes
+                            br
+                            | A Film by Preston McClanahan
+                            br
+                            | Music by Noel McClanahan
+
+                        hr.w33.horizontal-center.small-mt3.small-mb3.hr-red
+                        h5 Purchase Information:
+
+                        p Send check (checks must clear prior to shipping) or money order to:
+
+                        p PM Films llc
+                            br
+                            | 74 Blue Gentian Road
+                            br
+                            | Cranston, RI 02921
+
+                        p Paypal ordering option to be added in the near future.
+
+                    .grid-x.grid-margin-x
+                        .small-6.cell
+                            p
+                                em “Paul Rand was one of the foremost designer/artists in America. A pioneer in many areas of the visual arts, his work remains relevant today Rand’s books: Thoughts on Design and From Lascaux to Brooklyn are guide-posts to the art of visual communication.
+
+                                    p
+
+                                    | In this film, Rand shares his conclusions on design, fine art, form and content from his lifetime of practice.”
+
+                                    p
+                                    p.t18.text-gray — Preston McClanahan
+
+
+                        .small-6.cell
+                            p
+                                em Preston McClanahan’s documentary Conversations with Paul Rand captures the wit and wisdom of America’s leading design pioneer and provides insight into the methods of a master who transformed graphic design.
+
+                                    p.t18.text-gray — Steven Heller
+
+
+                //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug

@@ -1,0 +1,55 @@
+//- =============================================================================================
+//- 
+//- ██████  ██    ██ ██████  ██      ██ ███████ ██   ██ ███████ ██████      ██ ███    ██
+//- ██   ██ ██    ██ ██   ██ ██      ██ ██      ██   ██ ██      ██   ██     ██ ████   ██
+//- ██████  ██    ██ ██████  ██      ██ ███████ ███████ █████   ██   ██     ██ ██ ██  ██
+//- ██      ██    ██ ██   ██ ██      ██      ██ ██   ██ ██      ██   ██     ██ ██  ██ ██
+//- ██       ██████  ██████  ███████ ██ ███████ ██   ██ ███████ ██████      ██ ██   ████
+//- 
+//- =============================================================================================
+
+.small-bd-t-black4.small-py4
+    .grid-container
+        .grid-x.grid-margin-x(data-aos="fade-up")
+            .small-12.medium-6.large-5.cell.small-text-center.medium-text-right.order-1.medium-order-2
+                each image in publishedInThumbnail
+                    figure.relative
+                        a(href=image.linkLg data-fancybox data-caption=image.title rel='noopener')
+                            img.lazyload(data-src=image.linkSm alt=image.title)
+                        img.icon-zoom-boxed.lazyload(data-src="/img/icon-zoom-boxed.svg" width="40" height="40" alt="Zoom")
+
+
+
+            .small-12.medium-6.large-7.cell.order-2.medium-order-1.small-text-center.medium-text-left
+                p.sans-serif.text-bold.text-italic.small-mb0 Published In
+                unless publishedInTitle == "CHANGE_ME"
+                    h3!= publishedInTitle
+
+                unless publishedInSubtitle =="CHANGE_ME"
+                    h6!= publishedInSubtitle
+
+                unless library == "no"
+                    a.button.arrow.radius.red.text-caps.large.small-mb0.external(href=libraryLink target="_blank" rel='noopener') Find in a local library
+
+
+                .flex-container.flex-dir-column
+                    unless abe == "no" && amazon == "no" && barnesnoble == "no" && ebay == "no" && modernism101 == "no"
+                        hr.w100
+                        p.sans-serif.text-bold.text-italic Purchase a Copy
+
+                    unless abe == "no"
+                        a.button.arrow.radius.brown.w50.text-caps.text-left.external(href=abeLink target="_blank" rel='noopener') Abebooks.com
+
+                    unless amazon == "no"
+                        a.button.arrow.radius.brown.w50.text-caps.text-left.external(href=amazonLink target="_blank" rel='noopener') Amazon.com
+
+                    unless barnesnoble == "no"
+                        a.button.arrow.radius.brown.w50.text-caps.text-left.external(href=barnesnobleLink target="_blank" rel='noopener') Barnes & Noble.com
+
+                    unless ebay == "no"
+                        a.button.arrow.radius.brown.w50.text-caps.text-left.external(href=ebayLink target="_blank" rel='noopener') eBay.com
+
+                    unless modernism101 == "no"
+                        a.button.arrow.radius.brown.w50.text-caps.text-left.external(href=modernism101Link target="_blank" rel='noopener') Modernism101.com
+
+//- -----  End of PUBLISHED IN  ---------------------------------------------

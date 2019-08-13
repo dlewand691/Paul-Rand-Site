@@ -1,0 +1,110 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'The Fauvist Painters'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var bookSubhead           = 'Georges Duthuit'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/544213'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3DThe%2BFauvist%2BPainters'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/266rfxi'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_odkw%3DThe%2BFauvist%2BPainters%26_osacat%3D0%26_from%3DR40%26_trksid%3Dp2045573.m570.l1313.TR0.TRC0.H0.XThe%2BFauvist%2BPainters%2Bbook.TRS0%26_nkw%3DThe%2BFauvist%2BPainters%26_sacat%3D267'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'The Dada Painters and Poets: An Anthology'
+    - var nextLink              = '1951-The-Dada-Painters-and-Poets-An-Anthology'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2C%20front.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2C%20front.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2C%20back.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2C%20back.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2014-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2015-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2016-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2016.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= bookSubhead
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2C%20front-970.jpg",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1950%20The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters/Web/The%20Documents%20of%20Modern%20Art-%20The%20Fauvist%20Painters%2C%20front.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            include ../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Cover design and typography by Paul Rand
+
+                        **Contents:**
+
+                        1. Publisher’s Note
+                        + Preface
+                        + List of Illustrations
+                        + The Fauvist Painters
+                            - Preliminary Notions: From Intellectual Painting to Painter’s Painting. Music and Color. Movement in Space and Time. Matisse’s "Interior with Young Girl". Chinese and Fauves. Byzantium. Impressionism
+                            - ii. Fauvism, Its Birth and Development. Marquet, van Dongen. Manguin
+                            - iii. Vlaminck and van Gogh
+                            - iv. Derain and Gauguin
+                            - v. Friesz, Dufy, Braque
+                            - vi. Henri-Matisse. Drawing and Color. Matisse’s Transposition. Calm Art and Pathetic Art. Spiritual Space and Hierarchical Order. Persistency of Fauvism
+                        + Bibliography (by Bernard Karpel, Librarian, Museum of Modern Art, New York)
+                        + Exhibitions
+                        + Index to Bibliography
+                        + Name Index to Text
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../__MIXINS/_include-next-work.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

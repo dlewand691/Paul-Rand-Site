@@ -1,0 +1,198 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'The Journal of Technology Studies'
+    - var bodyID    = 'life'
+    - var bodyClass = 'interviews'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Interviews/1994%20The%20Journal%20of%20Technology%20Studies/Web/The%20Journal%20of%20Technology%20Studies%20Summer-Fall%201994%2C%20cover.jpg'
+
+    - var articleAuthor         = 'Ce Ce Landoli'
+    - var publishedInTitle      = 'The Journal of Technology Studies'
+    - var publishedInSubtitle   = '1994'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1994%20The%20Journal%20of%20Technology%20Studies/Web/The%20Journal%20of%20Technology%20Studies%20Summer-Fall%201994%2C%20cover-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1994%20The%20Journal%20of%20Technology%20Studies/Web/The%20Journal%20of%20Technology%20Studies%20Summer-Fall%201994%2C%20cover-800.jpg', title: ''})
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/224076156'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3D%2522the%2Bjournal%2Bof%2Btechnology%2Bstudies%2522%26yrl%3D1994'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/2g35JWm'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/s/journal+of+technology+studies?_requestid=549391'
+
+    - var nextType              = 'Interview'
+    - var nextTitle             = 'Interview with a Portfolio Center Student'
+    - var nextDate              = '1995'
+    - var nextDescription       = 'A fun example of Rand’s pure modernism'
+    - var nextLink              = '/life/interviews/1995-Portfolio-Center.html'
+
+    - var relatedItemLink1      = '/life/interviews/1991-kromekote-childhood-fantasies.html'
+    - var relatedItemTitle1     = 'Childhood Fantasies'
+    - var relatedItemFootnote1  = 'A paper sample promotional booklet asking prominent designers about their childhood fantasies.'
+
+    - var relatedItemLink2      = '/life/interviews/1988-id-magazine.html'
+    - var relatedItemTitle2     = 'Logos, Technique and Trends'
+    - var relatedItemFootnote2  = 'A look back over 50 years to explain the meaning of logos, technique and trends.'
+
+    - var relatedItemLink3      = '/life/interviews/1993-id-magazine.html'
+    - var relatedItemTitle3     = 'Paul Rand: A Profile'
+    - var relatedItemFootnote3  = 'Janet Abrams interviews Rand.'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1994%20The%20Journal%20of%20Technology%20Studies/Web/The%20Journal%20of%20Technology%20Studies%20Summer-Fall%201994-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1994%20The%20Journal%20of%20Technology%20Studies/Web/The%20Journal%20of%20Technology%20Studies%20Summer-Fall%201994.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1994%20The%20Journal%20of%20Technology%20Studies/Web/The%20Journal%20of%20Technology%20Studies%20Summer-Fall%201994-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1994%20The%20Journal%20of%20Technology%20Studies/Web/The%20Journal%20of%20Technology%20Studies%20Summer-Fall%201994.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            unless articleAuthor == 'CHANGE_ME'
+                p.reveal-enter-bottom!= 'By ' + articleAuthor
+
+            p.reveal-enter-bottom!= publishedInTitle
+                unless publishedInSubtitle == 'CHANGE_ME'
+                    br
+                    !=publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    !=publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+            //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center#original-article
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            [Edtor’s note: When I asked Paul Rand for an interview, he told me, “I’m very available. I have two ears, one nose, and hair on my head’' I think this was his way of reassuring me he wouldn’t bite me. Paul Rand’s reputation as the father of graphic design in America is such an intimidating one that he was right to comfort me. Unfortunately, it had the opposite effect. Rand cuts through the mundane in a matter of seconds. Cl] 
+
+                            Paul Rand is a seminal figure in American graphic design. He is largely credited with introducing Modernism to the States. He has published three books on design: his most recent one is *Design, Form, and Chaos*. The American public has grown familiar with his outpourings; he has fashion IBM, NeXt, ABC, UPS. and Westinghouse’s corporate identities. He is now a professor emeritus at Yale University and continues to work solo in his studio. as he has for the past 30 years. ID magazine called him a “living monument in American graphics.” 
+
+                            ---
+
+                        p
+                            strong.text-red Paul Rand: 
+                            | Tell me what your book is about.
+
+
+                        p.question #{articleAuthor}: Creativity.
+
+                        p
+                            strong.text-red PR: 
+                            | That’s a terrible topic. Who made it up? You didn’t; did you?  
+
+                        p.question CL: Actually, no, I didn’t. I think It’s too big to write about too.
+
+                        p
+                            strong.text-red PR: 
+                            | It’s essentially unanswerable. What other questions do you have for me? 
+
+                        p.question CL: Well, I have others, but I’d like to start there. May we start again? What’s your definition of creativity?
+
+                        p
+                            strong.text-red PR: 
+                            | It’s your personality at work. The question is too big. But I think it’s about 95% perspiration, or is it more? And roughly 5% inspiration.
+
+                        p.question CL: How do you go about creating?
+
+                        p
+                            strong.text-red PR: 
+                            | There is no one way that it occurs. It depends on how you feel, or whether you fought with your wife. There’s no boundaries for what’s creative either. A bookkeeper could be creative or an accountant. This question is like asking a race horse, even if he could talk, well, how do you run? It’s all instinct. How the hell do you express yourself? 
+
+                        p.question CL: So you don’t see any distinctions between creativity in the arts and other areas?
+
+                        p
+                            strong.text-red PR: 
+                            | None. I Just wrote an essay [
+                            em Design, Form, and Chaos
+                            |, Yale University Press, 1993], all about this topic, and I don’t want to spill my punch line. I don’t separate applied art from industry. In the first book I wrote [
+                            em Designer’s Art
+                            | ] about form and content; I talked about the difference between Rembrandt and Norman Rockwell. I hate my first book. I improved on it. My next book is better than that. I keep getting simpler, no zig zags, no ziggernauts. But, now I’ll give you a secret. I think everything is art. Everything made by the human hand is art. The reason I adopted that idea is that then everyone has to focus only on quality — a big difference. It avoids the whole discussion or “What is art” It’s a wasteful argument; it doesn’t matter. What matters is how good a thing is, not the genre. 
+
+                        p.question CL: Could you talk about the nature of quality then? 
+
+                        p
+                            strong.text-red PR: 
+                            | What I like, you might think, stinks. It’s like arguing whether you like brunettes or redheads. The real questions are: Is she decent? Ethical? Nice? And you talk ephemeral things like attitudes. I was impressed by that little guy from Texas [Ross Perot] because the first thing on his agenda was ethics in business and government. People don’t talk about it because there are no ethics. People are unethical; they don’t go out of their way; they fake; they lie. Chaos is the stuff that goes on now. From “Cassandra to Kiros,” it’s my last chapter [of 
+                            em Design, Form, and Chaos*
+                            | ].
+
+                        p.question CL: Some people feel you created the notion of graphic design. What’s you’re reaction to this?
+
+                        p
+                            strong.text-red PR: 
+                            | That’s silly; I’m not old enough. It all goes back to the Egyptians. They thought of it. 
+
+                        hr
+
+                        p.em.bold [Days Intervene. New phone call] 
+
+                        p.question CL: How do you inculcate creativity in others?
+
+                        p
+                            strong.text-red PR: 
+                            | You can’t teach creativity — only show them how other people who are more creative do it. When they sit down to do it, no matter how much training they get, it doesn’t matter; it’s up to them. I just try to make my problems more interesting than you get in school. Most problems are either tricky or stupid, and the responses you get from them are wiseacre attitudes and smart aleck stuff. They’re ideas camouflaged to look inventive. Some of their idas drown the idea out. Everyone’s trying notoriety/sex/symbolism. 
+
+                        p.question CL: Are you saying you don’t believe in symbolism?
+
+                        p
+                            strong.text-red PR: 
+                            | Of course not; I’d be stupid to say such a thing. But nothing in the world can fix dirty type. Even symbolism. 
+
+                        p.question CL: What’s the one thing I forgot to ask you that would fill out this Interview?
+
+                        p
+                            strong.text-red PR: 
+                            | Nothing, I guess
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-image-carousel.pug
+
+        include ../../__MIXINS/_include-published-in.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

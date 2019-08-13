@@ -1,0 +1,147 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = '1971 Art Director’s Club of New York Hall of Fame Inception'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971-450.jpg'
+
+    - var articleAuthor         = 'CHANGE_ME'
+    - var publishedInTitle      = '51st Annual of Advertising, Editorial and Television Art & Design of 1971: The Inception of the Hall of Fame'
+    - var publishedInSubtitle   = 'Watson-Guptill Publications, 1971'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/18849298'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3DThe%2B51st%2Bannual%2Bof%2Badvertising%252C%2Beditorial%2Band%2Btelevision%2Bart%2Band%2Bdesign%2Bof%2B1971%2B%253A%2Bthe%2Binception%2Bof%2Bthe%2Bhall%2Bof%2Bfame%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1XKQfSR'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/noresults/The+51st+annual+of+advertising%2C+editorial+and+television+art+and+design+of+1971+%3A+the+inception+of+the+hall+of+fame'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Paul Rand'
+    - var nextDate              = 'November 1976'
+    - var nextDescription       = 'Idea Magazine No. 139'
+    - var nextLink              = '/life/books-articles/articles/print/1977-ulc.html'
+
+    - var relatedItemLink1      = '/life/books-articles/articles/print/1999-looking-closer3.html'
+    - var relatedItemTitle1     = 'Looking Closer 3'
+    - var relatedItemFootnote1  = 'Adapted and reprint from the original article published in the journal “Daedalus”'
+
+    - var relatedItemLink2      = '/life/books-articles/articles/print/1997-design-literacy-direction.html'
+    - var relatedItemTitle2     = 'Direction'
+    - var relatedItemFootnote2  = 'Design Literacy, Allworth Press, 1997'
+
+    - var relatedItemLink3      = '/life/books-articles/articles/print/1988-mohawk-paper.html'
+    - var relatedItemTitle3     = 'Mohawk Paper Graphics Collection: The Graphic Art of Paul Rand'
+    - var relatedItemFootnote3  = 'Graphics Collection, Cohoes, NY, 1988'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971-%20Medal.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director%27s%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971%2001.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        INTRO
+
+
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            The human animal discovered soon after it was perched up high on the evolutionary ladder that languishing on the “grunt and point” rung of communications was hardly a suitable posture for a sapient species. Eventually, a rather involved way of saying what had to be said was devised. At various stages of his advancing sophistication, it seemed as if man was about to be garroted by the complex strands of his invention. By inherent good fortune, however, language—written or spoken—developed a built-in system of popular reform. Once language begin’s to drag behind or move out of step with the man’s myriad activities, it has to catch up or suffer the perils of decay. Unfortunately, visual language doesn’t enjoy the same kind of continuous parental attention. The task of nourishing our visual rhetoric and communication falls to artists and designers who, by personal afflatus, are impelled to take on an imaginative guardianship.
+
+                            History has been sufficiently beneficent to produce designers who could meet the existing challenges with appropriately imaginative solutions. Occasionally, history out-does itself and produces a designer who imparts such startlingly new concepts to our visual language that the beneficiaries of the following decades are blessed with a wealth of visual idioms.
+
+                            In 1937, two leading national magazines put their art directorial trust in the hands of a young designer only twenty-three years old. The designer was Paul Rand, a former student at Pratt Institute and Parson’s School of Design, who had also studied with George Grosz, the celebrated figure of German expressionism. Rand continued his ministrations at Esquire and Apparel Arts for four years. Any suspicion that Rand’s art directorship might be a meteoric streak of bright precocity was abruptly put to rest by a number of astonishing covers he created for Apparel Arts and particularly for a small magazine called Direction. Early brightness was quickly recognized as the harbinger of genuine brilliance. Rand’s subsequent work further established him as a mature designer of first rank and as an articulate theorist as well, whose ideas would radically affect the shape and contour of contemporary visual design.
+
+                            Rand’s Apparel Arts covers of the early forties were primarily collages employing quasi-dadaist ideas and techniques. By utilizing a commonplace object to have more than its conventional meaning, Rand actually antedated the satire of the objet trouve-art movement that arose at least two decades later. His most coherent project was the series of covers he produced for Direction. Appearing over a period of several years, these covers had a collective impact that was revolutionary. Each individual cover was a radically inventive departure from the prevailing editorial dross. By drawing upon the creative discoveries of a host of modern art movements, Rand linked the fine arts with popular graphic application. The imagination, vitality and quality of those covers probably has not been equaled by any editorial designer of recent times. Many of them have become classics. The memorable 1940 cover showing a photograph of a barbed-wire cross ranged againstthe casually written tag summed up with extraordinary poignancy the contradictory aspects of man’s behavior to man. That interplay of ideas and his abstract use of large letter forms opened new modes of visual symbolism for all modern designers. Rand showed that even the simplest of objects given different contexts bear within them several thicknesses of meaning. It takes the magic of the designer to seize the concealed and make it apparent and to transform the commonplace into the rare. By illuminating the potential of the graphic symbol, Rand presented contemporary design with one of its most functional aesthetic donations.
+
+                            Rand eventually left the introspective fields of editorial design to take up the more combative challenges of advertising. For thirteen years, until 1954, he was the art director (now called creative director) for the William Weintraub Agency. Responding to that milieu with its new demands, Rand steadily broadened the scope of his work. Filmmaking for television was yet to be the focal advertising medium it is today. The printed page and the graphic problems of poster, book, promotional and package designs demanded Rand’s total attention. He also taught intermittently at Pratt Institute and Cooper Union. In 1946 Rand compiled a statement of his personal observations and philosophy, which was published in a handsome book designed by him and titled “Thoughts on Design.” It remains a lucid exposition of the anatomy of his thought, paralleling the clarity and directness of his work.
+
+                            Rand’s originality was as evident in advertising as it had been in his earlier editorial output. His approach was a remote cry from the bold word plays and simplistically designed advertising pages that abound today. Yet, oddly enough, the use of multiple meanings of one symbol as well as the spirit of iconoclastic wit in today’s advertising bear considerable debt to the work of Paul Rand. Rand approached advertising much like an artist. Virtually every ad bore his personal stamp. If we can borrow a term from a group of contemporary filmmakers, Rand was an “auteur” art director. Rand searched out the potential graphic wealth that lay in the selling message itself, employing a host of visual devices to captivate the reader. And that they did. The playfulness and witty charm of the Ohrbach’s campaign cleared away the thickets of convention that had suffocated contemporary advertising. Particularly in that series, his ability to grasp the familiar object and convert it into a charming yet commanding symbol was at a peak. Each campaign represented a personal visual journey that called for daring and imagination to set it apart from the surrounding banality. The Disney hat ads were exquisitely designed abstractions that kept the reader endlessly fascinated by the counterpoint between an antique Brummel figure and an up-to-the-minute chapeau. Each campaign was invested with a special kind of graphic humor. The hallmarks of his style were the studied casualness of the Rand script, a light and unselfconscious typography and always a refined sense of space. The campaigns are legion: Dubonnet, with its revival of Cassandre’s imperishable man; the Coronet series with Rand’s anthropomorphic brandy snifter; the kinetic abandon of the El-Producto cigar boxes and ads; and the graphic legerdemain of the Kaiser-Frazer series.
+
+                            Rand, a scholarly and sensitive typographer, found the most satisfying outlet for that gift in the numerous books he designed for sympathetic commercial publishers, were special patrons who recognized Rand’s exceptional typographic genius.
+
+                            In 1954 Rand ended the agency phase of his career. By this time, his abilities had become universally recognized. A larger aesthetic canvas was needed—one that would give continuity and dimension to the full scope of his concepts. This could only be realized by his functioning as an independent designer. Rand became the design consultant to numerous large and influential companies—IBM, Westinghouse, and United Parcel Service, among others. He brought these companies into a position of graphic esteem, establishing for them corporate design programs of human proportion. Corporate communication, he has shown, can be socially enriching if it is intelligently conceived and imaginatively executed. Because of his exquisite sense of visual symbolism, Rand is continually called upon to design trademarks for a host of business enterprises, many of which have become renowned. Apart from his very active and far-flung design practice, he has continued his interest in education, occasionally teaching and lecturing. As a steady and perceptive writer on design, he continues to expand his list of articles.
+
+                            Early in Rand’s career, E. McKnight Kauffer, one of our acclaimed poster artists, said of Rand in the introduction to “Thoughts on Design”: “These ‘reflections’ reveal a thought and by the examples of his work, a practice that is a composite pattern. He does not say one thing and do another nor do one thing and say another… . His conceptions (theory) guide his feelings, and in turn his feelings (sensibility) humanize his conceptions. ”
+
+                            Because Rand has kept and nourished the faith, we are that much richer. Design can communicate that much more because of his additions to our visual language. History, it was observed earlier, manages to provide us with benefactions and Paul Rand is one of those special gifts to our time.
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+
+
+
+        include ../../../../__MIXINS/_include-image-carousel.pug
+
+        include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

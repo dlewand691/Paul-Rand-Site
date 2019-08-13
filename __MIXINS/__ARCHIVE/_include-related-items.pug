@@ -1,0 +1,34 @@
+//- ==================================
+//- =            RELATED ITEMS            =
+//- ==================================
+
+.row
+	.large-3.medium-3.small-6.columns.large-push-1.medium-push-1.small-push-1.end
+		hr.mb2
+		p.sans-serif.text-heavy.text-caps(data-sr): small Related Items
+
+.row
+	.large-10.medium-10.small-11.columns
+		ul.large-up-3.medium-up-3.small-up-1.galleryMedium.equalheight-parent
+			li(data-sr)
+				a!= (href="relatedItemLink1")
+					img!= (src="relatedItemThumb1")
+					.title-label.equalheight-child
+						p!= relatedItemTitle1
+						.footnote!= relatedItemFootnote1
+
+			li.reveal-enter-bottom
+				a!= (href="relatedItemLink2")
+					img!= (src="relatedItemThumb2")
+					.title-label.equalheight-child
+						p!= relatedItemTitle2
+						.footnote!= relatedItemFootnote2
+
+			li(data-sr="enter right")
+				a!= (href="relatedItemLink3")
+					img!= (src="relatedItemThumb3")
+					.title-label.equalheight-child
+						p!= relatedItemTitle3
+						.footnote!= relatedItemFootnote3
+
+//- /*-----  End of RELATED ITEMS  ------*/

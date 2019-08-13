@@ -1,0 +1,156 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Graphic Design Visionaries'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design-Visionaries-450.jpg'
+
+    - var articleAuthor         = 'Caroline Roberts'
+    - var publishedInTitle      = 'Graphic Design Visionaries'
+    - var publishedInSubtitle   = 'June 16, 2015'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design-Visionaries-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design-Visionaries.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/890625791'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3DGraphic%2BDesign%2BVisionaries'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1QZcKOB'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/w/graphic-design-visionaries-caroline-roberts/1120332700?ean=9781780674841'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'PM Magazine, Vol. 4 No.9'
+    - var nextDate              = '1938'
+    - var nextDescription       = 'Featuring the first article ever written about Paul Rand’s Graphic Design work.'
+    - var nextLink              = '1938-pm-magazine.html'
+
+    - var relatedItemLink1      = '1947-graphis.html'
+    - var relatedItemTitle1     = '“Paul Rand” by Georgine Oeri'
+    - var relatedItemFootnote1  = 'Graphis, Vol. 3, No. 18, 1947'
+
+    - var relatedItemLink2      = '1979-communication-arts.html'
+    - var relatedItemTitle2     = 'Paul Rand'
+    - var relatedItemFootnote2  = 'Communication Arts, January/February 1979'
+
+    - var relatedItemLink3      = '2007-79-short-essays.html'
+    - var relatedItemTitle3     = 'Playing by Mr. Rand’s Rules'
+    - var relatedItemFootnote3  = 'Seventy-nine Short Essays on Design, 2007'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Paul%20Rand-2-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Paul%20Rand-2.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Paul%20Rand-1-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Paul%20Rand-1.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Barney%20Bubbles-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Barney%20Bubbles.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Bob%20Noorda-1-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Bob%20Noorda-1.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Bob%20Noorda-2-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Bob%20Noorda-2.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Cipe%20Pineles-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Cipe%20Pineles.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Cipe%20Pineles-2-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Cipe%20Pineles-2.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Giovanni%20Pintori-1-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Giovanni%20Pintori-1.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Giovanni%20Pintori-2-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Giovanni%20Pintori-2.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Herbert%20Bayer-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Herbert%20Bayer.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Loretta%20Lamm-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Loretta%20Lamm.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Loretta%20Lamm-2-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Loretta%20Lamm-2.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Margaret%20Calvert-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Margaret%20Calvert.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Milton%20Glaser-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Milton%20Glaser.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Richard%20Saul-Wurman-1-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Richard%20Saul-Wurman-1.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Richard%20Saul-Wurman-2-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Richard%20Saul-Wurman-2.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Rogerio%20Duarte-1-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Rogerio%20Duarte-1.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Rogerio%20Duarte-2-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Rogerio%20Duarte-2.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Saul%20Bass-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Saul%20Bass.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Yusaku%20Kamekura-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Yusaku%20Kamekura.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Yusaku%20Kamekura-2-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design%20Visionaries%20Yusaku%20Kamekura-2.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content#original-article
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Featuring 75 of the world’s most influential designers, this book presents the story of graphic design through the fascinating personal stories and significant works that have shaped the field.
+
+                        Arranged in chronological order, the book shows the development of design, from early innovators such as Edward McKnight Kauffer and Alexey Brodovitch to key figures of mid-century Swiss Design and corporate American branding. The book profiles masters of typography, such as Wim Crouwel and Neville Brody, visionary magazine designers, such as Leo Lionni and Cipe Pineles, designers who influenced the world of film, such as Saul Bass and Robert Brownjohn, and the creators of iconic poster work, such as Armin Hofmann, Rogério Duarte and Yusaku Kamekura.
+
+                        Combining insightful text and key visual examples, this is a dynamic and richly illustrated guide to the individuals whose vision has defined the world of graphic design.
+
+
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            ***‘A logo cannot survive unless it is designed with the utmost simplicity and restraint.’***
+
+                            Paul Rand  
+                            1914-1996  
+                            USA
+
+                            Shortly before Paul Rand died, he was described by Apple’s founder, Steve Jobs, as ‘the greatest living graphic designer’. As well as the logo for Jobs’s NeXT computers, Rand created identities for business giants such as IBM, UPS ABC television, Westinghouse and Enron, all of which are well and truly engrained into the American psyche.
+
+                            It was Rand’s understanding of the relationship between art and commerce that was key to his success. Laszlo Moholy-Nagy called Rand ‘an idealist and a realist, using the language of the poet and the businessman. He thinks in terms of need and function. He is able to analyse his problems, but his fantasy is boundless.’
+
+                            While he will always be associated with the iconic logos he created, Rand had established himself as a successful graphic designer many years before. Graphic design had not been considered a suitable career by his grocery-store-owning parents. In 1936, he was asked to design an anniversary issue of Apparel Arts magazine. This led to a full-time job and, shortly afterwards, the opportunity to art-direct the fashion pages of Esquire. Rand also designed a series of notable covers for Direction, and was art director at the William Weintraub agency for 11 years, up to 1955.
+
+                            Rand was hired as a consultant by IBM’s Eliot Noyes in 1956, and his work there spanned three decades. Rand was responsible for all aspects of the IBM identity, including its packaging and marketing materials. He introduced the striped version of the logo, as well as the playful Eye-Bee-M poster.
+
+                            He taught extensively and was a professor of graphic design at the Yale School of Art for many years. He published a number of books on graphic design, the best-known being Thoughts on Design, first published in 1947. Subsequent titles were published by Yale University Press, which employed its Rand-designed logo from 1985 until 2009. Rand also illustrated four children’s books written by his second[first] wife, Ann.
+
+                            One of Rand’s key skills was his ability to sell his ideas to his clients. According to the graphic designer Louis Danziger, ‘He almost singlehandedly convinced business that design was an effective tool… Anyone designing in the 1950s and 1960s owed much to Rand, who largely made it possible for us to work. He more than anyone else made the profession reputable. We went from being commercial artists to being graphic designers largely on his merits.’
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+
+
+
+        include ../../../../__MIXINS/_include-image-carousel.pug
+
+        include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

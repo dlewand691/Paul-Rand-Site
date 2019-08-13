@@ -1,0 +1,20 @@
+extends ../__MIXINS/_layout-default.pug
+
+block vars
+    - var pageTitle = 'His Inspirations'
+    - var bodyID    = 'life'
+    - var bodyClass = 'inspirations'
+
+block main-content
+    .cd-main-content
+        .grid-container
+
+            //- ==========  BODY  ==========
+
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        BODY
+

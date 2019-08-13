@@ -1,0 +1,78 @@
+doctype html
+html.no-js(lang='en' dir='ltr')
+
+    include ../../__MIXINS/_include-head.pug
+
+    body#writing.type-videos-interviews(data-grid-framework="f4" data-grid-color="pink" data-grid-opacity="0.2" data-grid-zindex="10" data-grid-gutterwidth="30px" data-grid-nbcols="12")
+
+        include ../../__MIXINS/_include-headerNav-secondarynav.pug
+
+        .animsition
+            .progress-container
+                .progress-bar
+
+            //- =============================
+            //- =            VIDEO            =
+            //- =============================
+
+            .cd-main-content
+                .grid-x.grid-margin-x
+                    //- ==========  TITLE  ==========
+
+                    .large-8.medium-11.cell
+                        .grid-x.grid-margin-x
+                            .large-12.cell.text-center
+                                h2 Steve Jobs interview about working with Paul Rand
+                                p.text-gray.t16: em 1993
+
+                                br
+                                p This video provided courtesy of 
+                                    a(href="#") youareworthy 
+                                    | on YouTube.
+                                    br
+                                    | Original post found on the blog 
+                                    a(href="#") “Art of Raw”.
+
+                //- ==========  VIDEO  ==========
+                .grid-x.grid-margin-x
+                    .cell
+                        .flex-video
+                            iframe(src="//www.youtube.com/embed/xb8idEf-Iak" frameborder="0" allowfullscreen)
+
+                //- ==========  BODY  ==========
+                .grid-x.grid-margin-x
+                    .large-7.medium-9.small-12.cell
+                        h5.small-my3.text-center The story behind the video:
+
+                        p.footnote Monday, December 10, 2007
+
+                        p My Mentor Paul Rand and an Interview with Steve Jobs
+
+                        p Before I went into the Army at age 17, I used to paint anything that moved. After I got out, I was excited to get break into the world of graphic design and advertising. I heard about this guy named Paul Rand, so I looked him up and a few days later, negotiated a meeting with him.
+
+                        p We became fast friends and I decided to intern with him at his Studio in Weston, CT. It was a real shlep to get to his house from my apartment in NYC. The subway to Grand Central Station, Metro North to Westport and a Taxi to Paul’s house…
+
+                        p My first assignment was picking up a sticks in his back yard over 12” long and putting them in a big pile. After several days of collecting sticks, Paul told me to call the Fire Department to get permission to burn and then burn. Well, it turned out that the you are supposed to call days in advance in order to get a burn permit from the Fire Marshall and he was gone for the day. In a very Forest Gump like way, I asked if they had his home number and I called him and told him that we had a pile ready to burn. Paul looked at his sweet wife Marion with disbelief at my chutzpah, smiled as we got permission to burn…
+
+                        p As Paul got older and we got past yard work into great graphic design and branding projects, I realized how privileged I was to have access to this living master. Paul Rand had several select clients, worked mostly by himself at his studio and taught the Master Program at Yale University.
+
+                        p We would take lunch breaks and go to Gold’s Deli in Westport. Paul loved the Dr. Browns Celery Soda. I liked the creme. We at stuff back then that I don’t even consider food today.
+
+                        p My friends Bill Hamilton and Rick Boyko encouraged me to interview Paul Rand and introduced me to Alan Pottasch. Alan loved the idea and we started doing rough interviews with Paul Rand, Milton Glaser, Massimo Vignelli and then Steve Jobs.
+
+                        p Paul Rand died in November 1996 and we put the project on hold. It seemed like a daunting task to create a film about a man that is widely considered to have almost single handedly change commercial art into fine art.
+
+                        p The advent of youtube and blogging has created an opportunity to share a rough cut of an early interview that I did with Steve Jobs back in 1993 on the lawn of NeXT Computer Corp.
+
+
+                //- /*-----  End of VIDEO  ------*/
+
+                include ../../__MIXINS/_include-find-a-copy.pug
+
+                include ../../__MIXINS/_include-next-item.pug
+
+                include ../../__MIXINS/_include-social-media.pug			
+
+            include ../../__MIXINS/_include-footer.pug
+
+        include ../../__MIXINS/_include-closingScript.pug 

@@ -1,0 +1,95 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Some Thoughts… and Some Tribulations about the Design of a Logo'
+    - var bodyID    = 'writing'
+    - var bodyClass = 'books'
+
+block main-content
+    - var bookSubhead           = '1991'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/search?q=paul+rand+some+thoughts+Some+Tribulations+about+the+Design+of+a+Logo&qt=results_page'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3Dpaul%2Brand%2Bsome%2Bthoughts%2BSome%2BTribulations%2Babout%2Bthe%2BDesign%2Bof%2Ba%2BLogo%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1QNbbXQ'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/s/paul+rand+some+thoughts+some+tribulations?_requestid=195176'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2050601.m570.l1313.TR0.TRC0.H0.XSome%2BThoughts%25E2%2580%25A6%2Band%2BSome%2BTribulations%2Babout%2Bthe%2BDesign%2Bof%2Ba%2BLogo%2BPaul%2BRand.TRS0%26_nkw%3DSome%2BThoughts%25E2%2580%25A6%2Band%2BSome%2BTribulations%2Babout%2Bthe%2BDesign%2Bof%2Ba%2BLogo%2BPaul%2BRand%26_sacat%3D0'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'From Cassandre to Chaos'
+    - var nextDate              = '1992'
+    - var nextDescription       = 'Excerpted from Design, Form and Chaos as a promotional brochure.'
+    - var nextLink              = '/writing/books/from-cassandre-to-chaos.html'
+
+    - var relatedItemLink1      = '/writing/books/listen-listen.html'
+    - var relatedItemTitle1     = 'Listen! Listen!'
+    - var relatedItemFootnote1  = 'With the freshness of a child responding to the world around him, Ann Rand records a variety of sounds in perspective, rhythmic prose.'
+
+    - var relatedItemLink2      = '/writing/books/little-1.html'
+    - var relatedItemTitle2     = 'Little 1'
+    - var relatedItemFootnote2  = 'The reprinting of this 1962 book proves that the classics can still be enjoyed by generations of children today.'
+
+    - var relatedItemLink3      = '/writing/books/good-design-is-good-will.html'
+    - var relatedItemTitle3     = 'Good Design is Good Will'
+    - var relatedItemFootnote3  = 'Rand discusses corporate design decisions and how they can impact their bottom line.'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1991%20Some%20Thoughts%E2%80%A6%20and%20Some%20Tribulations%20about%20the%20Design%20of%20a%20Logo/Web/Some%20Thoughts%E2%80%A6%20and%20Some%20Tribulations%20about%20the%20Design%20of%20a%20Logo,%20front.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1991%20Some%20Thoughts%E2%80%A6%20and%20Some%20Tribulations%20about%20the%20Design%20of%20a%20Logo/Web/Some%20Thoughts%E2%80%A6%20and%20Some%20Tribulations%20about%20the%20Design%20of%20a%20Logo,%20front.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1991%20Some%20Thoughts%E2%80%A6%20and%20Some%20Tribulations%20about%20the%20Design%20of%20a%20Logo/Web/Some%20Thoughts%E2%80%A6%20and%20Some%20Tribulations%20about%20the%20Design%20of%20a%20Logo,%20back.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1991%20Some%20Thoughts%E2%80%A6%20and%20Some%20Tribulations%20about%20the%20Design%20of%20a%20Logo/Web/Some%20Thoughts%E2%80%A6%20and%20Some%20Tribulations%20about%20the%20Design%20of%20a%20Logo,%20back.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= bookSubhead
+
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Writing/Books/1991%20Some%20Thoughts%E2%80%A6%20and%20Some%20Tribulations%20about%20the%20Design%20of%20a%20Logo/Web/Some-Thoughts-and-Some-Tribulations-about-the-Design-of-a-Logo.jpg",
+                            "https://assets.paulrand.design/Writing/Books/1991%20Some%20Thoughts%E2%80%A6%20and%20Some%20Tribulations%20about%20the%20Design%20of%20a%20Logo/Web/Some-Thoughts-and-Some-Tribulations-about-the-Design-of-a-Logo.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            include ../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Special thanks to Tom Hardy for this contribution
+
+                        Virtually identitcal to the “Some Thoughts, Some Logos” pamphlet, this version is a rewrite of his “Logos, Flags, and Escutcheons” article, speaking about the design and development of logos.
+
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

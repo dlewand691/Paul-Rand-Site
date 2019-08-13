@@ -1,0 +1,153 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'AD Gallery Presents- Paul Rand'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = '1947'
+    - var pageSubtitle2         = 'CHANGE_ME'
+
+    - var nextType              = 'Exhibit'
+    - var nextTitle             = 'Paul Rand: A Designer’s Art'
+    - var nextDate              = '1953'
+    - var nextLink              = '1953-paul-rand-designers-art-design-gallery'
+
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2001.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2002.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2003.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2004.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2005.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2006.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2007.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2008.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20booklet%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20booklet%2001.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20booklet%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20booklet%2002.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20booklet%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20booklet%2003.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20booklet%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20booklet%2004.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20envelope%20and%20ticket.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20envelope%20and%20ticket.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2002.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2003.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2004.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2005.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2006.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2007.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2008.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2009.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2010.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2011.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2012.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2013.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2014-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2014.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2015-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2015.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2016-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2016.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2017-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2017.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2018-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2018.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2019-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2019.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2020-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2020.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2021-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2021.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2022-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2022.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2023-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2023.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2024-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2024.jpg', title: ''})
+        - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2025-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2025.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2001.jpg",
+                            "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2001.jpg"
+                            )
+
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            The directors of A.D gallery  
+                            take pleasure in presenting  
+
+                            ### Paul Rand
+
+                            in an exhibition of his designs  
+                            on view from  
+                            March 3 through May 29, 1947
+
+                            Room 309, 130 W. 46 St., New York, N.Y.  
+                            10 a.m. to 5:30 p.m.  
+                            Mondays through Fridays
+
+                            ---
+
+                            Ten years ago I published the work of Paul Rand in PM magazine. I felt then as I do now that he has brought to graphic design a fresh point of view. His work has always been daring. Making use of simple elements, he employs his imagination and is able to convey a picture which is not easily forgotten. Designers who seek inspiration can always turn to the work of Paul Rand for stimulation and new ideas. Industrial design and art for commerce are enhanced by his fine work. A.D gallery is proud to present Paul Rand because we feel that he has a distinct message and he knows how to tell it.  
+                            *Robert L. Leslie*
+
+                            ---
+
+                            “Paul Rand is a Brooklyn boy of 32 who is now paying an income tax in the 5-figure bracket. He is neither a radio singer nor a manufacturer but an artist, and these things should make our advertising moguls take notice of these published *Thoughts*; that is, if the tremendous success of Rand-designed advertising has not already awakened their interest. It may also be pertinent to their calculations that Rand rates quite as well among the ivory-tower esthetes as with the boys who are solely occupied by advertising-response statistics . . . The extremely successful and cerebral young man represents to an astounding degree the ideal picture of the artist who is a student of all the affairs of this world, its business and its psychology . . . Rand is still young enough to be referred to as a youthful prodigy; his Thoughts* — almost too sparingly administered — reflect age-old wisdom, his work maturity.” INTERIORS, February 1947 
+
+                            “Some ads (like Wheaties’) are good for a laugh, some (like Packard’s) are good for a sigh, and some (like Listerine’s) for a shiver of apprehension, but very few are good just to look at. Among those few are the ads dreamed up by youthful designer Paul Rand . . . Rand’s ads are sometimes as pristine as good abstract painting . . . Generally, a Rand ad looks disarmingly simple when done, but obviously took a lot of thinking . . .” TIME, Dec. 23, 1946 
+
+                            &quot;. . . He has made a valuable contribution to American design . . .” E. MCKNIGHT KAUFFER &quot;. . . He is able to analyze his problems, his imagination is boundless . .” L. MOHOLY-NAGY 
+
+                            *Biographical Notes*
+
+                            Paul Rand was born in New York City on August 15, 1914, and studied in art schools there. Apprenticed in the studio of George Switzer, the industrial designer. At 23 he became art director of Esquire (New York) and Apparel Arts magazines (1936-41), and now is designer and consultant for many national advertisers and publishers, as well as art director for the William H. Weintraub advertising agency. Taught at Cooper Union and the Advertising Guild (1938-42). Conducted post-graduate course Pratt Institute (1946). 
+
+                            *Awards:* Honorable mention A. I. G. A. 1938. Awards for Distinctive Merit: Art Directors Club; Air-Wick, Coronet, advertising campaigns 1943-44. Double medal for best designed adver-tisement in entire show (Jacqueline Cochran) 1945. Honorable mention Direct Mail (S.K.F.) awards 1946. A.I.G.A. 50 books of the year for Thomas Mann’s “Tables of the Law” 1946. 
+
+                            Author “Thoughts on Design” 1946, Wittenborn and Company. Among his familiar advertising designs are those for Air-Wick; Ancient Age whiskey; Jacqueline Cochran cosmetics; Coronet brandy; John David; Dubonnet; Disney Hats; Kaufmann’s, Pittsburgh; Lee Hats; Ohrbach’s; Smith, Kline and French Laboratories; Stafford Fabrics. He has designed products and packaging for Jacqueline Cochran; Coty ; R. H. Macy; Robeson Knife Co; Schenley Distillers; typography for Container Corporation, Knopf, Rinehart, and Wittenborn. 
+
+                            *Bibliography*  
+                            P.M. October, 1938  
+                            Art and Industry (London) July, 1940  
+                            A.D February, 1941  
+                            American Artist, June, 1942  
+                            Art and Industry (London) October, 1943  
+                            Who’s Who in America, October, 1943 ( permanent edition 1948-49)  
+                            Art in Progress, Museum of Modern Art, 1944  
+                            Bookbinding &amp; Book Production, October, 1945  
+                            Who’s Who in American Art, 1946  
+                            Biographical Encyclopaedia of the World, 1946  
+                            Publishers’ Weekly, passim  
+                            Advertising and Selling, passim  
+                            Printers’ Ink, passim  
+                            American Printer, passim  
+                            Time, December 23, 1946  
+                            Interiors, February, 1947  
+                            Magazine of Art, March, 1947  
+                            Graphis (Switzerland) 1947  
+
+                            *THOUGHTS on DESIGN by Paul Rand. Introduction by E. Mc. Knight Kauffer. Illustrations from the author’s work, 94 in halftone and 8 in full color. With French and Spanish translations of the text. 159 pages. Wittenborn and Co., N.Y. 
+
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

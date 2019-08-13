@@ -1,0 +1,252 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'James E. Pepper Kentucky Bourbon'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = 'CHANGE_ME'
+    - var nextType  = 'Client'
+    - var nextTitle = 'Jazzways'
+    - var nextLink  = 'Jazzways'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logos",
+                        "top","2","2",
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/James-E-Pepper-1951.svg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/James-E-Pepper-1951.svg", title: "", footnote: "1951"},
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/James-E-Pepper-man-1951.svg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/James-E-Pepper-man-1951.svg", title: "", footnote: "1951, Brand Character"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Advertising",
+                        "top","3","2",
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2001-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2002-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2003-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2003.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2004-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2004.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2005-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2005.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2006-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2006.jpg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Billboard",
+                        "middle", "1", "1",
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Billboard/Web/James%20E%20Pepper%20Billboard%2001-970.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Billboard/Web/James%20E%20Pepper%20Billboard%2001.jpg", title: "", footnote: "Image courtesy of Wright Auction House, Chicago, IL"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Bottle Opener",
+                        "top","2","2",
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20Opener/Web/James%20E%20Pepper%20Bottle%20Opener%20Front-800.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20Opener/Web/James%20E%20Pepper%20Bottle%20Opener%20Front.jpg", title: "", footnote: "Front"},
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20Opener/Web/James%20E%20Pepper%20Bottle%20Opener%20Back-800.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20Opener/Web/James%20E%20Pepper%20Bottle%20Opener%20Back.jpg", title: "", footnote: "Back"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Bottle, v1",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v1/Web/James%20E%20Pepper%20Mini%20Bottle%20v1%2001-970.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v1/Web/James%20E%20Pepper%20Mini%20Bottle%20v1%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Bottle, v1", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v1/Web/James%20E%20Pepper%20Mini%20Bottle%20v1%2001-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v1/Web/James%20E%20Pepper%20Mini%20Bottle%20v1%2001.jpg"},
+                        {Title: "Bottle, v1", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v1/Web/James%20E%20Pepper%20Mini%20Bottle%20v1%2002-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v1/Web/James%20E%20Pepper%20Mini%20Bottle%20v1%2002.jpg"},
+                        {Title: "Bottle, v1", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v1/Web/James%20E%20Pepper%20Mini%20Bottle%20v1%2003-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v1/Web/James%20E%20Pepper%20Mini%20Bottle%20v1%2003.jpg"},
+                        {Title: "Bottle, v1", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v1/Web/James%20E%20Pepper%20Mini%20Bottle%20v1%2004-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v1/Web/James%20E%20Pepper%20Mini%20Bottle%20v1%2004.jpg"},
+                        {Title: "Bottle, v1", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v1/Web/James%20E%20Pepper%20Mini%20Bottle%20v1%2005-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v1/Web/James%20E%20Pepper%20Mini%20Bottle%20v1%2005.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Bottle, v2",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2001-970.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Bottle, v2", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2001-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2001.jpg"},
+                        {Title: "Bottle, v2", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2002-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2002.jpg"},
+                        {Title: "Bottle, v2", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2003-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2003.jpg"},
+                        {Title: "Bottle, v2", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2004-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2004.jpg"},
+                        {Title: "Bottle, v2", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2005-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2005.jpg"},
+                        {Title: "Bottle, v2", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2006-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2006.jpg"},
+                        {Title: "Bottle, v2", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2007-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2007.jpg"},
+                        {Title: "Bottle, v2", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2008-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2008.jpg"},
+                        {Title: "Bottle, v2", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2009-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2009.jpg"},
+                        {Title: "Bottle, v2", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2010-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Bottle%20v2/Web/James%20E%20Pepper%20Mini%20Bottle%20v2%2010.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Button",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Button/Web/James%20E%20Pepper%20Button%2002-970.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Button/Web/James%20E%20Pepper%20Button%2002.jpg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Candle Display",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Candle%20Display/Web/James%20E%20Pepper%20Candle%20Display%2001-970.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Candle%20Display/Web/James%20E%20Pepper%20Candle%20Display%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Candle Display", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Candle%20Display/Web/James%20E%20Pepper%20Candle%20Display%2001-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Candle%20Display/Web/James%20E%20Pepper%20Candle%20Display%2001.jpg"},
+                        {Title: "Candle Display", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Candle%20Display/Web/James%20E%20Pepper%20Candle%20Display%2002-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Candle%20Display/Web/James%20E%20Pepper%20Candle%20Display%2002.jpg"},
+                        {Title: "Candle Display", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Candle%20Display/Web/James%20E%20Pepper%20Candle%20Display%2003-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Candle%20Display/Web/James%20E%20Pepper%20Candle%20Display%2003.jpg"},
+                        {Title: "Candle Display", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Candle%20Display/Web/James%20E%20Pepper%20Candle%20Display%2004-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Candle%20Display/Web/James%20E%20Pepper%20Candle%20Display%2004.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Clock, v1",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v1/Web/James%20E%20Pepper%20Clock%20v1%2001-970.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v1/Web/James%20E%20Pepper%20Clock%20v1%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Clock, v1", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v1/Web/James%20E%20Pepper%20Clock%20v1%2001-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v1/Web/James%20E%20Pepper%20Clock%20v1%2001.jpg"},
+                        {Title: "Clock, v1", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v1/Web/James%20E%20Pepper%20Clock%20v1%2002-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v1/Web/James%20E%20Pepper%20Clock%20v1%2002.jpg"},
+                        {Title: "Clock, v1", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v1/Web/James%20E%20Pepper%20Clock%20v1%2003-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v1/Web/James%20E%20Pepper%20Clock%20v1%2003.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Clock, v2",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2001-970.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2001-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2001.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2002-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2002.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2003-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2003.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2004-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2004.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2005-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2005.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2006-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2006.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2007-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2007.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2008-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2008.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2009-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2009.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2010-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Clock%20v2/Web/James%20E%20Pepper%20Clock%20v2%2010.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Thermometer",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Thermometer/Web/James%20E%20Pepper%20Thermometer%2001-970.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Thermometer/Web/James%20E%20Pepper%20Thermometer%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Thermometer", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Thermometer/Web/James%20E%20Pepper%20Thermometer%2001-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Thermometer/Web/James%20E%20Pepper%20Thermometer%2001.jpg"},
+                        {Title: "Thermometer", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Thermometer/Web/James%20E%20Pepper%20Thermometer%2002-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Thermometer/Web/James%20E%20Pepper%20Thermometer%2002.jpg"},
+                        {Title: "Thermometer", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Thermometer/Web/James%20E%20Pepper%20Thermometer%2003-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Thermometer/Web/James%20E%20Pepper%20Thermometer%2003.jpg"},
+                        {Title: "Thermometer", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Thermometer/Web/James%20E%20Pepper%20Thermometer%2004-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Thermometer/Web/James%20E%20Pepper%20Thermometer%2004.jpg"},
+                        {Title: "Thermometer", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Thermometer/Web/James%20E%20Pepper%20Thermometer%2005-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Thermometer/Web/James%20E%20Pepper%20Thermometer%2005.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Display",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Display/Web/James%20E%20Pepper%20Display%2001-970.jpg", LG:"CHANGE_ME", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Display", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Display/Web/James%20E%20Pepper%20Display%2001-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Display/Web/James%20E%20Pepper%20Display%2001.jpg"},
+                        {Title: "Display", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Display/Web/James%20E%20Pepper%20Display%2002-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Display/Web/James%20E%20Pepper%20Display%2002.jpg"},
+                        {Title: "Display", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Display/Web/James%20E%20Pepper%20Display%2003-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Display/Web/James%20E%20Pepper%20Display%2003.jpg"},
+                        {Title: "Display", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Display/Web/James%20E%20Pepper%20Display%2004-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Display/Web/James%20E%20Pepper%20Display%2004.jpg"},
+                        {Title: "Display", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Display/Web/James%20E%20Pepper%20Display%2005-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Display/Web/James%20E%20Pepper%20Display%2005.jpg"},
+                        {Title: "Display", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Display/Web/James%20E%20Pepper%20Display%2006-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Display/Web/James%20E%20Pepper%20Display%2006.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Jigger",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Jigger/Web/James%20E%20Pepper%20Kentucky%20Bourbon%20Jigger%2001-970.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Jigger/Web/James%20E%20Pepper%20Kentucky%20Bourbon%20Jigger%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Jigger", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Jigger/Web/James%20E%20Pepper%20Kentucky%20Bourbon%20Jigger%2001-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Jigger/Web/James%20E%20Pepper%20Kentucky%20Bourbon%20Jigger%2001.jpg"},
+                        {Title: "Jigger", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Jigger/Web/James%20E%20Pepper%20Kentucky%20Bourbon%20Jigger%2002-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Jigger/Web/James%20E%20Pepper%20Kentucky%20Bourbon%20Jigger%2002.jpg"},
+                        {Title: "Jigger", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Jigger/Web/James%20E%20Pepper%20Kentucky%20Bourbon%20Jigger%2003-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Jigger/Web/James%20E%20Pepper%20Kentucky%20Bourbon%20Jigger%2003.jpg"},
+                        {Title: "Jigger", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Jigger/Web/James%20E%20Pepper%20Kentucky%20Bourbon%20Jigger%2004-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Jigger/Web/James%20E%20Pepper%20Kentucky%20Bourbon%20Jigger%2004.jpg"},
+                        {Title: "Jigger", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Jigger/Web/James%20E%20Pepper%20Kentucky%20Bourbon%20Jigger%2005-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Jigger/Web/James%20E%20Pepper%20Kentucky%20Bourbon%20Jigger%2005.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Pencils",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Pencils/Web/James%20E%20Pepper%20Pencils%2001-970.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Pencils/Web/James%20E%20Pepper%20Pencils%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Pencils", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Pencils/Web/James%20E%20Pepper%20Pencils%2001-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Pencils/Web/James%20E%20Pepper%20Pencils%2001.jpg"},
+                        {Title: "Pencils", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Pencils/Web/James%20E%20Pepper%20Pencils%2002-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Pencils/Web/James%20E%20Pepper%20Pencils%2002.jpg"},
+                        {Title: "Pencils", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Pencils/Web/James%20E%20Pepper%20Pencils%2003-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Pencils/Web/James%20E%20Pepper%20Pencils%2003.jpg"},
+                        {Title: "Pencils", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Pencils/Web/James%20E%20Pepper%20Pencils%2004-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Pencils/Web/James%20E%20Pepper%20Pencils%2004.jpg"},
+                        {Title: "Pencils", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Pencils/Web/James%20E%20Pepper%20Pencils%2005-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Pencils/Web/James%20E%20Pepper%20Pencils%2005.jpg"},
+                        {Title: "Pencils", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Pencils/Web/James%20E%20Pepper%20Pencils%2006-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Pencils/Web/James%20E%20Pepper%20Pencils%2006.jpg"},
+                        {Title: "Pencils", SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Pencils/Web/James%20E%20Pepper%20Pencils%2007-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Pencils/Web/James%20E%20Pepper%20Pencils%2007.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Stamps",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Stamps/Web/James%20E%20Pepper%20stamps-970.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Stamps/Web/James%20E%20Pepper%20stamps.jpg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Wood Signs",
+                        "top","3","2",
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Wood%20Signs/Web/James%20E%20Pepper%20Wood%20Signs%2001-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Wood%20Signs/Web/James%20E%20Pepper%20Wood%20Signs%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Wood%20Signs/Web/James%20E%20Pepper%20Wood%20Signs%2002-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Wood%20Signs/Web/James%20E%20Pepper%20Wood%20Signs%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Wood%20Signs/Web/James%20E%20Pepper%20Wood%20Signs%2003-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Wood%20Signs/Web/James%20E%20Pepper%20Wood%20Signs%2003.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Wood%20Signs/Web/James%20E%20Pepper%20Wood%20Signs%2004-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Wood%20Signs/Web/James%20E%20Pepper%20Wood%20Signs%2004.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Wood%20Signs/Web/James%20E%20Pepper%20Wood%20Signs%2005-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Wood%20Signs/Web/James%20E%20Pepper%20Wood%20Signs%2005.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Wood%20Signs/Web/James%20E%20Pepper%20Wood%20Signs%2006-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Wood%20Signs/Web/James%20E%20Pepper%20Wood%20Signs%2006.jpg", title: "", footnote: ""}
+                        )
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

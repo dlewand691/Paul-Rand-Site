@@ -1,0 +1,130 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Posters'
+    - var bodyID    = 'writing'
+    - var bodyClass = 'articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach,%20cover-450.jpg'
+
+    - var publishedInTitle      = 'Posters: Fifty artists and designers analyze their approach, their methods, and their solutions to poster design and poster advertising'
+    - var publishedInSubtitle   = '1952'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach,%20cover-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach,%20cover.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/45119881'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3DPosters%253A%2BFifty%2Bartists%2Band%2Bdesigners%2Banalyze%2Btheir%2Bapproach%252C%2Btheir%2Bmethods%252C%2Band%2Btheir%2Bsolutions%2Bto%2Bposter%2Bdesign%2Band%2Bposter%2Badvertising'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://www.amazon.com/gp/product/B0007I2K0I/ref=as_li_ss_tl?ie=UTF8&tag=paulrandcom-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0007I2K0I'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/noresults/Posters%3A+Fifty+artists+and+designers+analyze+their+approach%2C+their+methods%2C+and+their+solutions+to+poster+design+and+poster+advertising'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_odkw%3DPosters%253A%2BFifty%2Bartists%2Band%2Bdesigners%2Banalyze%2Btheir%2Bapproach%252C%2Btheir%2Bmethods%252C%2Band%2Btheir%2Bsolutions%2Bto%2Bposter%2Bdesign%2Band%2Bposter%2Badvertising%26_osacat%3D0%26_from%3DR40%26_trksid%3Dp2045573.m570.l1313.TR0.TRC0.H0.XPosters%253A%2BFifty%2Bartists%2Band%2Bdesigners%2Banalyze%2Btheir%2Bapproach.TRS0%26_nkw%3DPosters%253A%2BFifty%2Bartists%2Band%2Bdesigners%2Banalyze%2Btheir%2Bapproach%26_sacat%3D0'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'P-O-S devices and advertising linked together by a symbol'
+    - var nextDate              = '1952'
+    - var nextDescription       = 'Originally published in Ladislav Sutnar’s “Design for Point of Sale”'
+    - var nextLink              = '/writing/articles/design-for-point-of-sale.html'
+
+
+    - var relatedItemLink1      = '/writing/articles/advertisement-ad-vivum-or-ad-hominem.html'
+    - var relatedItemTitle1     = 'Advertisement: Ad Vivum or Ad Hominem?'
+    - var relatedItemFootnote1  = 'Originally published in 1960 in a special issue of Daedalus: The Visual Arts Today'
+
+    - var relatedItemLink2      = '/writing/articles/the-art-of-the-package.html'
+    - var relatedItemTitle2     = 'The Art of the Package'
+    - var relatedItemFootnote2  = 'Originally published in PRINT: January/February, 1960'
+
+    - var relatedItemLink3      = '/writing/articles/on-the-rca-ad.html'
+    - var relatedItemTitle3     = 'On the RCA ad'
+    - var relatedItemFootnote3  = 'From Allen Hurlburt’s “The Design Concept”, 1981'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%2008.jpg', title: ''})
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =            FULL WIDTH IMAGE HEADER            =
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                Originally published in “Posters: Fifty artists and designers analyze their approach, their methods, and their solutions to poster design and poster advertising”, 1952.
+
+            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+    .cd-main-content
+        .grid-container
+
+
+            //- ==========  BODY  ==========
+
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content
+                    p.footnote.text-center
+                        | Estimated reading time: 
+                        span.text-bold.reading-time
+                        |   |  Select text to share via Facebook, Twitter or Email
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        The essence of the “art of the poster” is not a matter of literal content nor technique but one of creating visual ideas appropriate to the medium. 
+
+                        Countless so-called posters are not in fact posters at all- they are merely enlarged illustrations which ignore the fundamental functional considerations of size, distant viewing, and speed of the viewer which should be the determinant of poster design. By demanding that the poster be simple, bold, and striking these factors distinguish the poster unequivocally from the illustration which, like a miniature or easel painting, is intended for close and leisurely inspection and can therefore be complex and subtle. Unfortunately where it has been recognized that a poster must be immediately and potently attractive this has been widely interpreted to mean a blow up of a “pretty girl” or the rendering of a fantastically elongated motor car. 
+
+                        It has been forgotten that color and design are the basic elements of attraction in the same sense that flags, pennants, flowers, bright fabrics, and heraldic devices are the age old means of dramatization and advertisement. Clearly the appeal of these purely plastic elements cannot be calculated by surveys, polls, and pulse takers; therefore in this age of reverence for statistics it is apt to be ignored or lightly dismissed. Hence, the poster becomes formulized into the above mentioned pretty girl plus product or oversized product plus label. 
+
+                        Consequently to see one poster is to see all, and the prime and crucial factor in poster design is flouted - i.e. sensory appeal.
+
+            .w100.small-p4.small-my4(data-chocolat-title="#{pageTitle}, #{publishedInTitle}" style="background:#0B511C")
+                +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Coronet%20Brandy%20poster.jpg",
+                    "https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Coronet%20Brandy%20poster.jpg"
+                    )
+
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-9.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        A poster must attract as quickly and boldly as a banner and excite sensations of pleasure and interest in the observer. This the standardized poster cannot do but it can and does succeed in boring the observer with its triteness and vacuous design. 
+
+                        A good poster is, however, only half the battle for the best poster if badly displayed cannot only be revitalized but can actually become a visual irritation if it interrupts architectural forms or obtrudes rudely into the landscape. It is unnecessary to remind the reader of the r avages done to city and countryside by the wanton plastering of post ers on every available space. But apparently it is necessary to remind the advertiser who defeats his own purpose by rendering his advertising obnoxious rather than pleasurable.
+
+                    blockquote A poster must attract as quickly and boldly as a banner and excite sensations of pleasure and interest in the observer.
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        The placing of the poster and its design should be interdependent. The American poster producer’s obsession with size, i.e. 24 sheet, not only leads to monotony but makes the post er difficult to place. The virtues of the small post er are overlooked and 24 sheet billboards are post ed in alleyways or along sidewalks where the small size poster is obviously more practicable. Likewise the flexibility of the small poster is not appreciated, for instance it can be shown not only single but repeated within larger frames - a device widely and effectively used in Europe and one which by creating a repetitive pattern, can render even a mediocre poster exciting. Furthermore the small poster being ideally suited for peripatetic inspection, can be displayed with great impact if instead of being haphazardly pasted on walls it is exhibited within an appropriate architectural framework - for example the cylindrical kiosk. This kiosk which is found all over Europe is worth special mention because it can combine competing posters. Its circular form permits each poster to be viewed in comparative isolation and, because it is not merely an effective sidewalk display device, it makes a positive contribution to the gayety and architectural beauty of the urban scene.
+
+                        In America isolated efforts have been made to correlate the poster with its setting as for instance in subway advertising where size and spacing of posters is controlled. If these efforts multiply, and the quality of poster design improves, outdoor advertising could easily become a pleasure to the community as well as an effective advertising medium.
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-image-carousel.pug
+
+        include ../../__MIXINS/_include-published-in.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

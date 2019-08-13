@@ -1,0 +1,637 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Cummins'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = 'CHANGE_ME'
+    - var nextType  = 'Client'
+    - var nextTitle = 'Direction Magazine'
+    - var nextLink  = 'Direction-Magazine'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logos",
+                        "middle","2","2",
+                        {SM: "https://assets.paulrand.design/Works/Cummins/Cummins-1962.svg", LG:"https://assets.paulrand.design/Works/Cummins/Cummins-1962.svg", footnote:"1962", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Cummins/Cummins-Iron-Cross-variation-1965.svg", LG:"https://assets.paulrand.design/Works/Cummins/Cummins-Iron-Cross-variation-1965.svg", title: "", footnote:"1965"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo Presentation Book: Iron Cross Version, 1965",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Logo Presentation Book: Iron Cross Version, 1965", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2001.jpg"},
+                        {Title: "Logo Presentation Book: Iron Cross Version, 1965", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2002.jpg"},
+                        {Title: "Logo Presentation Book: Iron Cross Version, 1965", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2003.jpg"},
+                        {Title: "Logo Presentation Book: Iron Cross Version, 1965", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2004.jpg"},
+                        {Title: "Logo Presentation Book: Iron Cross Version, 1965", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2005.jpg"},
+                        {Title: "Logo Presentation Book: Iron Cross Version, 1965", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2006.jpg"},
+                        {Title: "Logo Presentation Book: Iron Cross Version, 1965", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2007.jpg"},
+                        {Title: "Logo Presentation Book: Iron Cross Version, 1965", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2008.jpg"},
+                        {Title: "Logo Presentation Book: Iron Cross Version, 1965", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2009.jpg"},
+                        {Title: "Logo Presentation Book: Iron Cross Version, 1965", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2010-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2010.jpg"},
+                        {Title: "Logo Presentation Book: Iron Cross Version, 1965", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2011-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2011.jpg"},
+                        {Title: "Logo Presentation Book: Iron Cross Version, 1965", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2012-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2012.jpg"},
+                        {Title: "Logo Presentation Book: Iron Cross Version, 1965", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2013-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2013.jpg"},
+                        {Title: "Logo Presentation Book: Iron Cross Version, 1965", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2014-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2014.jpg"},
+                        {Title: "Logo Presentation Book: Iron Cross Version, 1965", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2015-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2015.jpg"}
+                        )
+
+            .grid-x.grid-margin-x.align-center
+                .small-12.cell
+                    .grid-x.grid-margin-x
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2001-450.jpg",
+                            "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2001.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                A proposed logotype/trademark
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2002-450.jpg",
+                            "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2002.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                [Blank]
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2003-450.jpg",
+                            "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2003.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Cummins Engine Company, Inc.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2004-450.jpg",
+                            "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2004.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                From time immemorial the stately escutcheon has served a ceremonial and ritualistic function. It may be seen on such familiar items as money, marriage certificates and military uniforms. The British use the royal coat of arms to dignify a box of biscuits or to authenticate an official document.
+
+                                The trademark, which is the escutcheon of industry, should, however, serve more than an ornamental purpose. It should also be utilitarian, a functional device, useful in a great variety of practical visual problems.
+
+                                In advertising, for example, the trademark/logotype should not come as an afterthought, or a mere decorative cartouche. It should, rather, help identify a corporation, lend authority to a statement, and help sell a product or service. Ideally, a mark should serve not only as a means of non-persuasive communication but also as a possible means of persuasion: pictorial, verbal, or both.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2005-450.jpg",
+                            "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2005.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Good design as well as good business judgement dictates that in the redesign or updating of any trademark due consideration be given to the retention of any features which will contribute constructively to the development of a new design.
+
+                                The features which characterize the current Cummins trademark/logotype are:  
+                                the plus sign  
+                                the colored vertical bar  
+                                the black horizontal bar containing the word Cummins.
+
+                                Analysis of the current design indicates:  
+                                The plus idea has positive advantages, provided the religious and/or medical overtones can be eliminated.
+
+                                The vertical color bar should, if possible, be more meaningful and the color more distinctive.
+
+                                The lettering within the black bar appears cumbersome and “hemmed in”, making continuous reading from logotype to additional text jumpy.  
+                                Sometimes the type fills in, making it necessary for the name to be deleted. In reduced sizes legibility is sacrificed.
+
+                                The following two pages show the structural transition from old to new trademark as well as an enlarged and reduced version.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2006-450.jpg",
+                            "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2006.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                The mark is now much simpler. The horizontal element is reduced to the name alone, without a background. The initial of the corporation has become the vertical element, with not only more meaning, but more visual interest.  
+                                The “C” has been designed so that it seems to grow out of the word “Cummins” and does not serve merely as a background.
+
+                                The corporate name is set in a simple, straightforward, sans serif typeface (Helvetica) which has a universal and timeless quality. Upper and lower case letters are used which, incidentally, are easier to read than all capitals. The charm and individuality of the letter combinations is due less to their novelty than to the rhythmical repetition of half circles.
+
+                                The disarming simplicity of the mark reflects precision, clarity, and confidence. That it functions with great ease can be seen in the following:
+
+                                The necessity of jumping from the reverse panel of “Cummins” to the remainder of the message has been overcome. The transition from one to the other is smooth and natural. Should such applications be necessary or desirable, the name “Cummins” could now be used without the initial “C”, still retaining partial identity, e.g.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2007-450.jpg",
+                            "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2007.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                The flexibility of the new Cummins mark is such that it can be reproduced in the following ways:
+
+                                one color  
+                                two colors  
+                                positive  
+                                negative  
+                                halftone  
+                                line
+
+                                Because of its simplicity of design it can easily be:
+
+                                embossed  
+                                die cut  
+                                stamped  
+                                cast  
+                                moulded  
+                                sculptured
+
+                                A note about the new color: it has been chosen because it is less commonplace than the yellow ochre. Because it is closer to the gray scale, it will be more compatible with other colors.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2008-450.jpg",
+                            "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2008.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                On the following pages are shown: 
+                                1 standard letterheads
+                                2 executive letterheads
+                                3 calling cards
+                                4 envelopes
+                                5 mailing label
+                                6 binder backbone
+                                7 presentation folder
+                                8 advertisement
+                                9 calendar
+
+                        .small-12.cell.small-my4
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2009-450.jpg",
+                            "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2009.jpg"
+                            )
+
+
+                        .small-12.cell.small-my4
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2010-450.jpg",
+                            "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2010.jpg"
+                            )
+
+
+                        .small-12.cell.small-my4
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2011-450.jpg",
+                            "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2011.jpg"
+                            )
+
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2012-450.jpg",
+                            "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2012.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Standardization of envelopes to this proposed design will eliminate unnecessary expense and simplify inventory problems. Address panel is preprinted and first, second, or third class mail will be differentiated by specially imprinted labels.
+
+                        .small-12.cell.small-my4
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2013-450.jpg",
+                            "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2013.jpg"
+                            )
+
+                        .small-12.cell.small-my4
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2014-450.jpg",
+                            "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2014.jpg"
+                            )
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2015-450.jpg",
+                            "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2015.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Paul Rand, Inc. 
+                                Weston, Connecticut 
+                                January 1965
+
+            +projectDivider("Annual Reports")
+            .grid-x.grid-margin-x.align-center.small-mb4
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1962/Web/Cummins%20Annual%20Report%201962%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1962/Web/Cummins%20Annual%20Report%201962%2001.jpg",
+                    title: "1962",
+                    footnote1: "2 Images"
+                    })
+                +galleryItem-imageHidden(
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1962/Web/Cummins%20Annual%20Report%201962%2002.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1962/Web/Cummins%20Annual%20Report%201962%2002.jpg"}
+                    )
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1963/Web/Cummins%20Annual%20Report%201963%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1963/Web/Cummins%20Annual%20Report%201963%2001.jpg",
+                    title: "1963",
+                    footnote1: "3 Images"
+                    })
+                +galleryItem-imageHidden(
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1963/Web/Cummins%20Annual%20Report%201963%2002.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1963/Web/Cummins%20Annual%20Report%201963%2002.jpg"},
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1963/Web/Cummins%20Annual%20Report%201963%2003.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1963/Web/Cummins%20Annual%20Report%201963%2003.jpg"}
+                    )
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1964/Web/Cummins%20Annual%20Report%201964%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1964/Web/Cummins%20Annual%20Report%201964%2001.jpg",
+                    title: "1964",
+                    footnote1: "1 Image"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2001b-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2001b.jpg",
+                    title: "1965",
+                    footnote1: "11 Images"
+                    })
+                +galleryItem-imageHidden(
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2001.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2001.jpg"},
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2002.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2002.jpg"},
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2003.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2003.jpg"},
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2004.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2004.jpg"},
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2005.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2005.jpg"},
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2006.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2006.jpg"},
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2007.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2007.jpg"},
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2008.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2008.jpg"},
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2009.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2009.jpg"},
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2010.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2010.jpg"},
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2011.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1965/Web/Cummins%20Annual%20Report%201965%2011.jpg"}
+                    )
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1966/Web/Cummins%20Annual%20Report%201966%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1966/Web/Cummins%20Annual%20Report%201966%2001.jpg",
+                    title: "1966",
+                    footnote1: "1966"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1968/Web/Cummins%20Annual%20Report%201968%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1968/Web/Cummins%20Annual%20Report%201968%2001.jpg",
+                    title: "1968",
+                    footnote1: "1 Image"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1969/Web/Cummins%20Annual%20Report%201969%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1969/Web/Cummins%20Annual%20Report%201969%2001.jpg",
+                    title: "1969",
+                    footnote1: "12 Images"
+                    })
+                +galleryItem-imageHidden(
+                    {title: "1969", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1969/Web/Cummins%20Annual%20Report%201969%2001c.jpg"},
+                    {title: "1969", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1969/Web/Cummins%20Annual%20Report%201969%2002.jpg"},
+                    {title: "1969", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1969/Web/Cummins%20Annual%20Report%201969%2003.jpg"},
+                    {title: "1969", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1969/Web/Cummins%20Annual%20Report%201969%2004.jpg"},
+                    {title: "1969", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1969/Web/Cummins%20Annual%20Report%201969%2005.jpg"},
+                    {title: "1969", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1969/Web/Cummins%20Annual%20Report%201969%2006.jpg"},
+                    {title: "1969", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1969/Web/Cummins%20Annual%20Report%201969%2007.jpg"},
+                    {title: "1969", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1969/Web/Cummins%20Annual%20Report%201969%2008.jpg"},
+                    {title: "1969", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1969/Web/Cummins%20Annual%20Report%201969%2009.jpg"},
+                    {title: "1969", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1969/Web/Cummins%20Annual%20Report%201969%2010.jpg"},
+                    {title: "1969", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1969/Web/Cummins%20Annual%20Report%201969%2011.jpg"}
+                    )
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1971/Web/Cummins%20Annual%20Report%201971%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1971/Web/Cummins%20Annual%20Report%201971%2001.jpg",
+                    title: "1971",
+                    footnote1: "1 Image"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1972/Web/Cummins%20Annual%20Report%201972%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1972/Web/Cummins%20Annual%20Report%201972%2001.jpg",
+                    title: "1972",
+                    footnote1: "2 Images"
+                    })
+                +galleryItem-imageHidden(
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1972/Web/Cummins%20Annual%20Report%201972%2002.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1972/Web/Cummins%20Annual%20Report%201972%2002.jpg"}
+                    )
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1973/Web/Cummins%20Annual%20Report%201973%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1973/Web/Cummins%20Annual%20Report%201973%2001.jpg",
+                    title: "1973",
+                    footnote1: "2 Images"
+                    })
+                +galleryItem-imageHidden(
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1973/Web/Cummins%20Annual%20Report%201973%2001-%20Alternate%20Cover.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1973/Web/Cummins%20Annual%20Report%201973%2001-%20Alternate%20Cover.jpg"}
+                    )
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1974/Web/Cummins%20Annual%20Report%201974%2001b-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1974/Web/Cummins%20Annual%20Report%201974%2001b.jpg",
+                    title: "1974",
+                    footnote1: "1 Image"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1975/Web/Cummins%20Annual%20Report%201975%2001b-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1975/Web/Cummins%20Annual%20Report%201975%2001b.jpg",
+                    title: "1975",
+                    footnote1: "1 Image"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1976/Web/Cummins%20Annual%20Report%201976%2001b-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1976/Web/Cummins%20Annual%20Report%201976%2001b.jpg",
+                    title: "1976",
+                    footnote1: "2 Images"
+                    })
+                +galleryItem-imageHidden(
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1976/Web/Cummins%20Annual%20Report%201976%2002.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1976/Web/Cummins%20Annual%20Report%201976%2002.jpg"}
+                    )
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1977/Web/Cummins%20Annual%20Report%201977%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1977/Web/Cummins%20Annual%20Report%201977%2001.jpg",
+                    title: "1977",
+                    footnote1: "2 Images"
+                    })
+                +galleryItem-imageHidden(
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1977/Web/Cummins%20Annual%20Report%201977%2002.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1977/Web/Cummins%20Annual%20Report%201977%2002.jpg"}
+                    )
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1978/Web/Cummins%20Annual%20Report%201978%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1978/Web/Cummins%20Annual%20Report%201978%2001.jpg",
+                    title: "1978",
+                    footnote1: "1 Image"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1979/Web/Cummins%20Annual%20Report%201979%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1979/Web/Cummins%20Annual%20Report%201979%2001.jpg",
+                    title: "1979",
+                    footnote1: "3 Images"
+                    })
+                +galleryItem-imageHidden(
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1979/Web/Cummins%20Annual%20Report%201979%2001.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1979/Web/Cummins%20Annual%20Report%201979%2001.jpg"},
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1979/Web/Cummins%20Annual%20Report%201979%2001b.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1979/Web/Cummins%20Annual%20Report%201979%2001b.jpg"},
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1979/Web/Cummins%20Annual%20Report%201979%2002.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1979/Web/Cummins%20Annual%20Report%201979%2002.jpg"}
+                    )
+
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1979/Web/Cummins%20Quarterly%20Report%201979-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1979/Web/Cummins%20Quarterly%20Report%201979.jpg",
+                    title: "1979 Quarterly Report",
+                    footnote1: "Image courtesy of Wright Auction House, Chicago, IL.",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1981/Web/Cummins%20Annual%20Report%201981%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1981/Web/Cummins%20Annual%20Report%201981%2001.jpg",
+                    title: "1981",
+                    footnote1: "1 Image"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1982/Web/Cummins%20Annual%20Report%201982%2001b-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1982/Web/Cummins%20Annual%20Report%201982%2001b.jpg",
+                    title: "1982",
+                    footnote1: "1 Image"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1983/Web/Cummins%20Annual%20Report%201983%2001b-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1983/Web/Cummins%20Annual%20Report%201983%2001b.jpg",
+                    title: "1983",
+                    footnote1: "1 Image"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1984/Web/Cummins%20Annual%20Report%201984%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1984/Web/Cummins%20Annual%20Report%201984%2001.jpg",
+                    title: "1984",
+                    footnote1: "1 Image"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1985/Web/Cummins%20Annual%20Report%201985%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1985/Web/Cummins%20Annual%20Report%201985%2001.jpg",
+                    title: "1985",
+                    footnote1: "3 Images"
+                    })
+                +galleryItem-imageHidden(
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1985/Web/Cummins%20Annual%20Report%201985%2002.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1985/Web/Cummins%20Annual%20Report%201985%2002.jpg"},
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1985/Web/Cummins%20Annual%20Report%201985%2003.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1985/Web/Cummins%20Annual%20Report%201985%2003.jpg"}
+                    )
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1986/Web/Cummins%20Annual%20Report%201986%2C%20front%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1986/Web/Cummins%20Annual%20Report%201986%2C%20front%2001.jpg",
+                    title: "1986",
+                    footnote1: "2 Images"
+                    })
+                +galleryItem-imageHidden(
+                    {title: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1986/Web/Cummins%20Annual%20Report%201986%2C%20front%2002.jpg", hideMe: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1986/Web/Cummins%20Annual%20Report%201986%2C%20front%2002.jpg"}
+                    )
+
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1986/Web/Cummins%20Quarterly%20Report%201986-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1986/Web/Cummins%20Quarterly%20Report%201986.jpg",
+                    title: "1986 Quarterly Report",
+                    footnote1: "Image courtesy of Wright Auction House, Chicago, IL.",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1988/Web/Cummins%20Annual%20Report%201988-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1988/Web/Cummins%20Annual%20Report%201988.jpg",
+                    title: "1988",
+                    footnote1: "Image courtesy of Wright Auction House, Chicago, IL.",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1989/Web/Cummins%20Annual%20Report%201989-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1989/Web/Cummins%20Annual%20Report%201989.jpg",
+                    title: "1989",
+                    footnote1: "Image courtesy of Wright Auction House, Chicago, IL.",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1990/Web/Cummins%20Annual%20Report%2C%201990%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1990/Web/Cummins%20Annual%20Report%2C%201990%2001.jpg",
+                    title: "1990",
+                    footnote1: "1 Image"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1991/Web/Cummins%20Annual%20Report%201991%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1991/Web/Cummins%20Annual%20Report%201991%2001.jpg",
+                    title: "1991",
+                    footnote1: "1 Image"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1992/Web/Cummins%20Annual%20Report%201992%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1992/Web/Cummins%20Annual%20Report%201992%2001.jpg",
+                    title: "1992",
+                    footnote1: "1 Image"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1993/Web/Cummins%20Annual%20Report%201993%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1993/Web/Cummins%20Annual%20Report%201993%2001.jpg",
+                    title: "1993",
+                    footnote1: "1 Image"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1994/Web/Cummins%20Annual%20Report%201994%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1994/Web/Cummins%20Annual%20Report%201994%2001.jpg",
+                    title: "1994",
+                    footnote1: "1 Image"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1995/Web/Cummins%20Annual%20Report%201995-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Annual%20Reports/1995/Web/Cummins%20Annual%20Report%201995.jpg",
+                    title: "1995",
+                    footnote1: "1 Image"
+                    })
+
+            +galleryItem-blockGrid(
+                "DIVIDER_yes",
+                "Graphic Identification",
+                "top","1","1",
+                {SM: "https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2001.jpg", title: "", footnote: ""}
+                )
+            +carouselImages(
+                "View More",
+                "",
+                {Title: "Graphic Identification", SM: "https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2001.jpg"},
+                {Title: "Graphic Identification", SM: "https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2002.jpg"},
+                {Title: "Graphic Identification", SM: "https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2003.jpg"},
+                {Title: "Graphic Identification", SM: "https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2004.jpg"},
+                {Title: "Graphic Identification", SM: "https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2005.jpg"},
+                {Title: "Graphic Identification", SM: "https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2006.jpg"},
+                {Title: "Graphic Identification", SM: "https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2007.jpg"},
+                {Title: "Graphic Identification", SM: "https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2008.jpg"},
+                {Title: "Graphic Identification", SM: "https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2009.jpg"},
+                {Title: "Graphic Identification", SM: "https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2010-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2010.jpg"},
+                {Title: "Graphic Identification", SM: "https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2011-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2011.jpg"},
+                {Title: "Graphic Identification", SM: "https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2012-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2012.jpg"},
+                {Title: "Graphic Identification", SM: "https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2013-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Graphic%20Identification/Web/Cummins%20Graphic%20Identification%2013.jpg"}
+                )
+
+
+
+            +galleryItem-blockGrid(
+                "DIVIDER_yes",
+                "Posters",
+                "middle", "4", "3",
+                {SM: "https://assets.paulrand.design/Works/Cummins/Posters/Web/Cummins%20Flag%20Poster%2C%20black%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Posters/Web/Cummins%20Flag%20Poster%2C%20black%2001.jpg", title: "", footnote: ""},
+                {SM: "https://assets.paulrand.design/Works/Cummins/Posters/Web/Cummins%20Flag%20Poster%2C%20gray%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Posters/Web/Cummins%20Flag%20Poster%2C%20gray%2001.jpg", title: "", footnote: ""},
+                {SM: "https://assets.paulrand.design/Works/Cummins/Posters/Web/Cummins%20Flag%20Poster%2C%20white%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Posters/Web/Cummins%20Flag%20Poster%2C%20white%2001.jpg", title: "", footnote: ""}
+                )
+
+
+            +galleryItem-blockGrid(
+                "DIVIDER_yes",
+                "Packaging",
+                "middle", "4", "3",
+                {SM: "https://assets.paulrand.design/Works/Cummins/Packaging/Web/Cummins%20Packaging%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Packaging/Web/Cummins%20Packaging%2001.jpg", title: "", footnote: ""},
+                {SM: "https://assets.paulrand.design/Works/Cummins/Packaging/Web/Cummins%20Packaging%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Packaging/Web/Cummins%20Packaging%2002.jpg", title: "", footnote: ""},
+                {SM: "https://assets.paulrand.design/Works/Cummins/Packaging/Web/Cummins%20Packaging%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Packaging/Web/Cummins%20Packaging%2003.jpg", title: "", footnote: ""},
+                {SM: "https://assets.paulrand.design/Works/Cummins/Packaging/Web/Cummins%20Packaging%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Packaging/Web/Cummins%20Packaging%2004.jpg", title: "", footnote: ""},
+                {SM: "https://assets.paulrand.design/Works/Cummins/Packaging/Web/Cummins%20Packaging%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Packaging/Web/Cummins%20Packaging%2005.jpg", title: "", footnote: ""},
+                {SM: "https://assets.paulrand.design/Works/Cummins/Packaging/Web/Cummins%20Packaging%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Packaging/Web/Cummins%20Packaging%2006.jpg", title: "", footnote: "Image courtesy of Wright Auction House, Chicago, IL."}
+                )
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

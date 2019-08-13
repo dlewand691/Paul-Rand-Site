@@ -1,0 +1,42 @@
+doctype html
+html.no-js(lang='en' dir='ltr')
+
+	include _include-head-meta
+	include _include-head-favicons
+
+	body(data-grid-framework="f4" data-grid-color="pink" data-grid-opacity="0.2" data-grid-zindex="10" data-grid-gutterwidth="30px" data-grid-nbcols="12")
+		.cd-main-content
+
+			.grid-x.grid-margin-x
+				.small-12.cell.text-center
+					br
+					p: a.animsition-link(href="_template/_template-1-column.html") 1 Column Content
+					p: a.animsition-link(href="_template/_template-full-width-image-header.html") Full Width Image Header
+					p: a.animsition-link(href="_template/_template-gallery-light.html") Gallery- Light
+					p: a.animsition-link(href="_template/_template-gallery-medium.html") Gallery- Medium
+					p: a.animsition-link(href="_template/_template-gallery-heavy.html") Gallery- Heavy
+					p: a.animsition-link(href="_template/_template-list.html") List
+					p: a.animsition-link(href="_template/_template-list-with-thumbnails.html") List with thumbnails
+					p: a.animsition-link(href="_template/_template-video.html") Video
+					p: a.animsition-link(href="_template/_template-article.html") Article
+					p: a.animsition-link(href="_template/_template-landing-work.html") Work Landing
+					p: a.animsition-link(href="_template/_template-landing-life.html") Life Landing
+					p: a.animsition-link(href="_template/_template-landing-writing.html") Writing Landing
+					p: a.animsition-link(href="_template/_template-landing-resources.html") Resources Landing
+					p: a.animsition-link(href="_template/_template-landing-books.html") Books Landing
+					p: a.animsition-link(href="_template/_template-book-detail.html") Book Detail
+					p: a.animsition-link(href="_template/_template-hashtag-paulrand.html") #PaulRand
+					p: a.animsition-link(href="ks.html") Kitchen Sink
+
+
+			.grid-x.grid-margin-x
+				.large-12.cell
+					p Image sizes needed:
+						ol
+							li 800
+							li 450
+							li 200
+
+
+
+		include _include-closingScript.pug

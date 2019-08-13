@@ -1,0 +1,59 @@
+doctype html
+html.no-js(lang='en' dir='ltr')
+
+    include ../../__MIXINS/_include-head.pug
+
+    body(data-grid-framework="f4" data-grid-color="pink" data-grid-opacity="0.2" data-grid-zindex="10" data-grid-gutterwidth="30px" data-grid-nbcols="12")
+
+        .animsition
+            include ../../__MIXINS/_include-headerNav-secondaryNav.pug
+
+            .cd-main-content
+
+                //- ======================================
+                //- =            GALLERY MEDIUM            =
+                //- ======================================
+
+                .grid-x.grid-margin-x
+                    .large-12.small-12.cell
+                        h1.text-center.reveal-enter-bottom The Life of Paul Rand
+
+                        a.card-large.text-black(href="#")
+                            img(src="/img/landing/life/biography.jpg")
+                            p.small-mb0 Biography and Timeline
+                                br
+                                small.footnote by Daniel Lewandowski
+
+                        a.card-medium.medium-mt4.large-offset-2.medium-offset-2.text-black(href="#")
+                            img(src="/img/landing/life/articles-books.jpg")
+                            p.small-mb0 Articles and Books about Paul Rand
+
+                        a.card-small.medium-mtn4.large-offset-0.text-black(href="#")
+                            img(src="/img/landing/life/portraits.jpg")
+                            p.small-mb0 Portraits
+
+                        a.card-medium.medium-mtn4.large-offset-1.text-black(href="#")
+                            img(src="/img/landing/life/events-exhibits.jpg")
+                            p.small-mb0 Events & Exhibits
+
+                        a.card-large.small-mtn2.text-black(href="#")
+                            img(src="/img/landing/life/videos-interviews.jpg")
+                            p.small-mb0 Videos & Interviews
+
+                        a.card-medium.medium-mtn4.large-offset-0.text-black(href="#")
+                            img(src="/img/landing/life/Rand-House.jpg")
+                            p.small-mb0 The Rand House
+
+                        a.card-medium.medium-mt4.text-black(href="#")
+                            img(src="/img/landing/life/inspirations.jpg")
+                            p.small-mb0 His Inspirations
+
+                        a.card-medium.medium-mtn3.text-black(href="#")
+                            img(src="/img/landing/life/personal-items.jpg")
+                            p.small-mb0 Personal Items
+
+                //- /*-----  End of GALLERY MEDIUM  ------*/
+
+            include ../../__MIXINS/_include-footer.pug
+
+        include ../../__MIXINS/_include-closingScript.pug 

@@ -1,0 +1,837 @@
+/*===============================================================================================
+=
+/*
+██████   █████   ██████ ██   ██  ██████  ██████   ██████  ██    ██ ███    ██ ██████
+██   ██ ██   ██ ██      ██  ██  ██       ██   ██ ██    ██ ██    ██ ████   ██ ██   ██
+██████  ███████ ██      █████   ██   ███ ██████  ██    ██ ██    ██ ██ ██  ██ ██   ██
+██   ██ ██   ██ ██      ██  ██  ██    ██ ██   ██ ██    ██ ██    ██ ██  ██ ██ ██   ██
+██████  ██   ██  ██████ ██   ██  ██████  ██   ██  ██████   ██████  ██   ████ ██████
+ ██████  ██████  ██       ██████  ██████  ███████
+██      ██    ██ ██      ██    ██ ██   ██ ██
+██      ██    ██ ██      ██    ██ ██████  ███████
+██      ██    ██ ██      ██    ██ ██   ██      ██
+ ██████  ██████  ███████  ██████  ██   ██ ███████
+*/
+// ==================================================================================================*/
+
+.bg-white {
+	background: $white;
+}
+.bg-white-10d {
+	background: darken($white, 10%);
+}
+.bg-white-20d {
+	background: darken($white, 20%);
+}
+.bg-white-30d {
+	background: darken($white, 30%);
+}
+.bg-white-40d {
+	background: darken($white, 40%);
+	& * {
+		color: $white;
+	}
+}
+.bg-white-50d {
+	background: darken($white, 50%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-white-60d {
+	background: darken($white, 60%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-white-70d {
+	background: darken($white, 70%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-white-80d {
+	background: darken($white, 80%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-white-90d {
+	background: darken($white, 90%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+
+.bg-black {
+	background: $black;
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-black-10l {
+	background: lighten($black, 10%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-black-20l {
+	background: lighten($black, 20%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-black-30l {
+	background: lighten($black, 30%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-black-40l {
+	background: lighten($black, 40%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-black-50l {
+	background: lighten($black, 50%);
+}
+.bg-black-60l {
+	background: lighten($black, 60%);
+}
+.bg-black-70l {
+	background: lighten($black, 70%);
+}
+.bg-black-80l {
+	background: lighten($black, 80%);
+}
+.bg-black-90l {
+	background: lighten($black, 90%);
+}
+
+
+.bg-randWhite {
+	background: $white;
+}
+.bg-randWhite-10d {
+	background: darken($white, 10%);
+}
+.bg-randWhite-20d {
+	background: darken($white, 20%);
+}
+.bg-randWhite-30d {
+	background: darken($white, 30%);
+}
+.bg-randWhite-40d {
+	background: darken($white, 40%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-randWhite-50d {
+	background: darken($white, 50%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-randWhite-60d {
+	background: darken($white, 60%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-randWhite-70d {
+	background: darken($white, 70%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-randWhite-80d {
+	background: darken($white, 80%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-randWhite-90d {
+	background: darken($white, 90%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+
+
+.bg-randBlack {
+	background: $black;
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-randBlack-10l {
+	background: lighten($black, 10%);
+}
+.bg-randBlack-20l {
+	background: lighten($black, 20%);
+}
+.bg-randBlack-30l {
+	background: lighten($black, 30%);
+}
+.bg-randBlack-40l {
+	background: lighten($black, 40%);
+}
+.bg-randBlack-50l {
+	background: lighten($black, 50%);
+}
+.bg-randBlack-60l {
+	background: lighten($black, 60%);
+}
+.bg-randBlack-70l {
+	background: lighten($black, 70%);
+}
+.bg-randBlack-80l {
+	background: lighten($black, 80%);
+}
+.bg-randBlack-90l {
+	background: lighten($black, 90%);
+}
+
+
+.bg-blue {
+	background: $blue;
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-blue-10l {
+	background: lighten($blue, 10%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-blue-20l {
+	background: lighten($blue, 20%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-blue-30l {
+	background: lighten($blue, 30%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-blue-40l {
+	background: lighten($blue, 40%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-blue-50l {
+	background: lighten($blue, 50%);
+}
+.bg-blue-60l {
+	background: lighten($blue, 60%);
+}
+.bg-blue-70l {
+	background: lighten($blue, 70%);
+}
+.bg-blue-80l {
+	background: lighten($blue, 80%);
+}
+.bg-blue-90l {
+	background: lighten($blue, 90%);
+}
+.bg-blue-10d {
+	background: darken($blue, 10%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-blue-20d {
+	background: darken($blue, 20%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-blue-30d {
+	background: darken($blue, 30%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-blue-40d {
+	background: darken($blue, 40%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-blue-50d {
+	background: darken($blue, 50%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-blue-60d {
+	background: darken($blue, 60%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-blue-70d {
+	background: darken($blue, 70%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-blue-80d {
+	background: darken($blue, 80%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-blue-90d {
+	background: darken($blue, 90%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+
+.bg-red {
+	background: $red;
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-red-10l {
+	background: lighten($red, 10%);
+}
+.bg-red-20l {
+	background: lighten($red, 20%);
+}
+.bg-red-30l {
+	background: lighten($red, 30%);
+}
+.bg-red-40l {
+	background: lighten($red, 40%);
+}
+.bg-red-50l {
+	background: lighten($red, 50%);
+}
+.bg-red-60l {
+	background: lighten($red, 60%);
+}
+.bg-red-70l {
+	background: lighten($red, 70%);
+}
+.bg-red-80l {
+	background: lighten($red, 80%);
+}
+.bg-red-90l {
+	background: lighten($red, 90%);
+}
+.bg-red-10d {
+	background: darken($red, 10%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-red-20d {
+	background: darken($red, 20%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-red-30d {
+	background: darken($red, 30%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-red-40d {
+	background: darken($red, 40%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-red-50d {
+	background: darken($red, 50%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-red-60d {
+	background: darken($red, 60%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-red-70d {
+	background: darken($red, 70%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-red-80d {
+	background: darken($red, 80%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-red-90d {
+	background: darken($red, 90%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+
+.bg-brown {
+	background: $brown;
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-brown-10l {
+	background: lighten($brown, 10%);
+}
+.bg-brown-20l {
+	background: lighten($brown, 20%);
+}
+.bg-brown-30l {
+	background: lighten($brown, 30%);
+}
+.bg-brown-40l {
+	background: lighten($brown, 40%);
+}
+.bg-brown-50l {
+	background: lighten($brown, 50%);
+}
+.bg-brown-60l {
+	background: lighten($brown, 60%);
+}
+.bg-brown-70l {
+	background: lighten($brown, 70%);
+}
+.bg-brown-80l {
+	background: lighten($brown, 80%);
+}
+.bg-brown-90l {
+	background: lighten($brown, 90%);
+}
+.bg-brown-10d {
+	background: darken($brown, 10%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-brown-20d {
+	background: darken($brown, 20%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-brown-30d {
+	background: darken($brown, 30%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-brown-40d {
+	background: darken($brown, 40%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-brown-50d {
+	background: darken($brown, 50%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-brown-60d {
+	background: darken($brown, 60%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-brown-70d {
+	background: darken($brown, 70%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-brown-80d {
+	background: darken($brown, 80%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-brown-90d {
+	background: darken($brown, 90%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+
+.bg-green {
+	background: $green;
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-green-10l {
+	background: lighten($green, 10%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-green-20l {
+	background: lighten($green, 20%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-green-30l {
+	background: lighten($green, 30%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-green-40l {
+	background: lighten($green, 40%);
+}
+.bg-green-50l {
+	background: lighten($green, 50%);
+}
+.bg-green-60l {
+	background: lighten($green, 60%);
+}
+.bg-green-70l {
+	background: lighten($green, 70%);
+}
+.bg-green-80l {
+	background: lighten($green, 80%);
+}
+.bg-green-90l {
+	background: lighten($green, 90%);
+}
+.bg-green-10d {
+	background: darken($green, 10%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-green-20d {
+	background: darken($green, 20%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-green-30d {
+	background: darken($green, 30%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-green-40d {
+	background: darken($green, 40%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-green-50d {
+	background: darken($green, 50%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-green-60d {
+	background: darken($green, 60%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-green-70d {
+	background: darken($green, 70%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-green-80d {
+	background: darken($green, 80%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-green-90d {
+	background: darken($green, 90%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+
+.bg-gold {
+	background: $gold;
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-gold-10l {
+	background: lighten($gold, 10%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-gold-20l {
+	background: lighten($gold, 20%);
+}
+.bg-gold-30l {
+	background: lighten($gold, 30%);
+}
+.bg-gold-40l {
+	background: lighten($gold, 40%);
+}
+.bg-gold-50l {
+	background: lighten($gold, 50%);
+}
+.bg-gold-60l {
+	background: lighten($gold, 60%);
+}
+.bg-gold-70l {
+	background: lighten($gold, 70%);
+}
+.bg-gold-80l {
+	background: lighten($gold, 80%);
+}
+.bg-gold-90l {
+	background: lighten($gold, 90%);
+}
+.bg-gold-10d {
+	background: darken($gold, 10%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-gold-20d {
+	background: darken($gold, 20%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-gold-30d {
+	background: darken($gold, 30%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-gold-40d {
+	background: darken($gold, 40%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-gold-50d {
+	background: darken($gold, 50%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-gold-60d {
+	background: darken($gold, 60%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-gold-70d {
+	background: darken($gold, 70%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-gold-80d {
+	background: darken($gold, 80%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-gold-90d {
+	background: darken($gold, 90%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+
+.bg-pink {
+	background: $pink;
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-pink-10l {
+	background: lighten($pink, 10%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-pink-20l {
+	background: lighten($pink, 20%);
+}
+.bg-pink-30l {
+	background: lighten($pink, 30%);
+}
+.bg-pink-40l {
+	background: lighten($pink, 40%);
+}
+.bg-pink-50l {
+	background: lighten($pink, 50%);
+}
+.bg-pink-60l {
+	background: lighten($pink, 60%);
+}
+.bg-pink-70l {
+	background: lighten($pink, 70%);
+}
+.bg-pink-80l {
+	background: lighten($pink, 80%);
+}
+.bg-pink-90l {
+	background: lighten($pink, 90%);
+}
+.bg-pink-10d {
+	background: darken($pink, 10%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-pink-20d {
+	background: darken($pink, 20%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-pink-30d {
+	background: darken($pink, 30%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-pink-40d {
+	background: darken($pink, 40%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-pink-50d {
+	background: darken($pink, 50%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-pink-60d {
+	background: darken($pink, 60%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-pink-70d {
+	background: darken($pink, 70%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-pink-80d {
+	background: darken($pink, 80%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}
+.bg-pink-90d {
+	background: darken($pink, 90%);
+	& * {
+		color      : $white;
+		text-shadow: none;
+	}
+}

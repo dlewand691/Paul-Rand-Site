@@ -1,0 +1,66 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'CHANGE_ME'
+    - var bodyID    = 'life'
+    - var bodyClass = 'videos'
+
+block main-content
+    - var nextType             = 'Video'
+    - var nextTitle            = 'CHANGE_ME'
+    - var nextDate             = 'CHANGE_ME'
+    - var nextDescription      = 'CHANGE_ME'
+    - var nextLink             = '/life/videos/'
+
+    - var relatedItemLink1     = '/life/videos/'
+    - var relatedItemTitle1    = 'CHANGE_ME'
+    - var relatedItemFootnote1 = 'CHANGE_ME'
+
+    - var relatedItemLink2     = '/life/videos/'
+    - var relatedItemTitle2    = 'CHANGE_ME'
+    - var relatedItemFootnote2 = 'CHANGE_ME'
+
+    - var relatedItemLink3     = '/life/videos/'
+    - var relatedItemTitle3    = 'CHANGE_ME'
+    - var relatedItemFootnote3 = 'CHANGE_ME'
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                //- ==========  TITLE  ==========
+                .large-8.medium-11.cell
+                    .grid-x.grid-margin-x
+                        .large-12.cell.text-center
+                            h1= pageTitle
+                            p.text-gray.t16: em CHANGE_ME
+
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                ### Steven Heller: Paul Rand: A Designer’s Scribbles
+
+                                Friday, February 8, 2019 at 6:00 PM – 7:15 PM EST  
+                                Helmut Stern Auditorium
+
+            //- ==========  VIDEO  ==========
+            .grid-x.grid-margin-x.align-center
+                .cell.small-mb3
+                    div.plyr-js(data-plyr-embed-id="CHANGE_ME" data-plyr-provider="youtube")
+
+            //- ==========  BODY  ==========
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-9.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        ##### UMMA and Stamps School of Art Design present: Steven Heller: Paul Rand: A Designer’s Scribbles
+
+                        On the occasion of the UMMA exhibition *Paul Rand: A Designer’s Task*, please join noted design writer, author, and educator Steven Heller for his talk “Paul Rand: A Designer’s Scribbles” where he will share never-before-seen sketches by Rand and discuss how they influenced his advertising work.
+
+                        Steven Heller, is the co-chair with Lita Talarico of the MFA Design / Designer as Author + Entrepreneur program and the SVA Masters Workshop in Rome. He writes the Visuals column for The New York Times Book Review, a weekly column for The Atlantic online and The Daily Heller / Imprint online. He has written more than 180 books on graphic design, illustration and political art, including *The Design Entrepreneur* (with Lita Talarico), *Paul Rand*, *Merz to Emigre and Beyond: Avant Garde Magazine Design of the Twentieth Century*, *Design Literacy: Understanding Graphic Design*, *Citizen Designer*, *Stylepedia: A Guide to Graphic Design Mannerisms, Quirks, and Conceits* (with Louise Fili), *The Anatomy of Design: Uncovering the Influences and Inspirations in Modern Graphic Design* (with Mirko Ilic), *Iron Fists: Branding the 20th Century Totalitarian State and 100 Ideas that Changed Graphic Design*. He is/was a contributing editor for Print, Baseline, Design Observer, Eye. Heller is the recipient of the Eric Carle Award, Art Directors Club Special Educators Award, the AIGA Medal for Lifetime Achievement, the School of Visual Arts’ Masters Series Award and the 2011 National Design Award for "Design Mind." He has received two honorary doctorates from The College for Creative Studies in Detroit and The Ladislav Sutnar Faculty at the University of West Bohemia in the Czech Republic.
+
+                        Lead support for *Paul Rand: The Designer's Task* is provided by the Herbert W. and Susan L. Johe Endowment.
+
+
+        //- /*-----  End of BODY  ------*/
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug

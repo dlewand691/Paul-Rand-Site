@@ -1,0 +1,17 @@
+{
+    "src": "./",
+    "dist": "./_BUILD/",
+    "jsBudgetLimit": 200,
+    "jsBudgetPath": "./_BUILD/js/*.js",
+    "manifestPath": "./_BUILD/site.webmanifest",
+    "readableAssets": {
+        "./src/assets/": "/assets/"
+    },
+    "serverScripts": [
+        "start",
+        "dev",
+        "serve",
+        "server",
+        "watch"
+    ]
+}

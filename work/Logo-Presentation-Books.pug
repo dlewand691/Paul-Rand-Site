@@ -1,0 +1,361 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Logo Presentation Books'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = 'CHANGE_ME'
+    - var nextType  = 'CHANGE_ME'
+    - var nextTitle = 'Painting'
+    - var nextLink  = 'Painting'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .large-7.medium-8.small-12.cell
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+
+            //- /*==============================  BOOK COVERS  ==============================*/
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    hr.w100.horizontal-center.hr-red.hr-3.medium-my3
+                    h2 American Express
+                    +galleryItem-blockGrid(
+                        "DIVIDER_no",
+                        "Presentation Booklet, v1",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2001-970.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Presentation Booklet, v1", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2001-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2001.jpg"},
+                        {Title: "Presentation Booklet, v1", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2002-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2002.jpg"},
+                        {Title: "Presentation Booklet, v1", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2003-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2003.jpg"},
+                        {Title: "Presentation Booklet, v1", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2004-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2004.jpg"},
+                        {Title: "Presentation Booklet, v1", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2005-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2005.jpg"},
+                        {Title: "Presentation Booklet, v1", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2006-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2006.jpg"},
+                        {Title: "Presentation Booklet, v1", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2007-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2007.jpg"},
+                        {Title: "Presentation Booklet, v1", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2008-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2008.jpg"},
+                        {Title: "Presentation Booklet, v1", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2009-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2009.jpg"},
+                        {Title: "Presentation Booklet, v1", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2010-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2010.jpg"},
+                        {Title: "Presentation Booklet, v1", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2011-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2011.jpg"},
+                        {Title: "Presentation Booklet, v1", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2012-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2012.jpg"},
+                        {Title: "Presentation Booklet, v1", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2013-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2013.jpg"},
+                        {Title: "Presentation Booklet, v1", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2014-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2014.jpg"},
+                        {Title: "Presentation Booklet, v1", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2015-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2015.jpg"}
+                        )
+
+            .grid-x.grid-margin-x.align-center.small-mb4
+                //- hr.w100.horizontal-center.hr-red.hr-3.medium-my3
+                .small-12.cell.text-center
+                    +galleryItem-blockGrid(
+                        "DIVIDER_no",
+                        "Presentation Booklet, v2",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2001-970.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Presentation Booklet, v2", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2001-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2001.jpg"},
+                        {Title: "Presentation Booklet, v2", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2002-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2002.jpg"},
+                        {Title: "Presentation Booklet, v2", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2003-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2003.jpg"},
+                        {Title: "Presentation Booklet, v2", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2004-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2004.jpg"},
+                        {Title: "Presentation Booklet, v2", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2005-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2005.jpg"},
+                        {Title: "Presentation Booklet, v2", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2006-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2006.jpg"},
+                        {Title: "Presentation Booklet, v2", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2007-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2007.jpg"},
+                        {Title: "Presentation Booklet, v2", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2008-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2008.jpg"},
+                        {Title: "Presentation Booklet, v2", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2009-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2009.jpg"},
+                        {Title: "Presentation Booklet, v2", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2010-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2010.jpg"},
+                        {Title: "Presentation Booklet, v2", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2011-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2011.jpg"},
+                        {Title: "Presentation Booklet, v2", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2012-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2012.jpg"},
+                        {Title: "Presentation Booklet, v2", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2013-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2013.jpg"},
+                        {Title: "Presentation Booklet, v2", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2014-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2014.jpg"},
+                        {Title: "Presentation Booklet, v2", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2015-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2015.jpg"},
+                        {Title: "Presentation Booklet, v2", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2016-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2016.jpg"}
+                        )
+
+
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    hr.w100.horizontal-center.hr-red.hr-3.medium-my3
+                    h2 Atlas Crankshaft
+                    +galleryItem-blockGrid(
+                        "DIVIDER_no",
+                        "",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Atlas Crankshaft", SM: "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2001.jpg"},
+                        {Title: "Atlas Crankshaft", SM: "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2002.jpg"},
+                        {Title: "Atlas Crankshaft", SM: "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2003.jpg"},
+                        {Title: "Atlas Crankshaft", SM: "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2004.jpg"},
+                        {Title: "Atlas Crankshaft", SM: "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2005.jpg"},
+                        {Title: "Atlas Crankshaft", SM: "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2006.jpg"},
+                        {Title: "Atlas Crankshaft", SM: "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2007.jpg"},
+                        {Title: "Atlas Crankshaft", SM: "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2008.jpg"},
+                        {Title: "Atlas Crankshaft", SM: "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2009.jpg"},
+                        {Title: "Atlas Crankshaft", SM: "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2010-450.jpg", LG:"https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2010.jpg"},
+                        {Title: "Atlas Crankshaft", SM: "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2011-450.jpg", LG:"https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2011.jpg"}
+                        )
+
+
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    hr.w100.horizontal-center.hr-red.hr-3.medium-my3
+                    h2 Bureau of Indian Affairs
+                    +galleryItem-blockGrid(
+                        "DIVIDER_no",
+                        "",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Bureau of Indian Affairs", SM: "https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2001.jpg"},
+                        {Title: "Bureau of Indian Affairs", SM: "https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2002.jpg"},
+                        {Title: "Bureau of Indian Affairs", SM: "https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2003.jpg"},
+                        {Title: "Bureau of Indian Affairs", SM: "https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2004.jpg"},
+                        {Title: "Bureau of Indian Affairs", SM: "https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2005.jpg"},
+                        {Title: "Bureau of Indian Affairs", SM: "https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2006.jpg"},
+                        {Title: "Bureau of Indian Affairs", SM: "https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2007.jpg"},
+                        {Title: "Bureau of Indian Affairs", SM: "https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2008.jpg"},
+                        {Title: "Bureau of Indian Affairs", SM: "https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2009.jpg"},
+                        {Title: "Bureau of Indian Affairs", SM: "https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2010-450.jpg", LG:"https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2010.jpg"},
+                        {Title: "Bureau of Indian Affairs", SM: "https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2011-450.jpg", LG:"https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2011.jpg"},
+                        {Title: "Bureau of Indian Affairs", SM: "https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2012-450.jpg", LG:"https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/Web/Bureau%20of%20Indian%20Affairs%2012.jpg"}
+                        )
+
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    hr.w100.horizontal-center.hr-red.hr-3.medium-my3
+                    h2 Cummins
+                    +galleryItem-blockGrid(
+                        "DIVIDER_no",
+                        "Iron Cross Version",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Iron Cross Version", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2001.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2001.jpg"},
+                        {Title: "Iron Cross Version", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2002.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2002.jpg"},
+                        {Title: "Iron Cross Version", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2003.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2003.jpg"},
+                        {Title: "Iron Cross Version", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2004.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2004.jpg"},
+                        {Title: "Iron Cross Version", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2005.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2005.jpg"},
+                        {Title: "Iron Cross Version", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2006.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2006.jpg"},
+                        {Title: "Iron Cross Version", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2007.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2007.jpg"},
+                        {Title: "Iron Cross Version", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2008.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2008.jpg"},
+                        {Title: "Iron Cross Version", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2009.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2009.jpg"},
+                        {Title: "Iron Cross Version", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2010.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2010.jpg"},
+                        {Title: "Iron Cross Version", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2011.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2011.jpg"},
+                        {Title: "Iron Cross Version", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2012.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2012.jpg"},
+                        {Title: "Iron Cross Version", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2013.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2013.jpg"},
+                        {Title: "Iron Cross Version", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2014.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2014.jpg"},
+                        {Title: "Iron Cross Version", SM: "https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2015.jpg", LG:"https://assets.paulrand.design/Works/Cummins/Logo%20Presentation%20Book/v1%20Iron%20Cross/Web/Cummins%2015.jpg"}
+                        )
+
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    hr.w100.horizontal-center.hr-red.hr-3.medium-my3
+                    h2 English First
+                    +galleryItem-blockGrid(
+                        "DIVIDER_no",
+                        "",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2001-970.jpg", LG:"https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "English First", SM: "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2001-450.jpg", LG:"https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2001.jpg"},
+                        {Title: "English First", SM: "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2002-450.jpg", LG:"https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2002.jpg"},
+                        {Title: "English First", SM: "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2003-450.jpg", LG:"https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2003.jpg"},
+                        {Title: "English First", SM: "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2004-450.jpg", LG:"https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2004.jpg"},
+                        {Title: "English First", SM: "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2005-450.jpg", LG:"https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2005.jpg"},
+                        {Title: "English First", SM: "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2006-450.jpg", LG:"https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2006.jpg"},
+                        {Title: "English First", SM: "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2007-450.jpg", LG:"https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2007.jpg"},
+                        {Title: "English First", SM: "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2008-450.jpg", LG:"https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2008.jpg"},
+                        {Title: "English First", SM: "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2009-450.jpg", LG:"https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2009.jpg"},
+                        {Title: "English First", SM: "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2010-450.jpg", LG:"https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2010.jpg"},
+                        {Title: "English First", SM: "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2011-450.jpg", LG:"https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2011.jpg"},
+                        {Title: "English First", SM: "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2012-450.jpg", LG:"https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2012.jpg"}
+                        )
+
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    hr.w100.horizontal-center.hr-red.hr-3.medium-my3
+                    h2 Ford Motor Company
+                    +galleryItem-blockGrid(
+                        "DIVIDER_no",
+                        "",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Ford Motor Company", SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2001.jpg"},
+                        {Title: "Ford Motor Company", SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2002.jpg"},
+                        {Title: "Ford Motor Company", SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2003.jpg"},
+                        {Title: "Ford Motor Company", SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2004.jpg"},
+                        {Title: "Ford Motor Company", SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2005.jpg"},
+                        {Title: "Ford Motor Company", SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2006.jpg"},
+                        {Title: "Ford Motor Company", SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2007.jpg"},
+                        {Title: "Ford Motor Company", SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2008.jpg"},
+                        {Title: "Ford Motor Company", SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2009.jpg"},
+                        {Title: "Ford Motor Company", SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2010-450.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2010.jpg"},
+                        {Title: "Ford Motor Company", SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2011-450.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2011.jpg"},
+                        {Title: "Ford Motor Company", SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2012-450.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2012.jpg"},
+                        {Title: "Ford Motor Company", SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2013-450.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2013.jpg"},
+                        {Title: "Ford Motor Company", SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2014-450.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2014.jpg"},
+                        {Title: "Ford Motor Company", SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2015-450.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2015.jpg"},
+                        {Title: "Ford Motor Company", SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2016-450.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2016.jpg"},
+                        {Title: "Ford Motor Company", SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2017-450.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2017.jpg"},
+                        {Title: "Ford Motor Company", SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2018-450.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2018.jpg"},
+                        {Title: "Ford Motor Company", SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2019-450.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2019.jpg"},
+                        {Title: "Ford Motor Company", SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2020-450.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2020.jpg"},
+                        {Title: "Ford Motor Company", SM: "https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2021-450.jpg", LG:"https://assets.paulrand.design/Works/Ford/Logo%20Presentation%20Book/Web/Ford%2C%20logo%20presentation%20book%2021.jpg"}
+                        )
+
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    hr.w100.horizontal-center.hr-red.hr-3.medium-my3
+                    h2 IITRI
+                    +galleryItem-blockGrid(
+                        "DIVIDER_no",
+                        "",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/IITRI/Web/IITRI%2001-970.jpg", LG:"https://assets.paulrand.design/Works/IITRI/Web/IITRI%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "IITRI", SM: "https://assets.paulrand.design/Works/IITRI/Web/IITRI%2001-450.jpg", LG:"https://assets.paulrand.design/Works/IITRI/Web/IITRI%2001.jpg"},
+                        {Title: "IITRI", SM: "https://assets.paulrand.design/Works/IITRI/Web/IITRI%2002-450.jpg", LG:"https://assets.paulrand.design/Works/IITRI/Web/IITRI%2002.jpg"},
+                        {Title: "IITRI", SM: "https://assets.paulrand.design/Works/IITRI/Web/IITRI%2003-450.jpg", LG:"https://assets.paulrand.design/Works/IITRI/Web/IITRI%2003.jpg"},
+                        {Title: "IITRI", SM: "https://assets.paulrand.design/Works/IITRI/Web/IITRI%2004-450.jpg", LG:"https://assets.paulrand.design/Works/IITRI/Web/IITRI%2004.jpg"},
+                        {Title: "IITRI", SM: "https://assets.paulrand.design/Works/IITRI/Web/IITRI%2005-450.jpg", LG:"https://assets.paulrand.design/Works/IITRI/Web/IITRI%2005.jpg"},
+                        {Title: "IITRI", SM: "https://assets.paulrand.design/Works/IITRI/Web/IITRI%2006-450.jpg", LG:"https://assets.paulrand.design/Works/IITRI/Web/IITRI%2006.jpg"},
+                        {Title: "IITRI", SM: "https://assets.paulrand.design/Works/IITRI/Web/IITRI%2007-450.jpg", LG:"https://assets.paulrand.design/Works/IITRI/Web/IITRI%2007.jpg"},
+                        {Title: "IITRI", SM: "https://assets.paulrand.design/Works/IITRI/Web/IITRI%2008-450.jpg", LG:"https://assets.paulrand.design/Works/IITRI/Web/IITRI%2008.jpg"},
+                        {Title: "IITRI", SM: "https://assets.paulrand.design/Works/IITRI/Web/IITRI%2009-450.jpg", LG:"https://assets.paulrand.design/Works/IITRI/Web/IITRI%2009.jpg"},
+                        {Title: "IITRI", SM: "https://assets.paulrand.design/Works/IITRI/Web/IITRI%2010-450.jpg", LG:"https://assets.paulrand.design/Works/IITRI/Web/IITRI%2010.jpg"},
+                        {Title: "IITRI", SM: "https://assets.paulrand.design/Works/IITRI/Web/IITRI%2011-450.jpg", LG:"https://assets.paulrand.design/Works/IITRI/Web/IITRI%2011.jpg"},
+                        {Title: "IITRI", SM: "https://assets.paulrand.design/Works/IITRI/Web/IITRI%2012-450.jpg", LG:"https://assets.paulrand.design/Works/IITRI/Web/IITRI%2012.jpg"},
+                        {Title: "IITRI", SM: "https://assets.paulrand.design/Works/IITRI/Web/IITRI%2013-450.jpg", LG:"https://assets.paulrand.design/Works/IITRI/Web/IITRI%2013.jpg"}
+                        )
+
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    hr.w100.horizontal-center.hr-red.hr-3.medium-my3
+                    h2 Morningstar
+                    +galleryItem-blockGrid(
+                        "DIVIDER_no",
+                        "",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Morningstar", SM: "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2001.jpg", LG:"https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2001.jpg"},
+                        {Title: "Morningstar", SM: "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2002.jpg", LG:"https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2002.jpg"},
+                        {Title: "Morningstar", SM: "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2003.jpg", LG:"https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2003.jpg"},
+                        {Title: "Morningstar", SM: "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2004.jpg", LG:"https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2004.jpg"},
+                        {Title: "Morningstar", SM: "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2005.jpg", LG:"https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2005.jpg"},
+                        {Title: "Morningstar", SM: "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2006.jpg", LG:"https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2006.jpg"},
+                        {Title: "Morningstar", SM: "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2007.jpg", LG:"https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2007.jpg"},
+                        {Title: "Morningstar", SM: "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2008.jpg", LG:"https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2008.jpg"},
+                        {Title: "Morningstar", SM: "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2009.jpg", LG:"https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2009.jpg"}
+                        )
+
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    hr.w100.horizontal-center.hr-red.hr-3.medium-my3
+                    h2 NeXT Computers
+                    +galleryItem-blockGrid(
+                        "DIVIDER_no",
+                    "",
+                    "top","1","1",
+                    {SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2001-970.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2001.jpg", title: "", footnote: ""}
+                    )
+                    +carouselImages(
+                    "View More",
+                    "",
+                    {Title: "NeXT Computers", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2001.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2001.jpg"},
+                    {Title: "NeXT Computers", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2002.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2002.jpg"},
+                    {Title: "NeXT Computers", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2003.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2003.jpg"},
+                    {Title: "NeXT Computers", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2004.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2004.jpg"},
+                    {Title: "NeXT Computers", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2005.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2005.jpg"},
+                    {Title: "NeXT Computers", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2006.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2006.jpg"},
+                    {Title: "NeXT Computers", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2007.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2007.jpg"},
+                    {Title: "NeXT Computers", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2008.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2008.jpg"},
+                    {Title: "NeXT Computers", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2009.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2009.jpg"},
+                    {Title: "NeXT Computers", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2010.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2010.jpg"},
+                    {Title: "NeXT Computers", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2011.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2011.jpg"},
+                    {Title: "NeXT Computers", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2012.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2012.jpg"},
+                    {Title: "NeXT Computers", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2013.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2013.jpg"}
+                    )
+
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    hr.w100.horizontal-center.hr-red.hr-3.medium-my3
+                    h2 The Limited
+                    +galleryItem-blockGrid(
+                        "DIVIDER_no",
+                    "",
+                    "top","1","1",
+                    {SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2001-970.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2001.jpg", title: "", footnote: ""}
+                    )
+                    +carouselImages(
+                    "View More",
+                    "",
+                    {Title: "The Limited", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2001-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2001.jpg"},
+                    {Title: "The Limited", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2002-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2002.jpg"},
+                    {Title: "The Limited", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2003-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2003.jpg"},
+                    {Title: "The Limited", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2004-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2004.jpg"},
+                    {Title: "The Limited", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2005-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2005.jpg"},
+                    {Title: "The Limited", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2006-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2006.jpg"},
+                    {Title: "The Limited", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2007-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2007.jpg"},
+                    {Title: "The Limited", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2008-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2008.jpg"},
+                    {Title: "The Limited", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2009-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2009.jpg"},
+                    {Title: "The Limited", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2010-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2010.jpg"},
+                    {Title: "The Limited", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2011-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2011.jpg"},
+                    {Title: "The Limited", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2012-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2012.jpg"},
+                    {Title: "The Limited", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2013-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2013.jpg"},
+                    {Title: "The Limited", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2014-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2014.jpg"},
+                    {Title: "The Limited", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2015-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2015.jpg"}
+                    )
+
+
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

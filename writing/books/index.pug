@@ -1,0 +1,188 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Books'
+    - var bodyID    = 'writing'
+    - var bodyClass = 'books'
+
+block main-content
+    .cd-main-content
+        .grid-container
+            //- ======================================
+            //- =			GALLERY MEDIUM			=
+            //- ======================================
+
+            .grid-x.grid-margin-x.expanded.align-center
+                .cell
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom Books by Paul Rand
+
+                    a.card.card-medium.medium-mt4.small-p1.large-p2.reveal-enter-bottom(href="this-is-the-stafford-stallion.html")
+                        .card-section
+                            img.w100(src="https://assets.paulrand.design/Writing/Books/1944%20This%E2%80%A6Is%20the%20Stafford%20Stallion/Web/This...%20Is%20the%20Stafford%20Stallion%20front-450.jpg" alt="This…Is the Stafford Stallion")
+                        .card-section
+                            p.small-m0 This…Is the Stafford Stallion
+                                br
+                            small.footnote 1944
+
+                    a.card.card-large.small-p1.large-p2.reveal-enter-bottom(href="thoughts-on-design-1st-edition.html")
+                        .card-section
+                            img.w100(src="https://assets.paulrand.design/Writing/Books/1947%20Thoughts%20on%20Design%2C%201st%20edition/Web/Thoughts%20on%20Design%2C%201st%20edition%2C%20front-450.jpg" alt="Thoughts on Design")
+                        .card-section
+                            p.small-m0 Thoughts on Design
+                                br
+                            small.footnote 1947, 1st edition
+
+                    a.card.card-medium.medium-mt4.small-p1.large-p2.reveal-enter-bottom(href="thoughts-on-design-2nd-edition.html")
+                        .card-section
+                            img.w100(src="https://assets.paulrand.design/Writing/Books/1951%20Thoughts%20on%20Design%2C%202nd%20edition/Web/Thoughts%20on%20Design%2C%202nd%20edition%2C%20front-450.jpg" alt="Thoughts on Design")
+                        .card-section
+                            p.small-m0 Thoughts on Design
+                                br
+                            small.footnote 1951, 2nd edition
+
+                    a.card.card-small.medium-mtn2.small-p1.large-p2.reveal-enter-bottom(href="trademark-design.html")
+                        .card-section
+                            img.w100(src="https://assets.paulrand.design/Writing/Books/1951%20Trademark%20Design/Web/Trademark%20Design%2C%201951-450.jpg" alt="Trademark Design")
+                        .card-section
+                            p.small-m0 Trademark Design
+                                br
+                                small.footnote 1951, unpublished
+
+                    a.card.card-large.medium-mtn2.small-p1.large-p2.reveal-enter-bottom(href="sparkle-and-spin.html")
+                        .card-section
+                            img.w100(src="https://assets.paulrand.design/Writing/Books/1957%20Sparkle%20and%20Spin/jpegs/sparkle%20front-800.jpg" alt="Sparkle and Spin")
+                        .card-section
+                            p.small-m0 Sparkle and Spin
+                                br
+                                small.footnote 1956
+
+                    a.card.card-large.medium-mtn1.large-offset-0.small-p1.large-p2.reveal-enter-bottom(href="i-know-a-lot-of-things.html")
+                        .card-section
+                            img.w100(src="https://assets.paulrand.design/Writing/Books/1956%20I%20Know%20a%20Lot%20of%20Things/jpegs/i%20know%20front-800.jpg" alt="I Know a Lot of Things")
+                        .card-section
+                            p.small-m0 I Know a Lot of Things
+                                br
+                                small.footnote 1957
+
+                    a.card.card-medium.medium-mt8.small-p1.large-p2.reveal-enter-bottom(href="the-trademarks-of-paul-rand.html")
+                        .card-section
+                            img.w100(src="https://assets.paulrand.design/Writing/Books/1960%20The%20Trademarks%20of%20Paul%20Rand%20-%20A%20Selection/Web/The%20Trademarks%20of%20Paul%20Rand%20-%20A%20Selection-450.jpg" alt="The Trademarks of Paul Rand — A Selection")
+                        .card-section
+                            p.small-m0 The Trademarks of Paul Rand — A Selection
+                                br
+                            small.footnote 1960
+
+                    a.card.card-medium.medium-mtn3.large-offset-2.medium-offset-1.small-p1.large-p2.reveal-enter-bottom(href="little-1.html")
+                        .card-section
+                            img.w100(src="https://assets.paulrand.design/Writing/Books/1962%20Little%201/jpegs/little%20front-450.jpg" alt="Little 1")
+                        .card-section
+                            p.small-m0 Little 1
+                                br
+                                small.footnote 1962
+
+                    a.card.card-medium.small-p1.large-p2.medium-mtn2.reveal-enter-bottom(href="listen-listen.html")
+                        .card-section
+                            img.w100(src="https://assets.paulrand.design/Writing/Books/1970%20Listen%21%20Listen%21/jpegs/listen%20front-800.jpg" alt="Listen! Listen!")
+                        .card-section
+                            p.small-m0 Listen! Listen!
+                                br
+                                small.footnote 1970
+
+                    a.card.card-large.medium-mtn3.medium-offset-1.small-p1.large-p2.reveal-enter-bottom(href="thoughts-on-design-3rd-edition.html")
+                        .card-section
+                            img.w100(src="https://assets.paulrand.design/Writing/Books/1970%20Thoughts%20on%20Design%2C%203rd%20edition/Web/Thoughts%20on%20Design%203rd%20edition%2C%20front%2C%20no%20jacket-450.jpg" alt="Thoughts on Design")
+                        .card-section
+                            p.small-m0 Thoughts on Design
+                                br
+                            small.footnote 1970, 3rd edition
+
+                    a.card.card-medium.medium-mtn3.large-offset-2.medium-offset-1.small-p1.large-p2.reveal-enter-bottom(href="unpublished-book.html")
+                        .card-section
+                            img.w100(src="https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2001-450.jpg" alt="Unpubished Book")
+                        .card-section
+                            p.small-m0 Unpublished Book
+                                br
+                                small.footnote Date unknown
+
+                    a.card.card-medium.medium-mt4.small-p1.large-p2.reveal-enter-bottom(href="a-paul-rand-miscellany.html")
+                        .card-section
+                            img.w100(src="https://assets.paulrand.design/Writing/Books/1984%20A%20Paul%20Rand%20Miscellany/jpegs/miscellany%20front-450.jpg" alt="footnote 1984")
+                        .card-section
+                            p.small-m0 A Paul Rand Miscellany
+                                br
+                                small.footnote 1984
+
+                    a.card.card-large.medium-mtn2.small-p1.large-p2.reveal-enter-bottom(href="a-designers-art.html")
+                        .card-section
+                            img.w100(src="https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/designers%20art%20front-450.jpg" alt="A Designer’s Art")
+                        .card-section
+                            p.small-m0 A Designer’s Art
+                                br
+                                small.footnote 1985
+
+                    a.card.card-small.medium-mt4.small-p1.large-p2.reveal-enter-bottom(href="good-design-is-good-will.html")
+                        .card-section
+                            img.w100(src="https://assets.paulrand.design/Writing/Books/1987%20Good%20Design%20is%20Good%20Will/jpegs/good%20design%20front-450.jpg" alt="Good Design is Good Will")
+                        .card-section
+                            p.small-m0 Good Design is Good Will
+                                br
+                                small.footnote 1987
+
+                    a.card.card-small.medium-mtn2.medium-ml4.large-offset-1.medium-offset-1.small-p1.large-p2.reveal-enter-bottom(href="some-thoughts-some-logos.html")
+                        .card-section
+                            img.w100(src="https://assets.paulrand.design/Writing/Books/1991%20Some%20Thoughts%20Some%20Logos/Web/Some-Thoughts-Some-Logos-450.jpg" alt="Some Thoughts Some Logos")
+                        .card-section
+                            p.small-m0 Some Thoughts Some Logos
+                                br
+                                small.footnote 1991
+
+                    a.card.card-medium.medium-mt4.small-p1.large-p2.reveal-enter-bottom(href="some-thoughts-some-tribulations.html")
+                        .card-section
+                            img.w100(src="https://assets.paulrand.design/Writing/Books/1991%20Some%20Thoughts%E2%80%A6%20and%20Some%20Tribulations%20about%20the%20Design%20of%20a%20Logo/Web/Some-Thoughts-and-Some-Tribulations-about-the-Design-of-a-Logo-450.jpg" alt="Some Thoughts… and Some Tribulations about the Design of a Logo")
+                        .card-section
+                            p.small-m0 Some Thoughts… and Some Tribulations about the Design of a Logo
+                                br
+                            small.footnote 1991
+
+                    a.card.card-small.medium-mtn6.small-p1.large-p2.reveal-enter-bottom(href="from-cassandre-to-chaos.html")
+                        .card-section
+                            img.w100(src="https://assets.paulrand.design/Writing/Books/1992%20From%20Cassandre%20to%20Chaos/Web/From-Cassandre-to-Chaos-450.jpg" alt="From Cassandre to Chaos")
+                        .card-section
+                            p.small-m0 From Cassandre to Chaos
+                                br
+                                small.footnote 1992
+
+                    a.card.card-large.medium-mtn2.small-p1.large-p2.reveal-enter-bottom(href="design-form-and-chaos.html")
+                        .card-section
+                            img.w100(src="https://assets.paulrand.design/Writing/Books/1993%20Design%20Form%20and%20Chaos/jpegs/design%20form%20chaos%20front-450.jpg" alt="Design Form and Chaos")
+                        .card-section
+                            p.small-m0 Design Form and Chaos
+                                br
+                            small.footnote 1993
+
+                    a.card.card-large.medium-mt4.small-p1.large-p2.reveal-enter-bottom(href="from-lascaux-to-brooklyn.html")
+                        .card-section
+                            img.w100(src="https://assets.paulrand.design/Writing/Books/1996%20From%20Lascaux%20to%20Brooklyn/Web/From%20Lascaux%20to%20Brooklyn,%20front-450.jpg" alt="From Lascaux to Brooklyn")
+                        .card-section
+                            p.small-m0 From Lascaux to Brooklyn
+                                br
+                            small.footnote 1996
+
+                    a.card.card-medium.medium-mtn2.small-p1.large-p2.reveal-enter-bottom(href="thoughts-on-design-4th-edition.html")
+                        .card-section
+                            img.w100(src="https://assets.paulrand.design/Writing/Books/2014%20Thoughts%20on%20Design%2C%204th%20Edition/Web/Thoughts%20on%20Design%204th%20edition%2C%20front-450.jpg" alt="Thoughts on Design")
+                        .card-section
+                            p.small-m0 Thoughts on Design
+                                br
+                            small.footnote 2014, 4th edition
+
+                    a.card.card-medium.medium-offset-4.medium-mr10.medium-mtn2.small-p1.large-p2.reveal-enter-bottom(href="a-designers-art.html")
+                        .card-section
+                            img.w100(src="https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/jpegs/designers%20art%20front-450.jpg" alt="A Designer’s Art (Reissue)")
+                        .card-section
+                            p.small-m0 A Designer’s Art (Reissue)
+                                br
+                                small.footnote 2016
+
+            //- /*-----  End of GALLERY MEDIUM  ------*/

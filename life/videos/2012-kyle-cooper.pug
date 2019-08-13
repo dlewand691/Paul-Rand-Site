@@ -1,0 +1,64 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Kyle Cooper - Studying under Paul Rand'
+    - var bodyID    = 'life'
+    - var bodyClass = 'videos'
+
+block main-content
+    - var nextType             = 'Video'
+    - var nextTitle            = 'MODA Design Conversations with David Laufer'
+    - var nextDate             = '2013'
+    - var nextDescription      = 'David Laufer discusses his book “Aha Moments”'
+    - var nextLink             = '/life/videos/2013-MODA-design-conversations.html'
+
+    - var relatedItemLink1     = '/life/videos/1960-graphic-design-at-yale.html'
+    - var relatedItemTitle1    = 'Graphic Design at Yale'
+    - var relatedItemFootnote1 = 'Rand critiques student work and discusses the design program at Yale.'
+
+    - var relatedItemLink2     = '/life/videos/1996-conversations-with-paul-rand.html'
+    - var relatedItemTitle2    = 'Conversations with Paul Rand'
+    - var relatedItemFootnote2 = 'A Film by Preston McClanahan'
+
+    - var relatedItemLink3     = '/life/videos/1996-MIT.html'
+    - var relatedItemTitle3    = 'MIT interview with John Maeda'
+    - var relatedItemFootnote3 = 'Rand’s final public appearance before his death.'
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                //- ==========  TITLE  ==========
+                .large-8.medium-11.cell
+                    .grid-x.grid-margin-x
+                        .large-12.cell.text-center
+                            h1= pageTitle
+                            p.text-gray.t16: em 2012
+
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+
+            //- ==========  VIDEO  ==========
+            .grid-x.grid-margin-x.align-center
+                .large-12.cell
+                    .small-mb3
+                        div.plyr-js(data-plyr-embed-id="43943315" data-plyr-provider="vimeo")
+
+                    //- .flex-video
+                    //-     iframe(src='//player.vimeo.com/video/43943315', width='500', height='281', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+
+            //- ==========  BODY  ==========
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-9.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Famed video producer Kyle Cooper discusses what it was like being a student of Paul Rand.
+
+                        Part of the *State of the Industry Speaker Series*  
+                        Made possible through the generosity of the Brenden Mann Foundation.  
+                        Presented by the Center for Entertainment, Media, &amp; Culture at Pepperdine University.
+
+
+            //- /*-----  End of BODY  ------*/
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug

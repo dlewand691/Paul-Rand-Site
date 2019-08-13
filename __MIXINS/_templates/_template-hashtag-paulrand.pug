@@ -1,0 +1,30 @@
+doctype html
+html.no-js(lang='en' dir='ltr')
+
+    include ../../__MIXINS/_include-head.pug
+
+    body#work(data-grid-framework="f4" data-grid-color="pink" data-grid-opacity="0.2" data-grid-zindex="10" data-grid-gutterwidth="30px" data-grid-nbcols="12")
+        .animsition
+            include ../../__MIXINS/_include-headerNav-secondaryNav.pug
+
+            .cd-main-content
+
+                //- ========================================
+                //- =            1 COLUMN CONTENT            =
+                //- ========================================
+
+                .grid-x.grid-margin-x
+                    .small-12.cell
+                        h1.reveal-enter-bottom #PaulRand
+
+                        h3 All things Rand around the web
+
+                        // iframe(src="//tgb.io/paulrand/226460")
+
+
+
+                //- -----  End of 1 COLUMN CONTENT  ------
+
+            include ../../__MIXINS/_include-footer.pug
+
+        include ../../__MIXINS/_include-closingScript.pug 

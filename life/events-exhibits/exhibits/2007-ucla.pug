@@ -1,0 +1,100 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'AIGA/LA and UCLA Extension Presents Graphic Design Exhibition of Seventeen Years of Award-Winning Covers'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'Pacific Design Center'
+    - var pageSubtitle2         = 'June 9 – August 31, 2007'
+
+    - var nextType              = 'Exhibit'
+    - var nextTitle             = 'bRANDs: The Early Years'
+    - var nextDate              = '2011'
+    - var nextLink              = '2011-brands'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2014-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2015-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2016-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2016.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2017-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2017.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2018-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2018.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2019-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2019.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2020-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2020.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2021-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2007%20Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design/Web/Catalog%20Covers%20of%20UCLA%20Extension%2C%20Masters%20of%20Graphic%20Design%2021.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Fifteen years ago, InJu Sturgeon, UCLA Extension’s creative director, approached the man who was then one of the most revered names in graphic design with a request that even she considered laughable for its audacity.
+
+                        Sturgeon told artist Paul Rand that Extension was launching a series of catalog covers by master graphic designers. Would he create the inaugural cover, she asked. She could reimburse the designer for expenses, but otherwise she had no budget to pay him for his work, she told him. What’s more, she added, she needed the cover immediately.
+
+                        Rand, then age 75, was responsible for many of corporate America’s most recognizable logos, among them, those of IBM, ABC and UPS. He had long since wearied of pro bono work and told Sturgeon as much. Undeterred, Sturgeon persisted. She told Rand that what she had in mind were not just catalog covers but works of public art that would be seen and enjoyed by the hundreds of thousands of people who pick up UCLA Extension catalogs, the listings of more than 1,000 courses offered each quarter of the academic year.
+
+                        Sturgeon eventually won over Rand, and the designer’s simple yet striking image for the Winter Quarter 1990 catalog — a snow-capped orange — kicked off a cover series that has succeeded beyond the director’s wildest expectations.
+
+                        As proof, the 58 covers in the masters series will be celebrated as works of art at a New York gallery exhibit, “Masters of Graphic Design: Catalog Covers of UCLA Extension (1990-2004).” Hosted by the American Institute of Graphic Arts (AIGA), the exhibit will be March 24-May 15 at the institute’s National Design Center. A book on the series is forthcoming.
+
+                        The covers, which showcase images of soaring kites, surfboards and a bouncing bear, are witty and inventive while making a statement about the life-enriching opportunities that await Extension students. Cover artists are pretty much given a free hand in coming up with concepts. Designer Lou Danziger made a visual pun with his cover — a photograph of a fully extended stepladder leaning against a grimy, graffiti-scarred building.
+
+                        “The artists themselves are inspired by the evergreen ideas that enliven our practice of continuing education and lifelong learning,” said Dean Robert Lapiner of Continuing Education and UCLA Extension. For some, the catalogs have become ersatz coffee table books. Many covers live on as framed posters that grace homes and offices, including the chancellor’s suite in Murphy Hall. Since 1990, the series has won more than 70 awards.
+
+                    blockquote “UCLA brochures have achieved iconic status in the graphic design community,” said Richard Grefe, AIGA executive director.
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        With Rand on board, Sturgeon had little trouble recruiting other big names in the design world. The exhibit includes works by the late Saul Bass, whose designs for film titles such as “Vertigo” and “Psycho” revolutionized the genre; the late Bradbury Thompson, responsible for the design of Smithsonian Magazine; and Danziger, whose catalog covers helped propel the Los Angeles County Museum of Art to prominence. The architect Frank Gehry collaborated on a cover with his son Sam. Rand designed three covers before his death in 1996.
+
+                        Today, Sturgeon no longer pleads and cajoles on the telephone; the best in the business call her asking to design a cover. “It’s a big, big thing, and everybody wants to be included,” she said.
+
+                        “Masters of Graphic Design: Catalog Covers of UCLA Extension (1990-2007)” features the work of world-famous graphic designers: Paul Rand, Lou Danziger, Bradbury Thompson, Don Morris, Gene Federico, Woody Pirtle, James Cross, Eiko Ishioka, April Greiman, Ken Parkhurst, Armin Hofmann, Ivan Chermayeff, Milton Glaser, Peter Good, Paula Scher, Saul Bass, Takenobu Igarashi, Deborah Sussman, Vladimir Davydov, Rosmarie Tissi, Michael Vanderbyl, Keith Bright, John Coy, Primo Angeli, Leo Lionni, Joan Libera, George Tscherney, Joe Molloy, Roland Young, Henry Wolf, John Clark, James Miho, John Plunkett, Lou Dorfsman, Seymour Chwast, Lee Clow, Arnold Schwartzman, Margo Chase, Clement Mok, Rod Dyer, Scott Mednick, Wolfgang Weingart, T. Wayne Hunt, Alan Fletcher, David Carson, Michael Bierut, Noreen Morioka, Sam and Frank Gehry, Lucille Tenazas, Alexander Gelman, Sean Adams, John Maeda, Bill Brown, Rebeca Mendez, Michael Hodgson, Douglas Boyd, Dana Arnett, Kim Baer, Steff Geissbuhler, Agustin Garza, and Bart Crosby.
+
+
+                        ### Gallery Information
+
+                        Pacific Design Center  
+                        8687 Melrose Avenue  
+                        West Hollywood, CA 90069
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

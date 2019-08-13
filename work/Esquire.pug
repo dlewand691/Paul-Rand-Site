@@ -1,0 +1,401 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Esquire Magazine'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = 'CHANGE_ME'
+    - var nextType  = 'Client'
+    - var nextTitle = 'Flair Magazine'
+    - var nextLink  = 'Flair-Magazine'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Advertising",
+                        "top","2","2",
+                        {SM: "https://assets.paulrand.design/Works/Esquire/Advertising/Web/Esquire%20Ad%2001-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Advertising/Web/Esquire%20Ad%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Esquire/Advertising/Web/Esquire%20Ad%2004%20Salesman-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Advertising/Web/Esquire%20Ad%2004%20Salesman.jpg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Christmas Fair",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Esquire/Christmas%20Fair/Web/Esquire%20Christmas%2001.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Christmas%20Fair/Web/Esquire%20Christmas%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Christmas Fair", SM: "https://assets.paulrand.design/Works/Esquire/Christmas%20Fair/Web/Esquire%20Christmas%2001-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Christmas%20Fair/Web/Esquire%20Christmas%2001.jpg"},
+                        {Title: "Christmas Fair", SM: "https://assets.paulrand.design/Works/Esquire/Christmas%20Fair/Web/Esquire%20Christmas%2002-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Christmas%20Fair/Web/Esquire%20Christmas%2002.jpg"},
+                        {Title: "Christmas Fair", SM: "https://assets.paulrand.design/Works/Esquire/Christmas%20Fair/Web/Esquire%20Christmas%2003-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Christmas%20Fair/Web/Esquire%20Christmas%2003.jpg"},
+                        {Title: "Christmas Fair", SM: "https://assets.paulrand.design/Works/Esquire/Christmas%20Fair/Web/Esquire%20Christmas%2004-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Christmas%20Fair/Web/Esquire%20Christmas%2004.jpg"}
+                        )
+
+                    +projectDivider("Collateral")
+                    .grid-x.grid-margin-x
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20brochure%201938-200.jpg",
+                            LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20brochure%201938.jpg",
+                            title: "Brochure",
+                            footnote1: "1938",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20folder%2C%202%20of%2012-200.jpg",
+                            LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20folder%2C%202%20of%2012.jpg",
+                            title: "Folder “2 of 12”",
+                            footnote1: "CHANGE_ME",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20folder%2C%20Vacation%20Editorial%20Features-200.jpg",
+                            LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20folder%2C%20Vacation%20Editorial%20Features.jpg",
+                            title: "Vacation Editorial Features",
+                            footnote1: "Folder",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20Index%20spread%2C%20v1-200.jpg",
+                            LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20Index%20spread%2C%20v1.jpg",
+                            title: "Esquire Index, v1",
+                            footnote1: "CHANGE_ME",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20Index%20spread%2C%20v2-200.jpg",
+                            LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20Index%20spread%2C%20v2.jpg",
+                            title: "Esquire Index, v2",
+                            footnote1: "CHANGE_ME",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20London%20Guide%20booklet-200.jpg",
+                            LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20London%20Guide%20booklet.jpg",
+                            title: "London Guide Booklet",
+                            footnote1: "CHANGE_ME",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20London%20Portfolio-200.jpg",
+                            LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20London%20Portfolio.jpg",
+                            title: "London Portfolio",
+                            footnote1: "CHANGE_ME",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20Program%20Cover-200.jpg",
+                            LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20Program%20Cover.jpg",
+                            title: "Program Cover",
+                            footnote1: "CHANGE_ME",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20Ski-200.jpg",
+                            LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20Ski.jpg",
+                            title: "Ski",
+                            footnote1: "CHANGE_ME",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20University%20Guide-200.jpg",
+                            LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20University%20Guide.jpg",
+                            title: "University Guide",
+                            footnote1: "CHANGE_ME",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20Wedding%20Guide-200.jpg",
+                            LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20Wedding%20Guide.jpg",
+                            title: "Wedding Guide",
+                            footnote1: "CHANGE_ME",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Esquire/Illustrations/Web/Esquire%20Illustration%2001-%20Rye-200.jpg",
+                            LG: "https://assets.paulrand.design/Works/Esquire/Illustrations/Web/Esquire%20Illustration%2001-%20Rye.jpg",
+                            title: "Spot Illustrations",
+                            footnote1: "3 Images",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Spot Illustrations", hideMe: "https://assets.paulrand.design/Works/Esquire/Illustrations/Web/Esquire%20Illustration%2002-%20Canapes.jpg"},
+                            {title: "Spot Illustrations", hideMe: "https://assets.paulrand.design/Works/Esquire/Illustrations/Web/Esquire%20Illustration%2003-%20Cognac.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Esquire/June%20Boon/Web/Esquire%20June%20Boon%2001-200.jpg",
+                            LG: "https://assets.paulrand.design/Works/Esquire/June%20Boon/Web/Esquire%20June%20Boon%2001.jpg",
+                            title: "June Boon",
+                            footnote1: "CHANGE_ME",
+                            footnote2: "CHANGE_ME"
+                            })
+
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Fashion Forum Seminar",
+                        "middle", "1", "1",
+                        {SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title:"Fashion Forum Seminar", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2001-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2001.jpg"},
+                        {Title:"Fashion Forum Seminar", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2002-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2002.jpg"},
+                        {Title:"Fashion Forum Seminar", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2003-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2003.jpg"},
+                        {Title:"Fashion Forum Seminar", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2004-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2004.jpg"},
+                        {Title:"Fashion Forum Seminar", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2005-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2005.jpg"},
+                        {Title:"Fashion Forum Seminar", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2006-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2006.jpg"},
+                        {Title:"Fashion Forum Seminar", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2007-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2007.jpg"},
+                        {Title:"Fashion Forum Seminar", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2008-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2008.jpg"},
+                        {Title:"Fashion Forum Seminar", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2009-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2009.jpg"},
+                        {Title:"Fashion Forum Seminar", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2010-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2010.jpg"},
+                        {Title:"Fashion Forum Seminar", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2011-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2011.jpg"},
+                        {Title:"Fashion Forum Seminar", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2012-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2012.jpg"},
+                        {Title:"Fashion Forum Seminar", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2013-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%201937/Web/Esquire%20Fashion%20Forum%20Seminar%201937%2013.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Fashion Forum Program, 1937",
+                        "middle", "1", "1",
+                        {SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%20Program%201937/Web/Esquire%20Fashion%20Forum%20Program%201937%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%20Program%201937/Web/Esquire%20Fashion%20Forum%20Program%201937%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title:"Fashion Forum Program, 1937", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%20Program%201937/Web/Esquire%20Fashion%20Forum%20Program%201937%2001-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%20Program%201937/Web/Esquire%20Fashion%20Forum%20Program%201937%2001.jpg"},
+                        {Title:"Fashion Forum Program, 1937", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%20Program%201937/Web/Esquire%20Fashion%20Forum%20Program%201937%2002-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%20Program%201937/Web/Esquire%20Fashion%20Forum%20Program%201937%2002.jpg"},
+                        {Title:"Fashion Forum Program, 1937", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%20Program%201937/Web/Esquire%20Fashion%20Forum%20Program%201937%2003-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%20Program%201937/Web/Esquire%20Fashion%20Forum%20Program%201937%2003.jpg"},
+                        {Title:"Fashion Forum Program, 1937", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%20Program%201937/Web/Esquire%20Fashion%20Forum%20Program%201937%2004-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%20Program%201937/Web/Esquire%20Fashion%20Forum%20Program%201937%2004.jpg"},
+                        {Title:"Fashion Forum Program, 1937", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%20Program%201937/Web/Esquire%20Fashion%20Forum%20Program%201937%2005-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%20Program%201937/Web/Esquire%20Fashion%20Forum%20Program%201937%2005.jpg"},
+                        {Title:"Fashion Forum Program, 1937", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%20Program%201937/Web/Esquire%20Fashion%20Forum%20Program%201937%2006-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%20Program%201937/Web/Esquire%20Fashion%20Forum%20Program%201937%2006.jpg"},
+                        {Title:"Fashion Forum Program, 1937", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%20Program%201937/Web/Esquire%20Fashion%20Forum%20Program%201937%2007-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20Fashion%20Forum%20Program%201937/Web/Esquire%20Fashion%20Forum%20Program%201937%2007.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Esuire Culinary Counsel for Men",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%20front%20cover-970.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%20front%20cover.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%20front%20cover.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%20front%20cover.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2001-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2001.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2002-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2002.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2003-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2003.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2004-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2004.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2005-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2005.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2006-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2006.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2007-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2007.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2008-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2008.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2009-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2009.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2010-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2010.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2011-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2011.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2012-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2012.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2013-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2013.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2014-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2014.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2015-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2015.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2016-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2016.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2017-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2017.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2018-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2018.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2019-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2019.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2020-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2020.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2021-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2021.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2022-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2022.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2023-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2023.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2024-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2024.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2025-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2025.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2026-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2026.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2027-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2027.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2028-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2028.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2029-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2029.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2030-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%2030.jpg", title:"Esuire Culinary Counsel for Men"},
+                        {Title: "Esuire Culinary Counsel for Men", SM: "https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%20back%20cover-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Culinary%20Counsel%20For%20Men/Web/Esquire%20Culinary%20Counsel%20for%20Men%20back%20cover.jpg", title:"Esuire Culinary Counsel for Men"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Esquire For Sept- On Going Back to School 1940",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Esquire For Sept- On Going Back to School 1940", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2001-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2001.jpg", title:"Esquire For Sept- On Going Back to School 1940"},
+                        {Title: "Esquire For Sept- On Going Back to School 1940", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2002-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2002.jpg", title:"Esquire For Sept- On Going Back to School 1940"},
+                        {Title: "Esquire For Sept- On Going Back to School 1940", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2003-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2003.jpg", title:"Esquire For Sept- On Going Back to School 1940"},
+                        {Title: "Esquire For Sept- On Going Back to School 1940", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2003b-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2003b.jpg", title:"Esquire For Sept- On Going Back to School 1940"},
+                        {Title: "Esquire For Sept- On Going Back to School 1940", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2004-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2004.jpg", title:"Esquire For Sept- On Going Back to School 1940"},
+                        {Title: "Esquire For Sept- On Going Back to School 1940", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2005-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2005.jpg", title:"Esquire For Sept- On Going Back to School 1940"},
+                        {Title: "Esquire For Sept- On Going Back to School 1940", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2006-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2006.jpg", title:"Esquire For Sept- On Going Back to School 1940"},
+                        {Title: "Esquire For Sept- On Going Back to School 1940", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2007-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2007.jpg", title:"Esquire For Sept- On Going Back to School 1940"},
+                        {Title: "Esquire For Sept- On Going Back to School 1940", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2008-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2008.jpg", title:"Esquire For Sept- On Going Back to School 1940"},
+                        {Title: "Esquire For Sept- On Going Back to School 1940", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2009-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2009.jpg", title:"Esquire For Sept- On Going Back to School 1940"},
+                        {Title: "Esquire For Sept- On Going Back to School 1940", SM: "https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2010-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%201940/Web/Esquire%20For%20Sept-%20On%20Going%20Back%20to%20School%2010.jpg", title:"Esquire For Sept- On Going Back to School 1940"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Liquor Intelligencer",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2001-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2001.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2002-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2002.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2003-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2003.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2004-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2004.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2005-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2005.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2006-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2006.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2007-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2007.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2008-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2008.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2009-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2009.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2010-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2010.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2011-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2011.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2012-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2012.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2013-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2013.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2014-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2014.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2015-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2015.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2016-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2016.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2017-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2017.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2018-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2018.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2019-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2019.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2020-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2020.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2021-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2021.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2022-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2022.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2023-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2023.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2024-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2024.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2025-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2025.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2026-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2026.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2027-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2027.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2028-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2028.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2029-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2029.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2030-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2030.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2031-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2031.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2032-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2032.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2033-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2033.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2034-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2034.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2035-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2035.jpg", title: "Liquor Intelligencer"},
+                        {Title: "Liquor Intelligencer", SM: "https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2036-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Liquor%20Intelligencer/Web/Esquire%20Liquor%20Intelligencer%2036.jpg", title: "Liquor Intelligencer"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Posters",
+                        "top","2","2",
+                        {SM: "https://assets.paulrand.design/Works/Esquire/Posters/Web/Esquire%20Poster-%20%20Summer-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Posters/Web/Esquire%20Poster-%20%20Summer.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Esquire/Posters/Web/Esquire%20Poster-%20Fall%20Winter-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Posters/Web/Esquire%20Poster-%20Fall%20Winter.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Esquire/Posters/Web/Esquire%20Poster-%20Going%20Back%20to%20School-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Posters/Web/Esquire%20Poster-%20Going%20Back%20to%20School.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Esquire/Posters/Web/Esquire%20Poster-%20Semi-Sports-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Posters/Web/Esquire%20Poster-%20Semi-Sports.jpg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Southern Cruisology",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2001-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2001.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2002-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2002.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2003-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2003.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2004-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2004.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2005-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2005.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2006-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2006.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2007-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2007.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2008-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2008.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2009-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2009.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2010-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2010.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2011-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2011.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2012-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2012.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2013-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2013.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2014-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2014.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2015-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2015.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2016-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2016.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2017-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2017.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2018-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2018.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2019-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2019.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2020-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2020.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2021-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2021.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2022-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2022.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2023-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2023.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2024-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2024.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2025-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2025.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2026-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2026.jpg"},
+                        {Title: "Southern Cruisology", SM: "https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2027-800.jpg", LG:"https://assets.paulrand.design/Works/Esquire/Southern%20Cruisology/Web/Esquire%20Southern%20Cruisology%2027.jpg"}
+                        )
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

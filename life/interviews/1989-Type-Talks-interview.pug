@@ -1,0 +1,224 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Type Talks Interview'
+    - var bodyID    = 'life'
+    - var bodyClass = 'interviews'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover-450.jpg'
+
+    - var articleAuthor         = 'Mario Rampone'
+    - var publishedInTitle      = '“Type Talks”'
+    - var publishedInSubtitle   = 'Fall 1989'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover.jpg', title: ''})
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/203657724'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3Dtype%2Btalks%2Bfall%2B1989%2Bpaul%2Brand%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/28KKnqE'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_odkw%3D%25E2%2580%259CType%2BTalks%25E2%2580%259D%2BFall%2B1989%26_osacat%3D267%26_from%3DR40%26_trksid%3Dp2045573.m570.l1313.TR0.TRC0.H0.XType%2BTalks%2BFall%2B1989%2BPaul%2BRand.TRS0%26_nkw%3DType%2BTalks%2BFall%2B1989%2BPaul%2BRand%26_sacat%3D267'
+
+    - var nextType              = 'Interview'
+    - var nextTitle             = 'Childhood Fantasies'
+    - var nextDate              = '1991'
+    - var nextDescription       = 'Champion Papers asks Rand what he’d be if he wasn’t an artist.'
+    - var nextLink              = '/life/interviews/1991-kromekote-childhood-fantasies.html'
+
+    - var relatedItemLink1      = '1985-guttenberg-and-family.html'
+    - var relatedItemTitle1     = 'Paul Rand: Imperishable Champion'
+    - var relatedItemFootnote1  = 'Gutenberg & Family: The Newsletter of the Type Director’s Club'
+
+    - var relatedItemLink2      = '1988-id-magazine.html'
+    - var relatedItemTitle2     = 'Logos, Technique and Trends'
+    - var relatedItemFootnote2  = 'ID: Magazine of International Design'
+
+    - var relatedItemLink3      = '1988-artograph.html'
+    - var relatedItemTitle3     = 'Artograph No. 6'
+    - var relatedItemFootnote3  = 'Contains a classic Rand interview by Viriginia Smith which has been recently republished in Franc Nunoo-Quarcoo’s “Paul Rand: Modernist Designer”.'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20white%20cover.jpg', linkLg:'https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20white%20cover.jpg', title: 'The alternate white cover version printed on glossy paper.'})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            unless articleAuthor == 'CHANGE_ME'
+                p.reveal-enter-bottom!= 'By ' + articleAuthor
+
+            p.reveal-enter-bottom!= publishedInTitle
+                unless publishedInSubtitle == 'CHANGE_ME'
+                    br
+                    !=publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    !=publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+            //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center#original-article
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        p.question MARIO RAMPONE: How do you feel about the “new” typefaces that are inundating the marketplace today?
+
+                        p 
+                            strong.text-red PAUL RAND: 
+                            | The announcement of anything new is bound to call attention to itself. When one considers the wonderful old faces that have passed through the sieve of time, one wonders, why new faces! Unless they’re really new, there seems to be no reason to add to an already overloaded stockpile. A new typeface is ideal for the neophyte who is intent on one-upmanship, and who equates the latest with the greatest. “There are as many different varieties of letters as there are different kinds of tools,” commented Eric Gill, a long time ago.
+
+                        p.question MR: How do you regard “freedom of expression” — about the person inspired to design a new typeface?
+
+                        p 
+                            strong.text-red PR: 
+                            | One must accept the good with the bad, the fanciful with the freakish. Out of a hundred designs, there may be one that’s really new. Who knows!
+
+                        p.question MR: IBM has recently adopted Berthold Bodoni as its house style, without altering its design. Does that make more sense than creating a new typeface?
+
+                        p 
+                            strong.text-red PR: 
+                            | Yes, unless it can be improved. Increasing the x-height and shortening ascenders and descenders might be useful. Berthold Bodoni is based on the original design. Incidentally, it is similar to Didot or Walbaum. They are the same modern type family that the old typographic fraternity frowned upon.
+
+                        p.question MR: Why?
+
+                        p 
+                            strong.text-red PR: 
+                            | Because the contrast between thicks and thins was enormously exaggerated. The serifs were square and uninteresting. They were, apparently, too mechanical, some would say too cold or too geometric. “Swelteringly hideous” is how William Morris is said to have described it. A speech by Talbot Baines Reed in 1890 in Ars Typographica, edited by Goudy in 1920, dealt with these very same problems. The need for anything to be designed has nothing to do merely with wanting to do it.
+
+                        p.question MR: Some people are going to love that comment.
+
+                        p 
+                            strong.text-red PR: 
+                            | But it’s true. It’s an ego trip or a ploy to attract new business. Once Univers was done, for example, there was no apparent reason to have a new sans-serif typeface.
+
+                        p.question MR: Univers is a beautiful typeface and it made as big a splash as Helvetica did. And it is still the most popular sans serif.
+
+                        p 
+                            strong.text-red PR: 
+                            | Well, Univers is better in some respects; it fits better. In my view, the very bold is far superior to Helvetica. In some instances, one can’t use the very bold; the counters ate much too small.
+
+                        p.question MR: That can be rectified.
+
+                        p 
+                            strong.text-red PR: 
+                            | In typography things get revived. Now there is a revival of Futura, a typeface that was designed in 1925.
+
+                        p.question MR: But it’s one of the classics.
+
+                        p 
+                            strong.text-red PR: 
+                            | Yes, but it’s not exactly the most legible face; it has certain characteristics lacking in other sans-serif faces. Compass and ruler are quite in evidence. It is, nevertheless, unique. Still, one must understand how to use it. Appropriateness, not timeless, is the guiding principle.
+
+                        p.question MR: It seems that designers often go out of their way to attract attention.
+
+                        p 
+                            strong.text-red PR: 
+                            | That’s an understatement. There are essentially two kinds of typography: The familiar kind for reading, and the other, simply for viewing, like a painting. Some say that readability is most important. There are really two important things about typography: readability and beauty; both are equally important. However, many readable typefaces are visually offensive. The design of a typeface, ugly or not, is only one aspect of the problem of readability. How a typeface is used is equally, if not more, important. The trick is to choose a readable and beautiful face like Baskerville, or Caslon, or Garamond. Tschichold’s favorite typeface, incidentally, was Janson, which is similar to Caslon.
+
+                        p.question MR: Does a typeface have to be new to attract attention?
+
+                        p 
+                            strong.text-red PR: 
+                            | Although newness has its place, good design is not merely a question of novelty. The typographer is more important than the type he uses. You can’t blame the type if the typography is poor. It’s like putting the burden on the music when the musician is at fault.
+
+                        p.question MR: Do you believe that the proliferation of computers in design schools is a good thing?
+
+                        p 
+                            strong.text-red PR: 
+                            | It depends on how the computer is built into the curriculum. To the extent that the machine replaces the hand and prevents the student from practicing the manual skills, it is wrong. To the extent that computer theory replaces and is confused with design theory, it is equally wrong. Of course, there’s a time and place for everything. Once a student feels at home with design—and this takes a very long time—he is free to choose his tools. A student once said, “I came here to learn how to design, not how to use a computer.” Design schools take heed. After all, for every competent designer, there are at least a thousand competent computer operators—and we haven’t even begun to deal with the products of computer-generated design, nor with the competence of those who teach design. The computer is surely one of the most astonishing machines of our time. However, the language of the computer is not the language of art/design. It is the language of machine—of production. It enters the world of creativity only as an adjunct, as a tool—a time-saving device, as a mean of investigating, retrieving, and executing tedious jobs—but not as the principal player. In education this art/production relationship is inescapable. The moment the balance is disturbed, it becomes a hindrance to invention and a barrier to the link between hand and tool. Of course, the computer is capable of producing visual effects not possible by other means. In the hands of a thoughtful designer, this may be useful. It may even help in the creative process—the realm of ideas—by suggesting visual possibilities undreamed of with other techniques, or by helping to solve problems specifically designed for the computer’s capabilities. But these very means may also be the source of exploitation, merely for the sake of effects but not of essence. The expression “garbage in, garbage out” is more than a quip. Unless the computer is used properly, it will only encourage the kind of trendiness so profuse today—worse, in a way, than that stemming from more conventional means. The abundance of visual possibilities the computer makes available is its virtue: at the same time, it may be a source of confusion and baffling complexity. When to use it is certainly more important than how to use it. In the school environment it should be only a part of the curriculum but not the curriculum. I sometimes wonder if the fuss about computers in design schools isn’t simply a decoy to show that the school is au courant. Or does it indicate some other problem! The tangibles of computer technology are obviously easier to cope with than the intangibles of design.
+
+                        p.question MR: Do you believe design by computer will be as enduring as more conventional systems?
+
+                        p 
+                            strong.text-red PR: 
+                            | Enduringness has little to do with technique.
+
+                        p.question MR: The computer is nor the ideal tool to learn design fundamentals, is this what you’re saying?
+
+                        p 
+                            strong.text-red PR: 
+                            | As a production tool for a seasoned designer the computer is ideal. As a tool for the beginning student it is a distraction. It produces more than the student needs, or is capable of absorbing. I don’t use a computer myself. My supplier is better equipped to satisfy all my typographic needs, as he was in the Linotype days. I have never set type. I just look and “feel” if it’s right or wrong. I don’t think one has to set type in order to be aware of its intricacies. It’s a bit like expecting a doctor to experience the same illness as his patient, in order to validate his prescriptions.
+
+                        p.question MR: Do you feel this technology can satisfy the requirements for good typography?
+
+                        p 
+                            strong.text-red PR: 
+                            | Computer-generated typesetting lacks the built-in discipline so essential to proper spacing. The limitations of metal typesetting provided the restrains for finer word spacing. On the other hand, the unlimited, variable spacing possibilities of the computer are the source of endless problems, unless the designer is a pro.
+
+                        p.question MR: Metal typesetting required greater skill because type was set “wrong reading.” Today, the computer operator sees his “proof’ on the screen as he is keyboarding.
+
+                        p 
+                            strong.text-red PR: 
+                            | Computer composition, nevertheless, presents its own peculiar problems, especially for students, who are only potential specialists.
+
+                        p.question MR: With the arrival of desktop publishing, a typographer’s skills are being put to test. Companies are installing Macs, memos are beginning to look like ransom notes. This prompted a large corporation to rid most of the typefaces from its laser printers. How do you think this will affect the quality of typography?
+
+                        p 
+                            strong.text-red PR: 
+                            | That kind of publishing is bad for the art of typography. It may sound fascinating to produce your own printed piece, but it will probably result in the accumulation of a Matterhorn of rubbish. Wishful thinking never took the place of experience or talent. Here’s an example why one must be discriminating in choosing the right typeface: Some students send me letters set in type so impersonal as to be indistinguishable from direct mail advertising. The old Egyptian square-serif typewriter face has a certain charm about it, and it looks like a letter, not like a printed piece.
+
+                        p.question MR: Alphabets for computer programs are unitized the same as metal type was. The programs provide kern tables to cut the sidewalls off in order to bring the characters closer together. Today, unitizing provided with each font is not accurate enough for critical spacing. To correct this problem, custom kern tables are necessary. PostScript devices have exacerbated the problem. Do you believe that good typography is possible with this technology?
+
+                        p 
+                            strong.text-red PR: 
+                            | Yes, of course. The principal problem is spacing. It depends on people who are sensitive to the kind of typography that was possible when metal setting was available.
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-image-carousel.pug
+
+        include ../../__MIXINS/_include-published-in.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug

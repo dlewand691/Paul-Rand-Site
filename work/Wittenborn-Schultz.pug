@@ -1,0 +1,87 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Wittenborn Schultz Publishing'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = 'CHANGE_ME'
+    - var nextType  = 'Client'
+    - var nextTitle = 'XGA'
+    - var nextLink  = 'XGA'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Documents of Modern Art Prospectus",
+                        "top","2","2",
+                        {SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Document%20of%20Modern%20Art%20Prospectus/Web/Documents%20of%20Modern%20Art%20Prospectus%20front-800.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Document%20of%20Modern%20Art%20Prospectus/Web/Documents%20of%20Modern%20Art%20Prospectus%20front.jpg", title: "", footnote: "Front"},
+                        {SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Document%20of%20Modern%20Art%20Prospectus/Web/Documents%20of%20Modern%20Art%20Prospectus%20back-800.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Document%20of%20Modern%20Art%20Prospectus/Web/Documents%20of%20Modern%20Art%20Prospectus%20back.jpg", title: "", footnote: "Back"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Thoughts on Design Prospectus",
+                        "top","2","2",
+                        {SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Thoughts%20on%20Design%20Prospectus/Web/Thoughts%20on%20Design%20Prospectus-%20front-800.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Thoughts%20on%20Design%20Prospectus/Web/Thoughts%20on%20Design%20Prospectus-%20front.jpg", title: "", footnote: "Front"},
+                        {SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Thoughts%20on%20Design%20Prospectus/Web/Thoughts%20on%20Design%20Prospectus-%20back-800.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Thoughts%20on%20Design%20Prospectus/Web/Thoughts%20on%20Design%20Prospectus-%20back.jpg", title: "", footnote: "Back"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Book Catalog",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/Wittenborn%20Schultz%20Catalog%2000.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/Wittenborn%20Schultz%20Catalog%2000.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/Wittenborn%20Schultz%20Catalog%2000-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/Wittenborn%20Schultz%20Catalog%2000.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog01-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog01.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog02-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog02.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog03-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog03.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog04-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog04.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog05-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog05.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog06-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog06.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog07-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog07.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog08-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog08.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog09-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog09.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog10-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog10.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog11-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog11.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog12-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog12.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog13-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog13.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog14-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog14.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog15-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog15.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog16-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog16.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog17-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog17.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog18-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog18.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog19-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog19.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog20-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog20.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog21-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog21.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog22-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog22.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog23-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog23.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog24-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/wittenbornSchultzCatalog24.jpg"},
+                        {Title: "Book Catalog", SM: "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/Wittenborn%20Schultz%20Catalog%20Ad%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/Wittenborn%20Schultz%20Catalog%20Ad%2001.jpg"}
+                        )
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

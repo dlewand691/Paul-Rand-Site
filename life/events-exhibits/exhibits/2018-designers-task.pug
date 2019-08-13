@@ -1,0 +1,89 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'A Designer’s Task'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'University of Michigan Museum of Art'
+    - var pageSubtitle2         = 'CHANGE_ME'
+
+    - var nextType              = 'Exhibit'
+    - var nextTitle             = 'Serious Play: Design in Midcentury America'
+    - var nextDate              = 'September 28, 2018–January 6, 2019'
+    - var nextLink              = '2018-serious-play'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2001-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2002-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2003-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2004-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2005-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2006-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2007-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2008-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2009-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2010-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2011-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2012-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2013-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2014-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2015-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2015.jpg', title: ''})
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2001-970.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20A%20Designer%27s%20Task/Web/2018%20A%20Designers%20Task%2001.jpg"
+                            )
+
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        ### Paul Rand: The Designer's Task
+                        ##### September 15, 2018–February 10, 2019
+
+                        The Jan and David Brandon Family Bridge
+
+                        ##### PAUL RAND'S VISIONARY CONCEPTIONS OF BRAND IDENTITY
+
+                        This exhibition features works from the career of the influential graphic designer Paul Rand (1914–1996). Best known for his designs made for corporations, such as IBM, Westinghouse, UPS, ABC, etc., Rand also worked for media publications, public initiatives, and academic institutions. This exhibition features posters, packaging, and printed materials, all of which exemplify Rand’s skilled approach to design, in which typography, art, and symbols work in concert in order to convey a company’s message. *Paul Rand: The Designer’s Task* traces the influential graphic designer’s approach to creating appealing and enduring designs for corporate and non-corporate organizations. 
+
+                        The “designer’s task,” as Rand referred to it, aimed to communicate the character and identity of an institution. The exhibition features posters and archival materials from Rand’s early beginnings as a pro bono designer for media publications like *Direction* magazine to his later days as a giant of corporate design for companies like IBM. Rand was conscious of the symbolic power of visual imagery and its ability to achieve the goals of an organization. The resulting designs efficiently articulate a company’s values through universal shapes and symbols, which were, in turn, always marked by Rand’s distinctive wit. Within the exhibition, humorous designs for IBM are juxtaposed with the weighty symbolism of the posters for public initiatives like Earth Day. This exhibition examines the oft-over-looked subject of graphic design within the museum context and expounds on the intersections of consumerist visual culture and modern art through the lens of Rand’s intellectual process. 
+
+                        The posters and archival materials featured in this exhibition are culled from a recent and significant gift of Paul Rand’s work to UMMA by Franc Nunoo-Quarcoo, U-M Professor in the School of Art & Design and published scholar on Paul Rand, and Maria Phillips.
+
+                        **Acknowledgements:**  
+                        Lead support for *Paul Rand: The Designer's Task* is provided by the Herbert W. and Susan L. Johe Endowment.
+
+
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

@@ -1,0 +1,17 @@
+.cell.large-auto.large-mr0#writing-suggested-readings
+    fieldset
+        select.select2#select-writing-suggested-readings(data-placeholder="Choose a suggested reading topic…")
+            +navOption('','')
+            +navOption( 'index'        , 'VIEW ALL →'                   )
+            +navOption( 'general'      , 'General Art Theory and Philosophy' )
+            +navOption( 'modern'       , 'Modern Art History and Movements'  )
+            +navOption( 'type'         , 'Typography and Design'             )
+            +navOption( 'social'       , 'General, Sociology'                )
+            +navOption( 'bios'         , 'Art Biographies and Monographs'    )
+            +navOption( 'architecture' , 'Architecture'                      )
+            +navOption( 'history'      , 'Design History and Theory'         )
+            +navOption( 'geometry'     , 'Geometry and Design'               )
+            +navOption( 'film'         , 'Film'                              )
+
+//- .cell.shrink.large-p0
+//-     a.button.text-caps.radius.text-left.small-mt1.large-m0.nav-button(href="#") Go

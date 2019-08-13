@@ -1,0 +1,147 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'IDEA: International Advertising Art'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955-450.jpg'
+
+    - var articleAuthor         = 'CHANGE_ME'
+    - var publishedInTitle      = 'IDEA: International Advertising Art'
+    - var publishedInSubtitle   = 'January, 1955'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/24987307'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3DIDEA%2BInternational%2BAdvertising%2BArt%2Bjanuary%2B1955%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1XKLU27'
+    - var modernism101          = 'yes'
+    - var modernism101Link      = 'http://modernism101.com/products-page/graphic-design/rand-paul-idea-international-advertising-art-january-1955-tokyo-seibundo-shinkosha-vol-2-no-9/#.Vsye6pMrI60'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/noresults/IDEA%3A+International+Advertising+Art+january+1955'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Paul Rand, Commercial Artist. His Fantasy is Boundless'
+    - var nextDate              = 'October 1970'
+    - var nextDescription       = 'American Artist, Watson-Guptill Publications'
+    - var nextLink              = '/life/books-articles/articles/print/1970-american-artist.html'
+
+    - var relatedItemLink1      = '/life/books-articles/articles/print/2002-graphic-design-reader.html'
+    - var relatedItemTitle1     = 'Randism'
+    - var relatedItemFootnote1  = 'The Graphic Design Reader, &copy; 2002, Steven Heller'
+
+    - var relatedItemLink2      = '/life/books-articles/articles/print/1999-baseline-magazine.html'
+    - var relatedItemTitle2     = 'Paul Rand’s Laboratory: The Art of Books Jackets and Covers'
+    - var relatedItemFootnote2  = 'Baseline Magazine, No. 27, 1999'
+
+    - var relatedItemLink3      = '/life/books-articles/articles/print/1993-how-magazine.html'
+    - var relatedItemTitle3     = 'Masters of Design'
+    - var relatedItemFootnote3  = 'HOW Magazine, F&W Publications Inc., February 1993'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine%2C%20March/Web/International%20Advertising%20Art%20Idea%20magazine%2C%20March%201955%2011.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container 
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content#original-article
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Takashi Miyayama [Editor] and Hiroshi Ohchi [Art Director]: IDEA: INTERNATIONAL ADVERTISING ART. Tokyo: Seibundo- Shinkosha, 1955 [Vol. 2, no. 9, January 1955]. Original edition. Parallel texts in Japanese and English. Perfect-bound and stitched thick printed wrappers. 92 pp. Well illustrated in black and white. 4 pages in full color. Light wear overall, with a sun-faded spine and edges. Interior unmarked and very clean. Out-of-print and rather uncommon. Cover design by Paul Rand.  A very good copy.
+
+                        8.25 x 12 perfect-bound magazine with 92 pages of editorial and advertising showcasing the state of the Graphic Arts in Japan, circa 1955. Idea served as the Japanese equivalent of Graphis — a magazine dedicating to promoting the Graphic Arts of a certain region to the rest of the world. Idea offers the contemporary viewer a glimpse into Japanese Graphic Design Culture as it emerged from the ashes of World War II and made its influence felt on a global scale.
+
+                        *Idea* promoted the best and brightest Japanese Graphic Designers, and also provided lavish coverage of international designers such as Kurt Weidemann and George Him.
+
+                        **Graphic Arts**
+                        + Includes Alvin Lustig [6 pages with 25 b/w illustrations], Georg Olden, Ladislav Sutnar [5 pages with 15 b/w illustrations], Will Burtin [6 pages with 16 b/w illustrations], Bill Sokol [8 pages with 44 b/w illustrations], Edward Carini, Paul Rand [6 pages with 16 b/w images], A. F. Arnold, Gene Federico [8 pages with 27 b/w illustrations], John Milligan and Lester Beall [6 pages with 21 b/w illustrations]
+
+                        **Editorial**
+                        + Contemporary American Advertising Art by S. Ogawa: 2 pages with 8 color illustrations including work by Lustig, Beall, Rand, Sokol, Burtin and Federico
+                        + Letters from H. Ohchi and Y. Kamekura
+                        + How to make the mark by S. Imatake
+                        + A chapter on platonic design by K. Ito
+                        + About the trade mark by Y. Kojima
+                        + My own ad cuts by H. Hamada
+                        + It's not easy to write sideways by F. Okabe
+                        + Copy writer may borrow ideas from others by S. Kurosuda
+                        + An observation car named advertising (1) by K. Endo and T. Miyayama
+                        + Editor's notes
+
+                    .footnote.small-mb3 — Randall Ross, modernism101.com
+
+
+
+                    //- hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+                    //- 
+                    //- .text-center
+                    //-     h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                    //-     unless articleAuthor == 'CHANGE_ME'
+                    //-         h6!= 'By ' + articleAuthor
+                    //- 
+                    //- .panelCallout.small-p1.medium-p3.large-p4
+                    //-     :markdown-it(html typographer plugins=['markdown-it-sup'])
+                    //-         ARTICLE
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+
+
+
+        include ../../../../__MIXINS/_include-image-carousel.pug
+
+        include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

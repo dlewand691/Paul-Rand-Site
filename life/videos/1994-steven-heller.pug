@@ -1,0 +1,101 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Steven Heller Interviews Paul Rand'
+    - var bodyID    = 'life'
+    - var bodyClass = 'videos'
+
+block main-content
+    - var nextType             = 'Video'
+    - var nextTitle            = 'Conversations with Paul Rand'
+    - var nextDate             = '1996'
+    - var nextDescription      = 'A Film by Preston McClanahan'
+    - var nextLink             = '/life/videos/1996-conversations-with-paul-rand.html'
+
+    - var relatedItemLink1     = '/life/videos/1991-miggs-burroughs.html'
+    - var relatedItemTitle1    = 'Miggs Burroughs Interview'
+    - var relatedItemFootnote1 = 'Filmed for the TV show “Miggs B. on TV” in Connecticut, 1991'
+
+    - var relatedItemLink2     = '/life/interviews/1989-Type-Talks-interview.html'
+    - var relatedItemTitle2    = 'Type Talk Interview'
+    - var relatedItemFootnote2 = 'Published in “Type Talks”, Fall 1989'
+
+    - var relatedItemLink3     = '/life/interviews/1990-Paul-Rand-on-the-Play-Instinct.html'
+    - var relatedItemTitle3    = 'Paul Rand on the Play Instinct'
+    - var relatedItemFootnote3 = 'From Mildred Friedman’s “Graphic Design In America: A Visual Language History”, 1989'
+
+
+    //- =============================
+    //- =            VIDEO            =
+    //- =============================
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                //- ==========  TITLE  ==========
+
+                .large-8.medium-11.cell
+                    .grid-x.grid-margin-x
+                        .large-12.cell.text-center
+                            h2!= pageTitle
+                            p.text-gray.t16: em 1994
+
+                            br
+                            p Filmed at the Fitzgerald Theater in downtown St Paul Minnesota
+                            //- p Video provided courtesy of 
+                            //-     a(href="#") youareworthy 
+                            //-     | on YouTube.
+
+            //- ==========  VIDEO  ==========
+            .grid-x.grid-margin-x.align-center
+                .large-12.cell
+                    //- h5 Steven Heller Interviews Paul Rand 1
+                    .small-mb3
+                        div.plyr-js(data-plyr-embed-id="3qVaY-wD-_8" data-plyr-provider="youtube")
+
+                    //- .flex-video
+                    //-     iframe(src="//www.youtube.com/embed/3qVaY-wD-_8" frameborder="0" allowfullscreen)
+
+                    //- hr
+                    //- 
+                    //- h5 Steven Heller Interviews Paul Rand 2
+                    //- .flex-video
+                    //- 	iframe(src="http://www.youtube.com/v/sTVCSBLXI5Y" frameborder="0" allowfullscreen)
+                    //- 
+                    //- hr
+                    //- 
+                    //- h5 Steven Heller Interviews Paul Rand 3
+                    //- .flex-video
+                    //- 	iframe(src="http://www.youtube.com/v/tu3Yks4n3lU" frameborder="0" allowfullscreen)
+                    //- 
+                    //- hr
+                    //- 
+                    //- h5 Steven Heller Interviews Paul Rand 4
+                    //- .flex-video
+                    //- 	iframe(src="http://www.youtube.com/v/SNbkpvBqTSM" frameborder="0" allowfullscreen)
+                    //- 
+                    //- hr
+                    //- 
+                    //- h5 Steven Heller Interviews Paul Rand 5
+                    //- .flex-video
+                    //- 	iframe(src="http://www.youtube.com/v/p7zIJctU3EM" frameborder="0" allowfullscreen)
+                    //- 
+                    //- hr
+                    //- 
+                    //- h5 Steven Heller Interviews Paul Rand 6
+                    //- .flex-video
+                    //- 	iframe(src="http://www.youtube.com/v/w93OdYzDVGs" frameborder="0" allowfullscreen)
+                    //- 
+                    //- hr
+                    //- 
+                    //- h5 Steven Heller Interviews Paul Rand 7
+                    //- .flex-video
+                    //- 	iframe(src="http://www.youtube.com/v/q87S70eXLDE" frameborder="0" allowfullscreen)
+                    //- 
+
+
+            //- /*-----  End of BODY  ------*/
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug

@@ -1,0 +1,107 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Unpubished Book'
+    - var bodyID    = 'writing'
+    - var bodyClass = 'books'
+
+block main-content
+    - var bookSubhead           = 'The outline and introduction to an unpublished book courtesy of Steven Heller. '
+
+    - var library               = 'no'
+    - var libraryLink           = 'CHANGE_ME'
+    - var abe                   = 'no'
+    - var abeLink               = 'CHANGE_ME'
+    - var amazon                = 'no'
+    - var amazonLink            = 'CHANGE_ME'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'A Paul Rand Miscellany'
+    - var nextDate              = 'Design Quarterly, 1984'
+    - var nextDescription       = 'A thoughtful pre-publication abridgement of Rand’s A Designer’s Art from 1985'
+    - var nextLink              = '/writing/books/a-paul-rand-miscellany.html'
+
+    - var relatedItemLink1      = '/writing/books/a-designers-art.html'
+    - var relatedItemTitle1     = 'A Designer’s Art'
+    - var relatedItemFootnote1  = 'Yale University Press, 1985'
+
+    - var relatedItemLink2      = '/writing/books/the-trademarks-of-paul-rand.html'
+    - var relatedItemTitle2     = 'The Trademarks of Paul Rand — A Selection'
+    - var relatedItemFootnote2  = 'First (only) edition; limited to 450 copies.'
+
+    - var relatedItemLink3      = '/writing/books/some-thoughts-some-tribulations.html'
+    - var relatedItemTitle3     = 'Some Thoughts… and Some Tribulations about the Design of a Logo'
+    - var relatedItemFootnote3  = '1991'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2001-800.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2002-800.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2003-800.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2004-800.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2005-800.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2006-800.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2007-800.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2008-800.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2009-800.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2010-800.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2011-800.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2011.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= bookSubhead
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2001-970.jpg",
+                            "https://assets.paulrand.design/Writing/Books/Unpublished%20Book/Web/Paul%20Rand%20unpublished%20book%2001.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            include ../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        #### Paul Rand: Design Diary or Design & Variations
+
+                        Paul Rand’s first monograph, “Thoughts on Design” (Wittenborn, 1947, reprinted by Chronicle Books), showcased and explained his “first stage” from when he launched his design and art directorial career in 1937 at Esquire/Coronet. He was occasionally involved in the editorial layout of Esquire fashion supplements but mostly designed promotion and a brilliant series of covers for its men’s fashion trade magazine Apparel Arts. He also designed an array of signature covers for other periodicals, notably Directions.
+
+                        For fourteen years, Rand worked in advertising and was art director for the William Weintraub Agency where he created a prototype of the creative team, later pioneered by his friend and colleague Bill Bernbach. “Thoughts on Design” features much of the advertising and promotion work he did until 1947. In 1954 he left the advertising grind. With “Thoughts” he left some words to live by: “Even if it is true that commonplace advertising and exhibitions of bad taste are indicative of the mental capacity of the man in the street, the opposing argument is equally valid. Bromidic advertising catering to that bad taste merely perpetuates that mediocrity and denies him one of the most easily accessible means of aesthetic development.”
+
+                        His second book, “Paul Rand: A Designer’s Art” (Yale University Press, reprinted by Princeton Architectural Press) was published decades later in 1985, followed by two additional books, “Design Form and Chaos” (Yale, 1993) and “From Lascaux to Brooklyn” (Yale, 1996) (both are currently in reprint through Yale). But even before “A Designer’s Art” he conceived a new untitled volume, which while it was never published, included many of the concerns in the next three books. Here is the outline in its original form, the unedited introduction and spreads from the glued and stapled dummy, which was 9″ x 12″.
+
+                        Rand was a consummate designer and prodigious writer, always editing and writing his texts. This outline and introduction reveals a how much he improved in both style and language skills.
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

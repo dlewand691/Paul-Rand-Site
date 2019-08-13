@@ -1,0 +1,22 @@
+//- =============================================================================================
+//- 
+//- ███    ██ ███████ ██   ██ ████████     ██████   ██████  ██     ██
+//- ████   ██ ██       ██ ██     ██        ██   ██ ██    ██ ██     ██
+//- ██ ██  ██ █████     ███      ██        ██████  ██    ██ ██  █  ██
+//- ██  ██ ██ ██       ██ ██     ██        ██   ██ ██    ██ ██ ███ ██
+//- ██   ████ ███████ ██   ██    ██        ██   ██  ██████   ███ ███
+//- 
+//- =============================================================================================
+
+.expanded.bg-black.small-my4.small-p4(data-aos="fade-up")
+    .grid-container
+        .grid-x.grid-margin-x
+            .cell.text-center.text-white
+                if nextType == "CHANGE_ME"
+                    p.sans-serif.text-bold.text-caps.text-red.small Next
+                else 
+                    p.sans-serif.text-bold.text-caps.text-red.small!= 'Next ' + nextType
+                h3.small-mb3!= nextTitle
+                a.small.button.arrow.radius.blue.text-caps.text-left.animsition-link(href=nextLink + ".html" rel='noopener') View Now
+
+//- -----  End of NEXT ROW  ---------------------------------------------

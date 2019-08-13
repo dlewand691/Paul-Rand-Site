@@ -1,0 +1,82 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Ginza Graphic Gallery'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'The 79th Exhibit at the Ginza Graphic Gallery in Japan.'
+    - var pageSubtitle2         = 'November 4 – 28, 1992'
+
+    - var nextType              = 'Exhibit'
+    - var nextTitle             = 'Paul Rand in Weston, CT'
+    - var nextDate              = '1994'
+    - var nextLink              = '1994-paul-rand-weston-ct'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1992%20Ginza%20Graphic%20Gallery/Web/1992%20Ginza%20Graphic%20Gallery%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1992%20Ginza%20Graphic%20Gallery/Web/1992%20Ginza%20Graphic%20Gallery%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1992%20Ginza%20Graphic%20Gallery/Web/1992%20Ginza%20Graphic%20Gallery%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1992%20Ginza%20Graphic%20Gallery/Web/1992%20Ginza%20Graphic%20Gallery%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1992%20Ginza%20Graphic%20Gallery/Web/1992%20Ginza%20Graphic%20Gallery%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1992%20Ginza%20Graphic%20Gallery/Web/1992%20Ginza%20Graphic%20Gallery%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1992%20Ginza%20Graphic%20Gallery/Web/1992%20Ginza%20Graphic%20Gallery%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1992%20Ginza%20Graphic%20Gallery/Web/1992%20Ginza%20Graphic%20Gallery%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1992%20Ginza%20Graphic%20Gallery/Web/1992%20Ginza%20Graphic%20Gallery%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1992%20Ginza%20Graphic%20Gallery/Web/1992%20Ginza%20Graphic%20Gallery%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1992%20Ginza%20Graphic%20Gallery/Web/1992%20Ginza%20Graphic%20Gallery%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1992%20Ginza%20Graphic%20Gallery/Web/1992%20Ginza%20Graphic%20Gallery%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1992%20Ginza%20Graphic%20Gallery/Web/1992%20Ginza%20Graphic%20Gallery%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1992%20Ginza%20Graphic%20Gallery/Web/1992%20Ginza%20Graphic%20Gallery%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1992%20Ginza%20Graphic%20Gallery/Web/1992%20Ginza%20Graphic%20Gallery%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1992%20Ginza%20Graphic%20Gallery/Web/1992%20Ginza%20Graphic%20Gallery%2008.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1992%20Ginza%20Graphic%20Gallery/Web/Ginza%20Graphic%20Gallery%20Poster-970.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1992%20Ginza%20Graphic%20Gallery/Web/Ginza%20Graphic%20Gallery%20Poster.jpg"
+                            )
+
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        *I cannot express how pleased and honored I am to have my works shown in GGG gallery. All my life I have faithfully followed the work of Japanese designers from Hokusai to Kamekura. I am keenly aware of the contributions made by Japanese artists to the art of the West. They have influenced the Impressionists, the Constructivists, the Cubists as well as the designers who work in the fields of business and industry.*
+
+                        *It is the tradition of great art that is so important to Japan and to the world. It is this tradition that I believe is so important not only for designers but for the world at large-as an expression of good will and understanding.*
+
+                    .footnote — Paul Rand
+
+                    hr
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        ### Gallery Information
+
+                        Ginza Graphic Gallery  
+                        DNP Ginza Building 1st floor 7-2,  
+                        Ginza 7-chome, Chuo-ku, Tokyo 104-0061  
+                        TEL: 03-3571-5206 / FAX:03-3289-1389
+
+                    a.button.blue.radius.text-caps(href="http://www.dnp.co.jp/CGI/gallery/exhibition/detail.cgi?s_gallery_from_y=&s_gallery_from_m=&s_gallery_from_d=&s_gallery_to_y=&s_gallery_to_m=&s_gallery_to_d=&s_type=1%002%003%00&s_search=Paul+Rand&s_keyword=&l=2&t=1&p=1&seq=00000227" target="_blank" rel=noopener) More Information
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

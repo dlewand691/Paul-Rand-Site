@@ -1,0 +1,133 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Modern Typography in the Modern World'
+    - var bodyID    = 'writing'
+    - var bodyClass = 'articles'
+
+block main-content
+    - var imageHeaderBackground = ''
+
+    - var publishedInTitle      = 'CHANGE_ME'
+    - var publishedInSubtitle   = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/8570159'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3DPrint%2BMagazine%2BJanuary%2BFeburary%2B1964%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1QuWSrB'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/s/Print%20Magazine%20%20January/February,%201964'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2050601.m570.l1313.TR0.TRC0.H0.XPrint%2BMagazine%252C%2BJanuary%2BFebruary%252C%2B1964.TRS0%26_nkw%3DPrint%2BMagazine%252C%2BJanuary%2BFebruary%252C%2B1964%26_sacat%3D0'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'CHANGE_ME'
+    - var nextDate              = 'CHANGE_ME'
+    - var nextDescription       = 'CHANGE_ME'
+    - var nextLink              = 'CHANGE_ME'
+
+    - var relatedItemLink1      = 'CHANGE_ME'
+    - var relatedItemTitle1     = 'CHANGE_ME'
+    - var relatedItemFootnote1  = 'CHANGE_ME'
+
+    - var relatedItemLink2      = 'CHANGE_ME'
+    - var relatedItemTitle2     = 'CHANGE_ME'
+    - var relatedItemFootnote2  = 'CHANGE_ME'
+
+    - var relatedItemLink3      = 'CHANGE_ME'
+    - var relatedItemTitle3     = 'CHANGE_ME'
+    - var relatedItemFootnote3  = 'CHANGE_ME'
+
+    - var imageCarouselTitle    = 'CHANGE_ME'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                This version of the article was originally published in “Print Magazine”, January/February, 1964.
+
+            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+            //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content
+                    p.footnote.text-center
+                        | Estimated reading time: 
+                        span.text-bold.reading-time
+                        |   |  Select text to share via Facebook, Twitter or Email
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        *Mr. Rand, the noted American designer, prepared the following article for the British publication, Typographica. It appeared in Typographica 5 (original series), 1952; editor, Herbert Spencer; publisher, Lund Humphries.*
+
+                        The question of national versus international typographic style actually eludes discussion. Any country or region which has a vital and strongly characterized people will necessarily impart its ineffable flavor to all forms of artistic output. This is natural and inevitable, and, I think, only objectionable when it becomes self-consciously chauvinistic and therefore contrived. The more urgent issues are not geographic but esthetic, historical, and sociological. ls what we produce today beautiful? Is it creative? Does it strengthen the cultural fabric of our society? 
+
+                        These questions are crucial, but they have been uttered so often that they have become commonplace, as have the lamentations which often accompany them. Nevertheless, we cannot evade them. I should like to borrow a device from the popular press, and suggest something similar to the personality test as perhaps a useful and somewhat different way of answering these questions. Just as the newspaper examination impertinently demands “Do you like parties?” and then refers you to page X to check whether your answer reveals you to be an introvert or extrovert, I should like to ask the following but leave you to evaluate the answers:
+
+                        (1) Do you understand the theory and philosophy of modern painting, typography and architecture as well as their traditional backgrounds?  
+                        (2) Do you agree that each of these forms of expression has principles in common as well as limitations and potentialities exclusively its own?  
+                        (3) Do you understand the art of the East and its influence on all forms of modern visual expression?  
+                        (4) Do you believe that modern typography and its sister arts are a way of living and not merely expedients or temporary diversions?  
+                        (5) Do you seek the essential meanings of space, symmetry, asymmetry, function, texture, form, etc?  
+                        (6) Do you accept that traditional type faces are absolutely modern in the sense that they are established norms?
+
+
+                        ##### More specifically:
+                        (1) Do you try to be “original” for originality’s sake?  
+                        (2) Do you use lower-case letters because they look modern?  
+                        (3) Do you use white space indiscriminately?  
+                        (4) Do you always bleed pictures?  
+                        (5) Do you use sans-serif faces because they look “up to date?”  
+                        (6) Do you employ abstract shapes foolishly?  
+                        (7) Do you use new materials because of their newness?  
+
+                        The implications of these questions are doubtless clear. They will surely not startle the reader, but I have offered them in the hope he might find them provocative and that they will suggest other questions. 
+
+                        We have inherited from the great esthetic revolution of the twentieth century the task of bringing to fruition the new ideas and forms which it introduced. This task is not only arduous, but less rewardingly glamorous than was participation in the original dramatic and dynamic insurgence. Consequently, many designers and typographers have shirked this task. Some have contracted the “revolutionary habit” of novelty-making — neglecting other aspects of design and indulging in a sort of perpetual juvenilism.  Other designers, unable to escape the “academic habit,” have too soon crystallized the theories of the esthetic revolution into a set of rules and dogma. 
+
+                        These pitfalls threaten all contemporary designers, and I should like to suggest that honest, frequent and searching self-examination with respect to his work is perhaps the best way fort he designer to avoid them. 
+
+                        As far as the role of modern typography in history is concerned, I believe that a vital epoch will make, and bring to successful maturity, original contributions which derive from the needs and fulfill the desires of the period. 
+
+                        A neglected but important subject which must also be considered is the relationship of the designer with the business world and its problems, its foibles, its blind conviction that poll-taking will reveal what the public wants, and its inherent conservatism. It is all very well to speak of esthetic or sociological questions in connection with modern design, but we must at the same time remember that such questions are too often irrelevant or even nonsensical so far as the world of commerce is concerned; yet the designer is generally almost entirely dependent on its patronage. The modern designer has a threefold task: to educate and satisfy himself, the public at large, and then induce the business world to go along with him in this endeavor.
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-image-carousel.pug
+
+        include ../../__MIXINS/_include-published-in.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

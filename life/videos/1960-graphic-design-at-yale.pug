@@ -1,0 +1,65 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Graphic Design at Yale'
+    - var bodyID    = 'life'
+    - var bodyClass = 'videos'
+
+block main-content
+    - var nextType             = 'Video'
+    - var nextTitle            = 'Miggs Burroughs Interview'
+    - var nextDate             = '1991'
+    - var nextDescription      = 'Filmed for the TV show “Miggs B. on TV” in Connecticut'
+    - var nextLink             = '/life/videos/1991-miggs-burroughs.html'
+
+    - var relatedItemLink1     = '/life/videos/1996-cooper-union.html'
+    - var relatedItemTitle1    = 'Cooper Union interview with Steven Heller'
+    - var relatedItemFootnote1 = 'One of Rand’s last public appearances.'
+
+    - var relatedItemLink2     = '/life/videos/2010-encounters-with-paul-rand.html'
+    - var relatedItemTitle2    = 'Encounters with Paul Rand'
+    - var relatedItemFootnote2 = 'Sarah Brody shares a video of her interviewing Rand during a visit to Art Center College of Design in Montreux, Switzerland'
+
+    - var relatedItemLink3     = '/life/videos/1994-mead-generations.html'
+    - var relatedItemTitle3    = 'Mead Generations'
+    - var relatedItemFootnote3 = 'Rand discusses various topics of design from his home studio.'
+
+
+    //- =============================
+    //- =            VIDEO            =
+    //- =============================
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                //- ==========  TITLE  ==========
+                .large-8.medium-11.cell
+                    .grid-x.grid-margin-x
+                        .large-12.cell.text-center
+                            h1= pageTitle
+                            p.text-gray.t16: em 1960
+
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+
+
+            //- ==========  VIDEO  ==========
+            .grid-x.grid-margin-x.align-center
+                .large-12.cell
+                    //- .flex-video
+                    //- iframe(src="//www.youtube.com/embed/6vrnN4SrNfQ" frameborder="0" allowfullscreen)
+
+                    .small-mb3
+                        //- div(data-plyr-provider="youtube" data-video-id="6vrnN4SrNfQ" )
+                        div.plyr-js(data-plyr-embed-id="6vrnN4SrNfQ" data-plyr-provider="youtube")
+
+            //- ==========  BODY  ==========
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-9.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+
+
+        //- /*-----  End of BODY  ------*/
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug

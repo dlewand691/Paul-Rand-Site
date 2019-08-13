@@ -1,0 +1,122 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Paul Klee: Paintings, Drawings and Prints'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var bookSubhead           = 'Museum Of Modern Art'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/1389071'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3DPaul%2BKlee%253A%2BPaintings%252C%2BDrawings%2Band%2BPrints'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1Y3qW1T'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_nkw%3DPaul%2520Klee%253A%2520Paintings%252C%2520Drawings%2520and%2520Prints'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'The Fauvist Painters'
+    - var nextLink              = '1950-The-Fauvist-Painters'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2014-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2015-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2016-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2016.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2017-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2017.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2018-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2018.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2019-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2019.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2020-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2020.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2021-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2021.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2022-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2022.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2023-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2023.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2024-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2024.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2025-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2025.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2026-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2026.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2027-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2027.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2028-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2028.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2029-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2029.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2030-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2030.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2031-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2031.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2032-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2032.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2033-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2033.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2034-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2034.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2035-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2035.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2036-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2036.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2037-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2037.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2038-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2038.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= bookSubhead
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2C%20cover-970.jpg",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints/Web/Paul%20Klee-%20Paintings%2C%20Drawings%20and%20Prints%2C%20cover.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            include ../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Cover design by Paul Rand
+
+                        Paul Klee: PAUL KLEE: PAINTINGS, DRAWINGS, AND PRINTS. NYC: Museum Of Modern Art, 1949. First Edition. . A fine softcover book with original glassine dust wrapper. The fragile glassine DJ is lightly chipped. Former owners name and date on FEP, otherwise nterior unmarked and very clean. Out-of-print. Cover, typography and interior format by Paul Rand.
+
+                        7.5 x 10 book with 60 pages and numerous b/w and color plates. Published on the occasion of the landmark exhibition held at the Museum of Modern Art in 1949, which travelled on to other venues.
+
+                        Covers and interior design/typography by Paul Rand.
+
+                    .footnote — Randall Ross of modernism101.com
+
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../__MIXINS/_include-next-work.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

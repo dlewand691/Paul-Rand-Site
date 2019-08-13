@@ -1,0 +1,181 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'English First'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = 'CHANGE_ME'
+    - var nextType  = 'Client'
+    - var nextTitle = 'Enron'
+    - var nextLink  = 'Enron'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/English%20First/English-First-1993.svg", LG:"https://assets.paulrand.design/Works/English%20First/English-First-1993.svg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo Presentation Booklet",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2001-970.jpg", LG:"https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2001.jpg", title: "", footnote: ""}
+                        )
+
+            .grid-x.grid-margin-x.align-center
+                .small-12.cell
+                    .grid-x.grid-margin-x
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2001-800.jpg",
+                            "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2001.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                [Cover]
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2002-800.jpg",
+                            "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2002.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                A Logo For EF
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2003-800.jpg",
+                            "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2003.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                A logo is the graphic distillation of a company's beliefs, its management, and its products. Its principal purpose is to call attention, to point, to identify. Like a signature or thumbprint, a logo is unique. It represents only the particular, and helps to define visually the business it symbolizes.
+
+                                Most logos are non-defining, like Chanel and IBM, and achieve recognition directly related to the time, effort and expenditure invested. The design of some are based only on formal consideration, others on arbitrary or even irrelevant ideas.
+
+                                Less common are designs that are self explanatory, that either illustrate or intimate what a corporation is or does. The United Parcel logo, for example, fits this genre as does the design for Education First. To be effective, both types must be exposed; to be remembered, they must be memorable, to be recognized, they must be nurtured, explained, and exploited.
+
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2004-800.jpg",
+                            "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2004.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Here are some preliminary trials: with the exception of the simplest logo, showing the E and F as a single letter, the other designs are defining or descriptive, ideas that relate to the business of language, the alphabet serving as a springboard.
+
+                                However, these ideas were abandoned, not because they were inappropriate, but because they were imperfect. Since the EF logo will be used in tandem with other words as an active part of a particular design, it was felt that the transition between the EF and accompanying words was not sufficiently smooth; the alphabet seemed to get in the way.
+
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2005-800.jpg",
+                            "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2005.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2006-800.jpg",
+                            "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2006.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                What you have just seen is the embryo of a graphic idea. The most trying part of any design problem, especially the design of a logo, is to find an idea that visually epitomizes an enterprise of some sort, and that is also both appropriate and utilitarian. Formalizing (pinning it down on paper) is the next most difficult step.
+
+                                The sound wave pattern serves a clear purpose. It is conceptually and graphically appropriate; it provides a visual device that is both decorative and mnemonic, and is easily incorporated as an organic and inseparable part of the logo. The pattern provides a needed contrast to the straight lines of the EF; the italics add emphasis.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2007-800.jpg",
+                            "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2007.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Here are a variety of typographic treatments:  
+                                Long lines should be avoided; they are difficult to read, awkward, and difficult to connect visually with the logo.
+
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2008-800.jpg",
+                            "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2008.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                How a logo is implemented may contribute or detract from its clarity, its precision, its grace. For the typography of a letterhead or calling card, for example, precision is vital. Measurements are made in points; type sizes are an important part of any design, because they determine scale and proportion. Dimensions of margins are as important as type measurements.
+
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2009-800.jpg",
+                            "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2009.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Nothing is arbitrary: weights, sizes, spaces, and proportions contribute to the gracefulness of a design.  
+                                Color, printing, and choice of paper are also vital considerations. Glossy papers should be avoided when readability is affected. Matte, smooth papers are to be preferred to glassy paper or artificial textures. Paper weight is an important consideration as well; paper that is too heavy is clumsy, too light, flimsy.
+
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2010-800.jpg",
+                            "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2010.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                At best, a logo can be a potent sales aid and, at least, an interesting decorative device. A well designed logo, besides enhancing whatever it touches, encourages repeated use. Discretion, ingenuity, and attention to small details as well as to total effects should be in constant awareness.
+
+                                A logo that is inexpertly applied — too big — too small — inaccurate color match — cheaply printed — is self defeating. Professionalism is a reflection of a company's ethics, its employees, and its products. It says we care. A logo is great only when the company it symbolizes is great.
+
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2011-800.jpg",
+                            "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2011.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Paul Rand  
+                                Weston, Connecticut  
+                                January 1994
+
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2012-800.jpg",
+                            "https://assets.paulrand.design/Works/English%20First/Logo%20Book/Web/English%20First%2012.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                [Back Cover]
+
+
+
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Poster",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/English%20First/Poster-%20Learn%20a%20Language/Web/English%20First-%20Learn%20a%20Language-970.jpg", LG:"https://assets.paulrand.design/Works/English%20First/Poster-%20Learn%20a%20Language/Web/English%20First-%20Learn%20a%20Language.jpg", title: "", footnote: ""}
+                        )
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

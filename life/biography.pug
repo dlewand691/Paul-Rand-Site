@@ -1,0 +1,104 @@
+extends ../__MIXINS/_layout-default.pug
+
+block vars
+    - var pageTitle = 'CHANGE_ME'
+    - var bodyID    = 'life'
+    - var bodyClass = 'biography'
+
+block main-content
+    - var imageHeaderBackground = ''
+
+    - var articleAuthor        = 'CHANGE_ME'
+    - var publishedInTitle     = 'CHANGE_ME'
+    - var publishedInSubtitle  = 'CHANGE_ME'
+    - var publishedInThumbnail = 'CHANGE_ME'
+    - var library               = 'yes'
+    - var libraryLink          = 'CHANGE_ME'
+    - var abe                  = 'yes'
+    - var abeLink              = 'CHANGE_ME'
+    - var amazon               = 'yes'
+    - var amazonLink           = 'CHANGE_ME'
+    - var modernism101         = 'no'
+    - var modernism101Link     = 'CHANGE_ME'
+    - var barnesnoble          = 'yes'
+    - var barnesnobleLink      = 'CHANGE_ME'
+
+    - var nextType             = 'Article'
+    - var nextTitle            = 'CHANGE_ME'
+    - var nextDate             = 'CHANGE_ME'
+    - var nextDescription      = 'CHANGE_ME'
+    - var nextLink              = 'CHANGE_ME'
+
+
+    - var relatedItemLink1     = 'CHANGE_ME'
+    - var relatedItemTitle1    = 'CHANGE_ME'
+    - var relatedItemFootnote1 = 'CHANGE_ME'
+
+    - var relatedItemLink2     = 'CHANGE_ME'
+    - var relatedItemTitle2    = 'CHANGE_ME'
+    - var relatedItemFootnote2 = 'CHANGE_ME'
+
+    - var relatedItemLink3     = 'CHANGE_ME'
+    - var relatedItemTitle3    = 'CHANGE_ME'
+    - var relatedItemFootnote3 = 'CHANGE_ME'
+
+    - var imageCarousel       = []
+    - imageCarousel.push({link: 'http://placehold.it/800x400', title: 'one'})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+
+            p!= articleAuthor
+                br
+                != publishedInTitle + ', ' + publishedInSubtitle
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+        .cd-main-content
+
+            .grid-container
+
+
+                //- ==========  BODY  ==========
+
+                .grid-x.grid-margin-x.align-center
+                    .large-7.medium-10.small-12.cell.entry-content
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            Taboos and prejudices have long created limiting barriers to experimentation and to meaningful work in the graphic arts. In this paper I should like to attack one particular prejudice — that against the color black.<sup>[1]</sup>
+
+                        .sidenoteLeft 1 It should be noted that it is impossible to discuss black without mentioning or implying white, grays, and dark umbers the greater part of the time.
+
+
+                        blockquote Vowels: black A, white E, red I, green U, blue O, Someday I shall name the birth from which you rise: A, a black furry corset of loud flies Boiling where the cruel stenches flow…
+                            sup *
+
+                        .sidenoteRight * By permission of the translator, Muriel Rukeyser. Sergei M. Eisenstein, The Film Sense (New York: Harcourt, Brace and Company, 1942) p. 90.
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../__MIXINS/_include-image-carousel.pug
+
+        include ../__MIXINS/_include-published-in.pug
+
+        include ../__MIXINS/_include-next-item.pug
+
+        include ../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

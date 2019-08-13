@@ -1,0 +1,51 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'National Gallery of Art: Splendor of Dresden Exhibit'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = '1978'
+    - var nextType  = 'Client'
+    - var nextTitle = 'National Park Service'
+    - var nextLink  = 'National-Park-Service'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Posters",
+                        "top","3","2",
+                        {SM: "https://assets.paulrand.design/Works/National%20Gallery%20of%20Art/Splendor%20of%20Dresden%20Exhibit/Web/The%20Splendor%20of%20Dresden%20Poster%201978%2001-800.jpg", LG:"https://assets.paulrand.design/Works/National%20Gallery%20of%20Art/Splendor%20of%20Dresden%20Exhibit/Web/The%20Splendor%20of%20Dresden%20Poster%201978%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/National%20Gallery%20of%20Art/Splendor%20of%20Dresden%20Exhibit/Web/The%20Splendor%20of%20Dresden%20Poster%201978%2002-800.jpg", LG:"https://assets.paulrand.design/Works/National%20Gallery%20of%20Art/Splendor%20of%20Dresden%20Exhibit/Web/The%20Splendor%20of%20Dresden%20Poster%201978%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/National%20Gallery%20of%20Art/Splendor%20of%20Dresden%20Exhibit/Web/The%20Splendor%20of%20Dresden%20Poster%201978%2003-800.jpg", LG:"https://assets.paulrand.design/Works/National%20Gallery%20of%20Art/Splendor%20of%20Dresden%20Exhibit/Web/The%20Splendor%20of%20Dresden%20Poster%201978%2003.jpg", title: "", footnote: ""}
+                        )
+
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Folder",
+                        "top","2","2",
+                        {SM: "https://assets.paulrand.design/Works/National%20Gallery%20of%20Art/Splendor%20of%20Dresden%20Exhibit/Web/The%20Splendor%20of%20Dresden%20folder%2C%20front-800.jpg", LG:"https://assets.paulrand.design/Works/National%20Gallery%20of%20Art/Splendor%20of%20Dresden%20Exhibit/Web/The%20Splendor%20of%20Dresden%20folder%2C%20front.jpg", title: "", footnote: "Front"},
+                        {SM: "https://assets.paulrand.design/Works/National%20Gallery%20of%20Art/Splendor%20of%20Dresden%20Exhibit/Web/The%20Splendor%20of%20Dresden%20folder%2C%20back-800.jpg", LG:"https://assets.paulrand.design/Works/National%20Gallery%20of%20Art/Splendor%20of%20Dresden%20Exhibit/Web/The%20Splendor%20of%20Dresden%20folder%2C%20back.jpg", title: "", footnote: "Back"}
+                        )
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

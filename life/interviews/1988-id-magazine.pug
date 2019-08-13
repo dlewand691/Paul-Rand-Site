@@ -1,0 +1,262 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Logos, Technique and Trends'
+    - var bodyID    = 'life'
+    - var bodyClass = 'interviews'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988-450.jpg'
+
+    - var articleAuthor         = 'Steven Heller'
+    - var publishedInTitle      = 'ID: Magazine of International Design'
+    - var publishedInSubtitle   = 'November/December 1988'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988.jpg', title: ''})
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/12139124'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http  ://www.abebooks.com/servlet/SearchResults?kn=ID%3A+Magazine+of+International+Design+1988&sts=t'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1PnfJo2'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_odkw%3DArtograph%2B6%2BPaul%2BRand%26_osacat%3D267%26_from%3DR40%26_trksid%3Dp2045573.m570.l1313.TR0.TRC0.H0.XID%253A%2BMagazine%2Bof%2BInternational%2BDesign%2BNovember%252FDecember%2B1988.TRS0%26_nkw%3DID%253A%2BMagazine%2Bof%2BInternational%2BDesign%2BNovember%252FDecember%2B1988%26_sacat%3D267'
+
+    - var nextType              = 'Interview'
+    - var nextTitle             = 'A Paul Rand Interview with Steven Heller'
+    - var nextDate              = '1989'
+    - var nextDescription       = 'From Mildred Friedman’s “Graphic Design In America: A Visual Language History”'
+    - var nextLink              = '/life/interviews/1989-interview-with-steven-heller.html'
+
+    - var relatedItemLink1      = '1989-Type-Talks-interview.html'
+    - var relatedItemTitle1     = 'Type Talks'
+    - var relatedItemFootnote1  = 'With Paul Rand and Mario Rampone'
+
+    - var relatedItemLink2      = '1998-Paul-Rand-on-the-Play-Instinct.html'
+    - var relatedItemTitle2     = 'Paul Rand on the Play Instinct'
+    - var relatedItemFootnote2  = 'With Steven Heller Published in “Design Dialogues”, Allworth Press, 1998'
+
+    - var relatedItemLink3      = '1995-Portfolio-Center.html'
+    - var relatedItemTitle3     = 'Interview with a Portfolio Center Student'
+    - var relatedItemFootnote3  = 'A fun example of Rand’s pure modernism'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988%2010.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            unless articleAuthor == 'CHANGE_ME'
+                p.reveal-enter-bottom!= 'By ' + articleAuthor
+
+            p.reveal-enter-bottom!= publishedInTitle
+                unless publishedInSubtitle == 'CHANGE_ME'
+                    br
+                    !=publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    !=publishedInSubtitle2
+
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+            //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        A look back over 50 years to explain the meaning of logos, technique and trends.
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center#original-article
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            ### *Paul Rand: The master of twentieth century graphic design talks candidly about technique, trends, time and perfection.*
+
+                            *By Steven Heller*
+
+                            During the late 1930s, American advertising and commercial art were, in part, elevated from a formulaic service, performed by printers and layout persons, to an inventive design profession. American commerce, still reeling from the Depression, needed all the innovative selling tools that commercial art could offer. Under the influence of European Modernists who had fled their homelands for safe havens in New York, Chicago and Los Angeles, popular, sentimental illustrative and decorative styles fell out of favor; instead, function was to determine form. Asymmetrical layouts, sans serif typography, photography and montage were key elements of this new approach. And the leading American proponent of this evolution in graphic design was a Brooklyn native named Paul Rand, was was to create such iconic emblems as the logos for IBM, UPS and ABC.
+
+                            Introduced to important European designers through _Gebrauchsgrafik_ and the British *Commerical Art* magazines, Rand realized that the graphic designer’s role was not to slavishly replicate the past, but to build upon it. His dynamic collage covers for *Direction*and *Apparel Arts*, created during the late thirties and early forties, signaled the Modern spirit. During the forties Rand made inroads in advertising design, while in the fifties he devised benchmark corporate identities for IBM and Westinghouse. Today Rand advances his distinctive methodology in work for Cummins Engine and NeXT, among others, and he continues to influence contemporary graphic practice through his teach and writings; *Paul Rand: A Designer’s Art* (Yale University Press) was recently reissued in paperback. For this anniversary issue of *ID,* Rand was asked to reflect on his work and comment on some of the significant issues that affect design practice today.
+
+                        p.question Steven Heller: I recently leaned that the American Broadcasting Company wanted their logo designed —&nbsp;the one that you created in 1962. Your logo is clear, identifiable and simple. How did you respond to the news that it was going to change?
+
+                        p
+                            strong.text-red Paul Rand: 
+                            | I note that you did not also call my logo beautiful. However, I understand that the situation has now changed. The new owners saw all the submissions and decided to keep the old logo. At least that’s what I’ve been told. How did I respond? I thought it was a gratuitous act. Worse, it seemed a sign of the zeitgeist. I thought it was a mistake, not because I think my logo is the greatest in the world, but even an imperfect one, especially if it’s been around for more than a quarter of a century, shouldn’t be be changed except for good business reasons, and certainly not for reasons of vanity. Some people regard a logo as a kind of rabbit’s foot, and will never change it. Others change a logo as easily as they change their socks, disregarding the benefits of time, and the snow-balling costs change entrails. In either case a logo is always a reflection of a company and not, as is commonly understood, the other way around.
+                            | If a company is disreputable, it follows that the logo will be disreputable, however well the logo is design. The idea, therefore, of changing a logo without recognizing its importance and the significance of change is thoughtless. But the reason I wasn’t terribly upset about the ABC logo is that I thought they’d have a hell of a time improving it.
+
+                        p.question SH: Are you implying that the ABC logo 
+                            em is 
+                            | the perfect solution?
+
+                        p 
+                            strong.text-red PR: 
+                            | Only God is perfection. Somebody, undoubtedly, can do something better. But as far as I can see, {the ABC logo} is pure geometry. It deals with four circles, three of which also happened to be letters. Circles are circles. If somebody did hexagons&nbsp;or triangles, they might have an advantage, initially at least, because this would signal that the logo has been changed. People would become aware of it – only because it had changed, not necessarily because it was better. Eventually, people have to judge whether the logo is better, only if the company is better. All in all, changing a logo is much more serious than this conversation implies. Think of the recognition factors, and the cost of implementation – all this is unbelievably complex.
+
+                        p.question SH: Is there some mystery inherent in today's graphic identity practice?
+
+                        p 
+                            strong.text-red PR: 
+                            | Graphic identity is too broad a subject to generalize. But there should not be any mystery. Identity in the fashion industry today, for example, is an encyclopedia of different type styles. Look at Esprit's logo. It is a simple typeface that has been stencil to make it look less banal. There's nothing unusual about it. While I'm not making any value judgment, this style of letter has been used for many other purposes. Perhaps it's a bit mannerist, used merely to be different.
+
+                        p.question SH: Are mannerisms inherently wrong?
+
+                        p 
+                            strong.text-red PR: 
+                            | No. They are inherently suspect. One is not quite sure why something is being done. If a thing is not intrinsically necessary, one has to be a bit suspicious. But I'm not saying any of this is bad. What is Esprit's logo does, of course, is to distinguish it from other typefaces. People recognize it. “Oh yes, broken letters, it must be Esprit.” It's an 
+                            em aide de mémoire
+                            | . It gives you something to hook onto when you see it, and especially when you don't see it.
+
+                        p.question SH: Did you have the problem of creating an 
+                            em aide de mémoire 
+                            | with the NeXT logo?
+
+                        p 
+                            strong.text-red PR: 
+                            | The word “next” is not depictable ; that was the problem. What are you going to show? A barbershop with somebody pointing, “You're next!”? It's simply not describable in typographic terms. And by now, such devices as the arrow are meaningless.
+
+                        p.question SH: But the device you designed for NeXT was understandable — the shape of the computer itself.
+
+                        p 
+                            strong.text-red PR: 
+                            | It was understandable only as a cube, nothing else. And when the logo was unveiled to the public, reference to the computer's actual shape was not even made. But without that reference point, I would have had to devise something out of the blue. It's not so much a question of having a reference point; it's a question of using that reference point. After all, the client mentioned the cube to me when I was given the problem, and I'm sure the other designers who worked on the logo must also have heard about it.
+
+                            | You know, this conversation reminds me of a jockey talking to a horse. The horse is the one who wins the race, but he can't explain why he won. You're asking me, the horse, to explain what this work is all about. I'm just guessing. I don't know. You want to talk to a psychologist who will confuse you even more.
+
+                        p.question SH: Do you think people's appreciation of the logo will change once they know the NeXT computer is a black cube?
+
+                        p 
+                            strong.text-red PR: 
+                            | No. But the&nbsp;NeXT&nbsp;logo, I think, has been accepted. It's shape was only important in sparking an idea, and nothing else. Some reference was made to it being like a child's block. I really think that is one of its virtues and part of its charm. However, a logo is not designed to be charming; it is designed to identify.
+
+                        p.question SH: Do you ever want a logo to be the object of parody or satire? I realize that suggests recognition, but isn't it the wrong kind?
+
+                        p 
+                            strong.text-red PR: 
+                            | I noticed you're dismissing the recognition value. That's an important factor. And that's one reason you create a logo. If you can make a parody or a pun or something memorable — all the better. Few logos do that. There are the funny-looking logos that go to extremes: there are some French ones with triangles and all sorts of odd things going on. These are a nightmare for an artist to adapt later; that's something else to consider when you're doing a logo. You may need to use the logo in an ad or a poster, so you don't want a design that fights with the content. You want something that complements, that will make whatever it touches look better. It's okay to be crazy but I think you have to be “crazy” by design.&nbsp;
+
+                        p.question SH: In designing you adhere to high standards, to a certain production quality regarding printing and type. Are there limits to this quality?
+
+                        p 
+                            strong.text-red PR: 
+                            | Yes. You can go overboard with production tricks. Today there's this wave of high-gloss stuff. These are clichés. Tiny pictures, jazzy backgrounds and ziggurat patterns are the clichés of our time. And clichés are suspect because they're not organically related to a problem. They're merely related to a fashion, and may or may not have anything to do with the problem. They usually don't. What is worse, this kind of work contributes to the general erosion of values.&nbsp;
+
+                        p.question SH: Haven't there been times when a trend has transcended the moment?
+
+                        p 
+                            strong.text-red PR: 
+                            | Good things last. A trend will soon pass; it's not logical and it's not economical. It's okay for the moment, but what do you do for encores?
+
+                        p.question SH: What is that validity, if any, of our post-Modern graphic design?
+
+                        p 
+                            strong.text-red PR: 
+                            | Post-Modern design, graphic or architectural, deals with certain clichés that are derivative. These clichés are used for any and all problems regardless of appropriateness. This is characteristic of a trend; it's a barometer of the absence of real ideas. But there are those who may be sufficiently talented to overcome these problems, who can use clichés and&nbsp;do something significant. I don't think it's possible to condemn a genus just because the species happens to be lousy. But here again one is concerned with 
+                            em real 
+                            | values.
+
+                        p.question SH: You have lived through many technological changes: hot type, cold type, photo-type, digital type and now computers. How do you feel about computer-generated design?
+
+                        p 
+                            strong.text-red PR: 
+                            | One has to consider the species; one cannot generalize. The computer as a practical tool is one of the great contributions of our time, but as a means to creative inspiration, it is no better than its operator, the painter, the mathematician, the writer. One of the great problems for a designer is that the computer can, and does, generate too many possibilities. Most of the so-called creative work that’s produced by computer is rather tiresome in concept, form and color. There are too many possibilities: air-brushing, fading, zooming to and zipping in. These effects are tantalizing, and one tends to use all of the tricks for their own sake. This almost always leads to mere frivolity and obfuscation. I don’t, however, know enough about it. I’m not particularly interested in this kind of work. And what I have seen has left me both depressed and resentful.
+
+                        p.question SH: Why do you resent it?
+
+                        p 
+                            strong.text-red PR: 
+                            | I resent it because it’s an offense to one’s sensibilities; tricks, merely to be sensational, do not solve problems.
+
+                        p.question SH: In your lifetime, going from illustrative work in high school to a transition or decompression period where you were interested in the Weiner Werkst&#228;te and Gustav Jensen, to a point where you were using photography, montage and collage, to the present, where your work has reached a Zen-like state of clarity, can you look across that span and say that time helped change the way you think and work?
+
+                        p 
+                            strong.text-red PR: 
+                            | I can give you one example. When I first became aware of the work of Swiss graphic designers in the late forties, I used to ridicule it. I would yodel and say, My god, here they come again! I really thought the stuff was awful, cold — all the clichés that are used to describe Swiss design. But then I realized that nobody had come up with anything better or even as good. There has been no movement in our field that has improved upon so-called Swiss design. Granted, there is a lot of lousy Swiss stuff that’s stiff and uninteresting. But there’s no counterpart to Swiss design in terms of what can be understood systematically. There’s nothing as clear and logical. It just makes sense. If it’s cold, it’s because the designer is cold.
+
+                        p.question SH: But don’t you do Swiss design?
+
+                        p 
+                            strong.text-red PR: 
+                            | Yes and no. It’s my model. I don’t start with grids, although I use grids all the time. Maybe I don’t use them properly, but who cares? I start the margin always in the same place, then I use my different vertical and horizontal nodal points for different purposes. And that’s a help. You wouldn’t know it after it’s done, but that’s the way I work.
+
+                        p.question SH: Many critics argue that graphic design is ephemeral You have said that an architect builds a building for permanence. Similarly, I believe that you design for permanence. Is that correct?
+
+                        p 
+                            strong.text-red PR: 
+                            | I don’t think you can say that you design for permanence. You design for durability, function, usefulness, rightness and beauty. But permanence is up to God.
+
+                        p.question SH: What changes have you seen in the emphasis on graphic design in our society? Has it become more important?
+
+                        p 
+                            strong.text-red PR: 
+                            | I think you’re asking the wrong guy. I am the forest with all the other trees. How do I know? You have to ask somebody who is outside looking in.
+
+                        p.question SH: But you’ve seen thing happen. You’ve been a witness to design from sentimental realism to high-tech. You’ve seen all kinds of style change…
+
+                        p 
+                            strong.text-red PR: 
+                            | I think that that taste of the typical man in the street hasn’t changed. He still loves shiny paper, fancy type, ornaments, flowers, pink and baby blue — traditional things and commonplace values. I don’t think he’s aware of design per se and maybe that’s a good thing. Spare me the self-anointed expert.
+
+                        p.question SH: Do you feel you have made any inroads then?
+
+                        p 
+                            strong.text-red PR: 
+                            | Who knows? I think one needs more time. You can answer that question better than I. I can’t say.
+
+                        p.question SH: Well, I 
+                            em know 
+                            | you have.
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-image-carousel.pug
+
+        include ../../__MIXINS/_include-published-in.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug

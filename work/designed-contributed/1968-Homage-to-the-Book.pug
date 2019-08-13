@@ -1,0 +1,114 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Homage to the Book'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var bookSubhead           = 'West Virginia Pulp and Paper Company, 1968'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/61547907'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3D%2522Homage%2Bto%2Bthe%2BBook%2522'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1Y3r2Xn'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_nkw%3DHomage%2520to%2520the%2520Book'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'For The Love of Letters'
+    - var nextLink              = '1984-For-The-Love-of-Letters'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book-%20Cover-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book-%20Cover.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book-%20Genesis-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book-%20Genesis.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2014-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2015-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2016-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2016.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2017-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2017.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2018-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2018.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2019-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2019.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2020-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2020.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2021-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2021.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2022-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2022.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2023-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2023.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2024-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2024.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2025-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2025.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2026-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2026.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2027-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2027.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2028-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2028.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2029-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2029.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2030-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2030.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2031-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2031.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2032-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2032.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2033-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2033.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2034-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2034.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2035-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2035.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2036-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2036.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2037-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2037.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2038-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book%2038.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= bookSubhead
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book-%20Genesis-970.jpg",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1968%20Homage%20to%20the%20Book/Web/Homeage%20to%20the%20Book-%20Genesis.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            include ../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Sixteen designers each contributed a section to this book to express their thoughts on book design. Included are Joseph Blumenthal, Giovanni Mardersteig, Hermann Zapf, Jan Tschichold, Georg Trump, Leonard Baskin, Bert Clarke and many others. Beautifully illustrated. Binding is 4to., 16 folders loosely inserted in a cloth box. Foreword by Frederick B. Adams, Jr.
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../__MIXINS/_include-next-work.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

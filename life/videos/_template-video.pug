@@ -1,0 +1,56 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'CHANGE_ME'
+    - var bodyID    = 'life'
+    - var bodyClass = 'videos'
+
+block main-content
+    - var nextType             = 'Video'
+    - var nextTitle            = 'CHANGE_ME'
+    - var nextDate             = 'CHANGE_ME'
+    - var nextDescription      = 'CHANGE_ME'
+    - var nextLink             = '/life/videos/'
+
+    - var relatedItemLink1     = '/life/videos/'
+    - var relatedItemTitle1    = 'CHANGE_ME'
+    - var relatedItemFootnote1 = 'CHANGE_ME'
+
+    - var relatedItemLink2     = '/life/videos/'
+    - var relatedItemTitle2    = 'CHANGE_ME'
+    - var relatedItemFootnote2 = 'CHANGE_ME'
+
+    - var relatedItemLink3     = '/life/videos/'
+    - var relatedItemTitle3    = 'CHANGE_ME'
+    - var relatedItemFootnote3 = 'CHANGE_ME'
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                //- ==========  TITLE  ==========
+                .large-8.medium-11.cell
+                    .grid-x.grid-margin-x
+                        .large-12.cell.text-center
+                            h1= pageTitle
+                            p.text-gray.t16: em CHANGE_ME
+
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+
+            //- ==========  VIDEO  ==========
+            .grid-x.grid-margin-x.align-center
+                .cell
+                    .small-mb3
+                        div.plyr-js(data-plyr-embed-id="CHANGE_ME" data-plyr-provider="youtube")
+
+            //- ==========  BODY  ==========
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-9.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+
+
+        //- /*-----  End of BODY  ------*/
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug

@@ -1,0 +1,43 @@
+//- =============================================================================================
+//- 
+//- ███    ██ ███████ ██   ██ ████████     ██ ████████ ███████ ███    ███
+//- ████   ██ ██       ██ ██     ██        ██    ██    ██      ████  ████
+//- ██ ██  ██ █████     ███      ██        ██    ██    █████   ██ ████ ██
+//- ██  ██ ██ ██       ██ ██     ██        ██    ██    ██      ██  ██  ██
+//- ██   ████ ███████ ██   ██    ██        ██    ██    ███████ ██      ██
+//- 
+//- =============================================================================================
+
+.expanded.bg-black.small-my4
+    .grid-container
+        .grid-x.grid-margin-x.align-middle
+            .small-12.medium-6.large-7.cell.small-px1.small-py2.medium-px2.medium-py4.text-white(data-aos="fade-right")
+                p.sans-serif.text-bold.text-caps.text-red.small!= 'Next ' + nextType
+                h3!= nextTitle
+                p.text-graylight3.footnote!= nextDate
+                unless nextDescription =="CHANGE_ME"
+                    p!= nextDescription
+                a.button.arrow.radius.blue.text-caps.animsition-link(href=nextLink rel='noopener') View Now
+
+            .small-12.medium-6.large-5.cell.bg-gray-dark2.small-px1.small-py2.medium-px2.medium-py4(data-aos="fade-left")
+                p.sans-serif.text-bold.text-caps.text-red.small!= 'Other ' + nextType + 's worth exploring'
+
+                a.text-white.animsition-link(href=relatedItemLink1 rel='noopener')
+                    .title-label
+                        p.small-mb0!= relatedItemTitle1
+                        unless relatedItemFootnote1 =="CHANGE_ME"
+                            p.footnote.text-graylight3!= relatedItemFootnote1
+                hr.small-my2.opacity-2
+                a.text-white.animsition-link(href=relatedItemLink2 rel='noopener')
+                    .title-label
+                        p.small-mb0!= relatedItemTitle2
+                        unless relatedItemFootnote2 =="CHANGE_ME"
+                            p.footnote.text-graylight3!= relatedItemFootnote2
+                hr.small-my2.opacity-2
+                a.text-white.animsition-link(href=relatedItemLink3 rel='noopener')
+                    .title-label
+                        p.small-mb0!= relatedItemTitle3
+                        unless relatedItemFootnote3 =="CHANGE_ME"
+                            p.footnote.text-graylight3!= relatedItemFootnote3
+
+//- -----  End of NEXT ITEM  ---------------------------------------------

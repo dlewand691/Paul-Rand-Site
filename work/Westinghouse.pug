@@ -1,0 +1,582 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Westinghouse'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = 'CHANGE_ME'
+    - var nextType  = 'Client'
+    - var nextTitle = 'William H. Weintraub'
+    - var nextLink  = 'William-H-Weintraub'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Westinghouse-1960.svg", LG:"https://assets.paulrand.design/Works/Westinghouse/Westinghouse-1960.svg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo Sketches",
+                        "top","3","2",
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Logo/Web/Westinghouse%20Logo%20Sketches%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Logo/Web/Westinghouse%20Logo%20Sketches%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Logo/Web/Westinghouse%20Logo%20Sketches%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Logo/Web/Westinghouse%20Logo%20Sketches%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Logo/Web/Westinghouse%20Logo%20Sketches%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Logo/Web/Westinghouse%20Logo%20Sketches%2003.jpg", title: "", footnote: ""}
+                        )
+
+
+                    // ===================================================================================
+                    // ██ ██████       ██████  ██    ██ ██ ██████  ███████ ███████
+                    // ██ ██   ██     ██       ██    ██ ██ ██   ██ ██      ██
+                    // ██ ██   ██     ██   ███ ██    ██ ██ ██   ██ █████   ███████
+                    // ██ ██   ██     ██    ██ ██    ██ ██ ██   ██ ██           ██
+                    // ██ ██████       ██████   ██████  ██ ██████  ███████ ███████
+                    // ===================================================================================
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Identity Guideline: Graphics Identification Manual",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2001.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2002.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2003.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2004.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2005.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2006.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2007.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2008.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2009.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2010-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2010.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2011-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2011.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2012-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2012.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2013-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2013.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2014-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2014.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2015-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2015.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2016-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2016.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2017-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2017.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2018-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2018.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2019-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2019.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2020-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2020.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2021-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2021.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2022-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2022.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2023-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2023.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2024-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2024.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2025-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2025.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2026-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2026.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2027-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2027.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2028-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2028.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2029-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2029.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2030-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2030.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2031-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2031.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2032-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2032.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2033-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2033.jpg"},
+                        {Title: "Identity Guideline: Graphics Identification Manual", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2034-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Graphics%20Identification%20Manual/Web/Westinghouse%20Graphics%20Identification%20Manual%2034.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Identity Guideline: Service Truck Identification Program",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Service%20Truck%20Identification%20Program/Web/Westinghouse%20Service%20Truck%20Identification%20Program%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Service%20Truck%20Identification%20Program/Web/Westinghouse%20Service%20Truck%20Identification%20Program%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Identity Guideline: Service Truck Identification Program", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Service%20Truck%20Identification%20Program/Web/Westinghouse%20Service%20Truck%20Identification%20Program%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Service%20Truck%20Identification%20Program/Web/Westinghouse%20Service%20Truck%20Identification%20Program%2001.jpg"},
+                        {Title: "Identity Guideline: Service Truck Identification Program", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Service%20Truck%20Identification%20Program/Web/Westinghouse%20Service%20Truck%20Identification%20Program%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Service%20Truck%20Identification%20Program/Web/Westinghouse%20Service%20Truck%20Identification%20Program%2002.jpg"},
+                        {Title: "Identity Guideline: Service Truck Identification Program", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Service%20Truck%20Identification%20Program/Web/Westinghouse%20Service%20Truck%20Identification%20Program%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Service%20Truck%20Identification%20Program/Web/Westinghouse%20Service%20Truck%20Identification%20Program%2003.jpg"},
+                        {Title: "Identity Guideline: Service Truck Identification Program", SM: "https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Service%20Truck%20Identification%20Program/Web/Westinghouse%20Service%20Truck%20Identification%20Program%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Identity%20Guidelines/Westinghouse%20Service%20Truck%20Identification%20Program/Web/Westinghouse%20Service%20Truck%20Identification%20Program%2004.jpg"}
+                        )
+
+
+                    // ===================================================================================
+                    //  █████  ██████  ██    ██ ███████ ██████  ████████ ██ ███████ ██ ███    ██  ██████
+                    // ██   ██ ██   ██ ██    ██ ██      ██   ██    ██    ██ ██      ██ ████   ██ ██
+                    // ███████ ██   ██ ██    ██ █████   ██████     ██    ██ ███████ ██ ██ ██  ██ ██   ███
+                    // ██   ██ ██   ██  ██  ██  ██      ██   ██    ██    ██      ██ ██ ██  ██ ██ ██    ██
+                    // ██   ██ ██████    ████   ███████ ██   ██    ██    ██ ███████ ██ ██   ████  ██████
+                    // ===================================================================================
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Advertising",
+                        "top","3","2",
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2003.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2004.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2005.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2006.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2007.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2008.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2009.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2010-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2010.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2011-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2011.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2012-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2012.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2013-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2013.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2014-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2014.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2015-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2015.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2016-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2016.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2017-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2017.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2018-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2018.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2019-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2019.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2020-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2020.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2021-450.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Advertising/Web/Westinghouse%2021.jpg", title: "", footnote: ""}
+                        )
+
+
+                    // ===================================================================================
+                    // ██████   ██████  ███████ ████████ ███████ ██████  ███████
+                    // ██   ██ ██    ██ ██         ██    ██      ██   ██ ██
+                    // ██████  ██    ██ ███████    ██    █████   ██████  ███████
+                    // ██      ██    ██      ██    ██    ██      ██   ██      ██
+                    // ██       ██████  ███████    ██    ███████ ██   ██ ███████
+                    // ===================================================================================
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Posters",
+                        "top","2","2",
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Posters/Web/Quality%2001a-970.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Posters/Web/Quality%2001a.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Posters/Web/Logo%20Scatter-970.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Posters/Web/Logo%20Scatter.jpg", title: "", footnote: ""}
+                        )
+
+
+                    // ===================================================================================
+                    // ██████   █████   ██████ ██   ██  █████   ██████  ██ ███    ██  ██████
+                    // ██   ██ ██   ██ ██      ██  ██  ██   ██ ██       ██ ████   ██ ██
+                    // ██████  ███████ ██      █████   ███████ ██   ███ ██ ██ ██  ██ ██   ███
+                    // ██      ██   ██ ██      ██  ██  ██   ██ ██    ██ ██ ██  ██ ██ ██    ██
+                    // ██      ██   ██  ██████ ██   ██ ██   ██  ██████  ██ ██   ████  ██████
+                    // ===================================================================================
+                    +projectDivider("Packaging")
+                    .grid-x.grid-margin-x
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%20100w%20Beauty%20Tone%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%20100w%20Beauty%20Tone%2001.jpg",
+                            title: "Beauty Tone, 100w",
+                            footnote1: "2 Images"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Beauty Tone, 100w", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%20100w%20Beauty%20Tone%2002.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%2060w%20Beauty%20Tone%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%2060w%20Beauty%20Tone%2001.jpg",
+                            title: "Beauty Tone, 60w",
+                            footnote1: "4 Images"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Beauty Tone, 60w", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%2060w%20Beauty%20Tone%2002.jpg"},
+                            {title: "Beauty Tone, 60w", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%2060w%20Beauty%20Tone%20side%2001.jpg"},
+                            {title: "Beauty Tone, 60w", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%2060w%20Beauty%20Tone%20side%2002.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%20100w%20Green-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%20100w%20Green.jpg",
+                            title: "Soft White Bulb, 100w, v1",
+                            footnote1: "1 Image"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%20100w%20Soft%20White%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%20100w%20Soft%20White%2001.jpg",
+                            title: "Soft White Bulb, 100w, v2",
+                            footnote1: "4 Images"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Soft White Bulb, 100w, v2", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%20100w%20Soft%20White%2002.jpg"},
+                            {title: "Soft White Bulb, 100w, v2", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%20100w%20Soft%20White%2003.jpg"},
+                            {title: "Soft White Bulb, 100w, v2", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%20100w%20Soft%20White%2004.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%20Set%20White%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%20Set%20White%2001.jpg",
+                            title: "Soft White Bulbs Packaging",
+                            footnote1: "3 Images"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%20Set%20White%2002-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%20Set%20White%2002.jpg",
+                            title: "Soft White Bulbs Packaging",
+                            footnote1: "1 Images"
+                            })
+
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%2060w%20Blue-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%2060w%20Blue.jpg",
+                            title: "Extra Life Bulbs, 60 Watt Blue Package",
+                            footnote1: "1 Image"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%20Set%20Blue%2002-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%20Set%20Blue%2002.jpg",
+                            title: "Extra Life Bulbs, Packages",
+                            footnote1: "3 Image"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Extra Life Bulbs, Packages", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%20100w%20Blue.jpg"},
+                            {title: "Extra Life Bulbs, Packages", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%20Set%20Blue%2001.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%2075w-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%2075w.jpg",
+                            title: "Extra Life Bulbs, 75 Watt Package",
+                            footnote1: "1 Image"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%2025w%20Colortone%2008-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%2025w%20Colortone%2008.jpg",
+                            title: "Colortone, 25w White",
+                            footnote1: "9 Images"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Colortone, 25w White", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%2025w%20Colortone%2001.jpg"},
+                            {title: "Colortone, 25w White", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%2025w%20Colortone%2002.jpg"},
+                            {title: "Colortone, 25w White", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%2025w%20Colortone%2003.jpg"},
+                            {title: "Colortone, 25w White", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%2025w%20Colortone%2004.jpg"},
+                            {title: "Colortone, 25w White", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%2025w%20Colortone%2005.jpg"},
+                            {title: "Colortone, 25w White", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%2025w%20Colortone%2006.jpg"},
+                            {title: "Colortone, 25w White", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%2025w%20Colortone%2007.jpg"},
+                            {title: "Colortone, 25w White", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%2025w%20Colortone%2008.jpg"},
+                            {title: "Colortone, 25w White", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Bulb%2025w%20Colortone%2009.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Colortone%20Flood%20Light%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Colortone%20Flood%20Light%2001.jpg",
+                            title: "Colortone Flood Light",
+                            footnote1: "7 Images"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Colortone Flood Light", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Colortone%20Flood%20Light%2001.jpg"},
+                            {title: "Colortone Flood Light", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Colortone%20Flood%20Light%2002.jpg"},
+                            {title: "Colortone Flood Light", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Colortone%20Flood%20Light%2003.jpg"},
+                            {title: "Colortone Flood Light", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Colortone%20Flood%20Light%2004.jpg"},
+                            {title: "Colortone Flood Light", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Colortone%20Flood%20Light%2005.jpg"},
+                            {title: "Colortone Flood Light", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Colortone%20Flood%20Light%2006.jpg"},
+                            {title: "Colortone Flood Light", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Colortone%20Flood%20Light%2007.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Colortone%20night%20light%20blue-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Colortone%20night%20light%20blue.jpg",
+                            title: "Colortone Night Light Bulbs",
+                            footnote1: "4 Images",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Colortone Night Light Bulbs", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Colortone%20night%20light%20green.jpg"},
+                            {title: "Colortone Night Light Bulbs", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Colortone%20night%20light%20red%2001.jpg"},
+                            {title: "Colortone Night Light Bulbs", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Bulbs/Web/Westinghouse%20Packaging-%20Colortone%20night%20light%20red%2002.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Heat%20Lamp/Web/Westinghouse%20Heat%20Lamp%20Kit%2005-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Heat%20Lamp/Web/Westinghouse%20Heat%20Lamp%20Kit%2005.jpg",
+                            title: "Heat Lamp Kit",
+                            footnote1: "5 Images"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Heat Lamp Kit", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Heat%20Lamp/Web/Westinghouse%20Heat%20Lamp%20Kit%2001.jpg"},
+                            {title: "Heat Lamp Kit", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Heat%20Lamp/Web/Westinghouse%20Heat%20Lamp%20Kit%2002.jpg"},
+                            {title: "Heat Lamp Kit", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Heat%20Lamp/Web/Westinghouse%20Heat%20Lamp%20Kit%2003.jpg"},
+                            {title: "Heat Lamp Kit", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Packaging/Heat%20Lamp/Web/Westinghouse%20Heat%20Lamp%20Kit%2004.jpg"}
+                            )
+
+
+                    // ===================================================================================
+                    //  █████  ███    ██ ███    ██ ██    ██  █████  ██          ██████  ███████ ██████   ██████  ██████  ████████ ███████
+                    // ██   ██ ████   ██ ████   ██ ██    ██ ██   ██ ██          ██   ██ ██      ██   ██ ██    ██ ██   ██    ██    ██
+                    // ███████ ██ ██  ██ ██ ██  ██ ██    ██ ███████ ██          ██████  █████   ██████  ██    ██ ██████     ██    ███████
+                    // ██   ██ ██  ██ ██ ██  ██ ██ ██    ██ ██   ██ ██          ██   ██ ██      ██      ██    ██ ██   ██    ██         ██
+                    // ██   ██ ██   ████ ██   ████  ██████  ██   ██ ███████     ██   ██ ███████ ██       ██████  ██   ██    ██    ███████
+                    // ===================================================================================
+                    +projectDivider("Annual Reports")
+                    .grid-x.grid-margin-x
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1964/Web/Westinghouse%20Annual%20Report%201964%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1964/Web/Westinghouse%20Annual%20Report%201964%2001.jpg",
+                            title: "1964",
+                            footnote1: "4 Images"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "1964", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1964/Web/Westinghouse%20Annual%20Report%201964%2001.jpg"},
+                            {title: "1964", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1964/Web/Westinghouse%20Annual%20Report%201964%2002.jpg"},
+                            {title: "1964", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1964/Web/Westinghouse%20Annual%20Report%201964%2003.jpg"},
+                            {title: "1964", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1964/Web/Westinghouse%20Annual%20Report%201964%2004.jpg"}
+                            )
+
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1970/Web/Westinghouse%20Annual%20Report%201970%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1970/Web/Westinghouse%20Annual%20Report%201970%2001.jpg",
+                            title: "1970",
+                            footnote1: "1 Image"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1971/Web/Westinghouse%20Annual%20Report%201971%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1971/Web/Westinghouse%20Annual%20Report%201971%2001.jpg",
+                            title: "1971",
+                            footnote1: "1 Image"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1974/Web/Westinghouse%20Annual%20Report%201974%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1974/Web/Westinghouse%20Annual%20Report%201974%2001.jpg",
+                            title: "1974",
+                            footnote1: "11 Images"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "1974", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1974/Web/Westinghouse%20Annual%20Report%201974%2001.jpg"},
+                            {title: "1974", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1974/Web/Westinghouse%20Annual%20Report%201974%2002.jpg"},
+                            {title: "1974", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1974/Web/Westinghouse%20Annual%20Report%201974%2003.jpg"},
+                            {title: "1974", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1974/Web/Westinghouse%20Annual%20Report%201974%2004.jpg"},
+                            {title: "1974", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1974/Web/Westinghouse%20Annual%20Report%201974%2005.jpg"},
+                            {title: "1974", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1974/Web/Westinghouse%20Annual%20Report%201974%2006.jpg"},
+                            {title: "1974", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1974/Web/Westinghouse%20Annual%20Report%201974%2007.jpg"},
+                            {title: "1974", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1974/Web/Westinghouse%20Annual%20Report%201974%2008.jpg"},
+                            {title: "1974", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1974/Web/Westinghouse%20Annual%20Report%201974%2009.jpg"},
+                            {title: "1974", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1974/Web/Westinghouse%20Annual%20Report%201974%2010.jpg"},
+                            {title: "1974", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1974/Web/Westinghouse%20Annual%20Report%201974%2011.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1976/Web/Westinghouse%20Annual%20Report%201976%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1976/Web/Westinghouse%20Annual%20Report%201976%2001.jpg",
+                            title: "1976",
+                            footnote1: "3 Images"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "1976", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1976/Web/Westinghouse%20Annual%20Report%201976%2001.jpg"},
+                            {title: "1976", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1976/Web/Westinghouse%20Annual%20Report%201976%2002.jpg"},
+                            {title: "1976", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1976/Web/Westinghouse%20Annual%20Report%201976%2003.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1978/Web/Westinghouse%20Annual%20Report%201978%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1978/Web/Westinghouse%20Annual%20Report%201978%2001.jpg",
+                            title: "1978",
+                            footnote1: "1 Image"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1979/Web/Westinghouse%20Annual%20Report%201979%2001b-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1979/Web/Westinghouse%20Annual%20Report%201979%2001b.jpg",
+                            title: "1979",
+                            footnote1: "1 Image"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981.jpg",
+                            title: "1981",
+                            footnote1: "29 Images"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2001.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2002.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2003.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2004.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2005.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2006.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2007.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2008.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2009.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2010.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2011.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2012.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2013.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2014.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2015.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2016.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2017.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2018.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2019.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2020.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2021.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2022.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2023.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2024.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2025.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2026.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2027.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2028.jpg"},
+                            {title: "1981", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Annual%20Reports/1981/Web/Westinghouse%20Annual%20Report%201981%2029.jpg"}
+                            )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "The Westinghouse Sign",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Westinghouse/Signage/Web/Westinghouse%20Sign%2001.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Signage/Web/Westinghouse%20Sign%2001.jpg", title: "", footnote: ""}
+                        )
+                    .flex-video
+                        iframe(src="//www.youtube.com/embed/g37eqB_so_E" frameborder="0" allowfullscreen)
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "The Westinghouse Sign", SM: "https://assets.paulrand.design/Works/Westinghouse/Signage/Web/Westinghouse%20Sign%2002.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Signage/Web/Westinghouse%20Sign%2002.jpg"},
+                        {Title: "The Westinghouse Sign", SM: "https://assets.paulrand.design/Works/Westinghouse/Signage/Web/Westinghouse%20Sign%2003.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Signage/Web/Westinghouse%20Sign%2003.jpg"},
+                        {Title: "The Westinghouse Sign", SM: "https://assets.paulrand.design/Works/Westinghouse/Signage/Web/Westinghouse%20Sign%20Assembly%2001.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Signage/Web/Westinghouse%20Sign%20Assembly%2001.jpg"},
+                        {Title: "The Westinghouse Sign", SM: "https://assets.paulrand.design/Works/Westinghouse/Signage/Web/Westinghouse%20Sign%20Assembly%2002.jpg", LG:"https://assets.paulrand.design/Works/Westinghouse/Signage/Web/Westinghouse%20Sign%20Assembly%2002.jpg"}
+                        )
+
+
+                    //- ===================================================================================
+                    //- ███████ ████████  █████  ████████ ██  ██████  ███    ██ ███████ ██████  ██    ██
+                    //- ██         ██    ██   ██    ██    ██ ██    ██ ████   ██ ██      ██   ██  ██  ██
+                    //- ███████    ██    ███████    ██    ██ ██    ██ ██ ██  ██ █████   ██████    ████
+                    //-      ██    ██    ██   ██    ██    ██ ██    ██ ██  ██ ██ ██      ██   ██    ██
+                    //- ███████    ██    ██   ██    ██    ██  ██████  ██   ████ ███████ ██   ██    ██
+                    //- ===================================================================================
+                    +projectDivider("Stationery")
+                    .grid-x.grid-margin-x
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Stationery/Web/Westinghouse%20Letterhead%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Stationery/Web/Westinghouse%20Letterhead%2001.jpg",
+                            title: "Letterhead, v1",
+                            footnote1: "4 Images"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Letterhead, v1", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Stationery/Web/Westinghouse%20Letterhead%2002.jpg"},
+                            {title: "Letterhead, v1", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Stationery/Web/Westinghouse%20Letterhead%2003.jpg"},
+                            {title: "Letterhead, v1", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Stationery/Web/Westinghouse%20Letterhead%2004-%20detail.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Stationery/Web/Westinghouse%20Letterhead%2005-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Stationery/Web/Westinghouse%20Letterhead%2005.jpg",
+                            title: "Letterhead, v2",
+                            footnote1: "1 Image"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Stationery/Web/Westinghouse%20Letterhead-%20catalog%20news-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Stationery/Web/Westinghouse%20Letterhead-%20catalog%20news.jpg",
+                            title: "Letterhead, Catalog News",
+                            footnote1: "1 Image"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Stationery/Web/Westinghouse%20Letterhead-%20gold-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Stationery/Web/Westinghouse%20Letterhead-%20gold.jpg",
+                            title: "Letterhead, Gold",
+                            footnote1: "1 Image"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Stationery/Web/Westinghouse%20Letterhead-%20tv%20news-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Stationery/Web/Westinghouse%20Letterhead-%20tv%20news.jpg",
+                            title: "Letterhead, TV News",
+                            footnote1: "1 Image"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Stationery/Web/Westinghouse%20Envelope-%20gold%20front-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Stationery/Web/Westinghouse%20Envelope-%20gold%20front.jpg",
+                            title: "Envelope, Gold",
+                            footnote1: "2 Images"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Envelope, Gold, back", hideMe: "https://assets.paulrand.design/Works/Westinghouse/Stationery/Web/Westinghouse%20Envelope-%20gold%20back.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/Westinghouse/Stationery/Web/Westinghouse%20mailing%20label-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/Westinghouse/Stationery/Web/Westinghouse%20mailing%20label.jpg",
+                            title: "Mailing Label",
+                            footnote1: "1 Image"
+                            })
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

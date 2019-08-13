@@ -1,0 +1,142 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Playing by Mr. Rand’s Rules'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2007%20Seventy-nine%20short%20essays%20on%20design/Web/Seventy-nine%20short%20essays%20on%20design%2C%20front%2002-450.jpg'
+
+    - var articleAuthor         = 'Michael Bierut'
+    - var publishedInTitle      = 'Seventy-nine Short Essays on Design'
+    - var publishedInSubtitle   = '2007'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2007%20Seventy-nine%20short%20essays%20on%20design/Web/Seventy-nine%20short%20essays%20on%20design%2C%20front%2002-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2007%20Seventy-nine%20short%20essays%20on%20design/Web/Seventy-nine%20short%20essays%20on%20design%2C%20front%2002.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/77116837'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D50%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3DSeventy-nine%2BShort%2BEssays%2Bon%2BDesign'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1QQw7Np'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/s/Seventy+nine+Short+Essays+on+Design'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Paul Rand, artiste publicitaire'
+    - var nextDate              = '2007'
+    - var nextDescription       = 'Beaux Arts Magazine'
+
+    - var nextLink              = '2007-beaux-arts-magazine.html'
+
+    - var relatedItemLink1      = '1989-creation-magazine.html'
+    - var relatedItemTitle1     = 'CREATION no. 1 (International Graphic Design, Art and Illustration)'
+    - var relatedItemFootnote1  = 'Tokyo: Recruit Co., Ltd., 1989'
+
+    - var relatedItemLink2      = '1997-six-chapters-in-design.html'
+    - var relatedItemTitle2     = 'Six Chapters in Design: Saul Bass, Ivan Chermayeff, Milton Glaser, Paul Rand, Ikko Tanaka, Henryk Tomaszewski'
+    - var relatedItemFootnote2  = 'Chronicle Books, 1997'
+
+    - var relatedItemLink3      = '1971-NYC-ADC-Hall-of-Fame.html'
+    - var relatedItemTitle3     = '1971 Art Director’s Club of New York Hall of Fame Inception'
+    - var relatedItemFootnote3  = 'Watson-Guptill Publications, 1971'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+            .progress-container
+                span.progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content#original-article
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Seventy-nine Short Essays on Design brings together the best of designer Michael Bierut’s critical writing serious or humorous, flattering or biting, but always on the mark. Bierut is widely considered the finest observer on design writing today. 
+
+                        Covering topics as diverse as Twyla Tharp and ITC Garamond, Bierut’s intelligent and accessible texts pull design culture into crisp focus. He touches on classics, like Massimo Vignelli and the cover of The Catcher in the Rye, as well as newcomers, like McSweeney’s Quarterly Concern and color-coded terrorism alert levels. Along the way Nabakov’s Pale Fire; Eero Saarinen; the paper clip; Celebration, Florida; the planet Saturn; the ClearRx pill bottle; and paper architecture all fall under his pen. His experience as a design practitioner informs his writing and gives it truth. 
+
+                        In Seventy-nine Short Essays on Design, designers and nondesigners alike can share and revel in his insights.
+
+
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            Most American graphic designers become irrelevant far before they reach Paul Rand’s age. No doubt he confounded many onlookers who had him slated for dormant eminencegrise-hood in the mid-eighties by responding with the one-two punch of the publication of A Designer's Art in 1985 (complete with a page-one notice in the New York Times Book Review) and, a year later, the design of the NeXT logo for Steve Jobs (the presentation of which was incorporated into a television special on Jobs, along with a notorious reference to the logo s $100,000 price tag). Since then, Mr. Rand has ruled virtually unchallenged as the King of American Graphic Design.
+
+                            Mr. Rand, or perhaps the mythology that has been attached to him, has also served as the dominant role model for how many of us think design should be practiced in this country.The legendary relationship between Mr. Rand and IBM’s Thomas J. Watson, Jr., for instance, has served to define what almost all designers hold as a prerequisite of “getting good work done,” that is, Svengali-like access to a Chief Executive Officer genetically predisposed to liking “good design.” Whether or not the Rand-Watson relationship is a plausible model for corporate practice is meaningless in the face of our vast collective fantasy about it, a fantasy shared by designers as different from Rand as Rick Valicenti and Tibor Kalman. In the same way, many commonly held beliefs about how to do design reflect Mr. Rand’s example: the idea that the smaller the office the better, that a logo is the crucial starting point in corporate identity, and— crucially—that the formal interpretation of visual ideas is the designer’s primary mission.
+
+                            It was indeed from Olympus, then, that Mr. Rand unleashed a thunderbolt in the form of “From Cassandre to Chaos,” an essay that appeared last year in the Journal of the American Institute of Graphic Arts. Just at the moment when the forces of “deconstructivism” seemed about to overturn the verities of modernism at last, Mr. Rand put his foot down. Much contemporary graphic design, he said, is degrading the world as we know it,“no less than drugs or pollution.” No names, of course, but one could easily identify' the culprits Rand had in mind from his litany of their modi operandi:“squiggles, pixels, doodles” (Greiman, et al.),“corny woodcuts on moody browns and russets” (Duffy, Anderson, et al.), “indecipherable, zany typography” (Valicenti, et al.), “peach, pea green, and lavender” (anyone from California named Michael, et al.), and even “tiny color photos surrounded by acres of white space” (which obviously only sounds harmless).
+
+                            Predictably, the essay was received with almost tearful relief in some quarters, and with exasperation in others. Insiders read Rands statement that “To make the classroom a perpetual forum for political and social issues, for instance, is wrong; and to see aesthetics as sociology is grossly misleading,” as a not-so-thinly veiled repudiation of Sheila de Brettevilles newly minted regime at Yale, Rands distaste for which, it was said, had led him to resign his teaching position there. It was also said that the essay was only a hint of what was to come in Rand’s new book. Design Form and Chaos.
+
+                            Now comes the thing itself, and the book, somewhat disappointingly, is less a manifesto than an illustrated anthology not unlike its predecessors. The title (which is variously punctuated throughout, appearing here with no commas, there with two) is nowhere explained, unless it serves to underline the importance Rand obviously places on “From Cassandre to Chaos,” which closes the book. About half the book consists of essays, all but one previously published, and illustrated, like those in A Designers Art, that are the authors own work. Subjects include Eric Gills An Essay on Typography (which he feels is great but the original jacket was better), computers (okay but not character building like using a ruling pen),designs role in the business community (not so hot, with much crowd-pleasing condemnation of market research and more longing for genetically predisposed CEOs). But make no mistake, even someone who disagreed with Rands premises would admit that, nearly without exception, the essays are thoughtful, well reasoned, and gracefully written. For the undecided, a veritable army of names is enlisted to press the cause, including Arp. da Vinci, Kant, Le Corbusier, Kandinsky, Leger, Malevich, Malraux, Rembrandt, Skinner, Schwitters, Tschichold, and Mies van der Rohe, not to mention Abraham Lincoln and Alistair Cooke.
+
+                            The books real appeal, though, probably won’t be the essays, but the nearly 100 pages Rand devotes to reprinting brochures about six different logos, which include IBM, IDEO, and NeXT.These were originally created as presentations of identity projects commissioned by these companies, and each is a model of step-by-step clarity and elegance, with no small appeal for the voyeurs among us.
+
+                            Equally striking, though, especially in the context of the surrounding essays, is the obsession with minute formal issues that recur throughout the presentations. Nearly every example shown has passages that reduce the design process to the lengthy examination of the juxtaposition of round letters and square letters, of too many vertical letters in a row, of adjacent round letters that jumble together, of letters that cluster and separate from the whole. A valid part of the design process to be sure, but oddly emphasized by a designer who quotes approvingly Philip Kotler’s claim that “design is a potent strategy tool that companies can use to gain a sustainable competitive advantage.” One wonders how skeptical CEOs react when confronted by the mysterious God in these endless details; probably as they do on Sunday mornings, with the proper mixture of awe and reverence, and in the comfort that on Monday it’s back to the real world of business as usual. Mr. Rand complains that most businesspeople “see the designer as a set of hands—a supplier—not as a strategic part of business.” Can they be blamed?
+
+                            For when its all said and done, Mr. Rand sees the design process not as strategy but as an intuitive search for an absolute ideal:“unity, harmony, grace, and rhythm.” Content is important, insofar as it provides as starting point for the formal ends that “ultimately distinguish art from non-art, good design from bad design.” In this way, he is scarcely different from the culprits he criticizes so passionately.
+
+                            Mr. Rand himself is aware of this inherent contradiction but doesn’t seem to grasp its full implications. “To poke fun at form or formalism is to poke fun at...the philosophy called aesthetics. Ironically, it also belittles trendy design, since the devices that characterize this style of ‘decoration’ are primarily formal." Having banished social and political issues to the sidelines, the game is reduced to the Good Formalists against the Bad Formalists.There seems to be more than enough irony in this to go around.
+
+                            Mr. Rand rails against the state of graphic design today, leaving unmentioned the fact that this young profession has been invented very much in his own image. He taught many of today’s most influential practitioners; he taught the teachers of countless others. His book goes out into a world where half of us arc single-mindedly pursuing our own essentially formal notions of beauty and anti-beauty, and the other half are earnestly trying to solve someone’s business problems with an attractive logo.To Mr. Rands everlasting dismay, all of us keep playing the game by the rules he helped invent.
+
+                            Certainly there’s no denying that Paul Rand is a living legend with an astonishing body of accomplishment. Nonetheless, it’s telling and more than a little sad that of the dozens and dozens of names invoked in Design Form and Chaos, the only living designer mentioned is that of the author. Perhaps the profession of graphic design is truly in the state of crisis that Mr. Rand says it is. If our respected elders care as much as they say they do, the least one could hope for is a bit less crankiness and a bit more generosity of spirit.
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+
+
+
+        include ../../../../__MIXINS/_include-image-carousel.pug
+
+        include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

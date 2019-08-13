@@ -1,0 +1,63 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'MIT interview with John Maeda'
+    - var bodyID    = 'life'
+    - var bodyClass = 'videos'
+
+block main-content
+    - var nextType             = 'Video'
+    - var nextTitle            = 'Rand delivers his logo presentation booklet to the NeXT team'
+    - var nextDate             = '1996'
+    - var nextDescription      = 'This video provided courtesy of kenfrederick on YouTube.'
+    - var nextLink             = '/life/videos/1996-next-introduction.html'
+
+    - var relatedItemLink1     = '/life/videos/1994-mead-generations.html'
+    - var relatedItemTitle1    = 'Mead Generations'
+    - var relatedItemFootnote1 = 'Rand discusses various design topics from his home studio.'
+
+    - var relatedItemLink2     = '/life/videos/1993-steve-jobs.html'
+    - var relatedItemTitle2    = 'Steve Jobs interview about working with Paul Rand'
+    - var relatedItemFootnote2 = 'Jobs discusses Rand’s logo for NeXT Computers'
+
+    - var relatedItemLink3     = '/life/videos/2013-MODA-design-conversations.html'
+    - var relatedItemTitle3    = 'MODA Design Conversations with David Laufer'
+    - var relatedItemFootnote3 = 'David Laufer discusses his book “Aha Moments”'
+
+
+    //- =============================
+    //- =            VIDEO            =
+    //- =============================
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                //- ==========  TITLE  ==========
+                .large-8.medium-11.cell
+                    .grid-x.grid-margin-x
+                        .large-12.cell.text-center
+                            h1= pageTitle
+                            p.text-gray.t16: em 1996
+
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+
+            //- ==========  VIDEO  ==========
+            .grid-x.grid-margin-x.align-center
+                .large-12.cell
+                    .small-mb3
+                        div.plyr-js(data-plyr-embed-id="2VYQvUCP--o" data-plyr-provider="youtube")
+
+                    //- .flex-video
+                    //- 	iframe(src="//www.youtube.com/embed/2VYQvUCP--o" frameborder="0" allowfullscreen)
+
+            //- ==========  BODY  ==========
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-9.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+
+
+        //- /*-----  End of BODY  ------*/
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug

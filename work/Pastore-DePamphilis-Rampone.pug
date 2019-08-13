@@ -1,0 +1,106 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'PDR (Pastore DePamphilis Rampone)'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = '1987'
+    - var nextType  = 'Client'
+    - var nextTitle = 'Penn-Brite Papers'
+    - var nextLink  = 'Penn-Brite-Papers'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/PDR-Pastore-DePamphilis-Rampone-1987.svg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/PDR-Pastore-DePamphilis-Rampone-1987.svg", title: "", footnote: ""}
+                        )
+
+
+            +projectDivider("Posters")
+            .grid-x.grid-margin-x.align-center
+
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/PDR%20Poster/Web/PDR%20Poster%20v1-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/PDR%20Poster/Web/PDR%20Poster%20v1.jpg",
+                    title: "Poster, v1",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/PDR%20Poster/Web/PDR%20Poster%20v2-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/PDR%20Poster/Web/PDR%20Poster%20v2.jpg",
+                    title: "Poster, v2",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+            .grid-x.grid-margin-x.align-center
+                .small-12.cell.text-center
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Promotional Folder",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder-970.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder.jpg"},
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2001.jpg"},
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2002.jpg"},
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2003.jpg"},
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2004.jpg"},
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2005.jpg"},
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2006.jpg"},
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2007.jpg"},
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2008.jpg"},
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2009.jpg"},
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2010-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2010.jpg"},
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2011-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2011.jpg"},
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2012-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2012.jpg"},
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2013-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2013.jpg"},
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2014-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2014.jpg"},
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2015-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2015.jpg"},
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2016-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2016.jpg"},
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2017-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2017.jpg"},
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2018-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2018.jpg"},
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2019-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2019.jpg"},
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2020-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2020.jpg"},
+                        {Title: "Promotional Folder", SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2021-450.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Folder/Web/PDR%20Folder%20insert%2021.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Vincent Van Gogh Quote Poster",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Vincent%20Van%20Gogh%20Poster/Web/PDR%20Vincent%20Van%20Gogh%20Quote%20Poster-970.jpg", LG:"https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/Vincent%20Van%20Gogh%20Poster/Web/PDR%20Vincent%20Van%20Gogh%20Quote%20Poster.jpg", title: "", footnote: ""}
+                        )
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

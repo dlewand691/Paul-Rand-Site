@@ -1,0 +1,145 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'La Palina Cigars'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = 'CHANGE_ME'
+    - var nextType  = 'Client'
+    - var nextTitle = 'Lee Hats'
+    - var nextLink  = 'Lee-Hats'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/La-Palina-Cigars.svg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/La-Palina-Cigars.svg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Cigar Box – Corona",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Corona/Web/La%20Palina%20Cigars%20Box-%20Corona%2001-970.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Corona/Web/La%20Palina%20Cigars%20Box-%20Corona%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Cigar Box – Corona", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Corona/Web/La%20Palina%20Cigars%20Box-%20Corona%2001-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Corona/Web/La%20Palina%20Cigars%20Box-%20Corona%2001.jpg"},
+                        {Title: "Cigar Box – Corona", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Corona/Web/La%20Palina%20Cigars%20Box-%20Corona%2002-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Corona/Web/La%20Palina%20Cigars%20Box-%20Corona%2002.jpg"},
+                        {Title: "Cigar Box – Corona", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Corona/Web/La%20Palina%20Cigars%20Box-%20Corona%2003-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Corona/Web/La%20Palina%20Cigars%20Box-%20Corona%2003.jpg"},
+                        {Title: "Cigar Box – Corona", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Corona/Web/La%20Palina%20Cigars%20Box-%20Corona%2004-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Corona/Web/La%20Palina%20Cigars%20Box-%20Corona%2004.jpg"},
+                        {Title: "Cigar Box – Corona", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Corona/Web/La%20Palina%20Cigars%20Box-%20Corona%2005-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Corona/Web/La%20Palina%20Cigars%20Box-%20Corona%2005.jpg"},
+                        {Title: "Cigar Box – Corona", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Corona/Web/La%20Palina%20Cigars%20Box-%20Corona%2006-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Corona/Web/La%20Palina%20Cigars%20Box-%20Corona%2006.jpg"},
+                        {Title: "Cigar Box – Corona", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Corona/Web/La%20Palina%20Cigars%20Box-%20Corona%2007-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Corona/Web/La%20Palina%20Cigars%20Box-%20Corona%2007.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Cigar Box – Ideals",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals/Web/La%20Palina%20Cigars%20Box-%20Ideals%2001-970.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals/Web/La%20Palina%20Cigars%20Box-%20Ideals%2001.jpg", title: "", footnote: ""}
+                        )
+
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Cigar Box – Ideals", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals/Web/La%20Palina%20Cigars%20Box-%20Ideals%2001-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals/Web/La%20Palina%20Cigars%20Box-%20Ideals%2001.jpg"},
+                        {Title: "Cigar Box – Ideals", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals/Web/La%20Palina%20Cigars%20Box-%20Ideals%2002-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals/Web/La%20Palina%20Cigars%20Box-%20Ideals%2002.jpg"},
+                        {Title: "Cigar Box – Ideals", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals/Web/La%20Palina%20Cigars%20Box-%20Ideals%2003-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals/Web/La%20Palina%20Cigars%20Box-%20Ideals%2003.jpg"},
+                        {Title: "Cigar Box – Ideals", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals/Web/La%20Palina%20Cigars%20Box-%20Ideals%2004-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals/Web/La%20Palina%20Cigars%20Box-%20Ideals%2004.jpg"},
+                        {Title: "Cigar Box – Ideals", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals/Web/La%20Palina%20Cigars%20Box-%20Ideals%2005-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals/Web/La%20Palina%20Cigars%20Box-%20Ideals%2005.jpg"},
+                        {Title: "Cigar Box – Ideals", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals/Web/La%20Palina%20Cigars%20Box-%20Ideals%2006-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals/Web/La%20Palina%20Cigars%20Box-%20Ideals%2006.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Cigar Box – Ideals 5 Pack",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2001-970.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2001.jpg", title: "", footnote: ""}
+                        )
+
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Cigar Box – Ideals 5 Pack", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2001-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2001.jpg"},
+                        {Title: "Cigar Box – Ideals 5 Pack", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2002-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2002.jpg"},
+                        {Title: "Cigar Box – Ideals 5 Pack", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2003-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2003.jpg"},
+                        {Title: "Cigar Box – Ideals 5 Pack", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2004-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2004.jpg"},
+                        {Title: "Cigar Box – Ideals 5 Pack", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2005-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2005.jpg"},
+                        {Title: "Cigar Box – Ideals 5 Pack", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2006-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2006.jpg"},
+                        {Title: "Cigar Box – Ideals 5 Pack", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2007-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2007.jpg"},
+                        {Title: "Cigar Box – Ideals 5 Pack", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2008-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2008.jpg"},
+                        {Title: "Cigar Box – Ideals 5 Pack", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2009-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2009.jpg"},
+                        {Title: "Cigar Box – Ideals 5 Pack", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2010-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2010.jpg"},
+                        {Title: "Cigar Box – Ideals 5 Pack", SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2011-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%205-Pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%205-Pack%2011.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Cigar Box – Ideals 20 Pack",
+                        "middle", "1", "1",
+                        {SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%2020-pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%2020-Pack%2001-970.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Ideals%2020-pack/Web/La%20Palina%20Cigars%20Box-%20Ideals%2020-Pack%2001.jpg", title: "", footnote: ""}
+                        )
+
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Cigar Box – Easter",
+                        "top","2","2",
+                        {SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Easter/Web/La%20Palina%20Cigars%20Easter%20Box%2001-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Easter/Web/La%20Palina%20Cigars%20Easter%20Box%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Easter/Web/La%20Palina%20Cigars%20Easter%20Box%2002-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Easter/Web/La%20Palina%20Cigars%20Easter%20Box%2002.jpg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Cigar Box – Merry Christmas",
+                        "middle", "1", "1",
+                        {SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Merry%20Christmas/Web/La%20Palina%20Cigars%20Box-%20Merry%20Christmas-970.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Boxes/Merry%20Christmas/Web/La%20Palina%20Cigars%20Box-%20Merry%20Christmas.jpg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Labels",
+                        "middle","3","2",
+                        {SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Labels/Web/La%20Palina%20Cigars%20Label%20Christmas-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Labels/Web/La%20Palina%20Cigars%20Label%20Christmas.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Labels/Web/La%20Palina%20Cigars%20Label%20For%20Dad%2001-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Labels/Web/La%20Palina%20Cigars%20Label%20For%20Dad%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Labels/Web/La%20Palina%20Cigars%20Label%20For%20Dad%2002-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Labels/Web/La%20Palina%20Cigars%20Label%20For%20Dad%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Labels/Web/La%20Palina%20Cigars%20Label%20Give%20Dad-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Labels/Web/La%20Palina%20Cigars%20Label%20Give%20Dad.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Labels/Web/La%20Palina%20Cigars%20Label%20Santa%2001-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Labels/Web/La%20Palina%20Cigars%20Label%20Santa%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Labels/Web/La%20Palina%20Cigars%20Label%20Santa%2002-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Labels/Web/La%20Palina%20Cigars%20Label%20Santa%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Labels/Web/La%20Palina%20Cigars%20Label%20Stockings%20Give%2002-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Labels/Web/La%20Palina%20Cigars%20Label%20Stockings%20Give%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Labels/Web/La%20Palina%20Cigars%20Label%20Stockings-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Labels/Web/La%20Palina%20Cigars%20Label%20Stockings.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Labels/Web/La%20Palina%20Cigars%20Label%20Hearts-450.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Labels/Web/La%20Palina%20Cigars%20Label%20Hearts.jpg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Metal Door Sign",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/Metal%20Door%20Sign/Web/La%20Palina%20Metal%20Door%20Sign-800.jpg", LG:"https://assets.paulrand.design/Works/La%20Palina%20Cigars/Metal%20Door%20Sign/Web/La%20Palina%20Metal%20Door%20Sign.jpg", title: "", footnote: ""}
+                        )
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

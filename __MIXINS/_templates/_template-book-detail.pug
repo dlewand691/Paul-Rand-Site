@@ -1,0 +1,66 @@
+doctype html
+html.no-js(lang='en' dir='ltr')
+
+	include ../../__MIXINS/_include-head.pug
+
+	body#writing.type-books(data-grid-framework="f4" data-grid-color="pink" data-grid-opacity="0.2" data-grid-zindex="10" data-grid-gutterwidth="30px" data-grid-nbcols="12")
+
+		include ../../__MIXINS/_include-headerNav-secondaryNav.pug
+
+		.animsition
+			.cd-main-content
+
+				//- ========================================
+				//- =            1 COLUMN CONTENT            =
+				//- ========================================
+
+				.grid-x.grid-margin-x.small-mb3
+					.small-12.cell.text-center
+						h3 Thoughts on Design
+						p.text-gray.t16: em 1947 – 1st Edition, Wittenborn & Company
+
+				.grid-x.grid-margin-x
+					//- nav.side-pagination.available
+						//- a.next-page.no-js.js-pagination.clearfix(href="#")
+						//- 	span
+						//- a.prev-page.no-js.js-pagination.clearfix(href="#")
+						//- 	span
+
+					.large-7.medium-8.small-12.cell.text-center
+						.slick-carousel
+							img(src="/img/books/thoughts-on-design/thoughts.jpg" height=400)
+							img(src="/img/books/thoughts-on-design/thoughts02.jpg" height=200)
+							img(src="/img/books/thoughts-on-design/thoughts03.jpg" height=200)
+							iframe(src="/img/zoom/openlayers.html" border="0" style="height: 900px; width: 100%")
+
+				.grid-x.grid-margin-x
+					.small-12.cell.text-center
+						p.footnote (Use &larr; &rarr; keys to navigate)
+				
+				.grid-x.grid-margin-x
+					.small-12.cell
+						p 8.5 x 10.75 hardcoverbook with 164 pages, 94 halftone illustrations and 8 color plates. Trilingual edition, with French and Spanish translations.
+
+						p This is — quite possibly — the most desireable Graphic Design book ever published. After a decade of establishing himself as the wunderkind of the emerging field of Graphic Design, Paul Rand sat down to codify his beliefs and working methodolgy into a single volume. Thoughts on Design was the result.
+						
+							.footnote — Randall Ross of modernism101.com
+
+						p.sans-serif.text-bold-italic.small-mb0 From the dust jacket:
+						p.text-italic “Rand is aware of the complexity of the designer’s function: he stresses this again and again. He has no patience with slickness, with facility; he is a severe critic of the hackneyed and the insincere. All this is dead wood to be cleared away.”
+
+				//- -----  End of 1 COLUMN CONTENT  ------
+
+				include ../../__MIXINS/_include-find-a-copy.pug
+
+				include ../../__MIXINS/_include-next-item.pug
+
+				include ../../__MIXINS/_include-related-items.pug
+					
+				include ../../__MIXINS/_include-social-media.pug
+
+
+
+			include ../../__MIXINS/_include-footer.pug
+
+		include ../../__MIXINS/_include-closingScript.pug 
+			

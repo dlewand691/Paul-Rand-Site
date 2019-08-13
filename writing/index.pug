@@ -1,0 +1,42 @@
+extends ../__MIXINS/_layout-default.pug
+
+block vars
+    - var pageTitle = 'Writing'
+    - var bodyID    = 'writing'
+    - var bodyClass = ''
+
+block main-content
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.expanded.align-center
+                .cell
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-top His Thoughts on Design
+                    h6.text-italic.text-center.reveal-enter-bottom (and other musings…)
+
+                    a.card.card-large.medium-mt4.small-p1.medium-p2.reveal-enter-bottom(href="books/")
+                        .card-section
+                            img.w100(src="/img/landing/writing/books.jpg" alt="Books")
+                        .card-section
+                            p.small-m0 Books
+
+                    a.card.card-medium.small-p1.medium-p2.reveal-enter-bottom(href="articles/")
+                        .card-section
+                            img.w100(src="/img/landing/writing/articles.jpg" alt="Articles")
+                        .card-section
+                            p.small-m0 Articles
+
+                    a.card.card-small.medium-mt3.reveal-enter-bottom.large-mrn4(href="quotes.html")
+                        .card-section
+                            img.w100(src="/img/landing/writing/quotes.jpg" alt="Quotes")
+                        .card-section
+                            p.small-m0 Quotes
+
+                    a.card.card-medium.medium-mtn2.small-p1.medium-p2.reveal-enter-bottom(href="suggested-reading.html")
+                        .card-section
+                            img.w100(src="/img/landing/writing/suggested-reading.jpg" alt="Suggested Readings")
+                        .card-section
+                            p.small-m0 Suggested Readings
+
+
+
+            //- /*-----  End of GALLERY MEDIUM  ------*/

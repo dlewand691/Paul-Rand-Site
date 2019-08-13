@@ -1,0 +1,135 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'For The Love of Letters'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var bookSubhead           = 'Anderson & Lembke'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/44402746'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3DAnderson%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3D%2522For%2BThe%2BLove%2Bof%2BLetters%2522'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1V9RZl6'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_nkw%3DFor%2520The%2520Love%2520of%2520Letters'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'A 24-Page Book'
+    - var nextLink              = '1987-Twenty-Four-Page-Book'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2C%20front-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2C%20front.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2C%20interior-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2C%20interior.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2014-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2015-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2016-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2016.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2017-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2017.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2018-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2018.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2019-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2019.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2020-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2020.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2021-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2021.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2022-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2022.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2023-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2023.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2024-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2024.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2025-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2025.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2026-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2026.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2027-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2027.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2028-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2028.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2029-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2029.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2030-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2030.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2031-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2031.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2032-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2032.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2033-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2033.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= bookSubhead
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2C%20front-970.jpg",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1984%20For%20The%20Love%20of%20Letters/Web/For%20the%20Love%20of%20Letters%2C%20front.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            include ../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Pastore DePamphilis Rampone, 1984
+                        6 1/8” x 8 1/4”, perfect bound book.
+
+                        Small book filled with 20 love poems designed exclusively in type by some of the world’s best designers.
+
+                        **Contributors include:**
+
+                        + Ivan Chermayeff
+                        + Bruce Blackburn
+                        + Bennett Robinson
+                        + Dominic Arbitrio
+                        + Richard Danne
+                        + Bill Bonnell
+                        + George Lois
+                        + Jim Miho
+                        + Freeman Craw
+                        + Amil Gargano
+                        + Paul Rand
+                        + George Tscherny
+                        + Gene Federico
+                        + Tom Carnase
+                        + Paula Scher
+                        + B. Martin Pedersen
+                        + Tom Morin
+                        + Arnie Arlow
+                        + Bradbury Thompson
+                        + Massimo Vignelli
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../__MIXINS/_include-next-work.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

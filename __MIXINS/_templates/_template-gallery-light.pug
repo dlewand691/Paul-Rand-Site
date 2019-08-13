@@ -1,0 +1,51 @@
+doctype html
+html.no-js(lang='en' dir='ltr')
+
+	include ../../__MIXINS/_include-head.pug
+
+	body#work(data-grid-framework="f4" data-grid-color="pink" data-grid-opacity="0.2" data-grid-zindex="10" data-grid-gutterwidth="30px" data-grid-nbcols="12")
+
+		.animsition
+			include ../../__MIXINS/_include-headerNav-secondaryNav.pug
+
+			.wrapper-parallax
+				.cd-main-content
+
+					//- =====================================
+					//- =            GALLERY LIGHT            =
+					//- =====================================
+					.grid-x.grid-margin-x
+						.small-12.cell
+							a.galleryLight(href="#")
+								img(src="http://placehold.it/370x370")
+								.textLabel
+									h3 This…Is the Stafford Stallion
+									h6 1944
+									.button.radius.text-caps Learn More
+
+							a.galleryLight(href="#")
+								img(src="http://placehold.it/370x370")
+								.textLabel
+									h3 Some Thoughts… and Some Tribulations about the Design of a Logo
+									h6 1944
+									.button.radius.text-caps Learn More
+
+							a.galleryLight(href="#")
+								img(src="http://placehold.it/370x370")
+								.textLabel
+									h3 Some Thoughts… and Some Tribulations about the Design of a Logo
+									h6 1944
+									.button.radius.text-caps Learn More
+
+							a.galleryLight(href="#")
+								img(src="http://placehold.it/370x370")
+								.textLabel
+									h3 Some Thoughts… and Some Tribulations about the Design of a Logo
+									h6 1944
+									.button.radius.text-caps Learn More
+
+					//- -----  End of GALLERY LIGHT  ------
+
+				include ../../__MIXINS/_include-footer.pug
+
+		include ../../__MIXINS/_include-closingScript.pug 

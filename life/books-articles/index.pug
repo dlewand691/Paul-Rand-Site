@@ -1,0 +1,1820 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Books and Articles About Paul Rand'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    .cd-main-content
+        .grid-container
+
+            //- ======================================
+            //- =            BOOKS AND ARTICLES ABOUT PAUL RAND           =
+            //- ======================================
+
+            .grid-x.grid-margin-x.align-center
+                .small-12.cell
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+
+                    // Tabs
+                    ul.tabs#tabs(data-tabs data-deep-link="true" data-responsive-accordion-tabs="tabs medium-accordion large-tabs")
+                        li.tabs-title.is-active
+                            a(href='#books') Books
+                        li.tabs-title
+                            a(href='#articles') Print Articles
+                        li.tabs-title
+                            a(href='#online-articles') Online Articles
+
+                    // Tab content
+                    .tabs-content(data-tabs-content="tabs")
+                        //- =============================================================================================
+                        //- ██████   ██████   ██████  ██   ██ ███████ 
+                        //- ██   ██ ██    ██ ██    ██ ██  ██  ██      
+                        //- ██████  ██    ██ ██    ██ █████   ███████ 
+                        //- ██   ██ ██    ██ ██    ██ ██  ██       ██ 
+                        //- ██████   ██████   ██████  ██   ██ ███████ 
+                        //- */            =
+                        //- ==========================================================================================
+                        .tabs-panel.is-active#books
+                            .grid-x.grid-margin-x.small-up-1.medium-up-3.align-center
+                                +galleryItem-cardImageZoom(
+                                    "books/1947-ad-gallery.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1947%20AD%20Gallery%20Presents%2C%20Paul%20Rand/Web/AD%20Gallery%20Presents%2C%20Paul%20Rand%201947%2C%20inserts%2001-450.jpg",
+                                    "AD Gallery Presents:  Paul Rand",
+                                    "1947",
+                                    "By Percy Seitlin"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "books/1960-his-works.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2C%20front-450.jpg",
+                                    "Paul Rand: His Works from 1946–1958",
+                                    "1960",
+                                    "By Yusaku Kamekura"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "books/1975-champion-papers.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1975%20Champion%20Papers%20The%20Printing%20Salesman%E2%80%99s%20Herald/Web/Champion%20Papers%2C%20The%20Printing%20Salesmans%20Herald-450.jpg",
+                                    "The Printing Salesman’s Herald",
+                                    "1975",
+                                    "By Michael Corey"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "books/1992-ggg.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1992%20Ginza%20Graphic%20Gallery/Web/Ginza%20Graphic%20Gallery-450.jpg",
+                                    "Paul Rand: Ginza Graphic Gallery",
+                                    "1992",
+                                    "By Yusaku Kamekura"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "books/1998-american-modernist.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1998%20Paul%20Rand-%20American%20Modernist/Web/Paul%20Rand-%20American%20Modernist%2C%20front-450.jpg",
+                                    "American Modernist",
+                                    "1998",
+                                    "By Jessica Helfand"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "books/1998-a-designers-words.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1998%20Paul%20Rand-%20A%20Designer%E2%80%99s%20Words/Web/Paul%20Rand-%20A%20Designer%27s%20Words-450.jpg",
+                                    "A Designer’s Words",
+                                    "1998",
+                                    "By Steven Heller, Georgette Ballance & Nathan Garland"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "books/2000-paul-rand.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1999%20Paul%20Rand/Web/Paul%20Rand%201999-450.jpg",
+                                    "Paul Rand",
+                                    "2000",
+                                    "By Steven Heller"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "books/2002-the-works-of-paul-rand.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002-450.jpg",
+                                    "Paul Rand: The Works of Paul Rand",
+                                    "2002",
+                                    "By Takahiro Tsuchida [text]"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "books/2003-modernist-designer.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2003%20Paul%20Rand%2C%20Modernist%20Design/Web/Paul%20Rand-%20Modernist%20Design%2C%20front-450.jpg",
+                                    "Paul Rand: Modernist Designer",
+                                    "2003",
+                                    "By Franc Nunoo-Quarcoo"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "books/2007-conversations-with-students.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2007%20Paul%20Rand%2C%20Conversations%20with%20Students/Web/Paul%20Rand-%20Conversations%20with%20Students%2C%20front-450.jpg",
+                                    "Paul Rand: Conversations with Students",
+                                    "2007",
+                                    "By Michael Kroeger"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "books/2015-a-designers-eye.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2C%20front-450.jpg",
+                                    "A Designer's Eye",
+                                    "2015",
+                                    "By JP Williams"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "books/2018-ibm-graphic-standards-manual-reprint.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint-450.jpg",
+                                    "IBM Graphic Standards Manual reprint",
+                                    "2018",
+                                    "By Empire Books"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "books/2019-inspiration-and-process-in-design.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2019%20Paul%20Rand%20Inspiration%20and%20Process%20in%20Design/Web/Paul%20Rand%20Inspiration%20and%20Process%20in%20Design%2001-450.jpg",
+                                    "Paul Rand: Inspiration and Process in Design",
+                                    "2019",
+                                    "Introduction by Steven Heller, edited by Eugenia Bell"
+                                    )
+
+                        //- =============================================================================================
+                        //- =            
+                        //-  █████  ██████  ████████ ██  ██████ ██      ███████ ███████ 
+                        //- ██   ██ ██   ██    ██    ██ ██      ██      ██      ██      
+                        //- ███████ ██████     ██    ██ ██      ██      █████   ███████ 
+                        //- ██   ██ ██   ██    ██    ██ ██      ██      ██           ██ 
+                        //- ██   ██ ██   ██    ██    ██  ██████ ███████ ███████ ███████ 
+                        //-           =
+                        //- ==========================================================================================
+                        .tabs-panel#articles
+                            .grid-x.grid-margin-x.small-up-1.medium-up-3.align-center
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1938-pm-magazine.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/PM%20Magazine%20Vol%204%20No%209%20front-450.jpg",
+                                    "PM Magazine: Paul Rand",
+                                    "1938",
+                                    ""
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1941-ad-magazine.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203,%20front-450.jpg",
+                                    "AD Magazine: Paul Rand",
+                                    "1941",
+                                    "By Laszlo Moholy-Nagy"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1942-american-artist.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1942%20American%20Artist%20magazine,%20June/Web/American%20Artist%20magazine,%20June%201942-450.jpg",
+                                    "American Artist Magazine: Paul Rand — Advertising Artist",
+                                    "June, 1942",
+                                    "By Percy Seitlin"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1947-graphis.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1947%20Graphis,%20Vol%203%20No%2018/Web/Graphis,%20Vol%203%20No%2018%201947-450.jpg",
+                                    "Graphis: Paul Rand",
+                                    "1947",
+                                    "By Georgine Oeri"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1947-industrial-design-interiors.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1947%20Industrial%20Design,%20Interiors%20February/Web/Industrial%20Design,%20Interiors%20February%201947-450.jpg",
+                                    "Industrial Design, Interiors:  Paul Rand",
+                                    "February, 1947",
+                                    ""
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1950-portfolio-magazine.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1950%20Portfolio%20magazine%20Vol%201%20No%201/Web/Portfolio%20magazine%20Vol%201%20No%201%201950-450.jpg",
+                                    "Portfolio Magazine:  Trademarks by Paul Rand",
+                                    "1950",
+                                    ""
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1953-domus-285.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Domus%20285/Web/Domus%20285%20cover-450.jpg",
+                                    "Domus 285: The Stone House",
+                                    "August, 1953",
+                                    ""
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1953-domus-286.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Domus%20286/Web/Domus%20286%20cover-450.jpg",
+                                    "Domus 286: Graphic Art of Paul Rand",
+                                    "September, 1953",
+                                    ""
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1953-american-artist.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20American%20Artist%20magazine,%20October/Web/American%20Artist%20magazine,%20October%201953-450.jpg",
+                                    "American Artist Magazine: The Paul Rand Legend",
+                                    "October, 1953",
+                                    "By Eugene M. Ettenberg"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1953-esquire-magazine.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Esquire,%20August/Web/Esquire,%20August%201953-450.jpg",
+                                    "Esquire Magazine: A House to Live With",
+                                    "August, 1953",
+                                    ""
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1953-graphik.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202-450.jpg",
+                                    "Graphik Werbung und Formgebung",
+                                    "1953",
+                                    "By Peter Heemskerk"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1954-ariadne.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Ariadne/Web/Ariadne%201954%2C%20February%2001-450.jpg",
+                                    "Ariadne: Reactions to the R.C.A. ad",
+                                    "1954",
+                                    "By Robert Kiek"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1954-industrial-design.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2000-450.jpg",
+                                    "5 Designers for Under Five Dollars",
+                                    "1954",
+                                    ""
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1955-idea-international-art-advertising-magazine.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1955%20International%20Advertising%20Art%20Idea%20magazine,%20March/Web/International%20Advertising%20Art%20Idea%20magazine,%20March%201955-450.jpg",
+                                    "International Advertising Art Idea magazine",
+                                    "1955",
+                                    ""
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1970-american-artist.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1970%20American%20Artist%20magazine,%20October/Web/American%20Artist%20magazine,%20October%201970-450.jpg",
+                                    "American Artist Magazine:  Paul Rand, Commercial Artist",
+                                    "October, 1970",
+                                    "By Percy Seitlin"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1971-NYC-ADC-Hall-of-Fame.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Art%20Director's%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception/Web/Art%20Director's%20Club%20of%20New%20York-%20Hall%20of%20Fame%20Inception%201971-450.jpg",
+                                    "NYC ADC Inception of the Hall of Fame: Paul Rand",
+                                    "1971",
+                                    ""
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1971-graphis.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1971%20Graphis%2C%20Vol%2027%20No%20153/Web/Graphis%2C%20Vol%2027%20No%20153%2001-450.jpg",
+                                    "Graphis: How Paul Rand Presents Trade-Mark Designs to Clients",
+                                    "Volume 27, No 153, 1971/72",
+                                    "By Stanley Mason"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1976-idea-magazine.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1976%20Idea%20Magazine%20No%20139/Web/Idea%20Magazine%20No%20139-450.jpg",
+                                    "Idea Magazine: Paul Rand",
+                                    "November, 1976",
+                                    ""
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1977-ulc.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1977%20U&lc,%20March/Web/U&lc,%20March%201977-450.jpg",
+                                    "U&lc: Pro.Files: The Great Graphic Innovators",
+                                    "March, 1977",
+                                    "By Gertrude Snyder"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1979-communication-arts.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1979%20Communication%20Arts,%20Jan-Feb/Web/Communication%20Arts,%20January-February%201979-450.jpg",
+                                    "Communication Arts: Paul Rand",
+                                    "January/February, 1979",
+                                    "By Allen Hurlburt"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1984-idea-magazine.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1984%20Idea%20Magazine/Web/IDEA%20Magazine-450.jpg",
+                                    "Idea Magazine: The Fiddler of Yankee Feeling",
+                                    "1984",
+                                    ""
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1988-mohawk-paper.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1988%20Mohawk%20Graphics%20Collection/Web/Mohawk%20Graphics%20Collection-450.jpg",
+                                    "Mohawk Graphics Collection",
+                                    "1988",
+                                    "By Mohawk Paper Mills"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1989-blueprint-magazine.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20Blueprint%20Magazine/Web/Blueprint%20Magazine%2C%20cover-450.jpg",
+                                    "Blueprint Magazine: Why Paul Rand Hates Logos",
+                                    "1989",
+                                    "By James Woudhuysen"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1989-creation-magazine.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20CREATION%20no%201/Web/Creation%20Magazine-450.jpg",
+                                    "CREATION no. 1",
+                                    "1989",
+                                    "By Shigeo Fukuda"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1989-connecticuts-finest.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1989%20Connecticut's%20Finest,%20Winter/Web/Connecticut's%20Finest,%20Winter%201989-450.jpg",
+                                    "Connecticut's Finest: The Graphic Genius of Paul Rand",
+                                    "Winter, 1989",
+                                    "By Jon Bowermaster. Photography by Michael O’Brien"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1991-design-week.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1991%20Design%20Week%2C%20Paul%20Rand-%20Old%20Master/Web/Woudhuysen%20Paul%20Rand%20Old%20Master-450.jpg",
+                                    "Design Week: Paul Rand, Old Master",
+                                    "Design Week, August 16, 1991",
+                                    "By James Woudhuysen"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1993-how-magazine.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1993%20HOW%20Magazine,%20February/Web/HOW%20Magazine,%20February%201993-450.jpg",
+                                    "HOW Magazine: Masters of Desgn",
+                                    "February, 1993",
+                                    "By Neil Burns"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1993-print-magazine.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1993%20Print%20Magazine,%20May-June/Web/Print%20Magazine,%20May-June%201993-450.jpg",
+                                    "Print Magazine: Thoughts on Rand",
+                                    "May/June, 1993",
+                                    "By Steven Heller"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1995-tategumi-yokogumi-morisawa-quarterly.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1995%20Tategumi%20Yokogumi%20Morisawa%20Quarterly/Web/Tategumi%20Yokogumi%20Morisawa%20Quarterly%20no%2044%2C%201995%2001-450.jpg",
+                                    "Tategumi Yokogumi Morisawa Quarterly",
+                                    "1995",
+                                    ""
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1997-critique-magazine.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine,%20Spring/Web/Critique%20Magazine,%20Spring%201997-450.jpg",
+                                    "Critique Magazine: Paul Rand, Writer",
+                                    "Spring, 1997",
+                                    "By Steven Heller"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1997-looking-closer2.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Looking%20Closer%202/Web/Looking%20Closer%202%201997-450.jpg",
+                                    "Looking Closer 2: Paul Rand",
+                                    "Spring, 1997",
+                                    "By Janet Abrams"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1997-modern-painters-magazine.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Modern%20Painters%20Magazine,%20Spring/Web/Modern%20Painters%20Magazine,%20Spring%201997-450.jpg",
+                                    "Modern Painters Magazine: Paul Rand, The Magician",
+                                    "Spring, 1997",
+                                    "By Lance Esplund"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1997-six-chapters-in-design.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997-450.jpg",
+                                    "Six Chapters in Design",
+                                    "First edition October 1, 1997",
+                                    "By Yusaku Kamekura"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1997-logocentrism.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20New%20Republic,%20vol%20217%20Issue%2026-%20Logocentrism/Web/Logocentrism,%20New%20Republic,%20vol%20217%20Issue%2026%2001-450.jpg",
+                                    "The New Republic: Logocentrism",
+                                    "December 29, 1997, Vol. 217, Issue 2",
+                                    "By Jessica Helfand"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1997-design-literacy-direction.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy-450.jpg",
+                                    "Design Literacy: Direction",
+                                    "1997",
+                                    "By Steven Heller"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1997-design-literacy-next.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy-450.jpg",
+                                    "Design Literacy: NeXT",
+                                    "1997",
+                                    "By Steven Heller"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1997-essays-on-design.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Essays%20on%20Design,%20AGI%e2%80%99s%20Designers%20of%20Influence/Web/Essays%20on%20Design,%20AGI%e2%80%99s%20Designers%20of%20Influence%201997-450.jpg",
+                                    "Essays on Design: Thoughts on Paul Rand",
+                                    "1997",
+                                    "By Henry Steiner"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1997-idea-magazine.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%20front-450.jpg",
+                                    "Idea Magazine No. 261: A Tribute to the Memory of Paul Rand",
+                                    "1997",
+                                    "By Yusaku Kamekura, Minoru Morita, John Maeda"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1999-baseline-magazine.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1999%20Baseline%20no%2027/Web/Baseline%2027%201999,%20front-450.jpg",
+                                    "Baseline Magzine No. 27: Paul Rand’s Laboratory",
+                                    "1999",
+                                    "By Steven Heller"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/1999-communications-arts.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1999%20Communication%20Arts,%20March-April/Web/Communication%20Arts,%20March-April%201999-450.jpg",
+                                    "Communication Arts: Paul Rand",
+                                    "March/April, 1999",
+                                    "By Allen Hurlburt"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/2000-ballast-quarterly-review.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1999%20Paul%20Rand/Web/Paul%20Rand%201999-450.jpg",
+                                    "Ballast Quarterly Review: Paul Rand Reviewed",
+                                    "2000",
+                                    "By Roy R. Behrens"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/2002-graphic-design-reader.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2002%20The%20Graphic%20Design%20Reader/Web/The%20Graphic%20Design%20Reader%202002-450.jpg",
+                                    "The Graphic Design Reader: Randism",
+                                    "2002",
+                                    "By Steven Heller"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/2002-casa-brutus.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2002%20Casa%20Brutus/Web/Casa%20Brutus%20vol%2025%2C%20April%2001-450.jpg",
+                                    "Casa Brutus: A Paul Rand’s Art",
+                                    "2002",
+                                    ""
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/2007-79-short-essays.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2007%20Seventy-nine%20short%20essays%20on%20design/Web/Seventy-nine%20short%20essays%20on%20design%2C%20front%2002-450.jpg",
+                                    "Seventy-nine Short Essays on Design",
+                                    "2007",
+                                    "By Michael Bierut"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/2007-beaux-arts-magazine.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2007%20Beaux%20Arts%20Magazine/Web/Beaux%20Arts%20Magazine%202007-450.jpg",
+                                    "Beaux Arts Magazine",
+                                    "2007",
+                                    "By Pierre Ponant"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/2011-the-interface.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2011%20The%20Interface%20-%20IBM%20and%20the%20Transformation%20of%20Corporate%20Design/Web/The%20Interface%20IBM%20and%20the%20Transformation%20of%20Corporate%20Design%2C%20cover-450.jpg",
+                                    "The Interface - IBM and the Transformation of Corporate Design",
+                                    "2011",
+                                    "John Hardwood"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/2014-TM-The-Untold-Stories.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2014%20TM-%20The%20Untold%20Stories%20Behind%2029%20Classic%20Logos/Web/TM-%20The%20Untold%20Stories%20Behind%2029%20Classic%20Logos%2017-450.jpg",
+                                    "TM- The Untold Stories Behind 29 Classic Logos",
+                                    "2014",
+                                    "Mark Sinclair"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/2015-art-chantry-speaks.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Art%20Chantry%20Speaks/Web/Art%20Chantry%20Speaks%20cover-450.jpg",
+                                    "Art Chantry Speaks: Saint Paul",
+                                    "2015",
+                                    "Art Chantry"
+                                    )
+
+                                +galleryItem-cardImageZoom(
+                                    "articles/print/2015-graphic-design-visionaries.html",
+                                    "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Graphic%20Design%20Visionaries/Web/Graphic%20Design-Visionaries-450.jpg",
+                                    "Graphic Design Visionaries",
+                                    "2015",
+                                    "Caroline Roberts"
+                                    )
+
+
+                        //- ================================================================================================
+                        //- 
+                        //-  ██████  ███    ██ ██      ██ ███    ██ ███████      █████  ██████  ████████ ██  ██████ ██      ███████ ███████
+                        //- ██    ██ ████   ██ ██      ██ ████   ██ ██          ██   ██ ██   ██    ██    ██ ██      ██      ██      ██
+                        //- ██    ██ ██ ██  ██ ██      ██ ██ ██  ██ █████       ███████ ██████     ██    ██ ██      ██      █████   ███████
+                        //- ██    ██ ██  ██ ██ ██      ██ ██  ██ ██ ██          ██   ██ ██   ██    ██    ██ ██      ██      ██           ██
+                        //-  ██████  ██   ████ ███████ ██ ██   ████ ███████     ██   ██ ██   ██    ██    ██  ██████ ███████ ███████ ███████
+                        //- ==============================================================================================
+
+
+                        .tabs-panel#online-articles
+                            p.footnote
+                                strong NOTE: 
+                                | Links will open in a new window
+
+
+                            //- =============================================================================================
+                            //-  ██  █████   █████  ███████
+                            //- ███ ██   ██ ██   ██ ██
+                            //-  ██  ██████  █████  ███████
+                            //-  ██      ██ ██   ██      ██
+                            //-  ██  █████   █████  ███████
+                            //- =============================================================================================
+                            h2.text-red 1985
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1985-11-03-in-the-beginning-was-the-logo-01-th.jpg",
+                                "https://www.nytimes.com/1985/11/03/books/in-the-beginning-was-the-logo.html",
+                                "In the Beginning was the Logo",
+                                "November 3, 1985",
+                                "A review of Paul Rand: A Designer’s Art.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1985-11-03-in-the-beginning-was-the-logo-01.jpg"
+                                )
+
+
+                            //- =============================================================================================
+                            //-  ██  █████   █████   █████
+                            //- ███ ██   ██ ██   ██ ██   ██
+                            //-  ██  ██████  █████   ██████
+                            //-  ██      ██ ██   ██      ██
+                            //-  ██  █████   █████   █████
+                            //- =============================================================================================
+                            //- h2.text-red 1989
+
+
+                            //- =============================================================================================
+                            //-  ██  █████   █████   ██████
+                            //- ███ ██   ██ ██   ██ ██
+                            //-  ██  ██████  ██████ ███████
+                            //-  ██      ██      ██ ██    ██
+                            //-  ██  █████   █████   ██████
+                            //- =============================================================================================
+                            hr
+                            h2.text-red 1996
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1996-11-15-designer-paul-rand-speaks-at-media-lab-the-tech-th.jpg",
+                                "http://tech.mit.edu/V116/N59/paulrand.59n.html",
+                                "Designer Paul Rand Speaks at Media Lab",
+                                "November 11, 1996",
+                                "Review of Paul Rand's presentation at MIT.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1996-11-15-designer-paul-rand-speaks-at-media-lab-the-tech.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1996-11-28-paul-rand-82-creator-of-sleek-graphic-designs-dies-original-th.jpg",
+                                "https://www.nytimes.com/1996/11/28/arts/paul-rand-82-creator-of-sleek-graphic-designs-dies.html",
+                                "Paul Rand, 82, Creator of Sleek Graphic Designs, Dies",
+                                "November 28, 1996",
+                                "Steve Heller writes about Paul Rand",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1996-11-28-paul-rand-82-creator-of-sleek-graphic-designs-dies-original.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1996-12-06-paul-rand-design-week-th.jpg",
+                                "https://www.designweek.co.uk/issues/5-december-1996/paul-rand/",
+                                "Paul Rand",
+                                "December 5, 1996",
+                                "Thoughts on Rand",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1996-12-06-paul-rand-design-week.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1996-12-30-obituary-paul-rand-th.jpg",
+                                "https://www.independent.co.uk/news/obituaries/obituary-paul-rand-1316506.html",
+                                "Obituary: Paul Rand",
+                                "December 30, 1996",
+                                "Patrick Argent writes about Paul Rand",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1996-12-30-obituary-paul-rand.jpg"
+                                )
+
+
+
+
+                            //- =============================================================================================
+                            //-  ██  █████   █████  ███████
+                            //- ███ ██   ██ ██   ██      ██
+                            //-  ██  ██████  ██████     ██
+                            //-  ██      ██      ██    ██
+                            //-  ██  █████   █████     ██
+                            //- =============================================================================================
+                            hr
+                            h2.text-red 1997
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1997-01-13-yale-bulletin-calendar-obituary-th.jpg",
+                                "http://archives.news.yale.edu/ybc/v25.n16.obit.03.html",
+                                "PAUL RAND",
+                                "January 13, 1997",
+                                "Obituary from Yale",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1997-01-13-yale-bulletin-calendar-obituary.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1997-05-14-cummins-engine-funds-lectureship-in-memory-of-paul-rand-th.jpg",
+                                "https://news.yale.edu/1997/05/14/cummins-engine-funds-lectureship-memory-paul-rand",
+                                "Cummins Engine Funds Lectureship in Memory of Paul Rand",
+                                "May 14, 1997",
+                                "The Cummins Engine Company of Columbus, Indiana, has donated funds to Yale University in support of a Paul Rand Lectureship in the School of Art.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1997-05-14-cummins-engine-funds-lectureship-in-memory-of-paul-rand.jpg"
+                                )
+
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1999-07-25-contains-graphic-material-th.jpg",
+                                "http://www.nytimes.com/books/99/07/25/reviews/990725.25shar.html",
+                                "Contains Graphic Material",
+                                "July 25, 1999",
+                                "By Bernard Sharratt",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1999-07-25-contains-graphic-material.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1999-08-22-consulting-paul-rand-th.jpg",
+                                "http://www.nytimes.com/1999/08/22/books/l-consulting-paul-rand-036862.html",
+                                "Consulting Paul Rand",
+                                "August 22, 1999",
+                                "By Gene Faber",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1999-08-22-consulting-paul-rand.jpg"
+                                )
+
+
+                            //- =============================================================================================
+                            //-  ██  █████   █████   █████
+                            //- ███ ██   ██ ██   ██ ██   ██
+                            //-  ██  ██████  ██████  ██████
+                            //-  ██      ██      ██      ██
+                            //-  ██  █████   █████   █████
+                            //- =============================================================================================
+                            hr
+                            h2.text-red 1999
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1999-12-17-5-paul-rand-1914-1996-th.jpg",
+                                "https://www.designweek.co.uk/issues/16-december-1999/5-paul-rand-1914-1996/",
+                                "5 PAUL RAND 1914-1996",
+                                "December 17, 1999",
+                                "A brief overview of Rand, his life and his work.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/1999-12-17-5-paul-rand-1914-1996.jpg"
+                                )
+
+
+                            //- =============================================================================================
+                            //- ██████   ██████   ██████   ██████
+                            //-      ██ ██  ████ ██  ████ ██  ████
+                            //-  █████  ██ ██ ██ ██ ██ ██ ██ ██ ██
+                            //- ██      ████  ██ ████  ██ ████  ██
+                            //- ███████  ██████   ██████   ██████
+                            //- =============================================================================================
+                            hr
+                            h2.text-red 2000
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2000-01-18-paul-rand-at-the-mit-media-laboratory-th.jpg",
+                                "http://acg.media.mit.edu/events/rand/",
+                                "Misawa Lecture by Paul Rand",
+                                "January 18, 2000",
+                                "Online listing for for Rand's final presentation at MIT.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2000-01-18-paul-rand-at-the-mit-media-laboratory.jpg"
+                                )
+
+
+
+
+
+                            //- =========================================================================
+                            //- ██████   ██████   ██████   ██████
+                            //-      ██ ██  ████ ██  ████ ██
+                            //-  █████  ██ ██ ██ ██ ██ ██ ███████
+                            //- ██      ████  ██ ████  ██ ██    ██
+                            //- ███████  ██████   ██████   ██████
+                            //- =========================================================================
+                            hr
+                            h2.text-red 2006
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2006-11-12-designs-for-playing-books-review-th.jpg",
+                                "http://www.nytimes.com/2006/11/12/books/review/Heller.t.html?rref=collection%2Ftimestopic%2FBook%20Reviews&action=click&contentCollection=books&region=stream&module=stream_unit&version=search&contentPlacement=5&pgtype=collection",
+                                "Designs for Playing",
+                                "November 12, 2006",
+                                "Review by STEVEN HELLER",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2006-11-12-designs-for-playing-books-review.jpg"
+                                )
+
+                            //- =========================================================================
+                            //- ██████   ██████   ██████  ███████
+                            //-      ██ ██  ████ ██  ████      ██
+                            //-  █████  ██ ██ ██ ██ ██ ██     ██
+                            //- ██      ████  ██ ████  ██    ██
+                            //- ███████  ██████   ██████     ██
+                            //- =========================================================================
+
+                            //- =========================================================================
+                            //- ██████   ██████   ██████   █████
+                            //-      ██ ██  ████ ██  ████ ██   ██
+                            //-  █████  ██ ██ ██ ██ ██ ██  █████
+                            //- ██      ████  ██ ████  ██ ██   ██
+                            //- ███████  ██████   ██████   █████
+                            //- =========================================================================
+                            hr
+                            h2.text-red 2008
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2008-07-10-first-paul-rand-virtual-documentary-video-festival-th.jpg",
+                                "http://www.printmag.com/article/first-paul-rand-virtual-documentary-video-festival/",
+                                "First Paul Rand Virtual Documentary Video Festival",
+                                "July 10, 2008",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2008-07-10-first-paul-rand-virtual-documentary-video-festival.jpg"
+                                )
+                            //- =========================================================================
+                            //- ██████   ██████   ██████   █████
+                            //-      ██ ██  ████ ██  ████ ██   ██
+                            //-  █████  ██ ██ ██ ██ ██ ██  ██████
+                            //- ██      ████  ██ ████  ██      ██
+                            //- ███████  ██████   ██████   █████
+                            //- =========================================================================
+
+                            //- =========================================================================
+                            //- ██████   ██████   ██  ██████
+                            //-      ██ ██  ████ ███ ██  ████
+                            //-  █████  ██ ██ ██  ██ ██ ██ ██
+                            //- ██      ████  ██  ██ ████  ██
+                            //- ███████  ██████   ██  ██████
+                            //- =========================================================================
+                            hr
+                            h2.text-red 2010
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2010-01-21-the-ford-logo-that-almost-was-th.jpg",
+                                "https://wheels.blogs.nytimes.com/2010/01/21/the-ford-logo-that-almost-was/",
+                                "The Ford Logo That Almost Was",
+                                "January 21, 2010",
+                                "By Phil Patton",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2010-01-21-the-ford-logo-that-almost-was.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2010-12-21-was-ayn-rand-related-to-paul-rand-th.jpg",
+                                "http://www.printmag.com/imprint/was-ayn-rand-related-to-paul-rand-2/",
+                                "Was Ayn Rand Related to Paul Rand?",
+                                "December 21, 2010",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2010-12-21-was-ayn-rand-related-to-paul-rand.jpg"
+                                )
+                            //- =========================================================================
+                            //- ██████   ██████   ██  ██
+                            //-      ██ ██  ████ ███ ███
+                            //-  █████  ██ ██ ██  ██  ██
+                            //- ██      ████  ██  ██  ██
+                            //- ███████  ██████   ██  ██
+                            //- =========================================================================
+                            hr
+                            h2.text-red 2011
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2011-06-15-paul-rand-words-th.jpg",
+                                "http://www.printmag.com/imprint/paul-rands-words/",
+                                "Paul Rand's Words",
+                                "June 15, 2011",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2011-06-15-paul-rand-words.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2011-07-06-paul-rand-grandfather-th.jpg",
+                                "http://www.printmag.com/imprint/paul-rands-grandfather/",
+                                "Paul Rand's Grandfather",
+                                "July 6, 2011",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2011-07-06-paul-rand-grandfather.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2011-10-11-paul-rand-steve-jobs-th.jpg",
+                                "http://www.printmag.com/featured/paul-rand-steve-jobs/",
+                                "Paul Rand + Steve Jobs",
+                                "October 11, 2011",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2011-10-11-paul-rand-steve-jobs.jpg"
+                                )
+
+
+                            //- =========================================================================
+                            //- ██████   ██████   ██ ██████
+                            //-      ██ ██  ████ ███      ██
+                            //-  █████  ██ ██ ██  ██  █████
+                            //- ██      ████  ██  ██ ██
+                            //- ███████  ██████   ██ ███████
+                            //- =========================================================================
+                            hr
+                            h2.text-red 2012
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2012-03-13-rare-rand-rarity-th.jpg",
+                                "http://www.printmag.com/imprint/rare-rand-rarity/",
+                                "Rare Rand Rarity",
+                                "March 13, 2012",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2012-03-13-rare-rand-rarity.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2012-03-27-little-1-paul-rands-sweet-vintage-childrens-book-about-numbers-soulmates-and-belonging-th.jpg",
+                                "https://www.brainpickings.org/2012/03/27/little-1-paul-rand/",
+                                "Little 1: Paul Rand’s Sweet Vintage Children’s Book About Numbers, Soulmates, and Belonging",
+                                "March 27, 2012",
+                                "By Maria Popova",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2012-03-27-little-1-paul-rands-sweet-vintage-childrens-book-about-numbers-soulmates-and-belonging.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2012-04-18-randvertising-th.jpg",
+                                "http://www.printmag.com/imprint/times-for-rand/",
+                                "Randvertising",
+                                "April 18, 2012",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2012-04-18-randvertising.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2012-06-08-randisms-th.jpg",
+                                "http://www.printmag.com/imprint/randisms/",
+                                "Randisms",
+                                "June 8, 2012",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2012-06-08-randisms.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2012-08-21-posters-down-under-th.jpg",
+                                "http://www.printmag.com/imprint/posters-down-under/",
+                                "Posters Down Under",
+                                "August 21, 2012",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2012-08-21-posters-down-under.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2012-08-23-rand-here-get-your-rand-here-th.jpg",
+                                "http://www.printmag.com/design-inspiration/rand-here-get-your-rand-here/",
+                                "Rand Here! Get Your Rand Here!",
+                                "August 23, 2012",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2012-08-23-rand-here-get-your-rand-here.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2012-11-07-the-google-curse-of-rand-th.jpg",
+                                "http://www.printmag.com/imprint/the-google-curse-of-rand/",
+                                "The Google Curse of Rand",
+                                "November 7, 2012",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2012-11-07-the-google-curse-of-rand.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2012-11-09-rand-rules-of-the-road-th.jpg",
+                                "http://www.printmag.com/imprint/rands-rules-of-the-road/",
+                                "Rand's Rules of the Road",
+                                "November 9, 2012",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2012-11-09-rand-rules-of-the-road.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2012-12-20-rand-roman-separated-at-births-th.jpg",
+                                "http://www.printmag.com/design-inspiration/rands-roman-separated-at-births/",
+                                "Rand's Roman Separated-at-Births",
+                                "December 20, 2012",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2012-12-20-rand-roman-separated-at-births.jpg"
+                                )
+                            //- =========================================================================
+                            //- ██████   ██████   ██ ██████
+                            //-      ██ ██  ████ ███      ██
+                            //-  █████  ██ ██ ██  ██  █████
+                            //- ██      ████  ██  ██      ██
+                            //- ███████  ██████   ██ ██████
+                            //- =========================================================================
+                            hr
+                            h2.text-red 2013
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-what-is-design-th.jpg",
+                                "http://whatisdesign.net/wid/paul-rand/",
+                                "WHAT IS DESIGN?",
+                                "2013",
+                                "John Maeda remembering Paul Rand.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-what-is-design.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-02-28-how-i-learned-modern-ism-th.jpg",
+                                "http://www.printmag.com/design-education/how-i-learned-modernism/",
+                                "How I Learned Modern(ism)",
+                                "February 28, 2013",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-02-28-how-i-learned-modern-ism.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-06-07-paul-rand-color-endorsement-th.jpg",
+                                "http://www.printmag.com/color/paul-rand-color-endorsement/",
+                                "Paul Rand’s Color Endorsement",
+                                "June 7, 2013",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-06-07-paul-rand-color-endorsement.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-06-28-the-italian-rand-th.jpg",
+                                "http://www.printmag.com/illustration/the-italian-rand/",
+                                "The Italian Rand",
+                                "June 28, 2013",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-06-28-the-italian-rand.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-08-20-advanced-typography-paul-rand-exhibition-at-moda-th.jpg",
+                                "http://advtypography.blogspot.com/2013/08/paul-rand-exhibition-at-moda.html",
+                                "Paul Rand Exhibition at MODA",
+                                "August 20, 2013",
+                                "By Advanced Typography",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-08-20-advanced-typography-paul-rand-exhibition-at-moda.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-08-23-sites-we-like-dsvc-paul-rand-lev-berry-the-typekit-blog-th.jpg",
+                                "https://blog.typekit.com/2013/08/23/sites-we-like-dsvc-paul-rand-lev-berry/",
+                                "Sites We Like: DSVC, Paul Rand, & Lev Berry",
+                                "August 23, 2013",
+                                "A review of the original Rand website",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-08-23-sites-we-like-dsvc-paul-rand-lev-berry-the-typekit-blog.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-09-04-paul-rand-lecture-series-podcasts-available-for-free-th.jpg",
+                                "http://www.printmag.com/daily-heller/paul-rand-podcasts/",
+                                "Rand, Steinweiss, Potus and More",
+                                "September 4, 2013",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-09-04-paul-rand-lecture-series-podcasts-available-for-free.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-10-02-brand-identity-examples-paul-rand-sketches-next-th.jpg",
+                                "http://www.printmag.com/editors-picks/brand-identity-examples-paul-rand-sketches-next/",
+                                "Brand Identity Examples: Paul Rand Sketches NeXT",
+                                "October 2, 2013",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-10-02-brand-identity-examples-paul-rand-sketches-next.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-11-01-weekend-heller-relief-and-rand-th.jpg",
+                                "http://www.printmag.com/daily-heller/weekend-heller-aigany-and-paul-rand/",
+                                "Weekend Heller: Relief and Rand",
+                                "November 1, 2013",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-11-01-weekend-heller-relief-and-rand.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-11-08-weekend-heller-reveling-in-rand-th.jpg",
+                                "http://www.printmag.com/daily-heller/weekend-heller-revelling-in-paul-rand/",
+                                "Weekend Heller: Reveling in Rand",
+                                "November 8, 2013",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-11-08-weekend-heller-reveling-in-rand.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-11-13-the-one-club-one-a-magazine-th.jpg",
+                                "http://www.oneclub.org/articles/-view/paul-rand-defining-design",
+                                "PAUL RAND: DEFINING DESIGN",
+                                "November 13, 2013",
+                                "By Staff",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-11-13-the-one-club-one-a-magazine.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-12-16-review-modas-paul-rand-defining-design-honors-modern-logo-and-graphics-master-artsatl-th.jpg",
+                                "https://artsatl.com/review-59/",
+                                "Review: MODA’s “Paul Rand: Defining Design” honors modern logo and graphics master",
+                                "December 16, 2013",
+                                "By Karen Tauches",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-12-16-review-modas-paul-rand-defining-design-honors-modern-logo-and-graphics-master-artsatl.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-12-19-paul-rand-boss-th.jpg",
+                                "http://www.printmag.com/daily-heller/paul-rand-boss/",
+                                "Paul Rand’s Boss",
+                                "December 19, 2013",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2013-12-19-paul-rand-boss.jpg"
+                                )
+
+
+
+                            //- =========================================================================
+                            //- ██████   ██████   ██ ██   ██
+                            //-      ██ ██  ████ ███ ██   ██
+                            //-  █████  ██ ██ ██  ██ ███████
+                            //- ██      ████  ██  ██      ██
+                            //- ███████  ██████   ██      ██
+                            //- =========================================================================
+                            hr
+                            h2.text-red 2014
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-01-17-catch-it-before-its-gone-paul-rand-defining-design-th.jpg",
+                                "http://www.printmag.com/graphic-design/catch-it-before-its-gone-paul-rand-defining-design/",
+                                "Catch It Before It’s Gone: “Paul Rand: Defining Design”",
+                                "January 17, 2014",
+                                "By Zachary Petit",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-01-17-catch-it-before-its-gone-paul-rand-defining-design.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-06-20-sidewalk-radios-streetviews-sounds-of-atlanta-on-vimeo-th.jpg",
+                                "https://vimeo.com/98763458",
+                                "Sidewalk Radio’s Streetviews - Sounds of Atlanta",
+                                "June 20, 2014",
+                                "By Son & Sons",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-06-20-sidewalk-radios-streetviews-sounds-of-atlanta-on-vimeo.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-07-20-paul-rand-adc-global-awards-club-th.jpg",
+                                "http://adcglobal.org/hall-of-fame/paul-rand/",
+                                "ADC Hall of Fame: Paul Rand",
+                                "July 20, 2014",
+                                "ADCGlobal.org",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-07-20-paul-rand-adc-global-awards-club.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-07-21-ibm-classic-look-explained-th.jpg",
+                                "http://www.printmag.com/daily-heller/ibm-classic-look-explained/",
+                                "IBM’s Classic Look Explained",
+                                "July 21, 2014",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-07-21-ibm-classic-look-explained.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-08-11-paul-rand-observer-emeritus-th.jpg",
+                                "https://designobserver.com/feature/paul-rand--observer-emeritus/38549",
+                                "Paul Rand : Observer Emeritus",
+                                "August 11, 2014",
+                                "Celebrating Rand's posthumous 100th birthday.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-08-11-paul-rand-observer-emeritus.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-08-11-thoughts-on-thoughts-on-design-th.jpg",
+                                "https://designobserver.com/feature/thoughts-on-thoughts-on-design/38531",
+                                "Thoughts on “Thoughts on Design”",
+                                "August 11, 2014",
+                                "Essay by Michael Bierut",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-08-11-thoughts-on-thoughts-on-design.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-08-12-the-rand-house-a-house-to-work-and-live-in-th.jpg",
+                                "https://designobserver.com/feature/the-rand-house-a-house-to-work-and-live-in/38551",
+                                "The Rand House: A House to Work and Live In",
+                                "August 12, 2014",
+                                "Franc Nunoo-Quarcoo remembers the Rand house.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-08-12-the-rand-house-a-house-to-work-and-live-in.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-08-15-paul-rand-(1914-1996)-illustrators-lounge-th.jpg",
+                                "http://illustratorslounge.com/editorial/paul-rand-1914-1996",
+                                "Paul Rand (1914 – 1996)",
+                                "August 15, 2014",
+                                "By Mr. Geo Neo",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-08-15-paul-rand-(1914-1996)-illustrators-lounge.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-08-19-paul-rand-thoughts-on-design-th.jpg",
+                                "http://www.printmag.com/image-of-the-day/08192014-paul-rands-thoughts-on-design/",
+                                "Paul Rand’s Thoughts on Design",
+                                "August 19, 2014",
+                                "By Ronson Slagle",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-08-19-paul-rand-thoughts-on-design.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-08-22-paul-rands-thoughts-on-design-back-in-print-subtraction-th.jpg",
+                                "https://www.subtraction.com/2014/08/22/paul-rands-thoughts-on-design-back-in-print/",
+                                "Paul Rand’s “Thoughts on Design” Back in Print",
+                                "August 22, 2014",
+                                "By Khoi Vinh",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-08-22-paul-rands-thoughts-on-design-back-in-print-subtraction.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-08-26-find-out-how-designer-paul-rand-made-madison-avenue-modern-in-this-sleek-book-forbes-th.jpg",
+                                "https://www.forbes.com/sites/jonathonkeats/2014/08/26/find-out-how-designer-paul-rand-made-madison-avenue-modern-in-this-sleek-book/#32f5003c49f7",
+                                "Find Out How Designer Paul Rand Made Madison Avenue Modern In This Sleek Book",
+                                "August 26, 2014",
+                                "By Jonathon Keats",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-08-26-find-out-how-designer-paul-rand-made-madison-avenue-modern-in-this-sleek-book-forbes.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-09-09-5-timeless-marketing-lessons-for-todays-brands-from-visionary-designer-paul-rand-th.jpg",
+                                "https://www.fastcompany.com/3035327/5-timeless-marketing-lessons-for-todays-brands-from-visionary-designer-paul-rand",
+                                "5 Timeless Marketing Lessons For Today’s Brands From Visionary Designer Paul Rand",
+                                "September 9, 2014",
+                                "By Hugh Hart",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-09-09-5-timeless-marketing-lessons-for-todays-brands-from-visionary-designer-paul-rand.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-09-22-paul-rand-4-most-enduring-bits-of-design-wisdom-co.design-business-design-th.jpg",
+                                "https://www.fastcompany.com/3035941/paul-rands-4-most-enduring-bits-of-design-wisdom",
+                                "Paul Rand’s 4 Most Enduring Bits Of Design Wisdom",
+                                "September 22, 2014",
+                                "Pentagram’s Michael Bierut selects the passages of Rand’s seminal Thoughts on Design that are most relevant to designers today.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-09-22-paul-rand-4-most-enduring-bits-of-design-wisdom-co.design-business-design.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-10-29-exhibit-honors-graphic-design-legend-th.jpg",
+                                "https://yaledailynews.com/blog/2014/10/29/exhibit-honors-graphic-design-legend/",
+                                "Exhibit honors graphic design legend",
+                                "October 29, 2014",
+                                "A review of Yale's exhibit.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-10-29-exhibit-honors-graphic-design-legend.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-11-07-when-rand-was-young-th.jpg",
+                                "http://www.printmag.com/daily-heller/when-paul-rand-was-young/",
+                                "When Rand Was Young",
+                                "November 7, 2014",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2014-11-07-when-rand-was-young.jpg"
+                                )
+
+
+                            //- =========================================================================
+                            //- ██████   ██████   ██ ███████
+                            //-      ██ ██  ████ ███ ██
+                            //-  █████  ██ ██ ██  ██ ███████
+                            //- ██      ████  ██  ██      ██
+                            //- ███████  ██████   ██ ███████
+                            //- =========================================================================
+                            hr
+                            h2.text-red 2015
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-02-05-typography-lessons-from-the-masters-th.jpg",
+                                "http://www.printmag.com/typography/aaron-burns-typography-lessons-from-the-masters/",
+                                "Typography Lessons From the Masters",
+                                "February 5, 2015",
+                                "By Zachary Petit",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-02-05-typography-lessons-from-the-masters.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-02-20-everything-is-design-the-work-of-paul-rand-th.jpg",
+                                "http://blog.dwr.com/2015/02/20/everything-is-design-the-work-of-paul-rand/",
+                                "Everything is Design: The Work of Paul Rand.",
+                                "February 20, 2015",
+                                "By Gwendolyn Horton",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-02-20-everything-is-design-the-work-of-paul-rand.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-02-26-the-designer-who-humanized-corporate-america-the-atlantic-th.jpg",
+                                "https://www.theatlantic.com/entertainment/archive/2015/02/humanizing-corporate-america-one-logo-at-a-time/386111/",
+                                "The Designer Who Humanized Corporate America",
+                                "February 26, 2015",
+                                "A new exhibit celebrates Paul Rand, a pioneer who re-envisioned the look of megacompanies with whimsical, colorful logos and illustrations.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-02-26-the-designer-who-humanized-corporate-america-the-atlantic.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-03-03-everything-is-design-design-is-everything-th.jpg",
+                                "http://www.printmag.com/ellen-shapiro/paul-rand-design-is-everything/",
+                                "Everything Is Design, Design Is Everything",
+                                "March 3, 2015",
+                                "By Ellen Shapiro",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-03-03-everything-is-design-design-is-everything.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-03-06-paul-rand-drawing-lines-th.jpg",
+                                "http://www.printmag.com/daily-heller/paul-rand-drawing-lines/",
+                                "Paul Rand Drawing Lines",
+                                "March 6, 2015",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-03-06-paul-rand-drawing-lines.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-03-13-a-few-more-lines-from-rand-a-man-of-few-words-th.jpg",
+                                "http://www.printmag.com/daily-heller/paul-rand-a-man-of-few-words/",
+                                "A Few More Lines From Rand",
+                                "March 13, 2015",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-03-13-a-few-more-lines-from-rand-a-man-of-few-words.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-03-19-design-history-101-who-knew-design-royalty-was-behind-ucla-extension-bulletins-aiga-eye-on-design-th.jpg",
+                                "https://eyeondesign.aiga.org/design-history-101-who-knew-design-royalty-was-behind-uclas-extension-bulletins/",
+                                "Who Knew Design Royalty was Behind UCLA’s Extension Bulletins?",
+                                "March 19th, 2015",
+                                "By Steven Brower",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-03-19-design-history-101-who-knew-design-royalty-was-behind-ucla-extension-bulletins-aiga-eye-on-design.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-03-19-rands-random-notes-museum-of-the-city-of-new-york-th.jpg",
+                                "http://www.printmag.com/daily-heller/rands-notes-museum-of-the-city-of-new-york/",
+                                "Rand’s Random Logo Notes",
+                                "March 19, 2015",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-03-19-rands-random-notes-museum-of-the-city-of-new-york.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-03-24-the-fab-four-of-modernists-th.jpg",
+                                "http://www.printmag.com/daily-heller/the-fab-four-of-modernists/",
+                                "The Fab Four (of Modernists)",
+                                "March 24, 2015",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-03-24-the-fab-four-of-modernists.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-03-25-you-searched-for-paul-rand-lecture-series-mfa-design-th.jpg",
+                                "http://design.sva.edu/search/Paul%20Rand%20Lecture%20Series",
+                                "Paul Rand Lecture Series",
+                                "March 25, 2015",
+                                "Video series presented by the School of Visual Arts",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-03-25-you-searched-for-paul-rand-lecture-series-mfa-design.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-03-31-the-observatory-land-rand-mad-men-th.jpg",
+                                "https://designobserver.com/feature/the-observatory-land-rand-mad-men/38839",
+                                "The Observatory: Land, Rand, Mad Men",
+                                "March 31, 2015",
+                                "On this episode, Michael and Jessica talk about a panel they participated in at Everything Is Design, the Paul Rand exhibit at the Museum of the City of New York, plus the return of Mad Men and the fate of photography giants Kodak and Polaroid.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-03-31-the-observatory-land-rand-mad-men.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-04-06-joe-mansueto-tumblr-the-genius-of-paul-rand-th.jpg",
+                                "http://joemansueto.tumblr.com/post/115685401178/the-genius-of-paul-rand",
+                                "The Genius of Paul Rand",
+                                "April 06, 2015",
+                                "By Joe Mansueto",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-04-06-joe-mansueto-tumblr-the-genius-of-paul-rand.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-04-20-the-7-step-paul-rand-logo-test-entrepreneurs-handbook-medium-th.jpg",
+                                "https://medium.com/entrepreneur-s-handbook/the-7-step-paul-rand-logo-test-5c7b546af17b",
+                                "The 7-Step-Paul-Rand Logo-Test",
+                                "April 20, 2015",
+                                "By Dave Schools",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-04-20-the-7-step-paul-rand-logo-test-entrepreneurs-handbook-medium.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-05-06-designer-paul-rand-gave-big-business-a-brave-new-face-th.jpg",
+                                "https://www.investors.com/news/management/leaders-and-success/paul-rand-solved-corporate-identity-problem/",
+                                "Designer Paul Rand Gave Big Business A Brave New Face",
+                                "May 6, 2015",
+                                "By Scot Donaldson",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-05-06-designer-paul-rand-gave-big-business-a-brave-new-face.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-06-03-a-designers-eye-paul-rand-sight-unseen-th.jpg",
+                                "http://www.sightunseen.com/2015/03/a-designers-eye-paul-rand/",
+                                "A Designer’s Eye: Paul Rand",
+                                "June 3, 2015",
+                                "By Jill Singer",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-06-03-a-designers-eye-paul-rand-sight-unseen.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-06-09-steve-jobs-revered-this-designer-dictatorial-approach-th.jpg",
+                                "https://www.inc.com/ilan-mochari/design-paul-rand.html",
+                                "Steve Jobs Revered This Designer’s Dictatorial Approach",
+                                "June 9, 2015",
+                                "When it comes to design, should you listen to your users or not? The answer—even for legendary designers like Paul Rand—has always been more nuanced than this yes-or-no question implies.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-06-09-steve-jobs-revered-this-designer-dictatorial-approach.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-06-16-frank-zachary-catalyst-in-chief-th.jpg",
+                                "http://www.printmag.com/daily-heller/frank-zachary-catayst-in-chief/",
+                                "Frank Zachary, Catalyst-in-Chief",
+                                "June 16, 2015",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-06-16-frank-zachary-catalyst-in-chief.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-07-23-how-to-design-an-enduring-logo-lessons-from-ibm-and-paul-rand-th.jpg",
+                                "https://qz.com/461040/how-to-design-an-enduring-logo-lessons-from-ibm-and-paul-rand/",
+                                "How to design an enduring logo: Lessons from IBM and Paul Rand",
+                                "July 23, 2015",
+                                "By Anne Quito",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-07-23-how-to-design-an-enduring-logo-lessons-from-ibm-and-paul-rand.jpg"
+                                )    
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-09-22-paul-rand-tribute-jon-fenwick-design-th.jpg",
+                                "http://jon.fenwickcreative.com/rand/",
+                                "Paul Rand (1914 – 1996)",
+                                "September 22, 2015",
+                                "John Fenwick's tribute to the life and work of Mr. Rand.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-09-22-paul-rand-tribute-jon-fenwick-design.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-10-07-2-×-4-essay-this-is-not-a-cigar-rereading-rand-th.jpg",
+                                "http://2x4.org/ideas/43/this-is-not-a-cigar-rereading-rand/",
+                                "2 × 4: This is Not a Cigar: Rereading Rand",
+                                "October 7, 2015",
+                                "by Susan Sellers and Michael Rock",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-10-07-2-×-4-essay-this-is-not-a-cigar-rereading-rand.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-11-16-how-westinghouse-brought-‘midcentury-modern-to-the-pittsburgher-on-the-street-carnegie-museum-of-art-blog-th.jpg",
+                                "https://blog.cmoa.org/2015/11/how-westinghouse-brought-midcentury-modern-to-the-pittsburgher-on-the-street/",
+                                "How Westinghouse Brought ‘Midcentury Modern’ to the Pittsburgher on the Street",
+                                "November 16, 2015",
+                                "By George Heidekat",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2015-11-16-how-westinghouse-brought-‘midcentury-modern-to-the-pittsburgher-on-the-street-carnegie-museum-of-art-blog.jpg"
+                                )
+
+
+                            //- =========================================================================
+                            //- ██████   ██████   ██  ██████
+                            //-      ██ ██  ████ ███ ██
+                            //-  █████  ██ ██ ██  ██ ███████
+                            //- ██      ████  ██  ██ ██    ██
+                            //- ███████  ██████   ██  ██████
+                            //- =========================================================================
+                            hr
+                            h2.text-red 2016
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-03-31-paul-rand-at-fonts-in-use-th.jpg",
+                                "https://fontsinuse.com/designers/1242/paul-rand",
+                                "Uses designed by Paul Rand",
+                                "March 31, 2016",
+                                "Selections by Staff",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-03-31-paul-rand-at-fonts-in-use.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-04-20-sketchy-rand-th.jpg",
+                                "http://www.printmag.com/daily-heller/sketchy-rand/",
+                                "Sketchy Rand",
+                                "April 20, 2016",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-04-20-sketchy-rand.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-07-21-logocentrism-th.jpg",
+                                "https://www.designobserver.com/feature/logocentrism/38552",
+                                "Logocentrism",
+                                "July 21, 2016",
+                                "A re-print of Jessica Helfand's original article.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-07-21-logocentrism.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-09-22-user-friendly-paul-rand-th.jpg",
+                                "https://designobserver.com/feature/user-friendly-paul-rand/38550",
+                                "User-Friendly Paul Rand",
+                                "September 22, 2016",
+                                "Steve Heller argues that Rand was user-friendly long before the term came about.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-09-22-user-friendly-paul-rand.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-10-11-my-favorite-rand-kids-book-th.jpg",
+                                "http://www.printmag.com/daily-heller/favorite-paul-rand-kids-book/",
+                                "My Favorite Rand Kids’ Book",
+                                "October 11, 2016",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-10-11-my-favorite-rand-kids-book.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-11-02-paul-rands-classic-a-designers-art-is-finally-back-in-print-wired-th.jpg",
+                                "https://www.wired.com/2016/11/paul-rands-classic-designers-art-finally-back-print/",
+                                "Paul Rand's Classic A Designer's Art Is Finally Back In Print",
+                                "November 2, 2016",
+                                "Celebrating the re-print of A Designer's Art.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-11-02-paul-rands-classic-a-designers-art-is-finally-back-in-print-wired.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-11-14-thoughts-on-paul-rand-th.jpg",
+                                "https://designobserver.com/feature/thoughts-on-paul-rand/39426",
+                                "Thoughts on Paul Rand",
+                                "November 14, 2016",
+                                "By John Maeda",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-11-14-thoughts-on-paul-rand.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-11-15-paul-rand-the-man-who-moved-ads-from-cute-to-clever-artnet-news-th.jpg",
+                                "https://news.artnet.com/opinion/paul-rand-helped-move-ads-cute-clever-748238",
+                                "Paul Rand: The Man Who Moved Ads from Cute to Clever",
+                                "November 15, 2016",
+                                "Celebrating the re-print of A Designer's Art.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-11-15-paul-rand-the-man-who-moved-ads-from-cute-to-clever-artnet-news.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-11-16-paul-rand-the-last-word-th.jpg",
+                                "https://designobserver.com/feature/paul-rand-the-last-word/39429",
+                                "Paul Rand: The Last Word",
+                                "November 16, 2016",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-11-16-paul-rand-the-last-word.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-11-19-picasso-of-design-paul-rands-manifesto-is-back-in-print-cre-th.jpg",
+                                "https://www.vice.com/en_us/article/gvw4dx/paul-rand-designers-art-manifesto-back-in-print",
+                                "“Picasso of Design” Paul Rand’s Manifesto Is Back in Print",
+                                "November 19, 2016",
+                                "Celebrating the re-print of Thoughts on Design.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-11-19-picasso-of-design-paul-rands-manifesto-is-back-in-print-cre.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-11-24-henri-matisse-vs-paul-rand-what-the-famous-fauvist-has-to-do-with-the-author-of-ibm-logo-retroavangarda-th.jpg",
+                                "http://retroavangarda.com/henri-matisse-vs-paul-rand-en/",
+                                "Henri Matisse vs Paul Rand – what the famous fauvist has to do with the author of IBM logo",
+                                "November 24, 2016",
+                                "By Anna Kłos",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-11-24-henri-matisse-vs-paul-rand-what-the-famous-fauvist-has-to-do-with-the-author-of-ibm-logo-retroavangarda.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-12-04-a-brief-history-in-layout-design-the-early-grid-systems-th.jpg",
+                                "http://www.printmag.com/design-education/online-design-courses/early-grids-in-layout-design/",
+                                "A Brief History in Layout Design: The Early Grid Systems",
+                                "December 4, 2016",
+                                "By Natalie Boyd",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-12-04-a-brief-history-in-layout-design-the-early-grid-systems.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-12-07-graphic-designer-paul-rand-is-the-artist-behind-some-of-america-greatest-logos-home-q-cbc-radio-th.jpg",
+                                "http://www.cbc.ca/radio/q/schedule-for-wednesday-december-7-2016-1.3883452/graphic-designer-paul-rand-is-the-artist-behind-some-of-america-s-greatest-logos-1.3884933",
+                                "Graphic designer Paul Rand is the artist behind some of America's greatest logos",
+                                "December 7, 2016",
+                                "CBC Radio",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-12-07-graphic-designer-paul-rand-is-the-artist-behind-some-of-america-greatest-logos-home-q-cbc-radio.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-12-31-weekend-heller-last-day-of-a-fill-in-blank-year-th.jpg",
+                                "http://www.printmag.com/daily-heller/weekend-heller-h-l-mencken/",
+                                "Weekend Heller: Last Day Of A [Fill in Blank] Year",
+                                "December 31, 2016",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2016-12-31-weekend-heller-last-day-of-a-fill-in-blank-year.jpg"
+                                )
+
+
+                            //- =========================================================================
+                            //- ██████   ██████   ██ ███████
+                            //-      ██ ██  ████ ███      ██
+                            //-  █████  ██ ██ ██  ██     ██
+                            //- ██      ████  ██  ██    ██
+                            //- ███████  ██████   ██    ██
+                            //- =========================================================================
+                            hr
+                            h2.text-red 2017
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2017-02-8-how-steven-heller-redefined-the-design-industry-th.jpg",
+                                "https://magenta.as/how-steven-heller-redefined-the-design-industry-c02aca4d742c",
+                                "How Steven Heller Redefined the Design Industry",
+                                "February 8, 2017",
+                                "By Mariam Aldhahi",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2017-02-8-how-steven-heller-redefined-the-design-industry.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2017-02-21-a-rand-memorial-th.jpg",
+                                "http://www.printmag.com/steven-heller/a-paul-rand-memorial/",
+                                "A Rand Memorial",
+                                "February 21, 2017",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2017-02-21-a-rand-memorial.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2017-04-25-ibm-art-with-watson-paul-rand-th.jpg",
+                                "https://www.ibm.com/watson/artwithwatson/paul-rand.html",
+                                "Paul Rand: Emotional Spellcheck",
+                                "April 25, 2017",
+                                "IBM Art with Watson",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2017-04-25-ibm-art-with-watson-paul-rand.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2017-06-17-weekend-heller-rand-in-italy-th.jpg",
+                                "http://www.printmag.com/steven-heller/weekend-heller-paul-rand-italy/",
+                                "Weekend Heller: Rand in Italy",
+                                "June 17, 2017",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2017-06-17-weekend-heller-rand-in-italy.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2017-08-02-ken-with-logo-by-paul-rand-th.jpg",
+                                "http://www.printmag.com/daily-heller/ken-logo-paul-rand/",
+                                "Ken, With Logo by Paul Rand",
+                                "August 2, 2017",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2017-08-02-ken-with-logo-by-paul-rand.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2017-11-13-6-tricks-to-a-memorable-logo-tips-from-the-master-paul-rand-print-mag-th.jpg",
+                                "http://www.printmag.com/branding/6-logo-tips-master-paul-rand/",
+                                "6 Tricks to a Memorable Logo: Tips from the Master",
+                                "November 13, 2017",
+                                "By Guest Contributor",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2017-11-13-6-tricks-to-a-memorable-logo-tips-from-the-master-paul-rand-print-mag.jpg"
+                                )
+
+
+                            //- =========================================================================
+                            //- ██████   ██████   ██  █████
+                            //-      ██ ██  ████ ███ ██   ██
+                            //-  █████  ██ ██ ██  ██  █████
+                            //- ██      ████  ██  ██ ██   ██
+                            //- ███████  ██████   ██  █████
+                            //- =========================================================================
+                            hr
+                            h2.text-red 2018
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-01-01-birds-of-a-feather-th.jpg",
+                                "http://www.printmag.com/daily-heller/birds-of-a-feather-design-ideas/",
+                                "Birds Of A Feather",
+                                "January 1, 2018",
+                                "By Steven Heller",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-01-01-birds-of-a-feather.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-01-03-rand-marion-the-buffalo-news-th.jpg",
+                                "http://buffalonews.com/2018/01/03/rand-marion/",
+                                "Marion Rand Obituary",
+                                "January 3, 2018",
+                                "The Buffalo News",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-01-03-rand-marion-the-buffalo-news.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/-th.jpg",
+                                "https://envato.com/blog/paul-rand-and-the-stories-behind-some-of-the-worlds-most-famous-logos/",
+                                "Paul Rand and the Stories Behind Some of the World’s Most Famous Logos",
+                                "March 13, 2018",
+                                "Behind some of Rand's most famous logos.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-03-15-3-essential-branding-lessons-from-a-rare-steve-jobs-interview-th.jpg",
+                                "https://www.fastcompany.com/90164213/3-essential-branding-lessons-from-a-rare-steve-jobs-interview",
+                                "3 Essential Branding Lessons From A Rare Steve Jobs Interview",
+                                "March 15, 2018",
+                                "Steve Jobs shares what he learned from Paul Rand.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-03-15-3-essential-branding-lessons-from-a-rare-steve-jobs-interview.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-05-15-a-bee-c-paul-rands-bee-fixation-th.jpg",
+                                "https://designobserver.com/feature/a-bee-c-paul-rands-bee-fixation/39838",
+                                "A Bee C: Paul Rand’s Bee Fixation",
+                                "May 15, 2018",
+                                "A look and Rand's fascination with bees.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-05-15-a-bee-c-paul-rands-bee-fixation.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-06-09-weekend-heller-pensieri-sul-design-th.jpg",
+                                "https://www.printmag.com/daily-heller/weekend-heller-pensieri-sul-design/",
+                                "Weekend Heller: Pensieri sul Design",
+                                "June 9, 2018",
+                                "Steven Heller's thoughts on Thoughts on Design",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-06-09-weekend-heller-pensieri-sul-design.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-07-13-dubouchett-and-paul-rands-illustrated-trademarks-th.jpg",
+                                "https://www.printmag.com/branding/dubouchett-paul-rands-harlequin/",
+                                "DuBouchett and Paul Rand’s Illustrated Trademarks",
+                                "A look at Rand's trademarks",
+                                "description",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-07-13-dubouchett-and-paul-rands-illustrated-trademarks.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-08-01-eye-vy-league-bulldog-smithsonian-insider-th.jpg",
+                                "https://insider.si.edu/2018/08/eye-vy-league-bulldog/",
+                                "“Eye”-vy League Bulldog",
+                                "August 1, 2018",
+                                "Smithsonian Insider looks at a Yale poster",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-08-01-eye-vy-league-bulldog-smithsonian-insider.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-08-21-87-good-hill-road-weston-fairfield-county-ct-home-for-sale-th.jpg",
+                                "https://www.nytimes.com/real-estate/usa/ct/weston/homes-for-sale",
+                                "87 Goodhill Road",
+                                "August 21, 2018",
+                                "Property listing for Rand's house",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-08-21-87-good-hill-road-weston-fairfield-county-ct-home-for-sale.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-08-21-midcentury-home-of-paul-rand-asks-$895k-in-connecticut-curbed-th.jpg",
+                                "https://www.curbed.com/2018/8/21/17764262/midcentury-home-for-sale-paul-rand",
+                                "Midcentury home of legendary graphic designer Paul Rand hits the market for $895K",
+                                "August 21, 2018",
+                                "Curbed.com writes about the Rand house.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-08-21-midcentury-home-of-paul-rand-asks-$895k-in-connecticut-curbed.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-08-22-logo-designers-home-is-an-affordable-midcentury-gem-th.jpg",
+                                "https://nypost.com/2018/08/22/logo-designers-home-is-an-affordable-midcentury-gem/",
+                                "Logo designer’s home is an affordable midcentury gem",
+                                "August 22, 2018",
+                                "Article about Rand's home on the market.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-08-22-logo-designers-home-is-an-affordable-midcentury-gem.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-08-22-typography-by-paul-rand-th.jpg",
+                                "https://www.printmag.com/branding/typography-by-paul-rand/",
+                                "Typography By Paul Rand",
+                                "August 22, 2018",
+                                "Newly discovered typography for the AIGA Journal",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-08-22-typography-by-paul-rand.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-08-23-the-house-that-rand-built-th.jpg",
+                                "https://www.printmag.com/daily-heller/the-house-that-rand-built/",
+                                "The House That Rand Built",
+                                "August 23, 2018",
+                                "Paul and Marion Rand’s quintessential mid-century modern home, designed by Paul Rand and Ann Binkley Rand and built in 1953, is on the market.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-08-23-the-house-that-rand-built.jpg"
+                                )
+
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-08-24-everything-goes-with-everything-th.jpg",
+                                "https://www.designobserver.com/feature/everything-goes-with-everything/39901",
+                                "Everything Goes With Everything...",
+                                "August 24, 2018",
+                                "Eliot Noyes and his IBM program",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-08-24-everything-goes-with-everything.jpg"
+                                )
+
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-08-24-no-limit-on-sketches-for-the-limited-th.jpg",
+                                "https://www.printmag.com/daily-heller/sketches-for-the-limited-tlc-group/",
+                                "No Limit On Sketches For The Limited",
+                                "August 24, 2018",
+                                "Sketches for the Limited logo",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-08-24-no-limit-on-sketches-for-the-limited.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-09-06-the-rand-book-that-never-was-th.jpg",
+                                "https://www.printmag.com/daily-heller/the-rand-book-that-never-was/",
+                                "The Rand Book That Never Was",
+                                "September 6, 2018",
+                                "Steve Heller shares an unknown book manuscript.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-09-06-the-rand-book-that-never-was.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-12-02-delving-deeper-modern-magazine-th.jpg",
+                                "http://modernmag.com/delving-deeper-13/",
+                                "Delving Deeper",
+                                "December 2, 2018",
+                                "A closer look at some original Christmas card paintings.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-12-02-delving-deeper-modern-magazine.jpg"
+                                )
+
+                            +listItem-thumb-buttons(
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-12-12-throwing-a-curve-paul-rand-style-articles-logolounge-th.jpg",
+                                "https://www.logolounge.com/articles/throwing-a-curve-paul-rand-style",
+                                "Throwing a Curve, Paul Rand Style",
+                                "December 12, 2018",
+                                "Bill Gardner from Logo Lounge gives away one of Rand's french curves.",
+                                "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Online/2018-12-12-throwing-a-curve-paul-rand-style-articles-logolounge.jpg"
+                                )
+
+                        //- /*-----  End of ONLINE ARTICLES  ---------------------------------------------------------------------------------------*/
+

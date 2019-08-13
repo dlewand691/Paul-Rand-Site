@@ -1,0 +1,10 @@
+.cell.large-auto.large-m0#select-writing
+    fieldset
+        select.select2#select-writing-main(data-placeholder="Choose…")
+            +navOption('','')
+            +navOption('books'              , 'Books'             )
+            +navOption('articles'           , 'Articles'          )
+            +navOption('quotes'             , 'Quotes'            )
+            +navOption('suggested-readings' , 'Suggested Readings')
+
+    //- a.button.text-caps.radius.small-m0(href="#") Go

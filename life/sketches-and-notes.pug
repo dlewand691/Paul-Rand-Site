@@ -1,0 +1,76 @@
+extends ../__MIXINS/_layout-default.pug
+
+block vars
+    - var pageTitle = 'Sketches and Notes'
+    - var bodyID    = 'life'
+    - var bodyClass = 'sketches-and-notes'
+
+block main-content
+    - var sketchImage       = []
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Bookplate%20and%20sketches-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Bookplate%20and%20sketches.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Circle%20Sketches%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Circle%20Sketches%2001.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Circle%20Sketches%2002-200.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Circle%20Sketches%2002.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Concorde%20boarding%20pass-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Concorde%20boarding%20pass.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Cummins%20Annual%20Report%20Sketch-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Cummins%20Annual%20Report%20Sketch.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Design%20quote%20edits-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Design%20quote%20edits.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/IBM%20Notes%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/IBM%20Notes%2001.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/IBM%20Notes%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/IBM%20Notes%2002.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/IBM%20Notes%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/IBM%20Notes%2003.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/IBM%20Notes%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/IBM%20Notes%2004.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/IBM%20Notes%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/IBM%20Notes%2005.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/IBM%20Notes%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/IBM%20Notes%2006.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/LE%20sketch-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/LE%20sketch.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Man%20profile%20sketch-%20PM%20magazine-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Man%20profile%20sketch-%20PM%20magazine.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Monkey%20and%20Sears%20logo-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Monkey%20and%20Sears%20logo.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Notepad%20Sketches%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Notepad%20Sketches%2001.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Notes%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Notes%2001.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Notes%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Notes%2002.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Notes%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Notes%2003.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Notes%20and%20portraits-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Notes%20and%20portraits.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Order%20form-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Order%20form.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Paris%20Sketch-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Paris%20Sketch.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Passport%20Magazine%20with%20Rand%20sketches%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Passport%20Magazine%20with%20Rand%20sketches%2001.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Passport%20Magazine%20with%20Rand%20sketches%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Passport%20Magazine%20with%20Rand%20sketches%2002.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Passport%20Magazine%20with%20Rand%20sketches%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Passport%20Magazine%20with%20Rand%20sketches%2003.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Personal%20Notes-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Personal%20Notes.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Rectangles-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Rectangles.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Saul%20Bass%20Sketch-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Saul%20Bass%20Sketch.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Sears%20logos-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Sears%20logos.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Signature%20Pencil%20v1-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Signature%20Pencil%20v1.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Signature%20Pencil%20v2-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Signature%20Pencil%20v2.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Sketches%20and%20notes-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Sketches%20and%20notes.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Starfish%20sketches-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Starfish%20sketches.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Stork%20Pin%20sketch-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Web/Stork%20Pin%20sketch.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Abstract%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Abstract%2001.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Abstract%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Abstract%2002.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/All%20day%20lolly%20pops-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/All%20day%20lolly%20pops.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Bird-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Bird.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Bull%20fighter-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Bull%20fighter.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Children%20performing%20for%20parents-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Children%20performing%20for%20parents.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Clown-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Clown.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Dog%20hiding%20under%20mushroom-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Dog%20hiding%20under%20mushroom.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Doodles%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Doodles%2001.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/El%20Producto%20cigar%20with%20lion%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/El%20Producto%20cigar%20with%20lion%2001.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/El%20Producto%20cigar%20with%20lion%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/El%20Producto%20cigar%20with%20lion%2002.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Female%20nude-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Female%20nude.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Flowers%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Flowers%2001.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Flowers%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Flowers%2002.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Monkies-%20hear%2C%20see%2C%20say%20no%20evil%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Monkies-%20hear%2C%20see%2C%20say%20no%20evil%2001.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Monkies-%20hear%2C%20see%2C%20say%20no%20evil%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Monkies-%20hear%2C%20see%2C%20say%20no%20evil%2002.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Mountain%20man-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Mountain%20man.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Near%20Port%20Royal%2C%20Paris%2C%20August%202%2C%201951-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Near%20Port%20Royal%2C%20Paris%2C%20August%202%2C%201951.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/No%20Posting%2C%20Paris%2C%20August%202%2C%201951-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/No%20Posting%2C%20Paris%2C%20August%202%2C%201951.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Strange%20face-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Strange%20face.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/The%20magic%20flute-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/The%20magic%20flute.jpg', title: ''})
+    - sketchImage.push({link: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Vulture-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Sketches%20and%20Notes/Sketch%20Book/Web/Vulture.jpg', title: ''})
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x
+                .cell.align-center
+                    .small-12.cell.text-center
+                        h1.text-center.small-mb2.medium-mb3.large-mb3(data-aos="fade-up")!= pageTitle
+
+                        each sketch in sketchImage
+                            a(href=sketch.linkLg data-fancybox data-caption=pageTitle + "   |   " + sketch.title)
+                                img.lazyload(data-src=sketch.link alt=pageTitle + "   |   " + sketch.title)&attributes(attributes)

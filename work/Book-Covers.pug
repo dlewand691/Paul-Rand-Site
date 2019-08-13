@@ -1,0 +1,1308 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Books Covers'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = 'CHANGE_ME'
+    - var nextType  = 'CHANGE_ME'
+    - var nextTitle = 'Designed and/or Contributed to by Rand'
+    - var nextLink  = 'Designed-and-Contributed-to'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-container
+                .grid-x.grid-margin-x.align-center.small-mb4
+                    .small-12.cell
+                        //- /*==============================  CLIENT  ==============================*/
+                        h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                        if dates == 'CHANGE_ME'
+                        else
+                            p!= dates
+
+                        //- /*==============================  BOOK COVERS  ==============================*/
+                        .grid-x.grid-margin-x.small-up-1.medium-up-3
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1929%20Frank%20Davis%20%28maquette%29/Web/Frank%20Davis%20maquette-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1929%20Frank%20Davis%20%28maquette%29/Web/Frank%20Davis%20maquette.jpg",
+                                title: "Frank Davis",
+                                footnote1: "(Maquette)",
+                                footnote2: "1929"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1945%20Leave%20Cancelled/Web/Leave%20Cancelled%2C%20front-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1945%20Leave%20Cancelled/Web/Leave%20Cancelled%2C%20front.jpg",
+                                title: "Leave Cancelled",
+                                footnote1: "1945",
+                                footnote2: "9 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Leave Cancelled, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1945%20Leave%20Cancelled/Web/Leave%20Cancelled%2C%20back.jpg"},
+                                {title: "Leave Cancelled, detail", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1945%20Leave%20Cancelled/Web/Leave%20Cancelled%20Detail%2001.jpg"},
+                                {title: "Leave Cancelled, detail", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1945%20Leave%20Cancelled/Web/Leave%20Cancelled%20Detail%2002.jpg"},
+                                {title: "Leave Cancelled, detail", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1945%20Leave%20Cancelled/Web/Leave%20Cancelled%20Detail%2003.jpg"},
+                                {title: "Leave Cancelled, detail", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1945%20Leave%20Cancelled/Web/Leave%20Cancelled%20Detail%2004.jpg"},
+                                {title: "Leave Cancelled, detail", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1945%20Leave%20Cancelled/Web/Leave%20Cancelled%20Detail%2005.jpg"},
+                                {title: "Leave Cancelled, detail", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1945%20Leave%20Cancelled/Web/Leave%20Cancelled%20Detail%2006.jpg"},
+                                {title: "Leave Cancelled, detail", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1945%20Leave%20Cancelled/Web/Leave%20Cancelled%20Detail%2007.jpg"}
+                                )
+
+                            //- +galleryItem-cardLink(
+                            //-     "4","6",
+                            //-     {
+                            //-     SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1945%20Problems%20of%20Contemporary%20Art%2C%20Form%20and%20Sense/Web/Problems%20of%20Contemporary%20Art%2C%20Form%20and%20Sense-450.jpg",
+                            //-     LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1945%20Problems%20of%20Contemporary%20Art%2C%20Form%20and%20Sense/Web/Problems%20of%20Contemporary%20Art%2C%20Form%20and%20Sense.jpg",
+                            //-     title: "Problems of Contemporary Art, Form and Sense",
+                            //-     footnote1: "1945"
+                            //-     })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1945%20The%20Fervent%20Years/Web/The%20Fervent%20Years-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1945%20The%20Fervent%20Years/Web/The%20Fervent%20Years.jpg",
+                                title: "The Fervent Years",
+                                footnote1: "1945"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1946%20Origins%20of%20Modern%20Sculpture/Web/Origins%20of%20Modern%20Sculpture-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1946%20Origins%20of%20Modern%20Sculpture/Web/Origins%20of%20Modern%20Sculpture.jpg",
+                                title: "Origins of Modern Sculpture",
+                                footnote1: "1946"
+                                })
+
+                            //- +galleryItem-cardLink(
+                            //-     "4","6",
+                            //-     {
+                            //-     SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1947%20Problems%20of%20Contemporary%20Art%2C%20Possibilities%201/Web/Problems%20of%20Contemporary%20Art%2C%20Possibilities%201-450.jpg",
+                            //-     LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1947%20Problems%20of%20Contemporary%20Art%2C%20Possibilities%201/Web/Problems%20of%20Contemporary%20Art%2C%20Possibilities%201.jpg",
+                            //-     title: "Problems of Contemporary Art, Possibilities 1",
+                            //-     footnote1: "1947"
+                            //-     })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1947%20The%20Well%20Wrought%20Urn/Web/The%20Well%20Wrought%20Urn-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1947%20The%20Well%20Wrought%20Urn/Web/The%20Well%20Wrought%20Urn.jpg",
+                                title: "The Well Wrought Urn",
+                                footnote1: "1947",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The Well Wrought Urn, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1947%20The%20Well%20Wrought%20Urn/Web/The%20Well%20Wrought%20Urn%2C%20Back.jpg"}
+                                )
+
+                            //- +galleryItem-cardLink(
+                            //-     "4","6",
+                            //-     {
+                            //-     SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1948%20Problems%20of%20Contemporary%20Art%2C%20Paintings%20Sculptures%20Reflections/Web/Problems%20of%20Contemporary%20Art%2C%20Paintings%20Sculptures%20Reflections-450.jpg",
+                            //-     LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1948%20Problems%20of%20Contemporary%20Art%2C%20Paintings%20Sculptures%20Reflections/Web/Problems%20of%20Contemporary%20Art%2C%20Paintings%20Sculptures%20Reflections.jpg",
+                            //-     title: "Problems of Contemporary Art, Paintings Sculptures Reflections",
+                            //-     footnote1: "1948"
+                            //-     })
+
+                            //- +galleryItem-cardLink(
+                            //-     "4","6",
+                            //-     {
+                            //-     SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1949%20Problems%20of%20Contemporary%20Art%2C%20The%20Grass%20Roots%20of%20Art/Web/Problems%20of%20Contemporary%20Art%2C%20The%20Grass%20Roots%20of%20Art-450.jpg",
+                            //-     LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1949%20Problems%20of%20Contemporary%20Art%2C%20The%20Grass%20Roots%20of%20Art/Web/Problems%20of%20Contemporary%20Art%2C%20The%20Grass%20Roots%20of%20Art.jpg",
+                            //-     title: "Problems of Contemporary Art, The Grass Roots of Art",
+                            //-     footnote1: "1949"
+                            //-     })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1950%20Sweden%20Builds/Web/Sweden%20Builds-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1950%20Sweden%20Builds/Web/Sweden%20Builds.jpg",
+                                title: "Sweden Builds",
+                                footnote1: "1950"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1950%20Switzerland%20Builds/Web/Switzerland%20Builds-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1950%20Switzerland%20Builds/Web/Switzerland%20Builds.jpg",
+                                title: "Switzerland Builds",
+                                footnote1: "1950"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1952%20Missa%20Solemnis%2C%20program%20cover/Web/Missa%20Solemnis%2C%20program%20cover-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1952%20Missa%20Solemnis%2C%20program%20cover/Web/Missa%20Solemnis%2C%20program%20cover.jpg",
+                                title: "Missa Solemnis",
+                                footnote1: "Program Cover",
+                                footnote1: "1952"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1952%20The%20Shores%20of%20Light/Web/The%20Shores%20of%20Light-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1952%20The%20Shores%20of%20Light/Web/The%20Shores%20of%20Light.jpg",
+                                title: "The Shores of Light",
+                                footnote1: "1952"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1953%20Perspectives%20USA%203/Web/Perspectives%20USA%203-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1953%20Perspectives%20USA%203/Web/Perspectives%20USA%203.jpg",
+                                title: "Perspectives USA 3",
+                                footnote1: "1953"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1954%20American%20Son/Web/American%20Son-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1954%20American%20Son/Web/American%20Son.jpg",
+                                title: "American Son",
+                                footnote1: "1954",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "American Son, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1954%20American%20Son/Web/American%20Son%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1954%20The%20Origins%20And%20History%20Of%20Consciousness/Web/The%20Origins%20and%20History%20of%20Conciousness-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1954%20The%20Origins%20And%20History%20Of%20Consciousness/Web/The%20Origins%20and%20History%20of%20Conciousness.jpg",
+                                title: "The Origins And History Of Consciousness",
+                                footnote1: "1954"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1955%20Behind%20the%20Picture%20Window/Web/Behind%20the%20Picture%20Window-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1955%20Behind%20the%20Picture%20Window/Web/Behind%20the%20Picture%20Window.jpg",
+                                title: "Behind the Picture Window",
+                                footnote1: "1955"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1955%20Creative%20Intuition%20in%20Art%20and%20Poetry/Web/Creative%20Intuition%20in%20Art%20and%20Poetry-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1955%20Creative%20Intuition%20in%20Art%20and%20Poetry/Web/Creative%20Intuition%20in%20Art%20and%20Poetry.jpg",
+                                title: "Creative Intuition in Art and Poetry",
+                                footnote1: "1955"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1955%20The%20Acquisitive%20Society/Web/The%20Acquisiive%20Society-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1955%20The%20Acquisitive%20Society/Web/The%20Acquisiive%20Society.jpg",
+                                title: "The Acquisitive Society",
+                                footnote1: "1955"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1955%20The%20Captive%20Mind/Web/The%20Captive%20Mind-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1955%20The%20Captive%20Mind/Web/The%20Captive%20Mind.jpg",
+                                title: "The Captive Mind",
+                                footnote1: "1955"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1955%20The%20Revelations%20of%20Dr.%20Modesto/Web/The%20Revelations%20of%20Dr.%20Modesto-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1955%20The%20Revelations%20of%20Dr.%20Modesto/Web/The%20Revelations%20of%20Dr.%20Modesto.jpg",
+                                title: "The Revelations of Dr. Modesto",
+                                footnote1: "1955",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The Revelations of Dr. Modesto, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1955%20The%20Revelations%20of%20Dr.%20Modesto/Web/The%20Revelations%20of%20Dr.%20Modesto%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20A%20History%20of%20Russian%20Literature/Web/A%20History%20of%20Russian%20Literature-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20A%20History%20of%20Russian%20Literature/Web/A%20History%20of%20Russian%20Literature.jpg",
+                                title: "A History of Russian Literature",
+                                footnote1: "1956",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "A History of Russian Literature", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20A%20History%20of%20Russian%20Literature/Web/A%20History%20of%20Russian%20Literature%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Art%20and%20Illusion/Web/Art%20and%20Illusion%2C%20front-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Art%20and%20Illusion/Web/Art%20and%20Illusion%2C%20front.jpg",
+                                title: "Art and Illusion",
+                                footnote1: "1956",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Art and Illusion, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Art%20and%20Illusion/Web/Art%20and%20Illusion%2C%20back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Forces%20in%20Modern%20British%20Literature%201885-1956/Web/Forces%20in%20Modern%20British%20Literature-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Forces%20in%20Modern%20British%20Literature%201885-1956/Web/Forces%20in%20Modern%20British%20Literature.jpg",
+                                title: "Forces in Modern British Literature 1885-1956",
+                                footnote1: "1956",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Forces in Modern British Literature 1885-1956", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Forces%20in%20Modern%20British%20Literature%201885-1956/Web/Forces%20in%20Modern%20British%20Literature%2C%20Back.jpg"}
+                                )
+
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Great%20Issues%20in%20American%20History%2C%20volume%201/Web/Great%20Issues%20in%20American%20History%20vol%201-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Great%20Issues%20in%20American%20History%2C%20volume%201/Web/Great%20Issues%20in%20American%20History%20vol%201.jpg",
+                                title: "Great Issues in American History, volume 1",
+                                footnote1: "1956"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Great%20Issues%20in%20American%20History%2C%20volume%202/Web/Great%20Issues%20in%20American%20History%20vol%202-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Great%20Issues%20in%20American%20History%2C%20volume%202/Web/Great%20Issues%20in%20American%20History%20vol%202.jpg",
+                                title: "Great Issues in American History, volume 2",
+                                footnote1: "1956",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Great Issues in American History, volume 2, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Great%20Issues%20in%20American%20History%2C%20volume%202/Web/Great%20Issues%20in%20American%20History%20vol%202%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Mine%20Boy/Web/Mine%20Boy%20cropped-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Mine%20Boy/Web/Mine%20Boy%20cropped.jpg",
+                                title: "Mine Boy",
+                                footnote1: "1956",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Mine Boy, full cover", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Mine%20Boy/Web/Mine%20Boy.jpg"}
+                                )
+
+
+                            +galleryItem-cardLink(
+                                "4", "6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Mine%20Boy/Mine%20Boy%20Original%20Cover%20Art/Web/Mine%20Boy%20Cover%20Prelim%20Painting%2001-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Mine%20Boy/Mine%20Boy%20Original%20Cover%20Art/Web/Mine%20Boy%20Cover%20Prelim%20Painting%2001.jpg",
+                                title: "Mine Boy Original Preliminary Art",
+                                footnote1: "6 Images",
+                                footnote2: "Courtesy of Wright Auction House, Chicago, IL."
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Mine Boy Original Preliminary Art", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Mine%20Boy/Mine%20Boy%20Original%20Cover%20Art/Web/Mine%20Boy%20Cover%20Prelim%20Painting%2002.jpg"},
+                                {title: "Mine Boy Original Preliminary Art", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Mine%20Boy/Mine%20Boy%20Original%20Cover%20Art/Web/Mine%20Boy%20Cover%20Prelim%20Painting%2003.jpg"},
+                                {title: "Mine Boy Original Preliminary Art", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Mine%20Boy/Mine%20Boy%20Original%20Cover%20Art/Web/Mine%20Boy%20Cover%20Prelim%20Painting%2004.jpg"},
+                                {title: "Mine Boy Original Preliminary Art", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Mine%20Boy/Mine%20Boy%20Original%20Cover%20Art/Web/Mine%20Boy%20Cover%20Prelim%20Painting%2005.jpg"},
+                                {title: "Mine Boy Original Preliminary Art", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Mine%20Boy/Mine%20Boy%20Original%20Cover%20Art/Web/Mine%20Boy%20Cover%20Prelim%20Painting%2006.jpg"}
+                                )
+
+
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Modern%20Art%20USA/Web/Modern%20Art%20USA%2C%20Front-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Modern%20Art%20USA/Web/Modern%20Art%20USA%2C%20Front.jpg",
+                                title: "Modern Art USA",
+                                footnote1: "1956",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Modern Art USA, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Modern%20Art%20USA/Web/Modern%20Art%20USA%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Modern%20Temper/Web/The%20Modern%20Termper-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Modern%20Temper/Web/The%20Modern%20Termper.jpg",
+                                title: "Modern Temper",
+                                footnote1: "1956",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Modern Temper, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Modern%20Temper/Web/The%20Modern%20Termper%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Plato%20An%20Introduction/Web/Plato%2C%20An%20Introduction%20cropped-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Plato%20An%20Introduction/Web/Plato%2C%20An%20Introduction%20cropped.jpg",
+                                title: "Plato An Introduction",
+                                footnote1: "1956",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Plato An Introduction, full cover", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Plato%20An%20Introduction/Web/Plato%2C%20An%20Introduction.jpg"}
+                                )
+
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Poetics%20of%20Music%20in%20the%20Form%20of%20Six%20Lessons/Web/Poetics%20of%20Music%20in%20the%20form%20of%20six%20lessons-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Poetics%20of%20Music%20in%20the%20Form%20of%20Six%20Lessons/Web/Poetics%20of%20Music%20in%20the%20form%20of%20six%20lessons.jpg",
+                                title: "Poetics of Music in the Form of Six Lessons",
+                                footnote1: "1956"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20American%20Democrat/Web/The%20American%20Democrat-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20American%20Democrat/Web/The%20American%20Democrat.jpg",
+                                title: "The American Democrat",
+                                footnote1: "1956",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The American Democrat, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20American%20Democrat/Web/The%20American%20Democrat%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20American%20Essays%20of%20Henry%20James/Web/The%20American%20Essays%20of%20Henry%20James-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20American%20Essays%20of%20Henry%20James/Web/The%20American%20Essays%20of%20Henry%20James.jpg",
+                                title: "The American Essays of Henry James",
+                                footnote1: "1956",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The American Essays of Henry James, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20American%20Essays%20of%20Henry%20James/Web/The%20American%20Essays%20of%20Henry%20James%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20Anatomy%20of%20Revolution/Web/The%20Anatomy%20of%20Revolution%2C%20v1-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20Anatomy%20of%20Revolution/Web/The%20Anatomy%20of%20Revolution%2C%20v1.jpg",
+                                title: "The Anatomy of Revolution, v1",
+                                footnote1: "1956",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The Anatomy of Revolution, v1, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20Anatomy%20of%20Revolution/Web/The%20Anatomy%20of%20Revolution%2C%20v1%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20Anatomy%20of%20Revolution/Web/The%20Anatomy%20of%20Revolution%2C%20v2-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20Anatomy%20of%20Revolution/Web/The%20Anatomy%20of%20Revolution%2C%20v2.jpg",
+                                title: "The Anatomy of Revolution, v2",
+                                footnote1: "1956"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20Future%20of%20the%20Novel-%20Essays%20on%20the%20Art%20of%20Fiction/Web/The%20Future%20of%20the%20Novel-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20Future%20of%20the%20Novel-%20Essays%20on%20the%20Art%20of%20Fiction/Web/The%20Future%20of%20the%20Novel.jpg",
+                                title: "The Future of the Novel- Essays on the Art of Fiction",
+                                footnote1: "1956",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The Future of the Novel- Essays on the Art of Fiction, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20Future%20of%20the%20Novel-%20Essays%20on%20the%20Art%20of%20Fiction/Web/The%20Future%20of%20the%20Novel%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20Lost%20Steps/Web/The%20Lost%20Steps-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20Lost%20Steps/Web/The%20Lost%20Steps.jpg",
+                                title: "The Lost Steps",
+                                footnote1: "1956",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The Lost Steps, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20Lost%20Steps/Web/The%20Lost%20Steps%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20New%20Borzoi%20Book%20of%20Ballet/Web/The%20New%20Borzoi%20Book%20of%20Ballets%2C%20Front-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20New%20Borzoi%20Book%20of%20Ballet/Web/The%20New%20Borzoi%20Book%20of%20Ballets%2C%20Front.jpg",
+                                title: "The New Borzoi Book of Ballet",
+                                footnote1: "1956",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The New Borzoi Book of Ballet, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20New%20Borzoi%20Book%20of%20Ballet/Web/The%20New%20Borzoi%20Book%20of%20Ballets%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20Second%20Man/Web/The%20Second%20Man-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20Second%20Man/Web/The%20Second%20Man.jpg",
+                                title: "The Second Man",
+                                footnote1: "1956",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The Second Man, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20The%20Second%20Man/Web/The%20Second%20Man%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Traps/Web/Traps-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1956%20Traps/Web/Traps.jpg",
+                                title: "Traps",
+                                footnote1: "1956"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1957%20Leave%20Me%20Alone/Web/Leave%20Me%20Alone-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1957%20Leave%20Me%20Alone/Web/Leave%20Me%20Alone.jpg",
+                                title: "Leave Me Alone",
+                                footnote1: "1957",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Leave Me Alone, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1957%20Leave%20Me%20Alone/Web/Leave%20Me%20Alone%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1957%20Museum%20of%20Modern%20Art%2C%20Portrait%20of%20Picasso/Web/Museum%20of%20Modern%20Art%2C%20Portrait%20of%20Picasso-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1957%20Museum%20of%20Modern%20Art%2C%20Portrait%20of%20Picasso/Web/Museum%20of%20Modern%20Art%2C%20Portrait%20of%20Picasso.jpg",
+                                title: "Museum of Modern Art, Portrait of Picasso",
+                                footnote1: "1957"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1957%20Painting%20and%20Reality/Web/Painting%20and%20Reality-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1957%20Painting%20and%20Reality/Web/Painting%20and%20Reality.jpg",
+                                title: "Painting and Reality",
+                                footnote1: "1957"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1957%20The%20Social%20History%20of%20Art%20Volume%201/Web/The%20Social%20History%20of%20Art%20vol%201-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1957%20The%20Social%20History%20of%20Art%20Volume%201/Web/The%20Social%20History%20of%20Art%20vol%201.jpg",
+                                title: "The Social History of Art Volume 1",
+                                footnote1: "1957"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1957%20The%20Social%20History%20of%20Art%20Volume%202/Web/The%20Social%20History%20of%20Art%20vol%202%20cropped-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1957%20The%20Social%20History%20of%20Art%20Volume%202/Web/The%20Social%20History%20of%20Art%20vol%202%20cropped.jpg",
+                                title: "The Social History of Art Volume 2",
+                                footnote1: "1957",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The Social History of Art Volume 2, full cover", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1957%20The%20Social%20History%20of%20Art%20Volume%202/Web/The%20Social%20History%20of%20Art%20vol%202.jpg"}
+                                )
+
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1957%20The%20Social%20History%20of%20Art%20Volume%203/Web/The%20Social%20History%20of%20Art%20vol%203-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1957%20The%20Social%20History%20of%20Art%20Volume%203/Web/The%20Social%20History%20of%20Art%20vol%203.jpg",
+                                title: "The Social History of Art Volume 3",
+                                footnote1: "1957"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1957%20The%20Social%20History%20of%20Art%20Volume%204/Web/The%20Social%20History%20of%20Art%20vol%204-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1957%20The%20Social%20History%20of%20Art%20Volume%204/Web/The%20Social%20History%20of%20Art%20vol%204.jpg",
+                                title: "The Social History of Art Volume 4",
+                                footnote1: "1957"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20Exile%20and%20the%20Kingdom/Web/Exile%20and%20the%20Kingdom-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20Exile%20and%20the%20Kingdom/Web/Exile%20and%20the%20Kingdom.jpg",
+                                title: "Exile and the Kingdom",
+                                footnote1: "1958"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20Prejudices%2C%20A%20Selection/Web/Prejudices%2C%20A%20Selection%2C%20front-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20Prejudices%2C%20A%20Selection/Web/Prejudices%2C%20A%20Selection%2C%20front.jpg",
+                                title: "Prejudices, A Selection",
+                                footnote1: "1958",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Prejudices, A Selection, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20Prejudices%2C%20A%20Selection/Web/Prejudices%2C%20A%20Selection%2C%20back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20Seamarks/Web/Seamarks-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20Seamarks/Web/Seamarks.jpg",
+                                title: "Seamarks",
+                                footnote1: "1958"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20Soviet%20Marxism/Web/Soviet%20Marxism-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20Soviet%20Marxism/Web/Soviet%20Marxism.jpg",
+                                title: "Soviet Marxism",
+                                footnote1: "1958",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Soviet Marxism, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20Soviet%20Marxism/Web/Soviet%20Marxism%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20The%20Bathtub%20Hoax%2C%20and%20Other%20Blasts%20%26%20Bravos%20From%20the%20Chicago%20Tribune/Web/The%20Bathtub%20Hoax-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20The%20Bathtub%20Hoax%2C%20and%20Other%20Blasts%20%26%20Bravos%20From%20the%20Chicago%20Tribune/Web/The%20Bathtub%20Hoax.jpg",
+                                title: "The Bathtub Hoax, and Other Blasts & Bravos From the Chicago Tribune",
+                                footnote1: "1958",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The Bathtub Hoax, and Other Blasts & Bravos From the Chicago Tribune, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20The%20Bathtub%20Hoax%2C%20and%20Other%20Blasts%20%26%20Bravos%20From%20the%20Chicago%20Tribune/Web/The%20Bathtub%20Hoax%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20The%20Declaration%20of%20Independence/Web/The%20Declaration%20of%20Independence-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20The%20Declaration%20of%20Independence/Web/The%20Declaration%20of%20Independence.jpg",
+                                title: "The Declaration of Independence",
+                                footnote1: "1958",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The Declaration of Independence, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20The%20Declaration%20of%20Independence/Web/The%20Declaration%20of%20Independence%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20Thomas%20Mann%20Essays/Web/Thomas%20Mann-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20Thomas%20Mann%20Essays/Web/Thomas%20Mann.jpg",
+                                title: "Thomas Mann Essays",
+                                footnote1: "1958"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20Yoga-%20Immortality%20and%20Freedom/Web/Yoga%2C%20Immortality%20and%20Freedom%2C%20front-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20Yoga-%20Immortality%20and%20Freedom/Web/Yoga%2C%20Immortality%20and%20Freedom%2C%20front.jpg",
+                                title: "Yoga- Immortality and Freedom",
+                                footnote1: "1958",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Yoga- Immortality and Freedom, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20Yoga-%20Immortality%20and%20Freedom/Web/Yoga%2C%20Immortality%20and%20Freedom%2C%20back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20Zen%20and%20Japanese%20Culture/Web/Zen%20and%20Japanese%20Culture-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1958%20Zen%20and%20Japanese%20Culture/Web/Zen%20and%20Japanese%20Culture.jpg",
+                                title: "Zen and Japanese Culture",
+                                footnote1: "1958"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20A%20Fine%20Frenzy/Web/A%20Fine%20Frenzy-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20A%20Fine%20Frenzy/Web/A%20Fine%20Frenzy.jpg",
+                                title: "A Fine Frenzy",
+                                footnote1: "1959",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "A Fine Frenzy, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20A%20Fine%20Frenzy/Web/A%20Fine%20Frenzy%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20Asklepios%2C%20Archetypal%20Image%20of%20the%20Physician%E2%80%99s%20Existence/Web/Asklepios-%20Archetypal%20Image%20of%20the%20Physician%27s%20Existence-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20Asklepios%2C%20Archetypal%20Image%20of%20the%20Physician%E2%80%99s%20Existence/Web/Asklepios-%20Archetypal%20Image%20of%20the%20Physician%27s%20Existence.jpg",
+                                title: "Asklepios, Archetypal Image of the Physician’s Existence",
+                                footnote1: "1959"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20Complex%2C%20archetype%2C%20symbol%20in%20the%20psychology%20of%20C.G.%20Jung/Web/Complex%20Archetype%20Symbol%20in%20the%20Psychology%20of%20C.G.%20Jung-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20Complex%2C%20archetype%2C%20symbol%20in%20the%20psychology%20of%20C.G.%20Jung/Web/Complex%20Archetype%20Symbol%20in%20the%20Psychology%20of%20C.G.%20Jung.jpg",
+                                title: "Complex, archetype, symbol in the psychology of C.G. Jung",
+                                footnote1: "1959"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20Love%20Against%20Hate/Web/Love%20Against%20Hate%2C%20v1-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20Love%20Against%20Hate/Web/Love%20Against%20Hate%2C%20v1.jpg",
+                                title: "Love Against Hate",
+                                footnote1: "1959",
+                                footnote2: "3 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Love Against Hate, v2", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20Love%20Against%20Hate/Web/Love%20Against%20Hate%2C%20v2.jpg"},
+                                {title: "Love Against Hate, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20Love%20Against%20Hate/Web/Love%20Against%20Hate%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20The%20Archetypal%20World%20of%20Henry%20Moore/Web/The%20Archetypal%20World%20of%20Henry%20Moore-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20The%20Archetypal%20World%20of%20Henry%20Moore/Web/The%20Archetypal%20World%20of%20Henry%20Moore.jpg",
+                                title: "The Archetypal World of Henry Moore",
+                                footnote1: "1959"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20The%20Road%20to%20Xanadu/Web/The%20Road%20to%20Xanadu-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20The%20Road%20to%20Xanadu/Web/The%20Road%20to%20Xanadu.jpg",
+                                title: "The Road to Xanadu",
+                                footnote1: "1959",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The Road to Xanadu, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20The%20Road%20to%20Xanadu/Web/The%20Road%20to%20Xanadu%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20The%20Transposed%20Heads/Web/The%20Transposed%20Heads-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20The%20Transposed%20Heads/Web/The%20Transposed%20Heads.jpg",
+                                title: "The Transposed Heads",
+                                footnote1: "1959",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The Transposed Heads, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20The%20Transposed%20Heads/Web/The%20Transposed%20Heads%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20USS%20Randolph%20Operation%20Peace/Web/USS%20Randolph%20Operation%20Peace%20front-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20USS%20Randolph%20Operation%20Peace/Web/USS%20Randolph%20Operation%20Peace%20front.jpg",
+                                title: "USS Randolph Operation Peace",
+                                footnote1: "1959",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "USS Randolph Operation Peace, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20USS%20Randolph%20Operation%20Peace/Web/USS%20Randolph%20Operation%20Peace%20back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20Wake%20Up%2C%20Stupid/Web/Wake%20Up%2C%20Stupid-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20Wake%20Up%2C%20Stupid/Web/Wake%20Up%2C%20Stupid.jpg",
+                                title: "Wake Up, Stupid",
+                                footnote1: "1959",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Wake Up, Stupid, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1959%20Wake%20Up%2C%20Stupid/Web/Wake%20Up%2C%20Stupid%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20American%20Institute%20of%20Graphic%20Arts%2C%20FIFTY%20BOOKS/Web/American%20Institute%20of%20Graphic%20Arts%2C%20FIFTY%20BOOKS-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20American%20Institute%20of%20Graphic%20Arts%2C%20FIFTY%20BOOKS/Web/American%20Institute%20of%20Graphic%20Arts%2C%20FIFTY%20BOOKS.jpg",
+                                title: "American Institute of Graphic Arts, FIFTY BOOKS",
+                                footnote1: "1960"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Change%2C%20Eight%20Lectures%20on%20the%20I%20Ching/Web/Change%2C%20Eight%20Lectures%20on%20the%20I%20Ching%2C%20cover%20B-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Change%2C%20Eight%20Lectures%20on%20the%20I%20Ching/Web/Change%2C%20Eight%20Lectures%20on%20the%20I%20Ching%2C%20cover%20B.jpg",
+                                title: "Change, Eight Lectures on the I Ching",
+                                footnote1: "1960"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Evangelical%20Theology/Web/Evangelical%20Theory-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Evangelical%20Theology/Web/Evangelical%20Theory.jpg",
+                                title: "Evangelical Theology",
+                                footnote1: "1960"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Goodbye%2C%20Columbus%20and%205%20Short%20Stories/Web/Goodbye%2C%20Columbus%20and%205%20Short%20Stories%2001-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Goodbye%2C%20Columbus%20and%205%20Short%20Stories/Web/Goodbye%2C%20Columbus%20and%205%20Short%20Stories%2001.jpg",
+                                title: "Goodbye, Columbus and 5 Short Stories",
+                                footnote1: "1960",
+                                footnote2: "6 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Goodbye, Columbus and 5 Short Stories", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Goodbye%2C%20Columbus%20and%205%20Short%20Stories/Web/Goodbye%2C%20Columbus%20and%205%20Short%20Stories%2002.jpg"},
+                                {title: "Goodbye, Columbus and 5 Short Stories", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Goodbye%2C%20Columbus%20and%205%20Short%20Stories/Web/Goodbye%2C%20Columbus%20and%205%20Short%20Stories%2003.jpg"},
+                                {title: "Goodbye, Columbus and 5 Short Stories", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Goodbye%2C%20Columbus%20and%205%20Short%20Stories/Web/Goodbye%2C%20Columbus%20and%205%20Short%20Stories%2004.jpg"},
+                                {title: "Goodbye, Columbus and 5 Short Stories, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Goodbye%2C%20Columbus%20and%205%20Short%20Stories/Web/Goodbye%2C%20Columbus%20and%205%20Short%20Stories%2C%20Back%2001.jpg"},
+                                {title: "Goodbye, Columbus and 5 Short Stories, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Goodbye%2C%20Columbus%20and%205%20Short%20Stories/Web/Goodbye%2C%20Columbus%20and%205%20Short%20Stories%2C%20Back%2002.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20H.%20L.%20Mencken%20on%20Politics/Web/H.L.%20Mencken%20on%20Politics-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20H.%20L.%20Mencken%20on%20Politics/Web/H.L.%20Mencken%20on%20Politics.jpg",
+                                title: "H. L. Mencken on Politics",
+                                footnote1: "1960",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "H. L. Mencken on Politics, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20H.%20L.%20Mencken%20on%20Politics/Web/H.L.%20Mencken%20on%20Politics%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Mudra%2C%20A%20Study%20of%20Symbolic%20Gestures%20in%20Japanese%20Buddhist%20Sculpture/Web/Mudra%2C%20front-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Mudra%2C%20A%20Study%20of%20Symbolic%20Gestures%20in%20Japanese%20Buddhist%20Sculpture/Web/Mudra%2C%20front.jpg",
+                                title: "Mudra, A Study of Symbolic Gestures in Japanese Buddhist Sculpture",
+                                footnote1: "1960",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Mudra, A Study of Symbolic Gestures in Japanese Buddhist Sculpture, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Mudra%2C%20A%20Study%20of%20Symbolic%20Gestures%20in%20Japanese%20Buddhist%20Sculpture/Web/Mudra%2C%20back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Of%20Time%2C%20Work%2C%20and%20Leisure/Web/Of%20Time%2C%20Work%2C%20and%20Leisure-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Of%20Time%2C%20Work%2C%20and%20Leisure/Web/Of%20Time%2C%20Work%2C%20and%20Leisure.jpg",
+                                title: "Of Time, Work, and Leisure",
+                                footnote1: "1960",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Of Time, Work, and Leisure, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Of%20Time%2C%20Work%2C%20and%20Leisure/Web/Of%20Time%2C%20Work%2C%20and%20Leisure%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Paul%20Valery%20Collected%20Works%20Vol%201-13/Web/Paul%20Valery%20Collected%20Works%20vol%2003-%20Plays-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Paul%20Valery%20Collected%20Works%20Vol%201-13/Web/Paul%20Valery%20Collected%20Works%20vol%2003-%20Plays.jpg",
+                                title: "Paul Valery Collected Works Vol 1-13, vol. 3, “Plays”",
+                                footnote1: "1960",
+                                footnote2: "7 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Paul Valery Collected Works Vol 1-13, vol. 4, “Dialogues”", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Paul%20Valery%20Collected%20Works%20Vol%201-13/Web/Paul%20Valery%20Collected%20Works%20vol%2004-%20Dialogues.jpg"},
+                                {title: "Paul Valery Collected Works Vol 1-13, vol. 5, “Idee Fixe”", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Paul%20Valery%20Collected%20Works%20Vol%201-13/Web/Paul%20Valery%20Collected%20Works%20vol%2005-%20Idee%20Fixe.jpg"},
+                                {title: "Paul Valery Collected Works Vol 1-13, vol. 10, “History and Politics”", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Paul%20Valery%20Collected%20Works%20Vol%201-13/Web/Paul%20Valery%20Collected%20Works%20vol%2010-%20History%20and%20Politics.jpg"},
+                                {title: "Paul Valery Collected Works Vol 1-13, vol. 11, “Occasions”", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Paul%20Valery%20Collected%20Works%20Vol%201-13/Web/Paul%20Valery%20Collected%20Works%20vol%2011-%20Occasions.jpg"},
+                                {title: "Paul Valery Collected Works Vol 1-13, vol. 12, “Degas Manet Morisot”", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Paul%20Valery%20Collected%20Works%20Vol%201-13/Web/Paul%20Valery%20Collected%20Works%20vol%2012-%20Degas%20Manet%20Morisot.jpg"},
+                                {title: "Paul Valery Collected Works Vol 1-13, vol. 13, “Aesthetics”", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20Paul%20Valery%20Collected%20Works%20Vol%201-13/Web/Paul%20Valery%20Collected%20Works%20vol%2013-%20Aesthetics.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20The%20Country%20Girls/Web/The%20Country%20Girls-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20The%20Country%20Girls/Web/The%20Country%20Girls.jpg",
+                                title: "The Country Girls",
+                                footnote1: "1960",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The Country Girls, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20The%20Country%20Girls/Web/The%20Country%20Girls%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20The%20Devil%20and%20the%20Good%20Lord/Web/The%20Devil%20and%20the%20Good%20Lord-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20The%20Devil%20and%20the%20Good%20Lord/Web/The%20Devil%20and%20the%20Good%20Lord.jpg",
+                                title: "The Devil and the Good Lord",
+                                footnote1: "1960",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The Devil and the Good Lord, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20The%20Devil%20and%20the%20Good%20Lord/Web/The%20Devil%20and%20the%20Good%20Lord%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20The%20Future%20of%20an%20Illusion/Web/The%20Future%20of%20an%20Illusion-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20The%20Future%20of%20an%20Illusion/Web/The%20Future%20of%20an%20Illusion.jpg",
+                                title: "The Future of an Illusion",
+                                footnote1: "1960"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20The%20Limits%20of%20Art/Web/The%20Limits%20of%20Art-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20The%20Limits%20of%20Art/Web/The%20Limits%20of%20Art.jpg",
+                                title: "The Limits of Art",
+                                footnote1: "1960",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The Limits of Art, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20The%20Limits%20of%20Art/Web/The%20Limits%20of%20Art%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20The%20Possessed/Web/The%20Possessed%2C%20A%20Play%20in%203%20Parts-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1960%20The%20Possessed/Web/The%20Possessed%2C%20A%20Play%20in%203%20Parts.jpg",
+                                title: "The Possessed",
+                                footnote1: "1960"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1961%20Chronique/Web/Chronique-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1961%20Chronique/Web/Chronique.jpg",
+                                title: "Chronique",
+                                footnote1: "1961"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1961%20Fiction%20and%20the%20Unconscious/Web/Fiction%20and%20the%20Unconcious%20cropped-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1961%20Fiction%20and%20the%20Unconscious/Web/Fiction%20and%20the%20Unconcious%20cropped.jpg",
+                                title: "Fiction and the Unconscious",
+                                footnote1: "1961",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Fiction and the Unconscious, full cover", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1961%20Fiction%20and%20the%20Unconscious/Web/Fiction%20and%20the%20Unconcious.jpg"}
+                                )
+
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1961%20Of%20Divers%20Arts/Web/Of%20Divers%20Arts-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1961%20Of%20Divers%20Arts/Web/Of%20Divers%20Arts.jpg",
+                                title: "Of Divers Arts",
+                                footnote1: "1961"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1961%20The%20Living%20Symbol/Web/The%20Living%20Symbol%2C%20front-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1961%20The%20Living%20Symbol/Web/The%20Living%20Symbol%2C%20front.jpg",
+                                title: "The Living Symbol",
+                                footnote1: "1961",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The Living Symbol, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1961%20The%20Living%20Symbol/Web/The%20Living%20Symbol%2C%20back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1961%20Winds/Web/Winds-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1961%20Winds/Web/Winds.jpg",
+                                title: "Winds",
+                                footnote1: "1961"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1962%20Blake%20%26%20Tradition/Web/Blake%20%26%20Tradition%20vol%202%20cropped-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1962%20Blake%20%26%20Tradition/Web/Blake%20%26%20Tradition%20vol%202%20cropped.jpg",
+                                title: "Blake & Tradition",
+                                footnote1: "1962",
+                                footnote2: "4 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Blake & Tradition, vol. 2", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1962%20Blake%20%26%20Tradition/Web/Blake%20%26%20Tradition%20vol%202.jpg"},
+                                {title: "Blake & Tradition, vol. 1", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1962%20Blake%20%26%20Tradition/Web/Blake%20%26%20Tradition%20vol%201.jpg"},
+                                {title: "Blake & Tradition, Pair", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1962%20Blake%20%26%20Tradition/Web/Blake%20%26%20Tradition%20Pair.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1962%20Borderlands/Web/Borderlands-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1962%20Borderlands/Web/Borderlands.jpg",
+                                title: "Borderlands",
+                                footnote1: "1962"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1962%20Pandora%E2%80%99s%20Box/Web/Pandoras%20Box%2001b-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1962%20Pandora%E2%80%99s%20Box/Web/Pandoras%20Box%2001b.jpg",
+                                title: "Pandora’s Box",
+                                footnote1: "1962"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1962%20Paracelsus%2C%20Selected%20Writings/Web/Paracelus%20Selected%20Writings-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1962%20Paracelsus%2C%20Selected%20Writings/Web/Paracelus%20Selected%20Writings.jpg",
+                                title: "Paracelsus, Selected Writings",
+                                footnote1: "1962"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1962%20Six%20Nonlectures/Web/Six%20Nonlectures-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1962%20Six%20Nonlectures/Web/Six%20Nonlectures.jpg",
+                                title: "Six Nonlectures",
+                                footnote1: "1962"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1962%20Wagner%20as%20Man%20and%20Artist/Web/Wagner%20as%20Man%20and%20Artist-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1962%20Wagner%20as%20Man%20and%20Artist/Web/Wagner%20as%20Man%20and%20Artist.jpg",
+                                title: "Wagner as Man and Artist",
+                                footnote1: "1962",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Wagner as Man and Artist, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1962%20Wagner%20as%20Man%20and%20Artist/Web/Wagner%20as%20Man%20and%20Artist%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1963%20Eleusis%2C%20Archetypal%20Image%20of%20Mother%20and%20Daughter/Web/Eleusis-%20Archetypal%20Image%20of%20Mother%20and%20Daughter-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1963%20Eleusis%2C%20Archetypal%20Image%20of%20Mother%20and%20Daughter/Web/Eleusis-%20Archetypal%20Image%20of%20Mother%20and%20Daughter.jpg",
+                                title: "Eleusis, Archetypal Image of Mother and Daughter",
+                                footnote1: "1963"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1963%20Myths%20and%20Symbols%20in%20Indian%20Art%20and%20Civilization/Web/Myths%20and%20Symbols%20in%20Indian%20Art%20and%20Civilization-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1963%20Myths%20and%20Symbols%20in%20Indian%20Art%20and%20Civilization/Web/Myths%20and%20Symbols%20in%20Indian%20Art%20and%20Civilization.jpg",
+                                title: "Myths and Symbols in Indian Art and Civilization",
+                                footnote1: "1963"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1963%20Prometheus%2C%20Archetypal%20Image%20of%20Human%20Existence/Web/Prometheus-%20Archetypal%20Image%20of%20Human%20Existence-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1963%20Prometheus%2C%20Archetypal%20Image%20of%20Human%20Existence/Web/Prometheus-%20Archetypal%20Image%20of%20Human%20Existence.jpg",
+                                title: "Prometheus, Archetypal Image of Human Existence",
+                                footnote1: "1963"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1963%20Ten%20Keys%20to%20Latin%20America/Web/Ten%20Keys%20to%20Latin%20America-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1963%20Ten%20Keys%20to%20Latin%20America/Web/Ten%20Keys%20to%20Latin%20America.jpg",
+                                title: "Ten Keys to Latin America",
+                                footnote1: "1963"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1963%20The%20Condemned%20of%20Altona%2C%20A%20Play%20in%20Five%20Acts/Web/The%20Condemned%20of%20Altona-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1963%20The%20Condemned%20of%20Altona%2C%20A%20Play%20in%20Five%20Acts/Web/The%20Condemned%20of%20Altona.jpg",
+                                title: "The Condemned of Altona, A Play in Five Acts",
+                                footnote1: "1963",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The Condemned of Altona, A Play in Five Acts, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1963%20The%20Condemned%20of%20Altona%2C%20A%20Play%20in%20Five%20Acts/Web/The%20Condemned%20of%20Altona%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1963%20The%20Diplomats%2C%201919-1939/Web/The%20Diplomats%201919-1939-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1963%20The%20Diplomats%2C%201919-1939/Web/The%20Diplomats%201919-1939.jpg",
+                                title: "The Diplomats, 1919-1939",
+                                footnote1: "1963"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1963%20The%20Great%20Mother/Web/The%20Great%20Mother-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1963%20The%20Great%20Mother/Web/The%20Great%20Mother.jpg",
+                                title: "The Great Mother",
+                                footnote1: "1963"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1963%20The%20Portrait%20in%20the%20Renaissance/Web/The%20Portrait%20in%20the%20Renaissance%20cropped-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1963%20The%20Portrait%20in%20the%20Renaissance/Web/The%20Portrait%20in%20the%20Renaissance%20cropped.jpg",
+                                title: "The Portrait in the Renaissance",
+                                footnote1: "1963",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The Portrait in the Renaissance, full cover", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1963%20The%20Portrait%20in%20the%20Renaissance/Web/The%20Portrait%20in%20the%20Renaissance.jpg"}
+                                )
+
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1963%20The%20Robber%20Bridegroom/Web/The%20Robber%20Bridegroom-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1963%20The%20Robber%20Bridegroom/Web/The%20Robber%20Bridegroom.jpg",
+                                title: "The Robber Bridegroom",
+                                footnote1: "1963"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1964%20The%20Craft%20and%20Context%20of%20Translation/Web/The%20Craft%20and%20Context%20of%20Translation%20A-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1964%20The%20Craft%20and%20Context%20of%20Translation/Web/The%20Craft%20and%20Context%20of%20Translation%20A.jpg",
+                                title: "The Craft and Context of Translation",
+                                footnote1: "1964"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1964%20Hindu%20Polytheism/Web/Hindu%20Polytheism-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1964%20Hindu%20Polytheism/Web/Hindu%20Polytheism.jpg",
+                                title: "Hindu Polytheism",
+                                footnote1: "1964"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1964%20Shamanism/Web/Shamanism-%20Archaic%20Techniques%20of%20Ecstasy%20cropped-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1964%20Shamanism/Web/Shamanism-%20Archaic%20Techniques%20of%20Ecstasy%20cropped.jpg",
+                                title: "Shamanism",
+                                footnote1: "1964",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Shamanism, full cover", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1964%20Shamanism/Web/Shamanism-%20Archaic%20Techniques%20of%20Ecstasy.jpg"}
+                                )
+
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1964%20The%20Gothic%20Cathedral/Web/The%20Gothic%20Cathedral-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1964%20The%20Gothic%20Cathedral/Web/The%20Gothic%20Cathedral.jpg",
+                                title: "The Gothic Cathedral",
+                                footnote1: "1964",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The Gothic Cathedral, paperback", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1964%20The%20Gothic%20Cathedral/Web/The%20Gothic%20Cathedral%20paperback.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1964%20The%20Treasure%20of%20the%20Copper%20Scroll/Web/The%20Treasure%20of%20the%20Copper%20Scroll%20cropped-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1964%20The%20Treasure%20of%20the%20Copper%20Scroll/Web/The%20Treasure%20of%20the%20Copper%20Scroll%20cropped.jpg",
+                                title: "The Treasure of the Copper Scroll",
+                                footnote1: "1964",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "The Treasure of the Copper Scroll, full cover", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1964%20The%20Treasure%20of%20the%20Copper%20Scroll/Web/The%20Treasure%20of%20the%20Copper%20Scroll.jpg"}
+                                )
+
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1965%20Literary%20Language%20and%20It%E2%80%99s%20Public%20in%20Late%20Latin%20Antiquity%20and%20in%20the%20Middle%20Ages/Web/Literary%20Language%20and%20Its%20Public%20in%20Late%20Latin%20Antiquity%20and%20in%20the%20Middle%20Ages-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1965%20Literary%20Language%20and%20It%E2%80%99s%20Public%20in%20Late%20Latin%20Antiquity%20and%20in%20the%20Middle%20Ages/Web/Literary%20Language%20and%20Its%20Public%20in%20Late%20Latin%20Antiquity%20and%20in%20the%20Middle%20Ages.jpg",
+                                title: "Literary Language and It’s Public in Late Latin Antiquity and in the Middle Ages",
+                                footnote1: "1965"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1965%20The%20%E2%80%98I%E2%80%99%20and%20the%20%E2%80%98Not-I/Web/The%20%27I%27%20and%20the%20%27Not-I%27-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1965%20The%20%E2%80%98I%E2%80%99%20and%20the%20%E2%80%98Not-I/Web/The%20%27I%27%20and%20the%20%27Not-I%27.jpg",
+                                title: "The ‘I’ and the ‘Not-I",
+                                footnote1: "1965"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1966%20Aurora%20Consurgeons/Web/Aurora%20Consurgens-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1966%20Aurora%20Consurgeons/Web/Aurora%20Consurgens.jpg",
+                                title: "Aurora Consurgeons",
+                                footnote1: "1966"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1967%20On%20Quality%20Art/Web/On%20Quality%20in%20Art-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1967%20On%20Quality%20Art/Web/On%20Quality%20in%20Art.jpg",
+                                title: "On Quality Art",
+                                footnote1: "1967"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1967%20Selected%20Works%20of%20Miguel%20de%20Unamuno%2C%20vol.%203/Web/Our%20Lord%20Don%20Quixote-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1967%20Selected%20Works%20of%20Miguel%20de%20Unamuno%2C%20vol.%203/Web/Our%20Lord%20Don%20Quixote.jpg",
+                                title: "Selected Works of Miguel de Unamuno, vol. 3",
+                                footnote1: "1967"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1968%20Caligula%20and%203%20Other%20Plays/Web/Caligula%20and%203%20Other%20Plays-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1968%20Caligula%20and%203%20Other%20Plays/Web/Caligula%20and%203%20Other%20Plays.jpg",
+                                title: "Caligula and 3 Other Plays",
+                                footnote1: "1968",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Caligula and 3 Other Plays, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1968%20Caligula%20and%203%20Other%20Plays/Web/Caligula%20and%203%20Other%20Plays%2C%20Back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1968%20Christian%20Iconography-%20A%20Study%20of%20Its%20Origins/Web/Christian%20Iconography-%20A%20Study%20of%20Its%20Origins-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1968%20Christian%20Iconography-%20A%20Study%20of%20Its%20Origins/Web/Christian%20Iconography-%20A%20Study%20of%20Its%20Origins.jpg",
+                                title: "Christian Iconography- A Study of Its Origins",
+                                footnote1: "1968"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1971%20Myth%20of%20the%20Eternal%20Return/Web/The%20Myth%20of%20the%20Eternal%20Return-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1971%20Myth%20of%20the%20Eternal%20Return/Web/The%20Myth%20of%20the%20Eternal%20Return.jpg",
+                                title: "Myth of the Eternal Return",
+                                footnote1: "1971"
+                                })
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1973%20Psychic%20Energy-%20Its%20Source%20and%20Its%20Transformation/Web/Psychic%20Energy%2C%20front-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1973%20Psychic%20Energy-%20Its%20Source%20and%20Its%20Transformation/Web/Psychic%20Energy%2C%20front.jpg",
+                                title: "Psychic Energy- Its Source and Its Transformation",
+                                footnote1: "1973",
+                                footnote2: "2 Images"
+                                })
+                            +galleryItem-imageHidden(
+                                {title: "Psychic Energy- Its Source and Its Transformation, back", hideMe: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1973%20Psychic%20Energy-%20Its%20Source%20and%20Its%20Transformation/Web/Psychic%20Energy%2C%20back.jpg"}
+                                )
+
+                            +galleryItem-cardLink(
+                                "4","6",
+                                {
+                                SM: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1993%20Richard%20Sapper%2C%20Werkzeuge%20fur%20das%20Leben/Web/Richard%20Sapper-450.jpg",
+                                LG: "https://assets.paulrand.design/Works/_Books/Covers%20Only/1993%20Richard%20Sapper%2C%20Werkzeuge%20fur%20das%20Leben/Web/Richard%20Sapper.jpg",
+                                title: "Richard Sapper, Werkzeuge fur das Leben",
+                                footnote1: "1993"
+                                })
+
+
+
+
+
+                //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

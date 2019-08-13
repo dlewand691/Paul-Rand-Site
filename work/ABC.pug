@@ -1,0 +1,48 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'ABC (American Brodcasting Company)'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates           = 'CHANGE_ME'
+    - var nextType        = 'Client'
+    - var nextTitle       = 'Accent Software International'
+    - var nextLink        = 'Accent-Software-International'
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo",
+                        "middle", "1","1",
+                        {SM: "https://assets.paulrand.design/Works/American%20Broadcasting%20Company%20%28ABC%29/ABC-1962.svg", LG:"https://assets.paulrand.design/Works/American%20Broadcasting%20Company%20%28ABC%29/ABC-1962.svg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Advertising",
+                        "top", "3", "2",
+                        {SM: "https://assets.paulrand.design/Works/American%20Broadcasting%20Company%20%28ABC%29/Web/ABC%2001-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Broadcasting%20Company%20%28ABC%29/Web/ABC%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/American%20Broadcasting%20Company%20%28ABC%29/Web/ABC%2002a-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Broadcasting%20Company%20%28ABC%29/Web/ABC%2002a.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/American%20Broadcasting%20Company%20%28ABC%29/Web/ABC%2002b-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Broadcasting%20Company%20%28ABC%29/Web/ABC%2002b.jpg", title: "", footnote: ""}
+                        )
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

@@ -1,0 +1,41 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'ACI (Advertising Composition Inc)'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = '1947/8'
+    - var nextType  = 'Client'
+    - var nextTitle = 'AdStar'
+    - var nextLink  = 'AdStar'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Christmas Card",
+                        "bottom", "2", "2",
+                        {SM: "https://assets.paulrand.design/Works/Advertising%20Composition%20Inc%20%28ACI%29/Web/ACI%20Christmas%20Card%2C%20front-800.jpg", LG:"https://assets.paulrand.design/Works/Advertising%20Composition%20Inc%20%28ACI%29/Web/ACI%20Christmas%20Card%2C%20front.jpg", title:"", footnote: "Front"},
+                        {SM: "https://assets.paulrand.design/Works/Advertising%20Composition%20Inc%20%28ACI%29/Web/ACI%20Christmas%20Card%2C%20back-800.jpg", LG:"https://assets.paulrand.design/Works/Advertising%20Composition%20Inc%20%28ACI%29/Web/ACI%20Christmas%20Card%2C%20back.jpg", title:"", footnote: "Back"}
+                        )
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

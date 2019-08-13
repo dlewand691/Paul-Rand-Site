@@ -1,0 +1,485 @@
+//- =========================================
+//- =            HEADER NAVIGATION            =
+//- =========================================
+//- ==========  MAIN  ==========
+a(href="/index2.html")
+	img.logo(src="/img/logo.svg")
+header#header
+	.cd-logo
+		.nameBlock.hide-for-small
+			.name Paul Rand
+			.dates 1914-1996
+		
+	nav.cd-main-nav-wrapper
+		ul.cd-main-nav.moves-out
+			li.left-section
+				a.text-bold-italic(href='/life') Life
+				a.text-bold-italic(href='/work') Work
+				a.text-bold-italic(href='/writing') Writing
+			
+			
+
+			li.right-section
+				a.text-caps(href='/resources'): small Resources
+				a.text-caps(href='/shop'): small Shop
+				a.text-caps(href='/news'): small News
+				a.text-caps(href='/contact'): small Contact
+				label.search(for="inpt_search")
+					input#inpt_search(type="text")
+
+				a.cd-subnav-trigger(href='#0')
+					span
+			li
+				ul
+					li.go-back
+						a(href='#0') Menu
+					li.w100
+						//- ==========  LIFE  ==========
+						.nav-life-off
+							h5.mr3.text-bold-italic.mb0 Life
+							form
+								fieldset.mr2.float-left.text-left
+									//- label Select
+									select#select-life
+										option(value='biography') Biography and Timeline
+										option(value='articles') Articles and Books about Paul Rand
+										option(value='events-exhibits') Events and Exhibits
+										option(value='videos-interviews') Videos and Interview
+										option(value='portraits') Portraits
+										option(value='house') The Rand House
+										option(value='inspirations') Inspirations
+										option(value='personal') Personal Items
+
+									a.button.tiny.text-caps.radius.ml1.hide(href="#") Go
+									
+								fieldset.mr2.float-left.text-left.hide#life-articles-books
+									//- label Choose an article...
+									select#select-life-articles-books(data-placeholder="Choose an article or book...")
+										option(value='') VIEW ALL &rarr;
+										optgroup(label='Articles')
+											option(value='') Articles
+											option(value='') Articles
+											option(value='') Articles
+											option(value='') Articles
+											option(value='') Articles
+											option(value='') Articles
+											option(value='') Articles
+											option(value='') Articles
+										optgroup(label='Books')
+											option(value='') Books
+											option(value='') Books
+											option(value='') Books
+											option(value='') Books
+											option(value='') Books
+											option(value='') Books
+											option(value='') Books
+											option(value='') Books
+											option(value='') Books
+
+									a.button.tiny.text-caps.radius.ml1.hide(href="#") Go
+
+								fieldset.mr2.float-left.text-left.hide#life-events-exhibits
+									//- label Choose an article...
+									select#select-life-events-exhibits(data-placeholder="Choose an event or exhibit...")
+										option(value='') VIEW ALL &rarr;
+										option(value='') School of Visual Arts Masters Series: Paul Rand (1988)
+										option(value='') The Graphic Art of Paul Rand (1990)
+										option(value='') Ginza Graphic Gallery (1992)
+										option(value='') Paul Rand exhibit in Westport, CT (1994)
+										option(value='') Paul Rand Retrospective (2003)
+										option(value='') Catalog Covers of UCLA Extension: Masters of Graphic Design (2007)
+										option(value='') 18th International Poster and Graphic Design Festival of Chaumont, Paul Rand at Les Silos (2007)
+										option(value='') SVA Exhibit Announcement
+										option(value='') bRANDs: The Early Years (2011)
+										option(value='') Paul Rand: Defining Design (2013)
+										option(value='') Paul Rand: Everything is Design (2015)
+										
+
+									a.button.tiny.text-caps.radius.ml1.hide(href="#") Go
+
+								fieldset.mr2.float-left.text-left.hide#life-videos-interviews
+									//- label Choose an article...
+									select#select-life-videos-interviews(data-placeholder="Choose a video or interview...")
+										option(value='') VIEW ALL &rarr;
+										optgroup(label='Videos')
+											option(value='') Miggs Burroughs with Paul Rand
+											option(value='') Steve Jobs interview about working with Paul Rand
+											option(value='') Steven Heller interviews Paul Rand
+											option(value='') Conversations with Paul Rand
+											option(value='') John Stossel comments on Graphic Design
+											option(value='') Induction to the One Club Hall Of Fame
+											option(value='') Paul Rand Lecture Series
+											option(value='') Encounters with Paul Rand
+										optgroup(label='Interviews')
+											option(value='') Paul Rand Interview by Steven Heller
+											option(value='') Type Talks interview
+											option(value='') Paul Rand on the Play Instinct
+											option(value='') Interview with a Portfolio Center Student
+											option(value='') Interview excerpt from Rand’s final interview at the MIT Media Laboratory
+
+									a.button.tiny.text-caps.radius.ml1.hide(href="#") Go
+
+								fieldset.mr2.float-left.text-left.hide#life-inspirations
+									//- label Choose an inspiration...
+									select#select-life-inspirations(data-placeholder="Choose an inspiration...")
+										option(value='') VIEW ALL &rarr;
+										option(value='') Paul Klee
+										option(value='') Ludwig Mies van der Rohe
+										option(value='') Laszlo Moholy-Nagy
+										option(value='') Wassily Kandinsky
+										option(value='') Le Corbusier
+										option(value='') Walter Gropius
+										option(value='') Roger Fry
+										option(value='') Alfred North Whitehead
+										option(value='') John Dewey
+
+									a.button.tiny.text-caps.radius.ml1.hide(href="#") Go
+
+
+						//- ==========  WORK  ==========
+						.nav-work-off
+							h5.mr3.mb0.text-bold-italic Work
+							form.controls#Filters
+								fieldset.mr2.float-left.text-left
+									//- label Client
+									select.left#select-work-client(data-placeholder="Select a Client")
+										optgroup(label="A")
+											option(value='.AdvertisingTypographersAssociationofAmerica') Advertising Typographers Association of America- Type Talks
+											option(value='.AIGA') AIGA
+											option(value='.Airwick') Airwick
+											option(value='.AmericanAdvertisingGuild') American Advertising Guild
+											option(value='.ABC') American Broadcasting Company (ABC)
+											option(value='.AmericaExpress') American Express
+											option(value='.AmericanPrinterMagazine') American Printer Magazine
+											option(value='.AncientAgeWhiskey') Ancient Age Whiskey
+											option(value='.AntonMaixFabrics') Anton Maix Fabrics
+											option(value='.ApparelArts') Apparel Arts
+											option(value='.ArchitecturalForum') Architectural Forum
+											option(value='.AssociatedMerchandisingCorp') Associated Merchandising Corp
+											option(value='.AtlasCrankshaft') Atlas Crankshaft
+											option(value='.AutocarCorporation') Autocar Corporation
+											option(value='.AyerstMcKennaHarrisonPharmaceutical') Ayerst, McKenna, Harrison Pharmaceutical
+										optgroup(label="B")
+											option(value='.Bab-O') Bab-O
+											option(value='.BenjaminFranklin200thAnniversary') Benjamin Franklin 200th Anniversary
+											option(value='.BlatzBeer') Blatz Beer
+											option(value='.Borzoi') Borzoi
+											option(value='.BureauofIndianAffairs') Bureau of Indian Affairs
+										optgroup(label="C")
+											option(value='.CabbagesKingsCatering') Cabbages & Kings Catering
+											option(value='.CenturyLighting') Century Lighting
+											option(value='.CIOChorus') CIO Chorus
+											option(value='.Colorforms') Colorforms
+											option(value='.ColumbusIndianaVisitorsBureau') Columbus Indiana Visitors Bureau
+											option(value='.ComputerImpressions') Computer Impressions
+											option(value='.CondeNast') Conde Nast
+											option(value='.ConnecticutArtDirectorsClub') Connecticut Art Directors Club
+											option(value='.ConsolidatedCigarCorporation') Consolidated Cigar Corporation
+											option(value='.ContainerCorporationofAmerica') Container Corporation of America
+											option(value='.Cooks') Cooks
+											option(value='.CoordinatorofInterAmericanAffairs') Coordinator of Inter American Affairs
+											option(value='.CoronetBrandy') Coronet Brandy
+											option(value='.CountryClubIceCream') Country Club Ice Cream
+											option(value='.CrestaBlancaWines') Cresta Blanca Wines
+											option(value='.Cummins') Cummins
+										optgroup(label="D")
+											option(value='.DirectionMagazine') Direction Magazine
+											option(value='.DisneyHats') Disney Hats
+											option(value='.DougEvansPartners') Doug Evans + Partners
+											option(value='.Dubonnet') Dubonnet
+											option(value='.DubouchettCordials') Dubouchett Cordials
+											option(value='.Dunhill') Dunhill
+											option(value='.DupontCorporation') Dupont Corporation
+										optgroup(label="E")
+											option(value='.ElProducto') El Producto
+											option(value='.ElliotNoyesAssociates') Elliot Noyes & Associates
+											option(value='.EmersonElectronicRadio') Emerson Electronic Radio
+											option(value='.EnglishFirst') English First
+											option(value='.Enron') Enron
+											option(value='.Esquire') Esquire
+										optgroup(label="F")
+											option(value='.FlairMagazine') Flair Magazine
+											option(value='.Ford') Ford
+											option(value='.Frigiking') Frigiking
+										optgroup(label="G")
+											option(value='.GentryLivingColor') Gentry Living Color
+											option(value='.GibsonsDiamond8') Gibsons Diamond 8
+											option(value='.GlassPacker') Glass Packer
+											option(value='.GraphicArtsProductionYearbook') Graphic Arts Production Yearbook
+										optgroup(label="H")
+											option(value='.HamburgAmericanLine') Hamburg American Line
+											option(value='.HarcourtBraceandCompany') Harcourt Brace and Company
+											option(value='.Helbros') Helbros
+											option(value='.HolidayMagazine') Holiday Magazine
+										optgroup(label="I")
+											option(value='.IBM') IBM
+											option(value='.ideoDesign') ideo Design
+											option(value='.IITRI') IITRI
+											option(value='.InterfaithDay') Interfaith Day
+											option(value='.InternationalDesignConferenceAspen') International Design Conference- Aspen
+											option(value='.IrwinUnionFinancialCorporation') Irwin Union Financial Corporation
+											option(value='.Irwin-Sweeney-MillerFoundation') Irwin-Sweeney-Miller Foundation
+											option(value='.IsaacGoldmanCompany') Isaac Goldman Company
+										optgroup(label="J")
+											option(value='.JacquelineCochran') Jacqueline Cochran
+											option(value='.JamesEPepperKentuckyBourbon') James E Pepper Kentucky Bourbon
+											option(value='.Jazzways') Jazzways
+											option(value='.JohnDavid') John David
+										optgroup(label="K")
+											option(value='.Kaiser-Frazer') Kaiser-Frazer
+											option(value='.Kaufmanns') Kaufmann’s
+											option(value='.Kenmagazine') Ken magazine
+											option(value='.Knopf') Knopf
+										optgroup(label="L")
+											option(value='.LaPalinaCigars') La Palina Cigars
+											option(value='.LeeHats') Lee Hats
+											option(value='.LoveraCigars') Lovera Cigars
+											option(value='.Lusterlite-AmericanBembergCorp') Lusterlite- American Bemberg Corp
+										optgroup(label="M")
+											option(value='.Maidenform') Maidenform
+											option(value='.MonellChemicalSensesCenter') Monell Chemical Senses Center
+											option(value='.Morningstar') Morningstar
+											option(value='.MossbergCompany') Mossberg & Company
+											option(value='.MuseumofModernArt') Museum of Modern Art
+										optgroup(label="N")
+											option(value='.NationalGalleryofArt') National Gallery of Art
+											option(value='.NewYorkArtDirectorsClub') New York Art Directors Club
+											option(value='.NeXTComputers') NeXT Computers
+											option(value='.NoWayOutMovie') No Way Out Movie
+											option(value='.NorwalkCancerCenter') Norwalk Cancer Center
+											option(value='.NutriCola') Nutri Cola
+											option(value='.Nylast') Nylast
+										optgroup(label="O")
+											option(value='.Ohrbachs') Ohrbachs
+											option(value='.OkasanSecuritiesCompany') Okasan Securities Company
+											option(value='.Olivetti') Olivetti
+											option(value='.Orpi') Orpi
+										optgroup(label="P")
+											option(value='.PacificCoastBoraxCo') Pacific Coast Borax Co
+											option(value='.ParkTilford') Park Tilford
+											option(value='.PastoreDePamphilisRampone') Pastore DePamphilis Rampone (PDR)
+											option(value='.PennBritePapers') Penn/Brite Papers
+											option(value='.Playtex') Playtex
+											option(value='.PMMagazine') PM Magazine
+											option(value='.PortfolioMagazine') Portfolio Magazine
+											option(value='.PowerPCandPowerOpen') Power PC and Power Open
+										optgroup(label="R")
+											option(value='.RainfairStormCoats') Rainfair Storm Coats
+											option(value='.RCA') RCA
+										optgroup(label="S")
+											option(value='.SaybrookRHMacy') Saybrook, RH Macy and Co 1935
+											option(value='.SchenleyGin') Schenley Gin
+											option(value='.Servador') Servador
+											option(value='.ShigeoFukuda') Shigeo Fukuda
+											option(value='.Shur-EdgeKnives') Shur-Edge Knives
+											option(value='.SmithKlineFrench') Smith, Kline & French
+											option(value='.StaffordFabrics') Stafford Fabrics
+											option(value='.StrathmorePaper') Strathmore Paper
+										optgroup(label="T")
+											option(value='.TheLimited') The Limited
+											option(value='.ThomasCreighton') Thomas Creighton Co
+											option(value='.TiptonLakes') Tipton Lakes
+											option(value='.TodaysSelling') Today’s Selling
+											option(value='.TriArtsPress') Tri Arts Press
+											option(value='.Typomundus20') Typomundus 20
+										optgroup(label="U")
+											option(value='.UCLA') UCLA
+											option(value='.UnitedJewishAppeal') United Jewish Appeal
+											option(value='.UnitedParcelService') United Parcel Service (UPS)
+											option(value='.UniversityofHartford') University of Hartford
+											option(value='.Unknown') Unknown clients
+										optgroup(label="V")
+											option(value='.Vichy') Vichy
+										optgroup(label="W")
+											option(value='.WallacePuppets') Wallace Puppets
+											option(value='.Westinghouse') Westinghouse
+											option(value='.WilliamHWeintraub') William H Weintraub
+											option(value='.WittenbornSchultz') Wittenborn Schultz
+										optgroup(label="Y")
+											option(value='.Yale') Yale
+										optgroup(label="Z")
+											option(value='.ZebraPress') Zebra Press
+
+								fieldset.mr2.float-left.text-left
+									p.footnote.float-left.mt1.mr2.mb0.ml0.text-bold OR
+									//- br.hide-for-large-up
+									//- label Project Type
+									select.ml3#select-work-project(data-placeholder="Select a Project Type")
+										option(value='.advertising') Advertising
+										option(value='.annualReport') Annual Report
+										option(value='.book') Book
+										option(value='.bookCover') Book Cover
+										option(value='.brochure') Brochure
+										option(value='.collateral') Collateral
+										option(value='.editorial') Editorial
+										option(value='.identity') Identity
+										option(value='.logo') Logo
+										option(value='.packaging') Packaging
+										option(value='.painting') Painting
+										option(value='.photography') Photography
+										option(value='.poster') Poster
+										option(value='.presentationBooklet') Presentation Booklet
+
+									a.button.tiny.text-caps.radius.ml1#Reset Reset
+					
+
+						//- ==========  WRITING  ==========
+						.nav-writing-off
+							h5.mr3.mb0.text-bold-italic Writing
+							form.w100
+								fieldset.mr2.float-left.text-left
+									//- label Select
+									select#select-writing
+										option(value='books') Books
+										option(value='articles') Articles
+										option(value='quotes') Quotes
+										option(value='suggested-readings') Suggested Readings
+									
+									a.button.tiny.text-caps.radius.ml1.hide(href="#") Go
+
+								fieldset.mr2.float-left.text-left.hide#writing-books
+									//- label Choose a book...
+									select#select-writing-books(data-placeholder="Choose a book...")
+										option(value='/writing/books') VIEW ALL &rarr;
+										option(value='/writing/books/this-is-the-stafford-stallion') This…Is the Stafford Stallion
+										option(value='/writing/books/thoughts-on-design-1') Thoughts on Design, 1st edition
+										option(value='/writing/books/trademark-design') Trademark Design
+										option(value='/writing/books/thoughts-on-design-2') Thoughts on Design, 2nd edition
+										option(value='/writing/books/i-know-a-lot-of-things') I Know a Lot of Things
+										option(value='/writing/books/sparkle-and-spin') Sparkle and Spin
+										option(value='/writing/books/the-trademarks-of-paul-rand') The Trademarks of Paul Rand — A Selection
+										option(value='/writing/books/thoughts-on-design-3') Thoughts on Design, 3rd edition
+										option(value='/writing/books/little-1') Little 1
+										option(value='/writing/books/listen-listen') Listen! Listen!
+										option(value='/writing/books/a-paul-rand-miscellany') A Paul Rand Miscellany
+										option(value='/writing/books/a-designers-art') A Designer’s Art
+										option(value='/writing/books/good-design-is-good-will') Good Design is Good Will
+										option(value='/writing/books/some-thoughts-some-logos') Some Thoughts Some Logos
+										option(value='/writing/books/some-thoughts-and-some-tribulations-about-the-design-of-a-logo') Some Thoughts… and Some Tribulations about the Design of a Logo
+										option(value='/writing/books/from-cassandre-to-chaos') From Cassandre to Chaos
+										option(value='/writing/books/from-cassandre-to-chaos') Failure by Design
+										option(value='/writing/books/design-form-and-chaos') Design Form and Chaos
+										option(value='/writing/books/from-lascaux-to-brooklyn') From Lascaux to Brooklyn
+										option(value='/writing/books/thoughts-on-design-4') Thoughts on Design, 4th edition
+
+									a.button.tiny.text-caps.radius.ml1.hide(href="#") Go
+
+
+								fieldset.mr2.float-left.text-left.hide#writing-articles
+									//- label Choose an article...
+									select#select-writing-articles(data-placeholder="Choose an article...")
+										option(value='') VIEW ALL &rarr;
+										optgroup(label="1940s")
+											option(value='black-in-the-visual-arts') Black in the Visual Arts
+										
+										optgroup(label="1950s")
+											option(value='posters') Posters
+											option(value='the-trademark-as-an-illustrative-device') The Trademark as an Illustrative Device
+										
+										optgroup(label="1960s")
+											option(value='advertisement-ad-vivum-or-ad-hominem') Advertisement: Ad Vivum or Ad Hominem?
+											option(value='the-art-of-the-package') The Art of the Package
+											option(value='design-and-the-play-instinct') Design and the Play Instinct
+											option(value='trademarks-of-the-world-preface') Trademarks of the World Preface
+										
+										optgroup(label="1970s")
+											option(value='integrity-and-invention') Integrity and Invention
+										
+										optgroup(label="1980s")
+											option(value='on-the-rca-ad') On the RCA Ad
+											option(value='the-politics-of-design') The Politics of Design
+											option(value='observations-on-intuition') Observations on Intuition
+											option(value='the-case-for-the-ampersand') The Case for the Ampersand
+										
+										optgroup(label="1990s")
+											option(value='logos-flags-and-escutcheons') Logos, Flags, and Escutcheons
+											option(value='confusion-and-chaos-the-seduction-of-contemporary-graphic-design') Confusion and Chaos: The Seduction of Contemporary Graphic Design
+											option(value='object-lessons') Object Lessons
+											option(value='failure-by-design') Failure by Design
+											option(value='language-of-art') Language of Art
+
+									a.button.tiny.text-caps.radius.ml1.hide(href="#") Go
+
+								//- fieldset.mr2.float-left.text-left.hide#writing-quotes
+								//- 	//- label Choose a quote topic...
+								//- 	select#select-writing-quotes(data-placeholder="Choose a quote topic...")
+								//- 		option(value='') VIEW ALL &rarr;
+								//- 		option(value='quote') Modernism
+								//- 		option(value='quote') Good Design
+								//- 		option(value='quote') Play
+								//- 		option(value='quote') Originality & Imitation
+								//- 
+								//- 	a.button.tiny.text-caps.radius.ml1.hide(href="#") Go
+
+								fieldset.mr2.float-left.text-left.hide#writing-suggested-readings
+									//- label Choose a suggested reading topic...
+									select#select-writing-suggested-readings(data-placeholder="Choose a suggested reading topic...")
+										option(value='viewall') VIEW ALL &rarr;
+										option(value='general') General Art Theory and Philosophy
+										option(value='modern') Modern Art History and Movements
+										option(value='type') Typography and Design
+										option(value='social') General, Sociology
+										option(value='bios') Art Biographies and Monographs
+										option(value='architecture') Architecture
+										option(value='history') Design History and Theory
+										option(value='geometry') Geometry and Design
+										option(value='film') Film
+
+									a.button.tiny.text-caps.radius.ml1.hide(href="#") Go
+
+
+
+
+						//- ==========  RESOURCES  ==========
+						//- .nav-resources-off
+						//- 	h5.mr3.mb0.text-bold-italic Resources
+						//- 	form
+						//- 		fieldset.mr2.float-left.text-left
+						//- 			select#select-resources(data-placeholder="Select")
+						//- 				option(value='') VIEW ALL &rarr;
+						//- 				option(value='find') Find Items Online
+						//- 				option(value='articles') Articles, Interviews & Information
+						//- 				option(value='tributes') Tributes and Personal Experiences
+						//- 				option(value='today') Paul Rand's Work Today
+						//- 
+						//- 			a.button.tiny.text-caps.radius.ml1(href="#") Go
+
+
+
+
+
+					li
+						a.placeholder(href='#0') Placeholder
+
+	a.cd-nav-trigger(href='#0')
+		//- | Menu
+		span
+
+
+
+//- -----  End of HEADER NAVIGATION  ------
+//- 
+//- br(style="clear:both")
+//- 
+
+//- nav.top-bar(data-topbar='', role='navigation')
+	ul.title-area
+		li.name
+			h1
+				a(href='#') My Site
+		// Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+		li.toggle-topbar.menu-icon
+			a(href='#')
+				span Menu
+		section.top-bar-section
+			// Right Nav Section
+			ul
+				li.active
+					a(href='#') Right Button Active
+					li.has-dropdown
+						a(href='#') Right Button Dropdown
+						ul.dropdown
+							li
+								a(href='#') First link in dropdown
+								li.active
+									a(href='#') Active link in dropdown

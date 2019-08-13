@@ -1,0 +1,233 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Kaiser-Frazer Automobiles'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = 'CHANGE_ME'
+    - var nextType  = 'Client'
+    - var nextTitle = 'Kaufmann’s Department Store'
+    - var nextLink  = 'Kaufmanns'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logos",
+                        "middle","2","2",
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Kaiser-1949.svg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Kaiser-1949.svg", title: "", footnote: "1949"},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Frazer-1949.svg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Frazer-1949.svg", title: "", footnote: "1949"},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Kaiser-Frazer-Service-Station-pre-1965.svg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Kaiser-Frazer-Service-Station-pre-1965.svg", title: "", footnote: "Pre-1965, Brand Character"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Advertising",
+                        "top","3","2",
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%2003.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%2005.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%2006.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%2007.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%2009.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%2010-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%2010.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%2012-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%2012.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%2013-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%2013.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Golden%20Dragon-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Golden%20Dragon.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%20Hands%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%20Hands%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%20Hands%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%20Hands%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%20Hands%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%20Hands%2003.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%20Hands%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Advertising/Web/Kaiser%20Frazer%20Hands%2004.jpg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Posters",
+                        "top","3","2",
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Aren%27t%20You%20Glad%20You%20Drive%20a%20Kaiser-%20%20Elephant/Web/Aren%27t%20You%20Glad%20You%20Drive%20a%20Kaiser-%20%20Elephant%2001a-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Aren%27t%20You%20Glad%20You%20Drive%20a%20Kaiser-%20%20Elephant/Web/Aren%27t%20You%20Glad%20You%20Drive%20a%20Kaiser-%20%20Elephant%2001a.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Aren%27t%20You%20Glad%20You%20Drive%20a%20Kaiser-%20%20Elephant/Web/Aren%27t%20You%20Glad%20You%20Drive%20a%20Kaiser-%20%20Elephant%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Aren%27t%20You%20Glad%20You%20Drive%20a%20Kaiser-%20%20Elephant/Web/Aren%27t%20You%20Glad%20You%20Drive%20a%20Kaiser-%20%20Elephant%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Aren%27t%20You%20Glad%20You%20Drive%20a%20Kaiser-%20Western%20Range/Web/Aren%27t%20You%20Glad%20You%20Drive%20a%20Kaiser-%20%20Western%20Range%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Aren%27t%20You%20Glad%20You%20Drive%20a%20Kaiser-%20Western%20Range/Web/Aren%27t%20You%20Glad%20You%20Drive%20a%20Kaiser-%20%20Western%20Range%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Thunderhead/Web/Aren%27t%20You%20Glad%20You%20Drive%20a%20Kaiser-%20%20Thunderhead%2001a-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Thunderhead/Web/Aren%27t%20You%20Glad%20You%20Drive%20a%20Kaiser-%20%20Thunderhead%2001a.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Thunderhead/Web/Aren%27t%20You%20Glad%20You%20Drive%20a%20Kaiser-%20%20Thunderhead%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Thunderhead/Web/Aren%27t%20You%20Glad%20You%20Drive%20a%20Kaiser-%20%20Thunderhead%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Americas%20Greatest%20Success%20Stories/Web/Americas%20Greatest%20Success%20Stories-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Americas%20Greatest%20Success%20Stories/Web/Americas%20Greatest%20Success%20Stories.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Americas%20Greatest%20Success%20Stories/Web/Americas%20Greatest%20Success%20Stories%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Americas%20Greatest%20Success%20Stories/Web/Americas%20Greatest%20Success%20Stories%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Aren%27t%20You%20Glad%20You%20Drive%20a%20Kaiser-%20Pinch%20Penny%20Economy/Web/Pinch%20Penny%20Economy%20Poster-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Aren%27t%20You%20Glad%20You%20Drive%20a%20Kaiser-%20Pinch%20Penny%20Economy/Web/Pinch%20Penny%20Economy%20Poster.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Frazer%20Manhattan/Web/Kaiser-Frazer%20Manhattan%20Poster%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Frazer%20Manhattan/Web/Kaiser-Frazer%20Manhattan%20Poster%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Frazer%20Manhattan/Web/Kaiser-Frazer%20Manhattan%20Poster%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Frazer%20Manhattan/Web/Kaiser-Frazer%20Manhattan%20Poster%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Frazer%20Manhattan/Web/Kaiser-Frazer%20Manhattan%20Poster%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Frazer%20Manhattan/Web/Kaiser-Frazer%20Manhattan%20Poster%2003.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Hear%20Hear%20Hear/Web/Hear%20Hear%20Hear%20Poster-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Hear%20Hear%20Hear/Web/Hear%20Hear%20Hear%20Poster.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Pride%20of%20Willow%20Run/Web/Pride%20of%20Willow%20Run%20Poster-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Posters/Pride%20of%20Willow%20Run/Web/Pride%20of%20Willow%20Run%20Poster.jpg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Annual Report, 1949",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%20front-970.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%20front.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Annual Report, 1949", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%20front-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%20front.jpg"},
+                        {Title: "Annual Report, 1949", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%20back-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%20back.jpg"},
+                        {Title: "Annual Report, 1949", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2001.jpg"},
+                        {Title: "Annual Report, 1949", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2002.jpg"},
+                        {Title: "Annual Report, 1949", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2003.jpg"},
+                        {Title: "Annual Report, 1949", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2004.jpg"},
+                        {Title: "Annual Report, 1949", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2005.jpg"},
+                        {Title: "Annual Report, 1949", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2006.jpg"},
+                        {Title: "Annual Report, 1949", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2007.jpg"},
+                        {Title: "Annual Report, 1949", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2008.jpg"},
+                        {Title: "Annual Report, 1949", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2009.jpg"},
+                        {Title: "Annual Report, 1949", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2010-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2010.jpg"},
+                        {Title: "Annual Report, 1949", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2011-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2011.jpg"},
+                        {Title: "Annual Report, 1949", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2012-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2012.jpg"},
+                        {Title: "Annual Report, 1949", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2013-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2013.jpg"},
+                        {Title: "Annual Report, 1949", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2014-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2014.jpg"},
+                        {Title: "Annual Report, 1949", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2015-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1949/Web/Kaiser%20Frazer%20Annual%20Report%201949%2C%2015.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Annual Report, 1950",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%20front-970.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%20front.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Annual Report, 1950", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%20front-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%20front.jpg"},
+                        {Title: "Annual Report, 1950", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%20back-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%20back.jpg"},
+                        {Title: "Annual Report, 1950", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2001.jpg"},
+                        {Title: "Annual Report, 1950", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2002.jpg"},
+                        {Title: "Annual Report, 1950", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2003.jpg"},
+                        {Title: "Annual Report, 1950", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2004.jpg"},
+                        {Title: "Annual Report, 1950", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2005.jpg"},
+                        {Title: "Annual Report, 1950", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2006.jpg"},
+                        {Title: "Annual Report, 1950", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2007.jpg"},
+                        {Title: "Annual Report, 1950", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2008.jpg"},
+                        {Title: "Annual Report, 1950", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2009.jpg"},
+                        {Title: "Annual Report, 1950", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2010-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2010.jpg"},
+                        {Title: "Annual Report, 1950", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2011-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2011.jpg"},
+                        {Title: "Annual Report, 1950", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2012-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Annual%20Report/1950/Web/Kaiser%20Frazer%20Annual%20Report%201950%2C%2012.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Brochure: America’s 3 Newest",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/America%27s%203%20Newest/Web/Kaiser%20Frazer%20America%27s%203%20Newst%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/America%27s%203%20Newest/Web/Kaiser%20Frazer%20America%27s%203%20Newst%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Brochure: America’s 3 Newest", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/America%27s%203%20Newest/Web/Kaiser%20Frazer%20America%27s%203%20Newst%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/America%27s%203%20Newest/Web/Kaiser%20Frazer%20America%27s%203%20Newst%2001.jpg"},
+                        {Title: "Brochure: America’s 3 Newest", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/America%27s%203%20Newest/Web/Kaiser%20Frazer%20America%27s%203%20Newst%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/America%27s%203%20Newest/Web/Kaiser%20Frazer%20America%27s%203%20Newst%2002.jpg"},
+                        {Title: "Brochure: America’s 3 Newest", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/America%27s%203%20Newest/Web/Kaiser%20Frazer%20America%27s%203%20Newst%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/America%27s%203%20Newest/Web/Kaiser%20Frazer%20America%27s%203%20Newst%2003.jpg"},
+                        {Title: "Brochure: America’s 3 Newest", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/America%27s%203%20Newest/Web/Kaiser%20Frazer%20America%27s%203%20Newst%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/America%27s%203%20Newest/Web/Kaiser%20Frazer%20America%27s%203%20Newst%2004.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Brochure: Dragon",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Dragon/Web/Kaiser%20Frazer%20Dragon%20brochure%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Dragon/Web/Kaiser%20Frazer%20Dragon%20brochure%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Brochure: Dragon", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Dragon/Web/Kaiser%20Frazer%20Dragon%20brochure%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Dragon/Web/Kaiser%20Frazer%20Dragon%20brochure%2001.jpg"},
+                        {Title: "Brochure: Dragon", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Dragon/Web/Kaiser%20Frazer%20Dragon%20brochure%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Dragon/Web/Kaiser%20Frazer%20Dragon%20brochure%2002.jpg"},
+                        {Title: "Brochure: Dragon", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Dragon/Web/Kaiser%20Frazer%20Dragon%20brochure%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Dragon/Web/Kaiser%20Frazer%20Dragon%20brochure%2003.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Brochure: Kaiser for 1951",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure-970.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Brochure: Kaiser for 1951", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure.jpg"},
+                        {Title: "Brochure: Kaiser for 1951", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2001.jpg"},
+                        {Title: "Brochure: Kaiser for 1951", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2002.jpg"},
+                        {Title: "Brochure: Kaiser for 1951", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2003.jpg"},
+                        {Title: "Brochure: Kaiser for 1951", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2004.jpg"},
+                        {Title: "Brochure: Kaiser for 1951", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2005.jpg"},
+                        {Title: "Brochure: Kaiser for 1951", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2006.jpg"},
+                        {Title: "Brochure: Kaiser for 1951", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2007.jpg"},
+                        {Title: "Brochure: Kaiser for 1951", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2008.jpg"},
+                        {Title: "Brochure: Kaiser for 1951", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2009.jpg"},
+                        {Title: "Brochure: Kaiser for 1951", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2010-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2010.jpg"},
+                        {Title: "Brochure: Kaiser for 1951", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2011-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2011.jpg"},
+                        {Title: "Brochure: Kaiser for 1951", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2012-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2012.jpg"},
+                        {Title: "Brochure: Kaiser for 1951", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2013-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2013.jpg"},
+                        {Title: "Brochure: Kaiser for 1951", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2014-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20Brochure%2014.jpg"}
+                        )
+
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Kaiser for 1951 Poster",
+                        "middle", "1", "1",
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20poster%20cover%2002-970.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Kaiser%20for%201951/Web/Kaiser%20for%201951%20poster%20cover%2002.jpg", title: "", footnote: ""}
+                        )
+
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Brochure: Pride of Willow Run",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20Brochure-970.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20Brochure.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Brochure: Pride of Willow Run", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20Brochure-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20Brochure.jpg"},
+                        {Title: "Brochure: Pride of Willow Run", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20brochure%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20brochure%2001.jpg"},
+                        {Title: "Brochure: Pride of Willow Run", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20brochure%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20brochure%2002.jpg"},
+                        {Title: "Brochure: Pride of Willow Run", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20brochure%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20brochure%2003.jpg"},
+                        {Title: "Brochure: Pride of Willow Run", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20brochure%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20brochure%2004.jpg"},
+                        {Title: "Brochure: Pride of Willow Run", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20brochure%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20brochure%2005.jpg"},
+                        {Title: "Brochure: Pride of Willow Run", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20brochure%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20brochure%2006.jpg"},
+                        {Title: "Brochure: Pride of Willow Run", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20brochure%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20brochure%2007.jpg"},
+                        {Title: "Brochure: Pride of Willow Run", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20brochure%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20brochure%2008.jpg"},
+                        {Title: "Brochure: Pride of Willow Run", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20brochure%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20brochure%2009.jpg"},
+                        {Title: "Brochure: Pride of Willow Run", SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20Folder-450.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Brochures/Pride%20of%20Willow%20Run/Web/Kaiser%20Frazer%20Pride%20of%20Willow%20Run%20Folder.jpg"}
+                        )
+
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Billboard",
+                        "middle", "1", "1",
+                        {SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Billboard/Web/Kaiser%20Frazer%20billboard%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Kaiser-Frazer/Billboard/Web/Kaiser%20Frazer%20billboard%2001.jpg", title: "", footnote: "Image courtesy of Wright auction house, Chicago, IL."}
+                        )
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

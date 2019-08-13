@@ -1,0 +1,91 @@
+
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Ohrbach’s'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = 'CHANGE_ME'
+    - var nextType  = 'Client'
+    - var nextTitle = 'Okasan Securities Company'
+    - var nextLink  = 'Okasan-Securities-Company'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Ohrbach%27s-1945.svg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Ohrbach%27s-1945.svg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Advertising",
+                        "top","3","2",
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Angel%20Daily%20News%201946-10-23-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Angel%20Daily%20News%201946-10-23.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Baby%20and%20Blocks%20v1a-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Baby%20and%20Blocks%20v1a.jpg", title: "", footnote: "v1"},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Baby%20and%20Blocks%20v2-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Baby%20and%20Blocks%20v2.jpg", title: "", footnote: "v2"},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Bee-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Bee.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Bird%20Nest-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Bird%20Nest.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Broom-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Broom.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Bucket-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Bucket.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Bull-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Bull.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Cactus-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Cactus.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Clovers%20and%20Horseshoe-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Clovers%20and%20Horseshoe.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Coin%20Flip-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Coin%20Flip.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Deer-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Deer.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Drummer-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Drummer.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Easter%20Bunny-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Easter%20Bunny.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Elephant%20and%20Peanuts-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Elephant%20and%20Peanuts.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Flower-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Flower.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Flute-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Flute.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Giraffe-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Giraffe.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Girl%20on%20Horse-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Girl%20on%20Horse.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Hat-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Hat.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Horse-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Horse.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Indian%20Chief-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Indian%20Chief.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Kangaroo-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Kangaroo.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Lion-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Lion.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Lollipop-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Lollipop.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Mask%20Daily%20News%201946-12-04-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Mask%20Daily%20News%201946-12-04.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Me%20Myself%20and%20I%20The%20Montclair%20Times%201946-10-17-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Me%20Myself%20and%20I%20The%20Montclair%20Times%201946-10-17.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Mother-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Mother.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Neptune-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Neptune.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Ornaments-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Ornaments.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Ostrich-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Ostrich.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Parrots-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Parrots.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Pinocchio-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Pinocchio.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Polar%20Bear%20and%20Whale-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Polar%20Bear%20and%20Whale.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Railroad%20Crossing-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Railroad%20Crossing.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Santa-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Santa.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Stop%20Light%20Daily%20News%201946-10-17-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Stop%20Light%20Daily%20News%201946-10-17.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Stork-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Stork.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Telephone-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Telephone.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Thimble%20NYT%201947-03-17-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Thimble%20NYT%201947-03-17.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Totem%20Pole%20v1a-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Totem%20Pole%20v1a.jpg", title: "", footnote: "v1"},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Totem%20Pole%20v2-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Totem%20Pole%20v2.jpg", title: "", footnote: "v2"},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Weiner%20Dog-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Weiner%20Dog.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Window%20Shade%20Daily%20News%201946-11-14-450.jpg", LG:"https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Window%20Shade%20Daily%20News%201946-11-14.jpg", title: "", footnote: ""}
+                        )
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

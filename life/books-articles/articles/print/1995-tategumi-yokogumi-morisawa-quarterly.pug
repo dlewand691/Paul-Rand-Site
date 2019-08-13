@@ -1,0 +1,151 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Paul Rand'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1995%20Tategumi%20Yokogumi%20Morisawa%20Quarterly/Web/Tategumi%20Yokogumi%20Morisawa%20Quarterly%20no%2044%2C%201995%2001-200.jpg'
+
+    - var articleAuthor         = 'CHANGE_ME'
+    - var publishedInTitle      = 'Tategumi Yokogumi Morisawa Quarterly #44'
+    - var publishedInSubtitle   = '1995'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1995%20Tategumi%20Yokogumi%20Morisawa%20Quarterly/Web/Tategumi%20Yokogumi%20Morisawa%20Quarterly%20no%2044%2C%201995%2001-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1995%20Tategumi%20Yokogumi%20Morisawa%20Quarterly/Web/Tategumi%20Yokogumi%20Morisawa%20Quarterly%20no%2044%2C%201995%2001.jpg', title: publishedInTitle})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/search?q=Tategumi+Yokogumi+Morisawa+Quarterly&qt=owc_search'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D50%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3DTategumi%2BYokogumi%2BMorisawa%2BQuarterly'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/2BC8AQ5'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Paul Rand, Writer'
+    - var nextDate              = 'Spring 1997'
+    - var nextDescription       = 'Critique Magazine'
+
+    - var nextLink              = '1997-critique-magazine.html'
+
+    - var relatedItemLink1      = '/life/books-articles/articles/print/1984-idea-magazine.html'
+    - var relatedItemTitle1     = 'Fiddler of Yankee Feeling'
+    - var relatedItemFootnote1  = 'Idea Magazine, Special Issue: 30 Influential Designers of the Century, 1984'
+
+    - var relatedItemLink2      = '2007-beaux-arts-magazine.html'
+    - var relatedItemTitle2     = 'Paul Rand, artiste publicitaire'
+    - var relatedItemFootnote2  = 'Beaux Arts Magazine, 2007'
+
+    - var relatedItemLink3      = '1955-international-art-advertising-idea-magazine.html'
+    - var relatedItemTitle3     = 'International Advertising Art Idea magazine'
+    - var relatedItemFootnote3  = 'March, 1955'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1995%20Tategumi%20Yokogumi%20Morisawa%20Quarterly/Web/Tategumi%20Yokogumi%20Morisawa%20Quarterly%20no%2044%2C%201995%2001-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1995%20Tategumi%20Yokogumi%20Morisawa%20Quarterly/Web/Tategumi%20Yokogumi%20Morisawa%20Quarterly%20no%2044%2C%201995%2001.jpg', title: publishedInTitle})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1995%20Tategumi%20Yokogumi%20Morisawa%20Quarterly/Web/Tategumi%20Yokogumi%20Morisawa%20Quarterly%20no%2044%2C%201995%2002-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1995%20Tategumi%20Yokogumi%20Morisawa%20Quarterly/Web/Tategumi%20Yokogumi%20Morisawa%20Quarterly%20no%2044%2C%201995%2002.jpg', title: publishedInTitle})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1995%20Tategumi%20Yokogumi%20Morisawa%20Quarterly/Web/Tategumi%20Yokogumi%20Morisawa%20Quarterly%20no%2044%2C%201995%2003-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1995%20Tategumi%20Yokogumi%20Morisawa%20Quarterly/Web/Tategumi%20Yokogumi%20Morisawa%20Quarterly%20no%2044%2C%201995%2003.jpg', title: publishedInTitle})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1995%20Tategumi%20Yokogumi%20Morisawa%20Quarterly/Web/Tategumi%20Yokogumi%20Morisawa%20Quarterly%20no%2044%2C%201995%2004-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1995%20Tategumi%20Yokogumi%20Morisawa%20Quarterly/Web/Tategumi%20Yokogumi%20Morisawa%20Quarterly%20no%2044%2C%201995%2004.jpg', title: publishedInTitle})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1995%20Tategumi%20Yokogumi%20Morisawa%20Quarterly/Web/Tategumi%20Yokogumi%20Morisawa%20Quarterly%20no%2044%2C%201995%2005-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1995%20Tategumi%20Yokogumi%20Morisawa%20Quarterly/Web/Tategumi%20Yokogumi%20Morisawa%20Quarterly%20no%2044%2C%201995%2005.jpg', title: publishedInTitle})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1995%20Tategumi%20Yokogumi%20Morisawa%20Quarterly/Web/Tategumi%20Yokogumi%20Morisawa%20Quarterly%20no%2044%2C%201995%2006-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1995%20Tategumi%20Yokogumi%20Morisawa%20Quarterly/Web/Tategumi%20Yokogumi%20Morisawa%20Quarterly%20no%2044%2C%201995%2006.jpg', title: publishedInTitle})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1995%20Tategumi%20Yokogumi%20Morisawa%20Quarterly/Web/Tategumi%20Yokogumi%20Morisawa%20Quarterly%20no%2044%2C%201995%2007-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1995%20Tategumi%20Yokogumi%20Morisawa%20Quarterly/Web/Tategumi%20Yokogumi%20Morisawa%20Quarterly%20no%2044%2C%201995%2007.jpg', title: publishedInTitle})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax.notranslate
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content.notranslate
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content#original-article
+                    //- :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        INTRO
+
+
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Japanese Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            20世紀を代表するグラフィックデザイナーを1人あげ よと言われれば、ポール.ランドと答えるのに意義を 唱える人は誰もいないことだろう。彼は80才を過ぎ
+                            てまだ現役である。マンハッタンのグランド.セントラ ルからメトロ. ノースに乗って約一時間、ウェストポー 卜の静かな郊外にランド氏のスタジオ兼自宅を訪ね た0基本的にはスタッフなしで1人で仕事をするスタ イルを長年続けているとのこと。ランド氏とのインタビ ューは、まるで一対一の禅問答のよう、あるいは博 士号の口頭試験のように進んで行った。
+                            「今ちようど本を書き終えたところだよ。タイトルは
+                            『デザイン：ラスコーからブルックリンまで』。ラスコー
+                            は言うまでもなくフランスの洞窟壁画。ブルックリンは 私が生まれたところだ。もちろんテーマはデザインと マートについて0秋に出版の予定なんた0 見開き2ページ単位の構成。右側のページはテキス 卜部分、左のページにビジュアル。質問が各頁に一つ ずつ入っているんだ。ビジュアルは、テキストの答え
+                            の説明を読者が正しく理解するように選んでいる。 デザインとアートに関する難しい問題を、読者が理 解し、納得できるように、テキストとイメージで完全に 表現することを目指しているものなんだ。最もふさわ
+                            しいビジュアル‘イメージを選ぶのに苦労したね0そ れから読者が読んでくれるように、テキストの文字も 大きくする配慮がしてある。まるで、子供の絵本のよ うだろう？（笑）
+                            同じ事を哲学者が書くと、何百ページも費やしたあ
+                            げくに読者を煙に巻いてしまうに違いないさ。その 上、哲学書の場合は難しい文字の羅列だけで、具 体的な例のイメージもない。写真があったとしてもミ スマッチの写真が載っていたりしてね。
+                            誰の要請でもない。今までに出ていない、こんな仕 事が必要だと自分で思い、出版を思い立ったのだ よ。モノを売ったり、宣伝のためになされる仕事と違 うが、大切な仕事だと信じている。
+                            日本のデザインはきれいな作品がいっぱい目に付 くが'、ユニークなデザインにはあまりお目にかかれな いなあ。実用的でないものが多いね。実用性はデ ザインにとって重要だ。何かのことに役に立って初め てデザインと言えるからね。相手に何を伝えようとし
+                            ているのか明確でなければならない。この本が日 本でも出版されることを願っているよ。デザインに必 要なことを私はそこでみんなにわかりやすく説明し
+                            たつもりだから。」
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif Translated text (via Google Translate)
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            If it is said that one graphic designer representing the 20th century is given, there will be no one who makes a meaning to answer Paul Rand. He passed the age of 80 and is still active. In Manhattan’s Grand. From Metro. Central for about an hour, I visited Mr. Rand’s studio and home on the quiet outskirts of Westport. “Basically I work alone with no staff,” He said that he has continued this way for many years. The interview with Mr. Rand proceeded like a one-on-one Zen question or as an oral exam of a Ph.D.
+
+                            “I’ve just finished writing a book like this, and the title is “Design: From Lascaux to Brooklyn.” Lascaux, not to mention the French cave paintings. Brooklyn is where I was born. Of course the theme is about design and art composed in the 2-page spread unit with and planned to be published in autumn. The right page is the text part, visual on the left page. There are questions on each page one by one. The visual answers the text.
+
+                            The reader chose to understand the description correctly. I am aiming to fully describe the difficult problems of design and art with text and images so that the reader understands and understands the problem. I had a hard time in choosing a visual image. There is consideration to enlarge the text characters so that the reader can read it. Sounds like a children’s picture book? (Lol)
+
+                            If a philosopher writes the same thing, it costs hundreds of pages. Inevitably the reader should be rolled into smoke. Besides, in the case of philosophical books there is only a list of difficult characters, and there is no image of concrete examples. Even if there are pictures, you can see the photos of mismatches.
+
+                            It is not a request of anyone. I thought myself that this kind of work that I had not done so far is necessary, and I thought of publishing. I believe that it is an important job, unlike selling things and doing work for publicity.
+
+                            Japanese designs have a lot of beautiful works, but they do not have much to see in unique designs. Many things are not practical. Practicality is important to the design. Because it can be said to be a design for the first time when it is useful for something. I tried to tell the other party it must be clear whether it is. I hope this book will be published even in Japan. I explain things necessary for design to everyone so that it is easy to understand because I’m going.”
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+
+
+
+        include ../../../../__MIXINS/_include-image-carousel.pug
+
+        include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

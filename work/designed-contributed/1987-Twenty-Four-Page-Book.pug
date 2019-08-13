@@ -1,0 +1,141 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'A 24-Page Book'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var bookSubhead           = 'John Luke & The Type Directors Club, 1987'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/54229137'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3DA%2B24-Page%2BBook%2BJohn%2BLuke%2B%2526%2BThe%2BType%2BDirectors%2BClub%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1Ui0lYB'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_odkw%3DA%2B24-Page%2BBook%2Btype%2Bdirector%2527s%2Bclub%26_osacat%3D0%26_from%3DR40%26_trksid%3Dp2045573.m570.l1313.TR0.TRC0.H0.X24%2BPage%2BBook%2Btype%2Bdirector%2527s%2Bclub.TRS0%26_nkw%3D24%2BPage%2BBook%2Btype%2Bdirector%2527s%2Bclub%26_sacat%3D0'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'The Cubist Painters: Aesthetic Meditations 1913'
+    - var nextLink              = '1944-The-Cubist-Painters'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2014-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2015-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2016-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2016.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2017-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2017.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2018-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2018.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2019-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2019.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2020-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2020.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2021-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2021.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2022-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2022.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2023-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2023.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2024-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2024.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2025-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2025.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2026-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2026.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2027-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2027.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2028-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2028.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2029-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2029.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2030-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2030.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2031-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2031.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2032-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2032.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2033-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2033.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2034-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2034.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2035-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2035.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2036-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2036.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2037-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book%2037.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= bookSubhead
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book-970.jpg",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1987%20Type%20Directors%20Club-%20Twenty%20Four%20Page%20Book/Web/A%20Twenty-Four%20Page%20Book.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            include ../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        8” x 9”, saddle stitched book.
+
+                        Small book filled with 24 pages of creative typographic treatments representing the numbers 1-24.
+
+                        **Contributors include:**
+
+                        + Pg. 1- Lou Dorfsman
+                        + Pg. 2- Jerry Craw
+                        + Pg. 3- Ivan Chermayeff
+                        + Pg. 4- Bradbury Thompson
+                        + Pg. 5- Milton Glaser
+                        + Pg. 6- Saul Bass
+                        + Pg. 7- Minoru Morita
+                        + Pg. 8- Paul Rand
+                        + Pg. 9- Mike Quon
+                        + Pg. 10- Gene Federico
+                        + Pg. 11- Alan Peckolick
+                        + Pg. 12- Diana Graham
+                        + Pg. 13- George Lois
+                        + Pg. 14- Tom Geismar
+                        + Pg. 15- George Tscherney
+                        + Pg. 16- Gerard Huerta
+                        + Pg. 17- Martin Solomon
+                        + Pg. 18- Patrick Fultz
+                        + Pg. 19- Samuel Antupit
+                        + Pg. 20- Tom Carnase
+                        + Pg. 21- Herman Zapf
+                        + Pg. 22- Jozef Sumichrast
+                        + Pg. 23- Massimo Vignelli
+                        + Pg. 24- B. Martin Pedersen
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../__MIXINS/_include-next-work.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

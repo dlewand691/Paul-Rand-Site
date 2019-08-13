@@ -1,0 +1,63 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Rand delivers his logo presentation booklet to the NeXT team'
+    - var bodyID    = 'life'
+    - var bodyClass = 'videos'
+
+block main-content
+    - var nextType             = 'Video'
+    - var nextTitle            = 'John Stossel comments on Graphic Design'
+    - var nextDate             = '2006'
+    - var nextDescription      = 'This video provided courtesy of kenfrederick on YouTube.'
+    - var nextLink             = '/life/videos/2006-john-stossel.html'
+
+    - var relatedItemLink1     = '/life/videos/1996-cooper-union.html'
+    - var relatedItemTitle1    = 'Cooper Union interview with Steven Heller'
+    - var relatedItemFootnote1 = 'One of Rand’s final public appearances.'
+
+    - var relatedItemLink2     = '/life/videos/1996-conversations-with-paul-rand.html'
+    - var relatedItemTitle2    = 'Conversations with Paul Rand'
+    - var relatedItemFootnote2 = 'A Film by Preston McClanahan'
+
+    - var relatedItemLink3     = '/life/videos/2012-kyle-cooper.html'
+    - var relatedItemTitle3    = 'Kyle Cooper - Studying under Paul Rand'
+    - var relatedItemFootnote3 = 'Famed video producer Kyle Cooper discusses what it was like being a student of Paul Rand.'
+
+
+    //- =============================
+    //- =            VIDEO            =
+    //- =============================
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                //- ==========  TITLE  ==========
+                .large-8.medium-11.cell
+                    .grid-x.grid-margin-x
+                        .large-12.cell.text-center
+                            h1= pageTitle
+                            p.text-gray.t16: em 1996
+
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+
+            //- ==========  VIDEO  ==========
+            .grid-x.grid-margin-x.align-center
+                .large-12.cell
+                    .small-mb3
+                        div.plyr-js(data-plyr-embed-id="6J-Iv99ID70" data-plyr-provider="youtube")
+
+                    //- .flex-video
+                    //- 	iframe(src="//www.youtube.com/embed/6J-Iv99ID70" frameborder="0" allowfullscreen)
+
+            //- ==========  BODY  ==========
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-9.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+
+
+        //- /*-----  End of BODY  ------*/
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug

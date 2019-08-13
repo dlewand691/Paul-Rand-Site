@@ -1,0 +1,126 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Interviews'
+    - var bodyID    = 'life'
+    - var bodyClass = 'interviews'
+
+block main-content
+    .cd-main-content
+        .grid-container
+
+            //- ======================================
+            //- =            INTERVIEWS           =
+            //- ======================================
+
+            .grid-x.grid-margin-x.align-center
+                .small-12.cell
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+
+                    //- /*==============================  
+                    //-
+                    //- ██ ███    ██ ████████ ███████ ██████  ██    ██ ██ ███████ ██     ██ ███████ 
+                    //- ██ ████   ██    ██    ██      ██   ██ ██    ██ ██ ██      ██     ██ ██      
+                    //- ██ ██ ██  ██    ██    █████   ██████  ██    ██ ██ █████   ██  █  ██ ███████ 
+                    //- ██ ██  ██ ██    ██    ██      ██   ██  ██  ██  ██ ██      ██ ███ ██      ██ 
+                    //- ██ ██   ████    ██    ███████ ██   ██   ████   ██ ███████  ███ ███  ███████ 
+                    //-
+                    //- ==============================*/
+
+                    +listItem-thumb(
+                        "1985-guttenberg-and-family.html",
+                        "https://assets.paulrand.design/Life/Interviews/1985%20Gutenberg%20%26%20Family%2C%20October/Web/Gutenberg%20%26%20Family%2C%20October%201985-200.jpg",
+                        "Paul Rand: The Imperishable Champion",
+                        "1985",
+                        "An interview and review of “Paul Rand: A Designer’s Art”"
+                        )
+
+                    +listItem-thumb(
+                        "1988-artograph.html",
+                        "https://assets.paulrand.design/Life/Interviews/1988%20Artograph%206/Web/Artograph%206%2C%201988-200.jpg",
+                        "Artograph #6",
+                        "1988",
+                        "An extensive interview by Viriginia Smith"
+                        )
+
+                    +listItem-thumb(
+                        "1988-id-magazine.html",
+                        "https://assets.paulrand.design/Life/Interviews/1988%20ID%20magazine/Web/ID%20Magazine%2C%20November-December%201988-200.jpg",
+                        "ID Magazine",
+                        "1988",
+                        "Logos, Technique and Trends"
+                        )
+
+                    +listItem-thumb(
+                        "1989-interview-with-steven-heller.html",
+                        "https://assets.paulrand.design/Life/Interviews/1989%20Graphic%20Design%20in%20America/Web/Graphic%20Design%20in%20America-200.jpg",
+                        "Paul Rand interview by Steven Heller",
+                        "1988",
+                        "Originally published in “Graphic Design In America: A Visual Language History”."
+                        )
+
+                    +listItem-thumb(
+                        "1989-Type-Talks-interview.html",
+                        "https://assets.paulrand.design/Life/Interviews/1989%20Type%20Talks/Web/Type%20Talks%20Fall%201989%2C%20purple%20cover-200.jpg",
+                        "Type Talks interview",
+                        "1988",
+                        "A conversation about type with Paul Rand and Mario Rampone."
+                        )
+
+                    +listItem-thumb(
+                        "1990-kromekote-childhood-fantasies.html",
+                        "https://assets.paulrand.design/Life/Interviews/1991%20Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies/Web/Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies%201991%2C%20front-200.jpg",
+                        "Champion Papers Kromekote 2000 Childhood Fantasies",
+                        "1991",
+                        "Rand discusses what profession he’d pursue if it wasn’t graphic design."
+                        )
+
+                    +listItem-thumb(
+                        "1993-hartford-courant.html",
+                        "https://assets.paulrand.design/Life/Interviews/1993%20Hartford%20Courant/Web/Hartford%20Courant%20Sun%20Jul%204%201993-200.jpg",
+                        "Logos to Go",
+                        "1993",
+                        "Conversations with Steve Kemper"
+                        )
+
+                    +listItem-thumb(
+                        "1993-id-magazine.html",
+                        "https://assets.paulrand.design/Life/Interviews/1993%20ID%20Magazine/Web/ID%20Magazine%2C%20September-October%201993%2C%20front-200.jpg",
+                        "Paul Rand: A Profile",
+                        "1993",
+                        "Janet Abrams talks with Rand about his life as a designer."
+                        )
+
+                    +listItem-thumb(
+                        "1994-The-Journal-of-Technology-Studies.html",
+                        "https://assets.paulrand.design/Life/Interviews/1994%20The%20Journal%20of%20Technology%20Studies/Web/The%20Journal%20of%20Technology%20Studies%20Summer-Fall%201994%2C%20cover-200.jpg",
+                        "Paul Rand on Creativity",
+                        "1994",
+                        "Ce Ce Landoli interviews Rand for this special issue on creativity."
+                        )
+
+                    +listItem-thumb(
+                        "1995-Portfolio-Center.html",
+                        "https://assets.paulrand.design/Life/Interviews/1995%20Interview%20with%20a%20Portfolio%20Center%20Student/Web/Interview%20with%20a%20Portfolio%20Center%20Student%201995-200.jpg",
+                        "Interview with a Portfolio Center Student",
+                        "1995",
+                        "A witty interview conducted via fax."
+                        )
+
+                    +listItem-thumb(
+                        "1990-Paul-Rand-on-the-Play-Instinct.html",
+                        "https://assets.paulrand.design/Life/Interviews/1998%20Design%20Dialogues/Web/Design%20Dialogues-200.jpg",
+                        "Paul Rand on the Play Instinct",
+                        "1998",
+                        "Steven Heller interview Paul Rand about ‘Play’ and its role in design. Originally published in Design Dialogues."
+                        )
+
+                    +listItem-thumb(
+                        "2001-MIT.html",
+                        "https://assets.paulrand.design/Life/Interviews/2001%20Maeda%20at%20Media/Web/Maeda%20at%20Media-200.jpg",
+                        "Interview excerpt from Rand’s final interview at the MIT Media Laboratory",
+                        "2001",
+                        "Interview excerpt from Rand’s final interview at the MIT Media Laboratory"
+                        )
+

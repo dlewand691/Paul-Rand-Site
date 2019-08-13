@@ -1,0 +1,305 @@
+/*===============================================================================================
+=			/*
+████████ ██    ██ ██████   ██████   ██████  ██████   █████  ██████  ██   ██ ██    ██
+   ██     ██  ██  ██   ██ ██    ██ ██       ██   ██ ██   ██ ██   ██ ██   ██  ██  ██
+   ██      ████   ██████  ██    ██ ██   ███ ██████  ███████ ██████  ███████   ████
+   ██       ██    ██      ██    ██ ██    ██ ██   ██ ██   ██ ██      ██   ██    ██
+   ██       ██    ██       ██████   ██████  ██   ██ ██   ██ ██      ██   ██    ██
+*/
+// ==================================================================================================*/
+
+// ===================================
+// Debugging
+// ===================================
+
+// debug colors
+$debug-base: #f54848 !default;
+$debug-cap: yellow !default;
+$debug-spacing: turquoise !default;
+
+// body {
+//     position: relative;
+//     height: auto !important; // makes sure grid will span down screen as scrolling
+// 
+//     &:before {
+//             background:
+//                 // vertical grid starts at 0
+//                 linear-gradient(to bottom,
+//                     transparentize(darken($debug-base, 5%), 0.4) 1px,
+//                     transparent 1px, transparent 12px),
+//                 // for horizontal grid, starts at center, is more complex to draw
+//                 linear-gradient(to right,
+//                     transparent 0px,
+//                     transparent 12px,
+//                     transparentize(darken($debug-base, 5%), 0.9) 12px,
+//                     transparentize(darken($debug-base, 5%), 0.9) 12px,
+//                     transparent 12px,
+//                     transparent 12px);
+//             background-repeat: repeat;
+//             background-position: center top;
+//             background-size: 12px 12px;
+//             position: absolute;
+//             top:0;
+//             left:0;
+//             right:0;
+//             bottom:0;
+//             z-index: 99999;
+//             content: '';
+//             pointer-events: none;
+//         }
+// 
+//     > * {
+//         opacity: 0.75;
+//     }
+// }    
+
+* {
+	// hyphens                      : auto;
+	font-variant-ligatures: common-ligatures;
+	font-feature-settings : "liga", 'clig';
+	// font-variant-ligatures       : contextual;
+	// font-feature-settings        : "calt";
+	font-variant-ligatures: discretionary-ligatures;
+	font-feature-settings : 'dlig';
+	// font-feature-settings        : "salt";
+	font-kerning          : normal;
+	font-feature-settings : 'kern';
+	// font-variant-numeric         : lining-nums;
+	// font-feature-settings        : "lnum";
+	font-variant-numeric  : oldstyle-nums;
+	font-feature-settings : 'onum';
+	// font-variant-numeric         : diagonal-fractions;
+	// font-feature-settings        : "frac";
+	// font-variant-numeric         : ordinal;
+	// font-feature-settings        : "ordn";
+	// font-feature-settings        : "ss01";
+	font-feature-settings : “ital”;
+}
+
+// $font-family-sans-serif  : "freight-sans-pro", Helvetica, sans-serif !default;
+// $font-family-serif       : "kepler-std", Georgia, serif !default;
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-family-serif;
+	font-weight: 300;
+}
+
+h1 {
+	font-weight   : 300;
+	font-family   : $font-family-sans-serif;
+	font-style    : italic;
+	letter-spacing: -3px;
+	line-height   : 1;
+	// margin-bottom : 0;
+	// mix-blend-mode: overlay;
+}
+
+h3 {
+	line-height: 1.1;
+}
+
+h4 {
+	font-weight: 700;
+}
+
+h5 {
+	font-weight: 700;
+	font-style : italic;
+}
+
+h6 {
+	font-style: italic;
+}
+
+.cd-main-content li {
+	// list-style-position: inside;
+	// text-indent: -2em;
+}
+
+.footnote {
+	font-weight: 100;
+	font-size  : 14px;
+	font-style : italic;
+	color      : lighten($black, 50%);
+}
+
+.serif {
+	font-family: $font-family-serif;
+}
+
+.sans-serif {
+	font-family: $font-family-sans-serif;
+}
+
+.text-caps {
+	text-transform: uppercase;
+}
+
+.text-small-caps {
+	font-variant-caps    : small-caps;
+	font-feature-settings: 'smcp';
+}
+
+.text-white,
+a.text-white,
+a:link.text-white {
+	color: $white !important;
+}
+
+.text-black,
+a.text-black,
+a:link.text-black {
+	color: $black;
+}
+
+.text-gray {
+	color: lighten($black, 50%) !important;
+}
+
+.text-red {
+	color: $red !important;
+}
+
+.text-bold,
+b,
+strong {
+	font-weight: 700;
+}
+
+.text-heavy {
+	font-weight: 900;
+}
+
+.text-italic {
+	font-style           : italic;
+	font-feature-settings: “ital”;
+}
+
+.text-normal {
+	font-style : normal !important;
+	font-weight: normal !important;
+}
+
+.text-bold-italic {
+	font-weight: 700;
+	font-style : italic;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.small,
+small {
+	font-size  : 60%;
+	line-height: normal !important;
+}
+
+.t10 {
+	font-size: 10px !important;
+}
+
+.t12 {
+	font-size: 12px !important;
+}
+
+.t14 {
+	font-size: 14px !important;
+}
+
+.t16 {
+	font-size: 16px !important;
+}
+
+.t18 {
+	font-size: 18px !important;
+}
+
+.t20 {
+	font-size: 20px !important;
+}
+
+.t22 {
+	font-size: 22px !important;
+}
+
+.t24 {
+	font-size: 24px !important;
+}
+
+sup {
+	color                : $red;
+	font-size            : 10px;
+	font-variant-position: super;
+	font-feature-settings: 'sups';
+	font-variant-numeric : ordinal;
+	font-feature-settings: 'ordn';
+	margin-left          : 3px;
+}
+
+sub {
+	font-variant-position: sub;
+	font-feature-settings: 'subs';
+}
+
+// $blockquote-color: $red !default;
+
+.blockquote,
+blockquote {
+	@extend .sans-serif;
+	@extend .text-italic;
+	@extend .text-bold;
+	// @include typeset($sans, 18px, 24px, 0, 0);
+	font-size   : 1.5em;
+	line-height : $header-lineheight;
+	color       : $red;
+	border-width: 0;
+	margin      : 3rem 10% 3rem -10%;
+	padding     : 3rem;
+	position    : relative;
+}
+
+.blockquote:before,
+blockquote:before {
+	@extend .bg-randBlack-70l;
+	content : '';
+	position: absolute;
+	width   : 33%;
+	height  : 1px; // suit your need
+	top     : 0;
+	left    : 5%;
+}
+
+.blockquote:after,
+blockquote:after {
+	@extend .bg-randBlack-70l;
+	content : '';
+	position: absolute;
+	width   : 33%;
+	height  : 1px; // suit your need
+	top     : 100%;
+	left    : 5%;
+}
+
+blockquote q {
+	margin-left: -13px !important;
+}
+
+blockquote p {
+	color: inherit;
+}
+
+.title-label {
+	p {
+		margin-bottom: 0;
+		line-height  : 1.2;
+	}
+}
+
+/*-----  End of TYPOGRAPHY  ------------------------------------------------------------------*/

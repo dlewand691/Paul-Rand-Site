@@ -1,0 +1,215 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Paul Rand, Writer'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997-450.jpg'
+
+    - var articleAuthor         = 'Steven Heller'
+    - var publishedInTitle      = 'Critique Magazine'
+    - var publishedInSubtitle   = 'Whittle Communications, Spring 1997'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/36861619'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3Dcritique%2Bmagazine%2B1997%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1OkfZyh'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/s/critique+magazine?_requestid=663509'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Direction'
+    - var nextDate              = 'Allworth Press, 1997'
+    - var nextDescription       = 'Design Literacy'
+
+    - var nextLink              = '1997-design-literacy-direction.html'
+
+    - var relatedItemLink1      = '1997-logocentrism.html'
+    - var relatedItemTitle1     = 'Logocentrism'
+    - var relatedItemFootnote1  = 'New Republic, December 29, 1997, Vol. 217, Issue 26'
+
+    - var relatedItemLink2      = '2002-graphic-design-reader.html'
+    - var relatedItemTitle2     = 'Randism'
+    - var relatedItemFootnote2  = 'The Graphic Design Reader'
+
+    - var relatedItemLink3      = '1938-pm-magazine.html'
+    - var relatedItemTitle3     = 'PM Magazine, Vol. 4 No.9'
+    - var relatedItemFootnote3  = 'Featuring the first article ever written about Paul Rand’s Graphic Design work.'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Critique%20Magazine%2C%20Spring/Web/Critique%20Magazine%2C%20Spring%201997%2010.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content#original-article
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        INTRO
+
+
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            In November 1985, Paul Rand: A Designer’s Art was acclaimed on the front page of The New York Times Book Review for its economy and precision, two of Rand’s hallmarks. The review also struck a darker note, implying that the book was the coda to a long and influential practice. But A Designer’s Art was no last will and testament. Rather, it marked the beginning of a new phase of Rand’s career—this time, as writer and pundit.
+
+                            Over the next eleven years—until his death last November at 82—Rand became a polished essayist and author, publishing Design, Form, and Chaos (1994) and From Lascaux to Brooklyn (1996), as well as numerous essays and critiques. In each, he continued to reaffirm the standards and the rightness of form that he had introduced to a moribund field 50 years earlier.
+
+                            In the 1930s, like the other select young designers working in New York’s commercial art bullpens, he practiced what the European Moderns preached. But original ideas soon took hold, and in 1947, at the age of 32, Rand published Thoughts on Design, a manifesto disguised as a monograph.
+
+                            Graphic design was just shaking itself free of the “commercial art” label, and other designer-authors, including W.A. Dwiggins, Joseph Binder, and Ervin Metzl, had already produced popular “how-to” books. Rand’s book, however, was more of a “why-I-do” book that boldly (and perhaps cannily) used his own work to illustrate how Modernism functioned in the advertising arena. In the introduction, Rand explained his decision:
+
+                            This book attempts to arrange in some logical order certain principles governing advertising design. The pictorial examples used to illustrate these principles are taken from work in which I was directly engaged. This choice was made deliberately, and with no intention to imply that it represents the best translation of those principles into visual terms. There are artists and designers of great talent whose work would be perhaps more suitable. But I do not feel justified in speaking for them, nor secure in attempting to explain their work without any possibility of misrepresentation…
+
+                            Well structured, finely tuned, and aptly titled, Thoughts on Design was a collection of concise, thoughtful commentaries. Using Bauhaus analysis, Jungian psychology, and homespun candor, Rand addressed such ignored issues as “The Role of Humor”, “Reader Participation”, and “The Symbol in Advertising”. Much as Jan Tschicold’s The New Typography (1928) redefined typography, Thoughts recast “commercial art” as aesthetic problem solving. Rand’s book was linked to other Bauhaus and Constructivist manifestos of the 1920s in that it proselytized new design principles as forces of social progress. Still, Rand resisted the label “utopian crusader” (indeed he half-jokingly once said that he published Thoughts on Design because “God forbid there would ever be a fire; but at least I’d have all my samples in one place”). But like the Modernist masters in Europe, he believed that even the commonest aspects of everyday life could be enriched by an artist’s touch.
+
+                            Rand’s public and print personalities were as different as Jekyll and Hyde. He spoke in a gruff, expressive Brooklynese. When something fell below his standards, his sharp “Lousy” cut like a saber. Another of his favorite expressions, “for the birds”, might be phrased in such a way as to strip all merit away from the object of criticism. In print, however, he eschewed these “Randisms” for a clear prose style that was as graceful as it was precise.
+
+                            Rand taught himself to design by designing. And he taught himself to write—“clearly, convincingly, and urbanely”, as he put it—by reading. He was beginning to learn the tricks, but Rand was still not as sure-footed an author as he was a designer. He still needed a theoretical armature on which to hang his ideas.
+
+                            Around 1940 Rand was asked by the former Bauhaus master Laszlo Moholy-Nagy if he had ever read any art criticism. When Rand answered no, Moholy-Nagy replied, “Pity”. From that moment on, Rand devoured essays by critics such as John Dewey, Alfred North Whitehead, and Roger Fry, all of whom he quoted extensively in later writings. More important, however, was that by the time he wrote Thoughts on Design, reading about design had helped him to build a solid critical foundation, as well as to express himself through structure and rhythm.
+
+                            While Rand emulated the urbanity of such authors, the advertising business taught him the virtue of brevity; much of his early writing took its cadence from the ad copy of the time. He also borrowed its technique. In “Too Many Cooks”, written in 1947 for the British magazine Art &amp; Industry, Rand “sold” his notions of design:
+
+                            I have no particular credo, except that I must insist on the social responsibility of the advertising artist. He can take the easiest way, the primrose path of popular bad taste; he can truckle to the lower instincts of the herd andfor a while, at least, he will secure material rewards. But I do believe that living and working with the canons of good taste (trust and honesty) he will receive spiritual rewards…
+
+                            In an essay entitled “The Designer’s Role” (later revised for Thoughts on Design), he added the oratorical flourish of chaining verbs together in sequence for greater emphasis. His writing began to read more and more like a sermon:
+
+                            The designer does not, as a rule, begin with a preconceived idea… Consciously or not, he analyzes, interprets, translates… He improvises, invents new techniques and combinations. He coordinates and integrates his material so that he may restate his problem in terms of ideas, pictures, forms, and shapes. He unifies, simplifies, eliminates superfluities. He symbolizes… abstracts from his material by association and analogy. He intensifies and reinforces his symbols with appropriate accessories to achieve clarity and interest. He draws upon instinct and intuition. He considers the spectator, his feelings and predilections.
+
+                            Over the next 30 years, although Rand wrote occasional articles for design journals and penned several introductions to friends’ monographs, he spent most of his time on design. In 1984, however, he decided to update his first book.
+
+                            While many of the essays in Paul Rand: A Designer’s Art are revisions of those in Thoughts, Rand recast and redesigned the entire book, bringing to it his customary attention to detail. He selected a flexible cover rather than a rigid one, “to make it more friendly”, and arranged the pages for surprise and rhythm: “I try to keep material in contrast so you don’t fall asleep—a black page, then a gray one, then a blank one.”
+
+                            Finally, Rand supervised the printing, driving the printers crazy with his changes. By the time the dust settled at the plant, he had altered half the book. His reasoning: “That’s part of the design process; being in complete control of production is essential for an artist.”
+
+                            A Designer’s Art, the first volume of what would later be known as “the Rand trilogy”, codified the lessons Rand had learned over his long career. He began with Vasari’s definition of design—“the animating principle of all creative processes”—and leapt from there, putting to rest the common misperception of design as nothing more than ornament applied to some otherwise functional object. He wrote that graphic design “…is essentially about visual relationships—providing meaning to a mass of unrelated needs, ideas, words, and pictures. It is the designer’s job to select and fit this material together—and make it interesting.”
+
+                            Had Rand not written another word after A Designer’s Art, his status as pundit would have been secure. Despite the gruff introductory references to graffiti and punk, it was not a contentious book; Rand was above—or beyond—these battles. Instead, the book was a sermon from the mount, with every essay a commandment—not about what to design, but about how to think about design. It defined design as a unified activity, based on analysis and governed by imagination.
+
+                            A Designer’s Art went beyond style to analyze larger concepts such as beauty, intelligence, repetition, symbol, and humor. It put Rand back into the spotlight as the design world’s eminence grise, but it also ensconced him in a pulpit that—by its existence—would eventually place him at odds with the younger generation.
+
+                            Throughout the time he was working on A Designer’s Art, Rand was focused inward, sealed in a cocoon of his own ideas. After the book was published, however, he again turned outward and gave his attention to the extensive changes taking place in the design of the ’70s and ’80s. As a devout Modernist, Rand found much of the new work wanting.
+
+                            Perhaps it was inevitable that someone with such a fervent commitment to his own truths would resist alternatives. But Rand was not locked into Modernism from stubbornness or inertia; rather, he saw Modernism as existing beyond style, as being more than a suit of clothes that could be discarded as fashion dictated. In the face of change, Rand remained devout to a fault, even to the point of intolerance.
+
+                            If A Designer’s Art restated Rand’s own principles, his 1993 Design, Form, and Chaos reached further back, to the roots of design. Composed as an exploration of aesthetic theory (which Rand believed was drowning in a torrent of trendiness), Design, Form, and Chaos differed from his earlier books in both structure and critical stance.
+
+                            In response to the times, this book was deliberately written and designed with a more classical sensibility. The essays were longer and more didactic. Rand, a more seasoned writer, had also become more world weary, as in this line from the introduction:
+
+                            Design, as we shall see, is also an instrument of disorder and confusion. Designfor deception is often more persuasive than design for good; seduction is one of its many masks.
+
+                            Design, Form, and Chaos was divided into three sections, loosely devoted to theory, practice, and criticism. The first, “Form and Content”, expanded on the fundamental principles that had driven Rand’s practice for 50 years.
+
+                            The second section, “Presentation”, included facsimiles of Rand’s legendary presentation booklets for Next, IBM, The Limited, Morningstar, and other clients. (Rand started writing and publishing these limited-run publications in the early 1980s to show his clients how he derived the final—and only—design solution to their problems. For many designers, these Platonic analyses of logos and trademarks served as virtual textbooks on the nature of graphic problem solving.)
+
+                            The third section included four unrelated essays on the state of design. The last, “From Cassandre to Chaos”, originally published in the AlGA Journal of Graphic Design in 1995, was a harsh critique of contemporary and “experimental” design. Although Rand did not name names, he provided a laundry list of mannerisms and conceits that could easily be affixed to individuals and schools. The essay polarized the design world into two camps, Modern and Postmodern—those who adhered to the canon of economy and functionality versus those who believed that new theories and technologies demanded increasingly complex and expressive design. It ignited a dispute over form and style that cut to the very heart of how and why designers practice. In response, many younger designers, led by Postmodern academic critics, labeled Rand a hopeless reactionary.
+
+                            The times were not on Rand’s side. Design, Form, and Chaos was criticized as a flawed sequel. The New York Times Book Review acknowledged Rand as a pioneer, but dismissed his pessimistic tone as a disservice to his legacy. He became fair game for critics, who jousted with his persona as defender of the Modernist faith. Of course, by 1994 Modernism was under attack by academics, who branded it as a rigid style that had lost much of its relevance. And many of the objections to Rand’s inflammatory stance came from those who demanded their own right to generational ascendancy. Since Rand was among the few of his generation who spoke out publicly, he quickly became a symbol ofthe old guard defending its tenacious—and some said tenuous—hold.
+
+                            Although Rand was in part a victim of the times, Design, Form, and Chaos is not above criticism. Though more ambitious than his previous books, it was not as cohesive or as finely tuned. The essays in “Form and Content”, for example, were labored. They suffered under the weight of quotations from philosophers such as Kant and William James, and from conservative social critics such as William Safire and Christopher Lorenz. Rand used quotes to ratify his own truths, but his overreliance on others’ words and thoughts dimin- ished his own authority. His presentation texts, by contrast, used only his own words—and were far more articulate and convincing.
+
+                            By his 80th birthday, energized by the brouhaha surrounding Design, Form, and Chaos, Rand was contemplating a new book. He had given some thought to writing a history of design, but did not pursue it. Instead, he created another collection of essays and presentation guides, which were linked by the incontrovertible notions of form that governed his life. An attempt to meld autobiography and history, From Lascaux to Brooklyn revealed Rand’s view of his own lineage:
+
+                            It is naive to believe that one can explain in just a few words… the complexities of the ineffable—of aesthetics—and the definitions of art, form, design, intuition, and expression, as well as the ramifications of communication. My purpose in writing this book is to clarify problems that have always baffled me and to emphasize the importance of the idea as such, a unique thought and the very life of form. This book is not a comprehensive study of the philosophy of art. The ideas expressed here are based on empirical practices, laced with whatever wisdom I can claim or quote.
+
+                            Intuitively or deliberately, Rand seems to have been attempting a summation of his career that could serve as his legacy. He dedicated the book “to all my friends and enemies”. And as it turned out, this was to be his final testament.
+
+                            From Lascaux to Brooklyn was met with mixed reviews. Some critics in the design press wrote it off as more sniping at contemporary practice, and a Postmodern British architect writing in The New York Times Book Review implied that the book was Modernist propaganda.
+
+                            Neither view is fair or accurate. If this had not been the last of a trilogy, but the first, it would have been praised as a revealing if quirky exegesis on modern practice by the preeminent American Modernist master. It is arguably Rand’s most eloquent book. (For example, in a single, concise, five-paragraph essay titled “More About the Grid”, he lays to rest the myth that the grid is a repressive tool.) Yet given the tenor of the times, it was promptly dissected with a dull ideological knife.
+
+                            Whatever hackles Rand raised, his devotion to design went unquestioned. He enlivened the debate on the ramifications of design in society; few other designers have written as eloquently and accessibly about theory and practice.
+
+                            For, while Rand’s designs demonstrate the virtues of precision, economy, and wit, his writing backs up the lessons with solid, explicit logic. Despite his flaws as an author, his books on the process of design will continue to inspire designers allover the world-not only for the brilliance of his ideas, but for the fervor that impelled them onto the printed page.
+
+                            ---
+
+                            ##### A Reminiscence
+
+                            On October 3, 1996, a month and a half before he died, Paul Rand spoke at New York’s Cooper Union. Over 1,000 attendees, at least half of them young students (many more, according to the dean, than attended David Carson’s lecture the previous spring), packed the hall for Rand’s penultimate public appearance.* It was a “conversation” between the two of us to inaugurate his retrospective at Cooper Union’s Houghton Gallery and Herb Lubalin Center—the best of many such conversations we had since 1985, when the 71-year-old Rand reluctantly agreed to go on the lecture circuit.
+
+                            Despite his bluff exterior, for most of his career he felt uncomfortable with large audiences. (He even limited his classes to a few students at a time.) When pressed to lecture at the School of Visual Arts upon the 1985 publication of A Designer’s Art, he agreed on condition that I act as his moderator. Although we never rehearsed, the one-on-one format reduced his anxiety. In fact, he began to relish the opportunity to address the increasingly large audiences of young people who came out to hear the last pioneer American Modernist.
+
+                            In a way, Rand had been preparing himself for public speaking since he wrote the essays in Thoughts on Design (1947). These essays and others have been anthologized in three later books: Paul Rand: A Designer’s Art (1985), Design, Form, and Chaos (1994), and From Lascaux to Brooklyn (1996).
+
+                            In our public conversations, carefully crafted design theories flowed effortlessly from his tongue—without the formality of his writing. Eventually all I did was tum on the switch and let a happy Rand apply that rough Brooklynese to his beloved subject, graphic design.
+
+                            At the Cooper Union talk, Rand spoke of his life as inextricably wed to design, joking, “Design is a disease. There’s no other way to explain why I’ve stuck with it, or it has stuck with me, this long.”
+
+                            Those who came expecting a diatribe against declining standards were disappointed. Contrary to his curmudgeonly image, Rand didn’t go on about the good old days or grumble about graphics going to hell in a handbasket. Rather, he talked matter-of-factly about the truths inherent in the principles that he had embraced 50 years earlier: form, content, and, of course, humor. With infectious enthusiasm, he asserted that Modernism was alive and well—as long as he was. For Rand, Modernism was not a style or nostalgic conceit. It was the foundation on which he had built a practical design philosophy combining aesthetics, economy, and functionality with native wit and commercial savvy.
+
+                            — Steven Heller
+
+                            *Rand made his last public appearance at the MIT Media Lab a week and a half before his death on November 24, 1996.
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+
+
+
+        include ../../../../__MIXINS/_include-image-carousel.pug
+
+        include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

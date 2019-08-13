@@ -1,0 +1,128 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'The Case for the Ampersand'
+    - var bodyID    = 'writing'
+    - var bodyClass = 'articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Writing/Articles/1989%20The%20Case%20for%20the%20Ampersand/Web/1989-09-10-the-case-for-the-ampersand-original-450.jpg'
+
+    - var publishedInTitle      = 'New York Times, September 10, 1989'
+    - var publishedInSubtitle   = 'A critical review of Eric Gill’s “An Essay on Typography”'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1989%20The%20Case%20for%20the%20Ampersand/Web/1989-09-10-the-case-for-the-ampersand-original-800.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1989%20The%20Case%20for%20the%20Ampersand/Web/1989-09-10-the-case-for-the-ampersand-original.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.nytimes.com/1989/09/10/books/the-case-for-the-ampersand.html'
+    - var abe                   = 'no'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3D%2522New%2BYork%2BTimes%2522%252C%2BSeptember%2B10%252C%2B1989%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'no'
+    - var amazonLink            = 'CHANGE_ME'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Logos, Flags, and Escutcheons'
+    - var nextDate              = '1991'
+    - var nextDescription       = 'Also available in “Looking Closer: Critical Writings on Graphic Design” from Allworth Press'
+    - var nextLink              = '/writing/articles/logos-flags-and-escutcheons.html'
+
+    - var relatedItemLink1      = '/writing/articles/trademarks-of-the-world-preface.html'
+    - var relatedItemTitle1     = 'Trademarks and Symbols of the World Preface'
+    - var relatedItemFootnote1  = '1965'
+
+    - var relatedItemLink2      = '/writing/articles/language-of-art.html'
+    - var relatedItemTitle2     = 'Language of Art'
+    - var relatedItemFootnote2  = 'Contributed by John Maeda'
+
+    - var relatedItemLink3      = '/writing/articles/object-lessons.html'
+    - var relatedItemTitle3     = 'Object Lessons'
+    - var relatedItemFootnote3  = 'Originally published in The New Criterion, 1993'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1989%20The%20Case%20for%20the%20Ampersand/Web/1989-09-10-the-case-for-the-ampersand-original-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1989%20The%20Case%20for%20the%20Ampersand/Web/1989-09-10-the-case-for-the-ampersand-original.jpg', title: 'www.nytimes.com/1989/09/10/books/the-case-for-the-ampersand.html'})
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =            FULL WIDTH IMAGE HEADER            =
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                A critical review of Eric Gill’s “An Essay on Typography”  
+                Originally published in New York Times, September 10, 1989
+
+            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+    .cd-main-content
+        .grid-container
+
+
+            //- ==========  BODY  ==========
+
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content
+                    p.footnote.text-center
+                        | Estimated reading time: 
+                        span.text-bold.reading-time
+                        |   |  Select text to share via Facebook, Twitter or Email
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        ##### This admirable little book, first published in 1931 in a limited edition, is important less for its erudition about the theory and practice of typography than for the moral support it gives to artists, whose principal concern is the quality of their work; to businessmen, who are chiefly interested in the bottom line; and to printers and publishers, who are more concerned with traditional practices than with wild ideas.
+
+                        Even though “An Essay on Typography” deals with technical difficulties, the history and evolution of letters, the craft of typography, type design and manufacturing, page makeup, color and ink preparation, paper making, book binding, publishing and even orthography, it is written with clarity, humility and a touch of humor. Eric Gill’s writing style moves between a chuckle and a grimace, avoiding a lot of technical jargon and pretentious allusions. And Gill, who was not only a British typographer, but a sculptor, engraver and writer, panders to no one. One wonders how so much could have been packed into such a tiny package - probably enough to have made experts in typography and printing like the Americans Daniel Berkeley Updike and Theodore L. De Vinne marvel.
+
+                        Gill’s ultimate goal, like that of any serious artist, had less to do with means than with ends - the proper balance between form and content, between man and machine. He cautions the worker not to get too involved with the machine. “It is important that the workman should not have to watch his instrument, that his whole attention should be given to work.” “The mind,” he further asserts, “is the arbiter of letter forms, not the tool or the material.” For those dazzled by the computer, who see the machine as a magic muse, these words are particularly useful.
+
+                        On more than one occasion he implies that the businessman’s involvement in esthetics is incidental, not intentional. “And the printer whose concern is quality,” he says, “is not a man of business.” Similar expressions - “by men of brains rather than by men of business” and “the history of printing has been the history of commercial exploitation” - sum up Gill’s attitude about industry, even though he owed much of his livelihood to English type founders.
+
+                        He even advises the publisher where his name should appear in a book, and calls the ordinary title page “a showing off ground … an advertisement for the printer and publisher.” The names of printer and publisher, he says, should appear at the end of the book where they logically belong. The design of the title page of the 1931 edition, for example, is a masterpiece of understatement, containing the title, the author’s name and the table of contents in a design so splendid that, even today, it would be considered revolutionary.
+
+                        Speaking of some typographers’ grammatical conventions, he comments, “the absurd rule that the ampersand should only be used in ‘business titles’ should be rescinded, &amp; there are many other contractions which a sane typography should encourage.” He also frowned on such traditional practices as fitting a particular typeface to a particular subject, citing people who believed that “reprints of Malory should be printed in ‘Black Letter’ and books of technology in ‘Sans-serif.’ ” He agreed that for certain subjects, that practice could be useful, but argued that it is wrong as a general rule. He had much to say about mixing typefaces as well, preferring not to do so even if the face originally chosen was inferior.
+
+                        He also emphasizes the importance of reasonably close and even spacing of words and letters, for the sake of legibility and looks. And, in the last chapter, he even thrashes out the problems of the unreasonableness of English spelling, displaying some very useful examples to make his point.
+
+                        To Gill’s eye, lettering was “as beautiful a thing to see as any sculpture or painted picture.” Yet the relationship between words and spelling, between printed words and speech, he considered irrational, and he suggested that some sort of shorthand system, which he called phonography, be provided as a possible solution. “We need a system in which there is real correspondence between speech … the sounds of language and the means of communication.” This had nothing to do with speed. “Think slowly, speak slowly, write slowly” is what he exhorted his readers.
+
+                        Although Gill was not a functionalist in the Bauhaus tradition, readability, not fashion, determined the form of his designs. And his design of this book (at least the earlier editions) is consistent with the contents, a fine example of form following function.
+
+                        Eric Gill was described by one of his compatriots as having “a commonsensical twinkle in his alert eyes.” His dress was that of a maverick but his demeanor was proper and unaffected. He was an enigma, his life a paradox, as Fiona MacCarthy’s startling recent biography revealed, but his work essentially traditional. His words, for the most part - and one can quibble about some of his ideas - are as pertinent today as they were almost 60 years ago, when this book was written.
+
+                        To say more about Gill’s thoughts and ideas is to contradict his notions of simplicity and brevity. His work and words speak eloquently of his art. But there is something more to say about the design and typography of the present edition which, after all, should not contradict the author’s ideas. It is puzzling that the publishers chose to photocopy the 1936, rather than the 1954, edition of this book. The Joanna typeface, the ragged setting, the paragraphing, the use of the ampersand and contractions, to be sure, are all there. But the type seems too large and obtrusive, the page proportionately too small for the large type, the paper too bulky and insufficiently opaque, and the book too thick and clumsy for its size. This version misses the subtlety of earlier editions. In a certain sense, it’s like altering the author’s text to suit the publisher’s preferences or prejudices.
+
+                        What is more perplexing is the design of the new jacket, which, besides seeming a bit prissy and glaringly inappropriate to the spirit and contents of the book, would probably have seemed dated even in 1931. The 1936 and 1954 jackets featured a very large title in Gill Sans type, which was more authoritative and more suitable for the purpose of attracting the prospective buyer. It served also as a dramatic visual complement to the small format, while it proudly announced that this is a book about letters and not about fairy tales.
+
+                        Having said all this, I still find the contents of this book timeless and absorbing for the layman and practitioner, student and teacher, for those who love to read, and for those who love the shapes of letters.
+
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        //- include ../../__MIXINS/_include-image-carousel.pug
+
+        include ../../__MIXINS/_include-published-in.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

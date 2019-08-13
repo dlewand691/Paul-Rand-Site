@@ -1,0 +1,221 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Art Director’s Club of New York'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = 'CHANGE_ME'
+    - var nextType  = 'Client'
+    - var nextTitle = 'Associated Merchandising Corp'
+    - var nextLink  = 'Associated-Merchandising-Corp'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+
+            .grid-x.grid-margin-x.align-center
+                +projectDivider("1963: 8th Annual Visual Communications Conference")
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1963%208th%20Annual%20Visual%20Communications%20Conference/Web/Art%20Directors%20Club%20of%20New%20York%201963%208th%20Annual%20Visual%20Communications%20Conference%20stationery-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1963%208th%20Annual%20Visual%20Communications%20Conference/Web/Art%20Directors%20Club%20of%20New%20York%201963%208th%20Annual%20Visual%20Communications%20Conference%20stationery.jpg",
+                    title: "Stationery",
+                    footnote1: "Image courtesy of Wright Auction House, Chicago, IL.",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1963%208th%20Annual%20Visual%20Communications%20Conference/Web/Art%20Directors%20Club%20of%20New%20York%201963%208th%20Annual%20Visual%20Communications%20Conference%20stationery,%20letterhead-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1963%208th%20Annual%20Visual%20Communications%20Conference/Web/Art%20Directors%20Club%20of%20New%20York%201963%208th%20Annual%20Visual%20Communications%20Conference%20stationery,%20letterhead.jpg",
+                    title: "Letterhead",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1963%208th%20Annual%20Visual%20Communications%20Conference/Web/Art%20Directors%20Club%20of%20New%20York%201963%208th%20Annual%20Visual%20Communications%20Conference%20stationery,%20envelope-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1963%208th%20Annual%20Visual%20Communications%20Conference/Web/Art%20Directors%20Club%20of%20New%20York%201963%208th%20Annual%20Visual%20Communications%20Conference%20stationery,%20envelope.jpg",
+                    title: "Envelope",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1963%208th%20Annual%20Visual%20Communications%20Conference/Web/Art%20Directors%20Club%20of%20New%20York%201963%208th%20Annual%20Visual%20Communications%20Conference%20stationery,%20registration%20form-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1963%208th%20Annual%20Visual%20Communications%20Conference/Web/Art%20Directors%20Club%20of%20New%20York%201963%208th%20Annual%20Visual%20Communications%20Conference%20stationery,%20registration%20form.jpg",
+                    title: "Registration form",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1963%208th%20Annual%20Visual%20Communications%20Conference/Web/Art%20Directors%20Club%20of%20New%20York%201963%208th%20Annual%20Visual%20Communications%20Conference%20stationery,%20tickets-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1963%208th%20Annual%20Visual%20Communications%20Conference/Web/Art%20Directors%20Club%20of%20New%20York%201963%208th%20Annual%20Visual%20Communications%20Conference%20stationery,%20tickets.jpg",
+                    title: "Tickets",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1963%208th%20Annual%20Visual%20Communications%20Conference/Web/Art%20Directors%20Club%20of%20New%20York%201963%208th%20Annual%20Visual%20Communications%20Conference%20poster%2004-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1963%208th%20Annual%20Visual%20Communications%20Conference/Web/Art%20Directors%20Club%20of%20New%20York%201963%208th%20Annual%20Visual%20Communications%20Conference%20poster%2004.jpg",
+                    title: "Poster, v1",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1963%208th%20Annual%20Visual%20Communications%20Conference/Web/Art%20Directors%20Club%20of%20New%20York%201963%208th%20Annual%20Visual%20Communications%20Conference%20poster%2003-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1963%208th%20Annual%20Visual%20Communications%20Conference/Web/Art%20Directors%20Club%20of%20New%20York%201963%208th%20Annual%20Visual%20Communications%20Conference%20poster%2003.jpg",
+                    title: "Poster, v2",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+
+            +projectDivider("1983: Hall of Fame reception & dinner stationery")
+            .grid-x.grid-margin-x.align-center
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1983%20Hall%20of%20Fame%20reception%20dinner/Web/Art%20Directors%20Club%20of%20New%20York%201983%20Hall%20of%20Fame%20reception%20dinner%20stationery-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1983%20Hall%20of%20Fame%20reception%20dinner/Web/Art%20Directors%20Club%20of%20New%20York%201983%20Hall%20of%20Fame%20reception%20dinner%20stationery.jpg",
+                    title: "Stationery",
+                    footnote1: "Image courtesy of Wright Auction House, Chicago, IL.",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1983%20Hall%20of%20Fame%20reception%20dinner/Web/Art%20Directors%20Club%20of%20New%20York%201983%20Hall%20of%20Fame%20reception%20dinner%20reply%20envelope%20front-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1983%20Hall%20of%20Fame%20reception%20dinner/Web/Art%20Directors%20Club%20of%20New%20York%201983%20Hall%20of%20Fame%20reception%20dinner%20reply%20envelope%20front.jpg",
+                    title: "Reply envelope",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1983%20Hall%20of%20Fame%20reception%20dinner/Web/Art%20Directors%20Club%20of%20New%20York%201983%20Hall%20of%20Fame%20reception%20dinner%20reply%20card%20front-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1983%20Hall%20of%20Fame%20reception%20dinner/Web/Art%20Directors%20Club%20of%20New%20York%201983%20Hall%20of%20Fame%20reception%20dinner%20reply%20card%20front.jpg",
+                    title: "Reply card, front",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1983%20Hall%20of%20Fame%20reception%20dinner/Web/Art%20Directors%20Club%20of%20New%20York%201983%20Hall%20of%20Fame%20reception%20dinner%20reply%20card%20back-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1983%20Hall%20of%20Fame%20reception%20dinner/Web/Art%20Directors%20Club%20of%20New%20York%201983%20Hall%20of%20Fame%20reception%20dinner%20reply%20card%20back.jpg",
+                    title: "Reply card, back",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1983%20Hall%20of%20Fame%20reception%20dinner/Web/Art%20Directors%20Club%20of%20New%20York%201983%20Hall%20of%20Fame%20reception%20dinner%20envelope%20large%20front-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1983%20Hall%20of%20Fame%20reception%20dinner/Web/Art%20Directors%20Club%20of%20New%20York%201983%20Hall%20of%20Fame%20reception%20dinner%20envelope%20large%20front.jpg",
+                    title: "Outer envelope",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1983%20Hall%20of%20Fame%20reception%20dinner/Web/Art%20Directors%20Club%20of%20New%20York%201983%20Hall%20of%20Fame%20reception%20dinner%20envelope%20front-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1983%20Hall%20of%20Fame%20reception%20dinner/Web/Art%20Directors%20Club%20of%20New%20York%201983%20Hall%20of%20Fame%20reception%20dinner%20envelope%20front.jpg",
+                    title: "Envelope",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1983%20Hall%20of%20Fame%20reception%20dinner/Web/Art%20Directors%20Club%20of%20New%20York%201983%20Hall%20of%20Fame%20reception%20dinner%20poster-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1983%20Hall%20of%20Fame%20reception%20dinner/Web/Art%20Directors%20Club%20of%20New%20York%201983%20Hall%20of%20Fame%20reception%20dinner%20poster.jpg",
+                    title: "Poster",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+            +projectDivider("1988: Call for Entries")
+            .grid-x.grid-margin-x.align-center
+                +galleryItem-cardLink(
+                    "8", "12",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1988%20Call%20for%20Entries/Web/Art%20Directors%20Club%20of%20New%20York%20Call%20for%20Entries%20Poster%201988%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1988%20Call%20for%20Entries/Web/Art%20Directors%20Club%20of%20New%20York%20Call%20for%20Entries%20Poster%201988%2001.jpg",
+                    title: "Poster",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1988%20Call%20for%20Entries/Web/Art%20Directors%20Club%20of%20New%20York%20Call%20for%20Entries%20Postcard%201988-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1988%20Call%20for%20Entries/Web/Art%20Directors%20Club%20of%20New%20York%20Call%20for%20Entries%20Postcard%201988.jpg",
+                    title: "Postcard",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1988%20Call%20for%20Entries/Web/Art%20Directors%20Club%20of%20New%20York%20Call%20for%20Entries%20Sketch%201988%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1988%20Call%20for%20Entries/Web/Art%20Directors%20Club%20of%20New%20York%20Call%20for%20Entries%20Sketch%201988%2001.jpg",
+                    title: "Sketch",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "4", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1988%20Call%20for%20Entries/Web/Art%20Directors%20Club%20of%20New%20York%20Call%20for%20Entries%20Sketch%201988%2002-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1988%20Call%20for%20Entries/Web/Art%20Directors%20Club%20of%20New%20York%20Call%20for%20Entries%20Sketch%201988%2002.jpg",
+                    title: "Sketch #2",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

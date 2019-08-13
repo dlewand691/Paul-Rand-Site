@@ -1,0 +1,1222 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'The Work'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = 'CHANGE_ME'
+    - var nextType  = 'Client'
+    - var nextTitle = 'Accent Software International'
+    - var nextDescription      = 'CHANGE_ME'
+    - var nextLink  = 'Accent-Software-International'
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            //- =====================================
+            //- =            GALLERY HEAVY            =
+            //- =====================================
+            .grid-container
+                .grid-x.grid-margin-x.align-center.small-mb4
+                    .small-12.cell.text-center
+                        //- /*==============================  CLIENT  ==============================*/
+                        h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                        if dates == 'CHANGE_ME'
+                        else
+                            p!= dates
+
+                //- /*==============================  PROJECTS  ==============================*/
+                .grid-x.grid-margin-x.small-up-2.medium-up-3.large-up-4
+                    +galleryItem-cardImageZoom(
+                        "ABC.html",
+                        "https://assets.paulrand.design/Works/American%20Broadcasting%20Company%20%28ABC%29/ABC-1962.svg",
+                        "American Broadcasting Company (ABC)",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Accent-Software-International.html",
+                        "https://assets.paulrand.design/Works/Accent%20Software%20International/Accent-Software-International-1994.svg",
+                        "Accent Software International",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "ACI.html",
+                        "https://assets.paulrand.design/Works/Advertising%20Composition%20Inc%20%28ACI%29/Web/ACI%20Christmas%20Card.jpg",
+                        "Advertising Composition Inc (ACI)",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Advertising-Typographers-Association-of-America.html",
+                        "https://assets.paulrand.design/Works/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks/Type%20Talks%201964/Web/Advertising%20Typographers%20Association%20of%20America-%20Type%20Talks%201964.jpg",
+                        "Advertising Typographers Association of America",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "AIGA.html",
+                        "https://assets.paulrand.design/Works/AIGA/AIGA-1982-color-not-used.svg",
+                        "AIGA",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Airwick.html",
+                        "https://assets.paulrand.design/Works/Airwick/Air-wick.svg",
+                        "Air-Wick",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "American-Advertising-Guild.html",
+                        "https://assets.paulrand.design/Works/American%20Advertising%20Guild/Web/American%20Advertising%20Guild%20Announcement%20Card%201941-450.jpg",
+                        "American Advertising Guild",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "American-Express.html",
+                        "https://assets.paulrand.design/Works/American%20Express/American-Express-v1-1994.svg",
+                        "American Express",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "American-Printer-Magazine.html",
+                        "https://assets.paulrand.design/Works/American%20Printer%20Magazine/Web/American%20Printer%20Magazine%20vol%2097%20no%202%20November%201933-450.jpg",
+                        "American Printer Magazine",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Ancient-Age-Whiskey.html",
+                        "https://assets.paulrand.design/Works/Ancient%20Age%20Whiskey/Ancient-Age.svg",
+                        "Ancient Age Whiskey",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Anton-Maix-Fabrics.html",
+                        "https://assets.paulrand.design/Works/Anton%20Maix%20Fabrics/Abacus%20Fabric/Web/Anton%20Maix-%20Abacus%20Fabric%2000-450.jpg",
+                        "Anton Maix Fabrics",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Apparel-Arts.html",
+                        "https://assets.paulrand.design/Works/Apparel%20Arts/vol%209%20no%201%20July-August%201938/Web/Apparel%20Arts%20Magazine%20vol%209%20no%201%20July-August%201938-450.jpg",
+                        "Apparel Arts Magazine",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Architectural-Forum.html",
+                        "https://assets.paulrand.design/Works/Architectural%20Forum/New%20Address/Web/Architectural%20Forum%20New%20Address%2001-450.jpg",
+                        "Architectural Forum",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Art-Directors-Club-of-New-York.html",
+                        "https://assets.paulrand.design/Works/Art%20Directors%20Club%20of%20New%20York/1988%20Call%20for%20Entries%20Postcard/Web/Art%20Directors%20Club%20of%20New%20York%20Call%20for%20Entries%20Postcard%201988-450.jpg",
+                        "Art Directors Club of New York",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Associated-Merchandising-Corp.html",
+                        "https://assets.paulrand.design/Works/Associated%20Merchandising%20Corp/Web/Associated%20Merchandising%20Corp%20Ad-%20Art%20Directors%20show%2C%201937%2001-450.jpg",
+                        "Associated Merchandising Corp",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Atlas-Crankshaft.html",
+                        "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Atlas-Crankshaft-1964.svg",
+                        "Atlas Crankshaft",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Autocar-Corporation.html",
+                        "https://assets.paulrand.design/Works/Autocar%20Corporation/Mechanized%20Mules%20of%20Victory/Web/Mechanized%20Mules%20of%20Victory%2001-450.jpg",
+                        "Autocar Corporation",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Ayerst-McKenna-Harrison-Pharmaceutical.html",
+                        "https://assets.paulrand.design/Works/Ayerst%20McKenna%20Harrison%20Pharmaceutical/Beminal%20One%20Family%20Folder/Web/Beminal%20One%20Family%20Folder%2C%20front-450.jpg",
+                        "Ayerst, McKenna, Harrison Pharmaceutical",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Bab-O.html",
+                        "https://assets.paulrand.design/Works/Bab-O/Bab-O-1951.svg",
+                        "Bab-O",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Benjamin-Franklin-200th-Anniversary.html",
+                        "https://assets.paulrand.design/Works/Benjamin%20Franklin%20200th%20Anniversary/Benjamin-Franklin-200th-Anniversary-Celebration-1990.svg",
+                        "Benjamin Franklin 200th Anniversary",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Blatz-Beer.html",
+                        "https://assets.paulrand.design/Works/Blatz%20Beer/Web/Blatz%20Continental%20Special-450.jpg",
+                        "Blatz Beer",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Borzoi.html",
+                        "https://assets.paulrand.design/Works/Borzoi/Borzoi-1945.svg",
+                        "Borzoi Books",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Bureau-of-Indian-Affairs.html",
+                        "https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/US-Department-of-the-Interior-Bureau-of-Indian-Affairs-1968.svg",
+                        "Bureau of Indian Affairs",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Cabbages-Kings-Catering.html",
+                        "https://assets.paulrand.design/Works/Cabbages%20%26%20Kings%20Catering/Cabbages-and-Kings-Catering-1980.svg",
+                        "Cabbages Kings Catering",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Century-Lighting.html",
+                        "https://assets.paulrand.design/Works/Century%20Lighting/Century-Lighting-1949.svg",
+                        "Century Lighting",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "CIO-Chorus.html",
+                        "https://assets.paulrand.design/Works/CIO%20Chorus/Web/CIO%20Chorus%2001-450.jpg",
+                        "CIO Chorus",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Color-Lab.html",
+                        "https://assets.paulrand.design/Works/Color%20Lab/ColorLab.svg",
+                        "Color Lab",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Colorforms.html",
+                        "https://assets.paulrand.design/Works/Colorforms/Colorforms-1959.svg",
+                        "Colorforms",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Columbus-Indiana-Visitors-Bureau.html",
+                        "https://assets.paulrand.design/Works/Columbus%20Indiana%20Visitors%20Bureau/Columbus-Indiana-Visitors-Center-1973.svg",
+                        "Columbus Indiana Visitors Bureau",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Computer-Impressions.html",
+                        "https://assets.paulrand.design/Works/Computer%20Impressions/Computer-Impressions-1995.svg",
+                        "Computer Impressions",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Conde-Nast.html",
+                        "https://assets.paulrand.design/Works/Conde%20Nast/Web/Conde%20Nast%2C%20Glamour%20Magazine%2C%20September%201956-450.jpg",
+                        "Conde Nast",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Connecticut-Art-Directors-Club.html",
+                        "https://assets.paulrand.design/Works/Connecticut%20Art%20Directors%20Club/Connecticut-Art-Directors-Club-1986.svg",
+                        "Connecticut Art Directors Club",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Consolidated-Cigar-Corporation.html",
+                        "https://assets.paulrand.design/Works/Consolidated%20Cigar%20Corporation/Consolidated-Cigar-Corporation-1959.svg",
+                        "Consolidated Cigar Corporation",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Container-Corporation-of-America.html",
+                        "https://assets.paulrand.design/Works/Container%20Corporation%20of%20America/Web/Container%20Corporation%20of%20America%2001-450.jpg",
+                        "Container Corporation of America",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Cooks-Champagne.html",
+                        "https://assets.paulrand.design/Works/Cooks/Web/Cooks-450.jpg",
+                        "Cooks Champagne",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Coordinator-of-Inter-American-Affairs.html",
+                        "https://assets.paulrand.design/Works/Coordinator%20of%20Inter%20American%20Affairs/Web/Coordinator%20of%20Inter%20American%20Affairs%2C%20brochure%201943%2001-450.jpg",
+                        "Coordinator of Inter American Affairs",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Coronet-Brandy.html",
+                        "https://assets.paulrand.design/Works/Coronet%20Brandy/Coronet-Snifter-Man-1942.svg",
+                        "Coronet Brandy",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Country-Club-Ice-Cream.html",
+                        "https://assets.paulrand.design/Works/Country%20Club%20Ice%20Cream/Country-Club-Ice-Cream-Company-v1.svg",
+                        "Country Club Ice Cream",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Cresta-Blanca-Wines.html",
+                        "https://assets.paulrand.design/Works/Cresta%20Blanca%20Wines/Cresta-Blanca-Wine-Co-1942.svg",
+                        "Cresta Blanca Wines",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Cummins.html",
+                        "https://assets.paulrand.design/Works/Cummins/Cummins-1962.svg",
+                        "Cummins",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Designed-and-Contributed-to.html",
+                        "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1939%20PM%20Magazine%20Vol%205%20No%202/Web/PM%20Magazine%2C%20insert%2C%20guide%20to%20World%27s%20Fair-450.jpg",
+                        "Designed and Contributed to",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Direction-Magazine.html",
+                        "https://assets.paulrand.design/Works/Direction%20Magazine/vol%201%20no%209%20November%20December%201938/Web/Direction%20Magazine%20vol%201%20no%209%20November%20December%201938%2001-450.jpg",
+                        "Direction Magazine",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Disney-Hats.html",
+                        "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2004-450.jpg",
+                        "Disney Hats",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Doug-Evans-Partners.html",
+                        "https://assets.paulrand.design/Works/Doug%20Evans%20%2B%20Partners/Doug-Evans-and-Partners-1996.svg",
+                        "Doug Evans Partners",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Dubonnet.html",
+                        "https://assets.paulrand.design/Works/Dubonnet/Dubonnet-1942.svg",
+                        "Dubonnet",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Dubouchett-Cordials.html",
+                        "https://assets.paulrand.design/Works/Dubouchett%20Cordials/DuBouchett-1949.svg",
+                        "Dubouchett Cordials",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Dunhill.html",
+                        "https://assets.paulrand.design/Works/Dunhill/Dunhill-Clothiers-1947.svg",
+                        "Dunhill",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Dupont-Corporation.html",
+                        "https://assets.paulrand.design/Works/Dupont%20Corporation/Web/Du%20Pont%2001-450.jpg",
+                        "Dupont Corporation",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "El-Producto.html",
+                        "https://assets.paulrand.design/Works/El%20Producto/El-Producto-Cigar-Man.svg",
+                        "El Producto",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Elliot-Noyes-Associates.html",
+                        "https://assets.paulrand.design/Works/Elliot%20Noyes%20%26%20Associates/Elliot-Noyes-and-Associates-1959.svg",
+                        "Elliot Noyes Associates",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Emerson-Electronic-Radio.html",
+                        "https://assets.paulrand.design/Works/Emerson%20Electronic%20Radio/Web/Emerson%2001-450.jpg",
+                        "Emerson Electronic Radio",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "English-First.html",
+                        "https://assets.paulrand.design/Works/English%20First/English-First-1993.svg",
+                        "English First",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Enron.html",
+                        "https://assets.paulrand.design/Works/Enron/Enron-1996.svg",
+                        "Enron",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Esquire.html",
+                        "https://assets.paulrand.design/Works/Esquire/Advertising/Web/Esquire%20Ad%2001-450.jpg",
+                        "Esquire",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Flair-Magazine.html",
+                        "https://assets.paulrand.design/Works/Flair%20Magazine/Web/Flair%20Magazine%2001-450.jpg",
+                        "Flair Magazine",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Ford.html",
+                        "https://assets.paulrand.design/Works/Ford/Ford-Motor-Company-1966-not-used.svg",
+                        "Ford",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                    "Fortune-Magazine.html",
+                    "https://assets.paulrand.design/Works/Fortune%20Magazine/Web/Fortune%20Magazine%20cover%20study%2001-200.jpg",
+                    "Fortune Magazine",
+                    "CHANGE_ME_AUTHOR",
+                    "CHANGE_ME_DATE"
+                    )
+
+                    +galleryItem-cardImageZoom(
+                        "Gentry-Living-Color.html",
+                        "https://assets.paulrand.design/Works/Gentry%20Living%20Color/Gentry-Living-Color-1993.svg",
+                        "Gentry Living Color",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Gibsons-Diamond-8.html",
+                        "https://assets.paulrand.design/Works/Gibson%27s%20Diamond%208/Gibson-Diamond-Co.svg",
+                        "Gibsons Diamond 8",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Glass-Packer.html",
+                        "https://assets.paulrand.design/Works/Glass%20Packer/Glass-Packer.svg",
+                        "Glass Packer",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Graphic-Arts-Production-Yearbook.html",
+                        "https://assets.paulrand.design/Works/Graphic%20Arts%20Production%20Yearbook/Web/Graphic%20Arts%20Production%20Yearbook-450.jpg",
+                        "Graphic Arts Production Yearbook",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Hamburg-American-Line.html",
+                        "https://assets.paulrand.design/Works/Hamburg%20American%20Line/Web/Hamburg-American%20Line%20Brochure%2C%201936%20Pleasure%20Cruises%20to%20the%20West%20Indies-450.jpg",
+                        "Hamburg American Line",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Harcourt-Brace-and-Company.html",
+                        "https://assets.paulrand.design/Works/Harcourt%20Brace%20and%20Company/Harcourt-Brace-and-Company-1957.svg",
+                        "Harcourt Brace and Company",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Helbros.html",
+                        "https://assets.paulrand.design/Works/Helbros/Helbros-1943.svg",
+                        "Helbros",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Holiday-Magazine.html",
+                        "https://assets.paulrand.design/Works/Holiday%20Magazine/Web/Holiday%20magazine-450.jpg",
+                        "Holiday Magazine",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Hub-TV.html",
+                        "https://assets.paulrand.design/Works/Hub%20TV/Hub-TV-1995.svg",
+                        "Hub TV",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "IBM.html",
+                        "https://assets.paulrand.design/Works/IBM/Logos/IBM-8-bar-1972.svg",
+                        "IBM",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "ideo-Design.html",
+                        "https://assets.paulrand.design/Works/ideo%20Design/Ideo-Design-1991.svg",
+                        "ideo Design",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "IITRI.html",
+                        "https://assets.paulrand.design/Works/IITRI/IITRI-1964.svg",
+                        "IITRI",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Interfaith-Day.html",
+                        "https://assets.paulrand.design/Works/Interfaith%20Day/Posters/Web/Interfaith%20Day%20Poster%201944%2001a-450.jpg",
+                        "Interfaith Day",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "International-Design-Conference-Aspen.html",
+                        "https://assets.paulrand.design/Works/International%20Design%20Conference-%20Aspen/Posters/Web/Aspen%20Design%20Conference%20Poster%2001a-450.jpg",
+                        "International Design Conference Aspen",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Irwin-Sweeney-Miller-Foundation.html",
+                        "https://assets.paulrand.design/Works/Irwin-Sweeney-Miller%20Foundation/Annual%20Reports/1971/Web/Irwin-Sweeney-Miller%20Foundation%20Annual%20Report%201971-450.jpg",
+                        "Irwin Sweeney Miller Foundation",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Irwin-Union-Financial-Corporation.html",
+                        "https://assets.paulrand.design/Works/Irwin%20Union%20Financial%20Corporation/Irwin-Financial-Corporation-1990.svg",
+                        "Irwin Union Financial Corporation",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Isaac-Goldman-Company.html",
+                        "https://assets.paulrand.design/Works/Isaac%20Goldman%20Company/Web/Isaac%20Goldman%20Company%20Calendar%201942-450.jpg",
+                        "Isaac Goldman Company",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Jacqueline-Cochran.html",
+                        "https://assets.paulrand.design/Works/Jacqueline%20Cochran/Jacqueline-Cochran-1944-v1.svg",
+                        "Jacqueline Cochran",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "James-E-Pepper-Kentucky-Bourbon.html",
+                        "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/James-E-Pepper-man-1951.svg",
+                        "James E Pepper Kentucky Bourbon",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Jazzways.html",
+                        "https://assets.paulrand.design/Works/Jazzways/Web/Jazzways-450.jpg",
+                        "Jazzways",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "John-David-Stores.html",
+                        "https://assets.paulrand.design/Works/John%20David/John-David-Stores-pre-1965.svg",
+                        "John David Stores",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Kaiser-Frazer.html",
+                        "https://assets.paulrand.design/Works/Kaiser-Frazer/Kaiser-Frazer-Service-Station-pre-1965.svg",
+                        "Kaiser Frazer",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Kaufmanns.html",
+                        "https://assets.paulrand.design/Works/Kaufmann%E2%80%99s/Kaufmanns-1948.svg",
+                        "Kaufmanns",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Ken-Magazine.html",
+                        "https://assets.paulrand.design/Works/Ken%20magazine/Ken-magazine.svg",
+                        "Ken Magazine",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Knopf.html",
+                        "https://assets.paulrand.design/Works/Knopf/Web/Knopf-%20Bell%20for%20Adano%2001-450.jpg",
+                        "Knopf",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "La-Palina-Cigars.html",
+                        "https://assets.paulrand.design/Works/La%20Palina%20Cigars/La-Palina-Cigars.svg",
+                        "La Palina Cigars",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Lee-Hats.html",
+                        "https://assets.paulrand.design/Works/Lee%20Hats/Lee-Hats-Rabbit-1947.svg",
+                        "Lee-Hats",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Logo-Presentation-Books.html",
+                        "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2001-450.jpg",
+                        "Logo Presentation Books",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Logos.html",
+                        "https://assets.paulrand.design/Works/AIGA/AIGA-1969.svg",
+                        "Logos",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Lovera-Cigars.html",
+                        "https://assets.paulrand.design/Works/Lovera%20Cigars/Advertising/Web/Lovera%20Give%20Dad%20Lovera%2001-450.jpg",
+                        "Lovera Cigars",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Lusterlite-American-Bemberg-Corp.html",
+                        "https://assets.paulrand.design/Works/Lusterlite-%20American%20Bemberg%20Corp/Web/Lusterlite%20Ad-450.jpg",
+                        "Lusterlite American Bemberg Corp",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Maidenform.html",
+                        "https://assets.paulrand.design/Works/Maidenform/Maidenform-1949.svg",
+                        "Maidenform",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Monell-Chemical-Senses-Center.html",
+                        "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Monell-Chemical-Senses-Center-1989.svg",
+                        "Monell Chemical Senses Center",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Morningstar.html",
+                        "https://assets.paulrand.design/Works/Morningstar/Morningstar-1991.svg",
+                        "Morningstar",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Mossberg-Company.html",
+                        "https://assets.paulrand.design/Works/Mossberg%20%26%20Company/Mossberg-and-Company-1987.svg",
+                        "Mossberg Company",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Museum-of-Modern-Art.html",
+                        "https://assets.paulrand.design/Works/Museum%20of%20Modern%20Art/Marcel%20Breuer%20Exhibit%20Poster/Web/Marcel%20Breuer%20Exhibit%20Poster-450.jpg",
+                        "Museum of Modern Art",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "The-National-Foundation-for-Infantile-Paralysis",
+                        "https://assets.paulrand.design/Works/National%20Foundation%20for%20Infantile%20Paralysis/Web/National%20Foundation%20for%20Infantile%20Paralysis%2001-450.jpg",
+                        "The National Foundation for Infantile Paralysis",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "National-Gallery-of-Art.html",
+                        "https://assets.paulrand.design/Works/National%20Gallery%20of%20Art/Splendor%20of%20Dresden%20Exhibit/Web/The%20Splendor%20of%20Dresden%20Poster%201978%2001-450.jpg",
+                        "National Gallery of Art",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "National-Park-Service.html",
+                        "https://assets.paulrand.design/Works/National%20Park%20Service/Boston%20National%20Historical%20Park%20Poster/Web/Boston%20National%20Historical%20Park%20Poster%2001-450.jpg",
+                        "National Park Service",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "New-York-Advertising-Co.html",
+                        "https://assets.paulrand.design/Works/New%20York%20Subways%20Advertising%20Co/Subway%20Posters%20Score/Web/Subway%20Posters%20Score%2001-450.jpg",
+                        "New York Advertising Co",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "NeXT-Computers.html",
+                        "https://assets.paulrand.design/Works/NeXT/NeXT-Computers-1986.svg",
+                        "NeXT Computers",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "No-Way-Out-Movie.html",
+                        "https://assets.paulrand.design/Works/No%20Way%20Out%20Movie/Web/No%20Way%20Out%20Ad-450.jpg",
+                        "No Way Out Movie",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Norwalk-Cancer-Center.html",
+                        "https://assets.paulrand.design/Works/Norwalk%20Cancer%20Center/Norwalk-Cancer-Center-1996.svg",
+                        "Norwalk Cancer Center",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Nutri-Cola.html",
+                        "https://assets.paulrand.design/Works/Nutri%20Cola/Nutri-Cola-1947.svg",
+                        "Nutri Cola",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Nylast.html",
+                        "https://assets.paulrand.design/Works/Nylast/Nylast.svg",
+                        "Nylast",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Ohrbachs.html",
+                        "https://assets.paulrand.design/Works/Ohrbachs/Ohrbach%27s-1945.svg",
+                        "Ohrbachs",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Okasan-Securities-Company.html",
+                        "https://assets.paulrand.design/Works/Okasan%20Securities%20Company/Okasan-Securities-Company-1991.svg",
+                        "Okasan Securities Company",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Olivetti.html",
+                        "https://assets.paulrand.design/Works/Olivetti/Web/Olivetti%2001-450.jpg",
+                        "Olivetti",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Orpi.html",
+                        "https://assets.paulrand.design/Works/Orpi/Web/Orpi-970.jpg",
+                        "Orpi",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Pacific-Coast-Borax-Co.html",
+                        "https://assets.paulrand.design/Works/Pacific%20Coast%20Borax%20Co/Pacific-Coast-Borax-Co.svg",
+                        "Pacific Coast Borax Co",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Painting.html",
+                        "https://assets.paulrand.design/Works/_Paintings/Abstract/Web/Abstract-450.jpg",
+                        "Painting",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Park-Tilford.html",
+                        "https://assets.paulrand.design/Works/Park%20Tilford/Web/Park%20Tilford%2001-970.jpg",
+                        "Park Tilford",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Pastore-DePamphilis-Rampone.html",
+                        "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/PDR-Pastore-DePamphilis-Rampone-1987.svg",
+                        "Pastore DePamphilis Rampone",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Penn-Brite-Papers.html",
+                        "https://assets.paulrand.design/Works/Penn%20Brite%20Papers/Web/Penn%20Brite%20Paper%20front-450.jpg",
+                        "Penn Brite Papers",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Photography.html",
+                        "https://assets.paulrand.design/Works/_Photography/Web/Abacus%20Photogram-450.jpg",
+                        "Photography",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Playtex.html",
+                        "https://assets.paulrand.design/Works/Playtex/Playtex-1941.svg",
+                        "Playtex",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "PM-Magazine.html",
+                        "https://assets.paulrand.design/Works/PM%20Magazine/Web/PM%20Magazine%20ad-970.jpg",
+                        "PM Magazine",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Portfolio-Magazine.html",
+                        "https://assets.paulrand.design/Works/Portfolio%20Magazine/Portfolio-Magazine.svg",
+                        "Portfolio Magazine",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Posters.html",
+                        "https://assets.paulrand.design/Works/_Posters/Book%20Week/Web/Book%20Week-450.jpg",
+                        "Posters",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "PowerPC-and-PowerOpen.html",
+                        "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerOpen-1991-blue-red.svg",
+                        "PowerPC and PowerOpen",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Rainfair-Storm-Coats.html",
+                        "https://assets.paulrand.design/Works/Rainfair%20Storm%20Coats/Rainfair-Coats-1944.svg",
+                        "Rainfair Storm Coats",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "RCA.html",
+                        "https://assets.paulrand.design/Works/RCA/Web/RCA%2001-450.jpg",
+                        "RCA",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Revlon.html",
+                        "https://assets.paulrand.design/Works/Revlon/Web/Revlon%2001-450.jpg",
+                        "Revlon",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Ringling-Brothers",
+                        "https://assets.paulrand.design/Works/Ringling%20Brothers/Web/Ringling%20Brothers%20comp-200.jpg",
+                        "Ringling Brothers",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Saybrook-RH-Macy.html",
+                        "https://assets.paulrand.design/Works/Saybrook%2C%20RH%20Macy%20and%20Co%201935/Saybrook-RH-Macy-and-Co.svg",
+                        "Saybrook RH Macy",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Schenley-Gin.html",
+                        "https://assets.paulrand.design/Works/Schenley%20Gin/Bottles/Web/Schenley%20Gin%20Bottle%20Labels-450.jpg",
+                        "Schenley Gin",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Servador.html",
+                        "https://assets.paulrand.design/Works/Servador/Servador-1996.svg",
+                        "Servador",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Shell-Oil",
+                        "https://assets.paulrand.design/Works/Shell%20Oil/Web/Shell%20Oil%20study-450.jpg",
+                        "Shell Oil",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Shigeo-Fukuda.html",
+                        "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2001-450.jpg",
+                        "Shigeo Fukuda",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Shur-Edge-Knives.html",
+                        "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Shuredge-1947.svg",
+                        "Shur Edge Knives",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Smith-Kline-French.html",
+                        "https://assets.paulrand.design/Works/Smith%2C%20Kline%20%26%20French/Smith-Kline-and-French-Laboratories-1945.svg",
+                        "Smith Kline French",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "SOS-kinderdorf.html",
+                        "https://assets.paulrand.design/Works/SOS%20Kinderdorf/Web/SOS%20Kinderdorf%20Poster-450.jpg",
+                        "SOS Kinderdorf",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Stafford-Fabrics.html",
+                        "https://assets.paulrand.design/Works/Stafford%20Fabrics/Stafford-Fabrics-1942.svg",
+                        "Stafford Fabrics",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Strathmore-Paper.html",
+                        "https://assets.paulrand.design/Works/Strathmore%20Paper/Web/Strathmore%20Paper-450.jpg",
+                        "Strathmore Paper",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "The-Limited.html",
+                        "https://assets.paulrand.design/Works/The%20Limited/The-Limited-1988.svg",
+                        "The Limited",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Thomas-Creighton.html",
+                        "https://assets.paulrand.design/Works/Thomas%20Creighton%20Co/Thomas-Creighton-Co.svg",
+                        "Thomas Creighton",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Tipton-Lakes.html",
+                        "https://assets.paulrand.design/Works/Tipton%20Lakes/Tipton-Lakes-1980.svg",
+                        "Tipton Lakes",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Tri-Arts-Press.html",
+                        "https://assets.paulrand.design/Works/Tri%20Arts%20Press/Poster/Web/Tri%20Arts%20Press%20Poster-450.jpg",
+                        "Tri-Arts Press",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Typomundus20.html",
+                        "https://assets.paulrand.design/Works/Typomundus%2020/Web/Typomundus%2020%20Call%20for%20Entries%20Poster%2001-450.jpg",
+                        "Typomundus20",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "UCLA.html",
+                        "https://assets.paulrand.design/Works/UCLA/1990%20UCLA%20Extension%2C%20Winter%20Quarter/Web/UCLA%20Extension%2C%20Winter%20Quarter%201990-450.jpg",
+                        "UCLA",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "United-Jewish-Appeal.html",
+                        "https://assets.paulrand.design/Works/United%20Jewish%20Appeal/Web/United%20Jewish%20Appeal%2001-450.jpg",
+                        "United Jewish Appeal",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "United-Parcel-Service.html",
+                        "https://assets.paulrand.design/Works/United%20Parcel%20Service%20%28UPS%29/United-Parcel-Service-UPS-1961.svg",
+                        "United Parcel Service",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "United-States-Satellite-Broadcasting.html",
+                        "https://assets.paulrand.design/Works/United%20States%20Satellite%20Broadcasting%20%28USSB%29/US-Satellite-Broadcasting-USSB-1995.svg",
+                        "United States Satellite Broadcasting",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "University-of-Hartford.html",
+                        "https://assets.paulrand.design/Works/University%20of%20Hartford/Web/University%20of%20Hartford%20Poster%201989-450.jpg",
+                        "University of Hartford",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Vichy.html",
+                        "https://assets.paulrand.design/Works/Vichy/Web/Vichy-450.jpg",
+                        "Vichy",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Wallace-Puppets.html",
+                        "https://assets.paulrand.design/Works/Wallace%20Puppets/Wallace-Puppets-1938.svg",
+                        "Wallace Puppets",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Westinghouse.html",
+                        "https://assets.paulrand.design/Works/Westinghouse/Westinghouse-1960.svg",
+                        "Westinghouse",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "William-H-Weintraub.html",
+                        "https://assets.paulrand.design/Works/William%20H%20Weintraub/Web/Weintraub%20Gropius%20Ad%2001-970.jpg",
+                        "William H Weintraub",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Wittenborn-Schultz.html",
+                        "https://assets.paulrand.design/Works/Wittenborn%20Schultz/Wittenborn%20Schultz%20Catalog/Web/Wittenborn%20Schultz%20Catalog%2000-450.jpg",
+                        "Wittenborn Schultz",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Yale.html",
+                        "https://assets.paulrand.design/Works/Yale/Yale-University-Press-1985-2010.svg",
+                        "Yale",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+                    +galleryItem-cardImageZoom(
+                        "Zebra-Press.html",
+                        "https://assets.paulrand.design/Works/Zebra%20Press/Zebra-Press-pre-1965.svg",
+                        "Zebra Press",
+                        "CHANGE_ME_AUTHOR",
+                        "CHANGE_ME_DATE"
+                        )
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+
+        include ../__MIXINS/_include-social-media.pug

@@ -1,0 +1,174 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Paul Rand'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground ='https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/PM%20Magazine%20Vol%204%20No%209%20front-450.jpg'
+
+    - var articleAuthor         = 'Unknown'
+    - var publishedInTitle      = 'PM Magazine'
+    - var publishedInSubtitle   = 'Vol. 4 No.9'
+    - var publishedInSubtitle2  = 'Featuring the first article ever written about Paul Rand’s Graphic Design work.'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/PM%20Magazine%20Vol%204%20No%209%20front-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/PM%20Magazine%20Vol%204%20No%209%20front.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/762883692'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3Dpm%2Bmagazine%2B1938%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1RZgjsZ'
+    - var modernism101          = 'yes'
+    - var modernism101Link      =  'http://modernism101.com/products-page/graphic-design/rand-paul-paul-rand-new-york-paul-randthe-composing-roomp-m-publishing-co-1938-offprint-from-pm-duplicate/#.VsyZFpMrI60'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/s/%22pm+magazine%22+paul+rand?_requestid=414055'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'AD Magazine, Vol. 7 No. 3'
+    - var nextDate              = '1941'
+    - var nextDescription       = 'By Laszlo Maholy-Nagy'
+    - var nextLink              = '/life/books-articles/articles/print/1941-ad-magazine.html'
+
+    - var relatedItemLink1      = '/life/books-articles/articles/print/1984-idea-magazine.html'
+    - var relatedItemTitle1     = 'Fiddler of Yankee Feeling'
+    - var relatedItemFootnote1  = 'Special Issue: 30 Influential Designers of the Century, 1984'
+
+    - var relatedItemLink2      = '/life/books-articles/articles/print/1999-baseline-magazine.html'
+    - var relatedItemTitle2     = 'Paul Rand’s Laboratory: The Art of Books Jackets and Covers'
+    - var relatedItemFootnote2  = 'Baseline Magazine'
+
+    - var relatedItemLink3      = '/life/books-articles/articles/print/1993-how-magazine.html'
+    - var relatedItemTitle3     = 'Masters of Design'
+    - var relatedItemFootnote3  = 'HOW Magazine, F&W Publications Inc., February 1993'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2014-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2015-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2016-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2016.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2017-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2017.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2018-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2018.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2019-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2019.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2020-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2020.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2021-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2021.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2022-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2022.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2023-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2023.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2024-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2024.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2025-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2025.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2026-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2026.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2027-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2027.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2028-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2028.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2029-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2029.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2030-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2030.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2031-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2031.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2032-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2032.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2033-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1938%20PM%20Magazine%20Vol%204%20No%209/Web/Photographed/PM%20Magazine%20Vol%204%20No%209%2033.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+    .cd-main-content
+        .grid-container
+
+
+            //- ==========  BODY  ==========
+
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content#original-article
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        This volume measures 5.5 x 7.75 with 83 [13] pages of articles and advertisements. This issue of PM rates a singular high point in the history of American Graphic design due to its spotlighting of Paul Rand—this is the FIRST article to acknowledge Rand’s professional output. Rand designed the wraparound cover as well as the 16-page letterpressed insert that shows the early development of the modern american master.
+
+                        The cover of this PM is widely recognized as one of the iconic images of 20th-century American Graphic Design, as has been reproduced countless times in design histories/anthologies. A classic piece of original ephemera from the most influential graphic designer of all time.
+
+                        Also included is a 16-page Portfolio of Reproductions from the Christmas Cards Published by the American Artists Group printed in 5-color offset and featuring many WPA-eras artists including Rockwell Kent, Thomas Hart Benton, Grant Wood, Doris Lee, Adolph Dehn, John Stuart Curry, Emil Ganso, Dale Nichols and others.
+
+                        In this issue, the PM / A-D Shorts column mentions Hans J. Barschel, Rex Cleveland, Edward A. Adams, Kurt H. Volk , Peter DeNapoli, Laszlo Matulay, John Kanelous, Fritz Eichenberg, Daniel Berkeley Updike, George Switzer, August Gauthier, Evelyn Harter, Percy Seitlin.
+
+                        Walker Evans American Photographs hot off the presses from the Museum of Modern Art is reviewed rather favorably with one photograph reproduced.
+
+                        PM magazine was the leading voice of the U. S. Graphic Arts Industry from its inception in 1934 to its end in 1942 (then called AD). As a publication produced by and for professionals, it spotlighted cutting-edge production technology and the highest possible quality reproduction techniques (from engraving to plates). PM and A-D also championed the Modern movement by showcasing work from the vanguard of the European Avant-Garde well before this type of work was known to a wide audience
+
+                    .footnote — Randall Ross of modernism101.com
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            PAUL RAND  
+                            …at twenty-four, is art director of Esquire-Coronet (New York offices). He is a typographer, designer, and graphic artist. (The reproductions included in these pages are representative of various phases of his work.)
+
+                            His formal background includes Pratt Institute, Parson’s, Brooklyn Institute of Arts and Sciences, and study with George Grosz at the Art Students’ League. But, there are other ways of learning. One way is to identify with the work of other artists whose lives are spent experimenting with the imposed limitations to art: Picasso, Mondrian, Lissitzky, and such men. One studies not so much their mere representations on paper or canvas, but the spirit and milieu which finally resulted. It has been with this in mind that Paul Rand, in the course of the past few years, has collected an invaluable art library.
+
+                            Another way to learn is to do and, in the light of one’s own researches, criticise what one has done and thus keep constantly improving upon it. Paul Rand believes that so-called fin art and painting have considerably helped advertising and applied art: but he is wary of its application to a given problem when there is no inherent need for it.
+
+                            He favors Le Corbusier’s underlying philosophy…his avoidance of ornament, his dependence upon masses, proportions and inherencies for success in the solution of a problem. There are many ways to express this functional attitude: none of them, it seems, is easy for the layman to grasp. For, it is no altogether true that the perfect functional solution to a problem in design inevitably results in beauty. A dispute arises in the very beginning over what is to be considered the function, and a farther one arises over what is to e chosen in order to serve an agreed upon function. One thing is certain, however, and this Paul Rand insists upon: it is wrong and uneconomical, from the aesthetic point of view, merely to “borrow” or separate from context without understanding the factors which brought the original into being.
+
+                        blockquote 
+                            q Artistic tricks”, he says, “distract from the effect an artist endeavors to produce, and even excellent elements, such as bullets, arrows, brackets, ornate initials, etc. are, at their best, superficial ornamentation unless logically and reasonably employed. There should be a reason for the elements used.
+
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            Paul Rand is unhampered by traditions and takes his means of representation wherever he happens to run across them. He has no stereotyped style because every task is something new and demands its own solution. Consequently, there is nothing labored or forced about his work.
+
+                            **_“I feel that and artist well grounded in fundamentals should not be limited to any one sphere of design. I am definitely opposed to the so-called specialist, and to pigeon-holing a man. I believe that a good poster artist can, if given the opportunity, do fine newspaper ads. And, the chances are that the actor who, because he once did a good job as a gangster has since done nothing but gangsters, could probably do schoolteachers and country doctors, too, if he got the chance…provided he is thoroughly grounded in the craft of acting.”_**
+
+                            In addition to editorial, advertising, and sales promotion design for Esquire-Coronet (noted for its broad minded attitude towards art), Paul Rand, with equal facility, has designed bath scales, bottles, packages, furniture and interiors.
+
+                            **_“The subject is nothing in itself, it is of no particular value if the fashion in which it is exploited moves us, but the manner of expression has no value if what is said is of no particular signifigance.”_** (From Ozenfant’s *“Fountains of Modern Art”*).
+
+
+
+
+        //- /*-----  End of BODY  ------*/
+        include ../../../../__MIXINS/_include-image-carousel.pug
+
+        include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

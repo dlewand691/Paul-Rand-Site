@@ -1,0 +1,313 @@
+/*==============================================================================================
+=			/*
+██    ██ ████████ ██ ██      ██ ████████ ██    ██
+██    ██    ██    ██ ██      ██    ██     ██  ██
+██    ██    ██    ██ ██      ██    ██      ████
+██    ██    ██    ██ ██      ██    ██       ██
+ ██████     ██    ██ ███████ ██    ██       ██
+*/
+// =================================================================================================*/
+
+// .hideMe {
+//     display: none;
+// }
+.clear {
+	content : ' ';
+	display : block;
+	clear   : both;
+	overflow: auto;
+}
+
+.opacity-90 {
+	opacity: 0.9;
+}
+
+.opacity-80 {
+	opacity: 0.8;
+}
+
+.opacity-70 {
+	opacity: 0.7;
+}
+
+.opacity-60 {
+	opacity: 0.6;
+}
+
+.opacity-50 {
+	opacity: 0.5;
+}
+
+.opacity-40 {
+	opacity: 0.4;
+}
+
+.opacity-30 {
+	opacity: 0.3;
+}
+
+.opacity-20 {
+	opacity: 0.2;
+}
+
+.opacity-15 {
+	opacity: 0.15;
+}
+
+.opacity-10 {
+	opacity: 0.1;
+}
+
+.animsition {
+	overflow: hidden;
+}
+
+img {
+	// @include typeset($sans, 16px, 16px, 0, 0);
+	// width: 100%;
+}
+
+.img-fit {
+	// width     : 100% !important;
+	// height    : 100% !important;
+	// max-width : 100% !important;
+	// max-height: 100% !important;
+}
+@media screen and #{breakpoint(small only)} {
+	.sm-w100 {
+		width  : 100%;
+		display: inline-block;
+	}
+}
+
+.h100 {
+	height: 100vh;
+}
+
+.horizontal-center {
+	margin: 0 auto;
+}
+
+.row .row {
+	margin-bottom: 30px;
+}
+@media screen and #{breakpoint(medium up)} {
+	.vertical-align-parent {
+		position: relative;
+	}
+
+	.vertical-align-child {
+		position : absolute;
+		top      : 50%;
+		transform: translateY(-50%);
+	}
+
+	.vertical-align-row {
+		display       : flex;
+		flex-direction: row;
+		align-content : center;
+		align-items   : center;
+		flex-wrap     : nowrap;
+	}
+
+	.vertical-align-column {
+		display        : flex;
+		flex-direction : column;
+		justify-content: flex-start;
+		align-content  : flex-start;
+		align-items    : flex-start;
+	}
+
+	.vertical-align-column-centered {
+		@extend .vertical-align-column;
+		justify-content: center;
+		align-content  : center;
+		align-items    : center;
+	}
+
+	.vertical-align-column-x {
+		@extend .vertical-align-column;
+		justify-content: flex-start;
+		align-content  : center;
+		align-items    : center;
+	}
+
+	.vertical-align-column-y {
+		@extend .vertical-align-column;
+		justify-content: center;
+		align-content  : flex-start;
+		align-items    : flex-start;
+	}
+
+}
+
+.h-100px {
+	height: 100px;
+}
+
+.h-165 {
+	height: 165px;
+}
+
+.h-185 {
+	height: 185px;
+}
+
+.h-200 {
+	height: 200px;
+}
+
+.inline {
+	display: inline !important;
+}
+
+.block {
+	display: block !important;
+}
+
+.flex {
+	display: flex !important;
+}
+
+.inline-block {
+	display: inline-block !important;
+}
+
+.relative {
+	position: relative !important;
+}
+
+.absolute {
+	position: absolute !important;
+}
+
+iframe {
+	border: none;
+}
+
+.flex-end {
+	justify-content: flex-end;
+	align-content  : flex-end;
+	align-items    : flex-end;
+}
+
+$hover-glow: 0 0 50px darken($white, 5%);
+
+hr {
+	@extend .bg-randBlack-50l;
+	@extend .my3;
+}
+
+.hr-2 {
+	border-width: 2px;
+}
+
+.hr-3 {
+	border-width: 3px;
+}
+
+.hr-4 {
+	border-width: 4px;
+}
+
+.hr-red {
+	border-color: $red;
+}
+
+.search {
+	display      : inline-block;
+	position     : relative;
+	height       : 15px;
+	width        : 10px;
+	box-sizing   : border-box;
+	margin       : 0 18px 0 10px;
+	padding      : 5px;
+	border       : 3px solid $white;
+	border-radius: 15px;
+	transition   : all 250ms ease;
+	cursor       : text;
+	top          : 7px;
+
+	&:after {
+		content      : '';
+		position     : absolute;
+		width        : 3px;
+		height       : 10px;
+		right        : -5px;
+		top          : 8px;
+		background   : $white;
+		border-radius: 3px;
+		transform    : rotate(-45deg);
+		transition   : all 250ms easeOut;
+	}
+
+	&.active,
+	&:hover {
+		width       : 200px;
+		margin-right: 5px;
+		height      : 30px;
+		top         : 3px;
+
+		&:after {
+			height: 0;
+		}
+	}
+
+	input {
+		width        : 100%;
+		border       : none;
+		color        : inherit;
+		background   : transparent;
+		outline-width: 0;
+		height       : 25px;
+		top          : -5px;
+		position     : relative;
+		font-size    : 14px;
+		font-weight  : 300;
+		box-shadow   : none;
+		font-family  : $font-family-sans-serif;
+
+		&:focus {
+			background: transparent;
+			color     : $white;
+		}
+	}
+}
+
+figure {
+	margin  : 0;
+	padding : 0;
+	position: relative;
+
+	img {
+		width: 100%;
+	}
+}
+
+figcaption {
+	@extend .footnote;
+	margin-left: 10px;
+}
+
+figcaption + img {
+	bottom: 31px !important;
+}
+
+figcaption + .icon-zoom-boxed {
+	right: 0;
+}
+
+.question {
+	// @extend .medium-mln3;
+	@extend .sans-serif;
+	@extend .text-bold;
+}
+
+.panelCallout {
+	box-shadow: 0 5px 50px rgba($black, 0.1);
+	padding   : 4rem;
+	background: $white;
+	margin    : 2rem 0;
+}
+
+/*-----  End of UTILITY  ------------------------------------------------------------------*/

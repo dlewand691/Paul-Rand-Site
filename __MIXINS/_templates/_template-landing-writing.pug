@@ -1,0 +1,44 @@
+doctype html
+html.no-js(lang='en' dir='ltr')
+
+    include ../../__MIXINS/_include-head.pug
+
+    body(data-grid-framework="f4" data-grid-color="pink" data-grid-opacity="0.2" data-grid-zindex="10" data-grid-gutterwidth="30px" data-grid-nbcols="12")
+
+        .animsition
+            include ../../__MIXINS/_include-headerNav-secondaryNav.pug
+
+            .cd-main-content
+
+                //- ======================================
+                //- =            GALLERY MEDIUM            =
+                //- ======================================
+
+                .grid-x.grid-margin-x
+                    .large-12.small-12.cell
+                        h1.text-center.reveal-enter-bottom His Thoughts on Design
+                        h6.text-italic.text-center (and other musings…)
+
+                        a.card-large.medium-mt4.text-black(href="_template-landing-books.html")
+                            img(src="/img/landing/writing/books.jpg")
+                            p Books
+
+                        a.card-medium.text-black(href="#")
+                            img(src="/img/landing/writing/articles.jpg")
+                            p Articles
+
+                        a.card-small.medium-mt3.text-black(href="#")
+                            img(src="/img/landing/writing/quotes.jpg")
+                            p Quotes
+
+                        a.card-medium.large-offset-2.medium-offset-2.medium-mtn4.text-black(href="#")
+                            img(src="/img/landing/writing/suggested-reading.jpg")
+                            p Suggested Readings
+
+
+
+                //- /*-----  End of GALLERY MEDIUM  ------*/
+
+            include ../../__MIXINS/_include-footer.pug
+
+        include ../../__MIXINS/_include-closingScript.pug 

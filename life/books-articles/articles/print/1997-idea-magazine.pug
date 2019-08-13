@@ -1,0 +1,246 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'A Tribute to the Memory of Paul Rand'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%20front-450.jpg'
+
+    - var articleAuthor         = 'Yusaku Kamekura, Minoru Morita, John Maeda'
+    - var publishedInTitle      = 'Idea Magazine No. 261'
+    - var publishedInSubtitle   = 'March, 1997'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%20front-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%20front.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'CHANGE_ME'
+    - var abe                   = 'yes'
+    - var abeLink               = 'CHANGE_ME'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'CHANGE_ME'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Logocentrism'
+    - var nextDate              = 'December 29, 1997'
+    - var nextDescription       = 'New Republic, Vol. 217, Issue 26'
+
+    - var nextLink              = '1997-logocentrism.html'
+
+    - var relatedItemLink1      = '1989-connecticuts-finest.html'
+    - var relatedItemTitle1     = 'The Graphic Genius of Paul Rand'
+    - var relatedItemFootnote1  = 'Connecticut’s Finest, Winter 1989'
+
+    - var relatedItemLink2      = '1993-print-magazine.html'
+    - var relatedItemTitle2     = 'Thoughts on Rand'
+    - var relatedItemFootnote2  = 'Print Magazine, May/June 1997, Vol. 51, Issue 3'
+
+    - var relatedItemLink3      = '1938-pm-magazine.html'
+    - var relatedItemTitle3     = 'PM Magazine, Vol. 4 No.9'
+    - var relatedItemFootnote3  = 'Featuring the first article ever written about Paul Rand’s Graphic Design work.'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%2001-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%2002-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%2003-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%2004-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%2005-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%2006-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%2007-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%2008-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%2009-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Idea%20Magazine%20No.%20261/Web/Idea%20Magazine%20No%20261%2C%201997%2009.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content#original-article
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        IDEA magazine is focuses on graphic design and typography, published quarterly in Tokyo, Japan.
+
+                        First published: 1953  
+                        Publisher: Seibundo Shinkosha Co.,Ltd.  
+                        Editorial Contact: info@idea-mag.com
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            #### “Death of a Great American Artist” 
+
+                            ***Yusaku Kamekura***
+
+                            It was 38 years ago, in 1959, that a book titled “Paul Rand” was published after four years of its planning and editing by myself. The book was published jointly by Zokei-Sha and Alfred A. Knopf. 
+
+                            In the mid-autumn of 1954, I visited Paul Rand at his house in Connecticut for the purpose of making editing arrangements with him. I was astounded at the spaciousness of his house, whose garden, according to him, extended from the valley on the extreme left to the one on the extreme right. He would often say, “The design of Katsura Imperial Villa had a strong influence on my work to design my own house.” The design of his house was characterized by black pillars, white walls and large glass windows. 
+
+                            I have always said that Paul Rand is the greatest artist America has ever produced. His works are clear and articulate. They are also urbane and witty. The sophistication and humor of his works illustrate the high level of his culture. 
+
+                            Paul Rand is dead now. His death was so sudden that I cannot possibly believe it. When I met him just a few years ago at Ginza Graphic Gallery, Tokyo, where he was staging a one-man show, he was full of vitality. When I met him later in New York, he was in excellent health. Why is it that such a robust man like him has died suddenly? My regret over his sudden death is beyond expression. But the fact was that he had been continuing with his creative work up until his sudden death. His posthumous work shows no decline in the sophistication and nobleness of his creative style. What is more, he had just had his third book on his own perception of design published. 
+
+                            The first book was “Thoughts on Design,” which was published in 1946. The second one, titled “A Designer’s Art,” was published in 1985, and the third one was published in 1993 under the title of “Design Form and Chaos.” His latest book has a fanciful title of “From Lascaux to Brooklyn.” Rand’s books make us aware of the high level of his culture and subtle humor through the high quality of their construction and layout, and the reference materials selected as well. We are naturally fascinated by his design philosophy, which the visual effects of the design of these books bring home to us. Indeed, they are introductory textbooks for book editing and designing. 
+
+                            Paul Rand was one year older than I. So he died at the age of 82. I miss him badly.
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            #### Paul Has Gone, But Rand Is Still Here 
+
+                            ***Minoru Morita***
+
+                            Last year, or in 1996, the world design community was dealt a severe blow. 
+
+                            We lost Josef Müller-Brockmann of Switzerland, Saul Bass of the United States, and Paul Rand of the United States. Strangely enough, all the three maestros were of the same generation. 
+
+                            Paul Rand, well aware of himself being suffering from colon cancer, remained very active up until his death, staging a retrospective exhibition/lecture meeting in October last year at the Cooper Union Foundation Building in New York, which was followed by a lecture at the MIT in Boston. He died at the age of 82 on November 26, or on the eve of Thanksgiving Day. 
+
+                            In Japan and the United States as well, there are not a few young designers who do not know even the names of the great masters in the world design community. Any young designer who tries hard to delve into design and who in that process begins to study the history of design is certain to come across the name of “Paul Rand” and end up recognizing his greatness. In that way I came to know of Paul Rand.
+
+                            The retrospective exhibition/lecture meeting, which was held at the Cooper Union Foundation Building on October 3, 1996, proved an unprecedentedly great success. It should be noted that the word “retrospective”, which was used for the MoMA exhibitions of works of Picasso, Matisse and Miro, was used for an exhibition of works of a designer for the first time. 
+
+                            The exhibition was held on the second floor of the main hall of the building. The exhibits ranged from picture books which he created for his children to his latest logos, all arranged in chronological order beginning in the 1920s. 
+
+                            Eremained at the top of the world design community. I felt that the retrospective exhibition, both in quality and in quantity, looked like a world history of design rather than a one-man show.
+
+                            The lecture meeting was held at the underground Great Hall. Respecting the wishes of Paul Rand, who always hated speaking in public, the lectum meeting took the form of a sort of panel discussion, in which Paul Rand, together with Steven Heller, who is noted for his contributions to the New York Times and other publications, answered the questions from the attendants. The lecture meeting was attended by about 2,000, including many designers, famous and nameless, and students. In that session, Paul Rand talked about many topics, although blunt in speech as usual, in the process of answering the questions. He told the audience that when young, he wished to enter the Bauhaus but abandoned the attempt because he was too poor, that his early jobs were mostly either unpaid or paid by the cent, and that he used to make it a rule to submit a single logo or design to any of his clients. Asked “What are your views about postmodernism?” he replied, “I still stay here.” His answer to the question “what do you think about the computer?” was “It still stays unintellgent, so that I cannot use it.” These remarks of his set the audience roaring with laughter. 
+
+                            During the latter half of the session slides of a number of his works were shown and explained by him. In that presentation, he noted that the most important element of design is “intuition.” He said in reminiscence, “I have been fortunate enough to be able to work closely with so many good clients.” However, it can be said in the other way around that his clients have been fortunate to be able to work with Paul Rand. 
+
+                            Who imagined that about one and a half months later Paul Rand’s Memorial ceremony was to be held at the same Cooper Union Foundation Building? 
+
+                            The memorial ceremony was conducted on December 16, 1996, attended by hundreds of his friends and acquaintances. Many of them talked about their memories and anecdotes of Paul Rand. The most impressive of these was the remark made by George Lois, who was one of Paul Rand’s best friends. He said, “Without Paul Rand, I would not have been what I am today, you would not have been what you are today.” 
+
+                            Common to all these remarks were deep appreciation for his warm friendship and great sorrow at the fact of his death. 
+
+                            It has been nearly 20 years since I became acquainted with Paul Rand. Whether talking with a student or a client, he always maintained the same tone and attitude. More often than not he yelled at me. But he would also say to me, “Come to my house whenever you like.” So I visited his house so many times. I was fortunate enough to be able to gain direct knowledge of his experience, personality and way of life on such occasions. He told me that he had seen “Navaron,” a movie starring Gregory Peck, five or six times, that he wept every time he watched the movie, and that a pot which he had bought for $10 at a curio shop was priced at $3,000 in an art book. This means that he was 300 times more discerning than the curio dealer. But we can no longer have an opportunity to see and listen to Paul Rand. 
+
+                            His works and his name will remain eternally in the world history of design. My close acquaintance with Paul Rand is now the greatest treasure to me. 
+
+                            Minoru Morita : Japanese graphic designer living in New York.
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            #### Paul Rand
+
+                            Born in Brooklyn, New York in 1914. 
+
+                            Paul Rand studied at Pratt Institute. Persons School of Design, and the Student League, under George Gross. Only at 23, he became the art director of Esquire/Apparel Arts and subsequently spent 13 years as creative director of New York advertising agency. Since 1956 he has been a consultant to IBM, Cummins Engine Company and Westinghouse Electric Corporation. 
+
+                            Since 1956 he has also taught at Yale University School of Art, where he was Professor Emeritus of Graphic Design before his death. Since 1977 he has taught in the Brissago, Switzerland Yale summer school program.
+
+                            He received Honorary Degrees, Doctor of Fine Arts from Philadelphia College of Arts, Persons School of Design, University of Hartford, School of Visual Arts, Doctor of Letters from Kutztown University, Master of Arts from Yale University. Gold Medals and Hall of Fame from NY ADC, Royal Designers for Industry from Royal Society, London, Gold Medal AIGA, Medal from Type Directors Club, Medal from University of Hartford, President’s Fellow Rhode Island School of Design, Honorary Professor from Tama University. Tokyo, First Florence Prize & 25,000 for Visual Communication. His fabric was awarded in the Good Design Exhibition at the Museum of Modern Art. 
+
+                            Rand’s work is in the permanent collection of many museum in the U. S., Europe and Japan. 
+
+                            He has received awards for the design of advertisements, brochures, annual reports, books, trademarks, packaging, fabrics, interior architecture. and children’s book illustration. He is the author of “Thoughts on Design,” “Design and Play Instinct,” “The Trademark of Paul Rand,” and A Paul Rand Miscellany, as well as numerous papers on design, art, typography. A book on his work from 1946-58 was published by Knopf, New York and Zokeisha, Tokyo. His recent books, “Paul Rand: A Designer’s Art,” 1993 and “From Lascaux to Brooklyn,” 1995 were published by Yale University Press. 
+
+                            He died on November 26th, 1996.
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            #### Thoughts on Paul Rand 
+
+                            ***John Maeda***
+
+                            As a graduate student at MIT, I stumbled upon a thin, nondescript book called “Thoughts on Design” by Paul Rand. At the time I was building a reputation for myself as being a gifted graphical user interface designer. However, as I flipped through Rand’s book I was humbled by the power with which he manipulated space and at the same time struck by the clarity of his accompanying prose. I was immediately inspired to pursue the field of graphic design, not necessarily pertaining to the computer. 
+
+                            It is ironic that 8 years later, I would return to MIT as a professor of design, and that I would host a lecture by Paul Rand at MIT, which I did on November 14 of last year. The time for the lecture was set at 10am. For those familiar with how an American university works, an early lecture is very rare because students usually study late into the night and are less apt to attend events in the morning. But Rand insisted that he speak in the morning. He said, “If someone isn’t willing to wake up to hear me to speak, I don’t want to speak to them!”
+
+                            The auditorium was packed beyond capacity with people from all over New England, some waking up as early as 5am to arrive in time for the lecture. The Director of the Media Lab, Professor Nicholas Negroponte, later remarked that during all his career at MIT he had never seen such an overwhelming audience for a morning lecture. Although conditions in the lecture hall were crowded, there was complete silence during the lecture as everyone’s attention was completely focused on Rand. 
+
+                            The night before the lecture, we had dinner together; after which he said to me, “So, what are we going to talk about tomorrow?” My immediate reply was, “We?” He said. “Yes, it’s boring if I just get up there and talk. So let’s have a conversation first.” So per Rand’s request. I sat beside him while the lecture was given, and I began with some very basic questions. He began his lecture with the following: 
+
+                            PR: I’ve waited 82 years to come to this place. I knew Gyorgy Kepes and Muriel Cooper, but they never invited me. I’m wondering why Mr. Maeda invited me at this late date, but I’ll do my best. 
+
+                            JM: What is design? 
+
+                            PR: Design is the method of putting form and content together. Design, just as art, has multiple definitions, there is no single definition. Design can be art. Design can be aesthetics. Design is so simple, that’s why it is so complicated. 
+
+                            JM: What is the difference between a designer and an artist? 
+
+                            PR: There is no difference between a designer and an artist. They both work with form and content. I try to create art, whether I make it or not is not up to me, it’s up to God. 
+
+                            JM: What is the difference between ‘good’ design and ‘bad’ design? 
+
+                            PR: A bad design is irrelevant. It is superficial, pretentious…basically like all the stuff you see out there today. 
+
+                            JM: What are the fundamental skills of a designer? 
+
+                            PR: The fundamental skill is talent. Talent is a rare commodity. It’s all intuition. And you can’t teach intuition.
+
+                            JM: Most of your designs have lasted for several decades, what would you say is your secret? 
+
+                            PR: Keeping it simple. Being honest, I mean, completely objective about your work. Working very hard at it. 
+
+                            JM: How did you get started as a designer? 
+
+                            PR: (raising his eyebrows) I think you should ask, how did I get started as a baby? 
+
+                            Rand’s lecture drew much laughter from the audience. He told many stories about his different logomark presentations. One that panicularly stuck oui was the story for the NeXT computer logomark. Rand spoke about how as Steve Jobs turned each page of the presentation booklet Jobs’ smile seemed to grow bigger and bigger until finally he reached the last page and asked Rand, “Can I hug you?” and Rand replied “Sure.” He then commented, “You know you’ve made a good logomark when your client wants to hug you.” 
+
+                            He then relayed a separate story about work for a different client where there was a similar eager acceptance of his presentation booklet, at which time the client (a female) asked Rand, “Can I kiss you?” And Rand replied “Sure.” He then commented, “You should be sure to tell your clients stories of what previous clients have done (in reference to the Jobs story). That way they try to one up the last client.” 
+
+                            After his lecture, Rand offered to autograph copies of his books and there was a long line that did not clear up until an hour later. People would heap piles of 6 books apiece and ask for his autograph and he diligently would sign all of them. I tried to pull him away as I had to shuttle him to a private reception but he refused to leave until all the people in line were served. 
+
+                            His lecture was so well received at MIT, that Negroponte suggested that Rand join the faculty at the Media Laboratory, and we immediately began the process of appointing him to the faculty. Negroponte wanted me to verify Rand’s interest in joining the Media Lab, afterwhich I faxed Rand explaining the situation. He replied, “Of course I accept the position” with “of course” underlined. A few days later he passed away. 
+
+                            John Maeda : Assistant professor of the MIT Media Laboratory
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+
+
+
+        include ../../../../__MIXINS/_include-image-carousel.pug
+
+        include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

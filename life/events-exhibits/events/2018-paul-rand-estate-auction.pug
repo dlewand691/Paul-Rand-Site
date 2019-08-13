@@ -1,0 +1,230 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Paul Rand: The Art of Design'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'Wright Auction house, Chicago, IL.'
+    - var pageSubtitle2         = 'September 13, 2018, 12PM CT'
+
+    - var nextType              = 'Exhibit'
+    - var nextTitle             = 'Steven Heller: Paul Rand: A Designer’s Scribbles'
+    - var nextDate              = '2019'
+    - var nextLink              = '2019-steven-heller-designers-scribbles'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2000-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2000.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2002-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2003-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2006-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2007-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2008-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2009-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2010-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2011-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2012-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Door/Web/Paul%20Rand%20auction%20exhibit%20door%2003-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Door/Web/Paul%20Rand%20auction%20exhibit%20door%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2013-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2014-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2015-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2016-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2016.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2001-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2017-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2017.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2018-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2018.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2020-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2020.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2024-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2024.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2025-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2025.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2026-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2026.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2027-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2027.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2028-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2028.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2029-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2029.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2030-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2030.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2031-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2031.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2032-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2032.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2033-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2033.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2034-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2034.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2035-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2035.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2036-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2036.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2037-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2037.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2038-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2038.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2039-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2039.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2040-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2040.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2041-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2041.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2042-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2042.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2043-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2043.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2044-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2044.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2045-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2045.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2001-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2002-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2003-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2004-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2006-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2007-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2008-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2009-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2010-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2011-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2012-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2013-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2014-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2015-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2016-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2016.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2017-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2017.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2021-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2021.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2024-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2024.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2025-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2025.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2026-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2026.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2027-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2027.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2030-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2030.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2031-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2031.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2032-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2032.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2033-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2033.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2034-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2034.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2035-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2035.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2036-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2036.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2037-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2037.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2038-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2038.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2039-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2039.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2040-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2040.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2041-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2041.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2042-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2042.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2043-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2043.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2044-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2044.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2045-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2045.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2046-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2046.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2047-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2047.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2048-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Objects/Web/Paul%20Rand%20auction%20exhibit%20objects%2048.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Photogram/Web/Abacus%20Photogram%2001-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Photogram/Web/Abacus%20Photogram%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Photogram/Web/Abacus%20Photogram%2007-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Photogram/Web/Abacus%20Photogram%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Photogram/Web/Abacus%20Photogram%2003-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Photogram/Web/Abacus%20Photogram%2003.jpg', title: ''})
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-12.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        On September 13, 2018, Wright Auction house in Chicago, IL. auctioned off 304 lots of personal items and rare treasures directly from the Rand estate. Paintings, posters, toys, furniture, pottery, sculpture, advertising and artist tools were among the items. 
+
+                        The auction came on the heels of the passing of Rand’s third wife Marion Swannie and the sale of their legendary home in Weston, CT.
+
+                        > Paul Rand: The Art of Design captured the attention of hundreds – from individual collectors to institutions such as Letterform Archive – illustrating the breadth of the pioneering designer’s influence. An unprecedented success, the results totaled more than double the pre-sale estimate.  
+                        >
+                        > Sales Total: $730,265  
+                        > 99% sold by lot  
+                        > 225% sold by value
+
+                    .text-center
+                        a.button.arrow(href="https://www.wright20.com/auctions/2018/09/paul-rand-the-art-of-design" target="_blank" rel="noopener") VISIT THE ORIGINAL WEBSITE
+
+            hr
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .small-12.cell.small-mt3.small-mb2
+                    +imageZoomSingle(
+                        "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2000.jpg",
+                        "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2000.jpg"
+                        )
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+            .grid-x.grid-margin-x.text-center
+                .cell.small-mb3
+                    h3 Exhibit space video Walk-through
+                    video.h80vh.plyr-js(poster="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%20walkthrough.jpg" playsinline controls)
+                        source(src="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%20walkthrough.mp4" type="video/mp4")
+
+            hr
+            .grid-x.grid-margin-x
+                .large-12.cell.text-center
+                    h3 Auction
+                    h5 Opening Introduction
+                    video.h80vh.plyr-js(poster="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Auction/Web/Paul%20Rand%20auction%20introduction.jpg" playsinline controls)
+                        source(src="https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Auction/Web/Paul%20Rand%20auction%20introduction.mp4" type="video/mp4")
+
+            +carouselImages(
+                "View More",
+                "",
+                {Title:"During the auction…", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Auction/Web/Paul%20Rand%20auction%2001-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Auction/Web/Paul%20Rand%20auction%2001.jpg"},
+                {Title:"During the auction…", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Auction/Web/Paul%20Rand%20auction%2002-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Auction/Web/Paul%20Rand%20auction%2002.jpg"},
+                {Title:"During the auction…", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Auction/Web/Paul%20Rand%20auction%2003-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Auction/Web/Paul%20Rand%20auction%2003.jpg"},
+                {Title:"During the auction…", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Auction/Web/Paul%20Rand%20auction%2004-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Auction/Web/Paul%20Rand%20auction%2004.jpg"},
+                {Title:"During the auction…", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Auction/Web/Paul%20Rand%20auction%2005-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Auction/Web/Paul%20Rand%20auction%2005.jpg"},
+                {Title:"During the auction…", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Auction/Web/Paul%20Rand%20auction%2006-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Auction/Web/Paul%20Rand%20auction%2006.jpg"},
+                {Title:"During the auction…", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Auction/Web/Paul%20Rand%20auction%2007-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Auction/Web/Paul%20Rand%20auction%2007.jpg"},
+                {Title:"During the auction…", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Auction/Web/Paul%20Rand%20auction%2008-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Auction/Web/Paul%20Rand%20auction%2008.jpg"},
+                {Title:"During the auction…", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Auction/Web/Paul%20Rand%20auction%2009-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Auction/Web/Paul%20Rand%20auction%2009.jpg"}
+                )
+
+            hr
+            .grid-x.grid-margin-x
+                .large-12.cell.text-center
+                    h3 Auction Catalog
+                    iframe.w100.h80vh.small-mb2(src="https://e.issuu.com/embed.html?identifier=crwfp98hpl6n&embedType=script#33425621/64020310")
+                    a.button.arrow(href="https://www.wright20.com/catalogs/2018/09/paul-rand-the-art-of-design" target="_blank" rel="noopener") ORDER A CATALOG
+
+
+            hr
+            .grid-x.grid-margin-x
+                .large-12.cell.text-center
+                    h3 Promotional Emails
+
+                +galleryItem-cardLink(
+                    "3", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Emails/Web/Paul%20Rand%20The%20Art%20of%20Design%20Preview%20Now%20Open-450.jpg",
+                    LG: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Emails/Web/Paul%20Rand%20The%20Art%20of%20Design%20Preview%20Now%20Open.jpg",
+                    title: "Preview Opening Announcement",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "3", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Emails/Web/Paul%20Rand%20The%20Art%20of%20Design%20Auction%20Thursday-450.jpg",
+                    LG: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Emails/Web/Paul%20Rand%20The%20Art%20of%20Design%20Auction%20Thursday.jpg",
+                    title: "Auction Reminder #1",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "3", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Emails/Web/Paul%20Rand%20The%20Art%20of%20Design%20Auction%20Tomorrow-450.jpg",
+                    LG: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Emails/Web/Paul%20Rand%20The%20Art%20of%20Design%20Auction%20Tomorrow.jpg",
+                    title: "Auction Reminder #2",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "3", "6",
+                    {
+                    SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Emails/Web/You%27re%20Invited%20A%20Talk%20with%20Philip%20Burton%20on%20Paul%20Rand-450.jpg",
+                    LG: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Emails/Web/You%27re%20Invited%20A%20Talk%20with%20Philip%20Burton%20on%20Paul%20Rand.jpg",
+                    title: "Philip Burton Event Reminder",
+                    footnote1: "CHANGE_ME",
+                    footnote2: "CHANGE_ME"
+                    })
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

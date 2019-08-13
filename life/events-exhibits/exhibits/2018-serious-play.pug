@@ -1,0 +1,82 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Serious Play: Design in Midcentury America'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'September 28, 2018–January 6, 2019'
+    - var pageSubtitle2         = 'Baker/Rowland Galleries'
+
+    - var nextType              = 'Exhibit'
+    - var nextTitle             = 'Advance Guard of Advertising Artists'
+    - var nextDate              = '1941'
+    - var nextLink              = '1941-advance-guard'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2001-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2002-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2003-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2004-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2005-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2006-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2007-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2008-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2009-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2010-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2011-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2012-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2013-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2014-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2015-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2016-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2016.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2017-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2017.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2018-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2018.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2019-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2019.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2020-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2020.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2021-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2021.jpg', title: ''})
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2001-970.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Serious%20Play%20in%20Design%2C%20Milwaukee%20WI/Web/Serious%20Play%20Exhibit%2001.jpg"
+                            )
+
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup', 'markdown-it-attrs'])
+                        *Serious Play: Design in Midcentury America* explores the projects of over 40 designers who advocated for playfulness and whimsy within their creations for corporations, domestic interiors, and children. The exhibition presents play as a serious form of inspiration, experimentation, and problem solving. In midcentury America, such playful design occurred against the backdrop of a booming consumer market and as a counterbalance to Cold War–era anxiety. Furniture, toys, textiles, films, posters, ceramics are among the objects featured.
+
+                        Co-organized with the Denver Art Museum
+
+                    a.button.arrow.external(href='https://mam.org/exhibitions/details/serious-play.php' target="_blank" rel=noopener) MORE ABOUT THE EXHIBIT
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

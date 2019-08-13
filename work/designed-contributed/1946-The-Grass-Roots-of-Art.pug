@@ -1,0 +1,87 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'The Grass Roots of Art'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var bookSubhead           = 'Lectures on the Social Aspects of Art in the Industrial Age, 1946'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/792307'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3DThe%2BGrass%2BRoots%2Bof%2BArt%2BLectures%2Bon%2Bthe%2BSocial%2BAspects%2Bof%2BArt%2Bin%2Bthe%2BIndustrial%2BAge'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1UhYTVT'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_nkw%3DThe%2520Grass%2520Roots%2520of%2520Art'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'The New Vision and Abstract of an Artist'
+    - var nextLink              = '1946-The-New-Vision-and-Abstract-of-an-Artist'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= bookSubhead
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Problems%20of%20Contemporary%20Art%2C%20The%20Grass%20Roots%20of%20Art/Web/Problems%20of%20Contemporary%20Art%2C%20The%20Grass%20Roots%20of%20Art-970.jpg",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Problems%20of%20Contemporary%20Art%2C%20The%20Grass%20Roots%20of%20Art/Web/Problems%20of%20Contemporary%20Art%2C%20The%20Grass%20Roots%20of%20Art.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            //- include ../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Herbert Read
+
+                        Cover design and typography by Paul Rand
+
+                        7.5 x 10 book, with 92 pages and 18 b/w photos. Six Lectures Delivered at Yale, Spring 1946 by the English poet and critic which explore the theme that "that art is in some sense intimately related, not only to the social structure, but even to the very soil and landscape of a country.
+
+                        **Contents:**
+
+                        + Society and Culture
+                        + The Social Basis of Great Architecture
+                        + The Aesthetic Method of Education
+                        + Towards a Duplex Civilization
+
+                        In an early issue of GRAPHIS, Max Bill reviewed Motherwell’s Documents of Modern Art series by stating it was the most important series of modern art documents since Gropius and Moholy-Nagy published the Bauhuasbuchers.
+
+                    .footnote — Randall Ross of modernism101.com
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../__MIXINS/_include-next-work.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

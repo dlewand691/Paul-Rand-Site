@@ -1,0 +1,543 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Resources'
+    - var bodyID    = ''
+    - var bodyClass = ''
+
+block main-content
+    .cd-main-content
+        .grid-container
+            //- ==========  BODY  ==========
+
+            .grid-x.grid-margin-x.align-center
+                .small-12.cell
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    // Tabs
+                    ul.tabs#tabs(data-tabs data-deep-link="true")
+                        li.tabs-title.is-active
+                            a(href='#onlineTab') Find Items Online
+                        li.tabs-title
+                            a(href='#articlesTab') Articles, Interviews & Information
+                        li.tabs-title
+                            a(href='#tributesTab') Tributes & Personal Experiences
+                        li.tabs-title
+                            a(href='#todayTab') Rand's Work Today
+
+                    // Tab content
+                    .tabs-content(data-tabs-content="tabs")
+                        //- /*==============================  
+                        //- 					/*
+                        //- ███████ ██ ███    ██ ██████                     
+                        //- ██      ██ ████   ██ ██   ██                    
+                        //- █████   ██ ██ ██  ██ ██   ██                    
+                        //- ██      ██ ██  ██ ██ ██   ██                    
+                        //- ██      ██ ██   ████ ██████                     
+                        //- ██ ████████ ███████ ███    ███ ███████          
+                        //- ██    ██    ██      ████  ████ ██               
+                        //- ██    ██    █████   ██ ████ ██ ███████          
+                        //- ██    ██    ██      ██  ██  ██      ██          
+                        //- ██    ██    ███████ ██      ██ ███████          
+                        //-  ██████  ███    ██ ██      ██ ███    ██ ███████ 
+                        //- ██    ██ ████   ██ ██      ██ ████   ██ ██      
+                        //- ██    ██ ██ ██  ██ ██      ██ ██ ██  ██ █████   
+                        //- ██    ██ ██  ██ ██ ██      ██ ██  ██ ██ ██      
+                        //-  ██████  ██   ████ ███████ ██ ██   ████ ███████ 
+                        //- */
+
+                        //- ==============================*/
+
+
+                        .tabs-panel.is-active#onlineTab
+                            //- h3.text-center Find Items Online
+                            +listItem-thumb(
+                                "http://www.amazon.com",
+                                "amazon.jpg",
+                                "Amazon",
+                                "www.amazon.com",
+                                "Amazon is a great place to start. Be sure to check out any items that are used as well."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.ebay.com",
+                                "ebay.jpg",
+                                "Ebay",
+                                "www.ebay.com",
+                                "Another great source of all things Rand. Check often as new and rare items are added constantly."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.modernism101.com",
+                                "modernism101.jpg",
+                                "Modernism 101",
+                                "www.modernism101.com",
+                                "Great selection of vintage and rare design works."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.modernism101.com",
+                                "newdocuments.jpg",
+                                "New Documents",
+                                "www.dcmnts.com",
+                                "New Documents is a shop specializing in mid-twentieth century graphic design."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.modernism101.com",
+                                "projectobjectshop.jpg",
+                                "Project Object Shop",
+                                "www.projectobjectshop.com",
+                                "PROJECTOBJECT loves smart design. We specialize in graphic art and Modern artifact."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.abebooks.com",
+                                "abebooks.jpg",
+                                "AbeBooks",
+                                "www.abebooks.com",
+                                "One of THE BEST places to find Rand and other related and rare books. A “must shop”."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.alibris.com",
+                                "alibris.jpg",
+                                "Alibris",
+                                "www.alibris.com",
+                                "Huge selection of rare and hard to find books. Another “must shop”."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.biblio.com",
+                                "biblio.jpg",
+                                "Biblio",
+                                "www.biblio.com",
+                                "Many Rand books available and good selection of design books in general."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.internationalposter.com",
+                                "international-poster-gallery.jpg",
+                                "International Poster",
+                                "www.internationalposter.com ",
+                                "Purchase original Rand posters. Also a great source for other artists."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.youworkforthem.com",
+                                "you-work-for-them.jpg",
+                                "You Work for Them",
+                                "www.youworkforthem.com",
+                                "Online store with a huge selection of great design books."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.optosbooks.com",
+                                "optos-books.jpg",
+                                "Optos Books",
+                                "www.optosbooks.com",
+                                "Small selection of Rand related books, but a good source nonetheless."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.questia.com",
+                                "questia.jpg",
+                                "Questia",
+                                "www.questia.com",
+                                "Read thousands of books online. Some “Documents of Modern Art” books available!"
+                                )
+
+
+                        //- /*==============================  
+
+                        //- 					/*
+                        //-  █████  ██████  ████████ ██  ██████ ██      ███████ ███████                                     
+                        //- ██   ██ ██   ██    ██    ██ ██      ██      ██      ██                                          
+                        //- ███████ ██████     ██    ██ ██      ██      █████   ███████                                     
+                        //- ██   ██ ██   ██    ██    ██ ██      ██      ██           ██                                     
+                        //- ██   ██ ██   ██    ██    ██  ██████ ███████ ███████ ███████ ▄█                                  
+                        //- ██ ███    ██ ████████ ███████ ██████  ██    ██ ██ ███████ ██     ██ ███████        ██           
+                        //- ██ ████   ██    ██    ██      ██   ██ ██    ██ ██ ██      ██     ██ ██             ██           
+                        //- ██ ██ ██  ██    ██    █████   ██████  ██    ██ ██ █████   ██  █  ██ ███████     ████████        
+                        //- ██ ██  ██ ██    ██    ██      ██   ██  ██  ██  ██ ██      ██ ███ ██      ██     ██  ██          
+                        //- ██ ██   ████    ██    ███████ ██   ██   ████   ██ ███████  ███ ███  ███████     ██████          
+                        //- ██ ███    ██ ███████  ██████  ██████  ███    ███  █████  ████████ ██  ██████  ███    ██         
+                        //- ██ ████   ██ ██      ██    ██ ██   ██ ████  ████ ██   ██    ██    ██ ██    ██ ████   ██         
+                        //- ██ ██ ██  ██ █████   ██    ██ ██████  ██ ████ ██ ███████    ██    ██ ██    ██ ██ ██  ██         
+                        //- ██ ██  ██ ██ ██      ██    ██ ██   ██ ██  ██  ██ ██   ██    ██    ██ ██    ██ ██  ██ ██         
+                        //- ██ ██   ████ ██       ██████  ██   ██ ██      ██ ██   ██    ██    ██  ██████  ██   ████         
+                        //- */
+
+                        //- ==============================*/
+
+                        .tabs-panel#articlesTab
+                            //- h3 Articles, Interviews & Information
+                            +listItem-thumb(
+                                "http://www.google.com",
+                                "google.jpg",
+                                "Google",
+                                "www.google.com",
+                                "Where most people will start. Click the “Images” link to see visual examples out on the web."
+                                )
+
+                            +listItem-thumb(
+                                "http://en.wikipedia.org/wiki/Paul_Rand",
+                                "wikipedia.jpg",
+                                "Wikipedia",
+                                "www.wikipedia.org ",
+                                "A comprehensive bio of Mr. Rand with sample images of his work."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.mkgraphic.com/chaos.html'",
+                                "mkgraphic.jpg",
+                                "Confusion and Chaos: The Seduction of Contemporary Graphic Design by Paul Rand",
+                                "www.mkgraphic.com ",
+                                "The deluge of design that colors our lives, our print, and video screens is synchronous with the spirit of our time."
+                                )
+
+                            +listItem-thumb(
+                                "//www.typotheque.com/articles/playing_by_mr_rands_rules",
+                                "typotheque.jpg",
+                                "Playing by Mr. Rand's Rules",
+                                "www.typotheque.com",
+                                "By Michael Bierut"
+                                )
+
+                            +listItem-thumb(
+                                "http://acg.media.mit.edu/events/rand/ideamag.html",
+                                "mit.jpg",
+                                "Thoughts on Paul Rand, by John Maeda",
+                                "http://acg.media.mit.edu/events/rand/ideamag.html",
+                                "For IDEA Magazine special issue on Paul Rand."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.underconsideration.com/speakup/archives/002430.html",
+                                "speak-up.jpg",
+                                "Paul Rand's Final Logo?",
+                                "www.underconsideration.com",
+                                "Paul Rand’s final logo? Read on for more..."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.underconsideration.com/speakup/archives/002560.html#002560",
+                                "speak-up.jpg",
+                                "Paul Rand's Final LogoPart 2",
+                                "www.underconsideration.com",
+                                "Part 2 of the final logo story. Great read."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.yale.edu/opa/arc-ybc/ybc/v25.n16.obit.03.html",
+                                "yale.jpg",
+                                "Paul Rand Obituary",
+                                "www.yale.edu",
+                                "Mr. Rand’s obituary as released by Yale University."
+                                )
+
+                            +listItem-thumb(
+                                "http://observatory.designobserver.com/entry.html?entry=1457",
+                                "design-observer.jpg",
+                                "Books from the Collection of Paul Rand",
+                                "www.designobserver.com",
+                                "Discovering a collection of Paul Rand’s personal books in Boston bookshops."
+                                )
+
+                            +listItem-thumb(
+                                "http://acg.media.mit.edu/events/rand",
+                                "mit.jpg",
+                                "Rand at MIT",
+                                "www.mit.edu",
+                                "Mr. Rand visits MIT for an interview with John Maeda."
+                                )
+
+                            +listItem-thumb(
+                                "http://www-tech.mit.edu/V116/N59/paulrand.59n.html",
+                                "mit.jpg",
+                                "Rand at MIT- 2",
+                                "www.mit.edu",
+                                "Mr. Rand visits MIT for an interview with John Maeda."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.underconsideration.com/speakup/archives/001495.html",
+                                "speak-up.jpg",
+                                "What makes Rand so great?",
+                                "www.underconsideration.com",
+                                "Interesting topic of discussion."
+                                )
+
+                            +listItem-thumb(
+                                "http://design.sva.edu/search/Paul%20Rand%20Lecture%20Series",
+                                "sva.jpg",
+                                "SVA Paul Rand Lecture Series",
+                                "http://design.sva.edu/search/Paul%20Rand%20Lecture%20Series/ ",
+                                "Podcast discussions about design history, featuring Steven Heller."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.independent.co.uk/news/obituaries/obituary-paul-rand-1316506.html",
+                                "the-independent.jpg",
+                                "Obituary: Paul Rand",
+                                "www.independent.co.uk",
+                                "A wonderful obituary and biography by Patrick Argent."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.designersandbooks.com/blog/highlights-paul-rand-library",
+                                "designers-and-books.jpg",
+                                "Highlights from the Paul Rand Library",
+                                "www.designersandbooks.com",
+                                "Library as Incubator Project explores Paul Rand's personal library, now held by Yale University."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.printmag.com/imprint/rare-rand-rarity/",
+                                "print-magazine.jpg",
+                                "Rare Rand Rarity",	
+                                "imprint.printmag.com",
+                                "There are very few print artifacts designed by Paul Rand that are still unknown, at least to scholars and collectors of Rand’s work."
+                                )
+
+                            +listItem-thumb(
+                                "http://observatory.designobserver.com/feature/a-house-to-live-with-paul-rand-in-esquire-1953/29878",
+                                "design-observer.jpg",
+                                "A slideshow of Ann and Paul Rand's house in Connecticut, as it appeared in the August 1953 issue of",
+                                "http://observatory.designobserver.com/",
+                                "A House to Live With: Paul Rand in Esquire 1953"
+                                )
+
+                            +listItem-thumb(
+                                "http://www.noupe.com/inspiration/paul-rand-will-change-your-life.html",
+                                "noupe.jpg",
+                                "Paul Rand Will Change Your Life!",
+                                "www.noupe.com",
+                                "Great bio of Rand."
+                                )
+
+                            +listItem-thumb(
+                                "http://designnotes.sarahbrody.com/2010/11/encounters-with-paul-rand",
+                                "designNotes.jpg",
+                                "Encounters with Paul Rand",
+                                "designnotes.sarahbrody.com",
+                                "Sarah Brody’s video of her talk with Rand."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.designersreviewofbooks.com/2009/03/paul-rand-conversations-with-students",
+                                "designers-review-of-books.jpg",
+                                "Paul Rand Conversations with Students",
+                                "www.designersreviewofbooks.com",
+                                "What would Paul Rand have been like as a teacher?"
+                                )
+
+                            +listItem-thumb(
+                                "http://imprint.printmag.com/daily-heller/paul-rands-grandfather",
+                                "print-magazine.jpg",
+                                "Paul Rand's Grandfather",
+                                "imprint.printmag.com",
+                                "Paul Rand told me that his maternal grandfather, Herman Hecht, had been murdered while tending to a ritual bath."
+                                )
+
+
+                        //- /*==============================  
+
+                        //- 					/*
+                        //- ████████ ██████  ██ ██████  ██    ██ ████████ ███████ ███████      █████  ███    ██ ██████      
+                        //-    ██    ██   ██ ██ ██   ██ ██    ██    ██    ██      ██          ██   ██ ████   ██ ██   ██     
+                        //-    ██    ██████  ██ ██████  ██    ██    ██    █████   ███████     ███████ ██ ██  ██ ██   ██     
+                        //-    ██    ██   ██ ██ ██   ██ ██    ██    ██    ██           ██     ██   ██ ██  ██ ██ ██   ██     
+                        //-    ██    ██   ██ ██ ██████   ██████     ██    ███████ ███████     ██   ██ ██   ████ ██████      
+                        //- ██████  ███████ ██████  ███████  ██████  ███    ██  █████  ██                                   
+                        //- ██   ██ ██      ██   ██ ██      ██    ██ ████   ██ ██   ██ ██                                   
+                        //- ██████  █████   ██████  ███████ ██    ██ ██ ██  ██ ███████ ██                                   
+                        //- ██      ██      ██   ██      ██ ██    ██ ██  ██ ██ ██   ██ ██                                   
+                        //- ██      ███████ ██   ██ ███████  ██████  ██   ████ ██   ██ ███████                              
+                        //- ███████ ██   ██ ██████  ███████ ██████  ██ ███████ ███    ██  ██████ ███████ ███████            
+                        //- ██       ██ ██  ██   ██ ██      ██   ██ ██ ██      ████   ██ ██      ██      ██                 
+                        //- █████     ███   ██████  █████   ██████  ██ █████   ██ ██  ██ ██      █████   ███████            
+                        //- ██       ██ ██  ██      ██      ██   ██ ██ ██      ██  ██ ██ ██      ██           ██            
+                        //- ███████ ██   ██ ██      ███████ ██   ██ ██ ███████ ██   ████  ██████ ███████ ███████            
+                        //- */
+                        //- ==============================*/
+
+                        .tabs-panel#tributesTab
+                            //- h3 Tributes and Personal Experiences
+                            +listItem-thumb(
+                                "http://www.designweenie.com/blog/index.php/1307",
+                                "designweenie.jpg",
+                                "Designweenie",
+                                "www.designweenie.com",
+                                "The experience of meeting Paul Rand."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.jon.ideabasin.com/prand.htm",
+                                "johnfenwick.jpg",
+                                "John Fenwick Design",
+                                "www.jon.ideabasin.com",
+                                "John Fenwick’s thoughts on Paul Rand."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.dlsdesign.com/paul_rand",
+                                "dls.jpg",
+                                "DLS Design",
+                                "www.dlsdesign.com",
+                                "Tribute page."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.nedbatchelder.com/blog/20030616T212329.html",
+                                "nedbatchelder.jpg",
+                                "Ned Batchelder",
+                                "www.nedbatchelder.com",
+                                "Paul Rand’s geometry books."
+                                )
+
+                            +listItem-thumb(
+                                "http://people.artcenter.edu/~chuh/SP03web/WRITING/Paul%20Rand.html",
+                                "seungwonchuh.jpg",
+                                "Seung Won Chuh",
+                                "people.artcenter.edu",
+                                "Brief paper on Paul Rand."
+                                )
+
+                            +listItem-thumb(
+                                "http://web.me.com/sbrody/SBrody/Work_|_Encounters_with_Paul_Rand_1.html",
+                                "sarah_brody.jpg",
+                                "Encounters with Paul Rand",
+                                "web.me.com/sbrody/SBrody",
+                                "A nice portrait by a former student."
+                                )
+
+                            +listItem-thumb(
+                                "http://observatory.designobserver.com/entry.html?entry=5907",
+                                "design-observer.jpg",
+                                "Remembering Paul Rand",
+                                "www.designobserver.com",
+                                "Jessica Helfand’s tribute."
+                                )
+
+                            +listItem-thumb(
+                                "http://thinkingforaliving.org/blog/entry/relearning-from-paul-rand",
+                                "brissago.jpg",
+                                "Relearning from Paul Rand",
+                                "thinkingforaliving.org/blog/entry/relearning-from-paul-rand",
+                                "Relearning from Paul Rand—remembering Brissago, Switzerland."
+                                )
+
+                            +listItem-thumb(
+                                "http://amassblog.com/?p=631",
+                                "randInc.jpg",
+                                "Paul Rand Inc.",
+                                "www.amassblog.com",
+                                "Paul Rand’s business card and a personal story from James Phillips Williams."
+                                )
+
+
+                        //- /*==============================  
+
+                        //- 				/*
+                        //- ██████   █████  ██    ██ ██          ██████   █████  ███    ██ ██████  ███████        
+                        //- ██   ██ ██   ██ ██    ██ ██          ██   ██ ██   ██ ████   ██ ██   ██ ██             
+                        //- ██████  ███████ ██    ██ ██          ██████  ███████ ██ ██  ██ ██   ██ ███████        
+                        //- ██      ██   ██ ██    ██ ██          ██   ██ ██   ██ ██  ██ ██ ██   ██      ██        
+                        //- ██      ██   ██  ██████  ███████     ██   ██ ██   ██ ██   ████ ██████  ███████        
+                        //- ██     ██  ██████  ██████  ██   ██     ████████  ██████  ██████   █████  ██    ██     
+                        //- ██     ██ ██    ██ ██   ██ ██  ██         ██    ██    ██ ██   ██ ██   ██  ██  ██      
+                        //- ██  █  ██ ██    ██ ██████  █████          ██    ██    ██ ██   ██ ███████   ████       
+                        //- ██ ███ ██ ██    ██ ██   ██ ██  ██         ██    ██    ██ ██   ██ ██   ██    ██        
+                        //-  ███ ███   ██████  ██   ██ ██   ██        ██     ██████  ██████  ██   ██    ██        
+                        //- */ 
+
+                        //- ==============================*/
+
+                        .tabs-panel#todayTab
+                            //- h3 Paul Rand's Work Today
+                            +listItem-thumb(
+                                "http://www-03.ibm.com/ibm/history/exhibits/logo/logo_1.html",
+                                "ibm.jpg",
+                                "IBM Continuity",
+                                "www.ibm.com",
+                                "History of IBM logo."
+                                )
+
+                            +listItem-thumb(
+                                "http://ibmcollectables.com/IBMlogo.html",
+                                "ibm.jpg",
+                                "Paul Rand and IBM Logo history",
+                                "www.ibmcollectables.com",
+                                "Comprehensive collection and IBM logo history."
+                                )
+
+                            +listItem-thumb(
+                                "http://typographi.com/000561.php",
+                                "typographica.jpg",
+                                "Paul Rand Swooshed Under the Rug",
+                                "www.typographi.com",
+                                "Redesigning the UPS logo."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.pressroom.ups.com/Fact+Sheets/The+UPS+Logo+-+A+Brief+History",
+                                "ups.jpg",
+                                "The UPS Logo: A Brief History",
+                                "www.ups.com",
+                                "UPS has utilized four logos in its 97-year history. The most recent logo was unveiled in March 2003."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.upslogisticstech.com/pub/press-releases/UPS-Unveils-New-Look/?srch_pos=2&srch_phr=logoredesign",
+                                "ups.jpg",
+                                "UPS Unveils New Look",
+                                "www.ups.com",
+                                "UPS unveiled a “new look” that is the first redesign in 40 years of the company’s famous “shield” logo."
+                                )
+
+
+                            +listItem-thumb(
+                                "http://www.adweek.com/aw/national/article_display.jsp?vnu_content_id=1848494",
+                                "adweek.jpg",
+                                "Martin Presents New Loo UPS",
+                                "www.adweek.com",
+                                "UPS unveiled a new logo."
+                                )
+
+
+                            +listItem-thumb(
+                                "http://www.identityworks.com/reviews/2003/ups.htm",
+                                "identityworks.jpg",
+                                "UPS: A gender change",
+                                "www.identityworks.com",
+                                "New: UPS shield [and don't call it United Parcel Service any longer, as if anyone did.]"
+                                )
+
+
+                            +listItem-thumb(
+                                "http://observatory.designobserver.com/entry.html?entry=6237",
+                                "design-observer.jpg",
+                                "The Smartest Logo in the Room",
+                                "www.designobserver.com",
+                                "Discussion on the infamous Enron logo, by Michael Bierut"
+                                )
+
+                            +listItem-thumb(
+                                "http://www.underconsideration.com/brandnew/archives/a_b_c_d_e_f_rand.php",
+                                "brandNew.jpg",
+                                "A B C D E F Rand",
+                                "www.underconsideration.com/brandnew",
+                                "Design update of the English First identity, completed by ex-student Henry Steiner."
+                                )
+
+                            +listItem-thumb(
+                                "http://www.yaledailynews.com/news/art-news/2009/09/30/yale-press-drops-distinctive-logo",
+                                "yalePress.jpg",
+                                "Yale University Press logo dropped",
+                                "www.yaledailynews.com",
+                                "http://www.yaledailynews.com/news/art-news/2009/09/30/yale-press-drops-distinctive-logo/"
+                                )
+
+
+                    //- /*-----  End of LIST  ------*/

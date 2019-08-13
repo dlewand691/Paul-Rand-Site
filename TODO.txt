@@ -1,0 +1,15 @@
+GLOBAL
+	fix column equalizer
+	
+
+articles
+	art of the package: supporting images?
+	header images
+		integrity and invention
+		language of art
+		logos Flags
+		rca ad
+		case for ampersand
+		politics of design
+		
+	

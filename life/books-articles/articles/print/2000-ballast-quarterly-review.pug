@@ -1,0 +1,146 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Paul Rand Reviewed'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1999%20Paul%20Rand/Web/Paul%20Rand%201999-200.jpg'
+
+    - var articleAuthor         = 'Roy R. Behrens'
+    - var publishedInTitle      = 'Ballast Quarterly Review'
+    - var publishedInSubtitle   = '2000'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1999%20Paul%20Rand/Web/Paul%20Rand%201999-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1999%20Looking%20Closer%203/Web/Looking%20Closer%203%201999.jpg', title: ''})
+    - var library               = 'no'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/955580839'
+    - var abe                   = 'no'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fan%3Dheller%26bi%3D0%26bx%3Doff%26ds%3D30%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3DPaul%2BRand'
+    - var amazon                = 'no'
+    - var amazonLink            = 'http://amzn.to/2EvRl5o'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2055119.m570.l1313.TR0.TRC0.H0.Xlooking%2Bcloser%2B3.TRS0%26_nkw%3Dlooking%2Bcloser%2B3%26_sacat%3D0'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'A Paul Rand’s Art'
+    - var nextDate              = 'April, 2002'
+    - var nextDescription       = 'From Casa Brutus magazine.'
+    - var nextLink              = '2002-casa-brutus.html'
+
+    - var relatedItemLink1      = '1938-pm-magazine.html'
+    - var relatedItemTitle1     = 'PM Magazine, Vol. 4 No.9'
+    - var relatedItemFootnote1  = 'Featuring the first article ever written about Paul Rand’s Graphic Design work.'
+
+    - var relatedItemLink2      = '1953-american-artist.html'
+    - var relatedItemTitle2     = '“The Paul Rand Legend” by Eugene M. Ettenberg'
+    - var relatedItemFootnote2  = 'American Artist, October 1953'
+
+    - var relatedItemLink3      = '1950-portfolio-magazine.html'
+    - var relatedItemTitle3     = 'Trademarks by Paul Rand'
+    - var relatedItemFootnote3  = 'Portfolio Magazine, Vol. 1, No. 1, 1950'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: 'Looking Closer 3'})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content#original-article
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Rare and difficult-to-find essays provide fascinating reading in this third anthology in the Looking Closer series, a matchless resource tracing the continuum of critical thought from graphic design’s earliest days as a viable art and craft. Looking Closer 3 brings back into discourse more than thirty seminal essays by such distinguished figures as William Morris, Aldous Huxley, Alvin Lustig, and Paul Rand, reviving ideas of form and content as well as arguments over manner and style that have been lost for decades. For professionals, teachers, and students alike, this pivotal collection is an invaluable compliment to any design library.
+
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            By Steven Heller Phaidon Press Limited, London 255 pages; 455 color and b&amp;w illustrations; $69.95
+
+                            Paul Rand, as it turns out, was not Paul Rand. Born in Brooklyn in 1914, his real name was Peretz Rosenbaum. Before World War II, as a fledgling advertising artist, he realized he faced an unspoken stigma from an overtly Jewish name, and he changed it.
+
+                            “He remembered that an uncle in the family was named Rand,” said Morris Wyszogrod, a friend and former colleague who worked with Rand at the William H. Weintraub Advertising Agency in the 1940s and ’50s. “So he figured that ‘Paul Rand,’ four letters here, four letters there, would create a nice symbol. So he became Paul Rand.”
+
+                            Rand’s new persona, which served as the brand name for his many accomplishments, was the first corporate identity he created, and it may also eventually prove to have been the most enduring. At the time of his death in 1996, Apple Computer founder Steven Jobs called him “the greatest living graphic designer.”
+
+                            Unwavering and determined, even during his illness Paul Rand designed a trademark for the cancer center that treated him, and he agreed to a future commitment to teach at Massachusetts Institute of Technology. Weeks before his death, he appeared with Steven Heller at the Cooper Union in New York to deliver a lecture to more than a thousand people.
+
+                            Heller, a senior art director at The New York Times and editor of The AIGA Journal of Graphic Design, first met Rand in 1983 and in time became a confidant, taping hours of interviews about Rand’s role in modern American design. ‘I never studied with or worked for Paul Rand,” he explains in an author’s note in Paul Rand. “He was just my friend.” But as their friendship deepened, “I became a kind of Boswell to Rand’s Johnson.”
+
+                            Paul Rand is the harvest of that relationship, and it may be the fullest, most detailed account ever published of the working life of a graphic designer. (I say “working life” because the book is respectful, keeping at arm’s length from Rand’s personal life.)
+
+                            While Heller wrote most of the book, he is not its sole author. In a forceful foreword, the designer Armin Hofmann, who taught with Rand at the Yale summer design program in Brissago, Switzerland, laments, as did his colleague, the emphasis in education on digital technology at the expense of humanism. A scrappy introduction by advertising designer George Lois, one of the many whom Rand inspired, applauds his originality, his courage, even his irascibility. As they say in Brooklyn, Lots writes, “Every art director and graphic designer in the world should kiss his ass.”
+
+                            The longest, most thought-provoking contribution is by designer and writer Jessica Helfand, who was Rand’s graduate student at Yale about 10 years ago. Using examples of his student assignments as illustrations (notably, his famous Leger problem, in which each student created a unique typographic composition using the French painter’s name), she traces the progression of his teaching philosophy for more than 30 years. His paramount strength as a teacher, she notes, was an “ability to identify the most germane principles underlying the study of graphic design.”
+
+                            Those principles, as anyone who has read Rand’s acclaimed books (Thoughts on Design; Paul Rand: A Designer’s Art; Design, Form, and Chaos; and From Lascaux to Brooklyn) already knows, are ways of embodying function in form. Anticipated by estheticism, verified by Gestalt psychology, and promulgated by the Bauhaus, they consist of such valued and venerable traits (to quote Tom Hardy, who worked with Rand at IBM) as “simplicity, directness, clarity, uniqueness, appropriateness, relevance, beauty, and very often playfulness.” That Rand not only taught these strategies but used them daily when he worked is demonstrated by the astonishing quality and consistency of his designs.
+
+                            Even for Rand devotees, Heller’s book contains a surprising amount of new material. Dozens of his obscure, earlier pieces—billboards, advertising layouts, book jackets, children’s book illustrations—that have rarely, if ever, been published before are reproduced here in full color. There are also new fascinating stories, including his memory of the exact moment when, as a student looking at a poster in an issue of Gebraucbsgrapbik, he first saw the use of a visual rhyme, a device he later so artfully brought to his corporate logos for ABC, Westinghouse, IBM, and UPS.
+
+                            Rand made adroit, subtle use of rhyme and other form principles when he wrote about design, but strangely, he forgot them whenever he spoke. He writes like a poet, people said, but he talks like a plumber. Neither Heller nor Helfand ignore this oddity in Rand’s character, which surely affected the way that he worked with students, colleagues, and clients.
+
+                            At the same time, they never explicitly say why he persisted in speaking so bluntly and crudely in “gruff Brooklynese punctuated with expressive phrases”—like “lousy” and “for the birds”—“that denoted approval or disapproval.” Many of his former students, writes Helfand, “share vivid memories of running from the studio in tears after a particularly grueling Rand critique.”
+
+                            On the book’s dustjacket is a photograph of Rand against the background of a city street, which might be the street he grew up on. He is standing in front of one of his own billboard designs, pensively looking beyond and away. The billboard is an advertisement for a film, the title of which overlaps his own profile. It reads: No Way Out.
+
+                            None of us can ever go home again—but at the same time, we never completely leave. Reading this book, we wonder how much of Rand’s psyche was spent on keeping the peace between the astute Paul Rand, who designed logos and wrote books, and—was it Peretz Rosenbaum?—the badass Brooklyn kid who did the talking for him.
+
+                            ---
+
+                            *Roy R. Behrens teaches graphic design and design Iowa and edits Ballast Quarterly Review.*
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+
+
+
+        //- include ../../../../__MIXINS/_include-image-carousel.pug
+
+        //- include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

@@ -1,0 +1,369 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'NeXT Computers'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = '1986'
+    - var nextType  = 'Client'
+    - var nextTitle = 'No Way Out Movie'
+    - var nextLink  = 'No-Way-Out-Movie'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/NeXT/NeXT-Computers-1986.svg", LG:"https://assets.paulrand.design/Works/NeXT/NeXT-Computers-1986.svg", title: "", footnote: ""}
+                        )
+
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo Sketches",
+                        "top", "3", "3",
+                        {SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Sketches/Web/NeXT%20Logo%20Sketches%2001-450.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Sketches/Web/NeXT%20Logo%20Sketches%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Sketches/Web/NeXT%20Logo%20Sketches%2002-450.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Sketches/Web/NeXT%20Logo%20Sketches%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Sketches/Web/NeXT%20Logo%20Sketches%2003-450.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Sketches/Web/NeXT%20Logo%20Sketches%2003.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Sketches/Web/NeXT%20Logo%20Sketches%2004-450.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Sketches/Web/NeXT%20Logo%20Sketches%2004.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Sketches/Web/NeXT%20Logo%20Sketches%2005-450.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Sketches/Web/NeXT%20Logo%20Sketches%2005.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Sketches/Web/NeXT%20Logo%20Sketches%2006-450.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Sketches/Web/NeXT%20Logo%20Sketches%2006.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Sketches/Web/NeXT%20Logo%20Sketches%2007-450.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Sketches/Web/NeXT%20Logo%20Sketches%2007.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Sketches/Web/NeXT%20Logo%20Sketches%2008-450.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Sketches/Web/NeXT%20Logo%20Sketches%2008.jpg", title: "", footnote: "Image courtesy of Wright auction house, Chicago, IL."}
+                        )
+
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo spec sheet",
+                        "middle", "1", "1",
+                        {SM: "https://assets.paulrand.design/Works/NeXT/Logo%20spec%20sheet/Web/NEXT%20Computer%20logo%20spec%20sheet-970.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20spec%20sheet/Web/NEXT%20Computer%20logo%20spec%20sheet.jpg", title: "", footnote: "Image courtesy of Milton Glaser Archives"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Collateral",
+                        "middle", "1", "1",
+                        {SM: "https://assets.paulrand.design/Works/NeXT/Collateral/Web/NeXT%20computer%20collateral-970.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Collateral/Web/NeXT%20computer%20collateral.jpg", title: "", footnote: "Image courtesy of Wright auction house, Chicago, IL."}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo Presentation Booklet",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2001-970.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2001.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2001.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2002.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2002.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2003.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2003.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2004.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2004.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2005.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2005.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2006.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2006.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2007.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2007.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2008.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2008.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2009.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2009.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2010.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2010.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2011.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2011.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2012.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2012.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2013.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2013.jpg"}
+                        )
+
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell
+                    .grid-x.grid-margin-x
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2001-450.jpg",
+                            "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2001.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                NEXT
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2002-450.jpg",
+                            "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2002.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                The Sign of the Next Generation of Computers *for Education.*
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2003-450.jpg",
+                            "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2003.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                What should a logo for Next look like?
+
+                                Choosing a typeface as the basis for the design of a logo is a convenient starting point. Here are two examples: Caslon and Bifur. Caslon is an alphabet designed as far back as 1725 by William Caslon. It appears to be a good choice because it is both elegant and bookish, qualities well suited for educational purposes.
+
+                                Bifur, a novelty face by A. M. Cassandre, was designed as recently as 1929. An unconventional but ingenious design, it has the advantage, to some, of visually implying advanced technology. *(Attributing certain magical qualities to particular typefaces is, however, largely a subjective matter.)*
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2004-450.jpg",
+                            "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2004.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                One reason for looking at a number of possible typefaces is to satisfy one’s curiosity. Another, and perhaps more meaningful one, is to study the relationship of different letter combinations, to look for visual analogies, and to try to elicit ideas that the design of a letter or group of letters might inspire.
+
+                                Here are some further choices, but no matter how one may look at these different examples: sans serifs, hairline and slab serifs, condensed, expanded, bold, light, outline… they still say *next*… like *next time, what’s next?, next in line,* or even *next of kin*. The word is in such common usage that it is simply taken for granted.
+
+                                Personal preferences, prejudices, and stereotypes often dictate what a logo looks like, but it is *needs*, not wants, *ideas*, not type styles which determine what its form should be. To defamiliarize it, to make it look different, to let it evoke more than the mere adjective or adverb it happens to be is, it seems, the nub of the problem.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2005-450.jpg",
+                            "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2005.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Set in all capitals, the word NEXT is sometimes confused with EXIT possibly because the EXT grouping is so dominant. A combination of capitals and lower case letters alleviates this problem.
+
+                                Here are some possibilities which explore the use of lower case letters.
+
+                                The e is differentiated so as to provide a focal point and visual contrast among the capital letters which, otherwise, consist only of straight lines.
+
+                                Happily, the e also could stand for:  
+                                education  
+                                excellence  
+                                expertise  
+                                exceptional  
+                                excitement  
+                                e=mc2  
+                                etc.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2006-450.jpg",
+                            "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2006.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Note the difference that the lower case e makes when compared with the capital E. By means of contrast both interest and readability are achieved. This is particularly noticeable in the illustration at the bottom.
+
+                                These simple, geometric letters make it easier to exploit and manipulate possible visual ideas than do more complex serifed letters.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2007-450.jpg",
+                            "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2007.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Ideally, a logo should explain or suggest the business it symbolizes, but this is rarely possible or even necessarv.There is nothing about the IBM symbol, for example, that suggests computers, except what the viewer reads into it. Stripes are now associated with computers because the initials of a great computer company happen to be striped.This is equally true of the ABC symbol which does not suggest TV. The mnemonic factors in both logps are graphic devices: stripes and circles.
+
+                                In this example the e is the mnemonic factor.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2008-450.jpg",
+                            "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2008.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                A logo takes on meaning, only if over a period of time it is linked to some product or service of a particular organization. What is needed is finding a meaningful device, some idea that reinforces the memorability of the company name. A black cube can be such a device because it has visual impact, and is easy to remember. Unlike the word Next, it is depictable, possesses the *promise of meaning*, and the *pleasure of recognition.*
+
+                                This idea in no way restricts its application to any one product or concept.  
+                                The three dimensional effect functions as an underscore to attract the viewer s attention.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2009-450.jpg",
+                            "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2009.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                It is desirable to keep the letter style simple, unmannered, and untrendy so as not to distract from the cube concept. Furthermore, the use of a single identification device and a simple sans serif letter, designed to harmonize with almost any accompanying typeface, is essential for practical application. Whenever possible, double identification (name plus symbol) is best avoided.The brevity of the word NeXT and its containment within the framework of the cube obviates the need for such awkward devices.
+
+                                Splitting the logo into two lines accomplishes several things: it startles the viewer and gives the word a new look, thus making it easier to separate from common usage. And even more importantly, it increases the letter size two-fold, within the framework of the cube. For small space use, a one line logo would have been too small to fit within this same framework.
+
+                                Readability is hardly affected because the word is too simple to be misread.  
+                                Moreover, people have become accustomed to this format with such familiar four- letter word combinations as  
+                                LO  
+                                VE
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2010-450.jpg",
+                            "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2010.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                In its design, color arrangement, and orientation the logo is a study in contrasts. Kipped at a jaunty angle, it brims with the informality, friendliness, and spontaneity of a Christmas seal and the authority of a rubber stamp.Together with its lively, black silhouette it becomes a focal point difficult for the eyes to avoid.
+
+                                The unconventional, yet dignified, array of colors: vermilion against cerise and green, and yellow against black (the most intense color contrast possible) is designed to appeal to a youthful audience and to add a sparkling, jew’el-like touch to paper, package, or machine. It is the sparing use of brilliant colors on a predominantly black ground that produces this effect, like stars in the sky. In itself, a decorative and self contained device, the logo does not depend on extraneous embellishment or fancy backgrounds for its many varied applications.
+
+                                Poised at an angle of twenty-eight degrees, the black cube—even w ithout color— is equally effective for black and white use.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2011-450.jpg",
+                            "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2011.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Here are some other choices.  
+                                Many different color combinations are possible.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2012-450.jpg",
+                            "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2012.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                The application of this device to such items as paper weights, stickers, and other promotional articles is endless. It lends itself as well to large scale interpretation: signs, exhibits in the shape of cubes, in which the actual exhibit is housed, as well as exhibit stands. For printed matter, its infinite adaptability and attention-compelling power is self-evident.
+
+                                Paul Rand  
+                                Weston, Connecticut Spring 1986
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2013-450.jpg",
+                            "https://assets.paulrand.design/Works/NeXT/Logo%20Book/Web/NeXT%2013.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                *(Back cover)*
+
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Brochure",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2001-970.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2001.jpg", title: "", footnote: "Courtesy of Franc Nunoo-Quarcoo"}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2001.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2001.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2002.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2002.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2003.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2003.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2004.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2004.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2005.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2005.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2006.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2006.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2007.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2007.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2008.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2008.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2009.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2009.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2010.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2010.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2011.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2011.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2012.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2012.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2013.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2013.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2014.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2014.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2015.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2015.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2016.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2016.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2017.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2017.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2018.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Brochure/Web/NeXT%20Computers%20Brochure%2018.jpg"}
+                        )
+
+                    +projectDivider("Stationery")
+                    .grid-x.grid-margin-x
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/NeXT/Stationery/Web/NeXT%20Stationery-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/NeXT/Stationery/Web/NeXT%20Stationery.jpg",
+                            title: "Stationery Set",
+                            footnote1: "1 Image"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/NeXT/Stationery/Web/NeXT%20Stationery-%20Letterhead%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/NeXT/Stationery/Web/NeXT%20Stationery-%20Letterhead%2001.jpg",
+                            title: "Letterhead",
+                            footnote1: "1 Image"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/NeXT/Stationery/Web/NeXT%20Stationery-%20Business%20Card-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/NeXT/Stationery/Web/NeXT%20Stationery-%20Business%20Card.jpg",
+                            title: "Business Card",
+                            footnote1: "1 Image"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/NeXT/Stationery/Web/NeXT%20Stationery-%20Envelope-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/NeXT/Stationery/Web/NeXT%20Stationery-%20Envelope.jpg",
+                            title: "Envelope",
+                            footnote1: "1 Image"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/NeXT/Stationery/Web/NeXT%20Stationery-%20Address%20Label-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/NeXT/Stationery/Web/NeXT%20Stationery-%20Address%20Label.jpg",
+                            title: "Address Label",
+                            footnote1: "1 Image"
+                            })
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Poster",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/NeXT/Posters/Web/NeXT%20Computers%20Poster%2001.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Posters/Web/NeXT%20Computers%20Poster%2001.jpg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Miscellaneous",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/NeXT/Misc/Web/Steve%20Jobs%20wearing%20NeXT%20Tshirt.jpg", LG:"https://assets.paulrand.design/Works/NeXT/Misc/Web/Steve%20Jobs%20wearing%20NeXT%20Tshirt.jpg", title: "", footnote: "Steve Jobs wearing NeXT Shirt"}
+                        )
+
+            .grid-x.grid-margin-x.align-center
+                .cell.text-center
+                    hr.w100.horizontal-center.hr-red.hr-3.small-my3
+                    h5 Videos
+                    p
+                    h6 Steve Jobs discussing what it was like to work with Paul Rand:
+                    .flex-video
+                        iframe(src="//www.youtube.com/embed/xb8idEf-Iak" frameborder="0" allowfullscreen)
+
+                    hr.w33.small-my3
+
+                    h6 Paul Rand introducing the logo presentation booklet to the NeXT team:
+                    .flex-video
+                        iframe(src="//www.youtube.com/embed/6J-Iv99ID70" frameborder="0" allowfullscreen)
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

@@ -1,0 +1,38 @@
+//- =============================================================================================
+//- 
+//- ███████ ██ ███    ██ ██████       █████       ██████  ██████  ██████  ██    ██
+//- ██      ██ ████   ██ ██   ██     ██   ██     ██      ██    ██ ██   ██  ██  ██
+//- █████   ██ ██ ██  ██ ██   ██     ███████     ██      ██    ██ ██████    ████
+//- ██      ██ ██  ██ ██ ██   ██     ██   ██     ██      ██    ██ ██         ██
+//- ██      ██ ██   ████ ██████      ██   ██      ██████  ██████  ██         ██
+//- 
+//- =============================================================================================
+.grid-container
+    .grid-x.grid-margin-x.align-middle.align-center.medium-unstack
+        unless library == "no"
+            .cell.shrink(data-aos="fade-left")
+                a.button.radius.red.text-caps.large.external(href=libraryLink target="_blank" rel=noopener) Find in a local library
+
+            .cell.shrink.hide-for-small-only.medium-m2.large-m4.sans-serif.text-bold.relative
+                .vertical-divider Or
+
+        .cell.shrink.flex-container.flex-dir-column(data-aos="fade-right")
+            unless abe == "no" && amazon == "no" && barnesnoble == "no" && ebay == "no" && modernism101 == "no"
+                p.sans-serif.text-bold.text-italic Purchase a Copy
+
+            unless abe == "no"
+                a.button.arrow.radius.brown.text-caps.text-left.external(href=abeLink target="_blank" rel=noopener) Abebooks.com
+
+            unless amazon == "no"
+                a.button.arrow.radius.brown.text-caps.text-left.external(href=amazonLink target="_blank" rel=noopener) Amazon.com
+
+            unless barnesnoble == "no"
+                a.button.arrow.radius.brown.text-caps.text-left.external(href=barnesnobleLink target="_blank" rel=noopener) Barnes & Noble.com
+
+            unless ebay == "no"
+                a.button.arrow.radius.brown.text-caps.text-left.external(href=ebayLink target="_blank" rel=noopener) eBay.com
+
+            unless modernism101 == "no"
+                a.button.arrow.radius.brown.text-caps.text-left.external(href=modernism101Link target="_blank" rel=noopener) Modernism101.com
+
+    //- -----  End of FIND A COPY  ---------------------------------------------

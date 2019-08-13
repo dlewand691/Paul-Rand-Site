@@ -1,0 +1,515 @@
+doctype html
+html.no-js(lang='en' dir='ltr')
+
+	include _include-head-meta
+	include _include-head-favicons
+
+	body(data-grid-framework="f4" data-grid-color="pink" data-grid-opacity="0.2" data-grid-zindex="10" data-grid-gutterwidth="30px" data-grid-nbcols="12")
+
+
+		//- =========================================
+		//- =            HEADER NAVIGATION            =
+		//- =========================================
+		nav.top-bar(data-topbar='', role='navigation')
+			ul.title-area
+				li.name
+					img.float-left.logo(src="img/logo.svg" width="105" height="105")
+					.nameBlock
+						.name Paul Rand
+						.dates 1914-1996
+				// Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+				li.toggle-topbar.menu-icon
+					a(href='#')
+						span Menu
+				section.top-bar-section
+					// Right Nav Section
+					ul.float-right
+						li.has-dropdown
+							a(href='#') Resources
+							ul.dropdown
+								li
+									a(href='#') First link in dropdown
+								li
+									a(href='#') Active link in dropdown
+						li
+							a(href='#') Shop
+						li
+							a(href='#') News
+						li
+							a(href='#') Contact
+					// Left Nav Section
+					ul.left
+						li.has-dropdown
+							a(href='#') Life
+							ul.dropdown
+								li
+									a(href='#') First link in dropdown
+								li
+									a(href='#') Active link in dropdown
+						li.has-dropdown
+							a(href='#') Work
+							ul.dropdown
+								li
+									a(href='#') First link in dropdown
+								li
+									a(href='#') Active link in dropdown
+						li.has-dropdown
+							a(href='#') Writing
+							ul.dropdown
+								li
+									a(href='#') First link in dropdown
+								li
+									a(href='#') Active link in dropdown
+
+
+
+
+
+		//- -----  End of HEADER NAVIGATION  ------
+
+
+		//- ===============================================
+		//- =            FULL WIDTH IMAGE HEADER            =
+		//- ===============================================
+		.imageHeader-full
+			.text
+				h1 Black in the Visual Arts
+				p: br
+				p This version of the article was originally published in “Graphic Forms: The Arts as Related to the Book”, 1949. It was revised and reprinted in “A Designer’s Art”, 1985.
+			img(src="img/imageHeader.jpg")
+
+
+
+		//- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+
+
+		//- =====================================
+		//- =            GALLERY LIGHT            =
+		//- =====================================
+
+		.grid-x.grid-margin-x.galleryLight
+			h3 Gallery Light
+			.small-12.cell
+				.grid-x.grid-margin-x(data-equalizer).large-collapse.medium-collapse
+					.large-4.medium-4.small-12.cell(data-equalizer-watch)
+						img(src="http://placehold.it/500x500")
+					.large-7.medium-8.small-12.cell
+						.textLabel.vertical-align-parent(data-equalizer-watch)
+							.vertical-align-child
+								h3 This…Is the Stafford Stallion
+								h6 1944
+								a.button.radius.text-caps(href="#") Learn More
+
+				.grid-x.grid-margin-x(data-equalizer).large-collapse.medium-collapse
+					.large-4.medium-4.small-12.cell(data-equalizer-watch)
+						img(src="http://placehold.it/500x500")
+					.large-7.medium-8.small-12.cell
+						.textLabel.vertical-align-parent(data-equalizer-watch)
+							.vertical-align-child
+								h3 Some Thoughts… and Some Tribulations about the Design of a Logo
+								h6 1944
+								a.button.radius.text-caps(href="#") Learn More
+
+				.grid-x.grid-margin-x(data-equalizer).large-collapse.medium-collapse
+					.large-4.medium-4.small-12.cell(data-equalizer-watch)
+						img(src="http://placehold.it/500x500")
+					.large-7.medium-8.small-12.cell
+						.textLabel.vertical-align-parent(data-equalizer-watch)
+							.vertical-align-child
+								h3 This…Is the Stafford Stallion
+								h6 1944
+								a.button.radius.text-caps(href="#") Learn More
+
+
+
+		//- -----  End of GALLERY LIGHT  ------
+
+		hr
+
+		//- ======================================
+		//- =            GALLERY MEDIUM            =
+		//- ======================================
+
+		.grid-x.grid-margin-x.galleryMedium
+			h3 Gallery Medium
+			.small-12.cell
+				ul.large-up-3.medium-up-3.small-up-2
+					li
+						img(src="http://placehold.it/300x375")
+						.title-label
+							p This…Is the Stafford Stallion
+							.footnote 1944
+
+					li
+						img(src="http://placehold.it/300x375")
+						.title-label
+							p Some Thoughts… and Some Tribulations about the Design of a Logo
+							.footnote 1944
+							.footnote (17 images)
+
+					li
+						img(src="http://placehold.it/300x375")
+						.title-label
+							p This…Is the Stafford Stallion
+							.footnote 1944
+
+
+		//- /*-----  End of GALLERY MEDIUM  ------*/
+
+
+		hr
+
+
+		//- =====================================
+		//- =            GALLERY HEAVY            =
+		//- =====================================
+
+		.grid-x.grid-margin-x
+			h3 Gallery Heavy
+			.small-12.cell.text-center
+				h3 Coronet Brandy
+					.footnote 1949–1953
+				br
+				ul.large-up-5.medium-up-4.small-up-2
+					li: img(src="http://placehold.it/170x200")
+					li: img(src="http://placehold.it/170x200")
+					li: img(src="http://placehold.it/170x200")
+					li: img(src="http://placehold.it/170x200")
+					li: img(src="http://placehold.it/170x200")
+					li: img(src="http://placehold.it/170x200")
+					li: img(src="http://placehold.it/170x200")
+					li: img(src="http://placehold.it/170x200")
+					li: img(src="http://placehold.it/170x200")
+					li: img(src="http://placehold.it/170x200")
+					li: img(src="http://placehold.it/170x200")
+					li: img(src="http://placehold.it/170x200")
+					li: img(src="http://placehold.it/170x200")
+
+				br
+				h3 Coronet Brandy
+					.footnote 1949–1953
+				br
+				ul.large-up-5.medium-up-4.small-up-2
+					li: img(src="http://placehold.it/170x200")
+					li: img(src="http://placehold.it/170x200")
+					li: img(src="http://placehold.it/170x200")
+					li: img(src="http://placehold.it/170x200")
+					li: img(src="http://placehold.it/170x200")
+					li: img(src="http://placehold.it/170x200")
+					li: img(src="http://placehold.it/170x200")
+					li: img(src="http://placehold.it/170x200")
+					li: img(src="http://placehold.it/170x200")
+					li: img(src="http://placehold.it/170x200")
+
+		//- -----  End of GALLERY HEAVY  ------
+
+		hr
+
+		//- ============================
+		//- =            LIST            =
+		//- ============================
+
+		.grid-x.grid-margin-x.listItem
+			h3 List
+			.small-12.cell
+				.grid-x.grid-margin-x.large-collapse.medium-collapse.small-collapse(data-equalizer data-equalizer-mq="large-up")
+					.large-2.medium-2.small-2.cell.listItemImage(data-equalizer-watch)
+						img(src="http://placehold.it/170x170")
+					.small-10.cell.vertical-align-parent(data-equalizer-watch)
+						.vertical-align-child.listItemLabel
+							h4.small-mb-0 Amazon
+								.footnote www.amazon.com
+							p.small-mb-0 Amazon is a great place to start. Be sure to check out any items that are used as well.
+
+				.grid-x.grid-margin-x.large-collapse.medium-collapse.small-collapse(data-equalizer data-equalizer-mq="large-up")
+					.large-2.medium-2.small-2.cell.listItemImage(data-equalizer-watch)
+						img(src="http://placehold.it/170x170")
+					.small-10.cell.vertical-align-parent(data-equalizer-watch)
+						.vertical-align-child.listItemLabel
+							h4.small-mb-0 Amazon
+								.footnote www.amazon.com
+							p.small-mb-0 Amazon is a great place to start. Be sure to check out any items that are used as well.
+
+				.grid-x.grid-margin-x.large-collapse.medium-collapse.small-collapse(data-equalizer data-equalizer-mq="large-up")
+					.large-2.medium-2.small-2.cell.listItemImage(data-equalizer-watch)
+						img(src="http://placehold.it/170x170")
+					.small-10.cell.vertical-align-parent(data-equalizer-watch)
+						.vertical-align-child.listItemLabel
+							h4.small-mb-0 Amazon
+								.footnote www.amazon.com
+							p.small-mb-0 Amazon is a great place to start. Be sure to check out any items that are used as well.
+		.grid-x.grid-margin-x
+			.large-12.cell
+				.pagination-centered
+					ul.pagination
+						li.arrow.unavailable
+							a(href='') &laquo;
+						li.current
+							a(href='') 1
+						li
+							a(href='') 2
+						li
+							a(href='') 3
+						li
+							a(href='') 4
+						li.unavailable
+							a(href='') &mldr;
+						li
+							a(href='') 12
+						li
+							a(href='') 13
+						li.arrow
+							a(href='') &raquo;
+
+
+
+		//- /*-----  End of LIST  ------*/
+
+		hr
+
+		//- ========================================
+		//- =            1 COLUMN CONTENT            =
+		//- ========================================
+
+		.grid-x.grid-margin-x
+			h3 1 Column Content
+			.small-12.cell
+				h1 About the site
+
+				h3 This site is meant to honor and pay utmost respect to the life and work of Mr. Rand.
+
+				p When I first began this project, I discovered that there were no “single-source” references to Mr. Rand or his works anywhere on the internet. Thus sparked the idea to build this tribute/archive site. I am in no way a philosopher or critic of design but have a great respect for the history of our industry and the people who have shaped it. In the course of building the site, I’ve been able to more greatly appreciate their thoughts and theories on design and develop my own opinions on the subject.
+
+				p This project is maintained in my off time and would graciously include any works, thoughts, notes, stories or any other miscellaneous items that you would like to share.
+
+				p The site is always developing and growing and I hope to add more sections and features in the near future.
+
+				p Thank you for visiting and enjoy!
+
+				p Sincerely,
+					br
+					| Daniel Lewandowski
+					br
+					| Alpharetta, Georgia
+
+		//- -----  End of 1 COLUMN CONTENT  ------
+
+
+		hr
+
+
+
+
+
+		//- =============================
+		//- =            VIDEO            =
+		//- =============================
+
+		.grid-x.grid-margin-x
+			h3 Video
+			//- ==========  TITLE  ==========
+
+			.large-8.medium-11.cell
+				.grid-x.grid-margin-x
+					.large-12.cell.text-center
+						h2 Steve Jobs interview about working with Paul Rand
+							.footnote 1993
+
+						br
+						p This video provided courtesy of 
+							a(href="#") youareworthy 
+							| on YouTube.
+							br
+							| Original post found on the blog 
+							a(href="#") “Art of Raw”.
+
+		//- ==========  VIDEO  ==========
+		.grid-x.grid-margin-x
+		.cell
+			.flex-video
+				iframe(src="//www.youtube.com/embed/xb8idEf-Iak" frameborder="0" allowfullscreen)
+
+		//- ==========  BODY  ==========
+		.grid-x.grid-margin-x
+			.large-7.medium-9.small-12.cell
+				h3.text-bold.text-italic.text-center The story behind the video:
+
+				p: br
+
+				p Monday, December 10, 2007
+
+				p My Mentor Paul Rand and an Interview with Steve Jobs
+
+				p Before I went into the Army at age 17, I used to paint anything that moved. After I got out, I was excited to get break into the world of graphic design and advertising. I heard about this guy named Paul Rand, so I looked him up and a few days later, negotiated a meeting with him.
+
+				p We became fast friends and I decided to intern with him at his Studio in Weston, CT. It was a real shlep to get to his house from my apartment in NYC. The subway to Grand Central Station, Metro North to Westport and a Taxi to Paul’s house…
+
+				p My first assignment was picking up a sticks in his back yard over 12” long and putting them in a big pile. After several days of collecting sticks, Paul told me to call the Fire Department to get permission to burn and then burn. Well, it turned out that the you are supposed to call days in advance in order to get a burn permit from the Fire Marshall and he was gone for the day. In a very Forest Gump like way, I asked if they had his home number and I called him and told him that we had a pile ready to burn. Paul looked at his sweet wife Marion with disbelief at my chutzpah, smiled as we got permission to burn…
+
+				p As Paul got older and we got past yard work into great graphic design and branding projects, I realized how privileged I was to have access to this living master. Paul Rand had several select clients, worked mostly by himself at his studio and taught the Master Program at Yale University.
+
+				p We would take lunch breaks and go to Gold’s Deli in Westport. Paul loved the Dr. Browns Celery Soda. I liked the creme. We at stuff back then that I don’t even consider food today.
+
+				p My friends Bill Hamilton and Rick Boyko encouraged me to interview Paul Rand and introduced me to Alan Pottasch. Alan loved the idea and we started doing rough interviews with Paul Rand, Milton Glaser, Massimo Vignelli and then Steve Jobs.
+
+				p Paul Rand died in November 1996 and we put the project on hold. It seemed like a daunting task to create a film about a man that is widely considered to have almost single handedly change commercial art into fine art.
+
+				p The advent of youtube and blogging has created an opportunity to share a rough cut of an early interview that I did with Steve Jobs back in 1993 on the lawn of NeXT Computer Corp.
+
+
+		//- /*-----  End of VIDEO  ------*/
+
+
+
+		//- ==================================
+		//- =            FIND A COPY            =
+		//- ==================================
+		.findRow
+			.grid-x.grid-margin-x
+				.small-12.cell
+					.grid-x.grid-margin-x(data-equalizer)
+						.large-6.medium-6.small-6.cell.text-right.medium-p40(data-equalizer-watch)
+							a.button.radius.red.text-caps.large(href="#") Find in a local library
+
+						.verticalDivider
+							| Or
+
+						.large-6.medium-6.small-6.cell(data-equalizer-watch)
+							.grid-x.grid-margin-x
+								.large-12.cell.purchaseLinks.vertical-align-child.medium-p40
+									h4 Purchase a Copy
+									a.button.radius.brown.text-caps(href="#") Abebooks.com
+									a.button.radius.brown.text-caps(href="#") Amazon.com
+									a.button.radius.brown.text-caps(href="#") Modernism101.com
+
+		//- /*-----  End of FIND A COPY  ------*/
+
+
+
+		//- ==================================
+		//- =            NEXT ROW            =
+		//- ==================================
+
+		.nextRow
+			.grid-x.grid-margin-x
+				.large-2.medium-3.small-6.cell.large-push-1.medium-push-1.small-push-1.end
+					p.footnote Next Article
+
+		.grid-x.grid-margin-x
+			.small-12.cell
+				.large-6.medium-6.small-12.cell.p0
+					h3 Steven Heller Interview
+						p.footnote 1994
+
+					p Filmed at the Fitzgerald Theater in downtown St. Paul Minnesota
+
+					a.button.radius.blue.text-caps(href="#") Watch Now
+
+					p: br
+
+				.large-6.medium-6.small-12.cell
+					img(src="http://placehold.it/370x208")
+
+		//- /*-----  End of NEXT ROW  ------*/
+
+
+		//- ==============================
+		//- =            FOOTER            =
+		//- ==============================
+
+		.footer
+			.grid-x.grid-margin-x
+				.small-12.cell
+					.grid-x.grid-margin-x
+						.large-8.medium-8.cell.small-text-center
+							ul.large-up-4.medium-up-4.small-up-1
+								li
+									h5 LIFE
+									a(href="#") Biography & Timeline
+									br
+									a(href="#") Books & Articles
+									br
+									a(href="#") Exhibits
+									br
+									a(href="#") Interviews
+									br
+									a(href="#") Videos
+									br
+									a(href="#") Portraits
+									br
+									a(href="#") House
+
+								li
+									h5 RESOURCES
+									a(href="#") Find Items Online
+									br
+									a(href="#") Articles, Interviews & Information
+									br
+									a(href="#") Tributes & Personal Experiences
+									br
+									a(href="#") Paul Rand’s Work Today
+
+								li
+									h5 WRITING
+									a(href="#") Books
+									br
+									a(href="#") Articles
+									br
+									a(href="#") Quotes
+
+								li
+									h5 WORK
+									a(href="#") Advertising
+									br
+									a(href="#") Books
+									br
+									a(href="#") Collateral
+									br
+									a(href="#") Editorial
+									br
+									a(href="#") Logos
+									br
+									a(href="#") Posters
+									br
+									a(href="#") Packaging
+									br
+									a(href="#") Painting
+									br
+									a(href="#") Photography
+
+						.large-4.medium-4.small-12.cell.text-right.small-text-center
+							hr.show-for-small-only
+							ul.no-bullet
+								li
+									a(href="#") About the Site
+									br
+									a(href="#") Contact
+									br
+									a(href="#") Terms
+									br
+									a(href="#") Facebook
+									br
+									a(href="#") #PaulRand
+
+
+
+				.grid-x.grid-margin-x
+					.small-12.cell.text-right.small-text-center
+						p.footnote ©2015, All Rights Reserved
+
+
+		//- /*-----  End of FOOTER  ------*/
+
+
+
+
+
+
+
+
+
+
+
+		script(src='js/min/app-min.js')

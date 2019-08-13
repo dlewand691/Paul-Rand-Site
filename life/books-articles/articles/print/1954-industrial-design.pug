@@ -1,0 +1,174 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Industrial Design 6'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2000-450.jpg'
+
+    - var articleAuthor         = 'CHANGE_ME'
+    - var publishedInTitle      = 'Industrial Design 6'
+    - var publishedInSubtitle   = 'December 1954'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2000-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2000.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/289485511'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=https%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3Dindustrial%2520design%2520magazine%25206%25201954%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'https://amzn.to/2XFFR5f'
+    - var modernism101          = 'yes'
+    - var modernism101Link      = 'http://modernism101.com/products-page/graphic-design/industrial-design-6-december-1954-new-york-whitney-publications-inc-vol-1-no-6-annual-design-review-duplicate-3/'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2334524.m570.l1313.TR1.TRC0.A0.H0.X%2522industrial%2Bdesign%2522%2Bmagazine.TRS0%26_nkw%3D%2522industrial%2Bdesign%2522%2Bmagazine%26_sacat%3D0%26LH_TitleDesc%3D0%26_osacat%3D0%26_odkw%3D%2522industrial%2Bdesign%2522%2Bmagazine%2BWhitney%2BPublications'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'IDEA: International Advertising Art Idea magazine'
+    - var nextDate              = 'March 1955'
+    - var nextDescription       = '6 pages with 16 b/w images'
+
+    - var nextLink              = '/life/books-articles/articles/print/1955-idea-international-art-advertising-magazine.html'
+
+    - var relatedItemLink1      = '1947-industrial-design-interiors.html'
+    - var relatedItemTitle1     = 'Paul Rand, industrial designer'
+    - var relatedItemFootnote1  = '1947 Industrial Design, Interiors February'
+
+    - var relatedItemLink2      = '/life/books-articles/articles/print/1988-mohawk-paper.html'
+    - var relatedItemTitle2     = 'Mohawk Paper Graphics Collection: The Graphic Art of Paul Rand'
+    - var relatedItemFootnote2  = 'Cohoes, NY, 1988'
+
+    - var relatedItemLink3      = '/life/books-articles/articles/print/1997-essays-on-design.html'
+    - var relatedItemTitle3     = 'Thoughts on Paul Rand'
+    - var relatedItemFootnote3  = '1988, Henry Steiner'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2008%20B-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2008%20B.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Industrial%20Design%206/Web/Industrial%20Design%20No%206%2C%20December%2C%201954%2012.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content#original-article
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Jane Fisk Mitarachi [Editor]: INDUSTRIAL DESIGN 6. New York: Whitney Publications, Inc., December 1954 [Volume 1, Number 6]. Original Edition.  Side-stitched perfect bound wrappers. 126 pp.  Illustrated articles and advertisements. Multiple paper stocks. Elaborate graphic design throughout. Silver wrappers lightly worn and soiled. A very good to nearly fine copy.
+
+                        9 x 12 magazine with 126 pages and illustrated throughout and printed on different stocks, including an amazing variety of editorial content. Here is what the publishers wanted this magazine to accomplish: "A bi-monthly review of form and technique in designing for industry. Published for active industrial designers and the design executives throughout industry who are concerned with product design, development and marketing."
+
+                        Here is former ID editor Ralph Caplan's recounting the magazines birth:  "Fifty years ago, the publisher Charlie Whitney ran into Henry Dreyfuss. 'Henry,' he said, 'I'm about to publish a magazine for industrial designers.' 'Wonderful,' Henry replied. 'There are 14 of us.' Caplan remembered, "I.D. was not begun as a magazine for industrial designers, but as a magazine for anyone who had a stake in design and cared about it. This allowed a great deal of editorial latitude."
+
+                        This issue of INDUSTRIAL DESIGN celebrated all the best of modern American industrial design.  Includes many examples of furniture, ceramics, housewares, appliances, automobiles, buildings,  radios, projectors, televisions, and many other objects designed for the burgeoning postwar middle class.
+
+                        + Annual Design Review
+                        + Familiar Problems
+                        + New Problems
+                        + Invention
+                        + Housing
+                        + Details
+                        + Toys
+                        + 5 Designers for Under Five Dollars: Raymond Loewy, Paul Rand, Eliot Noyes, Milton Immermann and Saul Steinberg
+                        + Selling
+                        + Soapmaker’s Art by Aline Saarinen: Proctor and Gamble Advertising
+                        + Close-up of Industrial Design at Milan’s X Triennale
+                        + Perspective; A new System For Designers by Jay Doblin
+                        + Index to 1954 issues of Industrial Design
+                        + Regular features include Contributors’ Profiles, Letters, News, Editorial, Technics, Design Review, and Manufacturers Literature.
+
+                        ---
+
+                        **Issue Highlights include:**
+
+                        **5 Designers for Under Five Dollars**  
+                        What happens when you give Raymond Loewy, Paul Rand, Eliot Noyes, Milton Immermann and Saul Steinberg each five dollars and tell them to bring you back some well-designed merchandise that is readily available in NYC, circa 1954?
+
+                        **Annual Design Review**  
+                        48-page heavily illustrated feature presenting highlights of 1954 Industrial Design, including furniture, ceramics, housewares, appliances, automobiles, buildings,  radios, projectors, televisions, toys and many other objects.
+
+                        Includes work by George Nelson, Jens Risom, Paul McCobb, Florence Knoll, Harley Earl, Greta Magnusson Grossman, Otto and Ridi Kolb, Alexander Girard, Henry Dreyfuss, R. Buckminster Fuller, Russel Wright, Charles Eames, Roberto Mango, Peter Muller-Munk, Arne Jacobsen, Raymond Loewy, Walter Dorwin Teague, Lou Dorfsman, Donald Deskey, Paul Rand, Lester Beall, Ladislav Sutnar, Leo Lionni, George Tscherney, Alvin Lustig, and many others.
+
+
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html plugins=['markdown-it-sup'])
+                            Paul Rand  
+                            Art Director, Wm. Weintraub  
+                            New York
+
+                            roll of twine....................$1.35  
+                            jewler’s clamp..................1.25  
+                            dentist’s mirror...................50  
+                            Barber’s shears...............1.50  
+                            spreader...............................25  
+                            champgne twirler...............05  
+
+                            “a/ I like them;  
+                            b/ I find them, like the bieyele and the violin, forms that have been perfected through the years and are virtually impossible to improve;  
+                            c/ for the most part they are not only useful and beautiful, but indispensable;  
+                            d/ they have a naturalness that defies a designer’s imagination.”
+
+            //- /*-----  End of BODY  ------*/
+
+
+
+
+
+        include ../../../../__MIXINS/_include-image-carousel.pug
+
+        include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

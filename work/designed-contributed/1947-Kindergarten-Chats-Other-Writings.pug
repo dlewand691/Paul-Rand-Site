@@ -1,0 +1,82 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Kindergarten Chats and Other Writings'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var bookSubhead           = 'Louis H. Sullivan'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/517405'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3DKindergarten%2BChats%2Band%2BOther%2BWritings'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1V9PRKb'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_nkw%3DKindergarten%2520Chats%2520and%2520Other%2520Writings'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'Graphic Forms: The Arts as Related to the Book'
+    - var nextLink              = '1949-Graphic-Forms-The-Arts-as-Related-to-the-Book'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= bookSubhead
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1947%20The%20Documents%20of%20Modern%20Art-%20Kindergarten%20Chats%20and%20Other%20Writings/Web/The%20Documents%20of%20Modern%20Art%20-%20Kindergarten%20Chats%20and%20Other%20Writings-970.jpg",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1947%20The%20Documents%20of%20Modern%20Art-%20Kindergarten%20Chats%20and%20Other%20Writings/Web/The%20Documents%20of%20Modern%20Art%20-%20Kindergarten%20Chats%20and%20Other%20Writings.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            //- include ../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Cover design and typography by Paul Rand
+
+                        Louis H. Sullivan: Kindergarten Chats (revised 1918) and Other Writings. NYC: Wittenborn, 1947 (The Documents of Modern Art Volume 4). First edition. A very good softcover book in decorated, stiff wrappers: uncoated wrappers lightly worn and endpapers mottled. Former owners bookplate on front endpaper. Uncommon in the letterpressed first edition. Cover design and typography by Paul Rand.
+
+                        7.5 x 10 book, with 252 pages and 18 b/w photos.Editorial note by Isabella Athey; biographical note; bibliography of writings by Sullivan. In addition to Kindergarten Chats, serialized in 1901-1902 and first published in book form in 1934, includes eight essays and papers (1885-1906) on ornament in architecture, architectural education, “The Tall Office Building Artistically Considered” and other architectural subjects. In an early issue of GRAPHIS, Max Bill reviewed Motherwell’s Documents of Modern Art series by stating it was the most important series of modern art documents since Gropius and Moholy-Nagy published the Bauhuasbuchers.
+
+                        American architect Louis Henry Sullivan (1856 1924) was called the “father of modernism.” He is considered by many as the creator of the modern skyscraper, was an influential architect and critic of the Chicago School, and was a mentor to Frank Lloyd Wright. Sullivan is credited with coining the phrase “form follows function,” the great battle-cry of modernist architects.
+
+                    .footnote — Randall Ross of modernism101.com
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../__MIXINS/_include-next-work.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

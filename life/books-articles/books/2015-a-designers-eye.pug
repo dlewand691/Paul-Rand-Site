@@ -1,0 +1,108 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'A Designer’s Eye: Paul Rand'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var author                = 'J.P. Williams'
+    - var bookSubhead           = 'WMS & Co., 2015'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/search?q=%22a+designer%27s+eye%22+paul+rand&qt=owc_search'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3D%2522a%2Bdesigner%2527s%2Beye%2522%2Bpaul%2Brand%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1TGbnqL'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/s/paul+rand+a+designer%27s+eye?_requestid=216439'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2050601.m570.l1313.TR0.TRC0.H0.TRS0%26_nkw%3DA%2BDesigner%25E2%2580%2599s%2BEye%253A%2BPaul%2BRand%26_sacat%3D0'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'IBM Graphic Standards Manual reprint'
+    - var nextDate              = '2015'
+    - var nextDescription       = 'By Empire Books'
+    - var nextLink              = '/life/books-articles/books/2018-ibm-graphic-standards-manual-reprint.html'
+
+    - var relatedItemLink1      = '/life/books-articles/books/1998-american-modernist.html'
+    - var relatedItemTitle1     = 'Paul Rand: American Modernist'
+    - var relatedItemFootnote1  = 'By Jessica Helfand'
+
+    - var relatedItemLink2      = '/life/books-articles/books/1975-champion-papers.html'
+    - var relatedItemTitle2     = 'The Printing Salesman’s Herald'
+    - var relatedItemFootnote2  = 'Champion Papers, 1975'
+
+    - var relatedItemLink3      = '/life/books-articles/books/2002-the-works-of-paul-rand.html'
+    - var relatedItemTitle3     = 'Paul Rand: The Works of Paul Rand'
+    - var relatedItemFootnote3  = 'By Takahiro Tsuchida'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2010.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= 'By ' + author
+                    br
+                    em.text-gray.t16!= bookSubhead
+
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2C%20front-800.jpg",
+                            "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2015%20A%20Designer%27s%20Eye/Web/Paul%20Rand-%20A%20Designer%27s%20Eye%2C%20front.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        A photographic essay of the personal ephemera of Paul Rand. Limited, numbered edition of 1,000 copies. 108 pages. 76 photos. Published by Wms & Co., authored by JP Williams, photographs by Grant Peterson.
+
+                        A limited number of copies signed by the author on the frontspiece are available. There are two cover color options: blue and grey.
+
+                    .text-center.medium-mt4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            ##### Purchase directly from WMS&Co
+                        a.radius.button.red.text-caps.external(href="//wmscoink.com/beauty_and_utility/products/a_designers_eye_paul_rand" target="_blank" rel=noopener) Buy Now
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        //- include ../../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../../__MIXINS/_include-next-item.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

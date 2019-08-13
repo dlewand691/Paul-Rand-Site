@@ -1,0 +1,166 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Six Chapters in Design: Saul Bass, Ivan Chermayeff, Milton Glaser, Paul Rand, Ikko Tanaka, Henryk Tomaszewski'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997-450.jpg'
+
+    - var articleAuthor         = 'Yusaku Kamekura'
+    - var publishedInTitle      = 'By Philip B. Meggs'
+    - var publishedInSubtitle   = 'Chronicle Books (first edition edition October 1, 1997)'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/36696324'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3DSix%2BChapters%2Bin%2BDesign'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1Or0O6p'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/w/six-chapters-in-design-philip-meggs/1114985573?ean=9780811817226'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Paul Rand’s Laboratory: The Art of Books Jackets and Covers'
+    - var nextDate              = '1999'
+    - var nextDescription       = 'Baseline Magazine, No. 27'
+
+    - var nextLink              = '1999-baseline-magazine.html'
+
+    - var relatedItemLink1      = '1997-essays-on-design.html'
+    - var relatedItemTitle1     = 'Thoughts on Paul Rand'
+    - var relatedItemFootnote1  = 'Essays on Design: AGI’s Designers of Influence, 1997'
+
+    - var relatedItemLink2      = '1955-international-art-advertising-idea-magazine.html'
+    - var relatedItemTitle2     = 'International Advertising Art Idea magazine'
+    - var relatedItemFootnote2  = 'March, 1955'
+
+    - var relatedItemLink3      = '1941-ad-magazine.html'
+    - var relatedItemTitle3     = 'Paul Rand, By Laszlo Maholy-Nagy'
+    - var relatedItemFootnote3  = 'AD Magazine, Vol. 7 No. 3'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2014-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2015-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2016-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2016.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2017-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2017.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2018-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2018.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2019-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2019.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2020-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2020.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2021-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2021.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2022-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2022.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2023-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2023.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2024-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2024.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2025-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2025.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2026-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2026.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2027-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2027.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2028-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2028.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2029-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2029.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2030-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2030.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2031-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2031.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2032-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2032.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2033-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2033.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2034-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2034.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2035-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2035.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2036-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2036.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2037-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2037.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2038-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2038.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2039-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Six%20Chapters%20in%20Design/Web/Six%20Chapters%20in%20Design%201997%2039.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content#original-article
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Stylish and concise, this volume presents the work of six venerable names in modern design history. Featuring more than three hundred examples of their best work, yet still eminently portable, Six Chapters in Design is a charming model of economy.
+
+                        Each chapter begins with an essay by a fellow designer, or poet, or, in the case of Saul Bass, director Martin Scorsese, and closes with a biographical profile. Esteemed by designers around the world, these are the artists who created the identities of Warner, AT&amp;T, IBM, ABC, UPS, and Westinghouse; film titles for The Shining and Cape Fear; posters; advertisements; and memorable images of every sort.
+
+                        Their work, nearly omnipresent in everyday life, has influenced an entire culture. This dynamic compendium is a smart resource for designers and artists working in any medium.
+
+
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            The first time I visited Paul Rand at his home was in the Fall of 1954. Needless to say, we were both still quite young back in those days. Yet even then the name Paul Rand was already widely know, and widely acclaimed, throughout the entire world.
+
+                            In my mind, the word that probably fit Paul Rand best is “genius.” His extraordinary talents were confirmed early on by his selection to serve as art director of one of America’s leading magazines, *Esquire*, at the tender age of twenty-three. As his remarkable talents continued to develop and mature in the years after our first meeting, he energetically proceeded to produce a succession of exceptional works that clearly mirrored the depth of his intellectual powers. He swept up nearly every price — and wide renown — as a result.
+
+                            Looking back over the course of Paul Rand’s artistic career, one is inevitably moved by the abundance of lyrical beauty in his works and by their diverse expressive methods, which were infallibly matched to their times. What attracts us most in his works are their concise expression, their superfluity cast aside, their bright and cheerful colors, and their powerful and solid design sense. Yet perhaps most important to his works’ appeal is the fact that Paul Rand himself was a born poet.
+
+                            Paul Rand is often said to have been one of the greatest, and most “American,” of America’s artists. The notion no doubt arose from his explicit straightness and spirited brilliance — artistic sensibilities inevitably born from an environment shaped by freedom. His urbane and stylish ideas, his sophisticated messages, and his bright and witty humor all symbolized the essence of American culture. And yet, symbol of America though he is, Paul Rand was, one should remember, a man of profound intellectual and philosophical depth. He was especially enamored of Eastern philosophy, and on occasion I detect very Japanese feelings in his works. I’m not referring to mere exoticism with a Japanese bent. What I see is something much deeper and more spiritual. Indeed, his forms are often more “Japanese” than those of most Japanese artists. In the years after World War II, we Japanese rush, and writhed, to catch up with Western culture. Our struggle to absorb as much of the West as possible was, in some ways, touchingly sad; yet we believed that this was our only means of surviving. In our haste, we all too often considered Japanese traditions as a hindrance. Today, thinking back on the pressures we felt in those times, the situation seems rather heartrending.
+
+                            When we Japanese look at Paul Rand’s work and ponder the futility of our struggle to absorb Western culture, we are stunned to recognize traditional Japanese styles — styles which we Japanese have long forgotten — running beautifully and refreshingly through the. Even more importantly, in his ever work we marvel at the wondrous vitality we find there that transcends all notions of time.
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+
+
+
+        include ../../../../__MIXINS/_include-image-carousel.pug
+
+        include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

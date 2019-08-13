@@ -1,0 +1,186 @@
+doctype html
+html.no-js(lang='en' dir='ltr')
+
+    include ../../__MIXINS/_include-head.pug
+
+    body(data-grid-framework="f4" data-grid-color="pink" data-grid-opacity="0.2" data-grid-zindex="10" data-grid-gutterwidth="30px" data-grid-nbcols="12")
+
+        .animsition
+            include ../../__MIXINS/_include-headerNav-secondaryNav.pug
+
+            .cd-main-content
+
+                //- ======================================
+                //- =            GALLERY MEDIUM            =
+                //- ======================================
+
+                .grid-x.grid-margin-x
+                    .large-12.small-12.cell
+                        h1.text-center.small-mb3.reveal-enter-bottom The Works of Paul Rand
+
+                .grid-x.grid-margin-x
+                    .large-12.medium-11.small-12.cell
+                        .grid-x.grid-margin-x
+                            .large-6.medium-6.small-12.cell(data-equalizer-watch="work" data-anijs="if: scroll, on: window, do: fadeInUpSmall animated, before: $scrollReveal repeat")
+                                .-x
+                                    h3 By Client:
+                                    form
+                                        select.w100
+                                            option(value='') Select a Client
+                                            option(value='.AdvertisingTypographersAssociationofAmerica') Advertising Typographers Association of America- Type Talks
+                                            option(value='.AIGA') AIGA
+                                            option(value='.Airwick') Airwick
+                                            option(value='.AmericanAdvertisingGuild') American Advertising Guild
+                                            option(value='.ABC') American Broadcasting Company (ABC)
+                                            option(value='.AmericaExpress') American Express
+                                            option(value='.AmericanPrinterMagazine') American Printer Magazine
+                                            option(value='.AncientAgeWhiskey') Ancient Age Whiskey
+                                            option(value='.AntonMaixFabrics') Anton Maix Fabrics
+                                            option(value='.ApparelArts') Apparel Arts
+                                            option(value='.ArchitecturalForum') Architectural Forum
+                                            option(value='.AssociatedMerchandisingCorp') Associated Merchandising Corp
+                                            option(value='.AtlasCrankshaft') Atlas Crankshaft
+                                            option(value='.AutocarCorporation') Autocar Corporation
+                                            option(value='.AyerstMcKennaHarrisonPharmaceutical') Ayerst, McKenna, Harrison Pharmaceutical
+                                            option(value='.Bab-O') Bab-O
+                                            option(value='.BenjaminFranklin200thAnniversary') Benjamin Franklin 200th Anniversary
+                                            option(value='.BlatzBeer') Blatz Beer
+                                            option(value='.Borzoi') Borzoi
+                                            option(value='.BureauofIndianAffairs') Bureau of Indian Affairs
+                                            option(value='.CabbagesKingsCatering') Cabbages & Kings Catering
+                                            option(value='.CenturyLighting') Century Lighting
+                                            option(value='.CIOChorus') CIO Chorus
+                                            option(value='.Colorforms') Colorforms
+                                            option(value='.ColumbusIndianaVisitorsBureau') Columbus Indiana Visitors Bureau
+                                            option(value='.ComputerImpressions') Computer Impressions
+                                            option(value='.CondeNast') Conde Nast
+                                            option(value='.ConnecticutArtDirectorsClub') Connecticut Art Directors Club
+                                            option(value='.ConsolidatedCigarCorporation') Consolidated Cigar Corporation
+                                            option(value='.ContainerCorporationofAmerica') Container Corporation of America
+                                            option(value='.Cooks') Cooks
+                                            option(value='.CoordinatorofInterAmericanAffairs') Coordinator of Inter American Affairs
+                                            option(value='.CoronetBrandy') Coronet Brandy
+                                            option(value='.CountryClubIceCream') Country Club Ice Cream
+                                            option(value='.CrestaBlancaWines') Cresta Blanca Wines
+                                            option(value='.Cummins') Cummins
+                                            option(value='.DirectionMagazine') Direction Magazine
+                                            option(value='.DisneyHats') Disney Hats
+                                            option(value='.DougEvansPartners') Doug Evans + Partners
+                                            option(value='.Dubonnet') Dubonnet
+                                            option(value='.DubouchettCordials') Dubouchett Cordials
+                                            option(value='.Dunhill') Dunhill
+                                            option(value='.DupontCorporation') Dupont Corporation
+                                            option(value='.ElProducto') El Producto
+                                            option(value='.ElliotNoyesAssociates') Elliot Noyes & Associates
+                                            option(value='.EmersonElectronicRadio') Emerson Electronic Radio
+                                            option(value='.EnglishFirst') English First
+                                            option(value='.Enron') Enron
+                                            option(value='.Esquire') Esquire
+                                            option(value='.FlairMagazine') Flair Magazine
+                                            option(value='.Ford') Ford
+                                            option(value='.Frigiking') Frigiking
+                                            option(value='.GentryLivingColor') Gentry Living Color
+                                            option(value='.GibsonsDiamond8') Gibsons Diamond 8
+                                            option(value='.GlassPacker') Glass Packer
+                                            option(value='.GraphicArtsProductionYearbook') Graphic Arts Production Yearbook
+                                            option(value='.HamburgAmericanLine') Hamburg American Line
+                                            option(value='.HarcourtBraceandCompany') Harcourt Brace and Company
+                                            option(value='.Helbros') Helbros
+                                            option(value='.HolidayMagazine') Holiday Magazine
+                                            option(value='.IBM') IBM
+                                            option(value='.ideoDesign') ideo Design
+                                            option(value='.IITRI') IITRI
+                                            option(value='.InterfaithDay') Interfaith Day
+                                            option(value='.InternationalDesignConferenceAspen') International Design Conference- Aspen
+                                            option(value='.IrwinUnionFinancialCorporation') Irwin Union Financial Corporation
+                                            option(value='.Irwin-Sweeney-MillerFoundation') Irwin-Sweeney-Miller Foundation
+                                            option(value='.IsaacGoldmanCompany') Isaac Goldman Company
+                                            option(value='.JacquelineCochran') Jacqueline Cochran
+                                            option(value='.JamesEPepperKentuckyBourbon') James E Pepper Kentucky Bourbon
+                                            option(value='.Jazzways') Jazzways
+                                            option(value='.JohnDavid') John David
+                                            option(value='.Kaiser-Frazer') Kaiser-Frazer
+                                            option(value='.Kaufmanns') Kaufmann’s
+                                            option(value='.Kenmagazine') Ken magazine
+                                            option(value='.Knopf') Knopf
+                                            option(value='.LaPalinaCigars') La Palina Cigars
+                                            option(value='.LeeHats') Lee Hats
+                                            option(value='.LoveraCigars') Lovera Cigars
+                                            option(value='.Lusterlite-AmericanBembergCorp') Lusterlite- American Bemberg Corp
+                                            option(value='.Maidenform') Maidenform
+                                            option(value='.MonellChemicalSensesCenter') Monell Chemical Senses Center
+                                            option(value='.Morningstar') Morningstar
+                                            option(value='.MossbergCompany') Mossberg & Company
+                                            option(value='.MuseumofModernArt') Museum of Modern Art
+                                            option(value='.NationalGalleryofArt') National Gallery of Art
+                                            option(value='.NewYorkArtDirectorsClub') New York Art Directors Club
+                                            option(value='.NeXTComputers') NeXT Computers
+                                            option(value='.NoWayOutMovie') No Way Out Movie
+                                            option(value='.NorwalkCancerCenter') Norwalk Cancer Center
+                                            option(value='.NutriCola') Nutri Cola
+                                            option(value='.Nylast') Nylast
+                                            option(value='.Ohrbachs') Ohrbachs
+                                            option(value='.OkasanSecuritiesCompany') Okasan Securities Company
+                                            option(value='.Olivetti') Olivetti
+                                            option(value='.Orpi') Orpi
+                                            option(value='.PacificCoastBoraxCo') Pacific Coast Borax Co
+                                            option(value='.ParkTilford') Park Tilford
+                                            option(value='.PastoreDePamphilisRampone') Pastore DePamphilis Rampone (PDR)
+                                            option(value='.PennBritePapers') Penn/Brite Papers
+                                            option(value='.Playtex') Playtex
+                                            option(value='.PMMagazine') PM Magazine
+                                            option(value='.PortfolioMagazine') Portfolio Magazine
+                                            option(value='.PowerPCandPowerOpen') Power PC and Power Open
+                                            option(value='.RainfairStormCoats') Rainfair Storm Coats
+                                            option(value='.RCA') RCA
+                                            option(value='.SaybrookRHMacy') Saybrook, RH Macy and Co 1935
+                                            option(value='.SchenleyGin') Schenley Gin
+                                            option(value='.Servador') Servador
+                                            option(value='.ShigeoFukuda') Shigeo Fukuda
+                                            option(value='.Shur-EdgeKnives') Shur-Edge Knives
+                                            option(value='.SmithKlineFrench') Smith, Kline & French
+                                            option(value='.StaffordFabrics') Stafford Fabrics
+                                            option(value='.StrathmorePaper') Strathmore Paper
+                                            option(value='.TheLimited') The Limited
+                                            option(value='.ThomasCreighton') Thomas Creighton Co
+                                            option(value='.TiptonLakes') Tipton Lakes
+                                            option(value='.TodaysSelling') Today’s Selling
+                                            option(value='.TriArtsPress') Tri Arts Press
+                                            option(value='.Typomundus20') Typomundus 20
+                                            option(value='.UCLA') UCLA
+                                            option(value='.UnitedJewishAppeal') United Jewish Appeal
+                                            option(value='.UnitedParcelService') United Parcel Service (UPS)
+                                            option(value='.UniversityofHartford') University of Hartford
+                                            option(value='.Unknown') Unknown clients
+                                            option(value='.Vichy') Vichy
+                                            option(value='.WallacePuppets') Wallace Puppets
+                                            option(value='.Westinghouse') Westinghouse
+                                            option(value='.WilliamHWeintraub') William H Weintraub
+                                            option(value='.WittenbornSchultz') Wittenborn Schultz
+                                            option(value='.Yale') Yale
+                                            option(value='.ZebraPress') Zebra Press
+
+                            .large-6.medium-6.small-12.cell(data-equalizer-watch="work" data-anijs="if: scroll, on: window, do: fadeInUpSmall animated, before: $scrollReveal repeat")
+                                .-x
+                                    h3 By Project Type
+                                    ul.large-up-2.equalheight-parent.w100.text-center
+                                        li.bg-white.medium-p4.equalheight-child Advertising
+                                        li.bg-white.medium-p4.equalheight-child Annual Report
+                                        li.bg-white.medium-p4.equalheight-child Book
+                                        li.bg-white.medium-p4.equalheight-child Book Cover
+                                        li.bg-white.medium-p4.equalheight-child Brochure
+                                        li.bg-white.medium-p4.equalheight-child Collateral
+                                        li.bg-white.medium-p4.equalheight-child Editorial
+                                        li.bg-white.medium-p4.equalheight-child Identity
+                                        li.bg-white.medium-p4.equalheight-child Logo
+                                        li.bg-white.medium-p4.equalheight-child Packaging
+                                        li.bg-white.medium-p4.equalheight-child Painting
+                                        li.bg-white.medium-p4.equalheight-child Photography
+                                        li.bg-white.medium-p4.equalheight-child Poster
+                                        li.bg-white.medium-p4.equalheight-child Presentation Booklet
+
+                //- /*-----  End of GALLERY MEDIUM  ------*/
+
+            include ../../__MIXINS/_include-footer.pug
+
+        include ../../__MIXINS/_include-closingScript.pug 

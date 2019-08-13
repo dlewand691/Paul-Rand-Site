@@ -1,0 +1,147 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Paul Rand'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202-200.jpg'
+
+    - var articleAuthor         = 'Peter Heemskerk'
+    - var publishedInTitle      = 'Graphik Werbung und Formgebung'
+    - var publishedInSubtitle   = '1953'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202.jpg', title: publishedInTitle})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/637834209'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D50%26kn%3D1953%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3DGraphik%2BWerbung%2Bund%2BFormgebung'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/2CxwV6k'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Ariadne: Reactions to the R.C.A. ad'
+    - var nextDate              = 'February, 1954'
+    - var nextDescription       = 'Robert Kiek offers some reactions from the press.'
+
+    - var nextLink              = '/life/books-articles/articles/print/1954-ariadne.html'
+
+    - var relatedItemLink1      = '1947-industrial-design-interiors.html'
+    - var relatedItemTitle1     = 'Paul Rand, industrial designer'
+    - var relatedItemFootnote1  = '1947 Industrial Design, Interiors February'
+
+    - var relatedItemLink2      = '/life/books-articles/articles/print/1988-mohawk-paper.html'
+    - var relatedItemTitle2     = 'Mohawk Paper Graphics Collection: The Graphic Art of Paul Rand'
+    - var relatedItemFootnote2  = 'Cohoes, NY, 1988'
+
+    - var relatedItemLink3      = '/life/books-articles/articles/print/1997-essays-on-design.html'
+    - var relatedItemTitle3     = 'Thoughts on Paul Rand'
+    - var relatedItemFootnote3  = '1988, Henry Steiner'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202%2001.jpg', title: publishedInTitle})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202%2002.jpg', title: publishedInTitle})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202%2003.jpg', title: publishedInTitle})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202%2004.jpg', title: publishedInTitle})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202%2005.jpg', title: publishedInTitle})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202%2006.jpg', title: publishedInTitle})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202%2007.jpg', title: publishedInTitle})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202%2008.jpg', title: publishedInTitle})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Graphik%20Werbung%20und%20Formgebung/Web/Graphik%20Werbung%20und%20Formgebung%201953%2C%20No%202%2009.jpg', title: publishedInTitle})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax.notranslate
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content.notranslate
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content#original-article
+                    //- :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        INTRO
+
+
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original German Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            Hinter der repräsentativen Fassade der Wolkenkratzer, Industrien und technischen Wunderwerke in Amerika, dem Land der großen Kontraste, wirken Menschen wie überall in der Welt mit ihren großen und kleinen Schwächen und ihrer Anfälligkeit in menschlichen, kulturellen und künstlerischen Dingen. Vielleicht benötigt der Bewohner der Neuen Welt als Ausgleich für seine kräftezehrende Umgebung ein größeres Reservat an Ungebundenheit, an Sentimentalität, um schaffen zu können. Dies mag ein Grund sein für die Tatsache, daß nahe den großartigen Leistungen des amerikanischen Alltags der Ungeschmack seine seltsamsten Blüten treibt. 
+
+                            Der Kampf gegen die Unkultur auf allen Gebieten der Gestaltung wird ungeachtet des mächtigsten Gegners, der Beharrlichkeit, mit großer Intensität verfochten. Als das Bauhaus seine Mission in der Alten Welt nicht weiterführen konnte, gab ihm Amerika eine neue Heimat, und heute ist das Moderne in den USA nicht zu trennen von den Leistungen der Gropius, Albers, Arp, Breuer und Moholy-Nagy. Sie haben zusammen mit ändern wesentlichen europäischen Gestaltern, die sich die amerikanische Wirtschaft im Laufe der Jahre sichern konnte, neue Maßstäbe für das Gute gefunden; sie haben als Lehrer eine Generation von Könnern auf allen Gebieten der Formgebung, also auch derWerbegraphik, herangezogen, deren Wirkung auf die Wirtschaft der Vereinigten Staaten und auf die übrige Welt ungeachtet der „Sündflut" an sentimentalem Kitsch enorm ist. Paul Rand, einer der bestbekannten jungen Werbegraphiker der Neuen Welt, 1914 in New York geboren, wurde bereits dreiundzwanzigjährig Art Direktor des bekannten Esquire-Magazins, arbeitete später als künstlerischer Leiter in großen Industrieunternehmen und ist heute Art Director der Werbeagentur William H. Weintraub & Co. in New York.
+
+                            Seine Plakate, Prospekte, Anzeigen, Marken, Packungen, Zeitschriften- und Buchumschläge sind ebenso wie seine Entwürfe für Möbel, Stoffe und andere Industriegüter bedeutsam für den Willen, dem überlieferten und Erstarrten bewegtes Leben entgegenzusetzen. Wichtig ist ihm vor allen Dingen Klarheit; das Streben noch dem sinnfällig Einfachen geht oft fast bis zur Zone des konstruktiv Kühlen. Das Maß allerdings liegt letzten Endes immer im Auftrag selber beschlossen; denn jede seiner Arbeiten strahlt das Fluidum aus, das den Betrachter und möglichen Käufer für das Angepriesene einnimmt. Rand liebt das Außergewöhnliche und Einmalige. Die Skala der Mittel, die ihm zur Verfügung stehen, ist groß. Er beherrscht den Formenschatz der Typographie wie den der Lichtbildnerei, er gewinnt Effekte aus alten Stichen, Lithos und Zeichnungen und entdeckt so im Bekannten einen neuen und darum wirksamen Ausdruck. Die Spannungen, das Gegeneinander der gestalterischen Elemente, die eine Arbeit erst interessant und werbeslark machen, erzeugt er immer wieder auf überraschende Weise. Einmal basieren sie auf dem Kontrast der Farben und Töne, dann wieder auf dem Kraftfeld der Linien über dem „leeren" Weiß des Papiers, und ein andermal bewirkt die dritte Dimension eines Fotos auf flächigem Untergrund und den erfrischenden Schock. Nie aber sind die Formen Selbstzweck, sondern nur der Ausschlag des Gewichts nach der gestalterischen Seite. Die Gegenbewegung des Pendels, das schnelle Erkennen der Bildsituation löst beim Betrachter die werblich so wichtige Überraschung, die Spannung und letztlich dann die ästhetische Befriedigung aus. Seine Formsprache ist in ihrer Abstraktion eine Komprimierung der Wirklichkeit bis zum Symbol, sie ist für jeden lesbar und wird von allen verstanden. Sie ist somit wirksam und Werbung im besten Sinne, da ihr jene Ausdrucksformen fremd sind, die durch jahrelange Abnutzung platt und dürftig wurden. Ein frischer Wind weht uns aus Paul Rands Arbeiten entgegen, vielleicht etwas unbequem für diejenigen, die sich in der Umgebung der supersüßen Girls aus den Inseraten für Wohnungen, Autos, Staubsauger, Zigaretten, Büchsenfleisch und Versicherungen wohlfühlen, aber doch notwendig, wenn wir nicht stagnieren wollen. 
+
+                            Jede der graphischen Lösungen ist zu Ende gedacht, sie finden also leicht den wirksamsten Weg zu den Kunden der Auftraggeber. Diese sachliche und kristallische Ordnung ist es wohl auch gewesen, die Paul Rand von Erfolg zu Erfolg geführt hat und die ihm nicht nur das Lob der Graphiker, sondern auch der Werbewirtschaft eingebracht hat, die sich seiner Mitarbeit gerade dann bedient, wenn Möglichkeiten gesucht werden, bereits Erreichtem neue Wege zu bahnen und einem Fabrikat zu einem besseren werblichen Gesicht zu verhelfen. 
+
+                            Peter Heemskerk
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif Translated text (via Google Translate)
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            Behind the representative façade of skyscrapers, industries and technological marvels in America, the land of great contrasts, people everywhere, like everywhere else in the world, are at work with their great and small weaknesses and vulnerability in human, cultural and artistic matters. Perhaps the New World resident needs a larger reserve of freedom, of sentimentality, to balance his exhausting environment. This may be a reason for the fact that unlike the great achievements of American everyday life, the tastelessness drives its strangest blossoms.
+
+                            The fight against the unkultur in all fields of design is championed with great intensity, regardless of the most powerful adversary, the persistence. When the Bauhaus was unable to continue its mission in the Old World, America gave it a new home, and today modernity in the US can not be separated from the achievements of Gropius, Albers, Arp, Breuer and Moholy-Nagy. Together with other major European designers who have been able to secure the American economy over the years, they have set new standards for good; they have used as teachers a generation of experts in all fields of design, including commerce, whose impact on the US economy and the rest of the world is enormous, despite the "deluge" of sentimental kitsch. "Paul Rand, one of the best-known born New York's graphic designer in 1914, he became the art director of the well-known Esquire magazine at the age of twenty-three, later became artistic director of major industrial companies and is now art director of the advertising agency William H. Weintraub & Co. in New York.
+
+                            His posters, brochures, advertisements, stamps, packs, magazines and book covers, as well as his designs for furniture, fabrics and other industrial goods, are important for the will to oppose the traditional and frozen life. What is important to him above all is clarity; the pursuit of the obvious simple often goes almost to the zone of constructive cooling. The measure, however, is ultimately always decided on behalf itself; for each of his works radiates the fluid that occupies the viewer and possible buyer for the acclaimed. Rand loves the extraordinary and the unique. The scale of resources available to him is large. He masters the formal vocabulary of typography as well as that of the art of painting, he gains effects from old engravings, lithographs and drawings and thus discovers in the known a new and therefore effective expression. The tensions, the juxtaposition of the creative elements that make a work interesting and lavish, he creates again and again in a surprising way. Once they are based on the contrast of colors and tones, then again on the force field of the lines above the "blank" white of the paper, and on another occasion the third dimension of a photograph on a flat surface and the refreshing shock, but never the forms are an end in itself The counter-movement of the pendulum, the rapid recognition of the image situation triggers in the viewer the so important surprise, the tension and finally the aesthetic satisfaction Reality to the symbol, it is readable by everyone and is understood by all, so it is effective and advertising in the best sense, since they are alien to those expressions that were flattened and meager through years of wear A fresh wind blows us from Paul Rands Working against, maybe a little uncomfortable for those who are in the area of ​​sup Sweet girls from the advertisements for apartments, cars, vacuum cleaners, cigarettes, canned meat and insurance feel well, but necessary if we do not want to stagnate.
+
+                            Each of the graphical solutions has been thought through to the end, so you can easily find the most effective way to the customers of the client. It was probably also this factual and crystal-clear order that led Paul Rand from success to success and that not only earned him the praise of the graphic artists, but also of the advertising industry, which uses its cooperation precisely when opportunities are sought. to break new ground and help make a brand look better.
+
+                            Peter Heemskerk
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+
+
+
+        include ../../../../__MIXINS/_include-image-carousel.pug
+
+        include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

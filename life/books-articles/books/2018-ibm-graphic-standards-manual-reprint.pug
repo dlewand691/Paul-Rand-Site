@@ -1,0 +1,149 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'IBM Graphic Standards Manual reprint'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var author                = 'Empire Books'
+    - var bookSubhead           = '2018'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/1031976576'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=https%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3DIbm%2520-%2520Graphic%2520Design%2520Guide%2520From%25201969%2520To%25201987'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'https://amzn.to/2Cz8tVj'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dm570.l1313%26_nkw%3DIbm%2BGraphic%2BDesign%2BGuide%2BFrom%2B1969%2BTo%2B1987%26_sacat%3D0%26LH_TitleDesc%3D0%26_osacat%3D0%26_odkw%3DIbm%2B-%2BGraphic%2BDesign%2BGuide%2BFrom%2B1969%2BTo%2B1987'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'Paul Rand: Inspiration and Process in Design'
+    - var nextDate              = '2019'
+    - var nextDescription       = 'A rare look at Rand’ sketches and doodles.'
+    - var nextLink              = '/life/books-articles/books/2019-inspiration-and-process-in-design.html'
+
+    - var relatedItemLink1      = '/life/books-articles/books/1998-a-designers-words.html'
+    - var relatedItemTitle1     = 'A Designer’s Words'
+    - var relatedItemFootnote1  = 'From the Paul Rand Symposium on April 3, 1998 at the School of Visual Arts in New York.'
+
+    - var relatedItemLink2      = '/life/books-articles/books/2003-modernist-designer.html'
+    - var relatedItemTitle2     = 'Paul Rand: Modernist Designer'
+    - var relatedItemFootnote2  = 'Places Rand in the proper context within a century of innovative art, design, architecture and technology.'
+
+    - var relatedItemLink3      = '/life/books-articles/books/1975-champion-papers.html'
+    - var relatedItemTitle3     = 'The Printing Salesman’s Herald'
+    - var relatedItemFootnote3  = 'Champion Papers, 1975'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2001-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2002-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2003-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2004-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2005-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2006-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2007-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2008-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2009-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2010-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2011-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2012-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2013-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2014-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2015-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2016-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2016.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2017-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2017.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2018-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2018.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2019-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2019.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2020-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2020.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2021-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2021.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2022-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint%2022.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint-%20supplement%2C%20front-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint-%20supplement%2C%20front.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint-%20supplement%2001-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint-%20supplement%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint-%20supplement%2002-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint-%20supplement%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint-%20supplement%2003-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint-%20supplement%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint-%20supplement%2004-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint-%20supplement%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint-%20supplement%2005-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint-%20supplement%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint-%20supplement%2006-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint-%20supplement%2006.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= 'By ' + author
+                    br
+                    em.text-gray.t16!= bookSubhead
+
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint-970.jpg",
+                            "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2018%20IBM%20Graphic%20Standards%20Manual%20reprint/Web/IBM%20Graphic%20Standards%20Manual%20reprint.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        In 1956 the designer Eliot Noyes was employed by the Director of IBM to rethink the company’s design as a whole, from products to communication right up to the architecture of the buildings.
+
+                        Graphic Designer Paul Rand was invited to define all of the graphic documents used in the company. Thus began one of the most memorable graphic design projects of the 20th century, at the heart of the “IBM Graphic Design Program”.
+
+                        The series of IBM logotypes created by Paul Rand culminated in 1972 in a drawn version made up of layered strips, making the company’s initials instantly recognisable all over the world. This iconic logo, composed of 8 bars, continues to be used today.
+
+                        Between the sixties and the eighties a significant group of graphic rules and uses was documented and regularly updated in a folder that was organised into sections. Inside we can find the instructions that allow us to reproduce the logotype, graphic and typographic rules, designs for internal and external documents, signage and architectural applications. This document allows one to work with the company’s graphic signs in coherence and efficient discussion with other trades. Today this folder is an iconic, rare and little documented object and it seems important to us to render it accessible and distributable, to Graphic designers, students and anyone interested in the adventure undertaken by this emblematic company.
+
+                        Considering the many updates that were made to graphic design standards and norms, the different folders of the IBM norm that we consulted often differed greatly in terms of their content.
+
+                        The successive documents from the folder and their developments will be published and reproduced so as to offer the widest possible vision of the work accomplished over a period of more than twenty years. This work will be done in collaboration with the archive team from IBM New York, and the Kandinsky Library of the Georges Pompidou Centre in Paris.
+
+                        The project is being undertaken with the approval of the legal successors of Paul Rand and IBM itself.
+
+                        ISBN: 979-10-95991-07-6  
+                        English + French translation  
+                        292 + 44 pages  
+                        235 × 320 mm  
+                        CMYK + 9 Pantone ©  
+                        High resolution scans of the original pages, scale 1/1.  
+                        Preface by Steven Heller  
+                        Design: Syndicat  
+                        2018  
+                        50€
+                    .text-center
+                        a.button.large.arrow(href="http://www.e-m-p-i-r-e.eu/#post-10" target="_blank" rel="noopener") BUY DIRECT FROM THE PUBLISHER
+                    .text-center    
+                        a.arrow(href="https://www.kickstarter.com/projects/496596810/reissue-of-the-ibm-graphic-standards-manual-by-pau" target="_blank" rel="noopener") View the original Kickstarter.com campaign
+                    hr
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../../__MIXINS/_include-next-item.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

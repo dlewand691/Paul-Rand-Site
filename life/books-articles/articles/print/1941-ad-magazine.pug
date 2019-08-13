@@ -1,0 +1,165 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = '“Paul Rand” by Laszlo Maholy-Nagy'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2C%20front-450.jpg'
+
+    - var articleAuthor         = 'Laszlo Maholy-Nagy'
+    - var publishedInTitle      = 'AD Magazine'
+    - var publishedInSubtitle   = 'Vol. 7 No. 3'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2C%20front-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2C%20front.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/4984707'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3D%2522A-D%2BMagazine%2522%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1UkJyqJ'
+    - var modernism101          = 'yes'
+    - var modernism101Link      = 'http://modernism101.com/products-page/graphic-design/rand-paul-a-d-february-march-1941-cover-insert-l-moholy-nagy-intro-the-composing-roompm-publishing-co-duplicate-2/#.VsyaLpMrI60'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/s/%22a-d+magazine%22+paul+rand?_requestid=424041'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Paul Rand — Advertising Artist'
+    - var nextDate              = 'June 1942'
+    - var nextDescription       = 'American Artist Magazine, Watson-Guptill, Volume 6, Number 6'
+    - var nextLink              = '/life/books-articles/articles/print/1942-american-artist.html'
+
+    - var relatedItemLink1      = '/life/books-articles/articles/print/1953-esquire-magazine.html'
+    - var relatedItemTitle1     = 'A House to Live With'
+    - var relatedItemFootnote1  = 'Esquire Magazine, August, 1953'
+
+    - var relatedItemLink2      = '/life/books-articles/articles/print/1979-communication-arts.html'
+    - var relatedItemTitle2     = 'Paul Rand'
+    - var relatedItemFootnote2  = 'Communication Arts, January/February 1979'
+
+    - var relatedItemLink3      = '/life/books-articles/articles/print/1977-ulc.html'
+    - var relatedItemTitle3     = 'Pro.Files: The Great Graphic Innovators'
+    - var relatedItemFootnote3  = 'U&lc Magazine, International Typeface Corporation, March 1977'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2014-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2015-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2016-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2016.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2017-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2017.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2018-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2018.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2019-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2019.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2020-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2020.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2021-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2021.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2022-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2022.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2023-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2023.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2024-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2024.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2025-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2025.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2026-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2026.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2027-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1941%20AD%20Magazine%20Vol%207%20No%203/Web/AD%20Magazine%20Vol%207%20No%203%2027.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+    .cd-main-content
+        .grid-container
+
+
+            //- ==========  BODY  ==========
+
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content#original-article
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        [Paul Rand and Laszlo Moholy-Nagy] PM Publishing Co.: A-D MAGAZINE. Volume 7, No. 3. NYC: The Composing Room/P.M. Publishing Co., Febraury- March 1941. Original edition. A near-fine, perfect-bound softcover book in decorated, stiff wrappers: wrappers mildly scratched. Original 2-color wraparound cover design by Paul Rand stands out as a true icon of Modern American Graphic Design. 5.5 x 7.75 perfect-bound softcover book with 74 pages of articles including two-color original offset design cover and 16 letterpressed pages designed by Rand. The Rand section features an original foreward by Laszlo Moholy-Nagy of Chicago's Institute of Design. This was the first cross-referencing of these two modern masters.
+
+                        This edition of PM is an amazing original example of Rand's early Graphic Design and its influence on American modern design. The 1941 publication date mark this as one of the earliest publications to deal with Rand's particular genius.
+
+                        ##### Contents:
+
+                        + Paul Rand by Laszlo Moholy-Nagy, designed by Paul Rand
+                        + Robert Josephy (Design for a Career, Designed by Josephy and Union Designer with layout by + Evelyn Harter)
+                        + The First Century of Printmakers 1400 - 1500
+                        + Editorial Notes
+                        + Until Further Notice
+                        + Books and Pictures: Photograph Credits: Walker Evans, H. Iffland, Lewis H. Hine, Roy E. Stryker. Books Reviewed: Typologia by Frederic W. Goudy; Books Alive byVincent Starrett; + Seventy Books About Bookmaking by Hellmut Lehmann.
+                        + Listing of Advertisements: Caxton Press, The Composing Room, Quincy P. Emery Inc., Pioneer - Moss Inc. , Print, Strathmore Paper Co., Wilbar Photo Engraving, The Haddon Craftsman, + Reliance Reproduction Co., Flower Electrotypes.
+
+                        PM magazine was the leading voice of the U. S. Graphic Arts Industry from its inception in 1934 to its end in 1942 (then called AD). As a publication produced by and for professionals, it spotlighted cutting-edge production technology and the highest possible quality reproduction techniques (from engraving to plates). PM and A-D also championed the Modern movement by showcasing work from the vanguard of the European Avant-Garde well before this + type of work was known to a wide audience.
+
+                    .footnote — Randall Ross of modernism101.com
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            The Constructivist movement in Europe originated in countries with undeveloped industry…Russia, Hungary and Holland. The marvels of technical civilization as they were described in reports about the U.S.A. were a great incentive for the young painters, sculptors and architects of those countries. The message about American organization, production processes, life standards, created a Utopian picture in the mind of these young European artists. Their imaginative picture of America governed their thinking and their work. They admired exactness and precision, smooth functioning, the skyscraper, the highways, the immense span of bridges, the power plants of Niagra Falls, the autos an d airplanes of America. They tried to be as contemporary and efficient in their own work as the Americans and without sentimentality for the old and traditional. They tried to be the children of a new age, as they believed the Americans to be.
+
+                            When I came to this country I was greatly surprised to find that we Europeans were to a certain extent, more American than the Americans. I found that our imagination went too far. It is true all this technological progress was developed on the highest level in this country but the Americans “did not care” too much for it. They created their high civilization by instinct, introducing invention after invention into their daily routine. However they did not attach any philosophy to it as we did in Europe. For them the nostalgia remained for the “good old” traditional art.
+
+                            This was a strange experience for me, as I felt that our efforts in Europe to live up to the contemporary status of the Americans proved to be without a real background. It took me a long time to understand the Victorian dwellings and the imitations of Colonial architecture or the old fashioned advertising. Fortunately I soon saw that a new generation was rising with the potentiality and discipline of that America imagined by us in Europe.
+
+                            Among these young Americans it seems to me that Paul Rand is one of the best and most capable representatives. He is a painter, lecturer, industrial designer, advertising artist who draws his knowledge and creativeness from the resources of this country. He is an idealist and a realist, using the language of the poet and the business man. He think in terms of need and function. He is able to analyze his problems but his fantasy is boundless.
+
+                            I like to recall my visit to his home where I expected to find an advertising artist but found a creative designer with an abundance of interests and an ability to express himself, not alone with color and line on a plane surface, but also in space. His designs of furniture are delicate and witty. Note the book shelf made from one-by-twos with a blackboard on the front…the whole can be folded flat together with case; the coffee table with legs of find filagree; and the desk lamp with the parabola shaped white reflector. There I suddenly understood the spatial quality of his beautiful drawings and abstractions, his reliefs for the magazine “Apparel Arts”, his fortunate combinations of carefully planned typography, the wit and fantasy of his gay color schemes and earnest compositions. See in the following pages the range of his achievements: Christmas jollity and mid summer spirit; his own apartment with the aura of the earnest and the graceful; his refreshing optimism in these confusing days.
+
+
+                        .footnote — L.M.N, Oct. 16, 1940.
+
+            //- /*-----  End of BODY  ------*/
+
+
+
+
+        include ../../../../__MIXINS/_include-image-carousel.pug
+
+        include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

@@ -1,0 +1,130 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'School of Visual Arts Masters Series: Paul Rand'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'School of Visual Arts Museum'
+    - var pageSubtitle2         = 'October 1 – 25, 1988'
+    - var primaryImage          = 'CHANGE_ME'
+
+    - var nextType              = 'Exhibit'
+    - var nextTitle             = 'The Graphic Art of Paul Rand'
+    - var nextDate              = '1990'
+    - var nextLink              = '1990-graphic-art-of-paul-rand'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%2006.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+                    //- .small-mt3.small-mb2
+                    //- 	+imageZoomSingle(
+                    //- 		"CHANGE_ME",
+                    //- 		"CHANGE_ME"
+                    //- 		)
+
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        The School of Visual Arts announces The Second Annual American Graphic Design Symposium and establishes new honor - the Masters Series.
+
+                        As the School of Visual Arts embarks upon its 41st year, SVA is pleased to announce what has been established as SVA’s newest honor - the Masters Series. Each year, an individual who has created and contributed a significant body of work within the graphic design, advertising or illustration fields, will be honored with a comprehensive one-man retrospective exhibition. Paul Rand is the first recipient of the Masters Series retrospective exhibit. A true American original, Mr. Rand is one of the founders of what today is called “American graphic design.” Mr. Rand, who has influenced contemporary design as a designer, teacher and writer, is widely acclaimed for his logo designs for IBM, UPS and Westinghouse. The Paul Rand Retrospective will be on view at the School of Visual Arts Museum from October 1 - 25, 1988.
+
+                        In the same month, Rand will be featured speaker at The Second Annual School of Visual Arts Symposium on the History of American Graphic Design. “Modernism and Eclecticism II” on significant American design and designers of the Twentieth Century and will present the views of distinguished designers. On October 8th and 9th, Rand will be joined by:
+
+                        + Saul Bass
+                        + Andy Grundberg
+                        + Steven Heller
+                        + Tibor Kalman
+                        + Maud Lavin
+                        + Roland Marchand
+                        + Victor Margolin
+                        + Noel Martin
+                        + Phil Meggs
+                        + Nick Polites
+                        + Richard Prelinger
+                        + Arlen Schumer
+                        + Douglas Scott
+                        + Marc Trieb
+                        + Lorraine Wilde
+
+                        The symposium is coordinated by Steven Heller, Art Director of The New York Times Book Review Section and Richard Wilde, Chairman of the SVA Media Arts Department. Lectures, interviews, discussions and films will be presented at the symposium and SVA invites participation from all persons interested in the field. The symposium fee is $85.00 per person. All proceeds will benefit the SVA ScholarshiFund are tax-deductible.
+
+                        ---
+
+                        ### Gallery Information
+
+                        Visual Arts Museum  
+                        209 East 23 Street  
+                        New York, NY 10010  
+                        212.592.2145
+
+                        The Visual Arts Museum, located on the ground floor of the College at 209 East 23rd Street, brings the work of some of the most significant figures in contemporary fine and applied arts directly to SVA’s students. Since its opening in 1971, the museum has shown work by artists such as Willem de Kooning, Keith Haring, Roy Lichtenstein, Robert Motherwell, Robert Rauschenberg, Mark de Suvero, Saul Steinberg and Andy Warhol.
+
+                        The museum is best known for holding SVA’s Masters Series--annual award exhibitions honoring great visual communicators of our time. Since its inception in 1988, the College has conferred the Masters Series Award to Marshall Arisman, Saul Bass, Ivan Chermayeff, Seymour Chwast, Paul Davis, Lou Dorfsman, Heinz Edelmann, Shigeo Fukuda, Milton Glaser, George Lois, Mary Ellen Mark, Ed McCabe, Duane Michals, Tony Palladino, Paul Rand, Paula Scher, Deborah Sussman, George Tscherny and Massimo Vignelli.
+
+                        SVA students of every discipline can reagreat educational benefit from being able to study the work of renowned artists, hear them speak at museum lectures, or even get the chance to meet them in person -- all right here at the College. All museum exhibitions and lectures are free and open to the public.
+
+                        The Visual Arts Museum is open Monday through Friday 9 a.m. to 7 p.m. and Saturday from 10 a.m. to 6 p.m.. The Museum is closed on Sundays and federal holidays. For more information, please call the Office of Student Galleries and Visual Arts Museum at 212.592.2145.
+
+                        For press inquiries, please call the Office of Communication at 212.592.2010 or email proffice@sva.edu.
+
+
+
+            .grid-x.grid-margin-x.align-center
+                .large-11.medium-11.small-12.cell
+                    +carouselImages(
+                        "Announcement",
+                        "",
+                        {Title: "Announcement", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%20Announcement%2001-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%20Announcement%2001.jpg", title: "Exhibit Announcement"},
+                        {Title: "Announcement", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%20Announcement%2001-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%20Announcement%2001.jpg", title: "Exhibit Announcement"},
+                        {Title: "Announcement", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%20Announcement%2C%20Full-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%20Announcement%2C%20Full.jpg", title: "Exhibit Announcement"}
+                        )
+
+            .grid-x.grid-margin-x.align-center
+                .large-11.medium-11.small-12.cell
+                    +carouselImages(
+                        "Pamphlet",
+                        "",
+                        {Title: "Pamphlet", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%20Pamphlet%2C%20Front-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%20Pamphlet%2C%20Front.jpg", title: "Gallery Pamphlet"},
+                        {Title: "Pamphlet", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%20Pamphlet%2C%20Interior%2001-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%20Pamphlet%2C%20Interior%2001.jpg", title: "Gallery Pamphlet"},
+                        {Title: "Pamphlet", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%20Pamphlet%2C%20Interior%2002-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%20Pamphlet%2C%20Interior%2002.jpg", title: "Gallery Pamphlet"},
+                        {Title: "Pamphlet", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%20Pamphlet%2C%20Back-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/1988%20School%20of%20Visual%20Arts%20Masters%20Series-%20Paul%20Rand/Web/1988%20School%20of%20Visual%20Arts%20Masters%20Series%20Pamphlet%2C%20Back.jpg", title: "Gallery Pamphlet"}
+                        )
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

@@ -1,0 +1,129 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Thoughts on Design review'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1947%20Thoughts%20on%20Design%20Review/Web/Thoughts%20on%20Design%20review%2C%20Print%2C%20Jan%201947%2001-450.jpg'
+
+    - var articleAuthor         = 'CHANGE_ME'
+    - var publishedInTitle      = 'Print'
+    - var publishedInSubtitle   = 'January 1947'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1947%20Thoughts%20on%20Design%20Review/Web/Thoughts%20on%20Design%20review%2C%20Print%2C%20Jan%201947%2001-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1947%20Thoughts%20on%20Design%20Review/Web/Thoughts%20on%20Design%20review%2C%20Print%2C%20Jan%201947%2001.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/795988872'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=https%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D50%26kn%3D%2522print%2520magazine%2522%2520january%25201947%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'https://amzn.to/2Tj4shN'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dm570.l1313%26_nkw%3Dprint%2Bmagazine%26_sacat%3D0%26LH_TitleDesc%3D0%26_osacat%3D0%26_odkw%3Dprint%2Bmagazine%2B1947'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Trademarks by Paul Rand'
+    - var nextDate              = '1950'
+    - var nextDescription       = 'Portfolio Magazine, Vol. 1, No. 1'
+    - var nextLink              = '/life/books-articles/articles/print/1950-portfolio-magazine.html'
+
+    - var relatedItemLink1      = '1953-esquire-magazine.html'
+    - var relatedItemTitle1     = 'A House to Live With'
+    - var relatedItemFootnote1  = 'Esquire Magazine, August, 1953'
+
+    - var relatedItemLink2      = '1997-logocentrism.html'
+    - var relatedItemTitle2     = 'Logocentrism'
+    - var relatedItemFootnote2  = 'New Republic, December 29, 1997, Vol. 217, Issue 26'
+
+    - var relatedItemLink3      = '1997-modern-painters-magazine.html'
+    - var relatedItemTitle3     = 'Paul Rand, The Magician'
+    - var relatedItemFootnote3  = 'Modern Painters Magazine, Spring 1997'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1947%20Thoughts%20on%20Design%20Review/Web/Thoughts%20on%20Design%20review%2C%20Print%2C%20Jan%201947%2001-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1947%20Thoughts%20on%20Design%20Review/Web/Thoughts%20on%20Design%20review%2C%20Print%2C%20Jan%201947%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1947%20Thoughts%20on%20Design%20Review/Web/Thoughts%20on%20Design%20review%2C%20Print%2C%20Jan%201947%2002-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1947%20Thoughts%20on%20Design%20Review/Web/Thoughts%20on%20Design%20review%2C%20Print%2C%20Jan%201947%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1947%20Thoughts%20on%20Design%20Review/Web/Thoughts%20on%20Design%20review%2C%20Print%2C%20Jan%201947%2003-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1947%20Thoughts%20on%20Design%20Review/Web/Thoughts%20on%20Design%20review%2C%20Print%2C%20Jan%201947%2003.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content#original-article
+                    //- :markdown-it(html typographer plugins=['markdown-it-sup'])
+                    //-     INTRO
+                    //- 
+                    //- 
+                    //- 
+                    //- hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            ##### "This book attempts to arrange in some logical order certain principles governing contemporary advertising design."
+
+                            So Paul Rand begins his book. The prin­ciples are sententiously stated in widely leaded flush-left lines under such rubrics as "The Beau­tiful and the Useful" (about forty lines), "The Designer's Problem" (about fifty lines), "The Symbol in Advertising" --- but here at page 9, just as the author seems to be involving himself inextricably in a discussion of the perfect male­ness-femaleness of the crucifix, the pictures of his actual work as designer come to save the day.
+
+                            The rest of the book is nearly all devoted to illustrations of Mr. Rand's thoughts on design as made manifest in his booklet and magazine covers, periodical advertising, product packaging, and work for publishers. And the thoughts come through clear, cogent, and lively, so the pages spent on text --- above all the vainglorious pages spent repeating the text in French and Spanish! --- might better have been turned into more pic­tures, or into a credit on the price of an ex­pensive book.
+
+                            The thoughtful advertising designer's way with a book is demonstrated in Mr. Rand's handling of the excellent lectures given at Yale by Herbert Read last year and now published with a new introduction as *The Grass Roots of Art*. As in his own book, Mr. Rand uses 11-point slug-cast Baskerville set thirty picas wide, but justified lines and reduced interlinear spacing demand closer reading attention here, just miss­ing the point of strain by virtue of antique book paper replacing the dull coated used for the *Thoughts*.
+
+                            As usual in his typography, Mr. Rand has most fun with the imposition of *Grass Roots*. There is no discernible "aesthetic message which in turn complements the message conveyed by the words" resulting from the exaggerated and shifted margins. As a matter of fact the verso pages crowd uncomfortably into the gutter, be­yond which is a broad band of white space effect­ually undoing the unity of the two-page spread that most printers think worth preserving. But Mr. Read plows deep to get at the grass roots of art and it is not inappropriate, perhaps, that his pages are all thrown to the right like cleanly turned sods from a mould-board. After using Mr. Read's book merely as an example of Mr. Rand's interesting design treatment (for, after all, the grass roots the author turns up belong to a field much larger than the graphic arts) it is due him and his publisher to add that *The Grass Roots of Art* is a neat package of keen analysis and humane judgments not to be missed by anyone who likes intelligent thinking on art, the social scene, and education.
+
+                            THOUGHTS ON DESIGN. By Paul Rand. Introduction by E. McKnight Kauffer. Illustrations from the author's work. *Reflexions sur l'Art Graphique. Reflexiones sobre el Arte Grafico.* New York: Wittenborn, 1946. (12), 159 pp., most with black-and-white and color halftone reproductions. 10½ x 8¼ inches. $7.50.
+
+                            THE GRASS ROOTS OF ART. Problems of Contemporary Art, Number 2. Four Lectures on Social Aspects of Art in an Industrial Age. By Herbert Read. New York: Wittenborn, 1947. Frontis. and 18 illus. in halftone. 92 pp., printed wrappers. 10¼ x 7½ inches. $1.75.
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+
+
+
+        include ../../../../__MIXINS/_include-image-carousel.pug
+
+        include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

@@ -1,0 +1,173 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Morningstar'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = '1991'
+    - var nextType  = 'Client'
+    - var nextTitle = 'Mossberg & Company'
+    - var nextLink  = 'Mossberg-Company'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Morningstar/Morningstar-1991.svg", LG:"https://assets.paulrand.design/Works/Morningstar/Morningstar-1991.svg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo Presentation Booklet",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2001.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2002.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2003.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2004.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2005.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2006.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2007.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2008.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2009.jpg"}
+                        )
+
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell
+                    .grid-x.grid-margin-x
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2001-450.jpg",
+                            "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2001.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                #### A Signature for Morningstar
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2002-450.jpg",
+                            "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2002.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                **1\.**  
+                                A short word is easy and pleasant to read.  
+                                “Morningstar” is the combining form of two words. It is neither short nor easy to read.
+
+                                This is easier to read....  
+                                but there are certain inherent problems - impossible to avoid.
+
+                                As a single word, Morningstar seems unwieldy.  
+                                The letter combinations NIN, GS, and TA tend to form clusters and separate from the whole, causing difficult spacing problems.
+
+                                Condensing each letter saves space, and insures compactness.  
+                                The signature is now perceptively shorter, and easier to manage.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2003-450.jpg",
+                            "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2003.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                **2\.**  
+                                In most printed ephemera corporate signatures tend to be small. The problem of readability becomes even more significant.
+
+                                Readability, however, is not the only criterion.  
+                                Without the element of recognition, without some unique and memorable visual device, readability plays a minor role.
+
+                                The Coca-Cola signature, for example, can be “read” for reasons other than readability - because the word-profile is familiar and, therefore, visually recognizable.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2004-450.jpg",
+                            "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2004.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                **3\.**  
+                                The word Morningstar begins to take on some mnemonic value when a star configuration takes the place of the letter “O.”
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2005-450.jpg",
+                            "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2005.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                **4\.**  
+                                A single round “O” which serves as a dynamic contrast to the accompanying condensed letters, seems more promising. However, it lacks the element of surprise - something, perhaps, which will cause the “O” to suggest the idea of a sun, a kind of pictorial punctuation which adds interest and intensifies meaning.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2006-450.jpg",
+                            "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2006.jpg"
+                            )
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2007-450.jpg",
+                            "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2007.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                **5\.**  
+                                This solution is reminiscent of the tantalizing puzzle*:  
+                                “How to make an egg stand on end.” Trimming the base of the circle suggests a rising sun.
+
+                                The name Morningstar was inspired by the last line of Thoreau’s *Walden*: “The sun is but a morning star.” Its visual interpretation is based also on this quotation.
+
+                                *Attributed to Christopher Columbus
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2008-450.jpg",
+                            "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2008.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                *(Stationery examples)*
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2009-450.jpg",
+                            "https://assets.paulrand.design/Works/Morningstar/Web/Morningstar%2009.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                *(Back cover)*
+
+
+
+
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

@@ -1,0 +1,113 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Listen! Listen!'
+    - var bodyID    = 'writing'
+    - var bodyClass = 'books'
+
+block main-content
+    - var bookSubhead           = 'Harcourt, Brace & World, 1970'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/59387'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3Dpaul%2Brand%2Blisten%2Blisten%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1QNazBz'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/w/listen-listen-ann-rand/1000739509?ean=9780152455804'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2050601.m570.l1313.TR0.TRC0.H0.XListen%2521%2BListen%2521%2BPaul%2BRand.TRS0%26_nkw%3DListen%2521%2BListen%2521%2BPaul%2BRand%26_sacat%3D0'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'Thoughts on Design, 3rd Edition'
+    - var nextDate              = '1970'
+    - var nextDescription       = 'The 3rd, small edition.'
+    - var nextLink              = '/writing/books/thoughts-on-design-3rd-edition.html'
+
+    - var relatedItemLink1      = '/writing/books/sparkle-and-spin.html'
+    - var relatedItemTitle1     = 'Sparkle and Spin'
+    - var relatedItemFootnote1  = 'Harcourt, Brace & World, 1957'
+
+    - var relatedItemLink2      = '/writing/books/i-know-a-lot-of-things.html'
+    - var relatedItemTitle2     = 'I Know a Lot of Things'
+    - var relatedItemFootnote2  = 'Harcourt, Brace & World, 1956'
+
+    - var relatedItemLink3      = '/writing/books/little-1.html'
+    - var relatedItemTitle3     = 'Little 1'
+    - var relatedItemFootnote3  = 'Harcourt, Brace & World, 1962'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0001-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0002-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0003-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0004-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0005-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0006-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0007-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0008-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0009-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0010-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0011-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0012-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0013-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0014-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0015-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0016-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0016.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0017-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0017.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0018-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1970%20Listen!%20Listen!/jpegs/0018.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= bookSubhead
+
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Writing/Books/1970%20Listen%21%20Listen%21/jpegs/listen%20front.jpg",
+                            "https://assets.paulrand.design/Writing/Books/1970%20Listen%21%20Listen%21/jpegs/listen%20front.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            include ../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        ##### FROM THE INSIDE FLAP:
+
+                        Listen…if you’re very quiet, you can hear the sound of the breeze whispering in the trees. Listen, and you can hear the tiny plop of a raindrop, the whop of a ball hitting the fence, or even the crunch, crunch of buttered toast. You can listen to the scary sounds, too, the wail of a siren in the night or the moan of trees when a storm is coming. Best of all are the sounds of morning, when the world is waking up.
+
+                        With the freshness of a child responding to the world around him, Ann Rand records a variety of sounds in perspective, rhythmic prose. Paul Rand, internationally known graphic artist and designer, has made highly imaginative pictures that highlight every aspect of the text. Like the Rands’ earlier “I Know a Lot of Things”, “Sparkle and Spin”, and “Little 1”, this is a delight to eye and ear, an outstanding book filled with the joy of life that will bring endless pleasure to small children and their elders, while they look and listen.
+
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

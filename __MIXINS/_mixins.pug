@@ -1,0 +1,327 @@
+//- ====================================================================================
+//- =            USE FOR IMAGE CAROUSELS WITH MULTIPLE IMAGES AND HEADER           =
+//- ====================================================================================
+mixin carouselImages(title, subtitle, ...carouselImages)
+    hr.w33.horizontal-center.small-my3#original-article
+    .grid-x.grid-margin-x.align-center.align-middle(data-aos="fade-up")
+        .small-12.cell.medium-text-left.small-text-center
+            p.small.text-center.text-caps.text-bold.small-mb0.sans-serif!= title
+                .footnote.text-center!= subtitle
+            .swiper-container(data-aos="fade-up")
+                .swiper-wrapper
+                    each image in carouselImages
+                        if image.Title == "CHANGE_ME"
+                            .swiper-slide
+                                a(href=image.LG data-fancybox="images" data-caption=pageTitle)
+                                    img.swiper-lazy(data-src=image.SM alt=pageTitle)&attributes(attributes)
+                        else
+                            .swiper-slide
+                                a(href=image.LG data-fancybox="images" data-caption=pageTitle + "   |   " + image.Title)
+                                    img.swiper-lazy(data-src=image.SM alt=pageTitle + "   |   " + image.Title)&attributes(attributes)
+                .swiper-pagination.swiper-pagination-white
+                .swiper-button-prev
+                .swiper-button-next
+    .grid-x.grid-margin-x.align-center.small-mb2
+        .small-12.cell.text-center
+            p.footnote.show-for-large (Use &larr; &rarr; keys to navigate. Click for larger view.)
+
+//- /*-----  End of USE FOR IMAGE CAROUSELS WITH MULTIPLE IMAGES AND HEADER  ------------------------------------*/
+
+
+//- ====================================================================================
+//- =            SLICK USE FOR IMAGE CAROUSELS WITH MULTIPLE IMAGES AND HEADER           =
+//- ====================================================================================
+mixin SLICKcarouselImages(title, subtitle, ...carouselImages)
+    hr.w33.horizontal-center.small-my3#original-article
+    .grid-x.grid-margin-x.align-center.align-middle(data-aos="fade-up")
+        .small-12.cell.medium-text-left.small-text-center
+            p.small.text-center.text-caps.text-bold.small-mb0.sans-serif!= title
+                .footnote.text-center!= subtitle
+            .slick-carousel
+                each image in carouselImages
+                    if image.Title == "CHANGE_ME"
+                        a(href=image.LG data-fancybox="images" data-caption=pageTitle)
+                            img.lazyload.w100(loading="lazy" data-src=image.SM alt=pageTitle)&attributes(attributes)
+                    else
+                        a(href=image.LG data-fancybox="images" data-caption=pageTitle + "   |   " + image.Title)
+                            img.lazyload.w100(loading="lazy" data-src=image.SM alt=pageTitle + "   |   " + image.Title)&attributes(attributes)
+
+    .grid-x.grid-margin-x.align-center.small-mb2
+        .small-12.cell.text-center
+            p.footnote.show-for-large (Use &larr; &rarr; keys to navigate. Click for larger view.)
+
+//- /*-----  End of USE FOR IMAGE CAROUSELS WITH MULTIPLE IMAGES AND HEADER  ------------------------------------*/
+
+
+
+//- ====================================================================================
+//- =            USE FOR SINGLE IMAGE ZOOMS, NO HEADER NO CAPTION           =
+//- ====================================================================================
+mixin imageZoomSingle(imageZoomSingleSm, imageZoomSingleLg)
+    .relative(data-aos="fade-up")
+        a(href=imageZoomSingleLg data-fancybox="images")
+            img.img-fit.lazyload(loading="lazy" data-src=imageZoomSingleSm alt=pageTitle)&attributes(attributes)
+        img.icon-zoom-boxed.lazyload(loading="lazy" data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
+
+//- /*-----  End of USE FOR SINGLE IMAGE ZOOMS, NO HEADER NO CAPTION  ---------------------------------------*/
+
+
+
+//- ====================================================================================
+//- =            USE FOR SINGLE IMAGE ZOOMS, NO HEADER, WITH CAPTION            =
+//- ====================================================================================
+mixin imageZoomSingleCaption(imageZoomSingleSm, imageZoomSingleLg, caption)
+    .relative(data-aos="fade-up")
+        a(href=imageZoomSingleLg data-fancybox="images" data-caption=caption)
+            img.img-fit.lazyload(loading="lazy" data-src=imageZoomSingleSm alt=caption)&attributes(attributes)
+        img.icon-zoom-boxed.lazyload(loading="lazy" data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
+    p
+    .footnote.small-mb2!= caption
+
+//- /*-----  End of USE FOR SINGLE IMAGE ZOOMS, NO HEADER, WITH CAPTION  ------------------------------------*/
+
+
+
+//- ====================================================================================
+//- =            USE FOR MULTIPLE IMAGE ZOOMS, NO HEADER            =
+//- ====================================================================================
+mixin imageZoomMulti(...imageZoomMulti)
+    .relative(data-aos="fade-up")
+        each item in imageZoomMulti
+            a(href=item.LG data-fancybox="images")
+                img.img-fit.lazyload(loading="lazy" data-src=item.SM style="margin: .5em .5em" alt=pageTitle)&attributes(attributes)
+            img.icon-zoom-boxed.lazyload(loading="lazy" data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
+
+//- /*-----  End of USE FOR MULTIPLE IMAGE ZOOMS, NO HEADER  --------------------------------------------*/
+
+
+
+//- ====================================================================================
+//- =            USE FOR SINGLE IMAGE ZOOMS WITH HEADER            =
+//- ====================================================================================
+mixin imageZoomSingleHeader(imageZoomSingleHeaderSm, imageZoomSingleHeaderLg)
+    hr.w33.horizontal-center.small-my3.hr-red#original-article
+    .grid-x.grid-margin-x.align-center.align-middle
+        .small-12.cell.medium-text-left.small-text-center
+            p.text-center.text-caps.text-bold.small-mb0.sans-serif!= imageCarouselTitle
+                if imageCarouselSubtitle == "CHANGE_ME"
+                    .footnote.text-center
+                        p
+                else
+                    .footnote.text-center!= imageCarouselSubtitle
+
+    if publishedInTitle == "CHANGE_ME"
+        figure.relative(data-aos="fade-up")
+            a(href=imageZoomSingleHeaderLg data-fancybox="images")
+                img.img-fit.lazyload(loading="lazy" data-src=imageZoomSingleHeaderSm alt=pageTitle)&attributes(attributes)
+            img.icon-zoom-boxed.lazyload(loading="lazy" data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
+
+    else
+        figure.relative(data-aos="fade-up")
+            a(href=imageZoomSingleHeaderLg data-fancybox="images")
+                img.img-fit.lazyload(loading="lazy" data-src=imageZoomSingleHeaderSm alt=pageTitle)&attributes(attributes)
+            img.icon-zoom-boxed.lazyload(loading="lazy" data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
+
+//- /*-----  End of USE FOR SINGLE IMAGE ZOOMS WITH HEADER  ----------------------------------*/
+
+
+
+//- ====================================================================================
+//- =            USE FOR LISTED ITEMS WITH THUMBNAILS, I.E. RESOURCES            =
+//- ====================================================================================
+mixin listItem-thumb(link, image, title, subtitle, description)
+    .grid-x.grid-padding-x.callout.box-shadow-hover.align-middle.small-m0.small-mb1
+        .small-12.medium-2.cell.small-p0
+            a(href=link)
+                img.w100.lazyload.small-mb1.medium-mb0(loading="lazy" data-src=image alt=title)
+        .small-12.medium-10.cell
+            a(href=link)
+                h5.text-normal-bold!= title
+                    .footnote!= subtitle
+                p.text-black.small-mb0!= description
+
+//- /*-----  End of USE FOR LISTED ITEMS WITH THUMBNAILS, I.E. RESOURCES  ----------------------------------------*/
+
+
+
+//- ====================================================================================
+//- =            USE FOR LISTED ITEMS WITH THUMBNAILS AND EXTRA BUTTONS, I.E. ONLINE ARTICLES            =
+//- ====================================================================================
+mixin listItem-thumb-buttons(image, link, title, date, description, screenshot)
+    .grid-x.grid-padding-x.callout.box-shadow-hover.align-middle.small-m0.small-mb1.medium-unstack
+        if image == "CHANGE_ME_IMAGE"
+            .small-12.cell.medium-auto
+                a(href=link)
+                    h5.text-normal-bold.small-mb0!= title
+                .footnote!= date
+                p.medium-m0!= description
+            .small-12.cell.medium-shrink
+                a.button.arrow.small.text-caps.expanded.text-left.external(href=link, target="_blank" rel=noopener) Visit Page
+                a.button.arrow.small.text-caps.expanded.text-left.small-mb0(href=screenshot data-fancybox="images") View Screenshot
+        else
+            .small-12.medium-2.cell.small-p0
+                img.w100.lazyload.small-bd1.small-mb1.medium-mb0(loading="lazy" data-src=image alt=title)
+            .small-12.cell.medium-auto
+                a(href=link)
+                    h5.text-normal-bold.small-mb0!= title
+                .footnote!= date
+                p.medium-m0!= description
+            .small-12.cell.medium-shrink
+                a.button.arrow.small.text-caps.expanded.text-left.external(href=link, target="_blank" rel=noopener) Visit Page
+                a.button.arrow.small.text-caps.expanded.text-left.small-mb0(href=screenshot data-fancybox="images") View Screenshot
+
+//- /*-----  End of USE FOR LISTED ITEMS WITH THUMBNAILS AND EXTRA BUTTONS, I.E. ONLINE ARTICLES  ------------------*/
+
+
+
+//- ====================================================================================
+//- =            USE FOR MEDIUM GALLERY IMAGES, LINKING TO ANOHTER PAGE            =
+//- ====================================================================================
+mixin galleryItem-cardImageZoom(link, image, title, author, date)
+    .small-12.medium-6.large-4.cell.flex-container(data-aos="fade-up")
+        a.card.galleryCardImage.text-center(href=link)
+            .card-section
+                img.lazyload.w100(loading="lazy" data-src=image alt="Zoom")
+            .card-section
+                p.small-mb0!= title
+                if author == "CHANGE_ME_AUTHOR"
+                else 
+                    .footnote!= author
+
+                if date == "CHANGE_ME_DATE"
+                else
+                    .footnote!= date 
+
+//- /*-----  End of USE FOR MEDIUM GALLERY IMAGES, LINKING TO ANOHTER PAGE  ------------------------------------*/
+
+
+
+//- ====================================================================================
+//- =            USE FOR MEDIUM GALLERY IMAGES, LINKING TO IMAGE            =
+//- ====================================================================================
+mixin galleryItem-imageHidden(...galleryItemImageHidden)
+    each hidden in galleryItemImageHidden
+        a.hide(href=hidden.hideMe data-fancybox="images" data-caption=pageTitle + "   |   " + hidden.title)
+            img.lazyload.w100(loading="lazy" data-src=hidden.hideMe alt=pageTitle + "   |   " + hidden.title)
+
+mixin galleryItem-cardLink(lgColumns, mdColumns, ...galleryItemCardLink)
+    div(class="large-" + lgColumns class="medium-" + mdColumns class="small-12 cell flex-container" data-aos="fade-up")
+        each item in galleryItemCardLink
+            a.card.galleryCardImage.text-center(href=item.LG data-fancybox="images" data-caption=pageTitle + "   |   " + item.title)
+                .card-section
+                    img.lazyload.w100(loading="lazy" data-src=item.SM alt=pageTitle)
+                .card-section
+                    p.small-mb0!= item.title
+                    if item.footnote1 == "CHANGE_ME"
+                    else 
+                        .footnote!= item.footnote1
+                    if item.footnote2 == "CHANGE_ME"
+                    else
+                        .footnote!= item.footnote2
+
+//- /*-----  End of USE FOR MEDIUM GALLERY IMAGES, LINKING TO IMAGE  ----------------------------------*/
+
+
+
+//- ====================================================================================
+//- =            USE FOR HEAVY GALLERY IMAGES            =
+//- ====================================================================================
+
+mixin galleryItem-heavy(divider, projectTitle, lgColumns, mdColumns, ...galleryItemHeavy)
+    unless divider == "DIVIDER_no"
+        hr.w100.horizontal-center.hr-red.hr-3.medium-my3
+    unless projectTitle =="CHANGE_ME"
+        h3.text-center.small-mb3!= projectTitle
+    .grid-x.grid-margin-x.align-center.align-middle
+        each item in galleryItemHeavy
+            if lgColumns == "12"
+                div(class="large-" + lgColumns class="medium-" + mdColumns class="small-12 cell align-middle flex-container relative" data-aos="fade-up")
+                    a(href=item.LG data-fancybox="images" data-caption=pageTitle + "   |   " + projectTitle)
+                        img.lazyload.w100(loading="lazy" data-src=item.SM alt=pageTitle + "   |   " + projectTitle)&attributes(attributes)
+                    img.icon-zoom-boxed.lazyload(loading="lazy" data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
+                    unless item.title == ""
+                        p.small-m0!= item.title
+                    .footnote!= item.footnote
+            else
+                div(class="large-" + lgColumns class="medium-" + mdColumns class="small-12 cell align-middle" data-aos="fade-up")
+                    if projectTitle =="CHANGE_ME"
+                        a(href=item.LG data-fancybox="images" data-caption=pageTitle)
+                            img.lazyload.w100(loading="lazy" data-src=item.SM alt=pageTitle)&attributes(attributes)
+                    else
+                        a(href=item.LG data-fancybox="images" data-caption=pageTitle + "   |   " + projectTitle)
+                            img.lazyload.w100(loading="lazy" data-src=item.SM alt=pageTitle + "   |   " + projectTitle)&attributes(attributes)
+                    unless item.title == ""
+                        p.small-m0!= item.title
+                    .footnote!= item.footnote
+
+//- -----  End of USE FOR HEAVY GALLERY IMAGES  --------------------------------------------
+
+
+
+//- ====================================================================================
+//- =            SINGLE PROJECT DIVIDER            =
+//- ====================================================================================
+
+mixin projectDivider(projectType)
+    hr.w100.horizontal-center.hr-red.hr-3.medium-my3
+    h3.text-center.small-mb3!= projectType
+
+//- -----  End of SINGLE PROJECT DIVIDER  --------------------------------------------
+
+
+
+//- ====================================================================================
+//- =            RESOURCES ENTRY            =
+//- ====================================================================================
+
+mixin resourceEntry(link, image, title, footnote, description)
+    a.listItem-thumb.external.small-mb1.bg-white(href=link, target="_blank" rel=noopener)
+        img.lazyload.w100(loading="lazy" data-src='/resources/resources-logos-assets/#{image}' alt=pageTitle)
+        //- img(src='/resources/resources-logos-assets/#{image}', alt=image width='170' height='170')
+        .listItemLabel-thumb
+            h5.text-normal-bold!= title
+                .footnote!= footnote
+            p!=description
+
+//- -----  End of RESOURCES ENTRY  --------------------------------------------
+
+//- ======================================================================================
+//- =            USE FOR BLOCK GRIDS            =
+//- ======================================================================================
+
+mixin galleryItem-blockGrid(divider, projectTitle, alignment, lgBlocks, mdBlocks, ...galleryItemBlockGrid)
+    unless divider == "DIVIDER_no"
+        hr.w100.horizontal-center.hr-red.hr-3.medium-my3
+    unless projectTitle =="CHANGE_ME"
+        h3.text-center.small-mb3!= projectTitle
+    .grid-x.grid-margin-x.align-center.text-center(class="align-" + alignment class="large-up-" + lgBlocks class="medium-up-" + mdBlocks)
+        each item in galleryItemBlockGrid
+            if lgBlocks < "3"
+                .cell.column-block.relative(data-aos="fade-up")
+                    if projectTitle =="CHANGE_ME"
+                        a(href=item.LG data-fancybox="images" data-caption=pageTitle)
+                            img.lazyload(loading="lazy" data-src=item.SM alt=pageTitle)&attributes(attributes)
+                        img.icon-zoom-boxed.lazyload(loading="lazy" data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
+                    else
+                        a(href=item.LG data-fancybox="images" data-caption=pageTitle + "   |   " + projectTitle)
+                            img.lazyload(loading="lazy" data-src=item.SM alt=pageTitle + "   |   " + projectTitle)&attributes(attributes)
+                        img.icon-zoom-boxed.lazyload(loading="lazy" data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
+                    unless item.title == ""
+                        p.small-m0!= item.title
+                    unless item.footnote == ""
+                        .footnote!= item.footnote
+            else
+                .cell.column-block.align-middle.relative(data-aos="fade-up")
+                    if projectTitle =="CHANGE_ME"
+                        a(href=item.LG data-fancybox="images" data-caption=pageTitle)
+                            img.lazyload(loading="lazy" data-src=item.SM alt=pageTitle)&attributes(attributes)
+                    else
+                        a(href=item.LG data-fancybox="images" data-caption=pageTitle + "   |   " + projectTitle)
+                            img.lazyload(loading="lazy" data-src=item.SM alt=pageTitle + "   |   " + projectTitle)&attributes(attributes)
+                    unless item.title == ""
+                        p.small-m0!= item.title
+                    unless item.footnote == ""
+                        .footnote!= item.footnote
+
+//- -----  End of USE FOR BLOCK GRIDS  ------------------------------------
+

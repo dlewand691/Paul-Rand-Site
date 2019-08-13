@@ -1,0 +1,67 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Paul Rand Lecture Series'
+    - var bodyID    = 'life'
+    - var bodyClass = 'videos'
+
+block main-content
+    - var nextType             = 'Video'
+    - var nextTitle            = 'Encounters with Paul Rand'
+    - var nextDate             = '2010'
+    - var nextDescription      = 'This video provided courtesy of Sarah Brody on Vimeo'
+    - var nextLink             = '/life/videos/2010-encounters-with-paul-rand.html'
+
+    - var relatedItemLink1     = '/life/videos/1993-steve-jobs.html'
+    - var relatedItemTitle1    = 'Steve Jobs interview about working with Paul Rand'
+    - var relatedItemFootnote1 = 'This video provided courtesy of youareworthy on YouTube'
+
+    - var relatedItemLink2     = '/life/videos-interviews/interviews/2001-MIT.html'
+    - var relatedItemTitle2    = 'Maeda @ Media, Interview excerpt'
+    - var relatedItemFootnote2 = 'Published in “Maeda@Media”, Universe Press, 2001'
+
+    - var relatedItemLink3     = '/life/videos/1991-miggs-burroughs.html'
+    - var relatedItemTitle3    = 'Miggs Burroughs Interview'
+    - var relatedItemFootnote3 = 'Filmed for the TV show “Miggs B. on TV” in Connecticut, 1991'
+
+
+    //- =============================
+    //- =            VIDEO            =
+    //- =============================
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                //- ==========  TITLE  ==========
+
+                .large-8.medium-11.cell
+                    .grid-x.grid-margin-x
+                        .cell.text-center
+                            h1= pageTitle
+                            p.text-gray.t16: em 2008
+
+                            p Presented by the School of Visual Arts, MFA Designer as Author: Paul Rand Lecture Series.
+
+            //- ==========  VIDEO  ==========
+            .grid-x.grid-margin-x.align-center
+                .small-12.medium-10.large-9.cell.small-mb3
+                    .plyr-js.plyr-js__video-embed
+                        iframe(src="https://player.vimeo.com/video/73234646?loop=false&byline=false&portrait=false&title=false&speed=true&transparent=0&gesture=media", allowfullscreen="", allowtransparency="", allow="autoplay")
+                    //- .responsive-embed.widescreen
+                    //-     div.plyr-js(data-plyr-embed-id="73234646" data-plyr-provider="vimeo")
+
+                    //- .flex-video
+                    //- 	iframe(src="//player.vimeo.com/video/73234646" frameborder="0" allowfullscreen)
+
+            //- ==========  BODY  ==========
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-9.small-12.cell
+                    p Rand helped revolutionize the hard cover jacket and paperback cover with his playful designs as Steven Heller lectures about his work and theories.
+
+
+                //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug

@@ -1,0 +1,72 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'AIGA/NY Paul Rand & Milton Glaser: A Conversation'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'CHANGE_ME'
+    - var pageSubtitle2         = 'CHANGE_ME'
+
+    - var nextType              = 'Event'
+    - var nextTitle             = 'Steven Heller talks to students about all things design'
+    - var nextDate              = '2013'
+    - var nextLink              = '2013-MODA-steven-heller-afternoon'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'Images courtesy of Randall Ross, modernism101.com'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20and%20Milton%20Glaser/Web/1996%20Paul%20Rand%20and%20Milton%20Glaser%20Announcement%20Postcard%2C%20front.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20and%20Milton%20Glaser/Web/1996%20Paul%20Rand%20and%20Milton%20Glaser%20Announcement%20Postcard%2C%20front.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20and%20Milton%20Glaser/Web/1996%20Paul%20Rand%20and%20Milton%20Glaser%20Announcement%20Postcard%2C%20back.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20and%20Milton%20Glaser/Web/1996%20Paul%20Rand%20and%20Milton%20Glaser%20Announcement%20Postcard%2C%20back.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20and%20Milton%20Glaser/Web/1996%20Paul%20Rand%20and%20Milton%20Glaser%20Announcement%20Postcard%2C%20front.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20and%20Milton%20Glaser/Web/1996%20Paul%20Rand%20and%20Milton%20Glaser%20Announcement%20Postcard%2C%20front.jpg"
+                            )
+
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        1996 AIGA/NY Postcard Announcement
+
+                        Two-sided Postcard Printed in Red, Blue, and Black
+
+                        [American Institute of Graphic Arts]: PAUL RAND | MILTON GLASER: A CONVERSATION. New York City: AIGA/NY, 1996. First edition. A very good [mailed] postcard with automated address. Out-of-print.
+
+                        6” x 4” two-sided postcard printed in red, blue, and black: “The American Institute of Graphic Arts invites you to share an evening with two design legends.”
+
+                        On the website for Print Magazine [“Milton Glaser talks about his role models” by Caitlin Dover (May 14, 2010)]: “I personally was influenced by Paul Rand,” says Glaser. “He created a kind of platform for everyone to work from. He was in many ways a thorny man but uncompromising in his work. He showed you could do first-class commercial work. He set a durable standard—his work has an ongoing, universal, nonstylistic value. His stuff looks appropriate for our time as well as that time.” He also mentions Joseph Baum (a client), Lester Beall, George Salter, and Herbert Bayer as influences.
+
+                        Glaser is the first graphic designer to be presented with a National Arts Award [2010], an important personal honor for Glaser and an important honor for the Graphic Design profession in general.
+
+                    .footnote — Randall Ross of modernism101.com
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

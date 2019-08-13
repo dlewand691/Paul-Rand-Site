@@ -1,0 +1,243 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Interview with a Portfolio Center Student'
+    - var bodyID    = 'life'
+    - var bodyClass = 'interviews'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Interviews/1995%20Interview%20with%20a%20Portfolio%20Center%20Student/Web/Interview%20with%20a%20Portfolio%20Center%20Student%201995-450.jpg'
+
+    - var articleAuthor         = 'CHANGE_ME'
+    - var publishedInTitle      = 'Atlanta, GA, 1995'
+    - var publishedInSubtitle   = 'CHANGE_ME'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1995%20Interview%20with%20a%20Portfolio%20Center%20Student/Web/Interview%20with%20a%20Portfolio%20Center%20Student%201995-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1995%20Interview%20with%20a%20Portfolio%20Center%20Student/Web/Interview%20with%20a%20Portfolio%20Center%20Student%201995.jpg', title: ''})
+
+    - var library               = 'no'
+    - var libraryLink           = 'CHANGE_ME'
+    - var abe                   = 'no'
+    - var abeLink               = 'CHANGE_ME'
+    - var amazon                = 'no'
+    - var amazonLink            = 'CHANGE_ME'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Interview'
+    - var nextTitle             = 'Paul Rand on the Play Instinct'
+    - var nextDate              = '1998'
+    - var nextDescription       = 'With Steven Heller Published in “Design Dialogues”, Allworth Press'
+    - var nextLink              = '/life/interviews/1998-Paul-Rand-on-the-Play-Instinct.html'
+
+    - var relatedItemLink1      = '/life/interviews/1985-guttenberg-and-family.html'
+    - var relatedItemTitle1     = 'Paul Rand: Imperishable Champion'
+    - var relatedItemFootnote1  = 'Gutenberg &amp; Family: The Newsletter of the Type Director’s Club'
+
+    - var relatedItemLink2      = '/life/interviews/1989-interview-with-steven-heller.html'
+    - var relatedItemTitle2     = 'A Paul Rand Interview with Steven Heller'
+    - var relatedItemFootnote2  = 'From Mildred Friedman’s “Graphic Design In America: A Visual Language History”, 1989'
+
+    - var relatedItemLink3      = '/life/interviews/1991-kromekote-childhood-fantasies.html'
+    - var relatedItemTitle3     = 'Childhood Fantasies'
+    - var relatedItemFootnote3  = 'Champion Papers, 1991'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1995%20Interview%20with%20a%20Portfolio%20Center%20Student/Web/Interview%20with%20a%20Portfolio%20Center%20Student%201995-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1995%20Interview%20with%20a%20Portfolio%20Center%20Student/Web/Interview%20with%20a%20Portfolio%20Center%20Student%201995.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            unless articleAuthor == 'CHANGE_ME'
+                p.reveal-enter-bottom!= 'By ' + articleAuthor
+
+            p.reveal-enter-bottom!= publishedInTitle
+                unless publishedInSubtitle == 'CHANGE_ME'
+                    br
+                    !=publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    !=publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+            //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        This interview, conducted via fax, is a fun example of Rand’s pure modernism—his short, witty answers to probing questions.  
+                        Originally faxed October 26, 1995
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center#original-article
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        p.question Q: How did you become a designer (more specifically on your path to becoming a designer what happened that you might consider unusual, out of the norm, that has had an influence on how you design today)?
+
+                            p 
+                                strong.text-red A: 
+                                | An act of God.
+
+                            p.question Q: How do you define graphic design today?
+
+                            p 
+                                strong.text-red A: 
+                                | The realization of a visual idea.
+
+                            p.question Q: What might you suggest to a young designer just beginning a career, or one who is still in school, soon to be starting out?
+
+                            p 
+                                strong.text-red A: 
+                                | Work hard and read about aesthetics.
+
+                            p.question Q: Tell me who are you influences coming into this business. Also, are they still mentors or influences?
+
+                            p 
+                                strong.text-red A: 
+                                | Everybody.
+
+                            p.question Q: If you could read your obituary in some future time, what do you think it might say? What do you want it to say?
+
+                            p 
+                                strong.text-red A: 
+                                | RIP
+
+                            p.question Q: Did you have any art school training?
+
+                            p 
+                                strong.text-red A: 
+                                | Yes.
+
+                            p.question Q: How has your work changed since you began?
+
+                            p 
+                                strong.text-red A: 
+                                | Very little.
+
+                            p.question Q: What do you think of the influence of electronic technologies?
+
+                            p 
+                                strong.text-red A: 
+                                | None.
+
+                            p.question Q: What’s your favorite ice cream?
+
+                            p 
+                                strong.text-red A: 
+                                | Chocolate.
+
+                            p.question Q: If you were to start all over again today, is there anything you’d do differently?
+
+                            p 
+                                strong.text-red A: 
+                                | No.
+
+                            p.question Q: What did you always want to be when you grew up?
+
+                            p 
+                                strong.text-red A: 
+                                | An artist.
+
+                            p.question Q: What is your favorite hobby?
+
+                            p 
+                                strong.text-red A: 
+                                | Work.
+
+                            p.question Q: What’s a project you would absolutely love to do? Are you working on any special projects right now?
+
+                            p 
+                                strong.text-red A: 
+                                | Nothing special. Yes.
+
+                            p.question Q: What would you want from me if I came to you looking for a job?
+
+                            p 
+                                strong.text-red A: 
+                                | To be truthful and helpful.
+
+                            p.question Q: Where do you turn for your inspiration? (outside of design)
+
+                            p 
+                                strong.text-red A: 
+                                | Life.
+
+                            p.question Q: Who or what have you learned the most from in your life?
+
+                            p 
+                                strong.text-red A: 
+                                | Too many to enumerate.
+
+                            p.question Q: What is the difference between art and design? What do you see as the difference the practice of graphic designer and the art director?
+
+                            p 
+                                strong.text-red A: 
+                                | No difference. The graphic designer does the work.
+
+                            p.question Q: What do you think of the “new revolution” in type design, or do you think it is even revolutionary?
+
+                            p 
+                                strong.text-red A: 
+                                | Nothing.
+
+                            p.question Q: If you had to pick one alphabet to use for the rest of your career, what would it be? Why?
+
+                            p 
+                                strong.text-red A: 
+                                | Janson/Because it’s great!
+
+                            p.question Q: In looking forward, what would you do that you possibly haven’t done?
+
+                            p 
+                                strong.text-red A: 
+                                | Nothing.
+
+                            p PR/Del 26,95
+
+                    +imageZoomSingleHeader(
+                        "https://assets.paulrand.design/Life/Interviews/1995%20Interview%20with%20a%20Portfolio%20Center%20Student/Web/Interview%20with%20a%20Portfolio%20Center%20Student%201995.jpg",
+                        "https://assets.paulrand.design/Life/Interviews/1995%20Interview%20with%20a%20Portfolio%20Center%20Student/Web/Interview%20with%20a%20Portfolio%20Center%20Student%201995.jpg"
+                        )
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        //- include ../../__MIXINS/_include-image-carousel.pug
+
+        //- include ../../__MIXINS/_include-published-in.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug

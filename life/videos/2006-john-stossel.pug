@@ -1,0 +1,62 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'John Stossel comments on Graphic Design'
+    - var bodyID    = 'life'
+    - var bodyClass = 'videos'
+
+block main-content
+    - var nextType             = 'Video'
+    - var nextTitle            = 'Induction to the One Club Hall Of Fame'
+    - var nextDate             = '2007'
+    - var nextDescription      = 'Real Mad Men Get Their Due At One Club Hall of Fame Induction'
+    - var nextLink             = '/life/videos/2007-one-club-hall-of-fame.html'
+
+    - var relatedItemLink1     = '/life/videos/1994-steven-heller.html'
+    - var relatedItemTitle1    = 'Steven Heller Interviews Paul Rand'
+    - var relatedItemFootnote1 = 'Filmed at the Fitzgerald Theater in downtown St Paul Minnesota'
+
+    - var relatedItemLink2     = '/life/interviews/1989-Type-Talks-interview.html'
+    - var relatedItemTitle2    = 'Type Talk Interview'
+    - var relatedItemFootnote2 = 'Published in “Type Talks”, Fall 1989'
+
+    - var relatedItemLink3     = '/life/interviews/1995-Portfolio-Center.html'
+    - var relatedItemTitle3    = 'Interview with a Portfolio Center Student'
+    - var relatedItemFootnote3 = 'Conducted via fax, is a fun example of Rand’s pure modernism'
+
+
+    //- =============================
+    //- =            VIDEO            =
+    //- =============================
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                //- ==========  TITLE  ==========
+
+                .large-8.medium-11.cell
+                    .grid-x.grid-margin-x
+                        .large-12.cell.text-center
+                            h1= pageTitle
+                            p.text-gray.t16: em 2006
+
+                            br
+                            p This video provided courtesy of 
+                                a(href="http://www.youtube.com/user/kenfrederick" target="_blank" rel=noopener) kenfrederick 
+                                | on YouTube.
+
+            //- ==========  VIDEO  ==========
+            .grid-x.grid-margin-x.small-mb4.align-center
+                .large-12.cell
+                    .small-mb3
+                        div.plyr-js(data-plyr-embed-id="1RqdZCo6vkI" data-plyr-provider="youtube")
+
+                    //- .flex-video
+                    //-     iframe(src="//www.youtube.com/embed/1RqdZCo6vkI" frameborder="0" allowfullscreen)
+
+                //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug

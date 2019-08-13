@@ -1,0 +1,49 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Monell Chemical Senses Center'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = '1989'
+    - var nextType  = 'Client'
+    - var nextTitle = 'Morningstar'
+    - var nextLink  = 'Morningstar'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Monell-Chemical-Senses-Center-1989.svg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Monell-Chemical-Senses-Center-1989.svg", title: "", footnote: ""}
+                        )
+
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Letterhead",
+                        "top", "1", "1",
+                        {SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Letterhead/Web/Monell%20Chemical%20Senses%20Center%20letterhead-970.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Letterhead/Web/Monell%20Chemical%20Senses%20Center%20letterhead.jpg", title: "", footnote: ""}
+                        )
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

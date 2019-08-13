@@ -1,0 +1,143 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Saint Paul'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Art%20Chantry%20Speaks/Web/Art%20Chantry%20Speaks%20cover-450.jpg'
+
+    - var articleAuthor         = 'Art Chantry'
+    - var publishedInTitle      = 'Art Chantry Speaks'
+    - var publishedInSubtitle   = '2015'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Art%20Chantry%20Speaks/Web/Art%20Chantry%20Speaks%20cover-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Art%20Chantry%20Speaks/Web/Art%20Chantry%20Speaks%20cover.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/973117833'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=https%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3Dart%2520chantry%2520speaks'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'https://amzn.to/2SgTlBC'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dm570.l1313%26_nkw%3Dart%2Bchantry%2Bspeaks%26_sacat%3D0'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Graphic Design Visionaries'
+    - var nextDate              = '2015'
+    - var nextDescription       = 'by Caroline Roberts'
+    - var nextLink              = '2015-graphic-design-visionaries.html'
+
+    - var relatedItemLink1      = '1993-print-magazine.html'
+    - var relatedItemTitle1     = 'Thoughts on Rand'
+    - var relatedItemFootnote1  = 'Print Magazine, May/June 1997, Vol. 51, Issue 3'
+
+    - var relatedItemLink2      = '1997-modern-painters-magazine.html'
+    - var relatedItemTitle2     = 'Paul Rand, The Magician'
+    - var relatedItemFootnote2  = 'Modern Painters Magazine, Spring 1997'
+
+    - var relatedItemLink3      = '1971-NYC-ADC-Hall-of-Fame.html'
+    - var relatedItemTitle3     = '1971 Art Director’s Club of New York Hall of Fame Inception'
+    - var relatedItemFootnote3  = 'Watson-Guptill Publications, 1971'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Art%20Chantry%20Speaks/Web/Art%20Chantry%20Speaks%2001-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Art%20Chantry%20Speaks/Web/Art%20Chantry%20Speaks%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Art%20Chantry%20Speaks/Web/Art%20Chantry%20Speaks%2002-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Art%20Chantry%20Speaks/Web/Art%20Chantry%20Speaks%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Art%20Chantry%20Speaks/Web/Art%20Chantry%20Speaks%2003-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Art%20Chantry%20Speaks/Web/Art%20Chantry%20Speaks%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Art%20Chantry%20Speaks/Web/Art%20Chantry%20Speaks%2004-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Art%20Chantry%20Speaks/Web/Art%20Chantry%20Speaks%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Art%20Chantry%20Speaks/Web/Art%20Chantry%20Speaks%2005-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/2015%20Art%20Chantry%20Speaks/Web/Art%20Chantry%20Speaks%2005.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content#original-article
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Art Chantry: Art is a graphic designer (and 2017 AIGA Medalist) most often associated with the logos, posters and album art he created for countless punk, grunge and rock bands and their labels. . His work has been exhibited at the Rock and Roll Hall of Fame, Museum of Modern Art, Seattle Art Museum, the Smithsonian and the Louvre.
+
+                        Monica René Rochester: Born and raised in South Carolina before becoming a West Coast Convert in the 90's, Monica has worked and played in the music and book industries for the past 20+ years, while keeping a hand (and scissors!) in the fine arts field as a collagist.
+
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            I have extremely mixed feelings about the life and work and importance of Paul Rand (1914–1996). In the “fine” graphic design world, he has been elevated to enormously lofty status. He’s often seriously referred to as “Saint Paul.” He is credited with being the sole graphic designer to bring Modernism to America, the man who invented corporate graphics, the great moral philosopher to first put an organized tome of modern design thought and social responsibility into print, the man that every single graphic designer in America has been (supposedly) copying for over half a century. Rand is considered that influential and that godly. In fact, in one of his very last interviews, he even referred to himself as “God.” No kidding.
+
+                            Being an instinctive iconoclast (I was raised without trust in all things I’m told to trust), I have always immediately knee-jerk reacted to Paul Rand as an overblown bloated fantasy trip of weak merit, a career of BS and hubris that falls apart upon deeper inspection. At least that’s the way I’ve always looked at his work. 
+
+                            To push my position a little further, to claim he brought Modernism to America is to ignore careers a full generation his senior such as European immigrant Alexey Brodovitch or even the thoroughly American-born Lester Beall. There were many graphic designers practicing modernist ideas in their work decades before Paul Rand popped up. So I always thought of him as the “young whippersnapper” who showed up copycatting his competition and getting all the fame and glory. It’s a classic path to graphic design immortality. Our design history is crammed full of very short attention spans and a deep hesitance to research facts. 
+
+                            Then there’s Rand’s blowhard pontificating on the ideals and “art” of graphic design. When I checked him out, I found his statements full of arrogant self-aggrandizement and inappropriate ideals with no real application. This isn’t art, but design. Never con- fuse doctors with dentists. Rand would often wax poetic about the “inviolate” sacrosanct importance of staying true to the design of, say, a logo. Then on the opposite page of that “absolute” rule set in concrete, Rand broke up one of his famous logos into tiny little decorative chunks to design with, like it meant nothing but Tinkertoys. He would contradict himself in these really short-sighted ways everywhere in his writings.
+
+                            As to the notion that he invented modern corporate graphics, this also puts the lie to the entire careers of people like Bradbury Thompson and William Golden and George Nelson and (again) Lester Beall, like they weren’t even there pioneering the corporate look independently before Rand. The mythology has Paul Rand (the “Young Turk”) stepping up and single-handedly bringing all the wisdom of good design to Corporate America through sheer force of will and chutzpah. Again, he was copycatting his contemporaries. He was a latecomer there as well. The one thing that Rand may have actually pioneered in the realm of corporate design is the “sell-out.” That is, the sell-out of a Socialist vision of modern design thought to corporate interest (and profit). Prior to him, the idea of abstract modern ideas in contemporary design language was still primarily the province of “the people.”
+
+                            I do credit Paul Rand with almost single-handedly making modernist design the American corporate decorative style—the “patsy” design style of corporate ambition. He empowered American corporations with the camouflage of the “people’s design language” like no one ever had before. He talked like this was a GOOD thing. And we all believed him.
+
+                            The truth as I see it is that Paul Rand had the good fortune to be a great hustler/salesman. He arrived late on the scene, stole from the best of the best (the pioneers of modern design thought) and managed to outlive everybody else into a ripe old age. Then he spent a great deal of time telling everybody he was “the man who did it all.” In other words, he was a classic American design con man. Not a god.
+
+                            This image is a book-format magazine cover Rand designed back in 1947. The magazine is devoted to modern Jazz music and Paul Rand did this dust jacket for it (the tape stains are from age, not part of the design). It’s considered a classic Rand design and all graphic designers bow in front of it and chant their praises. The reality of this design is that it doesn’t really work at all. I mean, is there anything about this style or concept that says “jazz” to you? Granted, the way jazz visually “looked” at this point was in flux and eventually became the style promoted by (first) David Stone Martin and Burt Goldblatt, then Blue Note styling of Reid Miles. I guess this design could be viewed as Paul Rand’s attempt to visually de- fine jazz’s corporate look. I think it really flops on its face. It’s cute. It’s cartoony. It’s arty. But it ain’t jazzy. I mean, it looks like z-level illustration on a recording of classical pan-flute music. For children. The only thing that lifts this up to the front pages of design history is the signature “Paul Rand” at bottom left. If not for that it would be forgotten and ignored. Thus is the power of designing a “cult of personality” for your career.
+
+                            To be fair, Steve Heller’s tome on Rand’s career is a wonderful document that lavishly showers Rand with the praise that he is assumed to be due. Rand’s actual work (as illustrated) can be hilarious and even laughably bad. Just look. Even viewed in its own stylistic time frame it’s flimsy. If you don’t believe me, go research what the graphic design of that era actually looked like. Look at old books and publications about design from the period. You might be surprised. The way history treats Rand is that he was a lone voice, powerfully promoting the brilliance of modernism from the darkness. The old design annuals are full of amazing voices from dozens, maybe hundreds of equally powerful design thinkers— all forgotten. They died young.
+
+                            All that said, a lot of Rand’s work and ideas are masterful. I really love his early paperback book covers. They’re brilliant. Paperback books were a standard avenue of freelance employment for all budding young designers back then. They paid OK and you could do them fast with very little artistic oversight or art direction and great freedom. You were well paid to do whatever you wanted.
+
+                            All the NYC designers in the heart of the center of the publishing industry of that era have really grand portfolios of paperback book covers. The fact that Rand’s are really good is no big whoop.
+
+                            As for his corporate sell-out work, I always think about that Westinghouse logo that is so worshipped by designers the world over. Paul Rand spent a lot of time writing and talking about this particular logo project, about how Westinghouse built household comfort (refrigerators) and he wanted to create an image and identity of warmth and dignity and household comfort. What he created was this cold hard abstract “W”? That confuses me. He contradicts what he SAYS with what he actually DESIGNS.
+
+                            The bottom line about the self-proclaimed moralism and social responsibility of graphic designers in our culture (as endlessly credited to Rand’s “primal” thinking) is the “moral purity” of the brand in question. Westinghouse happened to become a major defense contractor and a heavyweight in the nuclear industry, providing components for nuclear submarines and many other weapons of war. Paul Rand designed the corporate identity of Westinghouse. So much for moral brand integrity, eh, Saint Paul?
+
+            //- /*-----  End of BODY  ------*/
+
+
+
+
+
+        include ../../../../__MIXINS/_include-image-carousel.pug
+
+        include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

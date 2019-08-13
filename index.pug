@@ -1,0 +1,138 @@
+extends __MIXINS/_layout-default.pug
+
+block vars
+    - var pageTitle = 'Home'
+    - var bodyID    = ''
+    - var bodyClass = ''
+
+block main-content
+    .cd-main-content
+        //- =======================================================================
+        //- =            BODY            =
+        //- =======================================================================
+
+        .grid-x.grid-padding-x.align-middle.small-mtn3.h100vh.relative(style="background: linear-gradient(rgba(0,0,0,.0), rgba(0,0,0,.0)), url('https://assets.paulrand.design/Life/Portraits/Web/Portrait%20by%20Simpson%20Kalisher-970.jpg'); background-position: center 60%; background-size: cover;")
+            .cell
+                .absolute.w100.h100vh(style="top: 0; left: 0; background: url(img/diag_stripes.svg); mix-blend-mode: overlay; transform: scaleX(-1); background-size: contain;")
+                h1.small-m0.text-white.text-bold(style="font-size: 20vw; opacity: 1") Paul Rand
+                p.small.sans-serif.text-bold.text-red.small-m0(style="font-size: 4vw; line-height: 1")
+                    | Modernist Master
+                    br
+                    | 1914 – 1996
+            small.bg-black.small-p1.text-white.absolute(style="bottom: 0%; right: 0%;") Photo by Simpson Kalisher
+        .grid-container
+            .grid-x.grid-margin-x
+                .cell.medium-mt8
+                    a(href="/life/")
+                        .grid-x.align-middle
+                            .auto.cell.z2.rellax(data-rellax-speed="-2")
+                                h1.text-bold(style="font-size: 20vw") Life
+                                img.bx-shadow1(src="https://assets.paulrand.design/Life/Portraits/Web/Champion%20Papers%20Kromekote%202000%20Childhood%20Fantasies%201991%2C%20In%20Studio%20by%20Sally%20Anderson-Bruce%2C%20color-800.jpg")
+                            .small-6.cell.medium-mln8.rellax(data-rellax-speed="7")
+                                img(src="https://assets.paulrand.design/Life/Portraits/Web/Portrait%20young-970.jpg")
+                            .auto.cell.medium-mln2.rellax(data-rellax-speed="2")
+                                img.bx-shadow1(src="https://assets.paulrand.design/Life/Portraits/Web/Paul%20%26%20Philp-800.jpg")
+
+                .cell.small-mt8
+                    a(href="/work/")
+                        .grid-x.align-middle
+                            .small-6.cell.rellax(data-rellax-speed="2")
+                                img(src="https://assets.paulrand.design/Works/_Books/Covers%20Only/1945%20Leave%20Cancelled/Web/Leave%20Cancelled%2C%20front-970.jpg")
+                            .auto.cell.z2.rellax(data-rellax-speed="-2")
+                                h1.text-bold.medium-mln8(style="font-size: 20vw") Work
+                                img.medium-mln3.bx-shadow1(src="https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Poster%2003-450.jpg")
+                            .auto.cell.medium-pl2.rellax.medium-mrn2(data-rellax-speed="7")
+                                img(src="https://assets.paulrand.design/Works/El%20Producto/Packaging/Cigar%20Album/Web/El%20Producto%20Cigar%20Album%2001-800.jpg")
+
+                .cell.small-mt8
+                    a(href="/writing/")
+                        .grid-x.align-middle
+                            .auto.cell.rellax.z3(data-rellax-speed="-2")
+                                h1.text-bold.medium-mrn8(style="font-size: 20vw") Writing
+                                img(src="https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%E2%80%99s%20Art/2016%20Re-print/Web/A%20Designers%20Art%202016-800.jpg")
+                            .auto.cell.medium-pl2.z2.rellax.medium-mrn2(data-rellax-speed="5")
+                                img.bx-shadow1(src="https://assets.paulrand.design/Writing/Books/1962%20Little%201/jpegs/little%20front-450.jpg")
+                            .small-6.cell.rellax(data-rellax-speed="2")
+                                img(src="https://assets.paulrand.design/Writing/Books/1947%20Thoughts%20on%20Design%2C%201st%20edition/Web/Thoughts%20on%20Design%2C%201st%20edition%2C%20front-970.jpg")
+
+                .cell.h100vh
+            //- .small-12.medium-4.cell.rellax(data-rellax-speed="0")
+            //-     a.card.card-medium.medium-mt4.medium-p1.large-p2(href="/life/books-articles/")
+            //-         .card-section
+            //-             img.w100(src="/img/landing/life/articles-books.jpg" alt="Articles and Books about Paul Rand")
+            //-         .card-section
+            //-             p.small-m0 Articles and Books about Paul Rand
+            //- 
+            //- .small-12.medium-4.cell.rellax(data-rellax-speed="-4")
+            //-     a.card.card-medium.medium-mtn2.medium-p1.large-p2(href="/life/portraits.html")
+            //-         .card-section
+            //-             img.w100(src="/img/landing/life/portraits.jpg" alt="Portraits")
+            //-         .card-section
+            //-             p.small-m0 Portraits
+            //- 
+            //- .small-12.medium-4.cell.rellax(data-rellax-speed="-1")
+            //-     a.card.card-medium.medium-mtn4.medium-p1.large-p2(href="/life/events-exhibits/")
+            //-         .card-section
+            //-             img.w100(src="/img/landing/life/events-exhibits.jpg" alt="Events & Exhibits")
+            //-         .card-section
+            //-             p.small-m0 Events & Exhibits
+            //- 
+            //- .small-12.medium-4.cell.rellax(data-rellax-speed="3")
+            //-     a.card.card-small.medium-mtn4.medium-p1.large-p2(href="/life/sketches-and-notes.html")
+            //-         .card-section
+            //-             img.w100(src="/img/landing/life/events-exhibits.jpg" alt="Sketches & Notes")
+            //-         .card-section
+            //-             p.small-m0 Sketches & Notes
+            //- 
+            //- .small-12.medium-4.cell.rellax
+            //-     a.card.card-small.medium-mtn4.medium-p1.large-p2(href="/life/christmas-cards.html")
+            //-         .card-section
+            //-             img.w100(src="/img/landing/life/events-exhibits.jpg" alt="Christmas Cards")
+            //-         .card-section
+            //-             p.small-m0 Christmas Cards
+            //- 
+            //- .small-12.medium-4.cell.rellax
+            //-     a.card.card-large.small-mtn2.medium-p1.large-p2(href="/life/videos/")
+            //-         .card-section
+            //-             img.w100(src="/img/landing/life/videos-interviews.jpg" alt="Videos")
+            //-         .card-section
+            //-             p.small-m0 Videos
+            //- 
+            //- .small-12.medium-4.cell.rellax
+            //-     a.card.card-medium.small-mtn10.medium-p1.large-p2(href="/life/Interviews/")
+            //-         .card-section
+            //-             img.w100(src="/img/landing/life/videos-interviews.jpg" alt="Interviews")
+            //-         .card-section
+            //-             p.small-m0 Interviews
+            //- 
+            //- .small-12.medium-4.cell.rellax
+            //-     a.card.card-large.medium-mtn2.medium-p1.large-p2(href="/life/rand-house.html")
+            //-         .card-section
+            //-             img.w100(src="/img/landing/life/Rand-House.jpg" alt="The Rand House")
+            //-         .card-section
+            //-             p.small-m0 The Rand House
+            //- 
+            //- .small-12.medium-4.cell.rellax
+            //-     a.card.card-small.medium-mt4.medium-p1.large-p2(href="/life/his-inspirations.html")
+            //-         .card-section
+            //-             img.w100(src="/img/landing/life/inspirations.jpg" alt="His Inspirations")
+            //-         .card-section
+            //-             p.small-m0 His Inspirations
+            //- 
+            //- .small-12.medium-4.cell.rellax
+            //-     a.card.card-medium.medium-mtn2.medium-p1.large-p2(href="/life/personal-items.html")
+            //-         .card-section
+            //-             img.w100(src="/img/landing/life/personal-items.jpg" alt="Personal Items")
+            //-         .card-section
+            //-             p.small-m0 Personal Items
+            //- 
+            //- .small-12.medium-4.cell.rellax
+            //-     a.card.card-large.medium-mtn2.medium-p1.large-p2(href="/life/death.html")
+            //-         .card-section
+            //-             img.w100(src="/img/landing/life/death.jpg" alt="In Death")
+            //-         .card-section
+            //-             p.small-m0 In Death
+
+
+
+        //- /*-----  End of BODY  ---------------------------------------------------------------------------------------*/

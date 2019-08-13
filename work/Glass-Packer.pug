@@ -1,0 +1,49 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Glass Packer'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = 'CHANGE_ME'
+    - var nextType  = 'Client'
+    - var nextTitle = 'Graphic Arts Production Yearbook'
+    - var nextLink  = 'Graphic-Arts-Production-Yearbook'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Glass%20Packer/Glass-Packer.svg", LG:"https://assets.paulrand.design/Works/Glass%20Packer/Glass-Packer.svg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Editorial",
+                        "top","3","2",
+                        {SM: "https://assets.paulrand.design/Works/Glass%20Packer/Web/Glass%20Packer%20Magazine%201936%20January%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Glass%20Packer/Web/Glass%20Packer%20Magazine%201936%20January%2001.jpg", title: "", footnote: "January, 1936"},
+                        {SM: "https://assets.paulrand.design/Works/Glass%20Packer/Web/Glass%20Packer%20Magazine%201942%20January%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Glass%20Packer/Web/Glass%20Packer%20Magazine%201942%20January%2001.jpg", title: "", footnote: "January, 1942"},
+                        {SM: "https://assets.paulrand.design/Works/Glass%20Packer/Web/Glass%20Packer%20Magazine%201943%20January%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Glass%20Packer/Web/Glass%20Packer%20Magazine%201943%20January%2001.jpg", title: "", footnote: "January, 1943"}
+                        )
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

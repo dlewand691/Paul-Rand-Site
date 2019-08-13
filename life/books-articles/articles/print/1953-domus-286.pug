@@ -1,0 +1,165 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Graphic Art By Paul Rand'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Domus%20286/Web/Domus%20286%20cover-450.jpg'
+
+    - var articleAuthor         = 'CHANGE_ME'
+    - var publishedInTitle      = 'Domus 286'
+    - var publishedInSubtitle   = 'September, 1953'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Domus%20286/Web/Domus%20286%20cover-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Domus%20286/Web/Domus%20286%20cover.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/297148847'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=https%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D50%26kn%3Ddomus%2520magazine%2520286%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+
+    - var amazon                = 'yes'
+    - var amazonLink            = 'https://amzn.to/2SlNg6W'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dm570.l1313%26_nkw%3Ddomus%2Bmagazine%26_sacat%3D0'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'The Paul Rand Legend'
+    - var nextDate              = 'October 1953'
+    - var nextDescription       = 'American Artist, Watson-Guptill Publications'
+    - var nextLink              = '/life/books-articles/articles/print/1953-american-artist.html'
+
+    - var relatedItemLink1      = '/life/books-articles/articles/print/1977-ulc.html'
+    - var relatedItemTitle1     = 'Pro.Files: The Great Graphic Innovators'
+    - var relatedItemFootnote1  = 'U&lc Magazine, International Typeface Corporation, March 1977'
+
+    - var relatedItemLink2      = '/life/books-articles/articles/print/1989-creation-magazine.html'
+    - var relatedItemTitle2     = 'CREATION no. 1 (International Graphic Design, Art and Illustration)'
+    - var relatedItemFootnote2  = 'Tokyo: Recruit Co., Ltd., 1989'
+
+    - var relatedItemLink3      = '/life/books-articles/articles/print/1997-design-literacy-next.html'
+    - var relatedItemTitle3     = 'NeXT'
+    - var relatedItemFootnote3  = 'Design Literacy, Allworth Press, 1997.'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Domus%20286/Web/Domus%20286%2001-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Domus%20286/Web/Domus%20286%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Domus%20286/Web/Domus%20286%2002-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Domus%20286/Web/Domus%20286%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Domus%20286/Web/Domus%20286%2003-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Domus%20286/Web/Domus%20286%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Domus%20286/Web/Domus%20286%2004-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Domus%20286/Web/Domus%20286%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Domus%20286/Web/Domus%20286%2005-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1953%20Domus%20286/Web/Domus%20286%2005.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content.notranslate
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content#original-article
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        DOMUS 286
+                        Settembre 1953
+                        Gio Ponti [Editorial Director]
+
+                        Gio Ponti [Editorial Director]: DOMUS 286. Milan, Editoriale Domus: Settembre 1953. Original edition. Text in Italian. English and French translation summary. Slim folio. Thick photographically printed perfect bound wrappers. Side stitched textblock. 72 [xxx] pp. Articles and advertisements. Multiple paper stocks and inserts. Elaborate graphic design throughout. Wrappers worn and soiled. Yellowing to page edges and mild spotting throughout. Spine ends rough. Few leaves skinned due to tackiness of the ink. A very good copy.
+
+                        9.75 x 12.75 vintage magazine with 72 [xxx] pages printed on a variety of paper stocks of black and white [and some color] examples of the best modern interior and industrial design, circa 1953 -- with beautiful engraving and gravure printing throughout.
+
+                        Long considered Europe's most influential architecture and design magazine, Domus was founded by Gio Ponti in 1928 as a "living diary" in which he could advertise his own work, outline the "aims" of his projects and raise people's awareness about other design issues. Called the "Mediterranean Megaphone, " Domus lauded mass-production and tried to link architecture and artisans in a new, unforeseen ways. Ponti left Domus in 1940 to start his other journal, Stile in which he could focus on art and the impact of the war on Italian architects and architecture. In 1948 Ponti returned to Domus, where he recast it in his own eclectic, exuberant vision of the modern and tirelessly championed designers he admired, notably Carlo Mollino.
+
+                        Contents:
+
+                        + A Pavilion Park Of The Castle Of Stupinigi: Lodovico Belgiojoso, Enrico Peresutti, Ernesto Rogers
+                        + House In Sardinia: Ettore Sottsass
+                        + Cement Designs: Erwin Hauer
+                        + House In St. Tropez: Raymond Loewy
+                        + Character Of An Architect: Gino Levi Montalcini
+                        + Museum On The Shore Of The Ocean: Lina Bo Bardi
+                        + House In Rome: Eugenio Montuori, Franco Nazareth
+                        + Restaurant In Bergamo: Ruggero Farina Morez
+                        + Hotel Rooms By The Sea: Giorgio Host Ivessich
+                        + Architecture: Mario Tedeschi
+                        + Per Year And City: Furniture By Erik Chamberg, Borge Mogensen
+                        + English Furniture: Elizabeth Eaton
+                        + Legal Studio, Milan
+                        + Ceiling Light: Luciano Baldessari, Lucio Fontana
+                        + The Latest Ceramics By Rut Bryk
+                        + Timo Sarpeneva
+                        + A Cultural Club: Leonardo Fiori
+                        + Elements Of Housing: Leonardo Fiori
+                        + A Furniture Series: Angelo Mangiarotti
+                        + New Tools In New Fields: Kartell
+                        + Industrial Design: Alberto Rosselli
+                        + Graphic Art By Paul Rand
+                        + The White Marble Sculpture: Marino Mazzacurati, Emilio Gilioli, Arturo Martini, Emilio Greco, Luciano Minguzzi, Andrea Spadini
+                        + Jewelry: Harry Bertoia, Max Bill, Andrea & Pietro Cascella, Margery Anneberg, Gino Cosentino, Genni Mucchi
+                        + and more.
+
+                        In his 1957 book Amate L'Architettura (In Praise of Achitecture) Ponti extolled his audience to "Love architecture, be it ancient or modern. Love it for its fantastic, adventurous and solemn creations; for its inventions; for the abstract, allusive and figurative forms that enchant our spirit and enrapture our thoughts. Love architecture, the stage and support of our lives." This spirit reverberates through every page of Domus.
+
+
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            Paul Rand di cui presentiamo in queste pagine alcune interessanti realizzazioni, è ora negli Stati Uniti uno fra i più noti artisti grafici. Il suo lavoro è indirizzato in modo particolare alla grande pubblicità commerciale che è riportata sui grandi quotidiani, e quindi l'impostazione grafica di ogni opera è in funzione dei normali metodi di stampa. Ciò nonostante non si risentono nel disegno, nella fantasia dell'invenzione e del colore, i vincoli determinati da questi metodi. Anche per alcune belle realizzazioni nel settore degli imballaggi si può considerare Paul Rand fra i più tipici rappresentanti del disegno grafico americano.
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif Translated text (via Google Translate)
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            Paul Rand of which we present some interesting projects in these pages, is now one of the best known graphic artists in the United States. His work is addressed in particular to the great commercial advertising that is shown in the major newspapers, and therefore the graphic setting of each work is a function of the normal printing methods. Nevertheless, the constraints determined by these methods are not affected by the design, the fantasy of the invention and the color. Paul Rand is one of the most typical representatives of American graphic design for some beautiful creations in the packaging sector.
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+
+
+
+        include ../../../../__MIXINS/_include-image-carousel.pug
+
+        include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

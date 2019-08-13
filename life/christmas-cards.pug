@@ -1,0 +1,79 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Christmas Cards'
+    - var bodyID    = 'life'
+    - var bodyClass = 'christmas-cards'
+
+block main-content
+    - var christmasCards       = []
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Angel%20Playing%20Flute-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Angel%20Playing%20Flute.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Balloon%20Santa%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Balloon%20Santa%2001.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Balloon%20Santa%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Balloon%20Santa%2002.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Billboard%20Santa-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Billboard%20Santa.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Black%20Eye%20Santa-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Black%20Eye%20Santa.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Bowling%20Pins%20Santas-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Bowling%20Pins%20Santas.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Candle%20with%20Halo-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Candle%20with%20Halo.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Candy%20Cane%20Santa-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Candy%20Cane%20Santa.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Carolling%20with%20Santas%20Beard-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Carolling%20with%20Santas%20Beard.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Child%20with%20Santa%20Beard%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Child%20with%20Santa%20Beard%2001.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Child%20with%20Santa%20Beard%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Child%20with%20Santa%20Beard%2002.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Chimney-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Chimney.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Fairy%20Santa-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Fairy%20Santa.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Hand%20Holding%20Moon-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Hand%20Holding%20Moon.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/House%20in%20the%20Snow-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/House%20in%20the%20Snow.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Impressionist%20Santa-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Impressionist%20Santa.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Liberty%20Santa-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Liberty%20Santa.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Merry%20Xmas%20Bottle-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Merry%20Xmas%20Bottle.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Old%20Man%20Winter-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Old%20Man%20Winter.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Piano-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Piano.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Poinsettia-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Poinsettia.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Red%20Santa-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Red%20Santa.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Santa%20Behind%20Christmas%20Tree-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Santa%20Behind%20Christmas%20Tree.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Santa%20in%20Mirror-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Santa%20in%20Mirror.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Seasons%20Greetings%20Fold%20Up-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Seasons%20Greetings%20Fold%20Up.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Stained%20Glass%20Candle-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Stained%20Glass%20Candle.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Torn%20Paper%20Beards%20Santas%2001b-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Torn%20Paper%20Beards%20Santas%2001b.jpg', title: ''})
+    - christmasCards.push({link: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/X-Ray%20Santa-450.jpg', linkLg: 'https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/X-Ray%20Santa.jpg', title: ''})
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x
+                .cell.align-center
+                    .small-12.cell.text-center
+                        h1.text-center.small-mb2.medium-mb3.large-mb3(data-aos="fade-up")!= pageTitle
+
+                        +galleryItem-blockGrid(
+                            "DIVIDER_yes",
+                            "Original Paintings",
+                            "middle", "3", "3",
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Angel%20Playing%20Flute-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Angel%20Playing%20Flute.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Balloon%20Santa%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Balloon%20Santa%2001.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Balloon%20Santa%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Balloon%20Santa%2002.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Billboard%20Santa-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Billboard%20Santa.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Black%20Eye%20Santa-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Black%20Eye%20Santa.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Bowling%20Pins%20Santas-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Bowling%20Pins%20Santas.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Candle%20with%20Halo-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Candle%20with%20Halo.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Candy%20Cane%20Santa-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Candy%20Cane%20Santa.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Carolling%20with%20Santas%20Beard-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Carolling%20with%20Santas%20Beard.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Child%20with%20Santa%20Beard%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Child%20with%20Santa%20Beard%2001.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Child%20with%20Santa%20Beard%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Child%20with%20Santa%20Beard%2002.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Chimney-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Chimney.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Fairy%20Santa-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Fairy%20Santa.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Hand%20Holding%20Moon-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Hand%20Holding%20Moon.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/House%20in%20the%20Snow-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/House%20in%20the%20Snow.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Impressionist%20Santa-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Impressionist%20Santa.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Liberty%20Santa-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Liberty%20Santa.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Merry%20Xmas%20Bottle-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Merry%20Xmas%20Bottle.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Old%20Man%20Winter-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Old%20Man%20Winter.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Piano-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Piano.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Poinsettia-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Poinsettia.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Red%20Santa-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Red%20Santa.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Santa%20Behind%20Christmas%20Tree-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Santa%20Behind%20Christmas%20Tree.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Santa%20in%20Mirror-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Santa%20in%20Mirror.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Seasons%20Greetings%20Fold%20Up-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Seasons%20Greetings%20Fold%20Up.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Stained%20Glass%20Candle-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Stained%20Glass%20Candle.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Torn%20Paper%20Beards%20Santas%2001b-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/Torn%20Paper%20Beards%20Santas%2001b.jpg", title: "", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/X-Ray%20Santa-450.jpg", LG:"https://assets.paulrand.design/Works/Christmas%20Card%20Paintings/Web/X-Ray%20Santa.jpg", title: "", footnote: ""}
+                            )

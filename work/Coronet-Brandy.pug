@@ -1,0 +1,528 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Coronet Brandy'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = '1949–1953'
+    - var nextType  = 'Client'
+    - var nextTitle = 'Country Club Ice Cream'
+    - var nextLink  = 'Country-Club-Ice-Cream'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logos",
+                        "middle","2","2",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Coronet-1942.svg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Coronet-1942.svg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Coronet-Snifter-Man-1942.svg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Coronet-Snifter-Man-1942.svg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Coronet-Snifter-Man-1942-v2.svg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Coronet-Snifter-Man-1942-v2.svg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Coronet-Waiter-1943.svg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Coronet-Waiter-1943.svg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo Elements",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Logo/Web/Coronet%20Brandy%20Logo%20Elements-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Logo/Web/Coronet%20Brandy%20Logo%20Elements.jpg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Advertising",
+                        "top","3","2",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Cornet%20Brandy%20waiter%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Cornet%20Brandy%20waiter%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Cornet%20Brandy%20waiter%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Cornet%20Brandy%20waiter%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%201-2-3%2C%20half%20page%2C%202%20color-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%201-2-3%2C%20half%20page%2C%202%20color.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%203%20Tables-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%203%20Tables.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%203%20waiters-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%203%20waiters.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%203D%202%20color-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%203D%202%20color.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20balancing%20bottle%20third%20page%20black%20and%20white-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20balancing%20bottle%20third%20page%20black%20and%20white.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20balloons%20on%20bottle%2C%20half%20page%2C%202%20color-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20balloons%20on%20bottle%2C%20half%20page%2C%202%20color.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Balloons-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Balloons.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Beach%20Ball%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Beach%20Ball%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Beach%20Ball%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Beach%20Ball%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20bird%20and%20bird%20nest%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20bird%20and%20bird%20nest%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20bird%20and%20bird%20nest%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20bird%20and%20bird%20nest%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Christmas-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Christmas.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Clouds%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Clouds%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Clouds%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Clouds%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20for%20a%20happy%20change%2C%20half%20page%2C%202%20color-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20for%20a%20happy%20change%2C%20half%20page%2C%202%20color.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Juggling%203%20glasses%2C%202%20color%2C%20full%20page-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Juggling%203%20glasses%2C%202%20color%2C%20full%20page.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Juggling%203%20glasses%2C%202%20color%2C%20half%20page-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Juggling%203%20glasses%2C%202%20color%2C%20half%20page.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20juggling%203%20glasses%2C%20half%20page%2C%202%20color%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20juggling%203%20glasses%2C%20half%20page%2C%202%20color%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20juggling%203%20glasses%2C%20half%20page%2C%202%20color-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20juggling%203%20glasses%2C%20half%20page%2C%202%20color.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20palm%20fan-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20palm%20fan.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Red%20Dots%20%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Red%20Dots%20%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Red%20Dots%20%20half%20page%203D-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Red%20Dots%20%20half%20page%203D.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Red%20Dots%20%20half%20page-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Red%20Dots%20%20half%20page.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Red%20Dots%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Red%20Dots%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Snifter%2001%2C%20full%20page-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Snifter%2001%2C%20full%20page.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Snifter%2001%2C%20half%20page-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Snifter%2001%2C%20half%20page.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Snifter%202%20color%20blocks-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Snifter%202%20color%20blocks.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Snifter%203%20color%20blocks-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Snifter%203%20color%20blocks.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Snifter%20and%20Reindeer-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Snifter%20and%20Reindeer.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Snifter%20Black%20Background-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Snifter%20Black%20Background.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20snifter%20holding%20umbrella-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20snifter%20holding%20umbrella.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Snifter%20on%20Tray%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Snifter%20on%20Tray%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Snifter%20on%20Tray%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Snifter%20on%20Tray%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Snifter%20on%20Tray%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Snifter%20on%20Tray%2003.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20snifter%2C%20animal%20heads%2C%20full%20page%20-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20snifter%2C%20animal%20heads%2C%20full%20page%20.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Snifter-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Snifter.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Soda%20Sprayer-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Soda%20Sprayer.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20square-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20square.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Umbrella-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Umbrella.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20waiter%20inside%20red%20balloon%2C%20half%20page%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20waiter%20inside%20red%20balloon%2C%20half%20page%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20waiter%20inside%20red%20balloon%2C%20half%20page%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20waiter%20inside%20red%20balloon%2C%20half%20page%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20waiter%20parachute%2C%20half%20page%2C%202%20color-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20waiter%20parachute%2C%20half%20page%2C%202%20color.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20waiter%20speech%20bubble-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20waiter%20speech%20bubble.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20waiter%20with%20shades%2C%20half%20page%2C%202%20color-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20waiter%20with%20shades%2C%20half%20page%2C%202%20color.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20waiter%20with%20wings-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20waiter%20with%20wings.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20waiter%2C%202%20color%20black%20yellow%2C%20half%20page-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20waiter%2C%202%20color%20black%20yellow%2C%20half%20page.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20White%20Jacket-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20White%20Jacket.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Window%20and%20Lantern%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Window%20and%20Lantern%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Window%20and%20Lantern%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Window%20and%20Lantern%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Window%20and%20Lantern%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20Window%20and%20Lantern%2003.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20waiter%20large%20single%20bottle%2C%20half%20page-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Advertising/Web/Coronet%20Brandy%20waiter%20large%20single%20bottle%2C%20half%20page.jpg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Ashtray",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Ashtray/Web/Coronet%20Brandy%20Ashtray%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Ashtray/Web/Coronet%20Brandy%20Ashtray%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Ashtray", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Ashtray/Web/Coronet%20Brandy%20Ashtray%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Ashtray/Web/Coronet%20Brandy%20Ashtray%2001.jpg"},
+                        {Title: "Ashtray", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Ashtray/Web/Coronet%20Brandy%20Ashtray%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Ashtray/Web/Coronet%20Brandy%20Ashtray%2002.jpg"},
+                        {Title: "Ashtray", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Ashtray/Web/Coronet%20Brandy%20Ashtray%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Ashtray/Web/Coronet%20Brandy%20Ashtray%2003.jpg"},
+                        {Title: "Ashtray", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Ashtray/Web/Coronet%20Brandy%20Ashtray%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Ashtray/Web/Coronet%20Brandy%20Ashtray%2004.jpg"},
+                        {Title: "Ashtray", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Ashtray/Web/Coronet%20Brandy%20Ashtray%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Ashtray/Web/Coronet%20Brandy%20Ashtray%2005.jpg"},
+                        {Title: "Ashtray", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Ashtray/Web/Coronet%20Brandy%20Ashtray%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Ashtray/Web/Coronet%20Brandy%20Ashtray%2006.jpg"},
+                        {Title: "Ashtray", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Ashtray/Web/Coronet%20Brandy%20Ashtray%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Ashtray/Web/Coronet%20Brandy%20Ashtray%2007.jpg"},
+                        {Title: "Ashtray", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Ashtray/Web/Coronet%20Brandy%20Ashtray%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Ashtray/Web/Coronet%20Brandy%20Ashtray%2008.jpg"}
+                        )
+
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Billboards",
+                        "middle", "1", "1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Billboards/Web/Coronet%20Brandy%20billboard%20v1-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Billboards/Web/Coronet%20Brandy%20billboard%20v1.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Billboards/Web/Coronet%20Brandy%20billboard%20v2-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Billboards/Web/Coronet%20Brandy%20billboard%20v2.jpg", title: "", footnote: "Image courtesy of Wright auction house, Chicago, IL."},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Billboards/Web/Coronet%20Brandy%20billboard%20v3-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Billboards/Web/Coronet%20Brandy%20billboard%20v3.jpg", title: "", footnote: "Image courtesy of Wright auction house, Chicago, IL."}
+                        )
+
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Bottle",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Bottle%20v1/Web/Coronet%20Brandy%20Bottle%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Bottle%20v1/Web/Coronet%20Brandy%20Bottle%2001.jpg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Bottle Stopper",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Bottle%20Stopper/Web/Coronet%20Brandy%20Wine%20Stopper%2002-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Bottle%20Stopper/Web/Coronet%20Brandy%20Wine%20Stopper%2002.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Bottle Stopper", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Bottle%20Stopper/Web/Coronet%20Brandy%20Wine%20Stopper%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Bottle%20Stopper/Web/Coronet%20Brandy%20Wine%20Stopper%2001.jpg"},
+                        {Title: "Bottle Stopper", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Bottle%20Stopper/Web/Coronet%20Brandy%20Wine%20Stopper%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Bottle%20Stopper/Web/Coronet%20Brandy%20Wine%20Stopper%2002.jpg"},
+                        {Title: "Bottle Stopper", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Bottle%20Stopper/Web/Coronet%20Brandy%20Wine%20Stopper%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Bottle%20Stopper/Web/Coronet%20Brandy%20Wine%20Stopper%2003.jpg"},
+                        {Title: "Bottle Stopper", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Bottle%20Stopper/Web/Coronet%20Brandy%20Wine%20Stopper%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Bottle%20Stopper/Web/Coronet%20Brandy%20Wine%20Stopper%2004.jpg"},
+                        {Title: "Bottle Stopper", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Bottle%20Stopper/Web/Coronet%20Brandy%20Wine%20Stopper%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Bottle%20Stopper/Web/Coronet%20Brandy%20Wine%20Stopper%2005.jpg"},
+                        {Title: "Bottle Stopper", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Bottle%20Stopper/Web/Coronet%20Brandy%20Wine%20Stopper%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Bottle%20Stopper/Web/Coronet%20Brandy%20Wine%20Stopper%2006.jpg"}
+                        )
+
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Brochure",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2C%20cover-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2C%20cover.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2C%20front-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2C%20front.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2C%20back-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2C%20back.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2001.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2002.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2003.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2004.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2005.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2006.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2007.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2008.jpg"},
+                        {Title: "Brochure", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Brochure/Web/Coronet%20Brandy%20Brochure%2009.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Calendar Thermometer",
+                        "top","3","2",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Calendar%20Thermometer/Web/Coronet%20Brandy%20Calendar%20Thermometer%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Calendar%20Thermometer/Web/Coronet%20Brandy%20Calendar%20Thermometer%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Calendar%20Thermometer/Web/Coronet%20Brandy%20Calendar%20Thermometer%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Calendar%20Thermometer/Web/Coronet%20Brandy%20Calendar%20Thermometer%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Calendar%20Thermometer/Web/Coronet%20Brandy%20Calendar%20Thermometer%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Calendar%20Thermometer/Web/Coronet%20Brandy%20Calendar%20Thermometer%2003.jpg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Cigarette Case",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Cigarette%20Case/Web/Coronet%20Brandy%20Cigarette%20Case%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Cigarette%20Case/Web/Coronet%20Brandy%20Cigarette%20Case%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Cigarette Case", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Cigarette%20Case/Web/Coronet%20Brandy%20Cigarette%20Case%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Cigarette%20Case/Web/Coronet%20Brandy%20Cigarette%20Case%2001.jpg"},
+                        {Title: "Cigarette Case", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Cigarette%20Case/Web/Coronet%20Brandy%20Cigarette%20Case%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Cigarette%20Case/Web/Coronet%20Brandy%20Cigarette%20Case%2002.jpg"},
+                        {Title: "Cigarette Case", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Cigarette%20Case/Web/Coronet%20Brandy%20Cigarette%20Case%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Cigarette%20Case/Web/Coronet%20Brandy%20Cigarette%20Case%2003.jpg"},
+                        {Title: "Cigarette Case", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Cigarette%20Case/Web/Coronet%20Brandy%20Cigarette%20Case%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Cigarette%20Case/Web/Coronet%20Brandy%20Cigarette%20Case%2004.jpg"},
+                        {Title: "Cigarette Case", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Cigarette%20Case/Web/Coronet%20Brandy%20Cigarette%20Case%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Cigarette%20Case/Web/Coronet%20Brandy%20Cigarette%20Case%2005.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Clip",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clip/Web/Coronet%20Brandy%20clip%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clip/Web/Coronet%20Brandy%20clip%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Clip", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clip/Web/Coronet%20Brandy%20clip%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clip/Web/Coronet%20Brandy%20clip%2001.jpg"},
+                        {Title: "Clip", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clip/Web/Coronet%20Brandy%20clip%2001b-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clip/Web/Coronet%20Brandy%20clip%2001b.jpg"},
+                        {Title: "Clip", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clip/Web/Coronet%20Brandy%20clip%2001c-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clip/Web/Coronet%20Brandy%20clip%2001c.jpg"},
+                        {Title: "Clip", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clip/Web/Coronet%20Brandy%20clip%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clip/Web/Coronet%20Brandy%20clip%2002.jpg"},
+                        {Title: "Clip", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clip/Web/Coronet%20Brandy%20clip%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clip/Web/Coronet%20Brandy%20clip%2003.jpg"},
+                        {Title: "Clip", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clip/Web/Coronet%20Brandy%20clip%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clip/Web/Coronet%20Brandy%20clip%2004.jpg"},
+                        {Title: "Clip", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clip/Web/Coronet%20Brandy%20clip%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clip/Web/Coronet%20Brandy%20clip%2005.jpg"},
+                        {Title: "Clip", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clip/Web/Coronet%20Brandy%20clip%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clip/Web/Coronet%20Brandy%20clip%2006.jpg"},
+                        {Title: "Clip", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clip/Web/Coronet%20Brandy%20clip%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clip/Web/Coronet%20Brandy%20clip%2007.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Clock, v1",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v1/Web/Coronet%20Brandy%20Clock%20v1%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v1/Web/Coronet%20Brandy%20Clock%20v1%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Clock, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v1/Web/Coronet%20Brandy%20Clock%20v1%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v1/Web/Coronet%20Brandy%20Clock%20v1%2001.jpg"},
+                        {Title: "Clock, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v1/Web/Coronet%20Brandy%20Clock%20v1%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v1/Web/Coronet%20Brandy%20Clock%20v1%2002.jpg"},
+                        {Title: "Clock, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v1/Web/Coronet%20Brandy%20Clock%20v1%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v1/Web/Coronet%20Brandy%20Clock%20v1%2003.jpg"},
+                        {Title: "Clock, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v1/Web/Coronet%20Brandy%20Clock%20v1%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v1/Web/Coronet%20Brandy%20Clock%20v1%2004.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Clock, v2",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2002.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2003.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2004.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2005.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2006.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2007.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2008.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2009.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2010-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2010.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2011-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2011.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2012-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2012.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2013-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2013.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2014-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2014.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2015-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2015.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2016-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2016.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2017-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2017.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2018-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2018.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2019-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2019.jpg"},
+                        {Title: "Clock, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2020-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Clock%20v2/Web/Coronet%20Brandy%20clock%20v2%2020.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Coasters",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Coasters/Web/Coronet%20Brandy%20Coaster-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Coasters/Web/Coronet%20Brandy%20Coaster.jpg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Display, v1",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v1/Web/Coronet%20Brandy%20Display%20v1%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v1/Web/Coronet%20Brandy%20Display%20v1%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Display, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v1/Web/Coronet%20Brandy%20Display%20v1%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v1/Web/Coronet%20Brandy%20Display%20v1%2002.jpg"},
+                        {Title: "Display, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v1/Web/Coronet%20Brandy%20Display%20v1%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v1/Web/Coronet%20Brandy%20Display%20v1%2003.jpg"},
+                        {Title: "Display, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v1/Web/Coronet%20Brandy%20Display%20v1%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v1/Web/Coronet%20Brandy%20Display%20v1%2004.jpg"},
+                        {Title: "Display, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v1/Web/Coronet%20Brandy%20Display%20v1%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v1/Web/Coronet%20Brandy%20Display%20v1%2005.jpg"},
+                        {Title: "Display, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v1/Web/Coronet%20Brandy%20Display%20v1%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v1/Web/Coronet%20Brandy%20Display%20v1%2006.jpg"},
+                        {Title: "Display, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v1/Web/Coronet%20Brandy%20Display%20v1%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v1/Web/Coronet%20Brandy%20Display%20v1%2007.jpg"}
+                        )
+
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Display, v2",
+                        "middle", "1", "1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v2/Web/Coronet%20Brandy%20Display%20v2%2001.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v2/Web/Coronet%20Brandy%20Display%20v2%2001.jpg", title: "", footnote: ""}
+                        )
+
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title:"Display, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v2/Web/Coronet%20Brandy%20Display%20v2%2001-800.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v2/Web/Coronet%20Brandy%20Display%20v2%2001.jpg"},
+                        {Title:"Display, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v2/Web/Coronet%20Brandy%20Display%20v2%2002-800.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v2/Web/Coronet%20Brandy%20Display%20v2%2002.jpg"},
+                        {Title:"Display, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v2/Web/Coronet%20Brandy%20Display%20v2%2003-800.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v2/Web/Coronet%20Brandy%20Display%20v2%2003.jpg"},
+                        {Title:"Display, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v2/Web/Coronet%20Brandy%20Display%20v2%2004-800.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v2/Web/Coronet%20Brandy%20Display%20v2%2004.jpg"},
+                        {Title:"Display, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v2/Web/Coronet%20Brandy%20Display%20v2%2005-800.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v2/Web/Coronet%20Brandy%20Display%20v2%2005.jpg"},
+                        {Title:"Display, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v2/Web/Coronet%20Brandy%20Display%20v2%2006-800.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v2/Web/Coronet%20Brandy%20Display%20v2%2006.jpg"},
+                        {Title:"Display, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v2/Web/Coronet%20Brandy%20Display%20v2%2007-800.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v2/Web/Coronet%20Brandy%20Display%20v2%2007.jpg"}
+                        )
+
+
+
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Display, v3",
+                        "middle", "1", "1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Display%20v3/Web/Coronet%20Brandy%20Display%20v3%2002-970.jpg", LG:"CHANGE_ME", title: "", footnote: ""}
+                        )
+
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Highball Glass, v1",
+                        "top","3","2",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v1/Web/Coronet%20Brandy%20Highball%20Glass%20v1%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v1/Web/Coronet%20Brandy%20Highball%20Glass%20v1%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v1/Web/Coronet%20Brandy%20Highball%20Glass%20v1%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v1/Web/Coronet%20Brandy%20Highball%20Glass%20v1%2003.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v1/Web/Coronet%20Brandy%20Highball%20Glass%20v1%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v1/Web/Coronet%20Brandy%20Highball%20Glass%20v1%2004.jpg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Highball Glass, v2",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Highball Glass, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2002.jpg"},
+                        {Title: "Highball Glass, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2003.jpg"},
+                        {Title: "Highball Glass, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2004.jpg"},
+                        {Title: "Highball Glass, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2005.jpg"},
+                        {Title: "Highball Glass, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2006.jpg"},
+                        {Title: "Highball Glass, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2007.jpg"},
+                        {Title: "Highball Glass, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2008.jpg"},
+                        {Title: "Highball Glass, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2009.jpg"},
+                        {Title: "Highball Glass, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2010-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2010.jpg"},
+                        {Title: "Highball Glass, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2011-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2011.jpg"},
+                        {Title: "Highball Glass, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2012-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2012.jpg"},
+                        {Title: "Highball Glass, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2013-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2013.jpg"},
+                        {Title: "Highball Glass, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2014-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2014.jpg"},
+                        {Title: "Highball Glass, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2015-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2015.jpg"},
+                        {Title: "Highball Glass, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2016-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2016.jpg"},
+                        {Title: "Highball Glass, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2017-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2017.jpg"},
+                        {Title: "Highball Glass, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2018-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2018.jpg"},
+                        {Title: "Highball Glass, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2019-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Highball%20Glass%20v2/Web/Coronet%20Brandy%20Highball%20Glass%20v2%2019.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Mini Bottle",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Mini%20Bottle/Web/Coronet%20Brandy%20mini%20bottle%2004-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Mini%20Bottle/Web/Coronet%20Brandy%20mini%20bottle%2004.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Mini Bottle", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Mini%20Bottle/Web/Coronet%20Brandy%20mini%20bottle%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Mini%20Bottle/Web/Coronet%20Brandy%20mini%20bottle%2001.jpg"},
+                        {Title: "Mini Bottle", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Mini%20Bottle/Web/Coronet%20Brandy%20mini%20bottle%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Mini%20Bottle/Web/Coronet%20Brandy%20mini%20bottle%2002.jpg"},
+                        {Title: "Mini Bottle", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Mini%20Bottle/Web/Coronet%20Brandy%20mini%20bottle%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Mini%20Bottle/Web/Coronet%20Brandy%20mini%20bottle%2003.jpg"},
+                        {Title: "Mini Bottle", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Mini%20Bottle/Web/Coronet%20Brandy%20mini%20bottle%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Mini%20Bottle/Web/Coronet%20Brandy%20mini%20bottle%2005.jpg"},
+                        {Title: "Mini Bottle", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Mini%20Bottle/Web/Coronet%20Brandy%20mini%20bottle%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Mini%20Bottle/Web/Coronet%20Brandy%20mini%20bottle%2006.jpg"},
+                        {Title: "Mini Bottle", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Mini%20Bottle/Web/Coronet%20Brandy%20mini%20bottle%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Mini%20Bottle/Web/Coronet%20Brandy%20mini%20bottle%2007.jpg"},
+                        {Title: "Mini Bottle", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Mini%20Bottle/Web/Coronet%20Brandy%20mini%20bottle%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Mini%20Bottle/Web/Coronet%20Brandy%20mini%20bottle%2008.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Poster",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Poster/Web/Coronet%20Brandy%20poster-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Poster/Web/Coronet%20Brandy%20poster.jpg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Snifter, v1",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2001.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2002.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2003.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2004.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2005.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2006.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2007.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2008.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2009.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2010-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2010.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2011-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2011.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2012-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2012.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2013-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2013.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2014-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2014.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2015-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2015.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2016-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2016.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2017-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2017.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2018-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2018.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2019-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2019.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2020-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2020.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2021-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2021.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2022-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter%2022.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter-%20Original%20Box%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter-%20Original%20Box%2001.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter-%20Original%20Box%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter-%20Original%20Box%2002.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter-%20Original%20Box%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter-%20Original%20Box%2003.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter-%20Original%20Box%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter-%20Original%20Box%2004.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter-%20Original%20Box%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter-%20Original%20Box%2005.jpg"},
+                        {Title: "Snifter, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter-%20Original%20Box%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v1/Web/Coronet%20Brandy%20Glass%20Snifter-%20Original%20Box%2006.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Snifter, v2",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v2/Web/Coronet%20Brandy%20Glass%20Snifter%20v2%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v2/Web/Coronet%20Brandy%20Glass%20Snifter%20v2%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Snifter, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v2/Web/Coronet%20Brandy%20Glass%20Snifter%20v2%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v2/Web/Coronet%20Brandy%20Glass%20Snifter%20v2%2001.jpg"},
+                        {Title: "Snifter, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v2/Web/Coronet%20Brandy%20Glass%20Snifter%20v2%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v2/Web/Coronet%20Brandy%20Glass%20Snifter%20v2%2002.jpg"},
+                        {Title: "Snifter, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v2/Web/Coronet%20Brandy%20Glass%20Snifter%20v2%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v2/Web/Coronet%20Brandy%20Glass%20Snifter%20v2%2003.jpg"},
+                        {Title: "Snifter, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v2/Web/Coronet%20Brandy%20Glass%20Snifter%20v2%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v2/Web/Coronet%20Brandy%20Glass%20Snifter%20v2%2004.jpg"},
+                        {Title: "Snifter, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v2/Web/Coronet%20Brandy%20Glass%20Snifter%20v2%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v2/Web/Coronet%20Brandy%20Glass%20Snifter%20v2%2005.jpg"},
+                        {Title: "Snifter, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v2/Web/Coronet%20Brandy%20Glass%20Snifter%20v2%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v2/Web/Coronet%20Brandy%20Glass%20Snifter%20v2%2006.jpg"},
+                        {Title: "Snifter, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v2/Web/Coronet%20Brandy%20Glass%20Snifter%20v2%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v2/Web/Coronet%20Brandy%20Glass%20Snifter%20v2%2007.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Snifter, v3",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v3/Web/Coronet%20Brandy%20Glass%20Snifter%20v3%2001.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v3/Web/Coronet%20Brandy%20Glass%20Snifter%20v3%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Snifter, v3", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v3/Web/Coronet%20Brandy%20Glass%20Snifter%20v3%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v3/Web/Coronet%20Brandy%20Glass%20Snifter%20v3%2001.jpg"},
+                        {Title: "Snifter, v3", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v3/Web/Coronet%20Brandy%20Glass%20Snifter%20v3%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v3/Web/Coronet%20Brandy%20Glass%20Snifter%20v3%2002.jpg"},
+                        {Title: "Snifter, v3", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v3/Web/Coronet%20Brandy%20Glass%20Snifter%20v3%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Snifter%20v3/Web/Coronet%20Brandy%20Glass%20Snifter%20v3%2003.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Statue, v1",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Statue, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2002.jpg"},
+                        {Title: "Statue, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2003.jpg"},
+                        {Title: "Statue, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2004.jpg"},
+                        {Title: "Statue, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2005.jpg"},
+                        {Title: "Statue, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2006.jpg"},
+                        {Title: "Statue, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2007.jpg"},
+                        {Title: "Statue, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2008.jpg"},
+                        {Title: "Statue, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2009.jpg"},
+                        {Title: "Statue, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2010-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2010.jpg"},
+                        {Title: "Statue, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2011-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2011.jpg"},
+                        {Title: "Statue, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2012-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2012.jpg"},
+                        {Title: "Statue, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2013-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2013.jpg"},
+                        {Title: "Statue, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2014-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2014.jpg"},
+                        {Title: "Statue, v1", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2015-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v1/Web/Coronet%20Brandy%20Statue%20v1%2015.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Statue, v2",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Statue, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2001.jpg"},
+                        {Title: "Statue, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2002.jpg"},
+                        {Title: "Statue, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2003.jpg"},
+                        {Title: "Statue, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2004.jpg"},
+                        {Title: "Statue, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2005.jpg"},
+                        {Title: "Statue, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2006.jpg"},
+                        {Title: "Statue, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2007.jpg"},
+                        {Title: "Statue, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2008.jpg"},
+                        {Title: "Statue, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2009.jpg"},
+                        {Title: "Statue, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2010-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2010.jpg"},
+                        {Title: "Statue, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2011-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2011.jpg"},
+                        {Title: "Statue, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2012-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2012.jpg"},
+                        {Title: "Statue, v2", SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2013-450.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v2/Web/Coronet%20Brandy%20Statue%20v2%2013.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Statue, v3",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v3/Web/Coronet%20Brandy%20Statue%20v3-970.jpg", LG:"https://assets.paulrand.design/Works/Coronet%20Brandy/Statue%20v3/Web/Coronet%20Brandy%20Statue%20v3.jpg", title: "", footnote: ""}
+                        )
+
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

@@ -1,0 +1,93 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'ITC Center Typographic Treasures'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'CHANGE_ME'
+    - var pageSubtitle2         = 'September 12 – November 16, 1984'
+
+    - var nextType              = 'Exhibit'
+    - var nextTitle             = 'School of Visual Arts Masters Series: Paul Rand'
+    - var nextDate              = '1988'
+    - var nextLink              = '1988-sva'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2010.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2002-970.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1984%20ITC%20Center%20Typographic%20Treasures/Web/ITC%20Center%20Typographic%20Treasures%2002.jpg"
+                            )
+
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        A retrospective exhibition of one of the world's foremost graphic designers. Considered by international design authorities to be America's leading pioneer in graphic design and typography. The exhibition covers the work of Paul Rand from 1934 to 1984.
+
+                        ---
+
+                        ***America’s contribution to genius in the field of advertising design and publishing, the “man who made graphic design happen, who fathered an entire school of thought.”_**  
+                        *Louis Dorfsman,*  
+                        *U&lc, March 1977*
+
+                        ***The man whose “ideas have shaped contemporary design.”_**  
+                        *Jerome Snyder,*  
+                        *U&lc, March 1977*
+
+                        ---
+
+                        ### Gallery Information **(CLOSED)**
+
+                        The ITC Center was established to introduce new and exciting typographic arts experiences. It is a growing resource for students and professionals.
+
+                        ITC Center  
+                        2 Hammarskjold Plaza  
+                        (866 Second Avenue, between 46th and 47th Streets), 3rd Floor,  
+                        New York, New York 10017.
+
+                        Hours: 12:00 Noon - 5:00 PM.  
+                        Admission: Free  
+                        Open Monday—Friday (Closed September 3, 27, and October 8).  
+                        For more information or group reservations call (212) 371-0699.
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

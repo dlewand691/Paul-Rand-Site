@@ -1,0 +1,168 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Atlas Crankshaft'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = 'CHANGE_ME'
+    - var nextType  = 'Client'
+    - var nextTitle = 'Autocar Corporation'
+    - var nextLink  = 'Autocar-Corporation'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Atlas-Crankshaft-1964.svg", LG:"https://assets.paulrand.design/Works/Atlas%20Crankshaft/Atlas-Crankshaft-1964.svg", title: "", footnote: ""}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo Presentation Booklet",
+                        "top","1", "1",
+                        {SM: "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2001.jpg", title: "", footnote: ""}
+                        )
+
+            .grid-x.grid-margin-x.align-center
+                .cell
+                    .grid-x.grid-margin-x
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2001-800.jpg",
+                            "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2001.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+                            h4 A Trademark for Atlas Crankshaft Corporation
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2002.jpg",
+                            "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2002.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            p.bold A Trademark for Atlas Crankshaft Corporation
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2003.jpg",
+                            "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2003.jpg"
+                            )
+
+                        .medium-8.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                **Problem:**
+
+                                To design a trademark for the Atlas Crankshaft Corporation, incorporating the name “Atlas” as an integral part of the mark. The design should be of a non-descriptive and general nature, not limited to a particular product, but reflecting the qualities of precision, speed, power, and dependability. Its form should, therefore, be abstract and/or geometric, avoiding any representational connotation. Further, it should be flexible and practical for any application: in one color, positive, negative, or outline form, and all sizes. It should be equally effective when used on service pins, calling cards, large building signs; whether printed, embossed, stamped, cut out, appliqued, painted or even embroidered.
+
+                                The mark presented here serves a double purpose; it is a trademark (symbol) as a complete unit, as well as a logotype (group of letters). Its design is based fundamentally on the use of the triangle as an abstract shape and as a letter form. It may be read not only as a triangle (symbol of precision and strength) but also as the letter “A” (symbol of priority and quality). It then becomes a unique triangle as well as a unique “A”, legible enough to be read and unusual enough to be remembered — conditions essential to the design of a successful logotype or trademark.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2004.jpg",
+                            "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2004.jpg"
+                            )
+                        .medium-8.small-12.cell.small-mb2
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2005.jpg",
+                            "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2005.jpg"
+                            )
+
+                        .medium-8.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                **Color Identity:**
+
+                                The selection of an identifying color is very often arbitrary. It is sometimes based on competitive considerations, personal prejudices, or the predilections of a designer. However, color per se is not so important as is its implementation: its thoughtful use in every conceivable form of visual communication.
+
+                                There is no such thing as a color which is in itself unique. The yellow used by a famous manufacturer of photographic equipment, for example, has by association become unique, because of consistent use over a long period of time. And it is only through consistent, discriminating, and intelligent application that any special color or mark will become vital, permanent, and memorable.
+
+                                Red has been chosen for the Atlas mark because it suggests durability and power and has tremendous visibility. These and other positive psychological attributes have been borne out in many studies on the use of this color: in the design of advertising, products, packaging, architecture and fashion. And, perhaps more than any other single color. It seems to sparkle when used in very small quantities and to dominate the scene when used In larger areas.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2006.jpg",
+                            "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2006.jpg"
+                            )
+
+                        .medium-8.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                **The Logotype:**
+
+                                It is rarely possible to design a mark In which the logotype and symbol read as a single entity. What Is even more rare, is that the two elements, when separated, remain individually memorable. The illustration on his page shows what happens when the logotype is separated from the large “A” triangle.
+
+                                The logotype as an independent element, without the large “A” background, could be exceedingly useful on occasion, as in large name identification on a long, narrow sign. If used in this manner, the two “A’s” would be shown in red or, if for some reason red is not possible, in some other contrasting color combination.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2007.jpg",
+                            "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2007.jpg"
+                            )
+
+                        .medium-8.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Following are examples of the trademark in use:
+                                1 letterhead
+                                2 envelope
+                                3 calling card
+                                4 service pin
+                                5 folder
+
+                        .medium-6.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2008.jpg",
+                            "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2008.jpg"
+                            )
+
+                        .medium-6.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2009.jpg",
+                            "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2009.jpg"
+                            )
+
+                        .medium-6.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2010.jpg",
+                            "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2010.jpg"
+                            )
+
+                        .medium-6.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2011.jpg",
+                            "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%2011.jpg"
+                            )
+
+            +projectDivider("Commemorative Coin")
+            .grid-x.grid-margin-x.align-center
+                .cell.text-center
+                    +galleryItem-cardLink(
+                        "12", "12",
+                        {
+                        SM: "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%20Coin%2C%20front-970.jpg",
+                        LG: "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%20Coin%2C%20front.jpg",
+                        title: "Commemorative Coin",
+                        footnote1: "CHANGE_ME",
+                        footnote2: "CHANGE_ME"
+                        })
+                    +galleryItem-imageHidden(
+                        {title: "Commemorative Coin", hideMe: "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%20Coin%2C%20back.jpg"}
+                        )
+
+
+
+
+
+
+
+        //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

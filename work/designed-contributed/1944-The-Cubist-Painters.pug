@@ -1,0 +1,118 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'The Cubist Painters: Aesthetic Meditations 1913'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var bookSubhead           = 'Guillaume Apollinaire'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/351778530'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3DThe%2BCubist%2BPainters%253A%2BAesthetic%2BMeditations%2B1913'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1XZQz3P'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2050601.m570.l1313.TR0.TRC0.H0.TRS0%26_nkw%3DThe%2BCubist%2BPainters%253A%2BAesthetic%2BMeditations%2B1913%26_sacat%3D0'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'Form and Sense'
+    - var nextLink              = '1945-Form-and-Sense'
+
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2C%20front.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2C%20front.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2C%20back.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2C%20back.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2012.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= bookSubhead
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2C%20front-970.jpg",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1944%20The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters-%20Aesthetic%20Meditations%201913/Web/The%20Documents%20of%20Modern%20Art-%20The%20Cubist%20Painters%2C%20front.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            include ../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Cover design and typography by Paul Rand
+
+                        Guillaume Apollinaire: THE CUBIST PAINTERS AESTHETIC MEDITATIONS 1913. NYC: Wittenborn, 1944 (The Documents of Modern Art Number 1 (series edited by Robert Motherwell). First edition. 4to. A very good to near-fine softcover book in decorated, stiff wrappers: uncoated wrappers show light soiling. A superior copy of this fragile, early volume. Former owner bookplate on FEP. Cover design and typography by Paul Rand.
+
+                        7.5 x 10 book, with 38 pages and 20 b/w photos First edition of this translation by Lionel Abel, issued in the Documents of Modern Art series edited by Robert Motherwell. In an early issue of GRAPHIS, Max Bill reviewed Motherwell’s Documents of Modern Art series by stating it was the most important series of modern art documents since Gropius and Moholy-Nagy published the Bauhuasbuchers.
+
+                        Rand’s jacket for THE CUBIST PAINTERS was his first attempt at pure abstraction, and his first dust jacket design to boot.
+
+                        Covers and interior design/typography by Paul Rand. An excellent meeting of two of the giants of 20th Century modernism. Remember: Form follows function!
+
+                    .footnote.small-mb3 — Randall Ross of modernism101.com
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        **Contents:**
+
+                        1. On painting
+                        - The new painters
+                            - Picasso
+                            - Braque
+                            - Metzinger
+                            - Gleizes
+                            - Laurencin
+                            - Rousseau
+                            - Gris
+                            - Leger
+                            - Picabia
+                            - Duchamp
+                            - Duchamp-Villon
+                        - Appendix
+                        - Note
+                        - Editor’s notes
+                        - List of illustrations
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../__MIXINS/_include-next-work.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

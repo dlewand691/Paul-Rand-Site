@@ -1,0 +1,71 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'The Graphic Art of Paul Rand'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'Joseloff Gallery'
+    - var pageSubtitle2         = 'February 20 – March 30, 1990'
+
+    - var nextType              = 'Exhibit'
+    - var nextTitle             = 'Ginza Graphic Gallery'
+    - var nextDate              = '1992'
+    - var nextLink              = '1992-ginza-graphic-gallery'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+                    .small-mt3.small-mb2
+                        h6 Front
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1990%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/Graphic%20Art%20of%20Paul%20Rand%2C%20exhibit%20invite%2C%20front-800.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1990%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/Graphic%20Art%20of%20Paul%20Rand%2C%20exhibit%20invite%2C%20front.jpg"
+                            )
+
+                    .small-mt3.small-mb2
+                        h6 Inside
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1990%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/Graphic%20Art%20of%20Paul%20Rand%2C%20exhibit%20invite%2C%20inside-800.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1990%20The%20Graphic%20Art%20of%20Paul%20Rand/Web/Graphic%20Art%20of%20Paul%20Rand%2C%20exhibit%20invite%2C%20inside.jpg"
+                            )
+
+            //- include ../../../__MIXINS/_include-image-carousel.pug
+
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        ### Gallery Information
+
+                        Joseloff Gallery  
+                        Harry Jack Gray Center  
+                        University of Hartford  
+                        West Hartford, CT 06117
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

@@ -1,0 +1,114 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Paul Rand: The Works of Paul Rand'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var author                = 'Takahiro Tsuchida [text]'
+    - var bookSubhead           = 'Exhibition at Play Mountain, Sept. 15 - Nov. 4, 2001'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/search?q=the+works+of+paul+rand&qt=results_page'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3D%2522the%2Bworks%2Bof%2Bpaul%2Brand%2522%2BTakahiro%2BTsuchida%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1QN98CY'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/s/Paul+Rand%3A+The+Works+of+Paul+Rand?_requestid=213811'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2050601.m570.l1313.TR0.TRC0.H0.TRS0%26_nkw%3DPaul%2BRand%253A%2BThe%2BWorks%2Bof%2BPaul%2BRand%26_sacat%3D0'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'Paul Rand: Modernist Designer'
+    - var nextDate              = '2003'
+    - var nextDescription       = 'Edited by Franc Nunoo-Quarcoo.'
+    - var nextLink              = '/life/books-articles/books/2003-modernist-designer.html'
+
+    - var relatedItemLink1      = '/life/books-articles/books/1992-ggg.html'
+    - var relatedItemTitle1     = 'Ginza Graphic Gallery: Paul Rand'
+    - var relatedItemFootnote1  = 'Ginza Graphic Gallery, 1992'
+
+    - var relatedItemLink2      = '/life/books-articles/books/1975-champion-papers.html'
+    - var relatedItemTitle2     = 'The Printing Salesman’s Herald'
+    - var relatedItemFootnote2  = 'Champion Papers, 1975'
+
+    - var relatedItemLink3      = '/life/books-articles/books/1947-ad-gallery.html'
+    - var relatedItemTitle3     = 'A-D Gallery Presents: Paul Rand'
+    - var relatedItemFootnote3  = 'By Robert L. Leslie'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2014-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2015-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2016-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002%2016.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= 'By ' + author
+                    br
+                    em.text-gray.t16!= bookSubhead
+
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002.jpg",
+                            "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2002%20Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand/Web/Paul%20Rand%2C%20The%20Works%20of%20Paul%20Rand%202002.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Takahiro Tsuchida [text]: THE WORKS OF PAUL RAND. Tokyo: Printed Matter, 2002. Text in Japanese with English captions. Square quarto. Parallel wire binding. Thick printed wrappers. Photographic endpapers. 24 pp. Work examples and photographs. Second printing of a 2001 Catalog for an Exhibition at Play Mountain, Sept. 15 - Nov. 4, 2001.
+
+                    .footnote — Randall Ross of modernism101.com
+                    br
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Printed for an exhibition in Tokyo, Japan, this great little spiral bound piece is printed on stiff boards with a great collection of Rand's work. Also features some nice portraits of him in Japan, that have also been added to the Portraits section. Printed and released only in Japan.
+
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../../__MIXINS/_include-next-item.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

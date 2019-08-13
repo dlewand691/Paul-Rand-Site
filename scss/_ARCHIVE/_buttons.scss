@@ -1,0 +1,97 @@
+/*==============================================================================================
+=			/*
+██████  ██    ██ ████████ ████████  ██████  ███    ██ ███████
+██   ██ ██    ██    ██       ██    ██    ██ ████   ██ ██
+██████  ██    ██    ██       ██    ██    ██ ██ ██  ██ ███████
+██   ██ ██    ██    ██       ██    ██    ██ ██  ██ ██      ██
+██████   ██████     ██       ██     ██████  ██   ████ ███████
+*/
+// =================================================================================================*/
+
+.button,
+button {
+	text-shadow     : none !important;
+	background-image: none !important;
+	font-family     : $font-family-sans-serif;
+	font-weight     : $global-weight-bold;
+
+
+	& a {
+		background-image: none;
+	}
+
+	&::after {
+		content	   :"\02192";
+		font-family: $font-family-sans-serif;
+		margin-left: 2rem;
+		float	   : right;
+		font-weight: 100;
+	}
+
+	&.down-arrow {
+		&::after {
+			content  :"\021E3";
+		}
+	}
+
+	&#Reset {
+		&::after {
+			content	   :"\000D7";
+			font-size  : 18px;
+			line-height: 1;
+		}
+	}
+}
+
+
+a.button {
+	text-shadow: none;
+	color	   : white;
+}
+
+.button.tiny,
+button.tiny {
+	padding: 0.7em 0.8em;
+}
+
+.button.large,
+button.large {
+	padding: 1.25em;
+}
+.button.blue,
+button.blue {
+	background: $blue;
+
+	&:hover {
+		background: lighten($blue, 15%);
+	}
+}
+
+.button.red,
+button.red {
+	background: $red;
+
+	&:hover {
+		background: darken($red, 15%);
+	}
+}
+
+.button.white,
+button.white {
+	background: $white;
+	color     : $blue;
+
+	&:hover {
+		background: darken($white, 10%);
+	}
+}
+
+.button.brown {
+	background: $brown;
+
+	&:hover {
+		background: darken($brown, 15%);
+	}
+}
+
+/*-----  End of BUTTONS  ------------------------------------------------------------------*/

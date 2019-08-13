@@ -1,0 +1,154 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Paul Rand: His Works from 1946-1958'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var author                = 'Yusaku Kamekura'
+    - var bookSubhead           = 'Alfred A. Knopf, 1959'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/66035224'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D50%26kn%3DPaul%2BRand%253A%2BHis%2BWorks%2Bfrom%2B1946-1958%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1QN7O36'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/noresults/Paul+Rand%3A+His+Works+from+1946+1958'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_odkw%3DA-D%2BGallery%2BPresents%2BPaul%2BRand%26_osacat%3D0%26_from%3DR40%26_trksid%3Dp2045573.m570.l1313.TR0.TRC0.H0.XPaul%2BRand%253A%2BHis%2BWorks%2Bfrom%2B1946-1958.TRS0%26_nkw%3DPaul%2BRand%253A%2BHis%2BWorks%2Bfrom%2B1946-1958%26_sacat%3D0'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'The Printing Salesman’s Herald'
+    - var nextDate              = 'Champion Papers, 1975'
+    - var nextDescription       = 'By Michael Corey'
+    - var nextLink              = '/life/books-articles/books/1975-champion-papers.html'
+
+    - var relatedItemLink1      = '/life/books-articles/books/2002-the-works-of-paul-rand.html'
+    - var relatedItemTitle1     = 'Paul Rand: The Works of Paul Rand'
+    - var relatedItemFootnote1  = 'Exhibition at Play Mountain, Sept. 15 - Nov. 4, 2001'
+
+    - var relatedItemLink2      = '/life/books-articles/books/2007-conversations-with-students.html'
+    - var relatedItemTitle2     = 'Paul Rand: Conversations with Students'
+    - var relatedItemFootnote2  = 'Princeton Architectural Press, 2008'
+
+    - var relatedItemLink3      = '/life/books-articles/books/1947-ad-gallery.html'
+    - var relatedItemTitle3     = 'A-D Gallery Presents: Paul Rand'
+    - var relatedItemFootnote3  = 'Art Director’s Club, 1947'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2001-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2002-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2003-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2004-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2005-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2006-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2007-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2008-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2009-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2010-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2011-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2012-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2013-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2014-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2015-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2016-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2016.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2017-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2017.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2018-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2018.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2019-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2019.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2020-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2020.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2021-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2021.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2022-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2022.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2023-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2023.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2024-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2024.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2025-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2025.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2026-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2026.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2027-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2027.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2028-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2028.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2029-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2029.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2030-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2030.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2031-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2031.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2032-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2032.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2033-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2033.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2034-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2034.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2035-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2035.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2036-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2036.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2037-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2037.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= 'By ' + author
+                    br
+                    em.text-gray.t16!= bookSubhead
+
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2C%20front-970.jpg",
+                            "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%2C%20front.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        10.25 x 9.75 hardcover book with 132 pages and 150 plates, including 31 in color (both spot and 4-color process). Includes four sets of notes on Paul Rand by Kamekura, Bernard Rudofsky, Giovanni Pintori and Hans Schleger, followed by sections on Rand’s work on poictures and billboards, newspaper advertisements, magazine advertisements, packaging and product design, direct mail, jacket designs, covers and illustrations and paintings, with an additional section by Kamekura on “One Day with Paul Rand”, and biographical notes. The book was produced in Japan, and the text is in both Japanese and English.
+
+                        ##### Contents:
+
+                        + Four notes on Paul Rand: Introduction by Yusaku Kamekura; Bernard Rudofsky; Giovanni Pintori; Hans Schleger
+                        + Posters and Billboards
+                        + Newspaper Advertisments
+                        + Magazine Advertisements
+                        + Packaging and Product Design
+                        + Direct Mail
+                        + Jacket Designs, Covers and Illustrations
+                        + One Day with paul Rand by Yusaku Kamekura
+                        + Paintings
+                        + Biographical Notes
+                        + Lightweight slipcase designed by Rand amd made in Japan with staples at top and bottom.
+
+                    .footnote — Randall Ross of modernism101.com
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            ##### From the inside jacket flap:
+
+                            This book is first of all a careful and reasonably complete record of Paul Rand’s work in the past ten years, illustrated in over 150 plates (31 in color) including examples of his non-commercial easel painting. The breadth of this work is readily apparent in the examples, ranging from large-scale advertising campaigns to book jackets.
+
+                            Of almost equal interest is the fact that the book is a unique tribute to the universality of the work it displays, having been produced in its entirety in Japan, edited by Yusaku Kamekura (himself a distinguised designer) in close consultation with Paul Rand. There are informal texts by Bernard Rudofsky, Giovanni Pintori, and Hans Schleger, as well as Yusaku Kamerkura.
+
+                            In brief, the book offers a definitive selection of the work of an artist who has consistently refused to approach commercial art on any but the highest levels of the creative imagination, where wit and intelligence, combined with the completely inventive use of symbols, are transformed into a delight for the eye and the mind. It is no exaggeration to say that there is no one in the graphics field who could not learn from this book.
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../../__MIXINS/_include-next-item.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

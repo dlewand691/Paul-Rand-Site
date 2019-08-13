@@ -1,0 +1,54 @@
+//- =============================================================================================
+//- 
+//- ██ ███    ███  █████   ██████  ███████
+//- ██ ████  ████ ██   ██ ██       ██
+//- ██ ██ ████ ██ ███████ ██   ███ █████
+//- ██ ██  ██  ██ ██   ██ ██    ██ ██
+//- ██ ██      ██ ██   ██  ██████  ███████
+//-  ██████  █████  ██████   ██████  ██    ██ ███████ ███████ ██
+//- ██      ██   ██ ██   ██ ██    ██ ██    ██ ██      ██      ██
+//- ██      ███████ ██████  ██    ██ ██    ██ ███████ █████   ██
+//- ██      ██   ██ ██   ██ ██    ██ ██    ██      ██ ██      ██
+//-  ██████ ██   ██ ██   ██  ██████   ██████  ███████ ███████ ███████
+//- 
+//- =============================================================================================
+
+hr.w33.horizontal-center.small-my3.hr-red
+.grid-container
+    .grid-x.grid-margin-x(data-aos="fade-up")
+        .small-12.cell.medium-text-left.small-text-center
+            if imageCarouselTitle == "CHANGE_ME"
+                p.text-center.text-caps.text-bold.small-m0.sans-serif
+                    small!= 'The Original ' + nextType
+            else
+                p.text-center.text-caps.text-bold.small-m0.medium-m0.sans-serif
+                    small!= imageCarouselTitle
+
+            if imageCarouselSubtitle == "CHANGE_ME"
+                .footnote.text-center
+                    p
+            else
+                .footnote.text-center!= imageCarouselSubtitle
+
+            .swiper-container(data-aos="fade-up")
+                .swiper-wrapper
+                    each image in imageCarousel
+                        if image.title == ""
+                            .swiper-slide
+                                a(href=image.linkLg data-fancybox="images" data-caption=pageTitle)
+                                    img.swiper-lazy(data-src=image.linkSm alt=pageTitle)&attributes(attributes)
+                        else
+                            .swiper-slide
+                                a(href=image.linkLg data-fancybox="images" data-caption=pageTitle + "   |   " + image.title)
+                                    img.swiper-lazy(data-src=image.linkSm alt=image.title)&attributes(attributes)
+
+                .swiper-pagination.swiper-pagination-white
+                .swiper-button-prev
+                .swiper-button-next
+
+.grid-container
+    .grid-x.grid-margin-x.align-center.small-mb2
+        .cell.text-center
+            p.footnote.show-for-large (Use &larr; &rarr; keys to navigate. Click for larger view.)
+
+//- -----  End of IMAGE CAROUSEL  ---------------------------------------------

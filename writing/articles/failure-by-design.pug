@@ -1,0 +1,135 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Failure by Design'
+    - var bodyID    = 'writing'
+    - var bodyClass = 'articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Writing/Articles/1993%20Failure%20by%20Design/Web/failureByDesign00-450.jpg'
+
+    - var publishedInTitle      = 'New York Times Op-Ed'
+    - var publishedInSubtitle   = 'May 2, 1993'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1993%20Failure%20by%20Design/Web/1993-05-02%20Failure%20by%20Design%20-%20The%20New%20York%20Times%20ORIGINAL-800.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1993%20Failure%20by%20Design/Web/1993-05-02%20Failure%20by%20Design%20-%20The%20New%20York%20Times%20ORIGINAL.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/1645522'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3D%2522New%2BYork%2BTimes%2522%252C%2Bmay%2B2%252C%2B1993%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1YkvVJE'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Language of Art'
+    - var nextDate              = '1996'
+    - var nextDescription       = 'Contributed by John Maeda'
+    - var nextLink              = '/writing/articles/language-of-art.html'
+
+
+    - var relatedItemLink1      = '/writing/articles/integrity-and-invention.html'
+    - var relatedItemTitle1     = 'Integrity and Invention'
+    - var relatedItemFootnote1  = 'Published in the Graphis Annual, 1971'
+
+    - var relatedItemLink2      = '/writing/articles/advertisement-ad-vivum-or-ad-hominem.html'
+    - var relatedItemTitle2     = 'Advertisement: Ad Vivum or Ad Hominem?'
+    - var relatedItemFootnote2  = 'Originally published in 1960 in a special issue of Daedalus: The Visual Arts Today'
+
+    - var relatedItemLink3      = '/writing/articles/the-politics-of-design.html'
+    - var relatedItemTitle3     = 'The Politics of Design'
+    - var relatedItemFootnote3  = 'from “A Designer’s Art”'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1993%20Failure%20by%20Design/Web/failureByDesign00-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1993%20Failure%20by%20Design/Web/failureByDesign00.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1993%20Failure%20by%20Design/Web/1993-05-02%20Failure%20by%20Design%20-%20The%20New%20York%20Times%20ORIGINAL-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1993%20Failure%20by%20Design/Web/1993-05-02%20Failure%20by%20Design%20-%20The%20New%20York%20Times%20ORIGINAL.jpg', title: ''})
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =            FULL WIDTH IMAGE HEADER            =
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                Originally published in the New York Times, 1993.
+
+            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+    .cd-main-content
+        .grid-container
+
+
+            //- ==========  BODY  ==========
+
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content
+                    p.footnote.text-center
+                        | Estimated reading time: 
+                        span.text-bold.reading-time
+                        |   |  Select text to share via Facebook, Twitter or Email
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        ##### Because design is so often equated with mere decoration, it is safe to assume that few people understand what design means or the role it plays in the corporate world. 
+
+                        Graphic design pertains to the look of things — of everything that rolls off a printing press, from a daily newspaper to a box for corn flakes. It also pertains to the nature of things: not only how something should look but why, and often, what it should look like.
+
+                        Why then do design programs in large corporations seem to be going out of style? Why is the average graphic design effort today merely average at best? Is the paucity of good designers and good CEOs possibly the reason for the paucity of good design? The Arco Oil Company began to lose interest in its design program when it chairman Robert Anderson departed. The highly acclaimed CBS design program began to erode when William Paley and Frank Stanton were no longer active.
+
+                        One rarely hears of the program that put Westinghouse on the design map. And when Walter Paepcke, the CEO of the Container Corporation of America died, why did the flow of distinguished advertising by world-famous painters and designers cease? Is it mere coincidence that when Rawleigh Warner departed, Eliot Noyes’s elegant designs for Mobil stations were aesthetically downgraded?
+
+                        When my friend Giovanni Pintor left his company, the character and special quality of Olivetti design no longer reflected the same passion and brilliance of an almost never-ending stream of graphic design works.
+
+                        Without the enthusiasm of Adriano Olivetti, its founder, there might never have been a design program.
+
+                        Tom Watson, who almost singlehandedly created the IBM design program, was not only it guiding spirit but was deeply concerned with its product; he always believed that good design is good business. In fact, years after he had left the company and the IBM design program had taken a different turn, he nevertheless was instrumental in rescuing the now-famous rebus poster (the IBM picture logo) from oblivion, when it was questioned by other executives.
+
+                        That so many programs for large corporations have had a short life span is no evidence that design is impotent. What is evident is that management does not really appreciated the contribution that design (art) can make socially, aesthetically, and economically.
+
+                    blockquote “Art”, said John Ruskin, “represents a social necessity that no nation can neglect without endangering its intellectual existence.
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Yet in the world of commerce, with the exception of the lucky, talented, passionate, or aggressive few, designers are neither appreciated nor understood. For the most part, they are consigned to a low run on the corporate ladder. Similarly, it is the tendency of most businesses to appeal to the consumers’ lower instincts rather than to their higher ideals.
+
+                        But is poor design exclusively the domain of the CEO? There is also the problem of visual literacy, a common language between designer and client. Unfortunately, just as there are managements unwilling or enlightened enough to commission good designs, there are designers who are eager to accommodate their every whim.
+
+                        Moreover, good design cannot be dictated or willed; alas, it is not the product of market research but of natural talent, relevant ideas, and mutual respect, without which design programs eventually will unravel and good design wither away.
+
+                        Design can help inform, delight, and even persuade — assuming that the designer is an artist and not just someone focused on the nonsense of  “self-expression” or on the fads of the moment.
+
+                    blockquote “Most people”, said the painter Robert Motherwell, “ignorantly suppose that artists [designers] are the decorators of our human existence, the esthetes to who the cultivated may turn when the real business of the day is done. … Far from being merely decorative, the artist’s awareness is one of the few guardians of the inherent sanity and equilibrium of the human spirit that we have.
+
+
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-image-carousel.pug
+
+        include ../../__MIXINS/_include-published-in.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

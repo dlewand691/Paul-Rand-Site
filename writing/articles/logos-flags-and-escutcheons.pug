@@ -1,0 +1,150 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Logos, Flags, and Escutcheons'
+    - var bodyID    = 'writing'
+    - var bodyClass = 'articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Writing/Articles/1991%20Logos%2C%20Flags%2C%20and%20Escutcheons/Web/Looking%20Closer-450.jpg'
+
+    - var publishedInTitle      = 'Looking Closer: Critical Writings on Graphic Design'
+    - var publishedInSubtitle   = 'Allworth Press (November 1, 1994)'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1991%20Logos%2C%20Flags%2C%20and%20Escutcheons/Web/Looking%20Closer-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1991%20Logos%2C%20Flags%2C%20and%20Escutcheons/Web/Looking%20Closer.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/31791535'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3DLooking%2BCloser%253A%2BCritical%2BWritings%2Bon%2BGraphic%2BDesign'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1LmsQn4'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/w/looking-closer-michael-bierut/1112148195?ean=9781880559154'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2050601.m570.l1313.TR0.TRC0.H0.TRS0%26_nkw%3DLooking%2BCloser%253A%2BCritical%2BWritings%2Bon%2BGraphic%2BDesign%26_sacat%3D0'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Confusion and Chaos: The Seduction of Contemporary Graphic Design'
+    - var nextDate              = '1992'
+    - var nextDescription       = 'Originally published in the AIGA Journal of Graphic Design, Volume 10, Number 1'
+    - var nextLink              = '/writing/articles/confusion-and-chaos-the-seduction-of-contemporary-graphic-design.html'
+
+
+    - var relatedItemLink1      = '/writing/articles/design-and-the-play-instinct.html'
+    - var relatedItemTitle1     = 'Design and the Play Instinct'
+    - var relatedItemFootnote1  = 'Originally published in “Education of Vision”, 1965'
+
+    - var relatedItemLink2      = '/writing/articles/the-trademark-as-an-illustrative-device.html'
+    - var relatedItemTitle2     = 'The Trademark as an Illustrative Device'
+    - var relatedItemFootnote2  = 'Originally published in “Seven Designers Look At Trademark Design”, 1952'
+
+    - var relatedItemLink3      = '/writing/articles/integrity-and-invention.html'
+    - var relatedItemTitle3     = 'Integrity and Invention'
+    - var relatedItemFootnote3  = 'Published in the Graphis Annual, 1971'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: ''})
+
+
+    .progress-container
+        .progress-bar
+
+    //- ===============================================
+    //- =            FULL WIDTH IMAGE HEADER            =
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                Originally published in 1991 by AIGA, the professional association for design.  
+                Also available in “Looking Closer: Critical Writings on Graphic Design” from Allworth Press.
+
+            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+    .cd-main-content
+        .grid-container
+
+
+            //- ==========  BODY  ==========
+
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content
+                    p.footnote.text-center
+                        | Estimated reading time: 
+                        span.text-bold.reading-time
+                        |   |  Select text to share via Facebook, Twitter or Email
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        ### “It reminds me of the Georgia chain gang,” quipped the IBM executive, when he first eyed the striped logo. 
+
+                        When the Westinghouse insignia (1960) was first seen, it was greeted similarly with such gibes as “this looks like a pawnbroker’s sign.” How many exemplary works have gone down the drain, because of such pedestrian fault-finding? Bad design is frequently the consequence of mindless dabbling, and the difficulty is not confined merely to the design of logos. This lack of understanding pervades all visual design.
+
+                        There is no accounting for people’s perceptions. Some see a logo, or anything else seeable, the way they see a Rorschach inkblot. Others look without seeing either the meaning or even the function of a logo. It is perhaps, this sort of problem that prompted ABC TV to toy with the idea of “updating” their logo (1962). They realized the folly only after a market survey revealed high audience recognition. This is to say nothing of the intrinsic value of a well-established symbol. When a logo is designed is irrelevant; quality, not vintage nor vanity, is the determining factor.
+
+                        There are as many reasons for designing a new logo, or updating an old one, as there are opinions. The belief that a new or updated design will be some kind charm that will magically transform any business, is not uncommon. A redesigned logo may have the advantage of implying something new, something improved-but this is short-lived if a company doesn’t live up to its claim. Sometimes a logo is redesigned because it really needs redesigning-because it’s ugly, old fashioned, or inappropriate. But many times, it is merely to feed someone’s ego, to satisfy a CEO who doesn’t wish to be linked with the past, or often because it’s the thing to do.
+
+                        Opposed to the idea of arbitrarily changing a logo, there’s the “let’s leave it alone” school-sometimes wise, more often superstitious, occasionally nostalgic or, at times, even trepidatious. Not long ago, I offered to make some minor adjustments to the UPS (1961) logo. This offer was unceremoniously turned down, even though compensation played no role. If a design can be refined, without disturbing its image, it seems reasonable to do so. A logo, after all, is an instrument of pride and should be shown at its best.
+
+                        If, in the business of communications, “image is king,” the essence of this image, the logo, is a jewel in its crown.
+
+                        **Here’s what a logo is and does:**
+
+                        A logo is a flag, a signature, an escutcheon.  
+                        A logo doesn’t sell (directly), it identifies.  
+                        A logo is rarely a description of a business.  
+                        A logo derives its meaning from the quality of the thing it symbolizes, not the other way around.  
+                        A logo is less important than the product it signifies; what it means is more important than what it looks like.  
+
+                        A logo appears in many guises: a signature is a kind of logo, so is a flag. The French flag, for example, or the flag of Saudi Arabia, are aesthetically pleasing symbols. One happens to be pure geometry, the other a combination of Arabic script, together with an elegant saber-two diametrically opposed visual concepts; yet both function effectively. Their appeal, however, is more than a matter of aesthetics. In battle, a flag can be a friend or foe. The ugliest flag is beautiful if it happens to be on your side. “Beauty,” they say, “is in the eye of the beholder,” in peace or in war, in flags or in logos. We all believe our flag the most beautiful; this tells us something about logos.
+
+                        Should a logo be self-explanatory? It is only by association with a product, a service, a business, or a corporation that a logo takes on any real meaning. It derives its meaning and usefulness from the quality of that which it symbolizes. If a company is second rate, the logo will eventually be perceived as second rate. It is foolhardy to believe that a logo will do its job right off, before an audience has been properly conditioned. Only after it becomes familiar does a logo function as intended; and only when the product or service has been judged effective or ineffective, suitable or unsuitable, does it become truly representative.
+
+                        Logos may also be designed to deceive; and deception assumes many forms, from imitating some peculiarity to outright copying. Design is a two-faced monster. One of the most benign symbols, the swastika, lost its place in the pantheon of the civilized when it was linked to evil, but its intrinsic quality remains indisputable. This explains the tenacity of good design.
+
+                        The role of the logo is to point, to designate-in as simple a manner as possible. A design that is complex, like a fussy illustration or an arcane abstraction, harbors a self-destruct mechanism. Simple ideas, as well as simple designs are, ironically, the products of circuitous mental purposes. Simplicity is difficult to achieve, yet worth the effort.
+
+                        **The effectiveness of a good logo depends on:**
+
+                        a. distinctiveness  
+                        b. visibility  
+                        c. useability  
+                        d. memorability  
+                        e. universality  
+                        f. durability  
+                        g. timelessness  
+
+                        Most of us believe that the subject matter of a logo depends on the kind of business or service involved. Who is the audience? How is it marketed? What is the media? These are some of the considerations. An animal might suit one category, at the same time that it would be an anathema in another. Numerals are possible candidates: 747, 7-Up, 7-11, and so are letters, which are not only possible but most common. However, the subject matter of a logo is of relatively little importance; nor, it seems, does appropriateness always play a significant role. This does not imply that appropriateness is undesirable. It merely indicates that a one-to-one relationship, between a symbol and what is symbolized, is very often impossible to achieve and, under certain conditions, may even be objectionable. Ultimately, the only thing mandatory, it seems, is that a logo be attractive, reproducible in one color and in exceedingly small sizes.
+
+                        The Mercedes symbol, for example, has nothing to do with automobiles; yet it is a great symbol, not because its design is great, but because it stands for a great product. The same can be said about apples and computers. Few people realize that a bat is the symbol of authenticity for Bacardi Rum; yet Bacardi is still being imbibed. Lacoste sportswear, for example, has nothing to do with alligators (or crocodiles), and yet the little green reptile is a memorable and profitable symbol. What makes the Rolls Royce emblem so distinguished is not its design (which is commonplace), but the quality of the automobile for which it stands. Similarly, the signature of George Washington is distinguished not only for its calligraphy, but because George Washington was Washington. Who cares how badly the signature is scribbled on a check, if the check doesn’t bounce? Likes or dislikes should play no part in the problem of identification; nor should they have anything to do with approval or disapproval. Utopia!
+
+                        All this seems to imply that good design is superfluous. Design, good or bad, is a vehicle of memory. Good design adds value of some kind and, incidentally, could be sheer pleasure; it respects the viewer-his sensibilities-and rewards the entrepreneur. It is easier to remember a well designed image than one that is muddled. A well design logo, in the end, is a reflection of the business it symbolizes. It connotes a thoughtful and purposeful enterprise, and mirrors the quality of its products and services. It is good public relations-a harbinger of good will.
+
+                        ##### It says “We care.”
+
+
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        //- include ../../__MIXINS/_include-image-carousel.pug
+
+        include ../../__MIXINS/_include-published-in.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

@@ -1,0 +1,159 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+
+block vars
+    - var pageTitle = 'NeXT'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy-450.jpg'
+
+    - var articleAuthor         = 'Steven Heller'
+    - var publishedInTitle      = 'Design Literacy'
+    - var publishedInSubtitle   = 'Allworth Press, 1997.'
+    - var publishedInSubtitle2  = 'Reproduced with permission.'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/37645727'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3DDesign%2BLiteracy%2BAllworth%2BPress%252C%2B1997%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1KZSakB'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/w/design-literacy-steven-heller/1111878268?ean=9781581153569'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Thoughts on Paul Rand'
+    - var nextDate              = '1997'
+    - var nextDescription       = 'Essays on Design: AGI’s Designers of Influence'
+
+    - var nextLink              = '1997-essays-on-design.html'
+
+    - var relatedItemLink1      = '1997-six-chapters-in-design.html'
+    - var relatedItemTitle1     = 'Six Chapters in Design: Saul Bass, Ivan Chermayeff, Milton Glaser, Paul Rand, Ikko Tanaka, Henryk Tomaszewski'
+    - var relatedItemFootnote1  = 'Chronicle Books (first edition edition October 1, 1997)'
+
+    - var relatedItemLink2      = '1955-international-art-advertising-idea-magazine.html'
+    - var relatedItemTitle2     = 'International Advertising Art Idea magazine'
+    - var relatedItemFootnote2  = 'March, 1955'
+
+    - var relatedItemLink3      = '1947-graphis.html'
+    - var relatedItemTitle3     = 'Paul Rand by Georgine Oeri'
+    - var relatedItemFootnote3  = 'Graphis, Vol. 3, No. 18, 1947'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy%201997%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy%201997%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy%201997%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy%201997%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy%201997%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy%201997%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy%201997%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy%201997%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy%201997%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy%201997%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy%201997%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy%201997%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy%201997%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy%201997%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy%201997%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy%201997%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy%201997%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1997%20Design%20Literacy/Web/Design%20Literacy%201997%2009.jpg', title: ''})
+
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content#original-article
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        This is the first book to provide explicit case histories of the successful marriage of form and content in graphic design. It explores nearly 100 classic and contemporary works and explains why they are aesthetically significant and how they function as good design. By focusing on the study and appreciation of specific works, Design Literacy breaks new ground and will be of interest to students and designers at all levels.
+
+
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        .small-mb4
+                            +imageZoomSingle(
+                                "https://assets.paulrand.design/Works/NeXT/NeXT-Computers-1986.svg",
+                                "https://assets.paulrand.design/Works/NeXT/NeXT-Computers-1986.svg"
+                                )
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            It is difficult enough to invent a meaningful corporate logo, sign, or mark to express conventional business issues without having to depict the future as well. However, that is what was demanded of Paul Rand (1914–1996) when in 1988 he was commissioned to deign a logo for NeXT, an educational computer company headed by Steven Jobs, the founder of Apple Computer Company. Although NexT’s new product was cast in secrecy the corporate name alluded to its futuristic positioning—not simply a *new* computer, but the *next* wave of information processing for the educational market. With only a few clues, Rand was given a month to devise a logo that would embody as much symbolic power as the memory of a sillicon chip.
+
+                            Rand had made identity systems out of whole cloth many times before. He created time honored marks for IBM, UPS, and ABC. In each he found the most identifiable graphic forms: stripes for IBM, a gift box atop a shield for UPS, the repetition of circles for the lowercase letters *abc*. Deigning such charged—and lasting—logos is not magic, but it does take an acute understanding of the nature of perception and the ability of translate that into a visual form. **“Logos are *aides de memoire* that give you something to hook on to when you see it, and especially when you don’t see it,”** explained Rand. **“And the problem with the word NeXT was that it was not depictable. What are you going to show? A barber shop with somebody pointing ‘You’re next’? It’s simply not describable in typographic terms.”**
+
+                            Graphic devices that represent the future, such as the arrow, were made meaningless by overuse, but the NeXT computer was contained in a black cube, which gave Rand the idea he needed. He decided to frame the word in a cube to evoke the product itself. However, at the time the logo was introduced to the public, the computerss shape and form were completely secret. **“It was understandable only as a cube, nothing else,”** he explained. **“But without that reference, I would have had to devise something out of the blue.”** In fact, for Rand it was not so much a question of having a reference point as using that reference point. **“The client mentioned the cube to me when I was given the problem, and I’m sure the other designers who worked on the logo must also have heard about it”**, Rand presumed.
+
+
+                            The NeXT logo was successful in part because the cube was symbolically related to the product itself, but Rand insisted that the shape was only important in sparking the idea. **“Some reference was made to it being like a child’s block,”** he continued. **“I really think that is one of its virtues and part of its charm. However, the logo is not designed to be charming, it is designed to identify.”**
+
+                            Before the logo could do the job, however, Rand had to sell the mark to Jobs. For this he had a pronged strategy. The first was to present only one logo. This underscored his own confidence in the solution and deflected indecision on the part of the client. The second was to “speak” only through a presentation booklet that concisely explained the rationale and showed the applications of the logo. Jobs had seen all the timeworn futuristic cliches—arrows, clouds, lightning bolts—in the book. However, he was unprepared for Rand’s twenty-page book, entitled “The Sign of the Next Generation of Computers for Education…”
+
+                            From the beginning of this limited (fifty copies), Platonic document, Rand announced his premise: **“What should a logo for NeXT look like?”** he asked in text set in Caslon, which led into a concise narrative that condensed decades of communications history into ten minutes of reading time.
+
+                            First he introduced the concept of type itself: **“Choosing a typeface as the basis for the design of a logo is a convenient starting point. Here are two examples: Caslon and Bifur. Caslon is an alphabet designed as far back as 1725 by William Caslon. It appears to be a good choice because it is both elegant and bookish, qualities well suited for educational purposes… .”** He described the nature of his faces, their quirks and virtues, and concluded by admitting, **“Attributing certain magical qualities to particular typefaces is, however, largely a subjective matter.”**
+
+                            Next he defused the client’s need to sample a variety of typefaces: **“One reason for looking at a number of possible typefaces is to satisfy one’s curiosity. Another, and perhaps more meaningful one, is to study the relationship of different letter combinations, to look for visual analogies, and to try to elicit ideas that the design of a letter or group of letters might inspire.” He offered some examples that were intended to pique the reader’s interest, and offered this warning:**
+
+                            **Personal preferences, prejudices, and stereotypes often dictate what a logo looks like, but it is needs, not wants, ideas, not type styles which determine what its form should be….”**
+
+                            Then Rand took a representative typeface and set it in caps to explain why this particular iteration was unsuccessful: **“Set in all capitals, the word NEXT is sometimes confused with EXIT, possibly because the EXT grouping is so dominant. A combination of capitals and lowercase letters alleviates this problem.”** And after winning the argument, he provided a textbook example of a more successful application: **“Here are some possibilities which explore the use of lowercase letters. The e is differentiated so as to provide a focal point and visual contrast among the capital letters which, otherwise, consist only of straight lines. Happily the e also could stand for: education, excellence, expertise, exceptional, excitement, e = mc2, etc.”**
+
+                            This brief lesson in typographic style segued into an explanation of how a mark should function: **“Ideally, a logo should explain or suggest the business it symbolizes, but this is rarely possible or even necessary. There is nothing about the IBM symbol, for example, that suggests computers, except what the viewer reads into it. Stripes are now associated with computers because the initials of a great computer company happen to be striped… .”** And then he introduced the idea underlying his version of NeXT: **“A logo takes on meaning, only if over a period of time it is linked to some product or service of a particular organization. What is essential is finding a meaningful device, some idea—preferably product-related—that reinforces the company name. The cube, in which the computer will be housed, can be such a device because it has visual impact, and is easy to remember. Unlike the word Next, it is depictable, possesses the promise of meaning and pleasure of recognition.”**
+
+                            Understanding that questions would arise concerning the application of the cube, Rand talked about versatility: **“This idea in no way restricts its application to any one product or concept. The three-dimensional effect functions as an underscore to attract the viewer’s attention.”** Once established that the cube was the appropriate form, Rand addressed the basic structure of the logo: **“Splitting the logo into two lines accomplishes several things: it startles the viewer and gives the word a new look, thus making it easier to separate from common usage. And even more importantly it increases the letter size two-fold, within the framework of the cube. For small space use, a one line logo would have been too small to fit within this same framework.”** Rand showed that readability was not affected because the word was too simple to be misread. **“Moreover, people have become accustomed to this format with such familiar four-letter word combinations as LOVE.”**
+
+                            He concluded his primer with a down-to-earth analysis: **“The adaptation of this device to miniaturization—tie tacks, charm bracelets, paper weights, stickers, and other promotional items is endless. It lends itself as well to large-scale interpretation—signs, exhibits in the shape of cubes, in which the actual exhibit is housed, as well as exhibit stands. For printed matter, its infinite adaptability and attention-compelling power is self-evident.”**
+
+                            Upon presentation, Rand did not utter a word, he just sat silently watching as Jobs read. “The book itself was a big surprise.” Jobs recalled, “I was convinced that each typographic example on the first few pages was the final logo. I was not quite sure what Paul was doing until I reached the end. And at that moment I knew we had the solution… . Rand gave us a jewel, which in retrospect seems so obvious.” Moreover, as it turned out, Rand’s user-friendly teaching aid underscored Jobs’ own commitment to the process of education.
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+
+
+
+        include ../../../../__MIXINS/_include-image-carousel.pug
+
+        include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

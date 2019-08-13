@@ -1,0 +1,185 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Logos to Go'
+    - var bodyID    = 'life'
+    - var bodyClass = 'interviews'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Interviews/1993%20Hartford%20Courant/Web/Hartford%20Courant%20Sun%20Jul%204%201993-450.jpg'
+
+    - var articleAuthor         = 'Steve Kemper'
+    - var publishedInTitle      = 'Hartford Courant'
+    - var publishedInSubtitle   = 'July 4, 1993'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1993%20Hartford%20Courant/Web/Hartford%20Courant%20Sun%20Jul%204%201993-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1993%20Hartford%20Courant/Web/Hartford%20Courant%20Sun%20Jul%204%201993.jpg', title: ''})
+
+    - var library               = 'yes'
+    - var libraryLink           = 'CHANGE_ME'
+    - var abe                   = 'no'
+    - var abeLink               = 'CHANGE_ME'
+    - var amazon                = 'no'
+    - var amazonLink            = 'CHANGE_ME'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Interview'
+    - var nextTitle             = 'Paul Rand: A Profile'
+    - var nextDate              = '1993'
+    - var nextDescription       = 'Janet Abrams interviews Rand for I.D. Magazine.'
+    - var nextLink              = '/life/interviews/1993-id-magazine.html'
+
+    - var relatedItemLink1      = '/life/interviews/1998-Paul-Rand-on-the-Play-Instinct.html'
+    - var relatedItemTitle1     = 'Paul Rand on the Play Instinct'
+    - var relatedItemFootnote1  = 'With design as the common thread, each exchange opens an individual perspective on the visual culture at large.'
+
+    - var relatedItemLink2      = '/life/interviews/1988-id-magazine.html'
+    - var relatedItemTitle2     = 'Logos, Technique and Trends'
+    - var relatedItemFootnote2  = 'A look back over 50 years to explain the meaning of logos, technique and trends.'
+
+    - var relatedItemLink3      = '/life/interviews/1989-Type-Talks-interview.html'
+    - var relatedItemTitle3     = 'Type Talks Interview'
+    - var relatedItemFootnote3  = 'By Mario Rampone'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Interviews/1993%20Hartford%20Courant/Web/Hartford%20Courant%20Sun%20Jul%204%201993-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Interviews/1993%20Hartford%20Courant/Web/Hartford%20Courant%20Sun%20Jul%204%201993.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            unless articleAuthor == 'CHANGE_ME'
+                p.reveal-enter-bottom!= 'By ' + articleAuthor
+
+            p.reveal-enter-bottom!= publishedInTitle
+                unless publishedInSubtitle == 'CHANGE_ME'
+                    br
+                    !=publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    !=publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+            //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content
+                    //- :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        INTRO
+
+                    //- hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4#original-article
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            ###### Conversations by Steve Kemper 
+
+                            # Logos to go 
+
+                            ##### Paul Rand
+
+                            This Weston artist is one of the world’s pre-eminent graphic designers. His work is familiar from the logos of IBM, Westinghouse, ABC, and many others. His latest book is “Design, Form, and Chaos” (Yale, 1993). 
+
+                            ---
+
+                        p.question STEVE KEMPER: You think graphic design isn’t merely decoration - that it affects our quality of life and aesthetic equilibrium? 
+
+                        p 
+                            strong.text-red Paul Rand: 
+                            | Absolutely. I think a graphic designer contributes something. He takes raw mate­rial and makes it palatable, he makes it salable, he makes it attractive. He adds value.
+
+                        p.question SK: But you also think there’s a lot of design noise out there today. What’s the effect of that on our quality of life?
+
+                        p 
+                            strong.text-red PR: 
+                            | I don’t know what the effect is on other people, but on me it’s devastating. I see bad posters or bad packaging, I feel terrible. And I think other people feel it intuitively. 
+
+                        p.question SK: Why is there so much bad design?
+
+                        p 
+                            strong.text-red PR: 
+                            | I think it’s a reflection of the times. Look at all the graffiti. As soon as you put up a fence on the highway, the next day it’s loaded with graffiti.
+
+                        p.question SK: Do you find that offensive aesthetically or socially? 
+
+                        p 
+                            strong.text-red PR: 
+                            | Both. Utter disregard of other people’s property. Utter disregard of other people’s values and taste. It’s the screw-you attitude that is so pervasive.
+
+                        p.question SK: And that attitude shows up in graphic design now? 
+
+                        p 
+                            strong.text-red PR: 
+                            | Of course. It shows up in bad work. Arty work. Work you look at and can’t understand. Type you can’t read. Affectations of all kinds — little gizmos and dingbats, little squares and squiggles. This student who came in had little arrows pointing to the beginning of each chapter [for a book design]. I said, “What’s that for?” She said, “To lead the reader down.” The text starts up here, so why does he need an arrow? If it’s designed so that someone can easily read it, what else do you need? Anything else is affectation or ornamentation. 
+
+                        p.question SK: You’re very classicist in your approach — simple, clear…
+
+                        p 
+                            strong.text-red PR: 
+                            | Yeah, and I suppose I’m considered an old fuddy-dud. But I’m not concerned. Picasso said something to the effect that there is no new art or old art, there is only good art, which is ageless; something that’s bad is not even considered. Absolutely true, and easily proved by examples of things people did zillions of years ago. The Parthenon does not look old-fashioned. Bad things get old-fashioned. If you look at the work I did 50 years ago, you couldn’t tell when it was done.
+
+                        p.question SK: You write about using graphic design to bridge the gap between art and commerce. A lot of artists can’t be bothered… 
+
+                        p 
+                            strong.text-red PR: 
+                            | A lot of artists think that design has nothing to do with art. It’s a very snobbish point of view. I know that they’re the same thing. The great art historian and painter, Vasari, in the 16th century said that design is the foundation of all the arts — painting, architecture, dance, music. It’s the fundamental. What is art? Art is an idea that has found its perfect visual form. But how is this accomplished? Design, which is the interaction of form and content, is the vehicle by which art is accomplished.
+
+                        p.question SK: Your work must be approved by MBAs who may not have any sense of aesthetics. You’re also a painter, but you chose to spend most of your life in the marketplace. Why? 
+
+                        p 
+                            strong.text-red PR: 
+                            | Because in a sense it’s more important, because it affect our daily living. A logo is more important in a certain sense than a painting because a zillion people see the logo and it affects what they do. It affects their taste, it affects the appearance of where they live, it affects everything. Take packaging in the grocery store. Most of it is lousy stuff, and when you walk into the grocery store, everything looks lousy as a result. That doesn’t help anybody. 
+
+                        p.question SK: You talk about how computers, though a valuable tool, are one of the main villains in ruining design. 
+
+                        p 
+                            strong.text-red PR:
+                            | It’s particularly true in schools. It takes time to teach and learn design, and instead of Iearning design you’re learning how to use the computer. And when you’re an accomplished computer operator, you think you’re an accomplished designer. You’re not. Once you’re a good designer, the speed aspect comes in very handy — who wants to keep redrawing the same letter or redoing patterns? But in school, you should be able to draw all of this. It’s not just a question of learning how to do it, it’s a question of understanding and appreciating the process. You don’t know what is involved until you do it. Speed is not an aesthetic value. Who cares how long it took Da Vinci to paint “The Last Supper”? The product is the only thing that matters in art. lf you really like the product, it doesn’t matter how much it cost you, and if you don’t like it, even 2 cents is too much. 
+
+                        p.question SK: Is there a logo you’d like to get your hands on and redesign? 
+
+                        p 
+                            strong.text-red PR: 
+                            | There are lots of things like that. Once I got this telephone call and the guy asked me if I wanted to do the logo for Westinghouse. And as I was talking to this guy, I drew it. I still have it — I drew it on a newspaper. And that’s because I had clone it before, when I first saw it. So I do it automatically, if I feel like it. But I’m not obsessed with doing all of those things, or I’d b pretty busy. Design is a very subjective thing. For all I know, what I’m doing is bad. But I can’t be concerned about that; I can only be concerned about what I think. And my track record indicates that oilier people have the same opinion, so I guess I must be more right than wrong. ■ 
+
+                        | NORTHEAST / July 4, 1993
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-image-carousel.pug
+
+        include ../../__MIXINS/_include-published-in.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug

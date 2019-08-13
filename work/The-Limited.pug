@@ -1,0 +1,283 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'The Limited'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = '1988'
+    - var nextType  = 'Client'
+    - var nextTitle = 'Thomas Creighton'
+    - var nextLink  = 'Thomas-Creighton'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/The%20Limited/The-Limited-1988.svg", LG:"https://assets.paulrand.design/Works/The%20Limited/The-Limited-1988.svg", title: "", footnote: ""}
+                        )
+
+                    +carouselImages(
+                        "Logo Sketches",
+                        "Courtesy of Steven Heller",
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2001-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2001.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2002-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2002.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2003-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2003.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2004-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2004.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2005-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2005.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2006-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2006.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2007-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2007.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2008-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2008.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2009-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2009.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2010-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2010.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2011-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2011.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2012-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2012.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2013-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2013.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2014-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2014.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2015-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2015.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2016-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2016.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2017-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2017.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2018-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2018.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2019-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2019.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2020-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2020.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2021-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2021.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2022-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2022.jpg"},
+                        {Title:"The Limited Corporation logo sketch", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2023-800.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/Limited%20Sketch%2023.jpg"}
+                        )
+
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logo Presentation Booklet",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2001-970.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2001-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2001.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2002-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2002.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2003-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2003.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2004-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2004.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2005-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2005.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2006-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2006.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2007-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2007.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2008-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2008.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2009-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2009.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2010-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2010.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2011-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2011.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2012-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2012.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2013-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2013.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2014-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2014.jpg"},
+                        {Title: "Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2015-450.jpg", LG:"https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2015.jpg"}
+                        )
+
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell
+                    .grid-x.grid-margin-x
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2001-450.jpg",
+                            "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2001.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                #### A new logo design  
+                                #### for  
+                                #### The Limited  
+                                #### Columbus, Ohio 43216
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2002-450.jpg",
+                            "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2002.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                A new logo design  
+                                for  
+                                The Limited  
+                                Columbus, Ohio 43216
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2003-450.jpg",
+                            "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2003.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                In the field of fashion, perhaps more than in any other, the need to stand out is as relevant for the design of a logo as it is for the design of beautiful clothes and beautiful shops.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2004-450.jpg",
+                            "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2004.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                In 1925, Coco Chanel helped change the way one looks at fashion insignias. In the past, identification for products linked with fashion was rather delicate and wispy. Ideas were literally interpreted. The kind of vision it took to use a letter-form traditionally associated with heavy industry, with trucks, for example, or, more appropriately, with posters or newspaper headlines, was revolutionary.
+
+                                In 1988, however, the Chanel logo is as spry and as timely as ever.
+
+                                Today, almost anything goes. Visual identity for men’s clothing is no different in spirit or in appearance from that of women’s. Debates about serif versus sans serif have also fallen by the wayside. This clearly indicates that it isn’t the style of letter - the what - but the idea to which the letter is related; its application and use, its form, its color, its proportion, and relationship to its surroundings that matters - the how.
+
+                                The fashion field is inundated with as many type faces as there are fashion houses. Therefore, finding something new in letter designs is virtually impossible. The game of choosing a typeface for a particular purpose is often fortuitous, like the game of pinning the tail on the donkey. What a name or symbol should look like is based on many factors besides function: taste, prejudice, whim, business vicissitudes, demands - or imagined demands - of the marketplace, and mere arbitrariness are often the way a logotype is designed and chosen. And, more often than not, it is accompanied by market research, designed to imbue confidence and add a note of authority.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2005-450.jpg",
+                            "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2005.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                To design a logo that symbolizes a business like THE LIMITED is an engrossing problem. It is also a baffling one. The name itself is ambiguous. What does limited mean - restricted, confined, within limits? Or does it mean exclusive? Is it a legal designation? Is it an adjective, a noun? Preceded by the definite article, the, one senses incompleteness: THE LIMITED, what? According to Fowler’s ‘Modern English Usage’, the word is also often misused to mean, small, few, meager, or rare.
+
+                                The Problem of Readability:
+
+                                Not only is the meaning of the word puzzling, but the very configuration, irrespective of letter style, is equally difficult to deal with. Unlike the word CHANEL, for example, which begins with a circle, a square, and a triangle - three clearly differentiated shapes - LIMITED begins with an L, an I, and an M. Such letters coming together present complex spacing and reading problems - in caps or lowercase. Furthermore, coming as it does at the end of the word, the D acts as a misplaced focal point and loses its effectiveness as a contrasting element.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2006-450.jpg",
+                            "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2006.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Irrespective of context, many people associate capital letters with Roman inscriptions, proper nouns, and with words like STOP and DANGER. But this is not necessarily an argument against lowercase letters. More often than not, lowercase may be more readable and, certainly, less formal than capitals, e.g. Ann Taylor, Benetton, Dior, etc. However, these are proper nouns and perceived as such, unlike the word LIMITED, which is an adjective. Nevertheless, people perceive caps as more important, and more formal, thus more likely to be associated with company names.
+
+                                Here are some steps toward a possible solution:
+
+                                1. dots over the I’s help readability by calling attention to themselves, and by breaking the continuity of the repeating verticals;
+                                2. letter spacing helps readability, as well, but what the word gains in readability it loses in compactness;
+                                3. with the exception of the I’s, the letters are pulled together, forming a compact, continuous ribbon. Word space as well as one of the vertical strokes has been eliminated and the total effect seems simpler.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2007-450.jpg",
+                            "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2007.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                The problem of “The”:
+
+                                A company name which begins with a definite article often presents a perplexing typographic problem. To get around this conundrum, the word is often set smaller and/or in lower case, or, sometimes, simply eliminated. But this rarely feels quite right.
+
+                                Turning the word the on end, two things naturally follow: 1. the key word is emphasized, and 2. the two words at right angles to each other suggest the shape of the letter L, ‘an optical memory image’ easily recognized from a distance before the words can even be read. Placed at an angle, the square functions as a dramatic foil and adds a lively note to the logo.
+
+                                Eliminating the two I’s and dotting the verticals of the M makes the word more compact, more distinctive, and more memorable.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2008-450.jpg",
+                            "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2008.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Doubling the stroke of each letter acts as a differentiating device, so that the verticals of the M now read as two distinct I’s. The word is now more readable and distinctly more decorative.
+
+                                Some distinguishing features of the proposed design:
+
+                                1. letters abut each other, forming a continuous horizontal ribbon;
+                                2. two capital I’s have been eliminated, shortening the word;
+                                3. by dotting the two verticals, the M serves as three letters - a kind of double entendre - while the word itself is clearly readable - a striking memory image;
+                                4. the triple letter combination may also be perceived as two people holding hands;
+                                5. the dotted M gives the name an unusual look;
+                                6. the dots may also be perceived as two eyes.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2009-450.jpg",
+                            "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2009.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Here is a sample of one of the many studies in the metamorphosis of the The Limited logo. Although simpler in form, this variation lacks the important aide-mémoire: the “L” configuration.
+
+                                The “L” logo in use:
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2010-450.jpg",
+                            "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2010.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                The versatility of the logo is one of its more important qualities. Here and on the following pages are three different designs for a shopping bag based on the new logo. It is easy to see that these very same ideas can be applied to packaging and the many various printed forms necessary to carry out an effective design program.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2011-450.jpg",
+                            "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2011.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Overall patterns are extremely useful for general design problems in which company identification is needed. Fabrics, carpeting, wallpaper, and wrapping paper are examples of commonly used items. This shopping bag features such a pattern.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2012-450.jpg",
+                            "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2012.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                The initial L may also he used as an overall pattern as well as an insignia.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2013-450.jpg",
+                            "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2013.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Here is a suggested palette of colors which may be used for any or all logo applications. It should be noted, however, that once a color has been chosen for standard items such as stationery, calling cards, or signs, that color should not be changed.
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2014-450.jpg",
+                            "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2014.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                *(Stationery)*
+
+                        .medium-4.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2015-450.jpg",
+                            "https://assets.paulrand.design/Works/The%20Limited/Web/The%20Limited%2015.jpg"
+                            )
+
+                        .medium-8.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                The idea behind the design of a logo should, if possible, be elicited from the name it symbolizes. It should be distinctive - make some kind of statement. It should be in harmony with its purpose, easy to recognize, and easy to use. It should be something special, engage the viewer’s attention, provide the joy of discovery, and the pleasure of participation.
+
+                                The design of a logo, which is the product of endless refinement and experiment, is, ultimately, a reflection of the integrity of the business it symbolizes. Its effectiveness is largely dependent on its exposure, how often and how well it is used.
+
+                                The environment in which a logo is exhibited: its arrangement, color, lighting, and overall quality is as important as is the logo itself. Attention to detail, understanding, and receptivity are indispensable for the success of any logo. Its enduring qualities are embodied in the excellence of its design, its adaptability, and in its memorability.
+
+                                Prepared by Paul Rand  
+                                Weston, Connecticut  
+                                06883
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

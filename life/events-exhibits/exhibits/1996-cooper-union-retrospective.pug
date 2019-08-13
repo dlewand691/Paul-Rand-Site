@@ -1,0 +1,94 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Paul Rand Retrospective Cooper Union Herb Lubalin Study Center'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'CHANGE_ME'
+    - var pageSubtitle2         = 'CHANGE_ME'
+
+    - var nextType              = 'Exhibit'
+    - var nextTitle             = 'Chico State University: Paul Rand Retrospective'
+    - var nextDate              = '2003'
+    - var nextLink              = '2003-chico'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'Images courtesy of Randall Ross of modernism101.com'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union/Web/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union%20Herb%20Lubalin%20Study%20Center%20Brochure%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union/Web/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union%20Herb%20Lubalin%20Study%20Center%20Brochure%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union/Web/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union%20Herb%20Lubalin%20Study%20Center%20Brochure%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union/Web/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union%20Herb%20Lubalin%20Study%20Center%20Brochure%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union/Web/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union%20Herb%20Lubalin%20Study%20Center%20Brochure%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union/Web/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union%20Herb%20Lubalin%20Study%20Center%20Brochure%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union/Web/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union%20Herb%20Lubalin%20Study%20Center%20Brochure%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union/Web/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union%20Herb%20Lubalin%20Study%20Center%20Brochure%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union/Web/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union%20Herb%20Lubalin%20Study%20Center%20Brochure%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union/Web/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union%20Herb%20Lubalin%20Study%20Center%20Brochure%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union/Web/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union%20Herb%20Lubalin%20Study%20Center%20Brochure%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union/Web/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union%20Herb%20Lubalin%20Study%20Center%20Brochure%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union/Web/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union%20Herb%20Lubalin%20Study%20Center%20Envelope.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union/Web/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union%20Herb%20Lubalin%20Study%20Center%20Envelope.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union/Web/Cooper%20Union%20exhibit%20and%20memorial%20ceremony%201996-450.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20Retrospective%20Cooper%20Union/Web/Cooper%20Union%20exhibit%20and%20memorial%20ceremony%201996.jpg"
+                            )
+
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        #### Rand Retrospective
+
+                        Houghton and Lubalin galleries in the Cooper Union Foundation Building, Seventh Street at Third Avenue; (212) 353-4207.
+
+                        An exhibition of packaging, book jackets, advertisements, posters and corporate annual reports and logos by the designer Paul Rand starts tomorrow and continues through Nov. 8. Some items in the exhibition will be on display in the Humanities Gallery in the Engineering Building, 50 Astor Place. Open Monday through Friday, 9 A.M. to 9 P.M.
+
+                        Mr. Rand, who has designed for I.B.M., Westinghouse, El Producto cigars, Direction magazine and U.P.S., will speak about his work tonight at 6:30 in the Great Hall in the Foundation Building. No charge.
+
+                        ---
+
+                        Paul Rand: A PAUL RAND RETROSPECTIVE [Designer, Illustrator, Educator, Author]. New York: The Cooper Union/ Herb Lubalin Study Center of Design and Typography, 1996. Original edition. Accordion-fold brochure printed in 4- over 4-color on uncoated stock. Trace of wear overall. Housed in original mailing envelope addressed to Gene Federico. Design and typography by Paul Rand. A nearly fine example. Rare.
+
+                        4” x 8” exhibition brochure that unfolds to 8 x 30.5 printed via offset lithography for the Herb Lubalin Study Center of Design and Typography at the Cooper Union.  Exhibition brochure published for “A Paul Rand Retrospective” from October 4 to November 8, 1996 at the Arthur A. Houghton Jr. Gallery.
+
+                    //- blockquote
+                        | The outstanding characteristic of the Federicos is that these two graphic artists operate successfully and maintain their artistic integrity in a world which is by and large unsympathetic to artists in general and to the problems involved in their work…
+
+                        br
+                        br
+
+                        | …It is perhaps not amiss in these troubled and troublesome times to note the sociological as well as the cultural contributions of sincere, gifted young artists like the Federicos. They not only seek and affirm a higher standard in the all-important communicative arts but they are in their roles of artists with integrity, are to be numbered among that small but potent minority who strive in an age of increasing “conformism” and mass-produced mediocrity to live and create as individuals, who seek inspiration rather than security in tradition, and who in their work testify to their belief in the creative vitality of the human being. — Paul Rand: “Gene And Helen Federico” in GRAPHIS 43 [Zurich: Graphis Press 1952. Volume 8, No. 43, 1952, pg. 394].
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        The Herb Lubalin Study Center of Design and Typography was established in 1984 in order to preserve an unprecedented resource, Herb Lubalin’s vast collection of work. Its goal was to provide the design community with a means to honor Lubalin, and to study his innovative work.
+
+                        Herb Lubalin (1918–1981) is best known for his wildly illustrative typography and his groundbreaking work for the magazines Avant Garde, Eros, and Fact. The Study Center’s core collection includes an extensive archive of his work, including promotional, editorial and advertising design, typeface designs, posters, logos, and other other materials dating from 1950 to 1980.
+
+                        The collection also includes work by other eminent designers including Otl Aicher, Rudi Baur, Anthon Beeke, Lucian Bernhard, Lester Beall, Will Burtin, Lou Dorfsman, Karl Gerstner, Tibor Kalman, Alvin Lustig, The Push Pin Studios, Paul Rand, Bradbury Thompson, Massimo Vignelli, and many more. There is also a library of books and magazines about design and typography, an extensive collection of posters, myriad type specimen books and pamphlets.
+
+                    .footnote — Randall Ross of modernism101.com
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

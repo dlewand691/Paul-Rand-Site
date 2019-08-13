@@ -1,0 +1,251 @@
+block vars
+doctype html
+html(lang="en")
+    head
+        include _include-head-meta
+        include _include-head-favicons
+
+        //- link(rel='preload stylesheet' as='style' href='/css/app.css')
+        link(type="text/css" rel="stylesheet", href="/css/critical.css" media="screen")
+        link(type="text/css" rel="preload", href="/css/app.css", as="style")
+        link(type="text/css" rel="stylesheet", href="/css/app.css", media="print", onload="this.media='all'")
+
+
+    body(id=bodyID, class=bodyClass)
+        block main-nav
+            mixin navOption(value, text)
+                option(value=value)= text
+            //- =========================================
+                ██   ██ ███████  █████  ██████  ███████ ██████      ███    ██  █████  ██    ██
+                ██   ██ ██      ██   ██ ██   ██ ██      ██   ██     ████   ██ ██   ██ ██    ██
+                ███████ █████   ███████ ██   ██ █████   ██████      ██ ██  ██ ███████ ██    ██
+                ██   ██ ██      ██   ██ ██   ██ ██      ██   ██     ██  ██ ██ ██   ██  ██  ██
+                ██   ██ ███████ ██   ██ ██████  ███████ ██   ██     ██   ████ ██   ██   ████
+            //- =========================================
+            //- ==========  MAIN  ==========
+            a(href="/")
+                img.logo.lazyload(data-src="/img/logo.svg" alt="Paul Rand")
+            header#header.small-mb3
+                a(href="/")
+                    .cd-logo
+                        .nameBlock.hide-for-small-only
+                            .name Paul Rand
+                            .dates 1914-1996
+
+                .cd-main-nav-wrapper
+
+                    //- ===================================================================================
+                        ███    ██  █████  ██    ██      ██████  ███████ ███████
+                        ████   ██ ██   ██ ██    ██     ██    ██ ██      ██
+                        ██ ██  ██ ███████ ██    ██     ██    ██ █████   █████
+                        ██  ██ ██ ██   ██  ██  ██      ██    ██ ██      ██
+                        ██   ████ ██   ██   ████        ██████  ██      ██
+                    //- ===================================================================================
+                    ul.cd-main-nav.moves-out
+                        li
+                            .grid-x.grid-margin-x.expanded.h100.align-middle.align-justify.large-unstack
+                                //- ===================================================================================
+                                //- MAIN NAV LINKS
+                                //- ===================================================================================
+                                .cell.large-shrink.small-mb1.medium-mb1.large-mb0
+                                    a.text-bold-italic.medium-mr1(href='/life/') Life
+                                    a.text-bold-italic.medium-mr1(href='/work/') Work
+                                    a.text-bold-italic.medium-mr1(href='/writing/') Writing
+
+
+                                //- ===================================================================================
+                                //- SECONDARY NAV LINKS
+                                //- ===================================================================================
+                                .cell.large-shrink.small-mb1.medium-mb1.large-mb0.medium-text-left.large-text-right.large-pr3
+                                    //- a.small.text-bold.text-caps.medium-mr1(href='/resources/') Resources
+                                    //- a.small.text-bold.text-caps.medium-mr1(href='/shop/') Shop
+                                    //- a.small.text-bold.text-caps.medium-mr1(href='/news/') News
+                                    a.small.text-bold.text-caps.medium-mr1(href='/contact/') Contact
+
+
+                                    //- ===================================================================================
+                                    //- SEARCH
+                                    //- ===================================================================================
+                                    a.external(data-open="searchModal") 
+                                        svg(viewBox='0 0 24 24', xmlns='http://www.w3.org/2000/svg' width="20" style="position:relative; top: 4px; margin-right: .5rem;")
+                                            path(d='M9 18a8.955 8.955 0 0 0 5.633-1.992l7.658 7.697a1 1 0 1 0 1.418-1.411l-7.668-7.706A8.944 8.944 0 0 0 18 9c0-4.963-4.037-9-9-9S0 4.037 0 9c0 4.962 4.037 9 9 9zM9 2c3.859 0 7 3.14 7 7 0 3.859-3.141 7-7 7-3.86 0-7-3.141-7-7 0-3.86 3.14-7 7-7z' fill="#fff")
+                                            path(fill='none', d='M0 0h24v24H0z')
+
+
+                                    //- ===================================================================================
+                                    //- SEARCH MODAL
+                                    //- ===================================================================================
+                                    #searchModal.full.reveal(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+                                        .grid-x.grid-margin-x.align-middle.h100
+                                            .cell.small-p1.medium-p2.large-p4
+                                                h5 Search
+                                                script.
+                                                    (function() {
+                                                    var cx = '011487101369328532888:kz5jb581cii';
+                                                    var gcse = document.createElement('script');
+                                                    gcse.type = 'text/javascript';
+                                                    gcse.async = true;
+                                                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                                                    var s = document.getElementsByTagName('script')[0];
+                                                    s.parentNode.insertBefore(gcse, s);
+                                                    })();
+                                                gcse:searchbox-only
+
+                                        button.close-button(data-close aria-label="Close reveal", type="button")
+                                            span(aria-hidden="true") &times;
+
+
+                                    a.cd-subnav-trigger.small-mt1.large-m0(href='#0')
+                                        .hide-for-large.text-bold.small.small-pl-half RETURN
+                                        span
+                        li
+                            ul
+
+                                //- ===================================================================================
+                                //- MOBILE NAV BACK
+                                //- ===================================================================================
+                                li.go-back.small.text-bold
+                                    a.small-m0(href='#0') Back
+                                li.small-px-half
+
+                                    //- ===================================================================================
+                                    //- LIFE PRIMARY
+                                    //- ===================================================================================
+                                    .nav-life-off.grid-x.grid-margin-x.expanded.large-unstack.align-middle.large-pr3
+                                        .cell.large-shrink
+                                            h6.text-bold-italic.small-m0.text-white.text-black-large Life
+                                        .cell.large-auto.small-px0
+                                            form
+
+                                                //- ===================================================================================
+                                                //- LIFE SECONDARY
+                                                //- ===================================================================================
+                                                .grid-x.grid-margin-x.large-unstack.align-middle.expanded.small-collapse.large-uncollapse
+                                                    include _include-nav-life
+                                                    include _include-nav-life-books-articles
+                                                    include _include-nav-life-events-exhibits
+                                                    include _include-nav-life-interviews
+                                                    include _include-nav-life-videos
+
+                                        //- ===================================================================================
+                                        //- LIFE GO
+                                        //- ===================================================================================
+                                        .cell.shrink.small-px0
+                                            a.button.small.arrow.text-caps.radius.small-mt1.large-m0.nav-button-life(href="#") Go
+                                        //- .cell.shrink
+
+
+                                    //- ===================================================================================
+                                    //- WORK PRIMARY
+                                    //- ===================================================================================
+                                    .nav-work-off.grid-x.grid-margin-x.expanded.large-unstack.align-middle.large-pr3
+                                        .cell.large-shrink
+                                            h6.text-bold-italic.small-m0.text-white.text-black-large Work
+                                        .cell.large-auto.small-px0
+                                            form
+
+                                                //- ===================================================================================
+                                                //- WORK DROPDOWN
+                                                //- ===================================================================================
+                                                .grid-x.grid-margin-x.large-unstack.align-middle.expanded.small-collapse.large-uncollapse
+                                                    include _include-nav-work
+
+                                        //- ===================================================================================
+                                        //- WORK GO
+                                        //- ===================================================================================
+                                        .cell.shrink.small-px0
+                                            a.button.small.arrow.text-caps.radius.small-mt1.large-m0.nav-button-work(href="#") Go
+                                        //- .cell.shrink
+
+
+                                    //- ===================================================================================
+                                    //- WRITING PRIMARY
+                                    //- ===================================================================================
+                                    .nav-writing-off.grid-x.grid-margin-x.expanded.large-unstack.align-middle.large-pr3
+                                        .cell.large-shrink
+                                            h6.text-bold-italic.small-m0.text-white.text-black-large Writing
+                                        .cell.large-auto.small-px0
+                                            form
+
+                                                //- ===================================================================================
+                                                //- WRITING SECONDARY
+                                                //- ===================================================================================
+                                                .grid-x.grid-margin-x.large-unstack.align-middle.expanded.small-collapse.large-uncollapse
+                                                    include _include-nav-writing
+                                                    include _include-nav-writing-books
+                                                    include _include-nav-writing-articles
+                                                    include _include-nav-writing-suggested-readings
+
+                                        //- ===================================================================================
+                                        //- WRITING GO
+                                        //- ===================================================================================
+                                        .cell.shrink.small-px0
+                                            a.button.small.arrow.text-caps.radius.small-mt1.large-m0.nav-button-writing(href="#") Go
+                                        //- .cell.shrink
+
+
+                //- ===================================================================================
+                //- ███    ██  █████  ██    ██     ████████ ██████  ██  ██████   ██████  ███████ ██████
+                //- ████   ██ ██   ██ ██    ██        ██    ██   ██ ██ ██       ██       ██      ██   ██
+                //- ██ ██  ██ ███████ ██    ██        ██    ██████  ██ ██   ███ ██   ███ █████   ██████
+                //- ██  ██ ██ ██   ██  ██  ██         ██    ██   ██ ██ ██    ██ ██    ██ ██      ██   ██
+                //- ██   ████ ██   ██   ████          ██    ██   ██ ██  ██████   ██████  ███████ ██   ██
+                //- ===================================================================================
+                a.cd-nav-trigger(href='#')
+                    //- | Menu
+                    span
+            //- -----  End of HEADER NAVIGATION  ------
+
+
+
+        //- =========================================================================
+        //- ██████   ██████  ██████  ██    ██
+        //- ██   ██ ██    ██ ██   ██  ██  ██
+        //- ██████  ██    ██ ██   ██   ████
+        //- ██   ██ ██    ██ ██   ██    ██
+        //- ██████   ██████  ██████     ██
+        //- =========================================================================
+
+        block main-content
+            h1 This is the default layout
+
+
+
+        //- -----  End of BODY  ------------------------------------------------------
+
+        //- =========================================================================
+        //- ███████  ██████   ██████  ████████ ███████ ██████
+        //- ██      ██    ██ ██    ██    ██    ██      ██   ██
+        //- █████   ██    ██ ██    ██    ██    █████   ██████
+        //- ██      ██    ██ ██    ██    ██    ██      ██   ██
+        //- ██       ██████   ██████     ██    ███████ ██   ██
+        //- =========================================================================
+        block foot
+            include _include-footer.pug
+        //- -----  End of FOOTER --------------------------------------------------
+
+
+
+
+
+
+
+        script(src='/js/min/app-min.js')
+
+
+        //- =========================================================================
+        //- =            GOOGLE ANALYTICS            =
+        //- =========================================================================
+        // Global site tag (gtag.js) - Google Analytics
+        script(async src="https://www.googletagmanager.com/gtag/js?id=UA-67816512-1")
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-67816512-1');
+
+
+        //- =============================================================================================
+        //- INSTANT.PAGE PLUGIN
+        //- =============================================================================================
+        script(src="//instant.page/1.2.2", type="module", integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU")

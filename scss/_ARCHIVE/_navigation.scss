@@ -1,0 +1,698 @@
+/*==============================================================================================
+=			/*
+███    ██  █████  ██    ██
+████   ██ ██   ██ ██    ██
+██ ██  ██ ███████ ██    ██
+██  ██ ██ ██   ██  ██  ██
+██   ████ ██   ██   ████
+*/
+// ==================================================================================================*/
+@include breakpoint(medium down) {
+	#nav-button,
+	.cd-main-nav ul li {
+		display: block !important;
+	}
+};
+
+.nav-life-off,
+.nav-resources-off,
+.nav-work-off,
+.nav-writing-off {
+	display: none;
+}
+@include breakpoint(large up) {
+	.nav-work-off form,
+	.nav-work-on form {
+		// width: 83% !important;
+		// min-width: 83% !important;
+		// max-width: 83% !important;
+	}
+}
+
+.nav-life-on,
+.nav-resources-on,
+.nav-work-on,
+.nav-writing-on {
+	select {
+		// width: 220px;
+	}
+
+	h3 {
+		color: $white;
+	}
+
+	label {
+		text-transform: uppercase;
+		font-style    : italic;
+		color         : lighten($black, 50%);
+	}
+	@include breakpoint(large up) {
+		height        : 60px;
+		display       : flex;
+		flex-direction: row;
+		align-content : center;
+		align-items   : center;
+
+		h3 {
+			color: $black;
+		}
+
+		select {
+			// padding: 0 5px;
+			// width  : 240px;
+		}
+	}
+}
+
+form.nav-form fieldset {
+	@extend .mr1;
+	@extend .w100;
+}
+@include breakpoint(medium down) {
+	form.nav-form {
+		// display: block !important;
+	}
+};
+
+/*============================================
+=
+/*
+███████ ███████  ██████  ██████  ███    ██ ██████   █████  ██████  ██    ██
+██      ██      ██      ██    ██ ████   ██ ██   ██ ██   ██ ██   ██  ██  ██
+███████ █████   ██      ██    ██ ██ ██  ██ ██   ██ ███████ ██████    ████
+     ██ ██      ██      ██    ██ ██  ██ ██ ██   ██ ██   ██ ██   ██    ██
+███████ ███████  ██████  ██████  ██   ████ ██████  ██   ██ ██   ██    ██
+*/
+
+/*
+███    ██  █████  ██    ██ ██  ██████   █████  ████████ ██  ██████  ███    ██
+████   ██ ██   ██ ██    ██ ██ ██       ██   ██    ██    ██ ██    ██ ████   ██
+██ ██  ██ ███████ ██    ██ ██ ██   ███ ███████    ██    ██ ██    ██ ██ ██  ██
+██  ██ ██ ██   ██  ██  ██  ██ ██    ██ ██   ██    ██    ██ ██    ██ ██  ██ ██
+██   ████ ██   ██   ████   ██  ██████  ██   ██    ██    ██  ██████  ██   ████
+*/
+// ============================================*/
+@import "../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss"; // http://bourbon.io/
+
+// breakpoints
+
+$S: 0;
+$M: 640px;
+$L: 1024px;
+
+// media queries
+@mixin MQ($canvas) {
+	 @if $canvas == S{
+		@media only screen and (min-width: $S) {
+			 @content;
+		}
+	}
+	@else if $canvas == M {
+		 @media only screen and (min-width: $M){
+			@content;
+		}
+	}
+	@else if $canvas == L {
+		 @media only screen and (min-width: $L){
+			@content;
+		}
+	}
+}
+
+// antialiasing mode font rendering
+
+// @mixin font-smoothing {
+// 	-webkit-font-smoothing : antialiased;
+// 	-moz-osx-font-smoothing: grayscale;
+// }
+
+header {
+	position        : fixed;
+	z-index         : 10;
+	height          : 50px;
+	width           : 100%;
+	top             : 0;
+	left            : 0;
+	background-color: $red;
+	margin-bottom   : 4rem;
+	will-change     : transform;
+
+	/* Force Hardware Acceleration */
+	@include transform(translateZ(0));
+	@include backface-visibility(hidden);
+	@include transition(transform 0.3s);
+
+	&.nav-is-visible {
+		@include transform(translateX(-70%));
+	}
+
+	&::before {
+		/* never visible - this is used in jQuery to check the current MQ */
+		display: none;
+		content: 'mobile';
+	}
+	@include MQ(L) {
+		height: 60px;
+
+		&.nav-revealed {
+			transform : translateY(-70px);
+			box-shadow: 0 5px 50px rgba($black, 0.1);
+		}
+
+		&::before {
+			content: 'desktop';
+		}
+	}
+}
+
+/*==========  DYNAMICALLY ADDED CLASSES TO TRIGGER SCROLL HIDE/SHOW ANIMATIONS  ==========*/
+.nav-up {
+	transform  : translateY(-70px);
+	position   : fixed;
+	will-change: transform;
+	transition : transform 200ms ease-out 0.5s;
+}
+
+.nav-down {
+	box-shadow: 0 5px 50px rgba($black, 0.1);
+	transform : translateY(0px);
+	transition: transform 200ms ease-out;
+}
+
+.cd-logo {
+	display: inline-block;
+	height : 100%;
+
+	/* remove jump on iOS devices - when we fire the navigation */
+	@include transform(translateZ(0));
+	@include backface-visibility(hidden);
+
+	img {
+		display  : block;
+		max-width: 100%;
+	}
+	@include MQ(L) {
+		position: absolute;
+		z-index : 2;
+
+		img {}
+	}
+}
+
+/*==========  NAV TOGGLE BLOCK  ==========*/
+.cd-nav-trigger {
+	display         : block;
+	position        : absolute;
+	right           : 0;
+	top             : 0;
+	height          : 100%;
+	width           : 50px;
+
+	/* hide text */
+	overflow        : hidden;
+	white-space     : nowrap;
+	color           : transparent;
+	text-shadow     : none;
+	background-image: none;
+
+	/*==========  hamburger icon created in CSS  ==========*/
+	span {
+		position        : absolute;
+		height          : 4px;
+		width           : 30px;
+		top             : 50%;
+		margin-top      : -4px;
+		left            : 50%;
+		margin-left     : -20px;
+		background-color: $white;
+		@include transition(background-color 0.3s 0.3s);
+
+		/*==========  upper and lower lines of the menu icon  ==========*/
+		&::after,
+		&::before {
+			content         : '';
+			position        : absolute;
+			width           : 100%;
+			height          : 100%;
+			background-color: $white;
+
+			/*==========  Force Hardware Acceleration  ==========*/
+			@include transform(translateZ(0));
+			@include backface-visibility(hidden);
+			@include transition(transform 0.3s 0.3s);
+		}
+
+		&::before {
+			@include transform(translateY(-8px));
+		}
+
+		&::after {
+			@include transform(translateY(8px));
+		}
+	}
+
+	.nav-is-visible & span {
+		background-color: transparent;
+
+		&::before {
+			@include transform(translateY(0) rotate(-45deg));
+		}
+
+		&::after {
+			@include transform(translateY(0) rotate(45deg));
+		}
+	}
+	@include MQ(L) {
+		display: none;
+	}
+}
+
+/*==========  /*
+███    ███  █████  ██ ███    ██     ███    ██  █████  ██    ██     ██████   ██████  ██████  ██    ██
+████  ████ ██   ██ ██ ████   ██     ████   ██ ██   ██ ██    ██     ██   ██ ██    ██ ██   ██  ██  ██
+██ ████ ██ ███████ ██ ██ ██  ██     ██ ██  ██ ███████ ██    ██     ██████  ██    ██ ██   ██   ████
+██  ██  ██ ██   ██ ██ ██  ██ ██     ██  ██ ██ ██   ██  ██  ██      ██   ██ ██    ██ ██   ██    ██
+██      ██ ██   ██ ██ ██   ████     ██   ████ ██   ██   ████       ██████   ██████  ██████     ██
+*/
+// ==========*/
+.cd-main-nav {
+	position                  : fixed;
+	z-index                   : 1;
+	top                       : 0;
+	right                     : 0;
+	width                     : 70%;
+	height                    : 200vh;
+	-webkit-overflow-scrolling: touch;
+	visibility                : hidden;
+	background                : $black;
+	will-change               : transform;
+	@include transition(visibility 0s 0.3s);
+
+	a {
+		display         : block;
+		font-size       : 1rem;
+		font-family     : $font-family-sans-serif;
+		font-weight     : 700;
+		padding         : 0.8em 1em;
+		color           : $white;
+		text-shadow     : none;
+		background-image: none;
+		@include transition(transform 0.3s, opacity 0.3s);
+	}
+
+	ul {
+		margin: 0 !important;
+	}
+
+	li {
+		list-style-type: none;
+	}
+
+	li.left-section a,
+	li.right-section a {
+		// vertical-align: middle;
+		font: {
+			size  : 18px;
+			weight: 900;
+		}
+	}
+
+	li ul {
+		position       : absolute;
+		top            : 0;
+		left           : 0;
+		width          : 100%;
+		list-style-type: none;
+		margin         : 0;
+		padding        : 0 1em;
+		@include transition(transform 0.3s);
+		@include transform(translateX(100%));
+	}
+
+	&.nav-is-visible {
+		visibility: visible;
+		@include transition(visibility 0s 0s);
+	}
+
+	&.moves-out > li > a {
+		/* push the navigation items to the left - and lower down opacity - when secondary nav slides in */
+		@include transform(translateX(-100%));
+		opacity: 0;
+	}
+
+	&.moves-out > li > ul {
+		@include transform(translateX(0));
+	}
+
+	select {
+		margin       : 0;
+		font-family  : $font-family-sans-serif;
+		font-size    : 14px;
+		border       : 2px solid $black;
+		max-width    : 350px;
+		text-overflow: ellipsis;
+		padding-right: 40px;
+
+		& + button {
+			position: absolute;
+			top     : 18px;
+		}
+	}
+
+	h5 {
+		color: $white;
+	}
+
+	/*==========  Arrow at the bottom of the off-canvas nav  ==========*/
+	.cd-subnav-trigger,
+	.go-back a {
+		position  : relative;
+		color     : $white;
+		background: $red;
+
+		&::after,
+		&::before {
+			/* arrow icon in CSS */
+			content   : '';
+			position  : absolute;
+			top       : 14px;
+			display   : inline-block;
+			height    : 2px;
+			width     : 10px;
+			background: $white;
+			@include backface-visibility(hidden);
+		}
+
+		&::before {
+			@include transform(rotate(45deg));
+		}
+
+		&::after {
+			@include transform(rotate(-45deg));
+		}
+	}
+
+	.cd-subnav-trigger::after,
+	.cd-subnav-trigger::before {
+		/* arrow goes on the right side - children navigation */
+		right: 20px;
+		@include transform-origin(9px 50%);
+	}
+
+	/*==========  Arrow at the top of the off-canvas menu  ==========*/
+
+	.go-back a {
+		padding       : 16px 0 0 20px;
+		font-family   : $font-family-sans-serif;
+		text-transform: uppercase;
+		font-size     : 12px;
+		margin-bottom : 2rem;
+		background    : $black;
+
+		&::after,
+		&::before {
+			/* arrow goes on the left side - go back button */
+			background: $red;
+			left      : 0;
+			top       : 26px;
+			@include transform-origin(1px 50%);
+		}
+	}
+
+	.placeholder {
+		/* never visible or clickable- it is used to take up the same space as the .cd-subnav-trigger */
+		display: none;
+	}
+	@include MQ(L) {
+		position   : fixed;
+		visibility : visible;
+		width      : 100%;
+		height     : 60px;
+		line-height: 60px;
+		padding    : 0 0 0 195px;
+		background : transparent;
+		text-align : left;
+		box-shadow : none;
+		will-change: transform;
+
+		li {
+			display: inline-block;
+			// padding: 0 0.4em;
+		}
+
+		h5 {
+			color: $black;
+		}
+
+		li a {
+			display            : inline-block;
+			padding            : 0.6em;
+			line-height        : 1;
+			font-size          : 1rem;
+			border-bottom      : none;
+			color              : $white;
+			background-position: 0 110%;
+
+			/* Prevent .cd-subnav-trigger flicker is Safari */
+			@include transform(translateZ(0));
+			@include backface-visibility(hidden);
+			@include transition(opacity 0.2s, background-position 0.2s);
+		}
+
+		li a:not(.cd-subnav-trigger):hover {
+			@include backface-visibility(hidden);
+			text-decoration    : none;
+			text-shadow        : 3px 0 0 $red, -3px 0 0 $red;
+			background-image   : linear-gradient(to right, rgba($white, 0.25) 0%, rgba($white, 0.25) 100%);
+			background-repeat  : repeat-x;
+			background-position: 0 90%;
+			background-size    : 100% 1px;
+		}
+
+		/*==========  SUB NAV RIGHT SECTION  ==========*/
+		.right-section {
+			text-align: right;
+			float     : right;
+		}
+
+		.left-section {
+			text-align: left;
+			float     : left;
+		}
+
+		.go-back {
+			display: none;
+		}
+
+		/*==========  X and DOWN ARROW BLOCK  ==========*/
+		.cd-subnav-trigger {
+			@include transition(border 0.3s);
+			z-index      : 1;
+			border-radius: $global-radius;
+			background   : darken($red, 10%);
+			margin-left  : 1.5em;
+			position     : relative;
+			right        : 12px;
+			top          : 12px;
+
+			&:hover {
+				background: darken($red, 30%);
+			}
+
+			/*==========  DOWN ARROW- RIGHT SIDE  ==========*/
+			&::after,
+			&::before {
+				top             : 17px;
+				right           : 10px;
+				background-color: $white;
+				/* change transform-origin to rotate the arrow */
+				@include transform-origin(50% 50%);
+				@include transition(transform 0.3s, width 0.3s, right 0.3s);
+			}
+
+			/*==========  DOWN ARROW- LEFT SIDE  ==========*/
+			&::before {
+				// right: 23px;
+				right: 16px;
+			}
+		}
+
+		.cd-subnav-trigger,
+		.placeholder {
+			padding: 1em;
+		}
+
+		li ul {
+			height          : 60px;
+			background-color: $white;
+			margin          : 0;
+			padding         : 0 0 0 185px;
+			@include transform(translateY(-105px));
+			@include transition(transform 0.3s 0.2s);
+		}
+
+		li ul li {
+			opacity     : 0;
+			padding-left: 1em;
+			@include transform(translateY(-20px));
+			@include transition(transform 0.3s 0s, opacity 0.3s 0s);
+		}
+
+		.placeholder {
+			/* never visible or clickable- it is used to take up the same space as the .cd-subnav-trigger */
+			display      : block;
+			visibility   : hidden;
+			opacity      : 0;
+			pointer-event: none;
+		}
+
+		&.moves-out > li > a {
+			@include transform(translateX(0));
+			opacity: 1;
+		}
+
+		&.moves-out > li > ul {
+			@include transition(transform 0.3s);
+			@include transform(translateY(0));
+		}
+
+		&.moves-out > li ul li {
+			opacity: 1;
+			@include transform(translateY(0));
+			@include transition(transform 0.3s 0.2s, opacity 0.3s 0.2s);
+		}
+
+		&.moves-out .cd-subnav-trigger {
+			///*==========   MENU "X" POSITION  ==========*/
+			&::after,
+			&::before {
+				width: 12px;
+				right: 12px;
+				top  : 17px;
+			}
+
+			&::before {
+				@include transform(rotate(225deg));
+			}
+
+			&::after {
+				@include transform(rotate(135deg));
+			}
+		}
+	}
+}
+
+.cd-main-content::before {
+	/* never visible - this is used in jQuery to check the current MQ */
+	display: none;
+	content: 'mobile';
+	@include MQ(L) {
+		content: 'desktop';
+	}
+}
+
+/*==========  BODY AREA  ==========*/
+.cd-main-content {
+	// @include set-container;
+	position        : relative;
+	z-index         : 4;
+	min-height      : 100vh;
+	// margin-top      : 3rem;
+	padding-top     : 4rem;
+	padding-bottom  : 40px;
+	overflow        : hidden;
+	@include transition(transform 0.3s);
+	background-color: $white;
+	// background: linear-gradient(180deg,rgba(244,48,48,.6) 1px,transparent 0,transparent 0px),linear-gradient(90deg,transparent 0,transparent 9px,rgba(244,48,48,.1) 0,rgba(244,48,48,.1) 10px,transparent 0,transparent 0px)$white;
+	// background-repeat: repeat;
+	// background-position: top;
+	// background-size: 20px 22px;
+
+	&.nav-is-visible {
+		@include transform(translateX(-70%));
+	}
+	@include MQ(M) {
+		padding-top  : 5rem;
+		margin-bottom: 420px;
+
+		&.nav-is-visible {
+			@include transform(translateX(-70%));
+		}
+	}
+	@include MQ(L) {
+		padding-top  : 6rem;
+		margin-bottom: 420px;
+
+		&.nav-is-visible {
+			@include transform(translateX(0));
+		}
+	}
+}
+
+.no-js .cd-nav-trigger,
+.no-js .cd-subnav-trigger {
+	display: none;
+}
+
+.no-js header {
+	position: relative;
+	height  : auto;
+}
+
+.no-js .cd-logo img {
+	margin-bottom: 14px;
+}
+
+.no-js .cd-main-nav {
+	position  : static;
+	width     : 100%;
+	height    : auto;
+	visibility: visible;
+	overflow  : visible;
+
+	li {
+		display: inline-block;
+
+		&:last-child {
+			display: block;
+		}
+	}
+
+	.go-back {
+		display: none;
+	}
+
+	li ul {
+		position: static;
+		width   : 100%;
+		@include transform(translateX(0));
+	}
+	@include MQ(L) {
+		height: 60px;
+
+		li ul {
+			position: absolute;
+			top     : 60px;
+		}
+
+		li ul li {
+			@include transform(translateY(0));
+			opacity: 1;
+
+			&:last-child {
+				display: none;
+			}
+		}
+	}
+}
+
+.no-js .cd-main-content {
+	padding-top: 0;
+	@include MQ(L) {
+		padding-top: 60px;
+	}
+}
+
+/*-----  End of SECONDARY NAVIGATION  ------*/
+
+/*-----  End of NAV  ------------------------------------------------------------------*/

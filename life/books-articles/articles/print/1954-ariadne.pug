@@ -1,0 +1,140 @@
+extends ../../../../__MIXINS/_layout-default.pug
+include ../../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Reactions to the R.C.A. ad'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Ariadne/Web/Ariadne%201954%2C%20February%2001-450.jpg'
+
+    - var articleAuthor         = 'Robert Kiek'
+    - var publishedInTitle      = 'Ariadne'
+    - var publishedInSubtitle   = 'February, 1954'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Ariadne/Web/Ariadne%201954%2C%20February%2001-800.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Ariadne/Web/Ariadne%201954%2C%20February%2001.jpg', title: ''})
+    - var library               = 'no'
+    - var libraryLink           = 'CHANGE_ME'
+    - var abe                   = 'no'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=https%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3Dariadne%2520february%25201954%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'no'
+    - var amazonLink            = 'CHANGE_ME'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Industrial Design 6'
+    - var nextDate              = 'December, 1954'
+    - var nextDescription       = '5 Designers for Under Five Dollars: Raymond Loewy, Paul Rand, Eliot Noyes, Milton Immermann and Saul Steinberg'
+    - var nextLink              = '/life/books-articles/articles/print/1954-industrial-design.html'
+
+    - var relatedItemLink1      = '/life/books-articles/articles/print/1984-idea-magazine.html'
+    - var relatedItemTitle1     = 'Fiddler of Yankee Feeling'
+    - var relatedItemFootnote1  = 'Special Issue: 30 Influential Designers of the Century, 1984'
+
+    - var relatedItemLink2      = '/life/books-articles/articles/print/1999-baseline-magazine.html'
+    - var relatedItemTitle2     = 'Paul Rand’s Laboratory: The Art of Books Jackets and Covers'
+    - var relatedItemFootnote2  = 'Baseline Magazine'
+
+    - var relatedItemLink3      = '/life/books-articles/articles/print/1989-connecticuts-finest.html'
+    - var relatedItemTitle3     = 'The Graphic Genius of Paul Rand'
+    - var relatedItemFootnote3  = 'Connecticut’s Finest, Whittle Communications, Winter 1989'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Ariadne/Web/Ariadne%201954%2C%20February%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Ariadne/Web/Ariadne%201954%2C%20February%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Ariadne/Web/Ariadne%201954%2C%20February%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1954%20Ariadne/Web/Ariadne%201954%2C%20February%2002.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            p.reveal-enter-bottom!= publishedInTitle
+                br
+                != publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    != publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content#original-article
+                    //- :markdown-it(html typographer plugins=['markdown-it-sup'])
+                    //-     INTRO
+                    //- 
+                    //- 
+                    //- 
+                    //- hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            **Original text:**
+
+                            (Van onze correspondent te New York. Robert Kiek)
+
+                            Een dag nadat de Radio Corporation of America voor de pers de waarlijk sensationele ontwikkeling van de atoombatterij ten doop had gehouden, verscheen deze advertentic op de achterpagina van de N. Y. Times.
+
+                            Het gesprek van de dag in trein en ondergrondse, bus en lunchclub was uiteraard: „Wat is de bedoeling van dit alles?"
+
+                            Iedereen die maar over een encyclopaedie beschikte kon naslaan dat de puntenen strepen-code de initialen van R.C.A. vertegenwoordigde. De namen van de figuren in de top echelon van de bedrijfsleiding van R.C.A. zijn eveneens alom bekend, m.a.w. het advertentiebureau William C. Weintraub & Co. Inc. richtte zich via de pers tot 31 bedrijfsleiders om de aandacht te vragen voor een presentatie van dit advertentie-bureau, dat kennelijk tot dusver nog geen zaken met R.C.A. heft kunnen doen.
+
+                            Wij behoorden tot de 334 perslieden, die de firma Weintraub belden om nadere inlichtingen te verkrijgen over de „belangrijke boodschap" die men inmiddels aan de 31 had gezonden. De firma Weintraub beloofde ons het mysteric te onthullen, zodra deze boodschap zijn effect had gesorteerd.
+
+                            Ook al zou dit niet het geval zijn, dit ontwerp van Paul Rand, die kennelijk de concessie had verworven als schepper van de idee de advertentie te mogen signeren, zal dit bureau vast geen kwaad doen.
+
+                            **Translate by Google:**
+
+                            (From our correspondent in New York, Robert Kiek)
+
+                            A day after the Radio Corporation of America had celebrated the truly sensational development of the atomic battery for the press, this adverticic appeared on the back page of the N. Y. Times.
+
+                            The conversation of the day in train and underground, bus and lunch club was of course: "What is the purpose of all this?"
+
+                            Anyone with an encyclopedia could check that the dots and stripes code the initials of R.C.A. represented. The names of the figures in the top echelon of the management of R.C.A. are also widely known, i.e. the advertising agency William C. Weintraub & Co. Inc. focused through the press to 31 business leaders to call attention to a presentation of this advertising agency, which apparently so far no business with R.C.A. can do.
+
+                            We were among the 334 pressmen who called Weintraub to obtain further information about the "important message" that had been sent to the 31. Weintraub promised to reveal the mystery as soon as this message had its effect sorted .
+
+                            Even if this were not the case, this design by Paul Rand, who had apparently acquired the concession as the creator of the idea to sign the advertisement, will certainly do no harm to this agency.plex
+            //- /*-----  End of BODY  ------*/
+
+
+
+
+
+        include ../../../../__MIXINS/_include-image-carousel.pug
+
+        //- include ../../../../__MIXINS/_include-published-in.pug
+
+        include ../../../../__MIXINS/_include-next-item.pug
+
+        include ../../../../__MIXINS/_include-social-media.pug

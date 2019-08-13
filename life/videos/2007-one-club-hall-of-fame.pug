@@ -1,0 +1,101 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Induction to the One Club Hall Of Fame'
+    - var bodyID    = 'life'
+    - var bodyClass = 'videos'
+
+block main-content
+    - var nextType             = 'Video'
+    - var nextTitle            = 'Paul Rand Lecture Series'
+    - var nextDate             = '2008'
+    - var nextDescription      = 'Presented by the School of Visual Arts, MFA Designer as Author: Paul Rand Lecture Series'
+    - var nextLink             = '/life/videos/2008-paul-rand-lecture-series.html'
+
+    - var relatedItemLink1     = '/life/videos/1996-conversations-with-paul-rand.html'
+    - var relatedItemTitle1    = 'Conversations with Paul Rand'
+    - var relatedItemFootnote1 = 'A Film by Preston McClanahan'
+
+    - var relatedItemLink2     = '/life/videos-interviews/interviews/1990-Paul-Rand-on-the-Play-Instinct.html'
+    - var relatedItemTitle2    = 'Paul Rand on the Play Instinct'
+    - var relatedItemFootnote2 = 'From Mildred Friedman’s “Graphic Design In America: A Visual Language History”, 1989'
+
+    - var relatedItemLink3     = '/life/videos/2006-john-stossel.html'
+    - var relatedItemTitle3    = 'John Stossel comments on Graphic Design'
+    - var relatedItemFootnote3 = 'This video provided courtesy of kenfrederick on YouTube'
+
+
+    //- =============================
+    //- =            VIDEO            =
+    //- =============================
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                //- ==========  TITLE  ==========
+
+                .large-8.medium-11.cell
+                    .grid-x.grid-margin-x
+                        .large-12.cell.text-center
+                            h1= pageTitle
+                            p.text-gray.t16: em 2007
+
+                            br
+                            p This video provided courtesy of 
+                                a(href="//www.youtube.com/channel/UCRZhFVrZMhfcmlepIA55igg" target="_blank" rel=noopener) OC Archive 
+                                | on YouTube.
+
+            //- ==========  VIDEO  ==========
+            .grid-x.grid-margin-x.align-center
+                .large-12.cell
+                    .small-mb3
+                        div.plyr-js(data-plyr-embed-id="rlxT5idTG6A" data-plyr-provider="youtube")
+
+                    //- .flex-video
+                    //-     iframe(src="//www.youtube.com/embed/rlxT5idTG6A" frameborder="0" allowfullscreen)
+
+            //- ==========  BODY  ==========
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-9.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        On October 17, 2007, a black tie gala at The Metropolitan Club in New York City hosted advertising’s most prominent figures for the induction of three of advertising‘s greatest legends–Phil Dusenberry, Tim Delaney and the late Paul Rand (1914–1996), into The One Club’s Creative Hall of Fame.
+
+                        As part of the induction, Imaginary Forces created a four-minute film capturing some of Rand’s best work in design and design thinking by animating a mix of logos and layouts set to music, along with the words from a 1997 interview titled **_“Conversations with Paul Rand”_**.
+
+                        The on-camera interview, in which he talked about the essence of graphic design and its similarities to fine art, were visually manipulated and re-mixed by I.F.’s creative team on the project, and directed Mark Gardner.
+
+                    blockquote “The brief the One Club gave us was wide open,” Gardner explains. “They wanted a film that would sum up his philosophy, personality and work.”
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        “We needed to get across a sense of who he was, not just the work he’d produced,” Gardner explains about the creative approach I.F. took. “That’s why we decided to use his image and voiceover rather than tape interviews with other people talking about him. Also, as he never produced any film or animation on his own, we needed to bring the work to life for the context in which it would be shown. We knew the style of work lent itself to very simple and humorous animation and transitions, and this fitted perfectly with the rhythmic jazz soundtrack we chose.”
+
+                        The short was produced for I.F. by Cara McKenney and executive produced by Maribeth Phillips. Additional I.F. credits go to designer/animators Joey Salim, Jeremy Cox and Liz Centolella and animators Andrew Chung, Sean Eno and Chase Massingill. Edited by I.F.’s Corey Weisz, and sound design by Derek Lee.
+
+                        Paul’s widow Marion was also in attendance, as well as other close friends such as Mario Rampone, George Lois and Bob Burns.
+
+                    figure.w50.horizontal-center(data-sr="enter bottom" data-chocolat-title="George Lois and Marion Rand")
+                        a(href="/life/img/george-lois-and-marion-rand.jpg")
+                            img(src="/img/loading.gif" data-src="/life/img/george-lois-and-marion-rand.jpg")
+                        figcaption George Lois and Marion Rand
+                        img.icon-zoom-boxed(data-src="/img/icon-zoom-boxed.svg" width="40" height="40")
+
+                    hrx
+
+                    h5 Other related links to the event
+
+                    ul
+                        li
+                            a(href="http://www.oneclub.org/oc/press/?id=80" target="_blank" rel=noopener) One Club press release
+                        li
+                            a(href="http://www.paul-rand.com/foundation/thoughts_hallofFame/Real%20Mad%20Men%20Get%20Their%20Due%20At%20One%20Club%20Hall%20of%20Fame%20Induction" target="_blank" rel=noopener) Adrants.com: Real Mad Men Get Their Due At One Club Hall of Fame Induction
+                        li
+                            a(href="http://www.howdesign.com/blog/Paul+Rand+Inducted+Into+Creative+Hall+Of+Fame.aspx" target="_blank" rel=noopener) HOW blog
+
+
+                //- /*-----  End of BODY  ------*/
+
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug

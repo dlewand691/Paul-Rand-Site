@@ -1,0 +1,18 @@
+//- ==================================
+//- =			VIEW ORIGINAL			=
+//- ==================================
+hr.w33.horizontal-center.my3.hr-red#original-article
+.row
+	.large-10.medium-10.small-11.columns.medium-text-left.small-text-center
+		p.text-center.text-caps.text-bold.m0.md-m0: small The original article
+			.footnote.text-center Click for larger view
+		.owl-carousel.owl-theme#owl-carousel-original-article.chocolat-parent(data-chocolat-title="#{pageTitle}, #{publishedInTitle}")
+			-each original in originalImages
+				a.chocolat-image(href="#{original.link}" title="#{original.title}")
+					img(src="#{original.link}")
+
+.row
+	.small-12.columns.text-center
+		p.footnote (Use &larr; &rarr; keys to navigate. Click for larger view.)
+
+//- /*-----  End of VIEW ORIGINAL  ------*/

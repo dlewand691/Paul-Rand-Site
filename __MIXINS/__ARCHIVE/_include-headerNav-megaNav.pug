@@ -1,0 +1,634 @@
+nav.top-bar(data-topbar='', role='navigation')
+	ul.title-area
+		li.name
+			a(href="index.html")
+				img.left(src="img/logo.svg" width="70" height="70" style="position: fixed;z-index:100")
+
+		li.toggle-topbar.menu-icon
+			a(href='#')
+				span
+	section.top-bar-section
+		ul.left
+			//- li.divider
+			li(style="width: 190px;")
+				.nameBlock.hide-for-small(style="position: relative;left:70px")
+					.name(style="height: auto") Paul Rand
+					.dates 1914-1996
+			li.has-dropdown
+				a(href='#'): em Life
+				ul.dropdown
+					li: a(href="#") Biography and Timeline
+					li.has-dropdown
+						a(href="#") Articles and Books about Paul Rand
+						ul.dropdown
+							li.p2
+								fieldset#select-writing-books
+									//- label Choose a book...
+									select
+										option(value='') Choose a article...
+										option(value='books') This…Is the Stafford Stallion
+										option(value='books') Thoughts on Design
+										option(value='books') Trademark Design
+										option(value='books') I Know a Lot of Things
+										option(value='books') Sparkle and Spin
+										option(value='books') The Trademarks of Paul Rand — A Selection
+										option(value='books') Little 1
+										option(value='books') Listen! Listen!
+										option(value='books') A Paul Rand Miscellany
+										option(value='books') A Designer’s Art
+										option(value='books') Good Design is Good Will
+										option(value='books') Some Thoughts Some Logos
+										option(value='books') Some Thoughts… and Some Tribulations about the Design of a Logo
+										option(value='books') From Cassandre to Chaos
+										option(value='books') Failure by Design
+										option(value='books') Design Form and Chaos
+										option(value='books') From Lascaux to Brooklyn
+
+									button.tiny.text-caps.radius.ml1.hide#select-writing-books-button(href="#") Go
+								
+								p.footnote.my1.text-center OR 
+
+								fieldset#select-writing-books
+									//- label Choose a book...
+									select
+										option(value='') Choose a book...
+										option(value='books') This…Is the Stafford Stallion
+										option(value='books') Thoughts on Design
+										option(value='books') Trademark Design
+										option(value='books') I Know a Lot of Things
+										option(value='books') Sparkle and Spin
+										option(value='books') The Trademarks of Paul Rand — A Selection
+										option(value='books') Little 1
+										option(value='books') Listen! Listen!
+										option(value='books') A Paul Rand Miscellany
+										option(value='books') A Designer’s Art
+										option(value='books') Good Design is Good Will
+										option(value='books') Some Thoughts Some Logos
+										option(value='books') Some Thoughts… and Some Tribulations about the Design of a Logo
+										option(value='books') From Cassandre to Chaos
+										option(value='books') Failure by Design
+										option(value='books') Design Form and Chaos
+										option(value='books') From Lascaux to Brooklyn
+
+					li: a(href="#") Portraits
+					li: a(href="#") The Rand House
+					li: a(href="#") Personal Items
+					li.has-dropdown
+						a(href="#") Inspirations
+						ul.dropdown
+							li: a(href="#") Inspiration
+							li: a(href="#") Inspiration
+							li: a(href="#") Inspiration
+							li: a(href="#") Inspiration
+							li: a(href="#") Inspiration
+							li: a(href="#") Inspiration
+							li: a(href="#") Inspiration
+							li: a(href="#") Inspiration
+								
+
+			//- li.divider
+			li.has-dropdown
+				a(href='#'): em Work
+				ul.dropdown
+					li.has-dropdown
+						a(href="#") View by Client
+						ul.dropdown
+							li.p2
+								form.controls#Filters
+									fieldset.mr2.float-left.text-left
+										//- label Client
+										select.left#select-work-client
+											option(value='') Select a Client
+											optgroup(label="A")
+												option(value='.AdvertisingTypographersAssociationofAmerica') Advertising Typographers Association of America- Type Talks
+												option(value='.AIGA') AIGA
+												option(value='.Airwick') Airwick
+												option(value='.AmericanAdvertisingGuild') American Advertising Guild
+												option(value='.ABC') American Broadcasting Company (ABC)
+												option(value='.AmericaExpress') American Express
+												option(value='.AmericanPrinterMagazine') American Printer Magazine
+												option(value='.AncientAgeWhiskey') Ancient Age Whiskey
+												option(value='.AntonMaixFabrics') Anton Maix Fabrics
+												option(value='.ApparelArts') Apparel Arts
+												option(value='.ArchitecturalForum') Architectural Forum
+												option(value='.AssociatedMerchandisingCorp') Associated Merchandising Corp
+												option(value='.AtlasCrankshaft') Atlas Crankshaft
+												option(value='.AutocarCorporation') Autocar Corporation
+												option(value='.AyerstMcKennaHarrisonPharmaceutical') Ayerst, McKenna, Harrison Pharmaceutical
+											optgroup(label="B")
+												option(value='.Bab-O') Bab-O
+												option(value='.BenjaminFranklin200thAnniversary') Benjamin Franklin 200th Anniversary
+												option(value='.BlatzBeer') Blatz Beer
+												option(value='.Borzoi') Borzoi
+												option(value='.BureauofIndianAffairs') Bureau of Indian Affairs
+											optgroup(label="C")
+												option(value='.CabbagesKingsCatering') Cabbages & Kings Catering
+												option(value='.CenturyLighting') Century Lighting
+												option(value='.CIOChorus') CIO Chorus
+												option(value='.Colorforms') Colorforms
+												option(value='.ColumbusIndianaVisitorsBureau') Columbus Indiana Visitors Bureau
+												option(value='.ComputerImpressions') Computer Impressions
+												option(value='.CondeNast') Conde Nast
+												option(value='.ConnecticutArtDirectorsClub') Connecticut Art Directors Club
+												option(value='.ConsolidatedCigarCorporation') Consolidated Cigar Corporation
+												option(value='.ContainerCorporationofAmerica') Container Corporation of America
+												option(value='.Cooks') Cooks
+												option(value='.CoordinatorofInterAmericanAffairs') Coordinator of Inter American Affairs
+												option(value='.CoronetBrandy') Coronet Brandy
+												option(value='.CountryClubIceCream') Country Club Ice Cream
+												option(value='.CrestaBlancaWines') Cresta Blanca Wines
+												option(value='.Cummins') Cummins
+											optgroup(label="D")
+												option(value='.DirectionMagazine') Direction Magazine
+												option(value='.DisneyHats') Disney Hats
+												option(value='.DougEvansPartners') Doug Evans + Partners
+												option(value='.Dubonnet') Dubonnet
+												option(value='.DubouchettCordials') Dubouchett Cordials
+												option(value='.Dunhill') Dunhill
+												option(value='.DupontCorporation') Dupont Corporation
+											optgroup(label="E")
+												option(value='.ElProducto') El Producto
+												option(value='.ElliotNoyesAssociates') Elliot Noyes & Associates
+												option(value='.EmersonElectronicRadio') Emerson Electronic Radio
+												option(value='.EnglishFirst') English First
+												option(value='.Enron') Enron
+												option(value='.Esquire') Esquire
+											optgroup(label="F")
+												option(value='.FlairMagazine') Flair Magazine
+												option(value='.Ford') Ford
+												option(value='.Frigiking') Frigiking
+											optgroup(label="G")
+												option(value='.GentryLivingColor') Gentry Living Color
+												option(value='.GibsonsDiamond8') Gibsons Diamond 8
+												option(value='.GlassPacker') Glass Packer
+												option(value='.GraphicArtsProductionYearbook') Graphic Arts Production Yearbook
+											optgroup(label="H")
+												option(value='.HamburgAmericanLine') Hamburg American Line
+												option(value='.HarcourtBraceandCompany') Harcourt Brace and Company
+												option(value='.Helbros') Helbros
+												option(value='.HolidayMagazine') Holiday Magazine
+											optgroup(label="I")
+												option(value='.IBM') IBM
+												option(value='.ideoDesign') ideo Design
+												option(value='.IITRI') IITRI
+												option(value='.InterfaithDay') Interfaith Day
+												option(value='.InternationalDesignConferenceAspen') International Design Conference- Aspen
+												option(value='.IrwinUnionFinancialCorporation') Irwin Union Financial Corporation
+												option(value='.Irwin-Sweeney-MillerFoundation') Irwin-Sweeney-Miller Foundation
+												option(value='.IsaacGoldmanCompany') Isaac Goldman Company
+											optgroup(label="J")
+												option(value='.JacquelineCochran') Jacqueline Cochran
+												option(value='.JamesEPepperKentuckyBourbon') James E Pepper Kentucky Bourbon
+												option(value='.Jazzways') Jazzways
+												option(value='.JohnDavid') John David
+											optgroup(label="K")
+												option(value='.Kaiser-Frazer') Kaiser-Frazer
+												option(value='.Kaufmanns') Kaufmann’s
+												option(value='.Kenmagazine') Ken magazine
+												option(value='.Knopf') Knopf
+											optgroup(label="L")
+												option(value='.LaPalinaCigars') La Palina Cigars
+												option(value='.LeeHats') Lee Hats
+												option(value='.LoveraCigars') Lovera Cigars
+												option(value='.Lusterlite-AmericanBembergCorp') Lusterlite- American Bemberg Corp
+											optgroup(label="M")
+												option(value='.Maidenform') Maidenform
+												option(value='.MonellChemicalSensesCenter') Monell Chemical Senses Center
+												option(value='.Morningstar') Morningstar
+												option(value='.MossbergCompany') Mossberg & Company
+												option(value='.MuseumofModernArt') Museum of Modern Art
+											optgroup(label="N")
+												option(value='.NationalGalleryofArt') National Gallery of Art
+												option(value='.NewYorkArtDirectorsClub') New York Art Directors Club
+												option(value='.NeXTComputers') NeXT Computers
+												option(value='.NoWayOutMovie') No Way Out Movie
+												option(value='.NorwalkCancerCenter') Norwalk Cancer Center
+												option(value='.NutriCola') Nutri Cola
+												option(value='.Nylast') Nylast
+											optgroup(label="O")
+												option(value='.Ohrbachs') Ohrbachs
+												option(value='.OkasanSecuritiesCompany') Okasan Securities Company
+												option(value='.Olivetti') Olivetti
+												option(value='.Orpi') Orpi
+											optgroup(label="P")
+												option(value='.PacificCoastBoraxCo') Pacific Coast Borax Co
+												option(value='.ParkTilford') Park Tilford
+												option(value='.PastoreDePamphilisRampone') Pastore DePamphilis Rampone (PDR)
+												option(value='.PennBritePapers') Penn/Brite Papers
+												option(value='.Playtex') Playtex
+												option(value='.PMMagazine') PM Magazine
+												option(value='.PortfolioMagazine') Portfolio Magazine
+												option(value='.PowerPCandPowerOpen') Power PC and Power Open
+											optgroup(label="R")
+												option(value='.RainfairStormCoats') Rainfair Storm Coats
+												option(value='.RCA') RCA
+											optgroup(label="S")
+												option(value='.SaybrookRHMacy') Saybrook, RH Macy and Co 1935
+												option(value='.SchenleyGin') Schenley Gin
+												option(value='.Servador') Servador
+												option(value='.ShigeoFukuda') Shigeo Fukuda
+												option(value='.Shur-EdgeKnives') Shur-Edge Knives
+												option(value='.SmithKlineFrench') Smith, Kline & French
+												option(value='.StaffordFabrics') Stafford Fabrics
+												option(value='.StrathmorePaper') Strathmore Paper
+											optgroup(label="T")
+												option(value='.TheLimited') The Limited
+												option(value='.ThomasCreighton') Thomas Creighton Co
+												option(value='.TiptonLakes') Tipton Lakes
+												option(value='.TodaysSelling') Today’s Selling
+												option(value='.TriArtsPress') Tri Arts Press
+												option(value='.Typomundus20') Typomundus 20
+											optgroup(label="U")
+												option(value='.UCLA') UCLA
+												option(value='.UnitedJewishAppeal') United Jewish Appeal
+												option(value='.UnitedParcelService') United Parcel Service (UPS)
+												option(value='.UniversityofHartford') University of Hartford
+												option(value='.Unknown') Unknown clients
+											optgroup(label="V")
+												option(value='.Vichy') Vichy
+											optgroup(label="W")
+												option(value='.WallacePuppets') Wallace Puppets
+												option(value='.Westinghouse') Westinghouse
+												option(value='.WilliamHWeintraub') William H Weintraub
+												option(value='.WittenbornSchultz') Wittenborn Schultz
+											optgroup(label="Y")
+												option(value='.Yale') Yale
+											optgroup(label="Z")
+												option(value='.ZebraPress') Zebra Press
+
+					li.has-dropdown
+						a(href="#") View by Project Type
+						ul.dropdown
+							li.p2
+								fieldset.mr2.float-left.text-left
+									select.ml3#select-work-project
+										option(value='') Select a Project Type
+										option(value='.advertising') Advertising
+										option(value='.annualReport') Annual Report
+										option(value='.book') Book
+										option(value='.bookCover') Book Cover
+										option(value='.brochure') Brochure
+										option(value='.collateral') Collateral
+										option(value='.editorial') Editorial
+										option(value='.identity') Identity
+										option(value='.logo') Logo
+										option(value='.packaging') Packaging
+										option(value='.painting') Painting
+										option(value='.photography') Photography
+										option(value='.poster') Poster
+										option(value='.presentationBooklet') Presentation Booklet
+
+			//- li.divider
+			li.has-dropdown
+				a(href='#'): em Writing
+				ul.dropdown.m-menu
+					li.has-dropdown
+						a(href="#") Books
+						ul.dropdown
+							li.p2
+								fieldset.mr2.float-left.text-left#select-writing-books
+									//- label Choose a book...
+									select
+										option(value='') Choose a book...
+										option(value='books') This…Is the Stafford Stallion
+										option(value='books') Thoughts on Design
+										option(value='books') Trademark Design
+										option(value='books') I Know a Lot of Things
+										option(value='books') Sparkle and Spin
+										option(value='books') The Trademarks of Paul Rand — A Selection
+										option(value='books') Little 1
+										option(value='books') Listen! Listen!
+										option(value='books') A Paul Rand Miscellany
+										option(value='books') A Designer’s Art
+										option(value='books') Good Design is Good Will
+										option(value='books') Some Thoughts Some Logos
+										option(value='books') Some Thoughts… and Some Tribulations about the Design of a Logo
+										option(value='books') From Cassandre to Chaos
+										option(value='books') Failure by Design
+										option(value='books') Design Form and Chaos
+										option(value='books') From Lascaux to Brooklyn
+					li.has-dropdown
+						a(href="#") Articles
+						ul.dropdown
+							li.p2
+								fieldset.mr2.float-left.text-left#select-writing-articles
+									//- label Choose an article...
+									select
+										option(value='') Choose an article...
+										optgroup(label="1940s")
+											option(value='article') Black in the Visual Arts
+										
+										optgroup(label="1950s")
+											option(value='article') Posters
+											option(value='article') The Trademark as an Illustrative Device
+										
+										optgroup(label="1960s")
+											option(value='article') Advertisement: Ad Vivum or Ad Hominem?
+											option(value='article') The Art of the Package
+											option(value='article') Design and the Play Instinct
+											option(value='article') Trademarks of the World Preface
+										
+										optgroup(label="1970s")
+											option(value='article') Integrity and Invention
+										
+										optgroup(label="1980s")
+											option(value='article') On the RCA Ad
+											option(value='article') The Politics of Design
+											option(value='article') Observations on Intuition
+											option(value='article') The Case for the Ampersand
+										
+										optgroup(label="1990s")
+											option(value='article') Logos, Flags, and Escutcheons
+											option(value='article') Confusion and Chaos: The Seduction of Contemporary Graphic Design
+											option(value='article') Object Lessons
+											option(value='article') Failure by Design
+											option(value='article') Language of Art
+
+					li.has-dropdown
+						a(href="#") Quotes
+						ul.dropdown
+							li.p2
+								fieldset.mr2.float-left.text-left#select-writing-quotes
+									//- label Choose a quote topic...
+									select
+										option(value='') Choose a quote topic...
+										option(value='quote') Modernism
+										option(value='quote') Good Design
+										option(value='quote') Play
+										option(value='quote') Originality & Imitation
+					li.has-dropdown
+						a(href="#") Suggested Readings
+						ul.dropdown
+							li.p2
+								fieldset.mr2.float-left.text-left#select-writing-suggested-readings
+									//- label Choose a suggested reading topic...
+									select
+										option(value='') Choose a suggested reading topic...
+										option(value='suggestedReadings') General Art Theory and Philosophy
+										option(value='suggestedReadings') Modern Art History and Movements
+										option(value='suggestedReadings') Typography and Design
+										option(value='suggestedReadings') General, Sociology
+										option(value='suggestedReadings') Art Biographies and Monographs
+										option(value='suggestedReadings') Architecture
+										option(value='suggestedReadings') Design History and Theory
+										option(value='suggestedReadings') Geometry and Design
+										option(value='suggestedReadings') Film
+
+
+		ul.float-right
+			li.has-dropdown
+				a(href="#" style="line-height:3.35rem")
+					small.text-caps(style="font-size: 12px;font-weight:300") Resources
+				ul.dropdown
+					li: a(href="#") Online
+					li: a(href="#") Online
+					li: a(href="#") Online
+					li: a(href="#") Online
+			li
+				a(href="#" style="line-height:3.35rem")
+					small.text-caps(style="font-size: 12px;font-weight:300") Contact
+			li
+				a(href="#" style="line-height:3.35rem")
+					small.text-caps(style="font-size: 12px;font-weight:300") Shop
+			li
+				a(href="#" style="line-height:3.35rem")
+					small.text-caps(style="font-size: 12px;font-weight:300") News
+			li(style="background: none;")
+				label.search(for="inpt_search" style="top:22px;right:0px")
+					input#inpt_search(type="text")
+
+
+
+				
+
+
+//- =========================================
+//- =            HEADER NAVIGATION            =
+//- =========================================
+//- ==========  MAIN  ==========
+//- header
+	.cd-dropdown-wrapper
+		a.cd-dropdown-trigger(href='#0') Dropdown
+		nav.cd-dropdown
+			h2 Title
+			a.cd-close(href='#0') Close
+			ul.cd-dropdown-content
+				li
+					form.cd-search
+						input(type='search', placeholder='Search...')
+				li.has-children
+					a(href='#') Clothing
+					ul.cd-secondary-dropdown.is-hidden
+						li.go-back
+							a(href='#0') Menu
+						li.see-all
+							a(href='#') All Clothing
+						li.has-children
+							a(href='#') Accessories
+							ul.is-hidden
+								li.go-back
+									a(href='#0') Clothing
+								li.see-all
+									a(href='#') All Accessories
+								li.has-children
+									a(href='#0') Beanies
+									ul.is-hidden
+										li.go-back
+											a(href='#0') Accessories
+										li.see-all
+											a(href='#') All Benies
+										li
+											a(href='#') Caps &amp; Hats
+										li
+											a(href='#') Gifts
+										li
+									a(href='#') Scarves &amp; Snoods
+						li.has-children
+							a(href='#0') Caps &amp; Hats
+								ul.is-hidden
+									li.go-back
+										a(href='#0') Accessories
+									li.see-all
+										a(href='#') All Caps &amp; Hats
+									li
+										a(href='#') Beanies
+									li
+										a(href='#') Caps
+									li
+										a(href='#') Hats
+						li
+							a(href='#') Glasses
+						li
+							a(href='#') Gloves
+						li
+							a(href='#') Jewellery
+						li
+							a(href='#') Scarves
+						li.has-children
+							a(href='#') Bottoms
+							ul.is-hidden
+								li.go-back
+									a(href='#0') Clothing
+								li.see-all
+									a(href='#') All Bottoms
+								li
+									a(href='#') Casual Trousers
+								li.has-children
+									a(href='#0') Jeans
+									ul.is-hidden
+										li.go-back
+											a(href='#0') Bottoms
+										li.see-all
+											a(href='#') All Jeans
+										li
+											a(href='#') Ripped
+										li
+											a(href='#') Skinny
+										li
+											a(href='#') Slim
+										li
+											a(href='#') Straight
+								li
+									a(href='#0') Leggings
+								li
+									a(href='#0') Shorts
+						li.has-children
+							a(href='#') Jackets
+							ul.is-hidden
+								li.go-back
+									a(href='#0') Clothing
+								li.see-all
+									a(href='#') All Jackets
+								li
+									a(href='#') Blazers
+								li
+									a(href='#') Bomber jackets
+								li
+									a(href='#') Denim Jackets
+								li
+									a(href='#') Duffle Coats
+								li
+									a(href='#') Leather Jackets
+								li
+									a(href='#') Parkas
+						li.has-children
+							a(href='#') Tops
+							ul.is-hidden
+								li.go-back
+									a(href='#0') Clothing
+								li.see-all
+									a(href='#') All Tops
+								li
+									a(href='#') Cardigans
+								li
+									a(href='#') Coats
+								li
+									a(href='#') Polo Shirts
+								li
+									a(href='#') Shirts
+								li.has-children
+									a(href='#0') T-Shirts
+									ul.is-hidden
+										li.go-back
+											a(href='#0') Tops
+										li.see-all
+											a(href='#') All T-shirts
+										li
+											a(href='#') Plain
+										li
+											a(href='#') Print
+										li
+											a(href='#') Striped
+										li
+											a(href='#') Long sleeved
+								li
+									a(href='#') Vests
+
+					li.has-children
+						a(href='#') Gallery
+						ul.cd-dropdown-gallery.is-hidden
+							li.go-back
+								a(href='#0') Menu
+							li.see-all
+								a(href='#') Browse Gallery
+							li
+								a.cd-dropdown-item(href='#')
+									img(src='img/img.png', alt='Product Image')
+									h4 Product #1
+							li
+								a.cd-dropdown-item(href='#')
+									img(src='img/img.png', alt='Product Image')
+									h4 Product #2
+							li
+								a.cd-dropdown-item(href='#')
+									img(src='img/img.png', alt='Product Image')
+									h4 Product #3
+							li
+								a.cd-dropdown-item(href='#')
+									img(src='img/img.png', alt='Product Image')
+									h4 Product #4
+
+					li.has-children
+						a(href='#') Services
+						ul.cd-dropdown-icons.is-hidden
+							li.go-back
+								a(href='#0') Menu
+							li.see-all
+								a(href='#') Browse Services
+							li
+								a.cd-dropdown-item.item-1(href='#')
+									h4 Service #1
+									p This is the item description
+							li
+								a.cd-dropdown-item.item-2(href='#')
+									h4 Service #2
+									p This is the item description
+							li
+								a.cd-dropdown-item.item-3(href='#')
+									h4 Service #3
+									p This is the item description
+							li
+								a.cd-dropdown-item.item-4(href='#')
+									h4 Service #4
+									p This is the item description
+							li
+								a.cd-dropdown-item.item-5(href='#')
+									h4 Service #5
+									p This is the item description
+							li
+								a.cd-dropdown-item.item-6(href='#')
+									h4 Service #6
+									p This is the item description
+							li
+								a.cd-dropdown-item.item-7(href='#')
+									h4 Service #7
+									p This is the item description
+							li
+								a.cd-dropdown-item.item-8(href='#')
+									h4 Service #8
+									p This is the item description
+							li
+								a.cd-dropdown-item.item-9(href='#')
+									h4 Service #9
+									p This is the item description
+							li
+								a.cd-dropdown-item.item-10(href='#')
+									h4 Service #10
+									p This is the item description
+							li
+								a.cd-dropdown-item.item-11(href='#')
+									h4 Service #11
+									p This is the item description
+							li
+								a.cd-dropdown-item.item-12(href='#')
+									h4 Service #12
+									p This is the item description
+
+					li.cd-divider Divider
+					li
+						a(href='#') Page 1
+					li
+						a(href='#') Page 2
+					li
+						a(href='#') Page 3
+

@@ -1,0 +1,26 @@
+extends ../__MIXINS/_layout-default.pug
+
+block vars
+    - var pageTitle = 'CHANGE_ME'
+    - var bodyID    = 'CHANGE_ME'
+    - var bodyClass = 'CHANGE_ME'
+
+block main-content
+    .cd-main-content
+        //- ==========  BODY  ==========
+
+        .grid-x.grid-margin-x.align-center
+            .large-7.medium-10.small-12.cell.entry-content
+
+
+
+
+        //- /*-----  End of BODY  ------*/
+
+        include ../__MIXINS/_include-image-carousel.pug
+
+        include ../__MIXINS/_include-published-in.pug
+
+        include ../__MIXINS/_include-next-item.pug
+
+        include ../__MIXINS/_include-social-media.pug

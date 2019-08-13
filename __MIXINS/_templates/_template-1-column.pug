@@ -1,0 +1,42 @@
+doctype html
+html.no-js(lang='en' dir='ltr')
+
+	include ../../__MIXINS/_include-head.pug
+
+	body#work(data-grid-framework="f4" data-grid-color="pink" data-grid-opacity="0.2" data-grid-zindex="10" data-grid-gutterwidth="30px" data-grid-nbcols="12")
+		#main
+			.animsition
+				include ../../__MIXINS/_include-headerNav-secondaryNav.pug
+
+				.cd-main-content
+
+					//- ========================================
+					//- =            1 COLUMN CONTENT            =
+					//- ========================================
+
+					.grid-x.grid-margin-x
+						.small-12.cell
+							h1 About the site
+
+							h3 This site is meant to honor and pay utmost respect to the life and work of Mr. Rand.
+
+							p When I first began this project, I discovered that there were no “single-source” references to Mr. Rand or his works anywhere on the internet. Thus sparked the idea to build this tribute/archive site. I am in no way a philosopher or critic of design but have a great respect for the history of our industry and the people who have shaped it. In the course of building the site, I’ve been able to more greatly appreciate their thoughts and theories on design and develop my own opinions on the subject.
+
+							p This project is maintained in my off time and would graciously include any works, thoughts, notes, stories or any other miscellaneous items that you would like to share.
+
+							p The site is always developing and growing and I hope to add more sections and features in the near future.
+
+							p Thank you for visiting and enjoy!
+
+							p Sincerely,
+								br
+								| Daniel Lewandowski
+								br
+								| Alpharetta, Georgia
+
+					//- -----  End of 1 COLUMN CONTENT  ------
+
+				include ../../__MIXINS/_include-footer.pug
+
+			include ../../__MIXINS/_include-closingScript.pug 
+			

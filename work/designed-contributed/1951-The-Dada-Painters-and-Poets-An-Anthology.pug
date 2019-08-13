@@ -1,0 +1,174 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'The Dada Painters and Poets: An Anthology'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var bookSubhead           = 'Robert Motherwell'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/1906000'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3DThe%2BDada%2BPainters%2Band%2BPoets%253A%2BAn%2BAnthology'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/266rBnA'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_nkw%3DThe%2520Dada%2520Painters%2520and%2520Poets%253A%2520An%2520Anthology'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'Modern Art in Advertising'
+    - var nextLink              = '1952-Modern-Art-in-Advertising'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2014-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%2014.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= bookSubhead
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology-970.jpg",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            include ../../__MIXINS/_include-image-carousel.pug
+
+            +galleryItem-cardLink(
+                "12", "12",
+                {
+                SM: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%20Prospectus%2C%20front-970.jpg",
+                LG: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%20Prospectus%2C%20front.jpg",
+                title: "Prospectus",
+                footnote1: "Images courtesy of Randall Ross, modernism101.com",
+                footnote2: "2 Images"
+                })
+            +galleryItem-imageHidden(
+                {title: "Prospectus, back", hideMe: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%20Prospectus%2C%20back.jpg"}
+                )
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Cover & typography by Paul Rand
+
+                        George Wittenborn Inc., 1951 (second printing, 1967)
+
+                        7.75 x 10.25 hardcover book in screen-printed cloth-covered boards with 432 pages and 147 illustrations and photographs in black and white.
+
+                        Includes manifestoes, illustrated essays and artworks by Hugo Ball, Kurt Schwitters, Tristan Tzara, Georges Ribemont-Dessaignes, Andre Breton, Hans Arp, Paul Eluard among other.
+
+                        **Contents:**
+
+                        1. Acknowledgements
+                        + Preface
+                        + Introduction, by Robert Motherwell
+                        + List of Illustrations
+                        + Pre-Dada
+                            - Exhibition at the Independents, by Arthur Cravan (1914)
+                            - Arthur Cravan and American Dada, by Gabrielle Buffet-Picabia (1938)
+                            - Memories of an Amnesic (Fragments), by Erik Satie (1912-13)
+                        + En Avant Dada: A History of Dadaism, by Richard Huelsenbeck (1920)
+                        + Dada Fragments, by Hugo Ball (1916-17)
+                        + A Dada Personage
+                            - Two Letters, by Jacques Vache (to Andre Breton) (1917-18)
+                        + Seven Dada Manifestoes, by Tristan Tzara (1916-20)
+                            - Manifesto of Mr. Antipyrine
+                            - Dada Manifesto (1918)
+                            - Proclamation without Pretension
+                            - Manifesto of mr. aa the anti-philosopher
+                            - Manifesto on feeble love and bitter love
+                            - Supplement: how I became charming delightful and delicious
+                            - Colonial Syllogism
+                        + History of Dada, by Georges Ribemont-Dessaignes (1931)
+                        + The Dada Spirit in Painting, by Georges Hugnet (1932, 1934)
+                            - Zurich and New York
+                            - Berlin (1918-22)
+                            - Cologne and Hanover
+                            - Dada in Paris
+                        + Three Dada Manifestoes, by Andre Breton (before 1924)
+                            - For Dada
+                            - Two Dada Manifestoes
+                        + Marcel Duchamp, by Andre Breton (1922)
+                            - New York Dada, edited by Marcel Duchamp and Man Ray (April 1921)
+                        + Dada Fragments from Zurich
+                            - Notes from a Dada Diary, by Jean (Hans) Arp (1932)
+                            - End of the World, by Richard Huelsenbeck (1916)
+                        + Dada Fragments from Paris
+                            - (Two Poems), by Paul Eluard (1921)
+                            - Project for a History of Contemporary Literature, by Louis Aragon (1922)
+                            - The Magnetic Fields, by Andre Breton and Philippe Soupault (1920)
+                        + From the Annals of Dada
+                            - Zurich Chronicle, by Tristan Tzara (1915-19)
+                            - Collective Dada Manifesto, by Richard Huelsenbeck (1920)
+                            - Lecture on Dada, by Tristan Tzara (1922)
+                        + Some Memories of Pre-Dada: Picabia and Duchamp, by Gabrielle Buffet-Picabia (1949)
+                            - La Pomme de Pins, edited by Francis Picabia (February 1922)
+                        + Theo van Doesburg and Dada, by Kurt Schwitters (1931)
+                        + Dada Lives! by Richard Huelsenbeck (1936)
+                        + Dada X Y Z…, by Hans Richter (1948)
+                        + Dada Was Not a Farce, by Jean (Hans) Arp (1949)
+                            - Sophie, by Jean (Hans) Arp (1946)
+                        + Appendices
+                            - The Dada Case, by Albert Gleizes (1920)
+                            - A Letter on Hugnet’s "Dada Spirit in Painting", by Tristan Tzara (1937)
+                            - Marcel Duchamp: Anti-Artist, by Harriet and Sidney Janis (1945)
+                            - Sound-Reel (1919) and Birdlike (1946) by Raoul Hausmann
+                        + Bibliography
+                            - Did Dada Die? a Critical Biography by Bernard Karpel (Librarian, Museum of Modern Art, New York)
+                        + Index to Bibliography
+                        + General Index
+                        + Dada Manifesto 1949, by Richard Huelsenbeck
+                        + An Introduction to Dada, by Tristan Tzara
+                        From Motherwell’s introduction: “…Dada is the only important movement in modern painting that took place simulatneously in the United States and Europe…. The world to which dada was a violent response bears great resemblance to our own…. Whatever one’s feelings in reading of dada activities, they cannot be remote.”
+
+                        Not only is this book one of Rand’s preeminent design works, but the book itself is an absolute treasure of information. Illustrated through with great examples and strong essays about the movement, this book is certainly a must-have for anyone interested in this era.
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../__MIXINS/_include-next-work.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

@@ -1,0 +1,478 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'American Express'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = 'CHANGE_ME'
+    - var nextType  = 'Client'
+    - var nextTitle = 'American Printer Magazine'
+    - var nextLink  = 'American-Printer-Magazine'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Logos",
+                        "middle","1","1",
+                        {SM: "https://assets.paulrand.design/Works/American%20Express/American-Express-v2-1994.svg", LG:"https://assets.paulrand.design/Works/American%20Express/American-Express-v2-1994.svg", title: "Full name", footnote:"1994"},
+                        {SM: "https://assets.paulrand.design/Works/American%20Express/American-Express-v1-1994.svg", LG:"https://assets.paulrand.design/Works/American%20Express/American-Express-v1-1994.svg", title: "Name Abbreviation", footnote:"1994"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Presentation Booklet, v1",
+                        "middle","1", "1",
+                        {SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2001-970.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2001-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2001.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2002-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2002.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2003-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2003.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2004-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2004.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2005-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2005.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2006-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2006.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2007-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2007.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2008-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2008.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2009-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2009.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2010-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2010.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2011-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2011.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2012-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2012.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2013-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2013.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2014-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2014.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2015-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2015.jpg"}
+                        )
+
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell
+                    .grid-x.grid-margin-x
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2001-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2001.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                #### Don’t leave home without it…
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2002-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2002.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Paul Rand  
+                                Weston, Connecticut February 1994
+
+                                American Express is a great name…
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2003-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2003.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                *but the American Express logo does not reflect this greatness…*  
+                                Its fifteen letters are difficult to manipulate and reproduce…  
+                                Its off-centered placement complicates connection with other words…  
+                                Elaborate letter forms are interesting but difficult to handle…
+
+                                A well designed logo has something spirited about it…  
+                                The blue square lacks this quality…
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2004-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2004.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Some of these shapes may be closer to the mark…
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2005-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2005.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                The rhombus stands out in a sea of squares…
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2006-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2006.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                A passive square is magically transformed into a lively rhombus…  
+                                It is related to the square; this insures continuity…  
+                                It is more interesting than the square, and more memorable…  
+                                It has a certain flair…  
+                                Increasing the size of the name and redrawing the letters helps, but…  
+                                Some of the old problems remain…  
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2007-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2007.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                The name is increased in size…  
+                                It is organized with the top of the square…  
+                                This helps to accommodate different nomenclature…  
+                                The letters are less formal and easier to read…  
+                                Reducing the size of the logo is no longer a problem…  
+                                Lower case letters present a more interesting word picture…  
+                                They are also livelier and more inviting…  
+                                But the problem of fifteen letters in a small space still exists…
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2008-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2008.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Everybody knows what USA stands for…  
+                                The meaning of AmEx is equally unmistakable…  
+                                Abbreviations have a purpose…  
+                                They are functional, economical, and encourage efficiency…  
+                                The relationship between the four letters is fortuitous…  
+                                They have a visual presence, youthful, quick, and sparkling…  
+                                They make a good word picture easy to read visually and verbally…  
+                                They can easily be combined with miscellaneous titles…
+
+                                AmEx is the essence of “less is more.”
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2009-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2009.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Perception of the Centurion:
+
+                                A badge of strength…  
+                                Symbol of security and confidence…  
+                                Voice of authority…
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2010-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2010.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Surveys reveal that the centurion is easier to recognize than the square…  
+                                Why not combine the two?…  
+                                They can be of mutual benefit…  
+                                In tandem, they reinforce and explain each other…
+
+                                In isolation, their common denominator is the rhombus…  
+                                It is the link between the two identifiers…
+
+                                Like the rhombus, the oval is an important part of the picture…
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2011-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2011.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                The Centurion, the Rhombus, and Nomenclature:
+
+                                Here are some practical typographic treatments…  
+                                Choice of type depends on need: emphasis, size, and printing…   
+                                Type styles exhibited are proximate…  
+                                Experience will fix the standard — a time consuming process…
+
+                                Many different geometric configurations are possible…
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2012-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2012.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Whichever of the three versions of the American Express Company logo is chosen, each is interchangeable within the matrix of the two oblique squares.
+
+                                I believe that all are viable in that they establish a connection between the corporate name and the centurion. They also show how type and image can be logically combined.
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2013-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2013.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2014-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2014.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                *Don’t leave home without it…*
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2015-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v1/Web/American%20Express%20v1%2015.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+
+
+
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Presentation Booklet, v2",
+                        "top","1","1",
+                        {SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2001-970.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2001.jpg"}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2001-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2001.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2002-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2002.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2003-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2003.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2004-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2004.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2005-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2005.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2006-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2006.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2007-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2007.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2008-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2008.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2009-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2009.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2010-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2010.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2011-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2011.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2012-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2012.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2013-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2013.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2014-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2014.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2015-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2015.jpg"},
+                        {Title: "CHANGE_ME", SM: "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2016-450.jpg", LG:"https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2016.jpg"}
+                        )
+
+
+
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell
+                    .grid-x.grid-margin-x
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2001-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2001.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2002-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2002.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Paul Rand  
+                                Weston, Connecticut February 1994
+
+                                American Express is a great name…
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2003-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2003.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                The present logo does not reflect the company’s greatness…  
+                                Its fifteen letters are difficult to manipulate and reproduce…  
+                                Its off-centered placement complicates connection with other words…   
+                                Elaborate letter forms are interesting but difficult to handle…
+
+                                A well designed logo has something spirited about it…  
+                                The blue square lacks this quality…
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2004-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2004.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Some of these shapes may be closer to the mark…
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2005-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2005.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                The rhombus stands out in a sea of squares…
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2006-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2006.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                A passive square is magically transformed into a lively rhombus…  
+                                It is related to the square; this insures continuity…  
+                                It is more interesting than the square, and more memorable…  
+                                It has a certain flair…  
+                                Increasing the size of the name and redrawing the letters helps, but…   
+                                Some of the old problems remain…  
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2007-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2007.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                The name is increased in size…  
+                                It is organized with the top of the square…  
+                                This helps to accommodate different nomenclature…  
+                                The letters are less formal and easier to read…  
+                                Reducing the size of the logo is no longer a problem…  
+                                Lower case letters present a more interesting word picture…   
+                                They are also livelier and more inviting…  
+                                But the problem of fifteen letters in a small space still exists…  
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2008-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2008.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Everybody knows what USA stands for…  
+                                The meaning of AmEx is equally unmistakable…  
+                                Abbreviations have a purpose…  
+                                They are functional, economical, and encourage efficiency…  
+                                The relationship between the four letters is fortuitous…  
+                                They have a visual presence, youthful, quick, and sparkling…  
+                                They make a good word picture easy to read visually and verbally…   
+                                They can easily be combined with miscellaneous titles…  
+
+                                AmEx is the essence of “less is more.”
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2009-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2009.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Perception of the Centurion:
+
+                                A badge of strength…  
+                                Symbol of security and confidence…  
+                                Voice of authority…  
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2010-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2010.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Surveys reveal that the centurion is easier to recognize than the square.. Why not combine the two?…  
+                                They can be of mutual benefit…  
+                                In tandem, they reinforce and explain each other…  
+
+                                In isolation, their common denominator is the rhombus…  
+                                It is the link between the two identifiers…
+
+                                Like the rhombus, the oval is an important part of the picture…
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2011-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2011.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                The Centurion, the Rhombus, and Nomenclature:
+
+                                Here are some practical typographic treatments…  
+                                Choice of type depends on need: emphasis, size, and printing…   
+                                Type styles exhibited are proximate…  
+                                Experience will fix the standard — a time consuming process…  
+
+                                Many different geometric configurations are possible…  
+                                Other examples are shown on the following page…  
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2012-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2012.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Some Applications:
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2013-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2013.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Whichever of the three versions of the American Express Company logo is chosen, each is interchangeable within the matrix of the two oblique squares.
+
+                                I believe that all are viable in that they establish a connection between the corporate name and the centurion. 
+                                They also show how type and image can be logically combined.
+
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2014-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2014.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                *Don’t leave home without it…*
+
+                        .medium-5.small-12.cell.small-mb2
+                            +imageZoomSingle("https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2015-450.jpg",
+                            "https://assets.paulrand.design/Works/American%20Express/American%20Express%20logo%20presentation%20book%20v2/Web/American%20Express%20v2%2015.jpg"
+                            )
+
+                        .medium-7.small-12.cell.small-mb2
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

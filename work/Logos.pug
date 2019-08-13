@@ -1,0 +1,1269 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Logos'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = 'CHANGE_ME'
+    - var nextType  = 'CHANGE_ME'
+    - var nextTitle = 'Logo Presentation Books'
+    - var nextLink  = 'Logo-Presentation-Books'
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  BOOK COVERS  ==============================*/
+            .grid-x.grid-margin-x
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/IBM/Logos/AdStar-Advanced-Storage-and-Retrieval-1992.svg",
+                    LG: "https://assets.paulrand.design/Works/IBM/Logos/AdStar-Advanced-Storage-and-Retrieval-1992.svg",
+                    title: "AdStar Advanced Storage and Retrieval",
+                    footnote1: "1992"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/AIGA/AIGA-1969.svg",
+                    LG: "https://assets.paulrand.design/Works/AIGA/AIGA-1969.svg",
+                    title: "AIGA",
+                    footnote1: "1969"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/AIGA/AIGA-1969-reversed.svg",
+                    LG: "https://assets.paulrand.design/Works/AIGA/AIGA-1969-reversed.svg",
+                    title: "AIGA",
+                    footnote1: "Reversed",
+                    footnote2: "1969"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/AIGA/AIGA-1982-v1-not-used.svg",
+                    LG: "https://assets.paulrand.design/Works/AIGA/AIGA-1982-v1-not-used.svg",
+                    title: "AIGA",
+                    footnote1: "1982"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/AIGA/AIGA-1982-v2-not-used.svg",
+                    LG: "https://assets.paulrand.design/Works/AIGA/AIGA-1982-v2-not-used.svg",
+                    title: "AIGA",
+                    footnote1: "1982"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/AIGA/AIGA-1982-color-not-used.svg",
+                    LG: "https://assets.paulrand.design/Works/AIGA/AIGA-1982-color-not-used.svg",
+                    title: "AIGA",
+                    footnote1: "1982"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Airwick/Air-wick.svg",
+                    LG: "https://assets.paulrand.design/Works/Airwick/Air-wick.svg",
+                    title: "Air-Wick",
+                    footnote1: "Version 1"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Airwick/Air-wick-v2.svg",
+                    LG: "https://assets.paulrand.design/Works/Airwick/Air-wick-v2.svg",
+                    title: "Air-Wick",
+                    footnote1: "Version 2"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/American%20Broadcasting%20Company%20%28ABC%29/ABC-1962.svg",
+                    LG: "https://assets.paulrand.design/Works/American%20Broadcasting%20Company%20%28ABC%29/ABC-1962.svg",
+                    title: "ABC (American Broadcasting Company)",
+                    footnote1: "1962"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/American%20Express/American-Express-v1-1994.svg",
+                    LG: "https://assets.paulrand.design/Works/American%20Express/American-Express-v1-1994.svg",
+                    title: "American Express",
+                    footnote1: "Version 1",
+                    footnote2: "1994"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/American%20Express/American-Express-v2-1994.svg",
+                    LG: "https://assets.paulrand.design/Works/American%20Express/American-Express-v2-1994.svg",
+                    title: "American Express",
+                    footnote1: "Version 2",
+                    footnote2: "1994"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Ancient%20Age%20Whiskey/Ancient-Age.svg",
+                    LG: "https://assets.paulrand.design/Works/Ancient%20Age%20Whiskey/Ancient-Age.svg",
+                    title: "Ancient Age Whiskey"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Ancient%20Age%20Whiskey/Ancient-Age-men.svg",
+                    LG: "https://assets.paulrand.design/Works/Ancient%20Age%20Whiskey/Ancient-Age-men.svg",
+                    title: "Ancient Age Whiskey",
+                    footnote1: "Brand Character"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Atlas-Crankshaft-1964.svg",
+                    LG: "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Atlas-Crankshaft-1964.svg",
+                    title: "Atlas Crankshaft",
+                    footnote1: "1964"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Bab-O/Bab-O-1951.svg",
+                    LG: "https://assets.paulrand.design/Works/Bab-O/Bab-O-1951.svg",
+                    title: "Bab-O",
+                    footnote1: "1951"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Bab-O/Bab-O-1951-v2.svg",
+                    LG: "https://assets.paulrand.design/Works/Bab-O/Bab-O-1951-v2.svg",
+                    title: "Bab-O",
+                    footnote1: "Version 2",
+                    footnote2: "1951"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Bab-O/Bab-O-1951-v3.svg",
+                    LG: "https://assets.paulrand.design/Works/Bab-O/Bab-O-1951-v3.svg",
+                    title: "Bab-O",
+                    footnote1: "Version 3",
+                    footnote2: "1951"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Benjamin%20Franklin%20200th%20Anniversary/Benjamin-Franklin-200th-Anniversary-Celebration-1990.svg",
+                    LG: "https://assets.paulrand.design/Works/Benjamin%20Franklin%20200th%20Anniversary/Benjamin-Franklin-200th-Anniversary-Celebration-1990.svg",
+                    title: "Benjamin Franklin 200th Anniversary",
+                    footnote1: "1990"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Borzoi/Borzoi-1945.svg",
+                    LG: "https://assets.paulrand.design/Works/Borzoi/Borzoi-1945.svg",
+                    title: "Borzoi",
+                    footnote1: "1945"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/US-Department-of-the-Interior-Bureau-of-Indian-Affairs-1968.svg",
+                    LG: "https://assets.paulrand.design/Works/Bureau%20of%20Indian%20Affairs/US-Department-of-the-Interior-Bureau-of-Indian-Affairs-1968.svg",
+                    title: "Bureau of Indian Affairs",
+                    footnote1: "1968"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cabbages%20%26%20Kings%20Catering/Cabbages-and-Kings-Catering-1980.svg",
+                    LG: "https://assets.paulrand.design/Works/Cabbages%20%26%20Kings%20Catering/Cabbages-and-Kings-Catering-1980.svg",
+                    title: "Cabbages and Kings Catering",
+                    footnote1: "1980"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Century%20Lighting/Century-Lighting-1949.svg",
+                    LG: "https://assets.paulrand.design/Works/Century%20Lighting/Century-Lighting-1949.svg",
+                    title: "Century Lighting",
+                    footnote1: "1949"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Century%20Lighting/Century-Lighting-Man-1949.svg",
+                    LG: "https://assets.paulrand.design/Works/Century%20Lighting/Century-Lighting-Man-1949.svg",
+                    title: "Century Lighting Man",
+                    footnote1: "Brand Character",
+                    footnote2: "1949"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Color%20Lab/ColorLab.svg",
+                    LG: "https://assets.paulrand.design/Works/Color%20Lab/ColorLab.svg",
+                    title: "ColorLab",
+                    footnote1: "CHANGE_ME"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Colorforms/Colorforms-1959.svg",
+                    LG: "https://assets.paulrand.design/Works/Colorforms/Colorforms-1959.svg",
+                    title: "Colorforms",
+                    footnote1: "1959"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Columbus%20Indiana%20Visitors%20Bureau/Columbus-Indiana-Visitors-Center-1973.svg",
+                    LG: "https://assets.paulrand.design/Works/Columbus%20Indiana%20Visitors%20Bureau/Columbus-Indiana-Visitors-Center-1973.svg",
+                    title: "Columbus Indiana Visitors Bureau",
+                    footnote1: "1973"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Computer%20Impressions/Computer-Impressions-1995.svg",
+                    LG: "https://assets.paulrand.design/Works/Computer%20Impressions/Computer-Impressions-1995.svg",
+                    title: "Computer Impressions",
+                    footnote1: "1995"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Connecticut%20Art%20Directors%20Club/Connecticut-Art-Directors-Club-1986.svg",
+                    LG: "https://assets.paulrand.design/Works/Connecticut%20Art%20Directors%20Club/Connecticut-Art-Directors-Club-1986.svg",
+                    title: "Connecticut Art Directors Club",
+                    footnote1: "1986"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Consolidated%20Cigar%20Corporation/Consolidated-Cigar-Corporation-1959.svg",
+                    LG: "https://assets.paulrand.design/Works/Consolidated%20Cigar%20Corporation/Consolidated-Cigar-Corporation-1959.svg",
+                    title: "Consolidated Cigar Corporation",
+                    footnote1: "1959"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Coronet-1942.svg",
+                    LG: "https://assets.paulrand.design/Works/Coronet%20Brandy/Coronet-1942.svg",
+                    title: "Coronet Brandy",
+                    footnote1: "1942"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Coronet-Snifter-Man-1942.svg",
+                    LG: "https://assets.paulrand.design/Works/Coronet%20Brandy/Coronet-Snifter-Man-1942.svg",
+                    title: "Coronet Brandy",
+                    footnote1: "Brand Character: Snifter Man, version 1",
+                    footnote2: "1942"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Coronet-Snifter-Man-1942-v2.svg",
+                    LG: "https://assets.paulrand.design/Works/Coronet%20Brandy/Coronet-Snifter-Man-1942-v2.svg",
+                    title: "Coronet Brandy",
+                    footnote1: "Brand Character: Snifter Man, version 2",
+                    footnote2: "1942"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Coronet%20Brandy/Coronet-Waiter-1943.svg",
+                    LG: "https://assets.paulrand.design/Works/Coronet%20Brandy/Coronet-Waiter-1943.svg",
+                    title: "Coronet Brandy",
+                    footnote1: "Brand Character: Waiter",
+                    footnote2: "1943"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Country%20Club%20Ice%20Cream/Country-Club-Ice-Cream-Company-v1.svg",
+                    LG: "https://assets.paulrand.design/Works/Country%20Club%20Ice%20Cream/Country-Club-Ice-Cream-Company-v1.svg",
+                    title: "Country Club Ice Cream",
+                    footnote1: "Version 1",
+                    footnote2: "Date Unknown"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Country%20Club%20Ice%20Cream/Country-Club-Ice-Cream-v2.svg",
+                    LG: "https://assets.paulrand.design/Works/Country%20Club%20Ice%20Cream/Country-Club-Ice-Cream-v2.svg",
+                    title: "Country Club Ice Cream",
+                    footnote1: "Date Unknown"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/IBM/Logos/Creative-Media-Center-1994.svg",
+                    LG: "https://assets.paulrand.design/Works/IBM/Logos/Creative-Media-Center-1994.svg",
+                    title: "Creative Media Center",
+                    footnote1: "1994"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cresta%20Blanca%20Wines/Cresta-Blanca-Wine-Co-1942.svg",
+                    LG: "https://assets.paulrand.design/Works/Cresta%20Blanca%20Wines/Cresta-Blanca-Wine-Co-1942.svg",
+                    title: "Cresta Blanca Wine Co.",
+                    footnote1: "1942"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Cummins-1962.svg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Cummins-1962.svg",
+                    title: "Cummins",
+                    footnote1: "1962"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Cummins/Cummins-Iron-Cross-variation-1965.svg",
+                    LG: "https://assets.paulrand.design/Works/Cummins/Cummins-Iron-Cross-variation-1965.svg",
+                    title: "Cummins",
+                    footnote1: "Iron Cross variation",
+                    footnote2: "1965"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Direction%20Magazine/Direction-Magazine-1938.svg",
+                    LG: "https://assets.paulrand.design/Works/Direction%20Magazine/Direction-Magazine-1938.svg",
+                    title: "Direction Magazine",
+                    footnote1: "1938"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Disney%20Hats/Disney-Hats-1946.svg",
+                    LG: "https://assets.paulrand.design/Works/Disney%20Hats/Disney-Hats-1946.svg",
+                    title: "Disney Hats",
+                    footnote1: "1946"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Doug%20Evans%20%2B%20Partners/Doug-Evans-and-Partners-1996.svg",
+                    LG: "https://assets.paulrand.design/Works/Doug%20Evans%20%2B%20Partners/Doug-Evans-and-Partners-1996.svg",
+                    title: "Doug Evans + Partners",
+                    footnote1: "1996"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Dubonnet/Dubonnet-1942.svg",
+                    LG: "https://assets.paulrand.design/Works/Dubonnet/Dubonnet-1942.svg",
+                    title: "Dubonnet",
+                    footnote1: "1942"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Dubouchett%20Cordials/DuBouchett-1949.svg",
+                    LG: "https://assets.paulrand.design/Works/Dubouchett%20Cordials/DuBouchett-1949.svg",
+                    title: "Dubouchett Cordials",
+                    footnote1: "1949"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Dubouchett%20Cordials/DuBouchett-man-1949.svg",
+                    LG: "https://assets.paulrand.design/Works/Dubouchett%20Cordials/DuBouchett-man-1949.svg",
+                    title: "Dubouchett Cordials",
+                    footnote1: "Brand Character",
+                    footnote2: "1949"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Dunhill/Dunhill-Clothiers-1947.svg",
+                    LG: "https://assets.paulrand.design/Works/Dunhill/Dunhill-Clothiers-1947.svg",
+                    title: "Dunhill Clothiers",
+                    footnote1: "1947"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/El%20Producto/El-Producto-1952.svg",
+                    LG: "https://assets.paulrand.design/Works/El%20Producto/El-Producto-1952.svg",
+                    title: "El Producto",
+                    footnote1: "1952"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/El%20Producto/El-Producto-Cigar-Man.svg",
+                    LG: "https://assets.paulrand.design/Works/El%20Producto/El-Producto-Cigar-Man.svg",
+                    title: "El Producto",
+                    footnote1: "Brand Character: Cigar Man",
+                    footnote2: "1952"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Elliot%20Noyes%20%26%20Associates/Elliot-Noyes-and-Associates-1959.svg",
+                    LG: "https://assets.paulrand.design/Works/Elliot%20Noyes%20%26%20Associates/Elliot-Noyes-and-Associates-1959.svg",
+                    title: "Elliot Noyes & Associates",
+                    footnote1: "1959"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/English%20First/English-First-1993.svg",
+                    LG: "https://assets.paulrand.design/Works/English%20First/English-First-1993.svg",
+                    title: "English First",
+                    footnote1: "1993"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Enron/Enron-1996.svg",
+                    LG: "https://assets.paulrand.design/Works/Enron/Enron-1996.svg",
+                    title: "Enron",
+                    footnote1: "1996"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Esquire/Esquire-Magazine-1938.svg",
+                    LG: "https://assets.paulrand.design/Works/Esquire/Esquire-Magazine-1938.svg",
+                    title: "Esquire Magazine",
+                    footnote1: "1938"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Ford/Ford-Motor-Company-1966-not-used.svg",
+                    LG: "https://assets.paulrand.design/Works/Ford/Ford-Motor-Company-1966-not-used.svg",
+                    title: "Ford Motor Company",
+                    footnote1: "1966"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Gentry%20Living%20Color/Gentry-Living-Color-1993.svg",
+                    LG: "https://assets.paulrand.design/Works/Gentry%20Living%20Color/Gentry-Living-Color-1993.svg",
+                    title: "Gentry Living Color",
+                    footnote1: "1993"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Gibson%27s%20Diamond%208/Gibson-Diamond-Co.svg",
+                    LG: "https://assets.paulrand.design/Works/Gibson%27s%20Diamond%208/Gibson-Diamond-Co.svg",
+                    title: "Gibson Diamond Co.",
+                    footnote1: "Date Unknown"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Glass%20Packer/Glass-Packer.svg",
+                    LG: "https://assets.paulrand.design/Works/Glass%20Packer/Glass-Packer.svg",
+                    title: "Glass Packer",
+                    footnote1: "Date Unknown"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Harcourt%20Brace%20and%20Company/Harcourt-Brace-and-Company-1957.svg",
+                    LG: "https://assets.paulrand.design/Works/Harcourt%20Brace%20and%20Company/Harcourt-Brace-and-Company-1957.svg",
+                    title: "Harcourt Brace and Company",
+                    footnote1: "1957"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Helbros/Helbros-1943.svg",
+                    LG: "https://assets.paulrand.design/Works/Helbros/Helbros-1943.svg",
+                    title: "Helbros",
+                    footnote1: "1943"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Helbros/Helbros-v2.svg",
+                    LG: "https://assets.paulrand.design/Works/Helbros/Helbros-v2.svg",
+                    title: "Helbros",
+                    footnote1: "Version 2",
+                    footnote2: "1943"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/IBM/Logos/IBM-1956.svg",
+                    LG: "https://assets.paulrand.design/Works/IBM/Logos/IBM-1956.svg",
+                    title: "IBM",
+                    footnote1: "1956"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/IBM/Logos/IBM-8-bar-1972.svg",
+                    LG: "https://assets.paulrand.design/Works/IBM/Logos/IBM-8-bar-1972.svg",
+                    title: "IBM",
+                    footnote1: "8-Bar Version",
+                    footnote2: "1972"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/IBM/Logos/IBM-13-bar-1967.svg",
+                    LG: "https://assets.paulrand.design/Works/IBM/Logos/IBM-13-bar-1967.svg",
+                    title: "IBM",
+                    footnote1: "13-Bar Version",
+                    footnote2: "1967"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/IBM/Logos/IBM-Current-Software.svg",
+                    LG: "https://assets.paulrand.design/Works/IBM/Logos/IBM-Current-Software.svg",
+                    title: "IBM, Current Software",
+                    footnote1: "Date Unknown"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/IBM/Logos/IBM-Direct.svg",
+                    LG: "https://assets.paulrand.design/Works/IBM/Logos/IBM-Direct.svg",
+                    title: "IBM Direct",
+                    footnote1: "Date Unknown"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/IBM/Logos/IBM-Product-Center-red-1983.svg",
+                    LG: "https://assets.paulrand.design/Works/IBM/Logos/IBM-Product-Center-red-1983.svg",
+                    title: "IBM Product Center",
+                    footnote1: "Red Version",
+                    footnote2: "1983"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/IBM/Logos/IBM-Product-Center-silver-1983.svg",
+                    LG: "https://assets.paulrand.design/Works/IBM/Logos/IBM-Product-Center-silver-1983.svg",
+                    title: "IBM Product Center",
+                    footnote1: "Silver Version",
+                    footnote2: "1983"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/IITRI/IITRI-1964.svg",
+                    LG: "https://assets.paulrand.design/Works/IITRI/IITRI-1964.svg",
+                    title: "IITRI",
+                    footnote1: "1964"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Irwin%20Union%20Financial%20Corporation/Irwin-Financial-Corporation-1990.svg",
+                    LG: "https://assets.paulrand.design/Works/Irwin%20Union%20Financial%20Corporation/Irwin-Financial-Corporation-1990.svg",
+                    title: "Irwin Union Financial Corporation",
+                    footnote1: "1990"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Jacqueline%20Cochran/Jacqueline-Cochran-1944-v1.svg",
+                    LG: "https://assets.paulrand.design/Works/Jacqueline%20Cochran/Jacqueline-Cochran-1944-v1.svg",
+                    title: "Jacqueline Cochran",
+                    footnote1: "Version 1",
+                    footnote2: "1944"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Jacqueline%20Cochran/Jacqueline-Cochran-1944-v2.svg",
+                    LG: "https://assets.paulrand.design/Works/Jacqueline%20Cochran/Jacqueline-Cochran-1944-v2.svg",
+                    title: "Jacqueline Cochran",
+                    footnote1: "Version 2",
+                    footnote2: "1944"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/James-E-Pepper-1951.svg",
+                    LG: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/James-E-Pepper-1951.svg",
+                    title: "James E. Pepper",
+                    footnote1: "1951"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/James-E-Pepper-man-1951.svg",
+                    LG: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/James-E-Pepper-man-1951.svg",
+                    title: "James E. Pepper",
+                    footnote1: "Brand Character",
+                    footnote2: "1951"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/John%20David/John-David-Stores-pre-1965.svg",
+                    LG: "https://assets.paulrand.design/Works/John%20David/John-David-Stores-pre-1965.svg",
+                    title: "John David Stores",
+                    footnote1: "pre-1965"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Frazer-1949.svg",
+                    LG: "https://assets.paulrand.design/Works/Kaiser-Frazer/Frazer-1949.svg",
+                    title: "Kaiser-Frazer",
+                    footnote1: "1949"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Kaiser-1949.svg",
+                    LG: "https://assets.paulrand.design/Works/Kaiser-Frazer/Kaiser-1949.svg",
+                    title: "Kaiser-Frazer",
+                    footnote1: "1949"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Kaiser-Frazer/Kaiser-Frazer-Service-Station-pre-1965.svg",
+                    LG: "https://assets.paulrand.design/Works/Kaiser-Frazer/Kaiser-Frazer-Service-Station-pre-1965.svg",
+                    title: "Kaiser-Frazer",
+                    footnote1: "Brand Character: Service Station",
+                    footnote2: "pre-1965"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Kaufmann%E2%80%99s/Kaufmanns-1948.svg",
+                    LG: "https://assets.paulrand.design/Works/Kaufmann%E2%80%99s/Kaufmanns-1948.svg",
+                    title: "Kaufmann's Department Store",
+                    footnote1: "1948"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Ken%20magazine/Ken-magazine.svg",
+                    LG: "https://assets.paulrand.design/Works/Ken%20magazine/Ken-magazine.svg",
+                    title: "Ken Magazine",
+                    footnote1: "Date Unknown"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/La-Palina-Cigars.svg",
+                    LG: "https://assets.paulrand.design/Works/La%20Palina%20Cigars/La-Palina-Cigars.svg",
+                    title: "La Palina Cigars",
+                    footnote1: "Date Unknown"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Lee%20Hats/Lee-Hats-1947.svg",
+                    LG: "https://assets.paulrand.design/Works/Lee%20Hats/Lee-Hats-1947.svg",
+                    title: "Lee Hats",
+                    footnote1: "1947"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Lee%20Hats/Lee-Hats-Rabbit-1947.svg",
+                    LG: "https://assets.paulrand.design/Works/Lee%20Hats/Lee-Hats-Rabbit-1947.svg",
+                    title: "Lee Hats",
+                    footnote1: "Brand Character: Rabbit",
+                    footnote2: "1947"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Maidenform/Maidenform-1949.svg",
+                    LG: "https://assets.paulrand.design/Works/Maidenform/Maidenform-1949.svg",
+                    title: "Maidenform",
+                    footnote1: "1949"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Monell-Chemical-Senses-Center-1989.svg",
+                    LG: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Monell-Chemical-Senses-Center-1989.svg",
+                    title: "Monell Chemical Senses Center",
+                    footnote1: "1989"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Morningstar/Morningstar-1991.svg",
+                    LG: "https://assets.paulrand.design/Works/Morningstar/Morningstar-1991.svg",
+                    title: "Morningstar",
+                    footnote1: "1991"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Mossberg%20%26%20Company/Mossberg-and-Company-1987.svg",
+                    LG: "https://assets.paulrand.design/Works/Mossberg%20%26%20Company/Mossberg-and-Company-1987.svg",
+                    title: "Mossberg and Company",
+                    footnote1: "1987"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/NeXT/NeXT-Computers-1986.svg",
+                    LG: "https://assets.paulrand.design/Works/NeXT/NeXT-Computers-1986.svg",
+                    title: "NeXT Computers",
+                    footnote1: "1986"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Norwalk%20Cancer%20Center/Norwalk-Cancer-Center-1996.svg",
+                    LG: "https://assets.paulrand.design/Works/Norwalk%20Cancer%20Center/Norwalk-Cancer-Center-1996.svg",
+                    title: "Norwalk Cancer Center",
+                    footnote1: "1996"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Nutri%20Cola/Nutri-Cola-1947.svg",
+                    LG: "https://assets.paulrand.design/Works/Nutri%20Cola/Nutri-Cola-1947.svg",
+                    title: "Nutri Cola",
+                    footnote1: "1947"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Okasan%20Securities%20Company/Okasan-Securities-Company-1991.svg",
+                    LG: "https://assets.paulrand.design/Works/Okasan%20Securities%20Company/Okasan-Securities-Company-1991.svg",
+                    title: "Okasan Securities Company",
+                    footnote1: "1991"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Ohrbachs/Ohrbach%27s-1945.svg",
+                    LG: "https://assets.paulrand.design/Works/Ohrbachs/Ohrbach%27s-1945.svg",
+                    title: "Ohrbach’s",
+                    footnote1: "1945"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/IBM/Logos/OS-2-Operating-System-IBM-1987.svg",
+                    LG: "https://assets.paulrand.design/Works/IBM/Logos/OS-2-Operating-System-IBM-1987.svg",
+                    title: "OS-2 Operating System",
+                    footnote1: "1987"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Pacific%20Coast%20Borax%20Co/Pacific-Coast-Borax-Co.svg",
+                    LG: "https://assets.paulrand.design/Works/Pacific%20Coast%20Borax%20Co/Pacific-Coast-Borax-Co.svg",
+                    title: "Pacific Coast Borax Co.",
+                    footnote1: "Date Unknown"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/PDR-Pastore-DePamphilis-Rampone-1987.svg",
+                    LG: "https://assets.paulrand.design/Works/Pastore%20DePamphilis%20Rampone%20%28PDR%29/PDR-Pastore-DePamphilis-Rampone-1987.svg",
+                    title: "Pastore DePamphilis Rampone (PDR)",
+                    footnote1: "1987"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Playtex/Playtex-1941.svg",
+                    LG: "https://assets.paulrand.design/Works/Playtex/Playtex-1941.svg",
+                    title: "Playtex",
+                    footnote1: "1941"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Portfolio%20Magazine/Portfolio-Magazine.svg",
+                    LG: "https://assets.paulrand.design/Works/Portfolio%20Magazine/Portfolio-Magazine.svg",
+                    title: "Portfolio Magazine",
+                    footnote1: "Date Unknown"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerOpen-1991-black.svg",
+                    LG: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerOpen-1991-black.svg",
+                    title: "Power Open",
+                    footnote1: "Black Version",
+                    footnote2: "1991"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerOpen-1991-blue-red.svg",
+                    LG: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerOpen-1991-blue-red.svg",
+                    title: "Power Open",
+                    footnote1: "Blue and Red Version",
+                    footnote2: "1991"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerOpen-1991-blue.svg",
+                    LG: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerOpen-1991-blue.svg",
+                    title: "Power Open",
+                    footnote1: "Blue Version",
+                    footnote2: "1991"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerOpen-1991-red.svg",
+                    LG: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerOpen-1991-red.svg",
+                    title: "Power Open",
+                    footnote1: "Red Version",
+                    footnote2: "1991"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerOpen-1991-symbol-black.svg",
+                    LG: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerOpen-1991-symbol-black.svg",
+                    title: "Power Open",
+                    footnote1: "Black Symbol Version",
+                    footnote2: "1991"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerOpen-1991-symbol-blue-red.svg",
+                    LG: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerOpen-1991-symbol-blue-red.svg",
+                    title: "Power Open",
+                    footnote1: "Blue and Red Symbol Version",
+                    footnote2: "1991"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerOpen-1991-symbol-blue.svg",
+                    LG: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerOpen-1991-symbol-blue.svg",
+                    title: "Power Open",
+                    footnote1: "Blue Symbol Version",
+                    footnote2: "1991"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerOpen-1991-symbol-red.svg",
+                    LG: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerOpen-1991-symbol-red.svg",
+                    title: "Power Open",
+                    footnote1: "Red Symbol Version",
+                    footnote2: "1991"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerPC-1991-black.svg",
+                    LG: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerPC-1991-black.svg",
+                    title: "Power PC",
+                    footnote1: "Black Version",
+                    footnote2: "1991"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerPC-1991-blue-red.svg",
+                    LG: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerPC-1991-blue-red.svg",
+                    title: "Power PC",
+                    footnote1: "Blue and Red Version",
+                    footnote2: "1991"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerPC-1991-blue.svg",
+                    LG: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerPC-1991-blue.svg",
+                    title: "Power PC",
+                    footnote1: "Blue Version",
+                    footnote2: "1991"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerPC-1991-red.svg",
+                    LG: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerPC-1991-red.svg",
+                    title: "Power PC",
+                    footnote1: "Red Version",
+                    footnote2: "1991"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerPC-1991-symbol-black.svg",
+                    LG: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerPC-1991-symbol-black.svg",
+                    title: "Power PC",
+                    footnote1: "Black Symbol Version",
+                    footnote2: "1991"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerPC-1991-symbol-blue-red.svg",
+                    LG: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerPC-1991-symbol-blue-red.svg",
+                    title: "Power PC",
+                    footnote1: "Blue and Red Symbol Version",
+                    footnote2: "1991"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerPC-1991-symbol-blue.svg",
+                    LG: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerPC-1991-symbol-blue.svg",
+                    title: "Power PC",
+                    footnote1: "Blue Symbol Version",
+                    footnote2: "1991"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerPC-1991-symbol-red.svg",
+                    LG: "https://assets.paulrand.design/Works/Power%20PC%20and%20Power%20Open/PowerPC-1991-symbol-red.svg",
+                    title: "Power PC",
+                    footnote1: "Red Symbol Version",
+                    footnote2: "1991"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Rainfair%20Storm%20Coats/Rainfair-Coats-1944.svg",
+                    LG: "https://assets.paulrand.design/Works/Rainfair%20Storm%20Coats/Rainfair-Coats-1944.svg",
+                    title: "Rainfair Coats",
+                    footnote1: "1944"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Saybrook%2C%20RH%20Macy%20and%20Co%201935/Saybrook-RH-Macy-and-Co.svg",
+                    LG: "https://assets.paulrand.design/Works/Saybrook%2C%20RH%20Macy%20and%20Co%201935/Saybrook-RH-Macy-and-Co.svg",
+                    title: "Saybrook, RH Macy and Co.",
+                    footnote1: "1935"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Servador/Servador-1996.svg",
+                    LG: "https://assets.paulrand.design/Works/Servador/Servador-1996.svg",
+                    title: "Servador",
+                    footnote1: "1996"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Shuredge-1947.svg",
+                    LG: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Shuredge-1947.svg",
+                    title: "Shur-Edge Knives",
+                    footnote1: "1947"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Shuredge-Chef-1947.svg",
+                    LG: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Shuredge-Chef-1947.svg",
+                    title: "Shur-Edge Knives",
+                    footnote1: "Brand Character: Chef",
+                    footnote2: "1947"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Shuredge-Owl-1947.svg",
+                    LG: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Shuredge-Owl-1947.svg",
+                    title: "Shur-Edge Knives",
+                    footnote1: "Brand Character: Owl",
+                    footnote2: "1947"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Shuredge-Reindeer-1947.svg",
+                    LG: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Shuredge-Reindeer-1947.svg",
+                    title: "Shur-Edge Knives",
+                    footnote1: "Brand Character: Reindeer",
+                    footnote2: "1947"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Shuredge-Santa-1947.svg",
+                    LG: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Shuredge-Santa-1947.svg",
+                    title: "Shur-Edge Knives",
+                    footnote1: "Brand Character: Santa",
+                    footnote2: "1947"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Shuredge-Turkey-1947.svg",
+                    LG: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Shuredge-Turkey-1947.svg",
+                    title: "Shur-Edge Knives",
+                    footnote1: "Brand Character: Turkey",
+                    footnote2: "1947"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Smith%2C%20Kline%20%26%20French/Smith-Kline-and-French-Laboratories-1945.svg",
+                    LG: "https://assets.paulrand.design/Works/Smith%2C%20Kline%20%26%20French/Smith-Kline-and-French-Laboratories-1945.svg",
+                    title: "Smith, Kline & French Laboratories",
+                    footnote1: "1945"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Stafford%20Fabrics/Stafford-Fabrics-1942.svg",
+                    LG: "https://assets.paulrand.design/Works/Stafford%20Fabrics/Stafford-Fabrics-1942.svg",
+                    title: "Stafford Fabrics",
+                    footnote1: "1942"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/The%20Limited/The-Limited-1988.svg",
+                    LG: "https://assets.paulrand.design/Works/The%20Limited/The-Limited-1988.svg",
+                    title: "The Limited",
+                    footnote1: "1988"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Thomas%20Creighton%20Co/Thomas-Creighton-Co.svg",
+                    LG: "https://assets.paulrand.design/Works/Thomas%20Creighton%20Co/Thomas-Creighton-Co.svg",
+                    title: "Thomas Creighton Co.",
+                    footnote1: "1933"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Tipton%20Lakes/Tipton-Lakes-1980.svg",
+                    LG: "https://assets.paulrand.design/Works/Tipton%20Lakes/Tipton-Lakes-1980.svg",
+                    title: "Tipton Lakes",
+                    footnote1: "Version 1",
+                    footnote2: "1980"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Tipton%20Lakes/Tipton-Lakes-1980-v2.svg",
+                    LG: "https://assets.paulrand.design/Works/Tipton%20Lakes/Tipton-Lakes-1980-v2.svg",
+                    title: "Tipton Lakes",
+                    footnote1: "Version 2",
+                    footnote2: "1980"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/United%20Parcel%20Service%20%28UPS%29/United-Parcel-Service-UPS-1961.svg",
+                    LG: "https://assets.paulrand.design/Works/United%20Parcel%20Service%20%28UPS%29/United-Parcel-Service-UPS-1961.svg",
+                    title: "United Parcel Service (UPS)",
+                    footnote1: "1961"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Wallace%20Puppets/Wallace-Puppets-1938.svg",
+                    LG: "https://assets.paulrand.design/Works/Wallace%20Puppets/Wallace-Puppets-1938.svg",
+                    title: "Wallace Puppets",
+                    footnote1: "1938"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Westinghouse/Westinghouse-1960.svg",
+                    LG: "https://assets.paulrand.design/Works/Westinghouse/Westinghouse-1960.svg",
+                    title: "Westinghouse",
+                    footnote1: "1960"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/IBM/Logos/XGA-1992.svg",
+                    LG: "https://assets.paulrand.design/Works/IBM/Logos/XGA-1992.svg",
+                    title: "XGA",
+                    footnote1: "1992"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Yale/Yale-University-Press-1985-2010.svg",
+                    LG: "https://assets.paulrand.design/Works/Yale/Yale-University-Press-1985-2010.svg",
+                    title: "Yale University",
+                    footnote1: "1985-2010"
+                    })
+
+                +galleryItem-cardLink(
+                    "4","6",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Zebra%20Press/Zebra-Press-pre-1965.svg",
+                    LG: "https://assets.paulrand.design/Works/Zebra%20Press/Zebra-Press-pre-1965.svg",
+                    title: "Zebra Press",
+                    footnote1: "pre-1965"
+                    })
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

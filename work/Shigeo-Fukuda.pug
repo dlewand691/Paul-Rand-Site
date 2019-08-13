@@ -1,0 +1,85 @@
+extends ../__MIXINS/_layout-default.pug
+include ../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Shigeo Fukuda- Toys and Things Exhibit'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var dates     = '1967'
+    - var nextType  = 'Client'
+    - var nextTitle = 'Shur-Edge Knives'
+    - var nextLink  = 'Shur-Edge-Knives'
+
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center.small-mb4
+                .small-12.cell.text-center
+                    //- /*==============================  CLIENT  ==============================*/
+                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    if dates == 'CHANGE_ME'
+                    else
+                        p!= dates
+
+                    //- /*==============================  PROJECTS  ==============================*/
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Exhibit Announcement",
+                        "top","1", "1",
+                        {SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2001.jpg", title: "", footnote: ""}
+                        )
+                    +carouselImages(
+                        "View More",
+                        "",
+                        {Title: "Exhibit Announcement", SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2001.jpg"},
+                        {Title: "Exhibit Announcement", SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2002.jpg"},
+                        {Title: "Exhibit Announcement", SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2003.jpg"},
+                        {Title: "Exhibit Announcement", SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2004.jpg"},
+                        {Title: "Exhibit Announcement", SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2005.jpg"},
+                        {Title: "Exhibit Announcement", SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2006.jpg"},
+                        {Title: "Exhibit Announcement", SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2007.jpg"},
+                        {Title: "Exhibit Announcement", SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2008.jpg"},
+                        {Title: "Exhibit Announcement", SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2009.jpg"},
+                        {Title: "Exhibit Announcement", SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2010-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2010.jpg"},
+                        {Title: "Exhibit Announcement", SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2011-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2011.jpg"},
+                        {Title: "Exhibit Announcement", SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2012-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2012.jpg"},
+                        {Title: "Exhibit Announcement", SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2013-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2013.jpg"},
+                        {Title: "Exhibit Announcement", SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2014-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2014.jpg"},
+                        {Title: "Exhibit Announcement", SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2015-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2015.jpg"},
+                        {Title: "Exhibit Announcement", SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2016-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2016.jpg"},
+                        {Title: "Exhibit Announcement", SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2017-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2017.jpg"},
+                        {Title: "Exhibit Announcement", SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2018-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2018.jpg"},
+                        {Title: "Exhibit Announcement", SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2019-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2019.jpg"},
+                        {Title: "Exhibit Announcement", SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2020-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Announcement%201967%2020.jpg"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Exhibit Design",
+                        "3", "2",
+                        {SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Design%201967%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Design%201967%2001.jpg", title: "", footnote: "Courtesy of Wright Auction House"},
+                        {SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Design%201967%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Design%201967%2002.jpg", title: "", footnote: "Courtesy of Wright Auction House"},
+                        {SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Design%201967%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Design%201967%2003.jpg", title: "", footnote: "Courtesy of Wright Auction House"},
+                        {SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Design%201967%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Design%201967%2004.jpg", title: "", footnote: "Courtesy of Wright Auction House"},
+                        {SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Design%201967%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Design%201967%2005.jpg", title: "", footnote: "Courtesy of Wright Auction House"},
+                        {SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Design%201967%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Design%201967%2006.jpg", title: "", footnote: "Courtesy of Modernism101"},
+                        {SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Design%201967%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Design%201967%2007.jpg", title: "", footnote: "Courtesy of Modernism101"}
+                        )
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_yes",
+                        "Exhibit Poster",
+                        "1", "1",
+                        {SM: "https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Poster%201967%2001-970.jpg", LG:"https://assets.paulrand.design/Works/Shigeo%20Fukuda-%20Toys%20and%20Things%20Exhibit/Web/Shigeo%20Fukuda%20Toys%20and%20Things%20Exhibit%20Poster%201967%2001.jpg", title: "", footnote: ""}
+                        )
+
+            //- /*-----  End of BODY  ------*/
+
+
+        include ../__MIXINS/_include-next-work.pug
+
+        include ../__MIXINS/_include-social-media.pug

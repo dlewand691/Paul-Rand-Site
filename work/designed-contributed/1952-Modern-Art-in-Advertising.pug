@@ -1,0 +1,94 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Modern Art in Advertising'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var bookSubhead           = 'Walter Paepcke, Egbert Jacobson, Paul Rand (designer)'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/499899837'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3DModern%2BArt%2Bin%2BAdvertising%2BWalter%2BPaepcke%252C%2BEgbert%2BJacobson%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/28PGiKT'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_nkw%3DModern%2520Art%2520in%2520Advertising'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'Homage to the Book'
+    - var nextLink              = '1968-Homage-to-the-Book'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2C%20cover-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2C%20cover.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2011.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= bookSubhead
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2C%20cover-970.jpg",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1952%20Modern%20Art%20in%20Advertising%20Container%20Corp%20of%20America/Web/Modern%20Art%20in%20Advertising%2C%20cover.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            include ../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Container Corporation of America/Paul Theobald, 1946
+
+                        Designs for Container Corporation of America. First-rate Cover design, board design and interior typography by Paul Rand. An excellent vintage snapshot of corporate America’s embrace of the European Avant-Garde-- graphically more intense than the later (more artsy) Great ideas series. Many of the included examples have not been reprinted elsewhere.
+
+                        9.5 x 12.5 hardcover book with 89 color and b/w reproductions of advertising artwork commissioned by Chairman Paepcke for the Container Corporation of America. Includes an essay entitled "Art in Industry" by Walter Paepcke. This volume includes a short biography as well as a photograph of all the represented artists.
+
+                        Includes work by A. M. Cassandre (13 examples), Gyorgy Kepes (4 examples), Herbert Bayer (11 examples), Jean Carlu (4 examples), Herbert Matter (8 examples), Leo Lionni (6 examples), Fernand Leger, Richard Lindner, Miguel Covarrubias, Ben Shahn, Sigurd Sodergaard, Henry Moore, Persia Abbas, Tibor Gergely, Zdzislaw Czermanski, Juan Renau, Philip Evergood, Paul Rand, Man Ray, Xanti Schawinsky, Rufino Tamayo, Jean Varda, George Korff, William Campbell, Matthew Liebowitz, Paul Nonnast, Toni Zepf (4 examples) and others.
+
+                    .footnote — Randall Ross of modernism101.com
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../__MIXINS/_include-next-work.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

@@ -1,0 +1,105 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Paul Rand: Inspiration and Process in Design'
+    - var bodyID    = 'life'
+    - var bodyClass = 'books-articles'
+
+block main-content
+    - var author                = 'Introduction by Steven Heller.'
+    - var bookSubhead           = 'Edited by Eugenia Bell.'
+
+    - var library               = 'no'
+    - var libraryLink           = 'CHANGE_ME'
+    - var abe                   = 'no'
+    - var abeLink               = 'CHANGE_ME'
+    - var amazon                = 'no'
+    - var amazonLink            = 'CHANGE_ME'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'no'
+    - var ebayLink              = 'CHANGE_ME'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'A-D Gallery Presents: Paul Rand'
+    - var nextDate              = '1947'
+    - var nextDescription       = 'By Robert L. Leslie'
+    - var nextLink              = '/life/books-articles/books/1947-ad-gallery.html'
+
+    - var relatedItemLink1      = '/life/books-articles/books/1992-ggg.html'
+    - var relatedItemTitle1     = 'Ginza Graphic Gallery: Paul Rand'
+    - var relatedItemFootnote1  = 'Ginza Graphic Gallery, 1992'
+
+    - var relatedItemLink2      = '/life/books-articles/books/1998-a-designers-words.html'
+    - var relatedItemTitle2     = 'A Designer’s Words'
+    - var relatedItemFootnote2  = 'From the Paul Rand Symposium on April 3, 1998 at the School of Visual Arts in New York.'
+
+    - var relatedItemLink3      = '/life/books-articles/books/1960-his-works.html'
+    - var relatedItemTitle3     = 'Paul Rand: His Works from 1946-1958'
+    - var relatedItemFootnote3  = 'By Yusaku Kamekura'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2019%20Paul%20Rand%20Inspiration%20and%20Process%20in%20Design/Web/Paul%20Rand%20Inspiration%20and%20Process%20in%20Design%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2019%20Paul%20Rand%20Inspiration%20and%20Process%20in%20Design/Web/Paul%20Rand%20Inspiration%20and%20Process%20in%20Design%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2019%20Paul%20Rand%20Inspiration%20and%20Process%20in%20Design/Web/Paul%20Rand%20Inspiration%20and%20Process%20in%20Design%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2019%20Paul%20Rand%20Inspiration%20and%20Process%20in%20Design/Web/Paul%20Rand%20Inspiration%20and%20Process%20in%20Design%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2019%20Paul%20Rand%20Inspiration%20and%20Process%20in%20Design/Web/Paul%20Rand%20Inspiration%20and%20Process%20in%20Design%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2019%20Paul%20Rand%20Inspiration%20and%20Process%20in%20Design/Web/Paul%20Rand%20Inspiration%20and%20Process%20in%20Design%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2019%20Paul%20Rand%20Inspiration%20and%20Process%20in%20Design/Web/Paul%20Rand%20Inspiration%20and%20Process%20in%20Design%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2019%20Paul%20Rand%20Inspiration%20and%20Process%20in%20Design/Web/Paul%20Rand%20Inspiration%20and%20Process%20in%20Design%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2019%20Paul%20Rand%20Inspiration%20and%20Process%20in%20Design/Web/Paul%20Rand%20Inspiration%20and%20Process%20in%20Design%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2019%20Paul%20Rand%20Inspiration%20and%20Process%20in%20Design/Web/Paul%20Rand%20Inspiration%20and%20Process%20in%20Design%2005.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= author
+                    br
+                    em.text-gray.t16!= bookSubhead
+
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2019%20Paul%20Rand%20Inspiration%20and%20Process%20in%20Design/Web/Paul%20Rand%20Inspiration%20and%20Process%20in%20Design%2001-970.jpg",
+                            "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/2019%20Paul%20Rand%20Inspiration%20and%20Process%20in%20Design/Web/Paul%20Rand%20Inspiration%20and%20Process%20in%20Design%2001.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Best-known for his corporate brand logos and art direction, Paul Rand (1914–1986) transformed commercial art from craft to profession, introduced European design standards to American commercial art, influenced the look of advertising and book design, and altered the ways in which major corporations including IBM, UPS, and Westinghouse did business. His adherence to a strict design form in his work for corporate clients was balanced by a playful side, captured in this spirited collection of literal (and figural) back-of-the-envelope sketches, doodles, notes, and imaginative sparks that later found their full form in his children’s books, logos, and personal work.
+
+                        Steven Heller is the foremost expert on Paul Rand. He was an art director at the New York Times, where he now writes the Visuals column, and currently serves as co-chair of the MFA Design Department at the School of Visual Arts in New York.
+
+                        978161689859552495  
+                        October 2019  
+                        5 x 8.25 in / 12.7 x 21 cm  
+                        144 pp / 150 illustrations  
+                        Hardcover  
+                        978-1-61689-859-5  
+                        $24.95 / £18.99
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../../__MIXINS/_include-next-item.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

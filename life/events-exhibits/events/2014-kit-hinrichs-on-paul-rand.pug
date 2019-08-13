@@ -1,0 +1,72 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Kit Hinrichs on Paul Rand'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'CHANGE_ME'
+    - var pageSubtitle2         = 'CHANGE_ME'
+
+    - var nextType              = 'Event'
+    - var nextTitle             = 'Paul Rand Workshop'
+    - var nextDate              = '2014'
+    - var nextLink              = '2014-paul-rand-workshop'
+
+    - var imageCarouselTitle    = 'Photos of the ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2013.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2003.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2003.jpg"
+                            )
+
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        “The most effective design has a narrative thread.” In conjunction with SF Design Week and AIGA, join design luminary and international award winner Kit Hinrichs as he discusses his design philosophy and the influence of Paul Rand. Hinrichs will also speak to how Rand rebranded himself to assimilate to the market of his time.
+
+                        Kit Hinrichs founded Studio Hinrichs in October 2009, following twenty three years as a partner of the international design firm, Pentagram. Prior to that, he was a partner in the design consultancy Jonson, Pedersen, Hinrichs & Shakery. Hinrichs has taught at the School of Visual Arts in New York, the California College of the Arts, and the Academy of Art in San Francisco. His work has been honored and widely published internationally, and several of his pieces are part of the permanent collection of the Museum of Modern Art and the Smithsonian Institution’s Cooper-Hewitt Museum of Design. Hinrichs is a recipient of the prestigious AIGA medal in recognition of his exceptional achievements in the field of graphic design and visual communication.
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

@@ -1,0 +1,82 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'St. Paul, Minneapolis Event'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = '1994'
+    - var pageSubtitle2         = 'CHANGE_ME'
+
+    - var nextType              = 'Event'
+    - var nextTitle             = 'Philadelphia Lecture'
+    - var nextDate              = '1994'
+    - var nextLink              = '1994-philadelphia-lecture'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20poster%2012.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+                    .small-mt3.small-mb2
+                        +galleryItem-heavy(
+                            "DIVIDER_no",
+                            "Exhibit Poster",
+                            "6", "6",
+                            {SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20Poster%2C%20front-450.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20Poster%2C%20front.jpg", footnote: "Front"},
+                            {SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20Poster%2C%20back-450.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20Poster%2C%20back.jpg", footnote: "Back"}
+                            )
+
+                        +galleryItem-heavy(
+                            "DIVIDER_yes",
+                            "Postcards",
+                            "4", "6",
+                            {SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20Postcard%2001-450.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20Postcard%2001.jpg", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20Postcard%2002-450.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20Postcard%2002.jpg", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20Postcard%2003-450.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20Postcard%2003.jpg", footnote: ""},
+                            {SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20Postcard%20back-450.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20Postcard%20back.jpg", footnote: ""}
+                            )
+
+            //- include ../../../__MIXINS/_include-image-carousel.pug
+
+            //- .grid-x.grid-margin-x.small-mb3.align-center
+            //-     .large-7.medium-8.small-12.cell
+            //-         :markdown-it(html typographer plugins=['markdown-it-sup'])
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

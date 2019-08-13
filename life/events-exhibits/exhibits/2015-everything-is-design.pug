@@ -1,0 +1,307 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Everything Is Design: The Work of Paul Rand'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'Museum of the City of New York (MCNY)'
+    - var pageSubtitle2         = 'February 25 – October 13, 2015'
+
+    - var nextType              = 'Exhibit'
+    - var nextTitle             = 'A Designer’s Task'
+    - var nextDate              = '2018'
+    - var nextLink              = '2018-designers-task'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Exterior%20Sign/Web/2015%20Paul%20Rand%20Everything%20is%20Design%20Exterior%20Sign-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Exterior%20Sign/Web/2015%20Paul%20Rand%20Everything%20is%20Design%20Exterior%20Sign.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2014-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2015-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2016-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2016.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2017-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2017.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2018-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2018.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2019-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2019.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2020-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2020.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2021-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2021.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2022-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2022.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2023-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2023.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2024-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2024.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2025-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2025.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2026-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2026.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2027-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2027.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2028-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2028.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2029-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2029.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2030-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2030.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2031-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2031.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2032-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2032.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2033-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2033.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2034-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2034.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2035-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2035.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2036-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2036.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2037-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2037.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2038-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2038.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2039-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2039.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2040-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2040.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2041-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2041.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2042-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2042.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2043-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2043.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2044-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2044.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2045-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2045.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2002-800.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/MCNY%20Images/Web/MCNY%202015%2002.jpg"
+                            )
+
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+            .grid-x.grid-margin-x.small-mb4.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        *Everything Is Design: The Work of Paul Rand* features more than 150 advertisements, posters, corporate brochures, and books by this master of American design. 
+
+                        It was Rand who most creatively brought European avant-garde art movements such as Cubism and Constructivism to graphic design in the United States. His philosophy, as expressed in his work and writings, including the recently republished 1947 *Thoughts on Design*, argued that visual language should integrate form and function. Born in Brooklyn in humble circumstances, Rand (1914-1996) launched his career in the 1930s with magazine cover design and, starting in the early 1940s, he worked as an art director on Madison Avenue, where he helped revolutionize the advertising profession. 
+
+                        He later served as design consultant to leading corporations like IBM, ABC, UPS, and Steve Jobs's NeXT, for whom he conceived comprehensive visual communications systems, ranging from packaging to building signage, all grounded in recognizable logos, many of which are still in use today. Rand’s influence was extended by students he taught at Yale University. His visually stimulating, yet problem-solving, approach to graphic design attracted devoted admirers during his own lifetime and he remains influential today.
+
+                        ##### Exhibition co-chairs: 
+                        + Dana Arnett
+                        + Michael Bierut
+                        + Steven Heller
+                        + Curt Schreiber
+                        + Willy Wong
+                        + Keith Yamashita
+
+                        The exhibition is made possible by IBM
+
+                        Additional support is provided by AIGA/NY, VSA Partners, New York State Council on the Arts (NYSCA)
+
+                        The New York State Council on the Arts with the support of Governor Andrew Cuomo and the New York State Legislature.  
+
+                        + Todd DeGarmo / Studios Architecture
+                        + KYU
+                        + Philip Burton
+                        + Steven Heller
+                        + Will Miller and Lynne Maguire
+                        + David Rhodes
+                        + Willy Wong
+                        + Chermayeff & Geismar & Haviv
+                        + Chronicle Books
+                        + Lee P. Gelber
+                        + Pentagram
+                        + Keith Yamashita and Todd Holcomb
+                        + Martha and Curt Schreiber
+                        + Stephanie and Dana Arnett
+
+                        ---
+
+                        ### Gallery Information
+
+                        Museum of the City of New York  
+                        1220 Fifth Avenue (at 103rd Street)  
+                        New York, NY 10029
+
+                        ---
+
+                    h5.text-center Opening Party Invitation
+                    +imageZoomSingleCaption("https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Opening%20Party%20Invitation/Web/Opening%20Party%20Invitation%20front.jpg", "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Opening%20Party%20Invitation/Web/Opening%20Party%20Invitation%20front.jpg", "Invitation Front")
+                    +imageZoomSingleCaption("https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Opening%20Party%20Invitation/Web/Opening%20Party%20Invitation%20back.jpg", "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Opening%20Party%20Invitation/Web/Opening%20Party%20Invitation%20back.jpg", "Invitation Back")
+
+                    hr
+                    h2.text-center Events and Public Programs
+                    p Several supporting events were held in which a panel of guest speakers spoke about Rand, his influence and the current state of the industry. Most, if not all, were sold out to a large audiences as each featured prominent design practitioners in a variety of fields. 
+
+                    hr.w50.hr-red
+                    +imageZoomSingle("https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Event-%20Revolutions%20in%20Graphic%20Design/Web/Revolutions%20in%20Graphic%20Design.jpg", "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Event-%20Revolutions%20in%20Graphic%20Design/Web/Revolutions%20in%20Graphic%20Design.jpg")
+
+                    h3.text-center.text-italic.small-my3 Revolutions in Graphic Design
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Thursday, March 19 at 6:30 pm
+
+                        Graphic design is often defined as the art of visualizing ideas, but pioneer Paul Rand thought differently – he saw designers as idea creators themselves.  Join our distinguished speakers as they discuss how Rand revolutionized graphic design and its professional practice by forging a unity of text and image, design and concept. This program is related to our upcoming exhibition Everything is Design: The Work of Paul Rand, on view from February 25–July 19, 2015.
+
+                        + Michael Bierut, Partner, Pentagram
+                        + Jessica Helfand, Founding Editor of Design Observer
+                        + Danny Lewandowski, Interactive Designer, Convergent Media Systems, and Creator/Curator of www.paul-rand.com 
+                        + George Lois, Art director, designer, and author
+                        + Chris Pullman, Former VP of Design for WGBH
+                        + Steven Heller (moderator), Co-chair SVA MFA Design / Designer as Author + Entrepreneur and author of Paul Rand
+
+                        Co-sponsored by AIGA/NY.
+
+
+
+                    hr.w50.hr-red
+                    +imageZoomSingle("https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Event-%20How%20Paul%20Rand%20Connected%20the%20Dots/Web/How%20Paul%20Rand%20Connected%20the%20Dots.jpg", "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Event-%20How%20Paul%20Rand%20Connected%20the%20Dots/Web/How%20Paul%20Rand%20Connected%20the%20Dots.jpg")
+
+                    h3.text-center.text-italic.small-my3 How Rand Connected the Dots: When the European Avant Garde Met American Commercial Design
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Thursday, July 30 at 6:30 pm
+
+                        Paul Rand said “The revolution in modern painting, with its emphasis on form, on abstraction, on visual relationships, on unorthodox methods and materials, has played its part in focusing attention on the design of the total surface. . .“ This exposure to European avant-garde art, architecture, and theory informed and freed Rand to revolutionize the American design scene of the 1930s. Join a distinguished panel of speakers as they discuss his European sources. This program accompanies the City Museum’s exhibition Everything Is Design: The Work of Paul Rand, on view through September 7.
+
+                        + Victor Margolin, Professor Emeritus of Design History Department of Art History University of Illinois, Chicago
+                        + Mark Kingsley, Founder of Malcontent
+                        + Nathan Garland, Graphic Design Consultant and Paul Rand’s friend
+                        + Ellen Lupton (moderator), Senior Curator / Contemporary Design, Cooper Hewitt and Director, Graphic Design MFA Program, Maryland Institute College of Art
+
+                        Co-sponsored by AIGA/NY, BMCC, and the Design Program at Queens College. 
+
+
+
+                    hr.w50.hr-red
+                    +imageZoomSingle("https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Event-%20Branding%20Why%20Good%20Design%20Is%20Good%20Business/Web/Branding%20Why%20Good%20Design%20Is%20Good%20Business.jpg", "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Event-%20Branding%20Why%20Good%20Design%20Is%20Good%20Business/Web/Branding%20Why%20Good%20Design%20Is%20Good%20Business.jpg")
+
+                    h3.text-center.text-italic.small-my3 Branding: Why Good Design is Good Business
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Wednesday, April 29, 6:30 pm
+
+                        Paul Rand and his contemporaries forged the modern practice of branding as a comprehensive program of corporate communications. This panel discussion brings together leading graphic designers who will explore how Rand paved the way for contemporary forms of business media. They will also speculate on how Rand might have navigated today’s digital landscape and whether the standards and practices that he and his colleagues developed are still relevant. This program accompanies the City Museum’s exhibition Everything Is Design: The Work of Paul Rand, on view through September 7.
+
+                        + Ivan Chermayeff, Founder, Chermayeff & Geismar & Haviv 
+                        + Jennifer Kinon, Co-founder, OCD | The Original Champions of Design
+                        + Debbie Millman, Creative Director, Sterling Brands
+                        + Keith Yamashita, Chairman & Founder, SY Partners
+                        + Willy Wong (moderator), Former Chief Creative Officer, NYC & Company
+
+                        Co-sponsored by AIGA/NY.
+
+
+
+                    hr.w50.hr-red
+                    +imageZoomSingle("https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Event-%20You%20Can%20Tell%20A%20Book%20By%20Its%20Cover/Web/You%20Can%20Tell%20A%20Book%20By%20Its%20Cover.jpg", "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Event-%20You%20Can%20Tell%20A%20Book%20By%20Its%20Cover/Web/You%20Can%20Tell%20A%20Book%20By%20Its%20Cover.jpg")
+
+                    h3.text-center.text-italic.small-my3 You Can Tell a Book by its Cover
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Monday, June 1, 6:30 pm
+
+                        How often do you buy a book because of its cover? Paul Rand, who designed book jackets throughout his career, created covers that fused art and design to compelling evoke a book's content. Join a distinguished panel of speakers as they trace the history and influence of Paul Rand and his contemporaries on practices and trends found in book cover design today. They will discuss why the marketplace for books, whether in bricks-and-mortar stores or online, compelled publishers to consider the cover as the ultimate marketing tool. This program accompanies the City Museum’s exhibition Everything Is Design: The Work of Paul Rand, on view through September 7.
+
+                        + Donald Albrecht (moderator), Museum’s Curator of Architecture and Design and Curator of Everything Is Design: The Work of Paul Rand
+                        + Michael Carabetta, Chronicle Books Creative Director
+                        + Peter Mendelsund, Associate Art Director at Alfred A. Knopf Books
+                        + Gabriele Wilson, Designer & Founder Gabriele Wilson Design
+
+                        Co-sponsored by AIGA/NY and ADC.
+
+
+
+                    hr.w50.hr-red
+                    +imageZoomSingle("https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Event-%20Design%20As%20Discipline%20From%20The%20Drafting%20Table%20To%20The%20Academy/Web/Design%20As%20Discipline%20From%20The%20Drafting%20Table%20To%20The%20Academy.jpg", "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Event-%20Design%20As%20Discipline%20From%20The%20Drafting%20Table%20To%20The%20Academy/Web/Design%20As%20Discipline%20From%20The%20Drafting%20Table%20To%20The%20Academy.jpg")
+
+                    h3.text-center.text-italic.small-my3 Design as Discipline: From the Drafting Table to the Academy
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Monday, June 15 at 6:30 pm
+
+                        While Paul Rand most famously expressed his ideas through visual communications, he did so with equal force through teaching. He initially taught at Pratt Institute, but his most prolonged stint was as a professor at Yale University, where he started teaching in the 1950s. A tough and at times irascible critic, Rand influenced generations of younger designers, many of whom hold prominent positions in business and academia today. Join a group of graphic design professors for a discussion of Rand’s pioneering and still relevant approach to design education. This program accompanies the City Museum’s exhibition Everything Is Design: The Work of Paul Rand, on view through September 7.
+
+                        + Sheila Levrant de Bretteville, Director of the Yale University Graduate Program in Graphic Design at Yale University School of Art and Chair of the Dean Search Committee
+                        + Margaret Morton, Professor, School of Art, The Cooper Union
+                        + Lorraine Wild, Principal of Green Dragon Office
+                        + J.P. Williams, Partner of MW
+                        + Juliette Cezzar (moderator), 2015 AIGA/NY President and Assistant Professor of Communication Design, Art, Media and Technology at Parsons The New School for Design
+
+                        Co-sponsored by AIGA/NY and ADC.
+
+
+
+                    hr.w50.hr-red
+                    +imageZoomSingle("https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Event-%20Closing%20Party%20with%20Kyle%20Cooper/Web/Closing%20Party%20with%20Kyle%20Cooper.jpg", "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Event-%20Closing%20Party%20with%20Kyle%20Cooper/Web/Closing%20Party%20with%20Kyle%20Cooper.jpg")
+
+                    h3.text-center.text-italic.small-my3 Paul Rand Closing Party with Kyle Cooper
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Friday, October 9 at 6:30 pm
+
+                        This event is sold out but we will be selling walk in tickets at the door. 
+
+                        Join us for the grand finale of the exhibition Everything Is Design: The Work of Paul Rand. Star designer Kyle Cooper, known as "the Da Vinci of movie title sequences,” will share what he learned from Paul Rand when he was his student at Yale University, the example that “Mr. Rand” set for him, and how Rand profoundly influenced the way Cooper approaches design and teaching today. Andrew Losowsky, journalist and author, will join Cooper afterwards for a brief conversation. 
+
+                        The Rand gallery will be open for late viewing, jazz musicians will play, and signature “Rand” cocktails will be served!
+
+                        The event is co-sponsored by AIGA/NY, the MFA Photography, Video, and Related Media at the School of Visual Arts, and Pratt Institute Undergraduate Communications Design. It is also part of Archtober, the month-long festival of architecture and design presented by the Center for Architecture and the America Institute of Architects New York Chapter.
+
+                    hr
+                    h3.text-center.text-italic.small-my3 Special visit by Catherine Rand
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        During the “How Rand Connected the Dots” event, Paul Rand’s only child, Catherine, made a surprise appearance to speak briefly about her life as his daughter. It was a special treat for the audience and friends. Her speech is posted below with some never-before-heard facts about Rand. 
+
+                    .text-center
+                        h4.text-caps What It Was Like To Be Paul Rand’s Daughter
+                        p
+                            em By Catherine Rand
+
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            Good evening, it is a great honor and a privilege to be here, tonight.
+
+                            I have been given five minutes to speak about what it was like to be Paul Rand’s daughter. Some of you in the room knew my father. Those of you who did, know that is an impossible task! But I will do my best.
+
+                            In two words, not easy! But it was always interesting. My father was the most brilliant, creative, fascinating and difficult person I have ever known.
+
+                            I am proud to be his daughter. I loved him dearly, and always wanted him to be proud of me. My father had a very difficult childhood. He grew up poor in an Orthodox Jewish family in Brooklyn. He had an identical twin brother, Philip, whom he both adored and envied. Philip was much more extroverted and socially at ease than he was. His parents owned a small grocery store and my father and his brother had to sleep in a loft where the bread was stored, and there were rats. My father absolutely hated rodents. My grandfather was a gentle, sweet, pious man, and my grandmother was the opposite. She ruled the roost with an iron fist. She had a pronounced hunchback, a crooked nose, and wiry white hair she wore in a bun—she looked exactly like the Wicked Witch of the West to me as a child and I was completely afraid of her. I never heard one positive word come out of her mouth. I was once told that the reason she didn’t say anything encouraging or positive to my father or me was because it was considered to be a jinx, in a certain branch of Judaism. My father drew like an adult at the age of three with charcoal he snuck from the fire, receiving not one iota of encouragement from his parents because drawing was essentially considered a sin, as it represented the “reproduction of the graven image.” I was awed that in spite of such blatant discouragement, he persisted. My father’s talent and drive were so intense that wild horses could not have stopped him. One terrible story I remember hearing from my mother happened when my father and his brother were about five or six years old. Their mother had gone to the store and they decided to mop the kitchen floor to make her happy. One of them accidentally knocked the bucket over and suds bubbled up everywhere. When my grandmother returned she was so angry that she whipped them severely. This is not the kind of childhood that engenders emotional well-being. My father was so driven to pursue his passion that he lied about his age to get into Pratt and Parsons art schools. At fourteen, he took the subway into the city at night, after a full day in high school. My father was ashamed that he only went to art school and not college, although he was awarded many honorary degrees throughout his career. He was one of the most well-read people I know, usually reading at least ten books at a time.
+
+                            You might not be aware that my father was a very picky eater. While he did not keep Kosher, he did not like to eat butter or cream with his meals. My father would bark to the server that he did not want any cream or butter on anything—**“Just plain!”** Once he took my college boyfriend and me to a very elegant French restaurant in Boston. When he ordered, he loudly stated, **“No cream! No butter! Just plain!”** Within minutes the Chef came out with her hands on her hips and said, “Sir, do you realize that this is a FRENCH restaurant?? And in French cuisine nearly everything is made with cream and butter?!” Andrew and I wanted to creep under the table.
+
+                            My father was the most visually oriented person I have ever met. In some ways, this was a curse because he was bombarded by visual stimuli everywhere he went. Perhaps this is why he always worked at home and had his clients and students come to see him. His home was his shrine. It was serene, stunningly beautiful, modern and so elegant in its simplicity and grace. He felt most at peace in his home or in Europe, where design and beauty are abundant. My mother told me that when my father was depressed she would encourage him to take her to Europe, as that elevated his mood.
+
+                            It must have been very difficult to be Paul Rand, in part because of his overwhelming visual perception. He absolutely could not stand what he perceived as ugly. On one occasion when he came to visit us in Cincinnati and my son Troy was about two years old. We went to a Bob Evans restaurant, where he reeled at the sights: **“Look at that wallpaper with that rug! Oh God! Those pictures! Look at that lady’s outfit!”** While I would be mortified by his usually too loud comments, I can now see that he almost felt assaulted by visual stimuli. Most of us don’t suffer from what we see.
+
+                            My parents divorced when I was three and a half, and I never lived with my father again. My mother and I moved to Manhattan, and I saw him every other weekend until I was nine when we moved to Los Angeles. The visits became much less frequent then. He might come to LA once or twice a year for a weekend, and I would go to Weston for a two or three weeks in the summers. My mother told me that my father adored me when I was little and still lived with him. When I was a colicky baby, my father played the accordion to soothe me to sleep. He loved to tell me that story. I believe I was indeed the apple of his eye then. Sadly for both of us, life tore us apart and it was never the same again. My father lived for his work. He was not a people person. He could be crass and cruel. I remember times when students came over to show him work they had toiled over and his loudly exclaiming, **“This is shit!”** As hard as he was on me, he was more brutal with them. Although my father wrote so beautifully about art, he was almost coarse when talking about it. And as playful as his art was, he was sour and serious much of the time. It almost seemed as if he only had fun when drawing or creating. Whenever he was at a restaurant, he drew all over the tablecloths—the most playful and beautiful things. I wish I had kept some of them!
+
+                            I once asked my father what I could do that would please him, and he said, **“Marry a Jewish man.”** I didn’t. He announced he wouldn’t come to my wedding unless we were married by a Rabbi. This proved quite difficult since I had not really been raised Jewish and did not identify as Jewish, and my ex-husband, John, was an Atheist who had been raised Methodist! Happily, my father did come to my wedding, and did walk me down the aisle. I know if there is a Heaven, he must be very happy now because my boyfriend of the past five years, Howard Wolkoff, is Jewish. So I am finally partnered with a Jewish man!
+
+                            My father was an artist, designer and genius. My mother was an architect, writer, painter and a great beauty. My genes were loaded with creativity, and I am quite a creative person. People wonder whether I inherited any of my father’s artistic talent. As a child, I drew prolifically. When I was eleven, I traveled to Spain with my mother and stepfather. One evening we had dinner at the Ritz Carlton of Madrid. It was always a late night out with adults for me, and I would draw to entertain myself. That night I drew bulls and all the waiters lined up to get one. I have always loved horses and used to draw horses, stallions in particular. One of my white stallions appeared in a book of children’s poetry when I was about eight, but sadly I don’t own a copy or even know the title. I stopped drawing when I was about thirteen. I was simply too intimidated by my father’s overwhelming talent to continue. My sons, Troy and Brody, are both profoundly talented in art. I believe that some of their grandfather’s gifts shine on in them. My other passions were music and writing, and although I wanted to become a professional singer for many years, I became a Clinical Psychologist. When you have a complicated childhood, sometimes you want to heal yourself by healing others.
+
+                            The most healing moment I ever had with my father happened while he was dying. I am so grateful that I did not heed his mandate not to come see him. When I walked into my father’s hospital room four days before his death, he looked up at me smiling and said, **“Hi Pooky!”** I was blessed to spend my father’s final days at his bedside. He did not believe he was dying, although he had advanced colon cancer which had tragically been misdiagnosed as an ulcer, so it was not caught early enough for treatment to be effective. Since I was working as a geropsychologist in nursing homes at this time, I knew how to take care of older people. A death from colon cancer is very unpleasant. I sat next to my father nursing him as best I could, holding his hand all the while. I just wanted to be with him, to cherish that connection with him in his final hours. At one point he looked at me and said, **“You are a terrific nurse!”** The next day he said to me, **“Catherine, you are completely transformed.”** I replied, “Daddy, I have always been this way.” My father was sarcastic to the end: **“Well, it takes a crisis to bring it out!”** And I said softly, “No, Daddy, it took a crisis for you to see it.” I guess that is the saddest thing to me about our relationship...small-my father couldn’t really see that I am a good person or to really know me until his dying hours... It meant the world to me that he finally seemed to know and appreciate me, and I am grateful for the days I spent with him at his parting.
+
+
+                    +carouselImages(
+                        "Catherine at the exhibit",
+                        "",
+                        {Title: "Catherine at the exhibit", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Event-%20Catherine%20Rand/Web/Catherine%20Rand%20at%20MCNY%2031.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Event-%20Catherine%20Rand/Web/Catherine%20Rand%20at%20MCNY%2031.jpg"},
+                        {Title: "Catherine at the exhibit", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Event-%20Catherine%20Rand/Web/Catherine%20Rand%20at%20MCNY%2034.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Event-%20Catherine%20Rand/Web/Catherine%20Rand%20at%20MCNY%2034.jpg"},
+                        {Title: "Catherine at the exhibit", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Event-%20Catherine%20Rand/Web/Catherine%20Rand%20at%20MCNY%2005.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/2015%20Paul%20Rand%20Everything%20is%20Design/Event-%20Catherine%20Rand/Web/Catherine%20Rand%20at%20MCNY%2005.jpg"}
+                        )
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

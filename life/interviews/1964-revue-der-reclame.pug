@@ -1,0 +1,256 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Paul Rand, art director of wholesale IBM format'
+    - var bodyID    = 'life'
+    - var bodyClass = 'interviews'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1964%20Revue%20der%20Reclame/Web/Revue%20der%20Reclame%207-1964%2001.jpg'
+
+    - var articleAuthor         = 'CHANGE_ME'
+    - var publishedInTitle      = 'Revue de Reclame'
+    - var publishedInSubtitle   = '1964'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1964%20Revue%20der%20Reclame/Web/Revue%20der%20Reclame%207-1964%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1964%20Revue%20der%20Reclame/Web/Revue%20der%20Reclame%207-1964%2001.jpg', title: ''})
+
+    - var library               = 'yes'
+    - var libraryLink           = 'CHANGE_ME'
+    - var abe                   = 'yes'
+    - var abeLink               = 'CHANGE_ME'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'CHANGE_ME'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+
+    - var nextType              = 'Interview'
+    - var nextTitle             = 'CHANGE_ME'
+    - var nextDate              = 'CHANGE_ME'
+    - var nextDescription       = 'CHANGE_ME'
+    - var nextLink              = 'CHANGE_ME'
+
+    - var relatedItemLink1      = 'CHANGE_ME'
+    - var relatedItemTitle1     = 'CHANGE_ME'
+    - var relatedItemFootnote1  = 'CHANGE_ME'
+
+    - var relatedItemLink2      = 'CHANGE_ME'
+    - var relatedItemTitle2     = 'CHANGE_ME'
+    - var relatedItemFootnote2  = 'CHANGE_ME'
+
+    - var relatedItemLink3      = 'CHANGE_ME'
+    - var relatedItemTitle3     = 'CHANGE_ME'
+    - var relatedItemFootnote3  = 'CHANGE_ME'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1964%20Revue%20der%20Reclame/Web/Revue%20der%20Reclame%207-1964%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1964%20Revue%20der%20Reclame/Web/Revue%20der%20Reclame%207-1964%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1964%20Revue%20der%20Reclame/Web/Revue%20der%20Reclame%207-1964%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1964%20Revue%20der%20Reclame/Web/Revue%20der%20Reclame%207-1964%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1964%20Revue%20der%20Reclame/Web/Revue%20der%20Reclame%207-1964%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1964%20Revue%20der%20Reclame/Web/Revue%20der%20Reclame%207-1964%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1964%20Revue%20der%20Reclame/Web/Revue%20der%20Reclame%207-1964%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Articles/Print/1964%20Revue%20der%20Reclame/Web/Revue%20der%20Reclame%207-1964%2004.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1.reveal-enter-top!= pageTitle
+
+            unless articleAuthor == 'CHANGE_ME'
+                p.reveal-enter-bottom!= 'By ' + articleAuthor
+
+            p.reveal-enter-bottom!= publishedInTitle
+                unless publishedInSubtitle == 'CHANGE_ME'
+                    br
+                    !=publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    !=publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+            //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center#original-article
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            Paul Rand, art director of wholesale IBM format:
+
+                            ‘Classics do you have a great tradition’
+
+                            I.B.M. managed to create a visual image of itself in nine years with a particularly great reminder value. With mainly design tools such as architecture and typography, a powerful corporate image has been created. The impulse to the total renewal came in the year 1955 from General Managing Director Thomas J. Watson and the execution was handed to Eliot Noyes (Architecture, Industrial Design) and Paul Rand (Graphic Designer, Typographer).
+
+                            Paul Rand (50), small, brown, slightly graying hair cut, glasses on a friendly sphere face, was in the Netherlands for his annual tour along the I.B.M. settlements in Europe, to maintain personal contact with the designers and Advertising bosses.
+
+                            ---
+
+                        p.question Mr. Rand, why does typography take such an important place in creating a clear I.B.M. image?
+
+                        p 
+                            strong.text-red Paul Rand: 
+                            | Because typography is one of the very few things that can be distinguished. ('Can be made different from others').
+
+                        p.question More than one drawing or a photograph?
+
+                        p
+                            strong.text-red PR: 
+                            | The use of a special character style is impractical and old-fashioned. Moreover, one looks at the draughtsman and gets the name that the company should forward. A picture is already much more impersonal, but a picture I believe is much more part of the composition, of the typography so you like.
+
+                        p.question You use a letter called the City Medium. Do you have a special reason for this?
+
+                        p
+                            strong.text-red PR: 
+                            | Yes, bet is a Egyptienne, maybe not even a very beautiful one. She is designed about in 1920. And precisely because of this it is different from most common letters.
+
+                        p.question And the letters of the word I.B.M.?
+
+                        p
+                            strong.text-red PR: 
+                            | This Egyptienne I myself worked out in response to the City Medium. It is adapted to the goal: to create a powerful image, which fits well on advertisements, printed works and buildings, which is good to reduce and prägen. The letters must be used in all ways and have a large recognition value.
+
+                        p.question You have succeeded very well. But still I’m bothering that such an ugly City Medium was taken as a starting point.
+
+                        p
+                            strong.text-red PR: 
+                            | The letter is different and quickly recognizable as a typical I.B.M. letter. The ' Amsterdam Continental Types ' in New York holds special this letter for us in stock. Typography is not mainly determined by the beautiful or readable form of the letter but by the application of the letters. Letters must be used properly. Many letters are badly used, also good letters.
+
+                        p.question But then one must know how letters beautiful and ugly, well used should warden. Do you have a rule?
+
+                        p
+                            strong.text-red PR: 
+                            | More or less, yes. First, the spacing between the words and the letters and the interline between the lines. People don’t have to see rules but text. Too much white between the rules is wrong. Take for example the newspaper. That is very compres put, there you see no rules, but you are going to read. Important is also little white between the words. Secondly, I mention the arrangement of the text, the imposition as Morison it calls. The margin must also be of a good relationship. These are the main points for a good typographical form.
+
+                        p.question The font is in the second place. Why is the I.B.M. and other large societies, who care about their design, put so much in serif letters? Surely that is not the most readable letter?
+
+                        p
+                            strong.text-red PR: 
+                            | Fashion. It’s a matter of fashion. A sans-serif seems modern. You can also easily make a serif. I have already said that. A Baskerville can be badly readable. The typography, the designer should be ' broad-minded '.
+
+                        p.question What design are you looking for?
+
+                        p
+                            strong.text-red PR: 
+                            | Good. We search the I.B.M. exclusively for good work.
+
+                        p.question Do you mean good taste?
+
+                        p
+                            strong.text-red PR: 
+                            | Do not say any taste, there is so much discussion about it. We mean good in professional, conscientiously, technical and artistic terms. Everything that is good we take and fits in our style. The designer sometimes has to impose some restrictions on the I.B.M. letter, but is further free.
+
+                        p.question Do you ever have to face things within the group, which you do not give birth? What do you do about it?
+
+                        p
+                            strong.text-red PR: 
+                            | Talk and hope it gets better.
+
+                        p.question Do you notice differences in attitudes and knowledge between European countries?
+
+                        p
+                            strong.text-red PR: 
+                            | Yes.
+
+                        p.question I mean, what do you think of the Dutch design?
+
+                        p
+                            strong.text-red PR: 
+                            | Classically, you have a great tradition. That is still very noticeable. That classic design is good. I think of Enschedé and of shrink.
+
+                            | Yes, from all countries, also from America of course.
+
+                        p.question Do you mean symmetrical typography?
+
+                        p
+                            strong.text-red PR: 
+                            | No. I mean classic typography with classic letters and that doesn’t always have to be symmetrical. But the modern design is much less.
+
+                        p.question ?
+
+                        p
+                            strong.text-red PR: 
+                            | It’s strange because the modern advertising typography is actually part of the Netherlands. The ‘style’ with Pagaduan Black and later Sandberg, (which is not read). But he is a great man because he points out new ways. But I find the Swiss and the Germans, but especially the Swiss, who are also followers of Bauhaus and style, much better in modern typography.
+
+                        p.question Technical or artistic?
+
+                        p
+                            strong.text-red PR: 
+                            | Both. But especially technically disciplined, better in the witverdeling, more consistent in the construction. The Swiss are perhaps so precise because they always have to work with three languages. That language problem makes you need to think well organized, more functional.
+
+                        p.question And the Belgians then?
+
+                        p
+                            strong.text-red PR: 
+                            | I don’t know the Belgian problems as well.
+
+                        p.question What do you call functional?
+
+                        p
+                            strong.text-red PR: 
+                            | Yes, what is functional. Is it the way something is made or the way something is used. Modern houses are made functional but they are still not always functional to live in. These are two different things. The same problem is played in industrial design. Here is a typographic problem. This line with I.B.M. letter on the brochure is as Léésregel not the most functional. There are better readable rules with better readable letters, but it is functional if I mean the recognition value. In functional terms, we need to look at the starting point, towards the goal of achieving it. Many modern designers, also in the Netherlands, call their work functional, but that is certainly not. The design is perhaps made functional and thought out but it does not correspond to the function that it has to fulfill. For example: a given amount of text to process well readable, without deleting and annoyance.
+
+                        p.question Work exclusively for I.B.M.?
+
+                        p
+                            strong.text-red PR: 
+                            | No, I work independently with an assistant, also for Westinghouse, Cummins Engines and many others.
+
+                        p.question Are you a typographer?
+
+                        p
+                            strong.text-red PR: 
+                            | No, designer, painter, draughtsman, make children’s books, everything.
+
+                        p.question Would you like to give a general advice or advice to the Dutch advertising officer and designer?
+
+                        p
+                            strong.text-red PR: 
+                            | I really wouldn’t know what.
+
+                        hr
+
+                        .footnote Above: Some pages from the I.B.M. Design Guide 1960 designed by Paul Rand. The content includes the I.B.M. brand in various sizes in positive and slides, a full-size City Medium, basic colors, basic packaging, building lettering, recommended lettering and ads in different corps. (Baskerville, Bembo, Bodoni, Caslon, Futura, Garamond, Granion, Janson, Spartan, Standard, Times and Walbaum). In addition, examples of the three printing techniques, offset, gravure and letterpress are provided with similar cliché and letter prints on different paper types. A so-called thoroughbred workpiece.
+
+                        .footnote Right above left: Prospectus cover page (I.B.M.-Germany), designed by Manfred Kröplien.
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-image-carousel.pug
+
+        include ../../__MIXINS/_include-published-in.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")

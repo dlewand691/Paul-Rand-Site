@@ -1,0 +1,128 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Graphic Forms: The Arts as Related to the Book'
+    - var bodyID    = 'work'
+    - var bodyClass = ''
+
+block main-content
+    - var bookSubhead           = 'Gyorgy Kepes, Paul Rand, Lynd Ward, et al.'
+
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/252867'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3DGraphic%2BForms%253A%2BThe%2BArts%2Bas%2BRelated%2Bto%2Bthe%2BBook'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1PBpdIx'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_odkw%3DGraphic%2BForms%2B%2522%2522The%2BArts%2Bas%2BRelated%2Bto%2Bthe%2BBook%2522%26_osacat%3D0%26_from%3DR40%26_trksid%3Dp2045573.m570.l1313.TR0.TRC0.H0.XGraphic%2BForms%2BThe%2BArts%2Bas%2BRelated%2Bto%2Bthe%2BBook.TRS0%26_nkw%3DGraphic%2BForms%2BThe%2BArts%2Bas%2BRelated%2Bto%2Bthe%2BBook%26_sacat%3D0'
+
+    - var nextType              = 'Book'
+    - var nextTitle             = 'Paul Klee: Paintings, Drawings and Prints'
+    - var nextLink              = '1949-Paul-Klee-Paintings-Drawings-and-Prints'
+
+    - var imageCarouselTitle    = 'View Inside'
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2013.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2014-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2014.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2015-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2015.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2016-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2016.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2017-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2017.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2018-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2018.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2019-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2019.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2C%20brochure%2C%20front-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2C%20brochure%2C%20front.jpg', title: 'Event Brochure'})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2C%20brochure%2C%20%20interior-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2C%20brochure%2C%20%20interior.jpg', title: 'Event Brochure Interior'})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2C%20program-450.jpg', linkLg: 'https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book%2C%20program.jpg', title: 'Event Program'})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1.reveal-enter-top!= pageTitle
+
+                    em.text-gray.t16!= bookSubhead
+
+                    //- /*==============================  BOOK COVER  ==============================*/
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book-970.jpg",
+                            "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1949%20Graphic%20Forms%20The%20Arts%20as%20Related%20to%20the%20Book/Web/Graphic%20Forms-%20The%20Arts%20as%20Related%20to%20the%20Book.jpg"
+                            )
+
+
+            //- /*==============================  VIEW INSIDE  ==============================*/
+            include ../../__MIXINS/_include-image-carousel.pug
+
+
+
+            //- /*==============================  BODY  ==============================*/
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Harvard University Press, (1949)
+
+                        A collection of essays and monographs by such luminary design figures as W.A. Dwiggins, Carl Purlington Rollins, Lynd Ward, Merle Armitage, Paul Rand to name a few.
+
+                        Paul Rand’s contribution to this volume is an essay title "Black in the Visual Arts" which validates and sides with the color black and its psychological meanings and impacts across cultures. This articles was revised and used in A Designer’s Art.
+
+                        **Contents:**
+
+                        **Section 1, Function: Fitness to Purpose**
+                        - Function in Modern Design, by Gyorgy Kepes
+                        - University Press Design, by P.J. Conkwright
+                        - Trade Book Design, by W.A. Dwiggins
+                        - Evaluation, by Carl Purington Rollins
+
+                        **Section 2, Form: Structure and Shape**
+                        - Black in the Visual Arts, by Paul Rand
+                        - Static and Dynamic Concepts, by Walter Dorwin Teague
+                        - The Illustrator and the Book, by Lynd Ward
+
+                        **Section 3, Style: Individual Expression**
+                        - The Author and the Printed Book, by Donald Klopfer
+                        - The Avant-Garde, by Herschel Levit
+                        - Experimentation, by Edna Beilenson
+                        - The Function of the Amateur Printer, by Peter Beilenson
+
+                        **Section 4, Prospect: An Extensive View**
+                        - As the Etcher Sees It, by Samuel Chamberlain
+                        - The New Forms—and Books, by Merle Armitage
+                        - Tomorrow’s Reader, by J. Donald Adams
+                        - Epilogue, by Philip Hofer
+
+                        After its release, a 2-day session of meetings was held at the Fogg Museum of Harvard University in Cambridge, Massachusetts on January 17th and 18th, 1949 . Selected speakers spoke on the same topics as were written about in the book. Initially, Paul Rand was listed as a guest on the invitation, but the program for the meeting does not have him listed.
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-find-a-copy.pug
+
+        include ../../__MIXINS/_include-next-work.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        br(style="clear:both")
