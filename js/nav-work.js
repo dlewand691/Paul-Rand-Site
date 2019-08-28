@@ -340,7 +340,7 @@
                     {
                         id: "Esquire",
                         text: "Esquire",
-                        thumbnail: "https://assets.paulrand.design/Works/Esquire/Advertising/Web/Esquire%20Ad%2001-200.jpg"
+                        thumbnail: "https://assets.paulrand.design/Works/Esquire/Esquire-Magazine-1938.svg"
                 }
             ]
         },

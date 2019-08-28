@@ -16,10 +16,10 @@ block main-content
     //- ==========  BODY  ==========
     .cd-main-content
         .grid-container
-            .grid-x.grid-margin-x.align-center.small-mb4
+            .grid-x.grid-margin-x.align-center
                 .small-12.cell.text-center
                     //- /*==============================  CLIENT  ==============================*/
-                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    h1.text-center.small-mb1.medium-mb2.reveal-enter-bottom!= pageTitle
                     if dates == 'CHANGE_ME'
                     else
                         p!= dates
@@ -48,6 +48,8 @@ block main-content
                                 a.p-half(href="#stationery") Stationery
                             li
                                 a.p-half(href="#signage") Signage
+                            li
+                                a.p-half(href="#signage") Fabrics & Wallpapers
                             li
                                 a.p-half(href="#stocks") Stocks
                             li
@@ -1408,6 +1410,26 @@ block main-content
                         +galleryItem-cardLink(
                             "4","6",
                             {
+                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Packaging%20Family%2002-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Packaging%20Family%2002.jpg",
+                            title: "Packaging Family",
+                            footnote1: "CHANGE_ME",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Packaging%20Family%2003-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Packaging%20Family%2003.jpg",
+                            title: "Packaging Family",
+                            footnote1: "CHANGE_ME",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ribbon%20Cassettes-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ribbon%20Cassettes.jpg",
                             title: "Ribbon Cassettes",
@@ -1460,6 +1482,36 @@ block main-content
                             {title: "Ribbons and Typewriter Heads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ribbons%20and%20Typewriter%20Heads%2004.jpg"}
                             )
 
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ribbons%20and%20Discs-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ribbons%20and%20Discs.jpg",
+                            title: "Ribbons and Discs",
+                            footnote1: "CHANGE_ME",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ribbons%20and%20Tape-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ribbons%20and%20Tape.jpg",
+                            title: "Ribbons and Tape",
+                            footnote1: "CHANGE_ME",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Supply%20Kits%20and%20Ribbons-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Supply%20Kits%20and%20Ribbons.jpg",
+                            title: "Supply Kits and Ribbons",
+                            footnote1: "Image courtesy of Wright Auction House, Chicago, IL.",
+                            footnote2: "CHANGE_ME"
+                            })
+
                         .text-center.w100
                             //- ===================================================================
                             //- BATTERIES
@@ -1504,13 +1556,15 @@ block main-content
                         +galleryItem-cardLink(
                             "6","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20Black%20Background%2001-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20Black%20Background%2001.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20Black%20Background%2C%20letter%20size%2C%20front-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20Black%20Background%2C%20letter%20size%2C%20front.jpg",
                             title: "Carbon Paper with Black Background",
-                            footnote1: "14 Images",
+                            footnote1: "17 Images",
                             footnote2: "CHANGE_ME"
                             })
                         +galleryItem-imageHidden(
+                            {title: "Carbon Paper with Black Background", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20Black%20Background%2C%20legal%20size%2C%20front.jpg"},
+                            {title: "Carbon Paper with Black Background", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20Black%20Background%2C%20letter%20size%2C%20back.jpg"},
                             {title: "Carbon Paper with Black Background", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20Black%20Background%2001.jpg"},
                             {title: "Carbon Paper with Black Background", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20Black%20Background%2002.jpg"},
                             {title: "Carbon Paper with Black Background", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20Black%20Background%2003.jpg"},
@@ -1533,31 +1587,34 @@ block main-content
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20Black%2C%20Pink%20Striped%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20Black%2C%20Pink%20Striped%2001.jpg",
                             title: "Black and Pink Striped Background",
-                            footnote1: "2 Images",
+                            footnote1: "3 Images",
                             footnote2: "CHANGE_ME"
                             })
                         +galleryItem-imageHidden(
-                            {title: "Black and Pink Striped Background", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20Black%2C%20Pink%20Striped%2002.jpg"}
+                            {title: "Black and Pink Striped Background", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20Black%2C%20Pink%20Striped%2002.jpg"},
+                            {title: "Black and Pink Striped Background", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20Black%2C%20Pink%20Striped%2003.jpg"}
                             )
 
                         +galleryItem-cardLink(
                             "6","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20White%2C%20Outline%20Letters%2001-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20White%2C%20Outline%20Letters%2001.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20White%2C%20Outline%20Letters%20front%2000-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20White%2C%20Outline%20Letters%20front%2000.jpg",
                             title: "White Background, Outlined Letters",
                             footnote1: "2 Images",
                             footnote2: "CHANGE_ME"
                             })
                         +galleryItem-imageHidden(
+                            {title: "White Background, Outlined Letters", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20White%2C%20Outline%20Letters%20back%2000.jpg"},
+                            {title: "White Background, Outlined Letters", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20White%2C%20Outline%20Letters%2001.jpg"},
                             {title: "White Background, Outlined Letters", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20White%2C%20Outline%20Letters%2002.jpg"}
                             )
 
                         +galleryItem-cardLink(
                             "6","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20White%2C%20Solid%20Letters%2001-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20White%2C%20Solid%20Letters%2001.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20White%2C%20Solid%20Letters%2000-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20White%2C%20Solid%20Letters%2000.jpg",
                             title: "White Background, Solid Letters",
                             footnote1: "9 Images",
                             footnote2: "CHANGE_ME"
@@ -1999,125 +2056,156 @@ block main-content
                             //- PENCILS AND LEADS
                             //- ===================================================================
                             hr
-                            h4 Pencils and Leads
+                            h4 Electrographic Mark Sensing Pencils and Leads
                         +galleryItem-cardLink(
-                            "4","6",
+                            "6","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v1%2001-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v1%2001.jpg",
-                            title: "Electrographic Mark Sensing Pencil Lead, v1",
-                            footnote1: "15 Images",
+                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v1%20Lead%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v1%20Lead%2001.jpg",
+                            title: "Black and Blue Package: Leads",
+                            footnote1: "9 Images",
                             footnote2: "CHANGE_ME"
                             })
                         +galleryItem-imageHidden(
-                            {title: "Electrographic Mark Sensing Pencil Lead, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v1%2001.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v1%2002.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v1%2003.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v1%2004.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v1%2005.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v1%2006.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v1%2007.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v1%2008.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v1%2009.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v1%2010.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v1%2011.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v1%2012.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v1%2013.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v1%2014.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v1%2015.jpg"}
+                            {title: "Black and Blue Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v1%20Lead%2002.jpg"},
+                            {title: "Black and Blue Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v1%20Lead%2003.jpg"},
+                            {title: "Black and Blue Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v1%20Lead%2004.jpg"},
+                            {title: "Black and Blue Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v1%20Lead%2005.jpg"},
+                            {title: "Black and Blue Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v1%20Lead%2006.jpg"},
+                            {title: "Black and Blue Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v1%20Lead%2007.jpg"},
+                            {title: "Black and Blue Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v1%20Lead%2008.jpg"},
+                            {title: "Black and Blue Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v1%20Lead%2009.jpg"}
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "6", "6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v2%2001-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v2%2001.jpg",
-                            title: "Electrographic Mark Sensing Pencil Lead, v2",
-                            footnote1: "15 Images",
-                            footnote2: "CHANGE_ME"
-                            })
-                        +galleryItem-imageHidden(
-                            {title: "Electrographic Mark Sensing Pencil Lead, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v2%2001.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v2%2002.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v2%2003.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v2%2004.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v2%2005.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v2%2006.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v2%2007.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v2%2008.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v2%2009.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v2%2010.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v2%2011.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v2%2012.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v2%2013.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v2%2014.jpg"},
-                            {title: "Electrographic Mark Sensing Pencil Lead, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Mechanical%20Pencil%20Lead%20v2%2015.jpg"}
-                            )
-
-                        +galleryItem-cardLink(
-                            "4","6",
-                            {
-                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Pencils%2001-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Pencils%2001.jpg",
-                            title: "Electrographic Mark Sensing Pencils, v1",
+                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v1%20Pencil%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v1%20Pencil%2001.jpg",
+                            title: "Black and Blue Package: Pencils",
                             footnote1: "6 Images",
                             footnote2: "CHANGE_ME"
                             })
                         +galleryItem-imageHidden(
-                            {title: "Electrographic Mark Sensing Pencils, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Pencils%2001.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Pencils%2002.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Pencils%2003.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Pencils%2004.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Pencils%2005.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Pencils%2006.jpg"}
+                            {title: "Black and Blue Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v1%20Pencil%2002.jpg"},
+                            {title: "Black and Blue Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v1%20Pencil%2003.jpg"},
+                            {title: "Black and Blue Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v1%20Pencil%2004.jpg"},
+                            {title: "Black and Blue Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v1%20Pencil%2005.jpg"},
+                            {title: "Black and Blue Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v1%20Pencil%2006.jpg"}
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "6", "6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Pencils%20v2%2001-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Pencils%20v2%2001.jpg",
-                            title: "Electrographic Mark Sensing Pencils, v2",
+                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Lead%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Lead%2001.jpg",
+                            title: "Blue and White Package: Leads",
                             footnote1: "8 Images",
                             footnote2: "CHANGE_ME"
                             })
                         +galleryItem-imageHidden(
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Pencils%20v2%2001.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Pencils%20v2%2002.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Pencils%20v2%2003.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Pencils%20v2%2004.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Pencils%20v2%2005.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Pencils%20v2%2006.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Pencils%20v2%2007.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20Pencils%20v2%2008.jpg"}
+                            {title: "Blue and White Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Lead%2002.jpg"},
+                            {title: "Blue and White Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Lead%2003.jpg"},
+                            {title: "Blue and White Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Lead%2004.jpg"},
+                            {title: "Blue and White Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Lead%2005.jpg"},
+                            {title: "Blue and White Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Lead%2006.jpg"},
+                            {title: "Blue and White Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Lead%2007.jpg"},
+                            {title: "Blue and White Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Lead%2008.jpg"}
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "6", "6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Mark%20Sensing%20Pencil%20Leads%2C%20Black%20White%20Box%2001-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Mark%20Sensing%20Pencil%20Leads%2C%20Black%20White%20Box%2001.jpg",
-                            title: "Electrographic Mark Sensing Pencils, v3",
-                            footnote1: "14 Images",
+                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Pencil%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Pencil%2001.jpg",
+                            title: "Blue and White Package: Pencils",
+                            footnote1: "16 Images",
                             footnote2: "CHANGE_ME"
                             })
                         +galleryItem-imageHidden(
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Mark%20Sensing%20Pencil%20Leads%2C%20Black%20White%20Box%2001.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Mark%20Sensing%20Pencil%20Leads%2C%20Black%20White%20Box%2002.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Mark%20Sensing%20Pencil%20Leads%2C%20Black%20White%20Box%2003.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Mark%20Sensing%20Pencil%20Leads%2C%20Black%20White%20Box%2004.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Mark%20Sensing%20Pencil%20Leads%2C%20Black%20White%20Box%2005.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Mark%20Sensing%20Pencil%20Leads%2C%20Black%20White%20Box%2006.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Mark%20Sensing%20Pencil%20Leads%2C%20Black%20White%20Box%2007.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Mark%20Sensing%20Pencil%20Leads%2C%20Black%20White%20Box%2008.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Mark%20Sensing%20Pencil%20Leads%2C%20Black%20White%20Box%2009.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Mark%20Sensing%20Pencil%20Leads%2C%20Black%20White%20Box%2010.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Mark%20Sensing%20Pencil%20Leads%2C%20Black%20White%20Box%2011.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Mark%20Sensing%20Pencil%20Leads%2C%20Black%20White%20Box%2012.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Mark%20Sensing%20Pencil%20Leads%2C%20Black%20White%20Box%2013.jpg"},
-                            {title: "Electrographic Mark Sensing Pencils, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Mark%20Sensing%20Pencil%20Leads%2C%20Black%20White%20Box%2014.jpg"}
+                            {title: "Blue and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Pencil%2002.jpg"},
+                            {title: "Blue and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Pencil%2003.jpg"},
+                            {title: "Blue and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Pencil%2004.jpg"},
+                            {title: "Blue and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Pencil%2005.jpg"},
+                            {title: "Blue and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Pencil%2006.jpg"},
+                            {title: "Blue and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Pencil%2007.jpg"},
+                            {title: "Blue and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Pencil%2008.jpg"},
+                            {title: "Blue and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Pencil%2009.jpg"},
+                            {title: "Blue and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Pencil%2010.jpg"},
+                            {title: "Blue and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Pencil%2011.jpg"},
+                            {title: "Blue and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Pencil%2012.jpg"},
+                            {title: "Blue and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Pencil%2013.jpg"},
+                            {title: "Blue and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Pencil%2018.jpg"},
+                            {title: "Blue and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Pencil%2019.jpg"},
+                            {title: "Blue and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Pencil%2020.jpg"}
                             )
 
+                        +galleryItem-cardLink(
+                            "6", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Lead%2008-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Lead%2008.jpg",
+                            title: "Black and White Package: Leads",
+                            footnote1: "13 Images",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Black and White Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Lead%2009.jpg"},
+                            {title: "Black and White Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Lead%2010.jpg"},
+                            {title: "Black and White Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Lead%2024.jpg"},
+                            {title: "Black and White Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Lead%2025.jpg"},
+                            {title: "Black and White Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Lead%2026.jpg"},
+                            {title: "Black and White Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Lead%2027.jpg"},
+                            {title: "Black and White Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Lead%2028.jpg"},
+                            {title: "Black and White Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Lead%2029.jpg"},
+                            {title: "Black and White Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Lead%2030.jpg"},
+                            {title: "Black and White Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Lead%2031.jpg"},
+                            {title: "Black and White Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Lead%2032.jpg"},
+                            {title: "Black and White Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Lead%2034.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "6", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Pencil%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Pencil%2001.jpg",
+                            title: "Black and White Package: Pencils",
+                            footnote1: "12 Images",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Black and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Pencil%2002.jpg"},
+                            {title: "Black and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Pencil%2003.jpg"},
+                            {title: "Black and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Pencil%2004.jpg"},
+                            {title: "Black and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Pencil%2005.jpg"},
+                            {title: "Black and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Pencil%2006.jpg"},
+                            {title: "Black and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Pencil%2007.jpg"},
+                            {title: "Black and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Pencil%2008.jpg"},
+                            {title: "Black and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Pencil%2009.jpg"},
+                            {title: "Black and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Pencil%2010.jpg"},
+                            {title: "Black and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Pencil%2011.jpg"},
+                            {title: "Black and White Package: Pencils", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Pencil%2012.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "6", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v2%20Lead%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v2%20Lead%2001.jpg",
+                            title: "Blue Package: Leads",
+                            footnote1: "9 Images",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Blue Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v2%20Lead%2002.jpg"},
+                            {title: "Blue Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v2%20Lead%2003.jpg"},
+                            {title: "Blue Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v2%20Lead%2004.jpg"},
+                            {title: "Blue Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v2%20Lead%2005.jpg"},
+                            {title: "Blue Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v2%20Lead%2006.jpg"},
+                            {title: "Blue Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v2%20Lead%2007.jpg"},
+                            {title: "Blue Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v2%20Lead%2008.jpg"},
+                            {title: "Blue Package: Leads", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v2%20Lead%2009.jpg"}
+                            )
 
                         .text-center.w100
                             //- ===================================================================
@@ -2414,18 +2502,18 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "12","12",
+                            "6","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Easystrike%20Multipurpose%20Ribbon%20Cassette%20%28unreleased%29/Web/IBM%20Easystrike%20Multipurpose%20Ribbon%20Cassette%20%28unreleased%29%2C%20front-970.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Easystrike%20Multipurpose%20Ribbon%20Cassette%20%28unreleased%29/Web/IBM%20Easystrike%20Multipurpose%20Ribbon%20Cassette%20%28unreleased%29%2C%20front-800.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Easystrike%20Multipurpose%20Ribbon%20Cassette%20%28unreleased%29/Web/IBM%20Easystrike%20Multipurpose%20Ribbon%20Cassette%20%28unreleased%29%2C%20front.jpg",
                             title: "Easystrike Multipurpose Ribbon Cassette, UNRELEASED, Front",
                             footnote1: "This package has never been produced and is merely a mock-up. There were issues with the bow design as some felt it was too similar to the UPS logo. To combat that criticism, Mr. Rand merely lengthened one end to give a simple solution to a design dilemma.",
                             footnote2: "Courtesy of Tom Hardy"
                             })
                         +galleryItem-cardLink(
-                            "12","12",
+                            "6","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Easystrike%20Multipurpose%20Ribbon%20Cassette%20%28unreleased%29/Web/IBM%20Easystrike%20Multipurpose%20Ribbon%20Cassette%20%28unreleased%29%2C%20back-970.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Easystrike%20Multipurpose%20Ribbon%20Cassette%20%28unreleased%29/Web/IBM%20Easystrike%20Multipurpose%20Ribbon%20Cassette%20%28unreleased%29%2C%20back-800.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Easystrike%20Multipurpose%20Ribbon%20Cassette%20%28unreleased%29/Web/IBM%20Easystrike%20Multipurpose%20Ribbon%20Cassette%20%28unreleased%29%2C%20back.jpg",
                             title: "Easystrike Multipurpose Ribbon Cassette, UNRELEASED, Back",
                             footnote1: "CHANGE_ME",
@@ -2556,6 +2644,29 @@ block main-content
                             {title: "Ribbon", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbon/Web/IBM%20Ribbon%2002.jpg"},
                             {title: "Ribbon", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbon/Web/IBM%20Ribbon%2003.jpg"},
                             {title: "Ribbon", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbon/Web/IBM%20Ribbon%2004.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbons%2C%20Blue%20and%20Gray%20Box/Web/IBM%20Ribbons%2C%20Blue%20and%20Gray%20Box%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbons%2C%20Blue%20and%20Gray%20Box/Web/IBM%20Ribbons%2C%20Blue%20and%20Gray%20Box%2001.jpg",
+                            title: "Ribbon, Blue and Gray Box",
+                            footnote1: "12 Images",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Ribbon, Blue and Gray Box", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbons%2C%20Blue%20and%20Gray%20Box/Web/IBM%20Ribbons%2C%20Blue%20and%20Gray%20Box%2002.jpg"},
+                            {title: "Ribbon, Blue and Gray Box", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbons%2C%20Blue%20and%20Gray%20Box/Web/IBM%20Ribbons%2C%20Blue%20and%20Gray%20Box%2003.jpg"},
+                            {title: "Ribbon, Blue and Gray Box", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbons%2C%20Blue%20and%20Gray%20Box/Web/IBM%20Ribbons%2C%20Blue%20and%20Gray%20Box%2004.jpg"},
+                            {title: "Ribbon, Blue and Gray Box", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbons%2C%20Blue%20and%20Gray%20Box/Web/IBM%20Ribbons%2C%20Blue%20and%20Gray%20Box%2005.jpg"},
+                            {title: "Ribbon, Blue and Gray Box", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbons%2C%20Blue%20and%20Gray%20Box/Web/IBM%20Ribbons%2C%20Blue%20and%20Gray%20Box%2006.jpg"},
+                            {title: "Ribbon, Blue and Gray Box", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbons%2C%20Blue%20and%20Gray%20Box/Web/IBM%20Ribbons%2C%20Blue%20and%20Gray%20Box%2007.jpg"},
+                            {title: "Ribbon, Blue and Gray Box", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbons%2C%20Blue%20and%20Gray%20Box/Web/IBM%20Ribbons%2C%20Blue%20and%20Gray%20Box%2008.jpg"},
+                            {title: "Ribbon, Blue and Gray Box", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbons%2C%20Blue%20and%20Gray%20Box/Web/IBM%20Ribbons%2C%20Blue%20and%20Gray%20Box%2009.jpg"},
+                            {title: "Ribbon, Blue and Gray Box", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbons%2C%20Blue%20and%20Gray%20Box/Web/IBM%20Ribbons%2C%20Blue%20and%20Gray%20Box%2010.jpg"},
+                            {title: "Ribbon, Blue and Gray Box", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbons%2C%20Blue%20and%20Gray%20Box/Web/IBM%20Ribbons%2C%20Blue%20and%20Gray%20Box%2011.jpg"},
+                            {title: "Ribbon, Blue and Gray Box", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbons%2C%20Blue%20and%20Gray%20Box/Web/IBM%20Ribbons%2C%20Blue%20and%20Gray%20Box%2012.jpg"}
                             )
 
                         +galleryItem-cardLink(
@@ -2713,7 +2824,6 @@ block main-content
                             footnote2: "CHANGE_ME"
                             })
                         +galleryItem-imageHidden(
-                            {title: "Supply Kit, Striped", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Supply%20Kit/Web/IBM%20Supply%20Kit%20Stripes%2001.jpg"},
                             {title: "Supply Kit, Striped", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Supply%20Kit/Web/IBM%20Supply%20Kit%20Stripes%2002.jpg"},
                             {title: "Supply Kit, Striped", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Supply%20Kit/Web/IBM%20Supply%20Kit%20Stripes%2003.jpg"},
                             {title: "Supply Kit, Striped", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Supply%20Kit/Web/IBM%20Supply%20Kit%20Stripes%2004.jpg"},
@@ -2752,7 +2862,6 @@ block main-content
                             footnote2: "CHANGE_ME"
                             })
                         +galleryItem-imageHidden(
-                            {title: "Supply Kit, Confetti", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Supply%20Kit/Web/IBM%20Supply%20Kit%20Confetti%2001.jpg"},
                             {title: "Supply Kit, Confetti", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Supply%20Kit/Web/IBM%20Supply%20Kit%20Confetti%2002.jpg"},
                             {title: "Supply Kit, Confetti", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Supply%20Kit/Web/IBM%20Supply%20Kit%20Confetti%2003.jpg"},
                             {title: "Supply Kit, Confetti", hideMe: "https://assets.paulrand.design/Works/IBM/Packaging/Supply%20Kit/Web/IBM%20Supply%20Kit%20Confetti%2004.jpg"},
@@ -3168,12 +3277,17 @@ block main-content
                     //- =============================================================================================
 
                     +projectDivider("The Rebus")
+                    //- .grid-x.grid-margin-x.align-center.foldMe
+                        .cell.large-7.medium-9.text-left
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                                Rebus paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero amet deserunt, qui deleniti quo quia labore sequi recusandae cupiditate hic pariatur, necessitatibus dolorem eos natus itaque dicta quam! Quod labore amet et saepe perferendis unde soluta? Eaque nesciunt numquam, placeat, totam deleniti asperiores voluptatibus quibusdam laboriosam quo nostrum ducimus dolores optio modi unde blanditiis expedita reprehenderit eligendi, explicabo ad hic recusandae dolorem. Saepe, numquam eum minus voluptatum sapiente ipsum itaque impedit perspiciatis ut! Beatae nobis ad labore, dolores praesentium natus. Enim alias maxime odio quibusdam ea voluptatibus id pariatur, necessitatibus eos, voluptatum, aliquam aspernatur distinctio repellendus repellat omnis sit eum?
+
                     .grid-x.grid-margin-x.align-center.foldMe#rebus(data-magellan-target="rebus")
                         +galleryItem-cardLink(
                             "4","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Production%20Art%2C%20marker%20sketch-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Production%20Art%2C%20marker%20sketch.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Production%20Art%2C%20marker%20sketch-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Production%20Art%2C%20marker%20sketch.jpg",
                             title: "Rebus Production Art, marker sketch",
                             footnote1: "CHANGE_ME",
                             footnote2: "CHANGE_ME"
@@ -3182,8 +3296,8 @@ block main-content
                         +galleryItem-cardLink(
                             "4","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Production%20Art%2C%20proof%20negative-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Production%20Art%2C%20proof%20negative.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Production%20Art%2C%20proof%20negative-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Production%20Art%2C%20proof%20negative.jpg",
                             title: "Rebus Production Art, proof negative",
                             footnote1: "CHANGE_ME",
                             footnote2: "CHANGE_ME"
@@ -3192,8 +3306,8 @@ block main-content
                         +galleryItem-cardLink(
                             "4","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Production%20Art%2C%20proof%20positive-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Production%20Art%2C%20proof%20positive.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Production%20Art%2C%20proof%20positive-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Production%20Art%2C%20proof%20positive.jpg",
                             title: "Rebus Production Art, proof positive",
                             footnote1: "CHANGE_ME",
                             footnote2: "CHANGE_ME"
@@ -3202,8 +3316,8 @@ block main-content
                         +galleryItem-cardLink(
                             "4","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Poster%2004-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Poster%2004.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Poster/Web/IBM%20Rebus%20Poster%201981-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Poster/Web/IBM%20Rebus%20Poster%201981.jpg",
                             title: "Rebus Poster",
                             footnote1: "Original release",
                             footnote2: "1981"
@@ -3212,8 +3326,8 @@ block main-content
                         +galleryItem-cardLink(
                             "4","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Think%20Magazine%2001-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Think%20Magazine%2001.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Think%20Magazine/Web/IBM%20Rebus%20Think%20Magazine%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Think%20Magazine/Web/IBM%20Rebus%20Think%20Magazine%2001.jpg",
                             title: "Think Magazine",
                             footnote1: "First appearance after lawyer restrictions",
                             footnote2: "1988"
@@ -3222,8 +3336,8 @@ block main-content
                         +galleryItem-cardLink(
                             "4","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Poster%2003-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Poster%2003.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Poster/Web/IBM%20Rebus%20Poster%201991-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Poster/Web/IBM%20Rebus%20Poster%201991.jpg",
                             title: "Rebus Poster",
                             footnote1: "Re-issued with bottom copy",
                             footnote2: "1991"
@@ -3240,20 +3354,36 @@ block main-content
                         //-     })
 
                         +galleryItem-cardLink(
-                            "12","12",
+                            "6","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Design%20Studio%2C%20Austin%20TX-970.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Design%20Studio%2C%20Austin%20TX.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Environmental%20Graphics/Web/IBM%20Rebus%20Design%20Studio%2C%20Austin%20TX-970.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Environmental%20Graphics/Web/IBM%20Rebus%20Design%20Studio%2C%20Austin%20TX.jpg",
                             title: "IBM Design Studio",
                             footnote1: "Austin, TX.",
                             footnote2: "CHANGE_ME"
                             })
 
                         +galleryItem-cardLink(
+                            "6", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Environmental%20Graphics/Web/IBM%20Rebus%20Think%20Conference%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Environmental%20Graphics/Web/IBM%20Rebus%20Think%20Conference%2001.jpg",
+                            title: "Think Conference",
+                            footnote1: "5 Images",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Think Conference", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Environmental%20Graphics/Web/IBM%20Rebus%20Think%20Conference%2002.jpg"},
+                            {title: "Think Conference", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Environmental%20Graphics/Web/IBM%20Rebus%20Think%20Conference%2003.jpg"},
+                            {title: "Think Conference", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Environmental%20Graphics/Web/IBM%20Rebus%20Think%20Conference%2004.jpg"},
+                            {title: "Think Conference", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Environmental%20Graphics/Web/IBM%20Rebus%20Think%20Conference%2005.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
                             "4","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Hand%20Cut%20Paper%20Color%20Exploration%2001-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Hand%20Cut%20Paper%20Color%20Exploration%2001.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Hand%20Cut%20Paper%20Color%20Exploration%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Hand%20Cut%20Paper%20Color%20Exploration%2001.jpg",
                             title: "Hand Cut Paper Color Exploration",
                             footnote1: "CHANGE_ME",
                             footnote2: "CHANGE_ME"
@@ -3263,8 +3393,8 @@ block main-content
                         +galleryItem-cardLink(
                             "4","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Hand%20Cut%20Paper%20Color%20Exploration%2002-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Hand%20Cut%20Paper%20Color%20Exploration%2002.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Hand%20Cut%20Paper%20Color%20Exploration%2002-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Hand%20Cut%20Paper%20Color%20Exploration%2002.jpg",
                             title: "Hand Cut Paper Color Exploration",
                             footnote1: "CHANGE_ME",
                             footnote2: "CHANGE_ME"
@@ -3273,8 +3403,8 @@ block main-content
                         +galleryItem-cardLink(
                             "4","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Hand%20Cut%20Paper%20Color%20Exploration%2003-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Hand%20Cut%20Paper%20Color%20Exploration%2003.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Hand%20Cut%20Paper%20Color%20Exploration%2003-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Hand%20Cut%20Paper%20Color%20Exploration%2003.jpg",
                             title: "Hand Cut Paper Color Exploration",
                             footnote1: "CHANGE_ME",
                             footnote2: "CHANGE_ME"
@@ -3283,8 +3413,8 @@ block main-content
                         +galleryItem-cardLink(
                             "4","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Banner-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Banner.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Banner/Web/IBM%20Rebus%20Banner-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Banner/Web/IBM%20Rebus%20Banner.jpg",
                             title: "Rebus Banner",
                             footnote1: "CHANGE_ME",
                             footnote2: "CHANGE_ME"
@@ -3293,62 +3423,122 @@ block main-content
                         +galleryItem-cardLink(
                             "4","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20On%20Campus%20recruitment%20poster-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20On%20Campus%20recruitment%20poster.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Recruitment%20Poster/Web/IBM%20Rebus%20On%20Campus%20recruitment%20poster-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Recruitment%20Poster/Web/IBM%20Rebus%20On%20Campus%20recruitment%20poster.jpg",
                             title: "Campus Recruitment Poster",
                             footnote1: "CHANGE_ME",
                             footnote2: "CHANGE_ME"
                             })
 
                         +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Keyboard/Web/IBM%20Rebus%20Keyboard%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Keyboard/Web/IBM%20Rebus%20Keyboard%2001.jpg",
+                            title: "Keyboard",
+                            footnote1: "6 Images",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Keyboard", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Keyboard/Web/IBM%20Rebus%20Keyboard%2002.jpg"},
+                            {title: "Keyboard", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Keyboard/Web/IBM%20Rebus%20Keyboard%2003.jpg"},
+                            {title: "Keyboard", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Keyboard/Web/IBM%20Rebus%20Keyboard%2004.jpg"},
+                            {title: "Keyboard", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Keyboard/Web/IBM%20Rebus%20Keyboard%2005.jpg"},
+                            {title: "Keyboard", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Keyboard/Web/IBM%20Rebus%20Keyboard%2006.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
                             "4","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Lunchbox%2001-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Lunchbox%2001.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Lunch%20Box/Web/IBM%20Rebus%20Lunchbox%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Lunch%20Box/Web/IBM%20Rebus%20Lunchbox%2001.jpg",
                             title: "Lunchbox",
                             footnote1: "3 Images",
                             footnote2: "CHANGE_ME"
                             })
                         +galleryItem-imageHidden(
-                            {title: "Lunchbox", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Lunchbox%2001.jpg"},
-                            {title: "Lunchbox", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Lunchbox%2002.jpg"},
-                            {title: "Lunchbox", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Lunchbox%2003.jpg"}
+                            {title: "Lunchbox", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Lunch%20Box/Web/IBM%20Rebus%20Lunchbox%2001.jpg"},
+                            {title: "Lunchbox", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Lunch%20Box/Web/IBM%20Rebus%20Lunchbox%2002.jpg"},
+                            {title: "Lunchbox", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Lunch%20Box/Web/IBM%20Rebus%20Lunchbox%2003.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Mouse%20Pad/Web/IBM%20Rebus%20mouse%20pad%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Mouse%20Pad/Web/IBM%20Rebus%20mouse%20pad%2001.jpg",
+                            title: "Mouse Pad",
+                            footnote1: "3 Images",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Mouse Pad", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Mouse%20Pad/Web/IBM%20Rebus%20mouse%20pad%2002.jpg"},
+                            {title: "Mouse Pad", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Mouse%20Pad/Web/IBM%20Rebus%20mouse%20pad%2003.jpg"}
                             )
 
                         +galleryItem-cardLink(
                             "4","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Mug%20v1%2001-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Mug%20v1%2001.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v1%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v1%2001.jpg",
                             title: "Mug, v1",
                             footnote1: "3 Images",
                             footnote2: "CHANGE_ME"
                             })
                         +galleryItem-imageHidden(
-                            {title: "Mug, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Mug%20v1%2001.jpg"},
-                            {title: "Mug, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Mug%20v1%2002.jpg"},
-                            {title: "Mug, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Mug%20v1%2003.jpg"}
+                            {title: "Mug, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v1%2001.jpg"},
+                            {title: "Mug, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v1%2002.jpg"},
+                            {title: "Mug, v1", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v1%2003.jpg"}
                             )
 
                         +galleryItem-cardLink(
                             "4","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Mug%20v2%2001-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Mug%20v2%2001.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v2%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v2%2001.jpg",
                             title: "Mug, v2",
                             footnote1: "2 Images",
                             footnote2: "CHANGE_ME"
                             })
                         +galleryItem-imageHidden(
-                            {title: "Mug, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Mug%20v2%2001.jpg"},
-                            {title: "Mug, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Mug%20v2%2002.jpg"}
+                            {title: "Mug, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v2%2001.jpg"},
+                            {title: "Mug, v2", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v2%2002.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v3%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v3%2001.jpg",
+                            title: "Mug, v3",
+                            footnote1: "3 Images",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Mug, v3", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v3%2002.jpg"},
+                            {title: "Mug, v3", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v3%2003.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v4%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v4%2001.jpg",
+                            title: "Mug, v4",
+                            footnote1: "4 Images",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Mug, v4", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v4%2002.jpg"},
+                            {title: "Mug, v4", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v4%2003.jpg"},
+                            {title: "Mug, v4", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v4%2004.jpg"}
                             )
 
                         +galleryItem-cardLink(
                             "4","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Hat-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Hat.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Clothing/Web/IBM%20Rebus%20Hat-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Clothing/Web/IBM%20Rebus%20Hat.jpg",
                             title: "Hat",
                             footnote1: "CHANGE_ME",
                             footnote2: "CHANGE_ME"
@@ -3357,12 +3547,121 @@ block main-content
                         +galleryItem-cardLink(
                             "4","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Tshirt-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Web/IBM%20Rebus%20Tshirt.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Clothing/Web/IBM%20Rebus%20Tshirt-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Clothing/Web/IBM%20Rebus%20Tshirt.jpg",
                             title: "Tshirt",
                             footnote1: "CHANGE_ME",
                             footnote2: "CHANGE_ME"
                             })
+
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Clothing/Web/IBM%20Sweatshirt%201991%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Clothing/Web/IBM%20Sweatshirt%201991%2001.jpg",
+                            title: "Sweatshirt",
+                            footnote1: "1991",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Notebook/Web/IBM%20Rebus%20Notebook%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Notebook/Web/IBM%20Rebus%20Notebook%2001.jpg",
+                            title: "Notebook",
+                            footnote1: "CHANGE_ME",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Notepad/Web/IBM%20Rebus%20Notepad%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Notepad/Web/IBM%20Rebus%20Notepad%2001.jpg",
+                            title: "Notepad",
+                            footnote1: "4 Images",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Notepad", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Notepad/Web/IBM%20Rebus%20Notepad%2002.jpg"},
+                            {title: "Notepad", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Notepad/Web/IBM%20Rebus%20Notepad%2003.jpg"},
+                            {title: "Notepad", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Notepad/Web/IBM%20Rebus%20Notepad%2004.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Pins%20and%20Buttons/Web/IBM%20Rebus%20Button%2003-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Pins%20and%20Buttons/Web/IBM%20Rebus%20Button%2003.jpg",
+                            title: "Button",
+                            footnote1: "CHANGE_ME",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Pins%20and%20Buttons/Web/IBM%20Rebus%20Pin%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Pins%20and%20Buttons/Web/IBM%20Rebus%20Pin%2001.jpg",
+                            title: "Pin",
+                            footnote1: "CHANGE_ME",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Scarf/Web/IBM%20Rebus%20Scarf%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Scarf/Web/IBM%20Rebus%20Scarf%2001.jpg",
+                            title: "Scarf",
+                            footnote1: "3 Images",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Scarf", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Scarf/Web/IBM%20Rebus%20Scarf%2002.jpg"},
+                            {title: "Scarf", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Scarf/Web/IBM%20Rebus%20Scarf%2003.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Bee%20Doll%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Bee%20Doll%2001.jpg",
+                            title: "Stuffed Bee",
+                            footnote1: "14 Images",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Stuffed Bee", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Bee%20Doll%2002.jpg"},
+                            {title: "Stuffed Bee", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Bee%20Doll%2003.jpg"},
+                            {title: "Stuffed Bee", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Bee%20Doll%2004.jpg"},
+                            {title: "Stuffed Bee", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Bee%20Doll%2005.jpg"},
+                            {title: "Stuffed Bee", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Bee%20Doll%2006.jpg"},
+                            {title: "Stuffed Bee", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Bee%20Doll%2007.jpg"},
+                            {title: "Stuffed Bee", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Bee%20Doll%2008.jpg"},
+                            {title: "Stuffed Bee", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Bee%20Doll%2009.jpg"},
+                            {title: "Stuffed Bee", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Bee%20Doll%2010.jpg"},
+                            {title: "Stuffed Bee", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Bee%20Doll%2011.jpg"},
+                            {title: "Stuffed Bee", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Bee%20Doll%2012.jpg"},
+                            {title: "Stuffed Bee", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Bee%20Doll%2013.jpg"},
+                            {title: "Stuffed Bee", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Bee%20Doll%2014.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Teddy%20Bear%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Teddy%20Bear%2001.jpg",
+                            title: "Stuffed Teddy Bear",
+                            footnote1: "2 Images",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "Stuffed Teddy Bear", hideMe: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Teddy%20Bear%2002.jpg"}
+                            )
+
+
                     .grid-x.grid-margin-x.text-center
                         .cell
                             p Intersted in buying any of these? Visit the official IBM Logo Store:
@@ -3570,16 +3869,6 @@ block main-content
                         +galleryItem-cardLink(
                             "4","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%204th%20Class%20Mail%20Pad-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%204th%20Class%20Mail%20Pad.jpg",
-                            title: "4th Class Mail Pad",
-                            footnote1: "CHANGE_ME",
-                            footnote2: "CHANGE_ME"
-                            })
-
-                        +galleryItem-cardLink(
-                            "4","6",
-                            {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Business%20Card%2C%20Marion%20Swannie-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Business%20Card%2C%20Marion%20Swannie.jpg",
                             title: "Business Card",
@@ -3600,9 +3889,19 @@ block main-content
                         +galleryItem-cardLink(
                             "4","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Design%20Program%20Folder-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Design%20Program%20Folder.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Folder%2001%20Design%20Program-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Folder%2001%20Design%20Program.jpg",
                             title: "IBM Design Program Folder",
+                            footnote1: "CHANGE_ME",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Folder%2002-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Folder%2002.jpg",
+                            title: "Folder",
                             footnote1: "CHANGE_ME",
                             footnote2: "CHANGE_ME"
                             })
@@ -3770,8 +4069,8 @@ block main-content
                         +galleryItem-cardLink(
                             "4","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Sticker%20First%20Class%20Mail%2001-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Sticker%20First%20Class%20Mail%2001.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Mailing%20Sticker%20First%20Class%20Mail%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Mailing%20Sticker%20First%20Class%20Mail%2001.jpg",
                             title: "Sticker, First Class Mail",
                             footnote1: "CHANGE_ME",
                             footnote2: "CHANGE_ME"
@@ -3780,8 +4079,18 @@ block main-content
                         +galleryItem-cardLink(
                             "4","6",
                             {
-                            SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Sticker%20Internal-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Sticker%20Internal.jpg",
+                            SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Mailing%204th%20Class%20Mail-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Mailing%204th%20Class%20Mail.jpg",
+                            title: "4th Class Mail Pad",
+                            footnote1: "CHANGE_ME",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4","6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Mailing%20Sticker%20Internal-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Mailing%20Sticker%20Internal.jpg",
                             title: "Sticker, Internal",
                             footnote1: "CHANGE_ME",
                             footnote2: "CHANGE_ME"
@@ -3856,6 +4165,71 @@ block main-content
                     //- -----  End of SIGNAGE  ---------------------------------------------
 
 
+                    //- ===================================================================================
+                    //- ███████  █████  ██████  ██████  ██  ██████ ███████        ██
+                    //- ██      ██   ██ ██   ██ ██   ██ ██ ██      ██             ██
+                    //- █████   ███████ ██████  ██████  ██ ██      ███████     ████████
+                    //- ██      ██   ██ ██   ██ ██   ██ ██ ██           ██     ██  ██
+                    //- ██      ██   ██ ██████  ██   ██ ██  ██████ ███████     ██████
+                    //- ██     ██  █████  ██      ██      ██████   █████  ██████  ███████ ██████  ███████
+                    //- ██     ██ ██   ██ ██      ██      ██   ██ ██   ██ ██   ██ ██      ██   ██ ██
+                    //- ██  █  ██ ███████ ██      ██      ██████  ███████ ██████  █████   ██████  ███████
+                    //- ██ ███ ██ ██   ██ ██      ██      ██      ██   ██ ██      ██      ██   ██      ██
+                    //-  ███ ███  ██   ██ ███████ ███████ ██      ██   ██ ██      ███████ ██   ██ ███████
+                    //- ===================================================================================
+
+
+                    +projectDivider("Fabrics & Wallpaper")(class="")
+                    .grid-x.grid-margin-x.align-center
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Fabrics%20and%20Wallpaper/Web/IBM%20Logo%20Drapes%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Fabrics%20and%20Wallpaper/Web/IBM%20Logo%20Drapes%2001.jpg",
+                            title: "Drapes",
+                            footnote1: "2 Images",
+                            footnote2: "CHANGE_ME"
+                            })
+                        +galleryItem-imageHidden(
+                            {title: "CHANGE_ME", hideMe: "https://assets.paulrand.design/Works/IBM/Fabrics%20and%20Wallpaper/Web/IBM%20Logo%20Drapes%2002.jpg"}
+                            )
+
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Fabrics%20and%20Wallpaper/Web/IBM%20Wallpaper%2001-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Fabrics%20and%20Wallpaper/Web/IBM%20Wallpaper%2001.jpg",
+                            title: "Wallpaper Samples, v1",
+                            footnote1: "Courtesy of Steven Heller",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Fabrics%20and%20Wallpaper/Web/IBM%20Wallpaper%2002-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Fabrics%20and%20Wallpaper/Web/IBM%20Wallpaper%2002.jpg",
+                            title: "Wallpaper Samples, v2",
+                            footnote1: "Courtesy of Steven Heller",
+                            footnote2: "CHANGE_ME"
+                            })
+
+                        +galleryItem-cardLink(
+                            "4", "6",
+                            {
+                            SM: "https://assets.paulrand.design/Works/IBM/Fabrics%20and%20Wallpaper/Web/IBM%20Wallpaper%2003-450.jpg",
+                            LG: "https://assets.paulrand.design/Works/IBM/Fabrics%20and%20Wallpaper/Web/IBM%20Wallpaper%2003.jpg",
+                            title: "Wallpaper Samples, v3",
+                            footnote1: "Courtesy of Steven Heller",
+                            footnote2: "CHANGE_ME"
+                            })
+
+
+
+                    //- -----  End of FABRICS & WALLPAPERS  -----------------------------------
+
+
+
 
                     //- =============================================================================================
 
@@ -3886,16 +4260,6 @@ block main-content
                             LG: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stock%20Certificate%20Postcard.jpg",
                             title: "Stock Certificate Postcard",
                             footnote1: "CHANGE_ME",
-                            footnote2: "CHANGE_ME"
-                            })
-
-                        +galleryItem-cardLink(
-                            "4","6",
-                            {
-                            SM: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stock%20Newspaper%20Article%201960.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stock%20Newspaper%20Article%201960.jpg",
-                            title: "Stock Newspaper Article",
-                            footnote1: "1960",
                             footnote2: "CHANGE_ME"
                             })
 

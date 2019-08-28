@@ -41,10 +41,10 @@ mixin SLICKcarouselImages(title, subtitle, ...carouselImages)
                 each image in carouselImages
                     if image.Title == "CHANGE_ME"
                         a(href=image.LG data-fancybox="images" data-caption=pageTitle)
-                            img.lazyload.w100(loading="lazy" data-src=image.SM alt=pageTitle)&attributes(attributes)
+                            img.lazyload.w100(data-src=image.SM alt=pageTitle)&attributes(attributes)
                     else
                         a(href=image.LG data-fancybox="images" data-caption=pageTitle + "   |   " + image.Title)
-                            img.lazyload.w100(loading="lazy" data-src=image.SM alt=pageTitle + "   |   " + image.Title)&attributes(attributes)
+                            img.lazyload.w100(data-src=image.SM alt=pageTitle + "   |   " + image.Title)&attributes(attributes)
 
     .grid-x.grid-margin-x.align-center.small-mb2
         .small-12.cell.text-center
@@ -60,8 +60,8 @@ mixin SLICKcarouselImages(title, subtitle, ...carouselImages)
 mixin imageZoomSingle(imageZoomSingleSm, imageZoomSingleLg)
     .relative(data-aos="fade-up")
         a(href=imageZoomSingleLg data-fancybox="images")
-            img.img-fit.lazyload(loading="lazy" data-src=imageZoomSingleSm alt=pageTitle)&attributes(attributes)
-        img.icon-zoom-boxed.lazyload(loading="lazy" data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
+            img.img-fit.lazyload(data-src=imageZoomSingleSm alt=pageTitle)&attributes(attributes)
+        img.icon-zoom-boxed.lazyload(data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
 
 //- /*-----  End of USE FOR SINGLE IMAGE ZOOMS, NO HEADER NO CAPTION  ---------------------------------------*/
 
@@ -73,8 +73,8 @@ mixin imageZoomSingle(imageZoomSingleSm, imageZoomSingleLg)
 mixin imageZoomSingleCaption(imageZoomSingleSm, imageZoomSingleLg, caption)
     .relative(data-aos="fade-up")
         a(href=imageZoomSingleLg data-fancybox="images" data-caption=caption)
-            img.img-fit.lazyload(loading="lazy" data-src=imageZoomSingleSm alt=caption)&attributes(attributes)
-        img.icon-zoom-boxed.lazyload(loading="lazy" data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
+            img.img-fit.lazyload(data-src=imageZoomSingleSm alt=caption)&attributes(attributes)
+        img.icon-zoom-boxed.lazyload(data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
     p
     .footnote.small-mb2!= caption
 
@@ -89,8 +89,8 @@ mixin imageZoomMulti(...imageZoomMulti)
     .relative(data-aos="fade-up")
         each item in imageZoomMulti
             a(href=item.LG data-fancybox="images")
-                img.img-fit.lazyload(loading="lazy" data-src=item.SM style="margin: .5em .5em" alt=pageTitle)&attributes(attributes)
-            img.icon-zoom-boxed.lazyload(loading="lazy" data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
+                img.img-fit.lazyload(data-src=item.SM style="margin: .5em .5em" alt=pageTitle)&attributes(attributes)
+            img.icon-zoom-boxed.lazyload(data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
 
 //- /*-----  End of USE FOR MULTIPLE IMAGE ZOOMS, NO HEADER  --------------------------------------------*/
 
@@ -113,14 +113,14 @@ mixin imageZoomSingleHeader(imageZoomSingleHeaderSm, imageZoomSingleHeaderLg)
     if publishedInTitle == "CHANGE_ME"
         figure.relative(data-aos="fade-up")
             a(href=imageZoomSingleHeaderLg data-fancybox="images")
-                img.img-fit.lazyload(loading="lazy" data-src=imageZoomSingleHeaderSm alt=pageTitle)&attributes(attributes)
-            img.icon-zoom-boxed.lazyload(loading="lazy" data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
+                img.img-fit.lazyload(data-src=imageZoomSingleHeaderSm alt=pageTitle)&attributes(attributes)
+            img.icon-zoom-boxed.lazyload(data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
 
     else
         figure.relative(data-aos="fade-up")
             a(href=imageZoomSingleHeaderLg data-fancybox="images")
-                img.img-fit.lazyload(loading="lazy" data-src=imageZoomSingleHeaderSm alt=pageTitle)&attributes(attributes)
-            img.icon-zoom-boxed.lazyload(loading="lazy" data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
+                img.img-fit.lazyload(data-src=imageZoomSingleHeaderSm alt=pageTitle)&attributes(attributes)
+            img.icon-zoom-boxed.lazyload(data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
 
 //- /*-----  End of USE FOR SINGLE IMAGE ZOOMS WITH HEADER  ----------------------------------*/
 
@@ -133,7 +133,7 @@ mixin listItem-thumb(link, image, title, subtitle, description)
     .grid-x.grid-padding-x.callout.box-shadow-hover.align-middle.small-m0.small-mb1
         .small-12.medium-2.cell.small-p0
             a(href=link)
-                img.w100.lazyload.small-mb1.medium-mb0(loading="lazy" data-src=image alt=title)
+                img.w100.lazyload.small-mb1.medium-mb0(data-src=image alt=title)
         .small-12.medium-10.cell
             a(href=link)
                 h5.text-normal-bold!= title
@@ -160,7 +160,7 @@ mixin listItem-thumb-buttons(image, link, title, date, description, screenshot)
                 a.button.arrow.small.text-caps.expanded.text-left.small-mb0(href=screenshot data-fancybox="images") View Screenshot
         else
             .small-12.medium-2.cell.small-p0
-                img.w100.lazyload.small-bd1.small-mb1.medium-mb0(loading="lazy" data-src=image alt=title)
+                img.w100.lazyload.small-bd1.small-mb1.medium-mb0(data-src=image alt=title)
             .small-12.cell.medium-auto
                 a(href=link)
                     h5.text-normal-bold.small-mb0!= title
@@ -181,7 +181,7 @@ mixin galleryItem-cardImageZoom(link, image, title, author, date)
     .small-12.medium-6.large-4.cell.flex-container(data-aos="fade-up")
         a.card.galleryCardImage.text-center(href=link)
             .card-section
-                img.lazyload.w100(loading="lazy" data-src=image alt="Zoom")
+                img.lazyload.w100(data-src=image alt="Zoom")
             .card-section
                 p.small-mb0!= title
                 if author == "CHANGE_ME_AUTHOR"
@@ -202,14 +202,14 @@ mixin galleryItem-cardImageZoom(link, image, title, author, date)
 mixin galleryItem-imageHidden(...galleryItemImageHidden)
     each hidden in galleryItemImageHidden
         a.hide(href=hidden.hideMe data-fancybox="images" data-caption=pageTitle + "   |   " + hidden.title)
-            img.lazyload.w100(loading="lazy" data-src=hidden.hideMe alt=pageTitle + "   |   " + hidden.title)
+            img.lazyload.w100(data-src=hidden.hideMe alt=pageTitle + "   |   " + hidden.title)
 
 mixin galleryItem-cardLink(lgColumns, mdColumns, ...galleryItemCardLink)
     div(class="large-" + lgColumns class="medium-" + mdColumns class="small-12 cell flex-container" data-aos="fade-up")
         each item in galleryItemCardLink
             a.card.galleryCardImage.text-center(href=item.LG data-fancybox="images" data-caption=pageTitle + "   |   " + item.title)
                 .card-section
-                    img.lazyload.w100(loading="lazy" data-src=item.SM alt=pageTitle)
+                    img.lazyload.w100(data-src=item.SM alt=pageTitle)
                 .card-section
                     p.small-mb0!= item.title
                     if item.footnote1 == "CHANGE_ME"
@@ -237,8 +237,8 @@ mixin galleryItem-heavy(divider, projectTitle, lgColumns, mdColumns, ...galleryI
             if lgColumns == "12"
                 div(class="large-" + lgColumns class="medium-" + mdColumns class="small-12 cell align-middle flex-container relative" data-aos="fade-up")
                     a(href=item.LG data-fancybox="images" data-caption=pageTitle + "   |   " + projectTitle)
-                        img.lazyload.w100(loading="lazy" data-src=item.SM alt=pageTitle + "   |   " + projectTitle)&attributes(attributes)
-                    img.icon-zoom-boxed.lazyload(loading="lazy" data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
+                        img.lazyload.w100(data-src=item.SM alt=pageTitle + "   |   " + projectTitle)&attributes(attributes)
+                    img.icon-zoom-boxed.lazyload(data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
                     unless item.title == ""
                         p.small-m0!= item.title
                     .footnote!= item.footnote
@@ -246,10 +246,10 @@ mixin galleryItem-heavy(divider, projectTitle, lgColumns, mdColumns, ...galleryI
                 div(class="large-" + lgColumns class="medium-" + mdColumns class="small-12 cell align-middle" data-aos="fade-up")
                     if projectTitle =="CHANGE_ME"
                         a(href=item.LG data-fancybox="images" data-caption=pageTitle)
-                            img.lazyload.w100(loading="lazy" data-src=item.SM alt=pageTitle)&attributes(attributes)
+                            img.lazyload.w100(data-src=item.SM alt=pageTitle)&attributes(attributes)
                     else
                         a(href=item.LG data-fancybox="images" data-caption=pageTitle + "   |   " + projectTitle)
-                            img.lazyload.w100(loading="lazy" data-src=item.SM alt=pageTitle + "   |   " + projectTitle)&attributes(attributes)
+                            img.lazyload.w100(data-src=item.SM alt=pageTitle + "   |   " + projectTitle)&attributes(attributes)
                     unless item.title == ""
                         p.small-m0!= item.title
                     .footnote!= item.footnote
@@ -264,7 +264,8 @@ mixin galleryItem-heavy(divider, projectTitle, lgColumns, mdColumns, ...galleryI
 
 mixin projectDivider(projectType)
     hr.w100.horizontal-center.hr-red.hr-3.medium-my3
-    h3.text-center.small-mb3!= projectType
+    unless projectType == "CHANGE_ME"
+        h3.text-center.small-mb2&attributes(attributes)= projectType
 
 //- -----  End of SINGLE PROJECT DIVIDER  --------------------------------------------
 
@@ -276,7 +277,7 @@ mixin projectDivider(projectType)
 
 mixin resourceEntry(link, image, title, footnote, description)
     a.listItem-thumb.external.small-mb1.bg-white(href=link, target="_blank" rel=noopener)
-        img.lazyload.w100(loading="lazy" data-src='/resources/resources-logos-assets/#{image}' alt=pageTitle)
+        img.lazyload.w100(data-src='/resources/resources-logos-assets/#{image}' alt=pageTitle)
         //- img(src='/resources/resources-logos-assets/#{image}', alt=image width='170' height='170')
         .listItemLabel-thumb
             h5.text-normal-bold!= title
@@ -300,12 +301,12 @@ mixin galleryItem-blockGrid(divider, projectTitle, alignment, lgBlocks, mdBlocks
                 .cell.column-block.relative(data-aos="fade-up")
                     if projectTitle =="CHANGE_ME"
                         a(href=item.LG data-fancybox="images" data-caption=pageTitle)
-                            img.lazyload(loading="lazy" data-src=item.SM alt=pageTitle)&attributes(attributes)
-                        img.icon-zoom-boxed.lazyload(loading="lazy" data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
+                            img.lazyload(data-src=item.SM alt=pageTitle)&attributes(attributes)
+                        img.icon-zoom-boxed.lazyload(data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
                     else
                         a(href=item.LG data-fancybox="images" data-caption=pageTitle + "   |   " + projectTitle)
-                            img.lazyload(loading="lazy" data-src=item.SM alt=pageTitle + "   |   " + projectTitle)&attributes(attributes)
-                        img.icon-zoom-boxed.lazyload(loading="lazy" data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
+                            img.lazyload(data-src=item.SM alt=pageTitle + "   |   " + projectTitle)&attributes(attributes)
+                        img.icon-zoom-boxed.lazyload(data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
                     unless item.title == ""
                         p.small-m0!= item.title
                     unless item.footnote == ""
@@ -314,10 +315,10 @@ mixin galleryItem-blockGrid(divider, projectTitle, alignment, lgBlocks, mdBlocks
                 .cell.column-block.align-middle.relative(data-aos="fade-up")
                     if projectTitle =="CHANGE_ME"
                         a(href=item.LG data-fancybox="images" data-caption=pageTitle)
-                            img.lazyload(loading="lazy" data-src=item.SM alt=pageTitle)&attributes(attributes)
+                            img.lazyload(data-src=item.SM alt=pageTitle)&attributes(attributes)
                     else
                         a(href=item.LG data-fancybox="images" data-caption=pageTitle + "   |   " + projectTitle)
-                            img.lazyload(loading="lazy" data-src=item.SM alt=pageTitle + "   |   " + projectTitle)&attributes(attributes)
+                            img.lazyload(data-src=item.SM alt=pageTitle + "   |   " + projectTitle)&attributes(attributes)
                     unless item.title == ""
                         p.small-m0!= item.title
                     unless item.footnote == ""
