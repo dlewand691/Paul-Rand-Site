@@ -58,13 +58,13 @@ block main-content
     //- ===============================================
     .wrapper-parallax
         .imageHeader-full
-            h1.reveal-enter-top!= pageTitle
+            h1(data-aos="fade-up")!= pageTitle
 
             :markdown-it(html typographer plugins=['markdown-it-sup'])
                 A critical review of Eric Gill’s “An Essay on Typography”  
                 Originally published in New York Times, September 10, 1989
 
-            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign(data-aos="fade-up") View the Original #{nextType}
 
             img(src=imageHeaderBackground)
 

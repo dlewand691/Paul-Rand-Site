@@ -9,11 +9,19 @@
 	],
 "creatorBuild": "31491",
 "files": {
+	"/***MY WORKSPACE***.code-workspace": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_BUILD/***MY WORKSPACE***.code-workspace",
+		"oF": 1
+		},
 	"/__MIXINS/__ARCHIVE": {
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/__ARCHIVE",
-		"oF": 0
+		"oF": 1
 		},
 	"/__MIXINS/_include-closingScript.pug": {
 		"cB": 1,
@@ -22,7 +30,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_include-closingScript.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_include-find-a-copy.pug": {
@@ -32,7 +40,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_include-find-a-copy.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_include-footer.pug": {
@@ -42,7 +50,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_include-footer.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_include-head-favicons.pug": {
@@ -52,7 +60,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_include-head-favicons.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_include-head-meta.pug": {
@@ -62,7 +70,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_include-head-meta.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_include-image-carousel-slick.pug": {
@@ -72,7 +80,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_include-image-carousel-slick.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_include-image-carousel.pug": {
@@ -82,7 +90,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_include-image-carousel.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_include-nav-life-books-articles.pug": {
@@ -92,7 +100,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_include-nav-life-books-articles.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_include-nav-life-events-exhibits.pug": {
@@ -102,7 +110,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_include-nav-life-events-exhibits.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_include-nav-life-interviews.pug": {
@@ -112,7 +120,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_include-nav-life-interviews.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_include-nav-life-videos.pug": {
@@ -122,7 +130,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_include-nav-life-videos.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_include-nav-life.pug": {
@@ -132,7 +140,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_include-nav-life.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_include-nav-work.pug": {
@@ -142,7 +150,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_include-nav-work.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_include-nav-writing-articles.pug": {
@@ -152,7 +160,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_include-nav-writing-articles.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_include-nav-writing-books.pug": {
@@ -162,7 +170,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_include-nav-writing-books.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_include-nav-writing-suggested-readings.pug": {
@@ -172,7 +180,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_include-nav-writing-suggested-readings.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_include-nav-writing.pug": {
@@ -182,7 +190,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_include-nav-writing.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_include-next-item.pug": {
@@ -192,7 +200,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_include-next-item.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_include-next-work.pug": {
@@ -202,7 +210,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_include-next-work.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_include-published-in.pug": {
@@ -212,7 +220,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_include-published-in.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_include-social-media.pug": {
@@ -222,7 +230,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_include-social-media.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_layout-default.pug": {
@@ -232,7 +240,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_layout-default.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_mixins.pug": {
@@ -242,7 +250,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_mixins.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_templates/_template-1-column.pug": {
@@ -252,7 +260,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_templates/_template-1-column.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_templates/_template-article 2.pug": {
@@ -262,7 +270,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_templates/_template-article 2.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_templates/_template-book-detail.pug": {
@@ -272,7 +280,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_templates/_template-book-detail.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_templates/_template-full-width-image-header.pug": {
@@ -282,7 +290,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_templates/_template-full-width-image-header.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_templates/_template-gallery-heavy.html": {
@@ -291,7 +299,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_templates/_template-gallery-heavy.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/__MIXINS/_templates/_template-gallery-heavy.pug": {
 		"cB": 1,
@@ -300,7 +308,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_templates/_template-gallery-heavy.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_templates/_template-gallery-light.pug": {
@@ -310,7 +318,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_templates/_template-gallery-light.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_templates/_template-gallery-medium.pug": {
@@ -320,7 +328,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_templates/_template-gallery-medium.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_templates/_template-hashtag-paulrand.pug": {
@@ -330,7 +338,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_templates/_template-hashtag-paulrand.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_templates/_template-landing-books.pug": {
@@ -340,7 +348,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_templates/_template-landing-books.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_templates/_template-landing-life.pug": {
@@ -350,7 +358,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_templates/_template-landing-life.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_templates/_template-landing-resources.pug": {
@@ -360,7 +368,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_templates/_template-landing-resources.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_templates/_template-landing-work.pug": {
@@ -370,7 +378,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_templates/_template-landing-work.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_templates/_template-landing-writing.pug": {
@@ -380,7 +388,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_templates/_template-landing-writing.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_templates/_template-list-with-thumbnails.pug": {
@@ -390,7 +398,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_templates/_template-list-with-thumbnails.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_templates/_template-list.pug": {
@@ -400,7 +408,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_templates/_template-list.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/_templates/_template-video.pug": {
@@ -410,7 +418,7 @@
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/_templates/_template-video.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/index 3.pug": {
@@ -418,80 +426,80 @@
 		"cOD": 1,
 		"ft": 512,
 		"hM": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/index 3.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/index-ks.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/index-ks.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/__MIXINS/index-ks.pug": {
 		"cB": 1,
 		"cOD": 1,
 		"ft": 512,
 		"hM": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/index-ks.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/index.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/__MIXINS/index2.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/index2.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/__MIXINS/index2.pug": {
 		"cB": 1,
 		"cOD": 1,
 		"ft": 512,
 		"hM": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/index2.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/ks.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/ks.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/__MIXINS/ks.pug": {
 		"cB": 1,
 		"cOD": 1,
 		"ft": 512,
 		"hM": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/ks.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"/__MIXINS/poly-fluid-sizing-master/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/poly-fluid-sizing-master/.gitignore",
-		"oF": 0
+		"oF": 1
 		},
 	"/__MIXINS/poly-fluid-sizing-master/_linear-interpolation.scss": {
 		"aP": 1,
@@ -502,7 +510,7 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/css/_linear-interpolation.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 3,
 		"uL": 1
 		},
@@ -515,7 +523,7 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/css/_list-remove.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 3,
 		"uL": 1
 		},
@@ -528,7 +536,7 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/css/_list-sort.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 3,
 		"uL": 1
 		},
@@ -541,7 +549,7 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/css/_map-sort.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 3,
 		"uL": 1
 		},
@@ -554,7 +562,7 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/css/_poly-fluid-sizing.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 3,
 		"uL": 1
 		},
@@ -562,15 +570,15 @@
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/poly-fluid-sizing-master/LICENSE",
-		"oF": 0
+		"oF": 1
 		},
 	"/__MIXINS/poly-fluid-sizing-master/package.json": {
 		"ft": 524288,
 		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/poly-fluid-sizing-master/package-min.json",
-		"oF": 0,
+		"oF": 1,
 		"oO": 0,
 		"oS": 1
 		},
@@ -583,9 +591,9 @@
 		"eSQ": 1,
 		"ft": 4096,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/_BUILD/__MIXINS/poly-fluid-sizing-master/README.html",
-		"oF": 0,
+		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
@@ -611,7 +619,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_BUILD/_template/_template-1-column.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/_template/_template-article.html": {
 		"cB": 0,
@@ -619,7 +627,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_BUILD/_template/_template-article.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/_template/_template-book-detail.html": {
 		"cB": 0,
@@ -627,7 +635,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_BUILD/_template/_template-book-detail.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/_template/_template-full-width-image-header.html": {
 		"cB": 0,
@@ -635,7 +643,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_BUILD/_template/_template-full-width-image-header.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/_template/_template-gallery-heavy.html": {
 		"cB": 0,
@@ -643,7 +651,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_BUILD/_template/_template-gallery-heavy.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/_template/_template-gallery-light.html": {
 		"cB": 0,
@@ -651,7 +659,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_BUILD/_template/_template-gallery-light.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/_template/_template-gallery-medium.html": {
 		"cB": 0,
@@ -659,7 +667,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_BUILD/_template/_template-gallery-medium.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/_template/_template-hashtag-paulrand.html": {
 		"cB": 0,
@@ -667,7 +675,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_BUILD/_template/_template-hashtag-paulrand.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/_template/_template-landing-books.html": {
 		"cB": 0,
@@ -675,7 +683,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_BUILD/_template/_template-landing-books.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/_template/_template-landing-life.html": {
 		"cB": 0,
@@ -683,7 +691,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_BUILD/_template/_template-landing-life.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/_template/_template-landing-resources.html": {
 		"cB": 0,
@@ -691,7 +699,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_BUILD/_template/_template-landing-resources.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/_template/_template-landing-work.html": {
 		"cB": 0,
@@ -699,7 +707,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_BUILD/_template/_template-landing-work.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/_template/_template-landing-writing.html": {
 		"cB": 0,
@@ -707,7 +715,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_BUILD/_template/_template-landing-writing.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/_template/_template-life-biography.html": {
 		"cB": 0,
@@ -715,7 +723,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_BUILD/_template/_template-life-biography.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/_template/_template-list-with-thumbnails.html": {
 		"cB": 0,
@@ -723,7 +731,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_BUILD/_template/_template-list-with-thumbnails.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/_template/_template-list.html": {
 		"cB": 0,
@@ -731,7 +739,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_BUILD/_template/_template-list.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/_template/_template-video.html": {
 		"cB": 0,
@@ -739,7 +747,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_BUILD/_template/_template-video.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/bower.json": {
 		"ft": 524288,
@@ -1035,6 +1043,14 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
+		},
+	"/Default VSCode Workspace.code-workspace": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_BUILD/Default VSCode Workspace.code-workspace",
+		"oF": 1
 		},
 	"/favicons/android-chrome-144x144.png": {
 		"ft": 32768,
@@ -2561,18 +2577,18 @@
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/_BUILD/js/maximize-select2-height-master/.gitignore",
-		"oF": 0
+		"oF": 1
 		},
 	"/js/maximize-select2-height-master/maximize-select2-height.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/_BUILD/js/maximize-select2-height-master/min/maximize-select2-height-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 1
 		},
@@ -2583,7 +2599,7 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/js/maximize-select2-height-master/min/maximize-select2-height.min-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 1
 		},
@@ -2591,7 +2607,7 @@
 		"ft": 524288,
 		"oA": 1,
 		"oAP": "/_BUILD/js/maximize-select2-height-master/package-min.json",
-		"oF": 0,
+		"oF": 1,
 		"oO": 0,
 		"oS": 1
 		},
@@ -2604,9 +2620,9 @@
 		"eSQ": 1,
 		"ft": 4096,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/_BUILD/js/maximize-select2-height-master/README.html",
-		"oF": 0,
+		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
@@ -2618,9 +2634,9 @@
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/_BUILD/js/maximize-select2-height-master/test.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/js/nav-life.js": {
 		"bF": 0,
@@ -7630,6 +7646,17 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"/node_modules/darkmode-js/lib/darkmode-js.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/darkmode-js/lib/min/darkmode-js.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/node_modules/fastclick/lib/fastclick.js": {
 		"bF": 0,
 		"ft": 64,
@@ -8612,16 +8639,55 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/node_modules/swiper/dist/js/swiper.min.js": {
+	"/node_modules/swiper/components/core/core.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/swiper/components/css/core.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/swiper/js/swiper.min.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/_BUILD/node_modules/swiper/dist/js/min/swiper.min-min.js",
+		"oAP": "/_BUILD/node_modules/swiper/js/min/swiper.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
+		},
+	"/node_modules/swiper/scss/functions.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/swiper/css/functions.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/swiper/swiper.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/css/swiper.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
 		},
 	"/package-lock.json": {
 		"ft": 524288,
@@ -8643,9 +8709,9 @@
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/_BUILD/Rand assets.sketch",
-		"oF": 0
+		"oF": 1
 		},
 	"/resources/_SOURCE": {
 		"ft": 65536,
@@ -10172,9 +10238,9 @@
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/_BUILD/Thumbs.db",
-		"oF": 0
+		"oF": 1
 		},
 	"/TODO.txt": {
 		"cB": 0,
@@ -12415,7 +12481,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/favicons/apple-touch-icon-120x120.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 586795405.08147502
+	"lastBuiltDate": 588717067.61532295
 	},
 "projectSettings": {
 	"abortBuildOnError": 0,
@@ -14634,7 +14700,7 @@
 			"flagValue": -1
 			},
 		"warnings": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"width": {

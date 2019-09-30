@@ -74,12 +74,12 @@ block main-content
     //- ===============================================
     .wrapper-parallax
         .imageHeader-full
-            h1.reveal-enter-top!= pageTitle
+            h1(data-aos="fade-up")!= pageTitle
 
             :markdown-it(html typographer plugins=['markdown-it-sup'])
                 This version of the article was originally published in “Seven Designers Look At Trademark Design”, 1952.
 
-            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign(data-aos="fade-up") View the Original #{nextType}
 
             img(src=imageHeaderBackground)
 
@@ -98,11 +98,11 @@ block main-content
                     :markdown-it(html typographer plugins=['markdown-it-sup'])
                         A trademark is not merely a device to adorn a letterhead, to stamp on a product, or to insert at the base of an advertisement; nor one whose sole prerogative is to imprint itself by dint of constant repetition on the mind of the consumer public. The trademark is a potential illustrative feature of unappreciated vigor and efficacy; and when used as such escapes its customary fate of being a boring restatement of the identity of the product’s maker. When fully exploited the trademark can actively stimulate interest in the product or brand. It is possible to repeat without being repetitious. This is important; monotonous repetition eventually loses its impact, and the trademark which becomes a visual cliche will fail to evoke a response from the spectator.
 
-            .medium-my3.text-center
-                +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative01-800.jpg",
-                    "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative01.jpg"
-                    )
-
+        .w100.text-center.medium-my3.text-center
+            +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative01-800.jpg",
+                "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative01.jpg"
+                )
+        .grid-container
             .grid-x.grid-margin-x.align-center
                 .large-7.medium-10.small-12.cell.entry-content
                     :markdown-it(html typographer plugins=['markdown-it-sup'])
@@ -110,22 +110,22 @@ block main-content
 
                         The means by which the treatment or rendering of the trademark can be varied are infinite. The device may, for example, be drawn in line, in silhouette, or in three dimensions. Furthermore, a part of the device can be used to represent the whole. Both of these types of variation are shown in the Disney advertisements reproduced here. Changing the color or texture are other obvious ways of altering its appearance.
 
-            .w100.text-center.small-p4.small-my2
-                .grid-x.grid-margin-x
-                    .medium-4.small-12.small-mb2.cell.reveal-enter-right
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative02a-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative02a.jpg"
-                        )
-                    .medium-4.small-12mb2.cell.reveal-enter-bottom
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative02b-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative02b.jpg"
-                        )
-                    .medium-4.small-12mb2.cell.reveal-enter-right
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative02c-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative02c.jpg"
-                        )
+        .w100.text-center.small-p4.small-my2
+            .grid-x.grid-margin-x
+                .medium-4.small-12.small-mb2.cell(data-aos="fade-left")
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2014-800.jpg",
+                    "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2014.jpg"
+                    )
+                .medium-4.small-12mb2.cell(data-aos="fade-up")
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2015-800.jpg",
+                    "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2015.jpg"
+                    )
+                .medium-4.small-12mb2.cell(data-aos="fade-left")
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2011-800.jpg",
+                    "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2011.jpg"
+                    )
 
-
+        .grid-container
             .grid-x.grid-margin-x.align-center
                 .large-7.medium-10.small-12.cell.entry-content
                     :markdown-it(html typographer plugins=['markdown-it-sup'])
@@ -133,28 +133,29 @@ block main-content
 
                         The Borzoi dog of Alfred A. Knopf Publishing Company provides an example of diversified treatment of a trademark. The dog is not only rendered in line, in silhouette, with and without borders, and so forth; but is often executed by different artists which further varies its interpretation.
 
-            .w100.small-p4.bg-gold.medium-my4.small-p2.medium-p4
-                .grid-x.grid-margin-x
-                    .medium-3.small-12.cell.small-mb2.reveal-enter-right
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative03a-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative03a.jpg"
-                        )
+        .w100.small-p4.bg-gold.medium-my4.small-p2.medium-p4
+            .grid-x.grid-margin-x
+                .medium-3.small-12.cell.small-mb2(data-aos="fade-left")
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2012-800.jpg",
+                    "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2012.jpg"
+                    )
 
-                    .medium-3.small-12.cell.small-mb2.reveal-enter-top
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative03b-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative03b.jpg"
-                        )
+                .medium-3.small-12.cell.small-mb2(data-aos="fade-bottom")
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2008-800.jpg",
+                    "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2008.jpg"
+                    )
 
-                    .medium-3.small-12.cell.small-mb2.reveal-enter-right
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative03c-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative03c.jpg"
-                        )
+                .medium-3.small-12.cell.small-mb2(data-aos="fade-left")
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2002-800.jpg",
+                    "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2002.jpg"
+                    )
 
-                    .medium-3.small-12.cell.small-mb2.reveal-enter-right
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative03d-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative03d.jpg"
-                        )
+                .medium-3.small-12.cell.small-mb2(data-aos="fade-left")
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2001-800.jpg",
+                    "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2001.jpg"
+                    )
 
+        .grid-container
             .grid-x.grid-margin-x.align-center
                 .large-7.medium-10.small-12.cell.entry-content
                     :markdown-it(html typographer plugins=['markdown-it-sup'])
@@ -166,148 +167,156 @@ block main-content
 
                         The advertising for Four Roses Whiskey has long used the above approach, proving that it not only has visual appeal but is economically sound.
 
-            .w100.small-p2.medium-mt3
-                .grid-x.grid-margin-x
-                    .medium-4.small-12.cell.small-mb2.small-mb2.reveal-enter-right
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative04a-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative04a.jpg"
-                        )
+        .w100.small-p2.medium-mt3
+            .grid-x.grid-margin-x
+                .medium-4.small-12.cell.small-mb2.small-mb2(data-aos="fade-left")
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2010-800.jpg",
+                    "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2010.jpg"
+                    )
 
-                    .medium-4.small-12.cell.small-mb2.small-mb2.reveal-enter-bottom
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative04b-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative04b.jpg"
-                        )
+                .medium-4.small-12.cell.small-mb2.small-mb2(data-aos="fade-up")
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2004-800.jpg",
+                    "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2004.jpg"
+                    )
 
-                    .medium-4.small-12.cell.small-mb2.small-mb2.reveal-enter-right
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative04c-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative04c.jpg"
-                        )
+                .medium-4.small-12.cell.small-mb2.small-mb2(data-aos="fade-left")
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2006-800.jpg",
+                    "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2006.jpg"
+                    )
 
-                    .medium-4.small-12.cell.small-mb2.small-mb2.reveal-enter-right
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative04d-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative04d.jpg"
-                        )
+                .medium-4.small-12.cell.small-mb2.small-mb2(data-aos="fade-left")
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2005-800.jpg",
+                    "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2005.jpg"
+                    )
 
-                    .medium-4.small-12.cell.small-mb2.small-mb2.reveal-enter-bottom
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative04e-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative04e.jpg"
-                        )
+                .medium-4.small-12.cell.small-mb2.small-mb2(data-aos="fade-up")
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2003-800.jpg",
+                    "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2003.jpg"
+                    )
 
-                    .medium-4.small-12.cell.small-mb2.small-mb2.reveal-enter-right
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative04f-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative04f.jpg"
-                        )
+                .medium-4.small-12.cell.small-mb2.small-mb2(data-aos="fade-left")
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2009-800.jpg",
+                    "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2009.jpg"
+                    )
 
-            .w100.medium-mb4.text-center
-                +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative05-800.jpg",
-                "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative05.jpg"
-                )
+        .w100.medium-mb4.text-center
+            +imageZoomSingle("https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2007-970.jpg",
+            "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2007.jpg"
+            )
 
+        .grid-container
             .grid-x.grid-margin-x.align-center
                 .large-7.medium-10.small-12.cell.entry-content
                     :markdown-it(html typographer plugins=['markdown-it-sup'])
                         The interaction of the trademark and its graphic context is not merely one-sided; the context is affected by the trademark as well as the trademark by the context. For example, the illustrative use of a trademark can force a “pretty baby” advertisement to become more than a pretty baby (page 68). We all know that a pretty baby has great psychological appeal, but its effectiveness becomes somewhat dulled when it is used in an ordinary or conventional manner. On the other hand the skillful relation of the pretty baby to the trademark of the product is one of the most effective means of recapturing the poignancy of the pretty baby’s appeal. In combination with the trademark it not only “appeals” but at the same time impresses the observer with the product’s brand name in an unforgetable way. This juxtaposition of two normally unrelated visual objects is primarily a surrealist technique and in advertising, as in painting, it gives new meaning to objects and devices which taken singly might be humdrum.
 
-            .w100.small-p2.medium-my3
-                .grid-x.grid-margin-x
-                    .medium-4.small-12.cell.small-mb2
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative06a-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative06a.jpg"
-                        )
+        .w100.small-p2.medium-my3
+            .grid-x.grid-margin-x
+                .medium-4.small-12.cell.small-mb2
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Railroad%20Crossing-800.jpg",
+                    "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Railroad%20Crossing.jpg"
+                    )
 
-                    .medium-4.small-12.cell.small-mb2
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative06b-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative06b.jpg"
-                        )
+                .medium-4.small-12.cell.small-mb2
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Neptune-800.jpg",
+                    "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Neptune.jpg"
+                    )
 
-                    .medium-4.small-12.cell.small-mb2
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative06c-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative06c.jpg"
-                        )
+                .medium-4.small-12.cell.small-mb2
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Parrots-800.jpg",
+                    "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Parrots.jpg"
+                    )
 
+        .grid-container
             .grid-x.grid-margin-x.align-center
                 .large-7.medium-10.small-12.cell.entry-content
                     :markdown-it(html typographer plugins=['markdown-it-sup'])
                         There are times when the trademark and the illustration are inseparable, as demonstrated by the advertisements for Ohrbach’s reproduced here. The use of the same element in diverse and unexpected visual situations not only dramatizes the trademark (in this case the name of the store), but also can serve to highlight specific products.
 
-            .w100.small-p2.medium-my3
-                .grid-x.grid-margin-x
-                    .medium-4.small-12.cell.small-mb2
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative06d-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative06d.jpg"
-                        )
-                    .medium-4.small-12.cell.small-mb2
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative06e-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative06e.jpg"
-                        )
-                    .medium-4.small-12.cell.small-mb2
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative06f-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative06f.jpg"
-                        )
+        .w100.small-p2.medium-my3
+            .grid-x.grid-margin-x
+                .medium-4.small-12.cell.small-mb2
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Bull-800.jpg",
+                    "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Bull.jpg"
+                    )
+                .medium-4.small-12.cell.small-mb2
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Flute-800.jpg",
+                    "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Flute.jpg"
+                    )
+                .medium-4.small-12.cell.small-mb2
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Broom-800.jpg",
+                    "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Broom.jpg"
+                    )
 
+        .grid-container
             .grid-x.grid-margin-x.align-center
                 .large-7.medium-10.small-12.cell.entry-content
                     :markdown-it(html typographer plugins=['markdown-it-sup'])
                         Furthermore, the use of the trademark as an illustration affects the style of advertisements. The whole concept of the trademark is a natural outgrowth of contemporary design: it is functional as opposed to purely decorative, and it is symbolic in essence. Therefore it tends to bring the layouts with which it is intimately associated into harmony with present trends in design. And it also acts to inhibit trite or commonplace visual interpretations.
 
-                    .medium-my4.medium-mx0.p0.text-center
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative07-800.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative07.jpg"
-                        )
+        .w100.medium-p4.medium-my3
+            .text-center
+                +imageZoomSingle("https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Girl%20on%20Horse-970.jpg",
+                "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Girl%20on%20Horse.jpg"
+                )
 
-            .w100.medium-p4.medium-my3.bg-black
-                .text-center
-                    +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative08-800.jpg",
-                    "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative08.jpg"
-                    )
+        .w100.medium-p4.medium-my3.bg-black
+            .text-center
+                +imageZoomSingle("https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Baby%20and%20Blocks%20v2-970.jpg",
+                "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Baby%20and%20Blocks%20v2.jpg"
+                )
 
+        .grid-container
             .grid-x.grid-margin-x.align-center
                 .large-7.medium-10.small-12.cell.entry-content
                     .small-my4.text-center
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative09-800.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative09.jpg"
+                        +imageZoomSingle("https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Easter%20Bunny-970.jpg",
+                        "https://assets.paulrand.design/Works/Ohrbachs/Web/Ohrbachs-%20Easter%20Bunny.jpg"
                         )
 
                     :markdown-it(html typographer plugins=['markdown-it-sup'])
                         The trademark may, on occasion, evolve from the illustration. For example, the proposed trademark for Century Lighting Company shown here combines the major illustrative elements of three booklets designed by the author, which were used to describe various types of lighting equipment.
 
-            .w100.small-p2
-                .grid-x.grid-margin-x
-                    .medium-4.small-12.cell.small-mb2.reveal-enter-right
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative10-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative10.jpg"
-                        ) 
+        .w100.small-p2
+            .grid-x.grid-margin-x
+                .medium-4.small-12.cell.small-mb2(data-aos="fade-left")
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Century%20Lighting/Catalogs/Catalog%201/Web/Century%20Lighting%20Catalog%201%20Front-800.jpg",
+                    "https://assets.paulrand.design/Works/Century%20Lighting/Catalogs/Catalog%201/Web/Century%20Lighting%20Catalog%201%20Front.jpg"
+                    ) 
 
-                    .medium-4.small-12.cell.small-mb2.reveal-enter-bottom
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative11-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative11.jpg"
-                        ) 
+                .medium-4.small-12.cell.small-mb2(data-aos="fade-left")
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Century%20Lighting/Catalogs/Catalog%202/Web/Century%20Lighting%20Catalog%202%20Front-800.jpg",
+                    "https://assets.paulrand.design/Works/Century%20Lighting/Catalogs/Catalog%202/Web/Century%20Lighting%20Catalog%202%20Front.jpg"
+                    ) 
 
-                    .medium-4.small-12.cell.small-mb2.reveal-enter-right
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative12-450.jpg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative12.jpg"
-                        ) 
+                .medium-4.small-12.cell.small-mb2(data-aos="fade-up")
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Century%20Lighting/Catalogs/Catalog%204/Web/Century%20Lighting%20Catalog%204%20Front-800.jpg",
+                    "https://assets.paulrand.design/Works/Century%20Lighting/Catalogs/Catalog%204/Web/Century%20Lighting%20Catalog%204%20Front.jpg"
+                    ) 
 
-            .w100.small-p4.medium-my3.bg-gold.text-center.small-p2.medium-p4
-                +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative15.svg",
-                "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative15.svg"
-                )
+        .w100.small-p4.medium-my3.bg-gold.text-center.small-p2.medium-p4
+            +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative15.svg",
+            "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative15.svg"
+            )
 
+        .grid-container
             .grid-x.grid-margin-x.align-center.medium-mt4
                 .large-7.medium-10.small-12.cell.entry-content
                     :markdown-it(html typographer plugins=['markdown-it-sup'])
                         In the case of Coronet Brandy the original trademark, a brandy snifter, was augmented by the “waiter”, similar in form to the snifter but intended for use in only one advertisement. However, the client decided to retain it for the trademark in place of the snifter.
 
-            .w100.small-p2
-                .grid-x.grid-margin-x
-                    .medium-6.cell.small-mb2
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative13.svg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative13.svg"
-                        )
-                    .medium-6.cell.small-mb2
-                        +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative14.svg",
-                        "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative14.svg"
-                        )
+        .w100.small-p2
+            .grid-x.grid-margin-x
+                .medium-6.cell.small-mb2
+                    +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative13.svg",
+                    "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative13.svg"
+                    )
+                .medium-6.cell.small-mb2
+                    +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative14.svg",
+                    "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative14.svg"
+                    )
+
+        .grid-container
             .grid-x.grid-margin-x.align-center
                 .large-7.medium-10.small-12.cell.entry-content
                     :markdown-it(html typographer plugins=['markdown-it-sup'])
@@ -315,31 +324,22 @@ block main-content
 
                         Another approach to the revitalization of the trademark is to combine the trademark with an illustration wherein the dominant feature of the illustration is derived from the basic form of the trademark. This has been done in the advertisements for Robeson Cutlery. The projection of the triangular trademark is the illustrative motif, and the illustration reinforces and emphasizes the trademark. This approach obviously impresses the identity of the product indelibly on the mind of the spectator since it repeats the trademark more frequently.
 
-                    +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative16.svg",
-                    "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative16.svg"
+                    +imageZoomSingle("https://assets.paulrand.design/Works/Shur-Edge%20Knives/Shuredge-1947.svg",
+                    "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Shuredge-1947.svg"
                     )
 
 
             .grid-x.grid-margin-x.text-center.align-center.medium-my3
-                .small-4.cell.medium-mb3
-                    +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative17-450.jpg",
-                    "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative17.jpg"
-                    )
-                .small-4.cell.medium-mb3
-                    +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative18-450.jpg",
-                    "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative18.jpg"
-                    )
-                .small-4.cell.medium-mb3
-                    +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative19-450.jpg",
-                    "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative19.jpg"
-                    )
-                .small-6.cell.medium-mb3
-                    +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative20-450.jpg",
-                    "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative20.jpg"
-                    )
-                .small-6.cell.medium-mb3
-                    +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative21-450.jpg",
-                    "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative21.jpg"
+
+                +galleryItem-blockGrid(
+                    "DIVIDER_no",
+                    "CHANGE_ME",
+                    "top", "3", "3",
+                    {SM: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Advertising/Web/Shur%20Edge%20Birds-800.jpg", LG:"https://assets.paulrand.design/Works/Shur-Edge%20Knives/Advertising/Web/Shur%20Edge%20Birds.jpg", title: "", footnote: ""},
+                    {SM: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Advertising/Web/Shur%20Edge%20Chef%20Color-800.jpg", LG:"https://assets.paulrand.design/Works/Shur-Edge%20Knives/Advertising/Web/Shur%20Edge%20Chef%20Color.jpg", title: "", footnote: ""},
+                    {SM: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Advertising/Web/Shur%20Edge%20Reindeer-800.jpg", LG:"https://assets.paulrand.design/Works/Shur-Edge%20Knives/Advertising/Web/Shur%20Edge%20Reindeer.jpg", title: "", footnote: ""},
+                    {SM: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Advertising/Web/Shur%20Edge%20Turkey-800.jpg", LG:"https://assets.paulrand.design/Works/Shur-Edge%20Knives/Advertising/Web/Shur%20Edge%20Turkey.jpg", title: "", footnote: ""},
+                    {SM: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Advertising/Web/Shur%20Edge%20Santa%2002-800.jpg", LG:"https://assets.paulrand.design/Works/Shur-Edge%20Knives/Advertising/Web/Shur%20Edge%20Santa%2002.jpg", title: "", footnote: ""}
                     )
 
             .grid-x.grid-margin-x.align-center
@@ -369,11 +369,12 @@ block main-content
                     :markdown-it(html typographer plugins=['markdown-it-sup'])
                         There are other categories of trademarks where letters themselves become the illustrative device. For example the Country Club. Ice Cream Company experimental trademark is composed of especially drawn letters which portray a smiling face. Although these letters are drawn freely they have not been forced nor deformed to accommodate the illustration. The “eyes” are component parts of the C’s, they are neither superimposed nor added, but are organically related to the letters. The “mouth” or smile is a parody on the old fashioned paraph. The yellow dots in the background add a certain gayety to the device, but at the same time are extensions of the “eye” motif.
 
-            .w100.small-p4.text-center
-                +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative24.svg",
-                "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative24.svg"
-                )
+        .w100.small-p4.text-center
+            +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative24.svg",
+            "https://assets.paulrand.design/Writing/Articles/1952%20The%20Trademark%20as%20an%20Illustrative%20Device/Web/illustrative24.svg"
+            )
 
+        .grid-container
             .grid-x.grid-margin-x.align-center
                 .large-7.medium-10.small-12.cell.entry-content
                     .articleImageRight

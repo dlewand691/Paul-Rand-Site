@@ -81,13 +81,13 @@ block main-content
     //- ===============================================
     .wrapper-parallax
         .imageHeader-full
-            h1(data-aos="fade-right")!= pageTitle
+            h1(data-aos="fade-up")!= pageTitle
 
             :markdown-it
                 This version of the article was originally published in “Graphic Forms: The Arts as Related to the Book”, 1949.  
                 It was revised and reprinted in “A Designer’s Art”, 1985.
 
-            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign(data-aos="fade-up") View the Original #{nextType}
 
             img(src=imageHeaderBackground)
 

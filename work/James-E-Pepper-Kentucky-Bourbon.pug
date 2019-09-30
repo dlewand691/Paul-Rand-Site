@@ -19,7 +19,7 @@ block main-content
             .grid-x.grid-margin-x.align-center.small-mb4
                 .small-12.cell.text-center
                     //- /*==============================  CLIENT  ==============================*/
-                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    h1.text-center.small-mb2.medium-mb3.large-mb3(data-aos="fade-up")!= pageTitle
                     if dates == 'CHANGE_ME'
                     else
                         p!= dates
@@ -42,7 +42,8 @@ block main-content
                         {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2003-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2003.jpg", title: "", footnote: ""},
                         {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2004-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2004.jpg", title: "", footnote: ""},
                         {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2005-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2005.jpg", title: "", footnote: ""},
-                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2006-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2006.jpg", title: "", footnote: ""}
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2006-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2006.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2007-450.jpg", LG:"https://assets.paulrand.design/Works/James%20E%20Pepper%20Kentucky%20Bourbon/Advertising/Web/James%20E%20Pepper%2007.jpg", title: "", footnote: ""}
                         )
 
                     +galleryItem-blockGrid(

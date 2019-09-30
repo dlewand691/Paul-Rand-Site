@@ -2,48 +2,173 @@ extends ../__MIXINS/_layout-default.pug
 include ../__MIXINS/_mixins.pug
 
 block vars
-    - var pageTitle = 'Monell Chemical Senses Center'
-    - var bodyID    = 'work'
-    - var bodyClass = ''
+  - var pageTitle = 'Monell Chemical Senses Center'
+  - var bodyID    = 'work'
+  - var bodyClass = ''
 
 block main-content
-    - var dates     = '1989'
-    - var nextType  = 'Client'
-    - var nextTitle = 'Morningstar'
-    - var nextLink  = 'Morningstar'
+  - var dates     = '1989'
+  - var nextType  = 'Client'
+  - var nextTitle = 'Morningstar'
+  - var nextLink  = 'Morningstar'
 
 
-    //- ==========  BODY  ==========
-    .cd-main-content
-        .grid-container
-            .grid-x.grid-margin-x.align-center.small-mb4
-                .small-12.cell.text-center
-                    //- /*==============================  CLIENT  ==============================*/
-                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
-                    if dates == 'CHANGE_ME'
-                    else
-                        p!= dates
+  //- ==========  BODY  ==========
+  .cd-main-content
+    .grid-container
+      .grid-x.grid-margin-x.align-center.small-mb4
+        .small-12.cell.text-center
+          //- /*==============================  CLIENT  ==============================*/
+          h1.text-center.small-mb2.medium-mb3.large-mb3(data-aos="fade-up")!= pageTitle
+          if dates == 'CHANGE_ME'
+          else
+            p!= dates
 
-                    //- /*==============================  PROJECTS  ==============================*/
-                    +galleryItem-blockGrid(
-                        "DIVIDER_yes",
-                        "Logo",
-                        "top","1","1",
-                        {SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Monell-Chemical-Senses-Center-1989.svg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Monell-Chemical-Senses-Center-1989.svg", title: "", footnote: ""}
-                        )
+          //- /*==============================  PROJECTS  ==============================*/
+          +galleryItem-blockGrid(
+            "DIVIDER_yes",
+            "Logo",
+            "top","1","1",
+            {SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Monell-Chemical-Senses-Center-1989.svg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Monell-Chemical-Senses-Center-1989.svg", title: "", footnote: ""}
+            )
 
-
-                    +galleryItem-blockGrid(
-                        "DIVIDER_yes",
-                        "Letterhead",
-                        "top", "1", "1",
-                        {SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Letterhead/Web/Monell%20Chemical%20Senses%20Center%20letterhead-970.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Letterhead/Web/Monell%20Chemical%20Senses%20Center%20letterhead.jpg", title: "", footnote: ""}
-                        )
-
-
-            //- /*-----  End of BODY  ------*/
+          +galleryItem-blockGrid(
+            "DIVIDER_yes",
+            "Letterhead",
+            "top", "1", "1",
+            {SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Letterhead/Web/Monell%20Chemical%20Senses%20Center%20letterhead-970.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Letterhead/Web/Monell%20Chemical%20Senses%20Center%20letterhead.jpg", title: "", footnote: ""}
+            )
 
 
-        include ../__MIXINS/_include-next-work.pug
+          +galleryItem-blockGrid(
+            "DIVIDER_yes",
+            "Logo Presentation Booklet",
+            "middle top", "1", "1",
+            {SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2000-970.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2000.jpg", title: "", footnote: ""}
+            )
 
-        include ../__MIXINS/_include-social-media.pug
+          +carouselImages(
+            "View More",
+            "",
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2001-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2001.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2002-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2002.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2003-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2003.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2004-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2004.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2005-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2005.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2006-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2006.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2007-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2007.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2008-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2008.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2009-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2009.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2010-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2010.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2011-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2011.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2012-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2012.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2013-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2013.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2014-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2014.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2015-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2015.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2016-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2016.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2017-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2017.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2018-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2018.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2019-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2019.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2020-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2020.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2021-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2021.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2022-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2022.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2023-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2023.jpg"},
+            {Title:"Logo Presentation Booklet", SM: "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2024-800.jpg", LG:"https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Photos/Web/Monell%20logo%20presentation%20book%2024.jpg"}
+            )
+
+      .grid-x.grid-margin-x.align-center.small-mb4
+        .small-12.cell
+          .grid-x.grid-margin-x
+            .medium-4.small-12.cell.small-mb2
+              +imageZoomSingle("https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2000-450.jpg",
+              "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2000.jpg"
+              )
+            .medium-8.small-12.cell.small-mb2
+              :markdown-it(html typographer plugins=['markdown-it-sup'])
+                A Logo for Monell Chemical Senses Center:
+
+            .medium-4.small-12.cell.small-mb2
+              +imageZoomSingle("https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2001-450.jpg",
+              "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2001.jpg"
+              )
+            .medium-8.small-12.cell.small-mb2
+              :markdown-it(html typographer plugins=['markdown-it-sup'])
+                Senses such as taste and smell are difficult, if not impossible, to illustrate. They are invisible. Schematic indications such as sound waves or conventionalized smoke trails are as near as one can get to illustrate these concepts.
+
+            .medium-4.small-12.cell.small-mb2
+              +imageZoomSingle("https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2002-450.jpg",
+              "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2002.jpg"
+              )
+            .medium-8.small-12.cell.small-mb2
+              :markdown-it(html typographer plugins=['markdown-it-sup'])
+                Some of these ideas, as well as devices to accommodate the initials MCSC, are illustrated here.
+
+            .small-12.cell.small-mb2
+              +imageZoomSingle("https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2003-450.jpg",
+              "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2003.jpg"
+              )
+
+            .medium-4.small-12.cell.small-mb2
+              +imageZoomSingle("https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2004-450.jpg",
+              "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2004.jpg"
+              )
+            .medium-8.small-12.cell.small-mb2
+              :markdown-it(html typographer plugins=['markdown-it-sup'])
+                The employment of a human profile has certain advantages over abstract, non-representational images. The profile brings to mind an idea that been used in the past; but more significantly, it makes the initial letter "M", with which it is now structurally joined, more interesting, more meaningful, and more memorable than would either one of these images be by itself. 
+
+            .small-12.cell.small-mb2
+              +imageZoomSingle("https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2005-450.jpg",
+              "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2005.jpg"
+              )
+
+            .medium-4.small-12.cell.small-mb2
+              +imageZoomSingle("https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2006-450.jpg",
+              "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2006.jpg"
+              )
+            .medium-8.small-12.cell.small-mb2
+              :markdown-it(html typographer plugins=['markdown-it-sup'])
+                The face, which literally divides the letter "M", is not only a formal device, but it actually helps to dramatize the idea of two functions—taste and smell.
+
+
+            .small-12.cell.small-mb2
+              +imageZoomSingle("https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2007-450.jpg",
+              "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2007.jpg"
+              )
+
+            .medium-4.small-12.cell.small-mb2
+              +imageZoomSingle("https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2008-450.jpg",
+              "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2008.jpg"
+              )
+            .medium-8.small-12.cell.small-mb2
+              :markdown-it(html typographer plugins=['markdown-it-sup'])
+                Here are some applications:
+
+            .medium-4.small-12.cell.small-mb2
+              +imageZoomSingle("https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2009-450.jpg",
+              "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2009.jpg"
+              )
+            .medium-4.small-12.cell.small-mb2
+              +imageZoomSingle("https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2010-450.jpg",
+              "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2010.jpg"
+              )
+            .medium-4.small-12.cell.small-mb2
+              +imageZoomSingle("https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2011-450.jpg",
+              "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2011.jpg"
+              )
+
+            .medium-4.small-12.cell.small-mb2
+              +imageZoomSingle("https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2012-450.jpg",
+              "https://assets.paulrand.design/Works/Monell%20Chemical%20Senses%20Center/Logo%20Book/Web/Monell%20logo%20presentation%20book%2012.jpg"
+              )
+            .medium-8.small-12.cell.small-mb2
+              :markdown-it(html typographer plugins=['markdown-it-sup'])
+                Paul Rand  June 1990
+
+
+
+      //- /*-----  End of BODY  ------*/
+
+
+    include ../__MIXINS/_include-next-work.pug
+
+    include ../__MIXINS/_include-social-media.pug

@@ -67,12 +67,12 @@ block main-content
     //- ===============================================
     .wrapper-parallax
         .imageHeader-full
-            h1.reveal-enter-top!= pageTitle
+            h1(data-aos="fade-up")!= pageTitle
 
             :markdown-it(html typographer plugins=['markdown-it-sup'])
                 Originally published in “Posters: Fifty artists and designers analyze their approach, their methods, and their solutions to poster design and poster advertising”, 1952.
 
-            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign(data-aos="fade-up") View the Original #{nextType}
 
             img(src=imageHeaderBackground)
 
@@ -98,11 +98,11 @@ block main-content
 
                         Consequently to see one poster is to see all, and the prime and crucial factor in poster design is flouted - i.e. sensory appeal.
 
-            .w100.small-p4.small-my4(data-chocolat-title="#{pageTitle}, #{publishedInTitle}" style="background:#0B511C")
-                +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Coronet%20Brandy%20poster.jpg",
-                    "https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Coronet%20Brandy%20poster.jpg"
-                    )
-
+        .w100.small-p4.small-my4(data-chocolat-title="#{pageTitle}, #{publishedInTitle}" style="background:#0B511C")
+            +imageZoomSingle("https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Coronet%20Brandy%20poster.jpg",
+                "https://assets.paulrand.design/Writing/Articles/1952%20Posters-%20Fifty%20artists%20and%20designers%20analyze%20their%20approach%e2%80%a6/Web/Coronet%20Brandy%20poster.jpg"
+                )
+        .grid-container
             .grid-x.grid-margin-x.align-center
                 .large-7.medium-9.small-12.cell
                     :markdown-it(html typographer plugins=['markdown-it-sup'])

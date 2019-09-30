@@ -5,10 +5,14 @@ html(lang="en")
         include _include-head-meta
         include _include-head-favicons
 
-        //- link(rel='preload stylesheet' as='style' href='/css/app.css')
         link(type="text/css" rel="stylesheet", href="/css/critical.css" media="screen")
-        link(type="text/css" rel="preload", href="/css/app.css", as="style")
-        link(type="text/css" rel="stylesheet", href="/css/app.css", media="print", onload="this.media='all'")
+        link(type="text/css" rel="stylesheet", href="/css/app.css")
+
+        //- The Simplest Way to Load CSS Asynchronously
+        //- https://www.filamentgroup.com/lab/load-css-simpler/
+        //- Use this later when browser support is better for rel=preload
+        //- link(type="text/css" rel="preload", href="/css/app.css", as="style")
+        //- link(type="text/css" rel="stylesheet", href="/css/app.css", media="print", onload="this.media='all'")
 
 
     body(id=bodyID, class=bodyClass)

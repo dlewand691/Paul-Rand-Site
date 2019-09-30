@@ -3,6 +3,7 @@ $font-family-serif: "IBM Plex Serif", Georgia, serif;
 
 @charset 'utf-8';
 @import 'settings';
+
 @import 'foundation';
 @import 'motion-ui';
 @include foundation-global-styles;
@@ -107,7 +108,7 @@ $font-prefix: '/node_modules/@ibm/plex';
 //  ██████ ███████ ███████     ██ ██   ████  ██████ ███████  ██████  ██████  ███████ ███████
 // ===================================================================================
 @import "../node_modules/selection-sharer/dist/selection-sharer";
-@import '../node_modules/swiper/dist/css/swiper.min.css';
+@import '../node_modules/swiper/swiper.scss';
 @import "../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css";
 // -----  End of CSS INCLUDES  -----------------------------------
 
@@ -188,6 +189,10 @@ $opacities: 11;
 
 .h100vh {
     height: 100vh !important;
+}
+
+.max-h100vh {
+    max-height: 100vh !important;
 }
 
 .h80vh {
@@ -712,7 +717,7 @@ $border-width: 5;
 ============================================================================================================= */
 @each $color-name, $color in $colors {
     .bg-#{$color-name} {
-        background-color: $color !important;
+        background-color: $color;
     }
 }
 
@@ -728,7 +733,7 @@ $border-width: 5;
 }
 
 .bg-transparent {
-    background: transparent !important;
+    background: transparent;
 }
 /* ----  End of BACKGROUND COLOR ------------------------------------------------------------------------------ */
 /*============================================================================================
@@ -898,15 +903,20 @@ $background-shades: 5;
     @include lhCrop(1.2, 0.75); //using Roboto font family
 }
 
-// RFS mixin.
-//
-// Automated font-resizing.
-//
+// ===================================================================================
+// ██████  ███████ ███████
+// ██   ██ ██      ██
+// ██████  █████   ███████
+// ██   ██ ██           ██
+// ██   ██ ██      ███████
+// ===================================================================================
+
 // See https://github.com/MartijnCuppens/rfs.
 // See configuration for options
-// Minimum fontsize.
-$rfs-base-font-size: 15px;
-$rfs-font-size-unit: px;
+
+// Base value
+$rfs-base-value: 15px;
+$rfs-unit: px;
 
 // Breakpoint at where font-size starts decreasing if screen width is smaller.
 $rfs-breakpoint: 1400px;
@@ -915,10 +925,14 @@ $rfs-breakpoint-unit: px;
 // Resize font-size based on screen height and width.
 $rfs-two-dimensional: false;
 
+// Factor of decrease
+$rfs-factor: 10;
+
 // Generate enable or disable classes. Possibilities: false, "enable" or "disable"
-$rfs-class: "disable";
+$rfs-class: false;
 
 @import "../node_modules/rfs/scss.scss";
+// -----  End of RFS  -----------------------------------
 
 * {
     // hyphens                      : auto;
@@ -963,7 +977,7 @@ $rfs-class: "disable";
 
 body,
 html {
-    // @include responsive-font-size(20);
+    // @include font-size(20px);
 }
 
 body,
@@ -981,7 +995,7 @@ h1 {
     font-weight   : 200;
     font-family   : $font-family-sans-serif;
     font-style    : italic;
-    @include responsive-font-size(84);
+    @include font-size(84px);
     @include breakpoint(small only) {
         letter-spacing: -1px;
     };
@@ -992,34 +1006,34 @@ h1 {
 }
 
 h2 {
-    @include responsive-font-size(63);
+    @include font-size(63px);
     // letter-spacing: -2px;
 }
 
 h3 {
-    @include responsive-font-size(47);
+    @include font-size(47px);
     line-height: 1;
     // letter-spacing: -2px;
 }
 
 h4 {
-    @include responsive-font-size(36);
+    @include font-size(36px);
     font-weight: 700;
 }
 
 h5 {
-    @include responsive-font-size(27);
+    @include font-size(27px);
     font-weight: 700;
     font-style : italic;
 }
 
 h6 {
-    @include responsive-font-size(20);
+    @include font-size(20px);
     font-style: italic;
 }
 
 p {
-    @include responsive-font-size(20);
+    @include font-size(20px);
     // line-height: 1.8;
     // hyphens              : auto;
     // hyphenate-limit-chars: 6 3 3;
@@ -1108,12 +1122,12 @@ strong {
 small {
     // font-size: $small-font-size;
     // line-height: 60% !important;
-    @include responsive-font-size(15);
+    @include font-size(15px);
 }
 
 sup {
     color                : $red;
-    @include responsive-font-size(11);
+    @include font-size(11px);
     font-variant-position: super;
     font-feature-settings: "sups";
     font-variant-numeric : ordinal;
@@ -1132,7 +1146,7 @@ blockquote {
     @extend %sans-serif;
     @extend %text-italic;
     @extend %text-bold;
-    @include responsive-font-size(36);
+    @include font-size(36px);
     // font-size   : 1.5em;
     line-height : 1.5;
     color       : $red;
@@ -1220,7 +1234,10 @@ a:hover {
 }
 
 a {
-    text-decoration: none;
+    // text-decoration          : none;
+    text-decoration-color    : #EA215A;
+    text-decoration-thickness: 0.125em;
+    text-underline-offset    : 1.5px;
 }
 
 a[data-src="screenshot"] {
@@ -1306,7 +1323,7 @@ button,
         &::after {
             content    : "\000D7";
             // font-size  : 18px;
-            @include responsive-font-size(20);
+            @include font-size(20px);
             line-height: 1;
         }
     }
@@ -1403,9 +1420,9 @@ button.white {
     font-style   : italic;
     font-weight  : 700;
     // font-size    : 16px;
-    @include responsive-font-size(15);
+    @include font-size(15px);
     margin-bottom: 0;
-    margin-top   : 7px;
+    margin-top   : 12px;
     line-height  : 10px;
     height       : auto;
 }
@@ -1413,7 +1430,7 @@ button.white {
 .dates {
     font-weight: 500;
     // font-size  : 12px;
-    @include responsive-font-size(11)
+    @include font-size(11px)
 }
 @media screen and #{breakpoint(small only)} {
     .logo {
@@ -1444,7 +1461,7 @@ button.white {
 
         .name {
             // font-size  : 18px;
-            @include responsive-font-size(18);
+            @include font-size(18px);
             margin-top : 4px;
             line-height: 14px;
         }
@@ -1517,7 +1534,7 @@ header {
     transform          : translateZ(0);
     backface-visibility: hidden;
     transition         : transform(0.3s) ease;
-    @include responsive-font-size(20);
+    @include font-size(20px);
 
     &.nav-is-visible {
         transform: translateX(-75%);
@@ -2156,9 +2173,26 @@ header {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
+    &::after {
+        content   : "";
+        position  : absolute;
+        z-index   : -1;
+        top       : 0;
+        left      : 0;
+        width     : 100%;
+        height    : 100%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        opacity   : 0;
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
     &:hover {
         box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
         transform : scale(1.01);
+    }
+
+    &:hover::after {
+        opacity: 1;
     }
 }
 
@@ -2239,7 +2273,7 @@ header {
     }
     @include breakpoint(small) {
         img {
-            height: 200px;
+            height: 100px;
         }
     }
     @include breakpoint(medium) {
@@ -2295,7 +2329,7 @@ img[src$=".svg"] {
 
 .sidenoteLeft,
 .sidenoteRight {
-    @include responsive-font-size(15);
+    @include font-size(15px);
     font-style : italic;
     color      : lighten($black, 50%);
     font-family: $font-family-serif;
@@ -2575,7 +2609,7 @@ footer {
     // transform          : translateZ(0);
     // visibility: hidden;
     a {
-        text-shadow: 3px 0 0 #DEDEDE, -3px 0 0 #DEDEDE;
+        // text-shadow: 3px 0 0 #DEDEDE, -3px 0 0 #DEDEDE;
     }
     @include breakpoint(medium up) {
         // bottom  : -30vh;
@@ -2588,7 +2622,7 @@ footer {
     a,
     h5 {
         // font-size  : 12px;
-        @include responsive-font-size(11);
+        @include font-size(11px);
         display    : block;
         line-height: $global-lineheight;
     }
@@ -2617,8 +2651,9 @@ footer {
 
 =======================================================================================================*/
 .wrapper-parallax {
-    height: 85vh;
+    height     : 85vh;
     // position : relative;
+    will-change: auto;
 }
 
 .imageHeader-full {
@@ -2634,6 +2669,8 @@ footer {
     overflow       : hidden;
     transform      : translate3d(0, 0, 0);
     // background      : $black;
+    will-change    : auto;
+
     & button {
         top: 25%;
     }
@@ -2966,7 +3003,7 @@ footer {
 
         & button:before {
             // font-size: 1.5rem;
-            @include responsive-font-size(12);
+            @include font-size(12px);
         }
     }
 }
@@ -3270,7 +3307,7 @@ footer {
     font-family     : $font-family-sans-serif;
     text-shadow     : none;
     background-image: none;
-    @include responsive-font-size(12);
+    @include font-size(12px);
     @include breakpoint(medium) {
         padding   : 8.5% 0 8.5% 24% !important;
         text-align: left !important;
@@ -3300,7 +3337,7 @@ footer {
 .select2-container {
     width    : 100% !important;
     max-width: 100% !important;
-    @include responsive-font-size(18);
+    @include font-size(18px);
 }
 
 @include breakpoint(small only) {
@@ -3389,7 +3426,7 @@ footer {
 }
 
 .select2-selection__placeholder {
-    color: $black !important;
+    color: $black;
 }
 
 .select2-results__group {
@@ -3615,7 +3652,7 @@ $plyr-line-height: 1.5;
 .gsc-webResult .gsc-result,
 .gsc-webResult.gsc-result,
 .gsc-webResult.gsc-result:hover {
-    @include responsive-font-size(20);
+    @include font-size(20px);
     font-family    : unset !important;
     // font-weight    : initial !important;
     line-height    : initial !important;
@@ -3634,7 +3671,7 @@ $plyr-line-height: 1.5;
 .gs-title,
 .gs-title:link {
     font-weight: 700 !important;
-    // @include responsive-font-size(27, true);
+    // @include font-size(27px !important);
 }
 
 .gsc-url-top {
@@ -3643,7 +3680,7 @@ $plyr-line-height: 1.5;
 }
 
 .gs-visibleUrl-long {
-    @include responsive-font-size(15, true);
+    @include font-size(15px !important);
 }
 
 .gsc-results .gsc-imageResult,
@@ -4031,10 +4068,14 @@ td.gsc-search-button {
 
 .swiper-slide {
     // background: $gray-light1;
+    max-height: 90vh;
+    min-height: 50vh;
+    text-align: center;
 
     img {
-        display: block !important;
-        width  : 100%;
+        display   : block !important;
+        width     : 100%;
+        object-fit: contain;
 
         &.swiper-lazy {
             opacity    : 0;
@@ -4083,3 +4124,106 @@ td.gsc-search-button {
 }
 
 // -----  End of SWIPER  -----------------------------------
+
+// ===================================================================================
+// ██████   █████  ██████  ██   ██     ███    ███  ██████  ██████  ███████
+// ██   ██ ██   ██ ██   ██ ██  ██      ████  ████ ██    ██ ██   ██ ██
+// ██   ██ ███████ ██████  █████       ██ ████ ██ ██    ██ ██   ██ █████
+// ██   ██ ██   ██ ██   ██ ██  ██      ██  ██  ██ ██    ██ ██   ██ ██
+// ██████  ██   ██ ██   ██ ██   ██     ██      ██  ██████  ██████  ███████
+// ===================================================================================
+$darkmode-black: #121212;
+
+@mixin darkMode-settings {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    li,
+    p {
+        color: $gray-light3;
+    }
+
+    [class*="text-black"] {
+        color: $gray-light3 !important;
+    }
+
+    .bg-black {
+        background: lighten($darkmode-black, 10%);
+    }
+
+    .bg-gray-light3 {
+        background: $darkmode-black;
+    }
+
+    .bg-white,
+    .panelCallout {
+        background: darken($white, 90%);
+    }
+
+    hr {
+        border-bottom-color: rgba($white, .2);
+    }
+
+    .cd-main-content,
+    .cd-main-nav li ul,
+    footer {
+        background: $darkmode-black;
+    }
+
+    .callout,
+    .card {
+        background  : rgba($white, .05);
+        border-color: rgba($white, .1);
+    }
+
+    .button {
+        isolation: isolate;
+    }
+
+    .select2-container--default .select2-selection--single,
+    .select2-dropdown {
+        border    : 2px solid $gray-medium;
+        color     : $gray-light3;
+        background: darken($white, 85%);
+
+        *,
+        .select2-selection__placeholder {
+            color: $gray-light3;
+        }
+    }
+
+    .sidenoteLeft,
+    .sidenoteRight {
+        color: lighten($black, 65%);
+    }
+
+    .darkMode-invert {
+        filter: invert(1);
+    }
+}
+
+.darkmode-toggle {
+    z-index               : 500;
+    font-weight           : 600;
+    color                 : $white;
+    -webkit-font-smoothing: auto;
+    text-shadow           : -1px 0 $white, 0 1px $white;
+}
+
+.darkmode--activated {
+    .darkmode-toggle {
+        color      : $black;
+        text-shadow: -1px 0 $black, 0 1px $black, 1px 0 $black, 0 -1px $black;
+    }
+    @include darkMode-settings;
+}
+@media (prefers-color-scheme: dark) {
+    .darkmode-toggle {
+        // display: none !important;
+    }
+    @include darkMode-settings;
+}
+// -----  End of DARK MODE  -----------------------------------

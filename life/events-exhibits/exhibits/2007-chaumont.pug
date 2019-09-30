@@ -89,14 +89,14 @@ block main-content
         .grid-container
             .grid-x.grid-margin-x.small-mb3.align-center
                 .large-7.medium-8.small-12.cell.text-center
-                    h1.reveal-enter-top!= pageTitle
+                    h1(data-aos="fade-up")!= pageTitle
 
                     unless pageSubtitle1 == 'CHANGE_ME'
-                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        em.text-gray.t16(data-aos="fade-up")!= pageSubtitle1
                         br
 
                     unless pageSubtitle2 == 'CHANGE_ME'
-                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+                        em.text-gray.t16(data-aos="fade-up")!= pageSubtitle2
 
                     //- .small-mt3.small-mb2
                     //- 	+imageZoomSingle(

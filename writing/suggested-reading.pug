@@ -10,7 +10,7 @@ block main-content
         .grid-container
             .grid-x.grid-margin-x.align-center
                 .small-12.cell
-                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    h1.text-center.small-mb2.medium-mb3.large-mb3(data-aos="fade-up")!= pageTitle
                     // Tabs
                     ul.tabs#tabs(data-tabs data-deep-link="true")
                         li.tabs-title.is-active

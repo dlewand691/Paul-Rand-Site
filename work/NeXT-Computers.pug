@@ -19,7 +19,7 @@ block main-content
             .grid-x.grid-margin-x.align-center.small-mb4
                 .small-12.cell.text-center
                     //- /*==============================  CLIENT  ==============================*/
-                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    h1.text-center.small-mb2.medium-mb3.large-mb3(data-aos="fade-up")!= pageTitle
                     if dates == 'CHANGE_ME'
                     else
                         p!= dates
@@ -283,7 +283,7 @@ block main-content
                     +projectDivider("Stationery")
                     .grid-x.grid-margin-x
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/NeXT/Stationery/Web/NeXT%20Stationery-450.jpg",
                             LG: "https://assets.paulrand.design/Works/NeXT/Stationery/Web/NeXT%20Stationery.jpg",
@@ -292,7 +292,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/NeXT/Stationery/Web/NeXT%20Stationery-%20Letterhead%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/NeXT/Stationery/Web/NeXT%20Stationery-%20Letterhead%2001.jpg",
@@ -301,7 +301,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/NeXT/Stationery/Web/NeXT%20Stationery-%20Business%20Card-450.jpg",
                             LG: "https://assets.paulrand.design/Works/NeXT/Stationery/Web/NeXT%20Stationery-%20Business%20Card.jpg",
@@ -310,7 +310,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/NeXT/Stationery/Web/NeXT%20Stationery-%20Envelope-450.jpg",
                             LG: "https://assets.paulrand.design/Works/NeXT/Stationery/Web/NeXT%20Stationery-%20Envelope.jpg",
@@ -319,7 +319,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/NeXT/Stationery/Web/NeXT%20Stationery-%20Address%20Label-450.jpg",
                             LG: "https://assets.paulrand.design/Works/NeXT/Stationery/Web/NeXT%20Stationery-%20Address%20Label.jpg",

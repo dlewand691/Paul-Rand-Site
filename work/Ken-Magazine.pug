@@ -19,7 +19,7 @@ block main-content
             .grid-x.grid-margin-x.align-center.small-mb4
                 .small-12.cell.text-center
                     //- /*==============================  CLIENT  ==============================*/
-                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    h1.text-center.small-mb2.medium-mb3.large-mb3(data-aos="fade-up")!= pageTitle
                     if dates == 'CHANGE_ME'
                     else
                         p!= dates
@@ -31,6 +31,16 @@ block main-content
                         "top","1","1",
                         {SM: "https://assets.paulrand.design/Works/Ken%20magazine/Ken-magazine.svg", LG:"https://assets.paulrand.design/Works/Ken%20magazine/Ken-magazine.svg", title: "", footnote: ""}
                         )
+
+                +galleryItem-blockGrid(
+                    "DIVIDER_yes",
+                    "Advertising",
+                    "top", "3", "3",
+                    {SM: "https://assets.paulrand.design/Works/Ken%20magazine/Web/Ken%20Magazine%20ad%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Ken%20magazine/Web/Ken%20Magazine%20ad%2001.jpg", title: "", footnote: ""},
+                    {SM: "https://assets.paulrand.design/Works/Ken%20magazine/Web/Ken%20Magazine%20ad%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Ken%20magazine/Web/Ken%20Magazine%20ad%2002.jpg", title: "", footnote: ""},
+                    {SM: "https://assets.paulrand.design/Works/Ken%20magazine/Web/Ken%20Magazine%20ad%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Ken%20magazine/Web/Ken%20Magazine%20ad%2003.jpg", title: "", footnote: ""}
+                    )
+
 
             //- /*-----  End of BODY  ------*/
 

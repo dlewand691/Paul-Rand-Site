@@ -60,13 +60,13 @@ block main-content
     //- ===============================================
     .wrapper-parallax
         .imageHeader-full
-            h1.reveal-enter-top!= pageTitle
+            h1(data-aos="fade-up")!= pageTitle
 
             :markdown-it(html typographer plugins=['markdown-it-sup'])
                 Contributed by John Maeda.  
                 Original posting found [here.](http://creativeleadership.com/cl/the-language-of-art-by-paul-rand.html)
 
-            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign(data-aos="fade-up") View the Original #{nextType}
 
             img(src=imageHeaderBackground)
 

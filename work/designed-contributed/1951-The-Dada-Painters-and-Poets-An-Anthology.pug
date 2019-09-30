@@ -50,7 +50,7 @@ block main-content
         .grid-container
             .grid-x.grid-margin-x.small-mb3.align-center
                 .large-7.medium-8.small-12.cell.text-center
-                    h1.reveal-enter-top!= pageTitle
+                    h1(data-aos="fade-up")!= pageTitle
 
                     em.text-gray.t16!= bookSubhead
 
@@ -66,7 +66,7 @@ block main-content
             include ../../__MIXINS/_include-image-carousel.pug
 
             +galleryItem-cardLink(
-                "12", "12",
+                "12","12","12",
                 {
                 SM: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%20Prospectus%2C%20front-970.jpg",
                 LG: "https://assets.paulrand.design/Works/_Books/Designed%20or%20Contributed%20to%20by%20Rand/1951%20The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology/Web/The%20Documents%20of%20Modern%20Art-%20The%20Dada%20Painters%20and%20Poets%2C%20An%20Anthology%20Prospectus%2C%20front.jpg",

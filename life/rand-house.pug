@@ -13,7 +13,7 @@ block main-content
 
             .grid-x.grid-margin-x.align-center
                 .large-7.medium-9.small-12.cell
-                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    h1.text-center.small-mb2.medium-mb3.large-mb3(data-aos="fade-up")!= pageTitle
 
                     :markdown-it(html typographer plugins=['markdown-it-sup'])
                         Paul and Marion Rand’s quintessential mid-century modern home, designed by Paul Rand and Ann Binkley Rand and built in 1953, is on the market. The landmark home, set in the wooded Connecticut town of Weston, is the epitome of modern aesthetics with a touch of Japanese simplicity, exactly the kind of structure you’d picture Rand living in until his death in 1996.

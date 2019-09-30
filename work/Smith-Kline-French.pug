@@ -19,7 +19,7 @@ block main-content
             .grid-x.grid-margin-x.align-center.small-mb4
                 .small-12.cell.text-center
                     //- /*==============================  CLIENT  ==============================*/
-                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    h1.text-center.small-mb2.medium-mb3.large-mb3(data-aos="fade-up")!= pageTitle
                     if dates == 'CHANGE_ME'
                     else
                         p!= dates
@@ -50,7 +50,7 @@ block main-content
                     +projectDivider("Brochures")
                     .grid-x.grid-margin-x
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/Smith%2C%20Kline%20%26%20French/Brochures/Geriatrics/Web/Smith%20Kline%20French%20Brochure-%20Geriatrics%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/Smith%2C%20Kline%20%26%20French/Brochures/Geriatrics/Web/Smith%20Kline%20French%20Brochure-%20Geriatrics%2001.jpg",
@@ -63,7 +63,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/Smith%2C%20Kline%20%26%20French/Brochures/Pediatrics/Web/Smith%20Kline%20French%20Brochure-%20Pediatrics%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/Smith%2C%20Kline%20%26%20French/Brochures/Pediatrics/Web/Smith%20Kline%20French%20Brochure-%20Pediatrics%2001.jpg",
@@ -77,7 +77,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/Smith%2C%20Kline%20%26%20French/Brochures/Pragmatar/Web/Smith%20Kline%20French%20Brochure-%20Pragmatar%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/Smith%2C%20Kline%20%26%20French/Brochures/Pragmatar/Web/Smith%20Kline%20French%20Brochure-%20Pragmatar%2001.jpg",

@@ -14,10 +14,12 @@ mixin carouselImages(title, subtitle, ...carouselImages)
                             .swiper-slide
                                 a(href=image.LG data-fancybox="images" data-caption=pageTitle)
                                     img.swiper-lazy(data-src=image.SM alt=pageTitle)&attributes(attributes)
+                                    .swiper-lazy-preloader
                         else
                             .swiper-slide
                                 a(href=image.LG data-fancybox="images" data-caption=pageTitle + "   |   " + image.Title)
                                     img.swiper-lazy(data-src=image.SM alt=pageTitle + "   |   " + image.Title)&attributes(attributes)
+                                    .swiper-lazy-preloader
                 .swiper-pagination.swiper-pagination-white
                 .swiper-button-prev
                 .swiper-button-next
@@ -202,10 +204,10 @@ mixin galleryItem-cardImageZoom(link, image, title, author, date)
 mixin galleryItem-imageHidden(...galleryItemImageHidden)
     each hidden in galleryItemImageHidden
         a.hide(href=hidden.hideMe data-fancybox="images" data-caption=pageTitle + "   |   " + hidden.title)
-            img.lazyload.w100(data-src=hidden.hideMe alt=pageTitle + "   |   " + hidden.title)
+            img.lazyload.w100.max-h100vh(data-src=hidden.hideMe alt=pageTitle + "   |   " + hidden.title)
 
-mixin galleryItem-cardLink(lgColumns, mdColumns, ...galleryItemCardLink)
-    div(class="large-" + lgColumns class="medium-" + mdColumns class="small-12 cell flex-container" data-aos="fade-up")
+mixin galleryItem-cardLink(lgColumns, mdColumns, smColumns, ...galleryItemCardLink)
+    div(class="large-" + lgColumns class="medium-" + mdColumns class="small-" + smColumns class="cell flex-container" data-aos="fade-up")
         each item in galleryItemCardLink
             a.card.galleryCardImage.text-center(href=item.LG data-fancybox="images" data-caption=pageTitle + "   |   " + item.title)
                 .card-section
@@ -238,7 +240,7 @@ mixin galleryItem-heavy(divider, projectTitle, lgColumns, mdColumns, ...galleryI
                 div(class="large-" + lgColumns class="medium-" + mdColumns class="small-12 cell align-middle flex-container relative" data-aos="fade-up")
                     a(href=item.LG data-fancybox="images" data-caption=pageTitle + "   |   " + projectTitle)
                         img.lazyload.w100(data-src=item.SM alt=pageTitle + "   |   " + projectTitle)&attributes(attributes)
-                    img.icon-zoom-boxed.lazyload(data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
+                    img.icon-zoom-boxed.lazyload.max-h100vh(data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
                     unless item.title == ""
                         p.small-m0!= item.title
                     .footnote!= item.footnote
@@ -246,10 +248,10 @@ mixin galleryItem-heavy(divider, projectTitle, lgColumns, mdColumns, ...galleryI
                 div(class="large-" + lgColumns class="medium-" + mdColumns class="small-12 cell align-middle" data-aos="fade-up")
                     if projectTitle =="CHANGE_ME"
                         a(href=item.LG data-fancybox="images" data-caption=pageTitle)
-                            img.lazyload.w100(data-src=item.SM alt=pageTitle)&attributes(attributes)
+                            img.lazyload.w100.max-h100vh(data-src=item.SM alt=pageTitle)&attributes(attributes)
                     else
                         a(href=item.LG data-fancybox="images" data-caption=pageTitle + "   |   " + projectTitle)
-                            img.lazyload.w100(data-src=item.SM alt=pageTitle + "   |   " + projectTitle)&attributes(attributes)
+                            img.lazyload.w100.max-h100vh(data-src=item.SM alt=pageTitle + "   |   " + projectTitle)&attributes(attributes)
                     unless item.title == ""
                         p.small-m0!= item.title
                     .footnote!= item.footnote
@@ -301,11 +303,11 @@ mixin galleryItem-blockGrid(divider, projectTitle, alignment, lgBlocks, mdBlocks
                 .cell.column-block.relative(data-aos="fade-up")
                     if projectTitle =="CHANGE_ME"
                         a(href=item.LG data-fancybox="images" data-caption=pageTitle)
-                            img.lazyload(data-src=item.SM alt=pageTitle)&attributes(attributes)
+                            img.lazyload.max-h100vh(data-src=item.SM alt=pageTitle)&attributes(attributes)
                         img.icon-zoom-boxed.lazyload(data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
                     else
                         a(href=item.LG data-fancybox="images" data-caption=pageTitle + "   |   " + projectTitle)
-                            img.lazyload(data-src=item.SM alt=pageTitle + "   |   " + projectTitle)&attributes(attributes)
+                            img.lazyload.max-h100vh(data-src=item.SM alt=pageTitle + "   |   " + projectTitle)&attributes(attributes)
                         img.icon-zoom-boxed.lazyload(data-src="/img/icon-zoom-boxed.svg" width="20" height="20" alt="Zoom")
                     unless item.title == ""
                         p.small-m0!= item.title
@@ -315,10 +317,10 @@ mixin galleryItem-blockGrid(divider, projectTitle, alignment, lgBlocks, mdBlocks
                 .cell.column-block.align-middle.relative(data-aos="fade-up")
                     if projectTitle =="CHANGE_ME"
                         a(href=item.LG data-fancybox="images" data-caption=pageTitle)
-                            img.lazyload(data-src=item.SM alt=pageTitle)&attributes(attributes)
+                            img.lazyload.max-h100vh(data-src=item.SM alt=pageTitle)&attributes(attributes)
                     else
                         a(href=item.LG data-fancybox="images" data-caption=pageTitle + "   |   " + projectTitle)
-                            img.lazyload(data-src=item.SM alt=pageTitle + "   |   " + projectTitle)&attributes(attributes)
+                            img.lazyload.max-h100vh(data-src=item.SM alt=pageTitle + "   |   " + projectTitle)&attributes(attributes)
                     unless item.title == ""
                         p.small-m0!= item.title
                     unless item.footnote == ""

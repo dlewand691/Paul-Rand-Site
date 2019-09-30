@@ -69,13 +69,13 @@ block main-content
     //- ===============================================
     .wrapper-parallax
         .imageHeader-full
-            h1.reveal-enter-top!= pageTitle
+            h1(data-aos="fade-up")!= pageTitle
 
             :markdown-it(html typographer plugins=['markdown-it-sup'])
                 This version of the article was originally published in “Industrial Design Magazine”, August, 1955.  
                 It was revised and reprinted in “A Designer’s Art”, 1985.
 
-            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign(data-aos="fade-up") View the Original #{nextType}
 
             img(src=imageHeaderBackground)
 

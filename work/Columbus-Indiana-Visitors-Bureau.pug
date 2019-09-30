@@ -19,7 +19,7 @@ block main-content
             .grid-x.grid-margin-x.align-center.small-mb4
                 .small-12.cell.text-center
                     //- /*==============================  CLIENT  ==============================*/
-                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    h1.text-center.small-mb2.medium-mb3.large-mb3(data-aos="fade-up")!= pageTitle
                     if dates == 'CHANGE_ME'
                     else
                         p!= dates
@@ -71,7 +71,7 @@ block main-content
             +projectDivider("Stationery")
             .grid-x.grid-margin-x.align-center
                 +galleryItem-cardLink(
-                    "4", "6",
+                    "4","6","6",
                     {
                     SM: "https://assets.paulrand.design/Works/Columbus%20Indiana%20Visitors%20Bureau/Stationery/Web/Columbus%20Indiana%20Stationery-450.jpg",
                     LG: "https://assets.paulrand.design/Works/Columbus%20Indiana%20Visitors%20Bureau/Stationery/Web/Columbus%20Indiana%20Stationery.jpg",
@@ -81,7 +81,7 @@ block main-content
                     })
 
                 +galleryItem-cardLink(
-                    "4", "6",
+                    "4","6","6",
                     {
                     SM: "https://assets.paulrand.design/Works/Columbus%20Indiana%20Visitors%20Bureau/Stationery/Web/Columbus%20Indiana%20Stationery-%20Letterhead-800.jpg",
                     LG: "https://assets.paulrand.design/Works/Columbus%20Indiana%20Visitors%20Bureau/Stationery/Web/Columbus%20Indiana%20Stationery-%20Letterhead.jpg",
@@ -91,7 +91,7 @@ block main-content
                     })
 
                 +galleryItem-cardLink(
-                    "4", "6",
+                    "4","6","6",
                     {
                     SM: "https://assets.paulrand.design/Works/Columbus%20Indiana%20Visitors%20Bureau/Stationery/Web/Columbus%20Indiana%20Stationery-%20Envelope%2C%20front-800.jpg",
                     LG: "https://assets.paulrand.design/Works/Columbus%20Indiana%20Visitors%20Bureau/Stationery/Web/Columbus%20Indiana%20Stationery-%20Envelope%2C%20front.jpg",
@@ -104,7 +104,7 @@ block main-content
                     )
 
                 +galleryItem-cardLink(
-                    "4", "6",
+                    "4","6","6",
                     {
                     SM: "https://assets.paulrand.design/Works/Columbus%20Indiana%20Visitors%20Bureau/Stationery/Web/Columbus%20Indiana%20Stationery-%20Sticker-800.jpg",
                     LG: "https://assets.paulrand.design/Works/Columbus%20Indiana%20Visitors%20Bureau/Stationery/Web/Columbus%20Indiana%20Stationery-%20Sticker.jpg",

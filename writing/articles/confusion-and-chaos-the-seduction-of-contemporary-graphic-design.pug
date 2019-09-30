@@ -59,11 +59,11 @@ block main-content
     //- ===============================================
     .wrapper-parallax
         .imageHeader-full.bg-black
-            h1.reveal-enter-top!= pageTitle
+            h1(data-aos="fade-up")!= pageTitle
 
             p Originally published in the AIGA Journal of Graphic Design, Volume 10, Number 1, 1992
 
-            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign(data-aos="fade-up") View the Original #{nextType}
 
             img(src=imageHeaderBackground)
 

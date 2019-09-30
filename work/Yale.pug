@@ -19,7 +19,7 @@ block main-content
             .grid-x.grid-margin-x.align-center.small-mb4
                 .small-12.cell.text-center
                     //- /*==============================  CLIENT  ==============================*/
-                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    h1.text-center.small-mb2.medium-mb3.large-mb3(data-aos="fade-up")!= pageTitle
                     if dates == 'CHANGE_ME'
                     else
                         p!= dates
@@ -36,7 +36,7 @@ block main-content
                 +projectDivider("Brissago Summer Programs")
                 .grid-x.grid-margin-x.align-center
                     +galleryItem-cardLink(
-                        "4", "6",
+                        "4","6","6",
                         {
                         SM: "https://assets.paulrand.design/Works/Yale/Brissago%201985/Web/Yale%20Brissago%20Poster%201985-450.jpg",
                         LG: "https://assets.paulrand.design/Works/Yale/Brissago%201985/Web/Yale%20Brissago%20Poster%201985.jpg",
@@ -46,7 +46,7 @@ block main-content
                         })
 
                     +galleryItem-cardLink(
-                        "4", "6",
+                        "4","6","6",
                         {
                         SM: "https://assets.paulrand.design/Works/Yale/Brissago%201988/Web/Yale%20Brissago%20Poster%201988%20Full%20View-450.jpg",
                         LG: "https://assets.paulrand.design/Works/Yale/Brissago%201988/Web/Yale%20Brissago%20Poster%201988%20Full%20View.jpg",
@@ -57,7 +57,7 @@ block main-content
 
 
                     +galleryItem-cardLink(
-                        "4", "6",
+                        "4","6","6",
                         {
                         SM: "https://assets.paulrand.design/Works/Yale/Brissago%201994/Web/Yale%20Brissago%20Poster%201994-450.jpg",
                         LG: "https://assets.paulrand.design/Works/Yale/Brissago%201994/Web/Yale%20Brissago%20Poster%201994.jpg",
@@ -69,7 +69,7 @@ block main-content
                 +projectDivider("School of Art Graduate Programs")
                 .grid-x.grid-margin-x.align-center
                     +galleryItem-cardLink(
-                        "4", "6",
+                        "4","6","6",
                         {
                         SM: "https://assets.paulrand.design/Works/Yale/Yale%20School%20of%20Art%20Poster%201975/Web/Yale%20School%20of%20Art%20Poster%201975-450.jpg",
                         LG: "https://assets.paulrand.design/Works/Yale/Yale%20School%20of%20Art%20Poster%201975/Web/Yale%20School%20of%20Art%20Poster%201975.jpg",
@@ -79,7 +79,7 @@ block main-content
                         })
 
                     +galleryItem-cardLink(
-                        "4", "6",
+                        "4","6","6",
                         {
                         SM: "https://assets.paulrand.design/Works/Yale/Yale%20School%20of%20Art%20Graduate%20Program%201977/Web/Yale%20School%20of%20Art%20Graduate%20Program%201977-450.jpg",
                         LG: "https://assets.paulrand.design/Works/Yale/Yale%20School%20of%20Art%20Graduate%20Program%201977/Web/Yale%20School%20of%20Art%20Graduate%20Program%201977.jpg",
@@ -89,7 +89,7 @@ block main-content
                         })
 
                     +galleryItem-cardLink(
-                        "4", "6",
+                        "4","6","6",
                         {
                         SM: "https://assets.paulrand.design/Works/Yale/Yale%20School%20of%20Art%20Graduate%20Program%201982/Web/Yale%20School%20of%20Art%20Graduate%20Program%201982.jpg",
                         LG: "https://assets.paulrand.design/Works/Yale/Yale%20School%20of%20Art%20Graduate%20Program%201982/Web/Yale%20School%20of%20Art%20Graduate%20Program%201982.jpg",
@@ -100,7 +100,7 @@ block main-content
 
 
                     +galleryItem-cardLink(
-                        "4", "6",
+                        "4","6","6",
                         {
                         SM: "https://assets.paulrand.design/Works/Yale/Yale%20School%20of%20Art%20Poster%201988/Web/Yale%20School%20of%20Art%20Poster%201988%2001-450.jpg",
                         LG: "https://assets.paulrand.design/Works/Yale/Yale%20School%20of%20Art%20Poster%201988/Web/Yale%20School%20of%20Art%20Poster%201988%2001.jpg",
@@ -110,7 +110,7 @@ block main-content
                         })
 
                     +galleryItem-cardLink(
-                        "4", "6",
+                        "4","6","6",
                         {
                         SM: "https://assets.paulrand.design/Works/Yale/Yale%20School%20of%20Art%20Graduate%20Program%201989-1990/Web/Yale%20School%20of%20Art%20Graduate%20Program%201989-1990%20Full%20View.jpg",
                         LG: "https://assets.paulrand.design/Works/Yale/Yale%20School%20of%20Art%20Graduate%20Program%201989-1990/Web/Yale%20School%20of%20Art%20Graduate%20Program%201989-1990%20Full%20View.jpg",
@@ -120,7 +120,7 @@ block main-content
                         })
 
                     +galleryItem-cardLink(
-                        "4", "6",
+                        "4","6","6",
                         {
                         SM: "https://assets.paulrand.design/Works/Yale/Yale%20School%20of%20Art%20Graduate%20Program%201991-1992/Web/Yale%20School%20of%20Art%20Graduate%20Program%201991-1992%20Full%20View.jpg",
                         LG: "https://assets.paulrand.design/Works/Yale/Yale%20School%20of%20Art%20Graduate%20Program%201991-1992/Web/Yale%20School%20of%20Art%20Graduate%20Program%201991-1992%20Full%20View.jpg",
@@ -135,7 +135,7 @@ block main-content
                 .grid-x.grid-margin-x.align-center
 
                     +galleryItem-cardLink(
-                        "4", "6",
+                        "4","6","6",
                         {
                         SM: "https://assets.paulrand.design/Works/Yale/Yale%20University%20Press%20Colophon%2C%20Fall%201985/Web/Yale%20University%20Press%20Colophon%2C%20Fall%201985-450.jpg",
                         LG: "https://assets.paulrand.design/Works/Yale/Yale%20University%20Press%20Colophon%2C%20Fall%201985/Web/Yale%20University%20Press%20Colophon%2C%20Fall%201985.jpg",
@@ -145,7 +145,7 @@ block main-content
                         })
 
                     +galleryItem-cardLink(
-                        "4", "6",
+                        "4","6","6",
                         {
                         SM: "https://assets.paulrand.design/Works/Yale/Yale%20University%20Press%20Stationary/Web/Yale%20University%20Press%20Letterhead%2001-450.jpg",
                         LG: "https://assets.paulrand.design/Works/Yale/Yale%20University%20Press%20Stationary/Web/Yale%20University%20Press%20Letterhead%2001.jpg",
@@ -155,7 +155,7 @@ block main-content
                         })
 
                     +galleryItem-cardLink(
-                        "4", "6",
+                        "4","6","6",
                         {
                         SM: "https://assets.paulrand.design/Works/Yale/Yale%20University%20Press%20Stationary/Web/Yale%20University%20Press%20Letterhead%2002-450.jpg",
                         LG: "https://assets.paulrand.design/Works/Yale/Yale%20University%20Press%20Stationary/Web/Yale%20University%20Press%20Letterhead%2002.jpg",
@@ -165,7 +165,7 @@ block main-content
                         })
 
                     +galleryItem-cardLink(
-                        "4", "6",
+                        "4","6","6",
                         {
                         SM: "https://assets.paulrand.design/Works/Yale/Yale%20University%20Press%20Stationary/Web/Yale%20University%20Press%20letterhead%2C%20production%20specs-450.jpg",
                         LG: "https://assets.paulrand.design/Works/Yale/Yale%20University%20Press%20Stationary/Web/Yale%20University%20Press%20letterhead%2C%20production%20specs.jpg",
@@ -175,7 +175,7 @@ block main-content
                         })
 
                     +galleryItem-cardLink(
-                        "4", "6",
+                        "4","6","6",
                         {
                         SM: "https://assets.paulrand.design/Works/Yale/Yale%20University%20Press%20Stationary/Web/Yale%20University%20Press%20Envelope-450.jpg",
                         LG: "https://assets.paulrand.design/Works/Yale/Yale%20University%20Press%20Stationary/Web/Yale%20University%20Press%20Envelope.jpg",

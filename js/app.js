@@ -20,6 +20,7 @@
 // @codekit-prepend "../node_modules/rrssb/js/rrssb.min.js"
 // @codekit-prepend "../node_modules/select2/dist/js/select2.min.js"
 // @codekit-prepend "maximize-select2-height-master/maximize-select2-height.min.js"
+// @codekit-prepend "../node_modules/darkmode-js/lib/darkmode-js.min.js"
 
 
 
@@ -195,10 +196,10 @@ $(document).ready(function() {
     // =============================================================================================
     // @codekit-prepend "../node_modules/lazysizes/lazysizes.js"
     window.lazySizesConfig = window.lazySizesConfig || {};
-    window.lazySizesConfig.init = false;
-    lazySizesConfig.loadMode = 3;
+    // window.lazySizesConfig.init = false;
+    lazySizesConfig.loadMode = 2;
     lazySizesConfig.expFactor = 4;
-    lazySizesConfig.expand = 750;
+    lazySizesConfig.expand = 1000;
     //add simple support for background images:
     document.addEventListener('lazybeforeunveil', function(e) {
         var bg = e.target.getAttribute('data-bg');
@@ -481,70 +482,28 @@ $(document).ready(function() {
     // ██      ██   ██ ██   ██ ██    ██ ██    ██      ██ ██      ██
     //  ██████ ██   ██ ██   ██  ██████   ██████  ███████ ███████ ███████
     // ===================================================================================
-    // @codekit-prepend "../node_modules/swiper/dist/js/swiper.min.js"
+    // @codekit-prepend "../node_modules/swiper/js/swiper.min.js"
     var mySwiper = new Swiper('.swiper-container', {
-        // Optional parameters
-        // init: false,
-        // on: {
-        //     init: function() {
-        //         autoplayStart();
-        // 
-        //     },
-        // },
-        // autoplay: true,
-        observer: true,
         loop: true,
-        spaceBetween: 40,
         autoHeight: true,
         centeredSlides: true,
         grabCursor: true,
-        mousewheel: false,
         preloadImages: false,
-        lazy: true,
-        loadPrevNext: true,
-        loadPrevNextAmount: 5,
+        lazy: {
+            loadPrevNext: true,
+            loadPrevNextAmount: 5
+          },
         loadOnTransitionStart: true,
-        watchSlidesVisibility: true,
-        slidesPerView: 2,
         breakpoints: {
             375: {
                 slidesPerView: 1,
                 spaceBetween: 10,
-            }
+            },
+            1024: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
         },
-        keyboard: {
-            enabled: true,
-        },
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-            // dynamicBullets: true,
-            clickable: true,
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-    // swiper.on('init', function() { 
-    //     autoplayStop();
-    //     });
-    // // init Swiper
-    // swiper.init();
-    // mySwiper.autoplay.stop();
-
-
-    var swiper = new Swiper('.swiper-container-old', {
-        // Enable lazy loading
-        lazy: true,
-        loop: true,
-        spaceBetween: 20,
-        autoHeight: true,
-        centeredSlides: true,
-        // grabCursor: true,
-        slidesPerView: 3,
         keyboard: {
             enabled: true,
         },
@@ -557,7 +516,6 @@ $(document).ready(function() {
             prevEl: '.swiper-button-prev',
         },
     });
-
 
     // -----  End of SWIPER CAROUSEL  -----------------------------------
 
@@ -833,3 +791,30 @@ $(document).ready(function() {
 // });
 
 // -----  End of SWUP  ---------------------------------------------
+
+
+
+// ===================================================================================
+// ██████   █████  ██████  ██   ██     ███    ███  ██████  ██████  ███████
+// ██   ██ ██   ██ ██   ██ ██  ██      ████  ████ ██    ██ ██   ██ ██
+// ██   ██ ███████ ██████  █████       ██ ████ ██ ██    ██ ██   ██ █████
+// ██   ██ ██   ██ ██   ██ ██  ██      ██  ██  ██ ██    ██ ██   ██ ██
+// ██████  ██   ██ ██   ██ ██   ██     ██      ██  ██████  ██████  ███████
+// ===================================================================================
+var options = {
+  // bottom: '32px', // default: '32px'
+  // right: '32px', // default: '32px'
+  // left: 'unset', // default: 'unset'
+  // time: '0.3s', // default: '0.3s'
+  // mixColor: '#fff', // default: '#fff'
+  // backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#121212',  // default: '#100f2c'
+  // buttonColorLight: '#fff', // default: '#fff'
+  // saveInCookies: true, // default: true,
+  label: '&#9680;', // default: '🌓'
+  // autoMatchOsTheme: true // default: true
+};
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+// -----  End of DARK MODE  -----------------------------------

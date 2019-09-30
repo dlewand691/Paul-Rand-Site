@@ -19,7 +19,7 @@ block main-content
             .grid-x.grid-margin-x.align-center
                 .small-12.cell.text-center
                     //- /*==============================  CLIENT  ==============================*/
-                    h1.text-center.small-mb1.medium-mb2.reveal-enter-bottom!= pageTitle
+                    h1.text-center.small-mb1.medium-mb2(data-aos="fade-up")!= pageTitle
                     if dates == 'CHANGE_ME'
                     else
                         p!= dates
@@ -69,9 +69,9 @@ block main-content
                     //- 
                     //- =============================================================================================
                     +projectDivider("Logos")
-                    .grid-x.grid-margin-x.align-center.foldMe#logos(data-magellan-target="logos")
+                    .grid-x.grid-margin-x.align-center#logos(data-magellan-target="logos")
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Logos/IBM-1956.svg",
                             LG: "https://assets.paulrand.design/Works/IBM/Logos/IBM-1956.svg",
@@ -81,7 +81,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Logos/IBM-13-bar-1967.svg",
                             LG: "https://assets.paulrand.design/Works/IBM/Logos/IBM-13-bar-1967.svg",
@@ -91,7 +91,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Logos/IBM-8-bar-1972.svg",
                             LG: "https://assets.paulrand.design/Works/IBM/Logos/IBM-8-bar-1972.svg",
@@ -101,7 +101,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Logos/IBM-Current-Software.svg",
                             LG: "https://assets.paulrand.design/Works/IBM/Logos/IBM-Current-Software.svg",
@@ -111,7 +111,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Logos/IBM-Direct.svg",
                             LG: "https://assets.paulrand.design/Works/IBM/Logos/IBM-Direct.svg",
@@ -121,7 +121,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Logos/IBM-Product-Center-silver-1983.svg",
                             LG: "https://assets.paulrand.design/Works/IBM/Logos/IBM-Product-Center-silver-1983.svg",
@@ -131,7 +131,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Logos/IBM-Product-Center-red-1983.svg",
                             LG: "https://assets.paulrand.design/Works/IBM/Logos/IBM-Product-Center-red-1983.svg",
@@ -141,7 +141,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Logos/OS-2-Operating-System-IBM-1987.svg",
                             LG: "https://assets.paulrand.design/Works/IBM/Logos/OS-2-Operating-System-IBM-1987.svg",
@@ -151,7 +151,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Logos/XGA-1992.svg",
                             LG: "https://assets.paulrand.design/Works/IBM/Logos/XGA-1992.svg",
@@ -161,7 +161,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Logos/AdStar-Advanced-Storage-and-Retrieval-1992.svg",
                             LG: "https://assets.paulrand.design/Works/IBM/Logos/AdStar-Advanced-Storage-and-Retrieval-1992.svg",
@@ -186,9 +186,9 @@ block main-content
                     //- 
                     //- =============================================================================================
                     +projectDivider("Annual Reports")
-                    .grid-x.grid-margin-x.align-center.foldMe#annualReports(data-magellan-target="annualReports")
+                    .grid-x.grid-margin-x.align-center#annualReports(data-magellan-target="annualReports")
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1957/Web/IBM%20Annual%20Report%2C%201957-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1957/Web/IBM%20Annual%20Report%2C%201957.jpg",
@@ -220,7 +220,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1958/Web/IBM%20Annual%20Report%2C%201958-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1958/Web/IBM%20Annual%20Report%2C%201958.jpg",
@@ -256,7 +256,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1959/Web/IBM%20Annual%20Report%2C%201959-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1959/Web/IBM%20Annual%20Report%2C%201959.jpg",
@@ -292,7 +292,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1960/Web/IBM%20Annual%20Report%2C%201960-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1960/Web/IBM%20Annual%20Report%2C%201960.jpg",
@@ -301,7 +301,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1961/Web/IBM%20Annual%20Report%2C%201961-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1961/Web/IBM%20Annual%20Report%2C%201961.jpg",
@@ -318,7 +318,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1962/Web/IBM%20Annual%20Report%2C%201962-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1962/Web/IBM%20Annual%20Report%2C%201962.jpg",
@@ -327,7 +327,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1963/Web/IBM%20Annual%20Report%2C%201963-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1963/Web/IBM%20Annual%20Report%2C%201963.jpg",
@@ -360,7 +360,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1964/Web/IBM%20Annual%20Report%2C%201964-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1964/Web/IBM%20Annual%20Report%2C%201964.jpg",
@@ -396,7 +396,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1965/Web/IBM%20Annual%20Report%2C%201965-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1965/Web/IBM%20Annual%20Report%2C%201965.jpg",
@@ -415,7 +415,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1966/Web/IBM%20Annual%20Report%2C%201966-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1966/Web/IBM%20Annual%20Report%2C%201966.jpg",
@@ -451,7 +451,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1967/Web/IBM%20Annual%20Report%2C%201967-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1967/Web/IBM%20Annual%20Report%2C%201967.jpg",
@@ -487,7 +487,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1968/Web/IBM%20Annual%20Report%2C%201968-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1968/Web/IBM%20Annual%20Report%2C%201968.jpg",
@@ -496,7 +496,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1969/Web/IBM%20Annual%20Report%2C%201969-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1969/Web/IBM%20Annual%20Report%2C%201969.jpg",
@@ -505,7 +505,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1970/Web/IBM%20Annual%20Report%2C%201970-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1970/Web/IBM%20Annual%20Report%2C%201970.jpg",
@@ -514,7 +514,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1971/Web/IBM%20Annual%20Report%2C%201971-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1971/Web/IBM%20Annual%20Report%2C%201971.jpg",
@@ -547,7 +547,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1972/Web/IBM%20Annual%20Report%2C%201972-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1972/Web/IBM%20Annual%20Report%2C%201972.jpg",
@@ -556,7 +556,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1973/Web/IBM%20Annual%20Report%2C%201973-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1973/Web/IBM%20Annual%20Report%2C%201973.jpg",
@@ -565,7 +565,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1974/Web/IBM%20Annual%20Report%2C%201974-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1974/Web/IBM%20Annual%20Report%2C%201974.jpg",
@@ -597,7 +597,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1975/Web/IBM%20Annual%20Report%2C%201975-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1975/Web/IBM%20Annual%20Report%2C%201975.jpg",
@@ -606,7 +606,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1976/Web/IBM%20Annual%20Report%2C%201976-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1976/Web/IBM%20Annual%20Report%2C%201976.jpg",
@@ -615,7 +615,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1977/Web/IBM%20Annual%20Report%2C%201977-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1977/Web/IBM%20Annual%20Report%2C%201977.jpg",
@@ -624,7 +624,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1978/Web/IBM%20Annual%20Report%2C%201978-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1978/Web/IBM%20Annual%20Report%2C%201978.jpg",
@@ -633,7 +633,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1979/Web/IBM%20Annual%20Report%2C%201979-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1979/Web/IBM%20Annual%20Report%2C%201979.jpg",
@@ -642,7 +642,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1980/Web/IBM%20Annual%20Report%2C%201980-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1980/Web/IBM%20Annual%20Report%2C%201980.jpg",
@@ -651,7 +651,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1981/Web/IBM%20Annual%20Report%2C%201981-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1981/Web/IBM%20Annual%20Report%2C%201981.jpg",
@@ -660,7 +660,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1982/Web/IBM%20Annual%20Report%2C%201982-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1982/Web/IBM%20Annual%20Report%2C%201982.jpg",
@@ -669,7 +669,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1983/Web/IBM%20Annual%20Report%2C%201983-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1983/Web/IBM%20Annual%20Report%2C%201983.jpg",
@@ -678,7 +678,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1984/Web/IBM%20Annual%20Report%2C%201984-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1984/Web/IBM%20Annual%20Report%2C%201984.jpg",
@@ -687,7 +687,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1985/Web/IBM%20Annual%20Report%2C%201985-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1985/Web/IBM%20Annual%20Report%2C%201985.jpg",
@@ -696,7 +696,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1986/Web/IBM%20Annual%20Report%2C%201986-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1986/Web/IBM%20Annual%20Report%2C%201986.jpg",
@@ -705,7 +705,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1987/Web/IBM%20Annual%20Report%2C%201987-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1987/Web/IBM%20Annual%20Report%2C%201987.jpg",
@@ -714,7 +714,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1988/Web/IBM%20Annual%20Report%2C%201988-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1988/Web/IBM%20Annual%20Report%2C%201988.jpg",
@@ -723,7 +723,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1989/Web/IBM%20Annual%20Report%2C%201989-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1989/Web/IBM%20Annual%20Report%2C%201989.jpg",
@@ -732,7 +732,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1990/Web/IBM%20Annual%20Report%2C%201990-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1990/Web/IBM%20Annual%20Report%2C%201990.jpg",
@@ -741,7 +741,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1991/Web/IBM%20Annual%20Report%2C%201991-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1991/Web/IBM%20Annual%20Report%2C%201991.jpg",
@@ -770,7 +770,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1992/Web/IBM%20Annual%20Report%2C%201992-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/1992/Web/IBM%20Annual%20Report%2C%201992.jpg",
@@ -779,7 +779,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/IBM%20Annual%20Meeting%20and%20Proxy%20Statement%201975%20-%201977/Web/IBM%20Annual%20Meeting%20and%20Proxy%20Statement%201975%20-%201977-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Annual%20Reports/IBM%20Annual%20Meeting%20and%20Proxy%20Statement%201975%20-%201977/Web/IBM%20Annual%20Meeting%20and%20Proxy%20Statement%201975%20-%201977.jpg",
@@ -804,9 +804,9 @@ block main-content
                     //- 
                     //- =============================================================================================
                     +projectDivider("Branding Guidelines")
-                    .grid-x.grid-margin-x.align-center.foldMe#brandingGuidelines(data-magellan-target="brandingGuidelines")
+                    .grid-x.grid-margin-x.align-center#brandingGuidelines(data-magellan-target="brandingGuidelines")
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1960%20New%20Methods%20for%20Knowing/Web/New%20Methods%20for%20Knowing-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1960%20New%20Methods%20for%20Knowing/Web/New%20Methods%20for%20Knowing.jpg",
@@ -842,7 +842,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1973%20The%20IBM%20Look/Web/The%20IBM%20Look-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1973%20The%20IBM%20Look/Web/The%20IBM%20Look.jpg",
@@ -866,7 +866,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1983%20Product%20Center/Web/Product%20Center%20Guidelines-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1983%20Product%20Center/Web/Product%20Center%20Guidelines.jpg",
@@ -911,98 +911,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
-                            {
-                            SM: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2080-450.jpg",
-                            LG: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2080.jpg",
-                            title: "Graphic Design Guide",
-                            footnote1: "1984-87, 81 Images"
-                            })
-                        +galleryItem-imageHidden(
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2001.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2002.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2003.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2004.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2005.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2006.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2007.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2008.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2009.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2010.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2011.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2012.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2013.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2014.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2015.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2016.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2017.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2018.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2019.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2020.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2021.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2022.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2023.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2024.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2025.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2026.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2027.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2028.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2029.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2030.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2031.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2032.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2033.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2034.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2035.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2036.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2037.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2038.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2039.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2040.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2041.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2042.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2043.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2044.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2045.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2046.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2047.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2048.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2049.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2050.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2051.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2052.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2053.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2054.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2055.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2056.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2057.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2058.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2059.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2060.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2061.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2062.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2063.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2064.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2065.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2066.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2067.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2068.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2069.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2070.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2071.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2072.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2073.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2074.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2075.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2076.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2077.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2078.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2079.jpg"},
-                            {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2080.jpg"}
-                            )
-
-                        +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1985%20The%20IBM%20Logo%20Usage/Web/IBM%20logo%20front-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1985%20The%20IBM%20Logo%20Usage/Web/IBM%20logo%20front.jpg",
@@ -1033,7 +942,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1986%20Guidelines%20for%20Using%20IBM%20Trademarks/Web/Guidelines%20for%20Using%20IBM%20Trademarks-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1986%20Guidelines%20for%20Using%20IBM%20Trademarks/Web/Guidelines%20for%20Using%20IBM%20Trademarks.jpg",
@@ -1068,7 +977,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1986%20Sign%20Standards/Web/IBM%20Sign%20Standards%2C%20front-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1986%20Sign%20Standards/Web/IBM%20Sign%20Standards%2C%20front.jpg",
@@ -1123,7 +1032,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1990%20Use%20of%20the%20Logo%2C%20Abuse%20of%20the%20Logo/Web/IBM-%20Use%20of%20the%20Logo%2C%20Abuse%20of%20the%20Logo%2C%20front%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1990%20Use%20of%20the%20Logo%2C%20Abuse%20of%20the%20Logo/Web/IBM-%20Use%20of%20the%20Logo%2C%20Abuse%20of%20the%20Logo%2C%20front%2002.jpg",
@@ -1154,7 +1063,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1990%20The%20IBM%20Logo%20Innovation/Web/The%20IBM%20Logo%20Innovation%2C%20front-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1990%20The%20IBM%20Logo%20Innovation/Web/The%20IBM%20Logo%20Innovation%2C%20front.jpg",
@@ -1187,6 +1096,112 @@ block main-content
                             )
 
 
+                    .grid-x.grid-margin-x.align-center
+                        .small-12.cell.text-center
+                            +galleryItem-blockGrid(
+                                "DIVIDER_yes",
+                                "Graphic Design Guide",
+                                "middle", "1", "1",
+                                {SM: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2080-970.jpg", LG:"https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2080-450.jpg", title: "", footnote: "1984-87, 81 Images"}
+                                )
+                    .grid-x.grid-margin-x.align-center
+                        .small-12.cell.align-center.large-mb3.small-mb1
+                            div.plyr-js(data-plyr-embed-id="68173366" data-plyr-provider="vimeo")
+                    .grid-x.grid-margin-x.align-center
+                        .large-7.medium-9.small-12.cell.text-left
+                            :markdown-it
+                                Between the sixties and the eighties a significant group of graphic rules and uses was documented and regularly updated in a folder that was organised into sections. Inside we can find the instructions that allow us to reproduce the logotype, graphic and typographic rules, designs for internal and external documents, signage and architectural applications. This document allows one to work with the company's graphic signs in coherence and efficient discussion with other trades.
+
+                                Today this folder is an iconic, rare and little documented object and it seems important to us to render it accessible and distributable, to Graphic designers, students and anyone interested in the adventure undertaken by this emblematic company.
+
+                                The successive documents from the folder and their developments will be published and reproduced so as to offer the widest possible vision of the work accomplished over a period of more than twenty years. This work will be done in collaboration with the archive team from IBM New York, and the Kandinsky Library of the Georges Pompidou Centre in Paris.
+
+                            .text-center
+                                a.button.arrow(href="https://revue-faire.eu/product/n04-ibm-paul-rands-graphic-standards-manual-reprint-pre-order/" target="_blank" rel="noopener") PURCHASE THE REPRINT
+                    +galleryItem-imageHidden(
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2001.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2002.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2003.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2004.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2005.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2006.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2007.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2008.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2009.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2010.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2011.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2012.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2013.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2014.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2015.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2016.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2017.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2018.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2019.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2020.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2021.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2022.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2023.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2024.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2025.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2026.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2027.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2028.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2029.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2030.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2031.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2032.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2033.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2034.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2035.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2036.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2037.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2038.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2039.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2040.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2041.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2042.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2043.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2044.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2045.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2046.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2047.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2048.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2049.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2050.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2051.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2052.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2053.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2054.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2055.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2056.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2057.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2058.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2059.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2060.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2061.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2062.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2063.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2064.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2065.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2066.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2067.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2068.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2069.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2070.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2071.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2072.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2073.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2074.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2075.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2076.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2077.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2078.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2079.jpg"},
+                        {title: "Graphic Design Guide", hideMe: "https://assets.paulrand.design/Works/IBM/Branding%20Guidelines/1984-87%20Graphic%20Design%20Guide/Web/Graphic%20Design%20Guide%2080.jpg"}
+                        )
+
+
 
                     //- =============================================================================================
                     //- 
@@ -1198,9 +1213,9 @@ block main-content
                     //- 
                     //- =============================================================================================
                     +projectDivider("Posters")
-                    .grid-x.grid-margin-x.align-center.foldMe#posters(data-magellan-target="posters")
+                    .grid-x.grid-margin-x.align-center#posters(data-magellan-target="posters")
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Posters/Web/1975%20IBM%20Customer%20Support%20Center%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Posters/Web/1975%20IBM%20Customer%20Support%20Center%2001.jpg",
@@ -1210,7 +1225,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Posters/Web/1980%20Resource%20Management%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Posters/Web/1980%20Resource%20Management%2001.jpg",
@@ -1220,7 +1235,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Posters/Web/1981%20Golden%20Circle-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Posters/Web/1981%20Golden%20Circle.jpg",
@@ -1230,7 +1245,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Posters/Web/1982%20IBM%20Customer%20Service%20Division%20Awards%20Conference%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Posters/Web/1982%20IBM%20Customer%20Service%20Division%20Awards%20Conference%2001.jpg",
@@ -1240,7 +1255,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Posters/Web/1982%20IBM%20Customer%20Service%20Division%20Awards%20Conference%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Posters/Web/1982%20IBM%20Customer%20Service%20Division%20Awards%20Conference%2002.jpg",
@@ -1250,7 +1265,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Posters/Web/1985%20IBM%20%E2%80%9CHe%20Who%20Stops%20Being%20Better%E2%80%A6%E2%80%9D-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Posters/Web/1985%20IBM%20%E2%80%9CHe%20Who%20Stops%20Being%20Better%E2%80%A6%E2%80%9D.jpg",
@@ -1260,7 +1275,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Posters/Web/1989%2075th%20Anniversary-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Posters/Web/1989%2075th%20Anniversary.jpg",
@@ -1270,7 +1285,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Posters/Web/1990%20IBM%20S-390%20A%20New%20Era%20Begins%20%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Posters/Web/1990%20IBM%20S-390%20A%20New%20Era%20Begins%20%2001.jpg",
@@ -1280,7 +1295,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Posters/Web/1990%20Quality%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Posters/Web/1990%20Quality%2001.jpg",
@@ -1290,7 +1305,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Posters/Web/1990%20Quality%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Posters/Web/1990%20Quality%2002.jpg",
@@ -1300,7 +1315,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Posters/Web/1990%20Vision...%20Mission...%20Goal%2C%20IBM%20Latin%20America-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Posters/Web/1990%20Vision...%20Mission...%20Goal%2C%20IBM%20Latin%20America.jpg",
@@ -1310,7 +1325,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Posters/Web/1991%20Tokyo%20Communication%20Arts%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Posters/Web/1991%20Tokyo%20Communication%20Arts%2001.jpg",
@@ -1320,7 +1335,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Posters/Web/1991%20Tokyo%20Communication%20Arts%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Posters/Web/1991%20Tokyo%20Communication%20Arts%2002.jpg",
@@ -1330,7 +1345,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Posters/Web/Bee%20and%20Rose%20Sketch%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Posters/Web/Bee%20and%20Rose%20Sketch%2001.jpg",
@@ -1340,7 +1355,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Posters/Web/Bee%20and%20Rose%20Sketch%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Posters/Web/Bee%20and%20Rose%20Sketch%2002.jpg",
@@ -1360,7 +1375,7 @@ block main-content
                     //- 
                     //- =============================================================================================
                     +projectDivider("Packaging")
-                    .grid-x.grid-margin-x.align-center.foldMe#packaging(data-magellan-target="packaging")
+                    .grid-x.grid-margin-x.align-center#packaging(data-magellan-target="packaging")
                         .text-center.w100
 
                             //- ===================================================================
@@ -1368,7 +1383,7 @@ block main-content
                             //- ===================================================================
                             h4 Group Collections
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Diskettes%2C%20Ribbon%20and%20Toner-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Diskettes%2C%20Ribbon%20and%20Toner.jpg",
@@ -1378,7 +1393,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ink%20Cartridges%20and%20Paper-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ink%20Cartridges%20and%20Paper.jpg",
@@ -1388,7 +1403,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Orange%20and%20striped%20boxes-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Orange%20and%20striped%20boxes.jpg",
@@ -1398,7 +1413,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Packaging%20Family-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Packaging%20Family.jpg",
@@ -1408,7 +1423,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Packaging%20Family%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Packaging%20Family%2002.jpg",
@@ -1418,7 +1433,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Packaging%20Family%2003-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Packaging%20Family%2003.jpg",
@@ -1428,7 +1443,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ribbon%20Cassettes-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ribbon%20Cassettes.jpg",
@@ -1438,7 +1453,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ribbons%2001.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ribbons%2001.jpg",
@@ -1448,7 +1463,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ribbons%20and%20Carbon%20Paper%2001.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ribbons%20and%20Carbon%20Paper%2001.jpg",
@@ -1458,7 +1473,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ribbons%20and%20Carbon%20Paper%2003-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ribbons%20and%20Carbon%20Paper%2003.jpg",
@@ -1468,7 +1483,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ribbons%20and%20Typewriter%20Heads%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ribbons%20and%20Typewriter%20Heads%2001.jpg",
@@ -1483,7 +1498,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ribbons%20and%20Discs-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ribbons%20and%20Discs.jpg",
@@ -1493,7 +1508,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ribbons%20and%20Tape-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Ribbons%20and%20Tape.jpg",
@@ -1503,7 +1518,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Supply%20Kits%20and%20Ribbons-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Group%20Collections/Web/Supply%20Kits%20and%20Ribbons.jpg",
@@ -1519,7 +1534,7 @@ block main-content
                             hr
                             h4 Batteries
                         +galleryItem-cardLink(
-                            "6","6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Batteries/Web/IBM%20Batteries%20224-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Batteries/Web/IBM%20Batteries%20224.jpg",
@@ -1529,7 +1544,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "6","6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Batteries/Web/IBM%20Battery%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Batteries/Web/IBM%20Battery%2001.jpg",
@@ -1554,7 +1569,7 @@ block main-content
                             hr
                             h4 Carbon Paper
                         +galleryItem-cardLink(
-                            "6","6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20Black%20Background%2C%20letter%20size%2C%20front-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20Black%20Background%2C%20letter%20size%2C%20front.jpg",
@@ -1582,7 +1597,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "6","6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20Black%2C%20Pink%20Striped%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20Black%2C%20Pink%20Striped%2001.jpg",
@@ -1596,7 +1611,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "6","6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20White%2C%20Outline%20Letters%20front%2000-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20White%2C%20Outline%20Letters%20front%2000.jpg",
@@ -1611,7 +1626,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "6","6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20White%2C%20Solid%20Letters%2000-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Carbon%20Paper/Web/Carbon%20Paper%2C%20White%2C%20Solid%20Letters%2000.jpg",
@@ -1639,7 +1654,7 @@ block main-content
                             h4 Paper Cassettes
 
                         +galleryItem-cardLink(
-                            "12","12",
+                            "12","12","12",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Cassette/Web/Paper%20Cassette%20for%203820%20Page%20Printer-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Cassette/Web/Paper%20Cassette%20for%203820%20Page%20Printer.jpg",
@@ -1655,7 +1670,7 @@ block main-content
                             hr
                             h4 Current Software
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Current%20Software/Web/IBM%20Desktop%20Software%20Current%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Current%20Software/Web/IBM%20Desktop%20Software%20Current%2001.jpg",
@@ -1665,7 +1680,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Current%20Software/Web/IBM%20Desktop%20Software%20Current%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Current%20Software/Web/IBM%20Desktop%20Software%20Current%2002.jpg",
@@ -1675,7 +1690,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Current%20Software/Web/IBM%20Desktop%20Software%20Current%205.25%20Diskette-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Current%20Software/Web/IBM%20Desktop%20Software%20Current%205.25%20Diskette.jpg",
@@ -1691,7 +1706,7 @@ block main-content
                             hr
                             h4 Data Cartridges
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Data%20Cartridge/Web/IBM%208mn%20Data%20Cartridge%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Data%20Cartridge/Web/IBM%208mn%20Data%20Cartridge%2001.jpg",
@@ -1701,7 +1716,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Data%20Cartridge/Web/IBM%20DC2000%20Mini%20Cartridges-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Data%20Cartridge/Web/IBM%20DC2000%20Mini%20Cartridges.jpg",
@@ -1711,7 +1726,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Data%20Cartridge/Web/IBM%20DC2120%20Mini%20Cartridges.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Data%20Cartridge/Web/IBM%20DC2120%20Mini%20Cartridges.jpg",
@@ -1727,7 +1742,7 @@ block main-content
                             hr
                             h4 Data Processing Cards
                         +galleryItem-cardLink(
-                            "12","12",
+                            "12","12","12",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Data%20Processing%20Cards/Web/IBM%20Data%20Processing%20Cards-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Data%20Processing%20Cards/Web/IBM%20Data%20Processing%20Cards.jpg",
@@ -1743,7 +1758,7 @@ block main-content
                             hr
                             h4 Diskettes
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Diskette/Web/IBM%201MB%203.5%20Diskette%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Diskette/Web/IBM%201MB%203.5%20Diskette%2001.jpg",
@@ -1753,7 +1768,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Diskette/Web/IBM%202MB%203.5%20Diskette%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Diskette/Web/IBM%202MB%203.5%20Diskette%2001.jpg",
@@ -1763,7 +1778,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Diskette/Web/IBM%205.25%20Diskette-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Diskette/Web/IBM%205.25%20Diskette.jpg",
@@ -1779,7 +1794,7 @@ block main-content
                             hr
                             h4 Executary Supplies
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Executary/Web/IBM%20Executary%20Supplies-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Executary/Web/IBM%20Executary%20Supplies.jpg",
@@ -1789,7 +1804,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Executary/Web/IBM%20Executary%20Monoset%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Executary/Web/IBM%20Executary%20Monoset%2001.jpg",
@@ -1799,7 +1814,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Executary/Web/IBM%20Executary%20Audio%20Set%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Executary/Web/IBM%20Executary%20Audio%20Set%2001.jpg",
@@ -1815,7 +1830,7 @@ block main-content
                             hr
                             h4 Index Pads
                         +galleryItem-cardLink(
-                            "6","6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Pads/Web/IBM%20Index%20Pads%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Pads/Web/IBM%20Index%20Pads%2001.jpg",
@@ -1825,7 +1840,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "6","6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Pads/Web/IBM%20Index%20Pads%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Pads/Web/IBM%20Index%20Pads%2002.jpg",
@@ -1841,7 +1856,7 @@ block main-content
                             hr
                             h4 Ink Cartridges
                         +galleryItem-cardLink(
-                            "4", "4",
+                            "4","4","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ink%20Cartridge/Web/IBM%20Black%20Ink%20Cartridge%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ink%20Cartridge/Web/IBM%20Black%20Ink%20Cartridge%2001.jpg",
@@ -1851,7 +1866,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4", "4",
+                            "4","4","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ink%20Cartridge/Web/IBM%20Color%20Ink%20Cartridge%20Printer%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ink%20Cartridge/Web/IBM%20Color%20Ink%20Cartridge%20Printer%2001.jpg",
@@ -1861,7 +1876,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4", "4",
+                            "4","4","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ink%20Cartridge/Web/IBM%20Color%20Ink%20Cartridge%20Printer%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ink%20Cartridge/Web/IBM%20Color%20Ink%20Cartridge%20Printer%2002.jpg",
@@ -1878,7 +1893,7 @@ block main-content
                             hr
                             h4 Magnabelt
                         +galleryItem-cardLink(
-                            "6","6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Magnabelt/Web/IBM%20Magnabelt%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Magnabelt/Web/IBM%20Magnabelt%2001.jpg",
@@ -1892,7 +1907,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "6","6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Magnabelt/Web/IBM%20Magnabelt%20Mailing%20Insert-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Magnabelt/Web/IBM%20Magnabelt%20Mailing%20Insert.jpg",
@@ -1902,7 +1917,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "6","6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Magnabelt/Web/IBM%203-inch%20Magnabelt%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Magnabelt/Web/IBM%203-inch%20Magnabelt%2001.jpg",
@@ -1928,7 +1943,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "6","6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Magnabelt/Web/IBM%204-inch%20Magnabelt%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Magnabelt/Web/IBM%204-inch%20Magnabelt%2001.jpg",
@@ -1954,7 +1969,7 @@ block main-content
                             hr
                             h4 Magnetic Disc
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Magnetic%20Disc/Web/IBM%20Magnetic%20Disc%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Magnetic%20Disc/Web/IBM%20Magnetic%20Disc%2001.jpg",
@@ -1964,7 +1979,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Magnetic%20Disc/Web/IBM%20Magnetic%20Disc%20Cartridge%2025-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Magnetic%20Disc/Web/IBM%20Magnetic%20Disc%20Cartridge%2025.jpg",
@@ -1974,7 +1989,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Magnetic%20Disc/Web/IBM%20Magnetic%20Disc%20Folders%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Magnetic%20Disc/Web/IBM%20Magnetic%20Disc%20Folders%2001.jpg",
@@ -1990,7 +2005,7 @@ block main-content
                             hr
                             h4 Micro-Processing Cards
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Micro-Processing%20Cards/Web/IBM%20Micro-Processing%20Cards%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Micro-Processing%20Cards/Web/IBM%20Micro-Processing%20Cards%2001.jpg",
@@ -2000,7 +2015,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Micro-Processing%20Cards/Web/IBM%20Micro-Processing%20Cards%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Micro-Processing%20Cards/Web/IBM%20Micro-Processing%20Cards%2002.jpg",
@@ -2010,7 +2025,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Micro-Processing%20Cards/Web/IBM%20Micro-Processing%20Cards%2003-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Micro-Processing%20Cards/Web/IBM%20Micro-Processing%20Cards%2003.jpg",
@@ -2026,7 +2041,7 @@ block main-content
                             hr
                             h4 Optical Disk
                         +galleryItem-cardLink(
-                            "12","12",
+                            "12","12","12",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Optical%20Data%20Disk/Web/IBM%20Optical%20Data%20Disk-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Optical%20Data%20Disk/Web/IBM%20Optical%20Data%20Disk.jpg",
@@ -2042,7 +2057,7 @@ block main-content
                             hr
                             h4 Paper
                         +galleryItem-cardLink(
-                            "12","12",
+                            "12","12","12",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Paper/Web/IBM%20Copy%20Transparency%20Sheet-970.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Paper/Web/IBM%20Copy%20Transparency%20Sheet.jpg",
@@ -2058,7 +2073,7 @@ block main-content
                             hr
                             h4 Electrographic Mark Sensing Pencils and Leads
                         +galleryItem-cardLink(
-                            "6","6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v1%20Lead%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v1%20Lead%2001.jpg",
@@ -2078,7 +2093,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "6", "6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v1%20Pencil%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v1%20Pencil%2001.jpg",
@@ -2095,7 +2110,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "6", "6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Lead%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Lead%2001.jpg",
@@ -2114,7 +2129,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "6", "6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Pencil%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v3%20Pencil%2001.jpg",
@@ -2141,7 +2156,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "6", "6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Lead%2008-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Lead%2008.jpg",
@@ -2165,7 +2180,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "6", "6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Pencil%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v4%20Pencil%2001.jpg",
@@ -2188,7 +2203,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "6", "6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v2%20Lead%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Pencils%20and%20Leads/Web/IBM%20Electrographic%20Mark%20Sensing%20v2%20Lead%2001.jpg",
@@ -2214,7 +2229,7 @@ block main-content
                             hr
                             h4 PS1
                         +galleryItem-cardLink(
-                            "6","6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/PS1/Web/IBM%20PS1%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/PS1/Web/IBM%20PS1%2001.jpg",
@@ -2224,7 +2239,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "6","6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/PS1/Web/IBM%20PS1%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/PS1/Web/IBM%20PS1%2002.jpg",
@@ -2241,7 +2256,7 @@ block main-content
                             hr
                             h4 PS2
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/PS2/Web/IBM%20PS2%20256%20KB%20Cache%20option%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/PS2/Web/IBM%20PS2%20256%20KB%20Cache%20option%2001.jpg",
@@ -2251,7 +2266,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/PS2/Web/IBM%20PS2%20256%20KB%20Cache%20option%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/PS2/Web/IBM%20PS2%20256%20KB%20Cache%20option%2002.jpg",
@@ -2261,7 +2276,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/PS2/Web/IBM%20PS2%20256%20KB%20Cache%20option%2003-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/PS2/Web/IBM%20PS2%20256%20KB%20Cache%20option%2003.jpg",
@@ -2271,7 +2286,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/PS2/Web/IBM%20PS2%20256%20KB%20Cache%20option%2004-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/PS2/Web/IBM%20PS2%20256%20KB%20Cache%20option%2004.jpg",
@@ -2281,7 +2296,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/PS2/Web/IBM%20PS2%20Color%20Display%208513%201990%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/PS2/Web/IBM%20PS2%20Color%20Display%208513%201990%2001.jpg",
@@ -2291,7 +2306,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/PS2/Web/IBM%20PS2%20Color%20Display%208513%201990%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/PS2/Web/IBM%20PS2%20Color%20Display%208513%201990%2002.jpg",
@@ -2308,7 +2323,7 @@ block main-content
                             hr
                             h4 Ribbon
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/6%20Ribbons/Web/6%20Ribbons%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/6%20Ribbons/Web/6%20Ribbons%2001.jpg",
@@ -2322,7 +2337,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/463%20Ribbon/Web/IBM%20463%20Ribbon%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/463%20Ribbon/Web/IBM%20463%20Ribbon%2001.jpg",
@@ -2335,7 +2350,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/3121%20Film%20Ribbon/Web/IBM%203121%20Film%20Ribbon%2001-970.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/3121%20Film%20Ribbon/Web/IBM%203121%20Film%20Ribbon%2001.jpg",
@@ -2350,7 +2365,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/4201%20Printer%20Ribbon/Web/IBM%204201%20Printer%20Ribbon-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/4201%20Printer%20Ribbon/Web/IBM%204201%20Printer%20Ribbon.jpg",
@@ -2360,7 +2375,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Carbon%20Ribbon%20Cartridge/Web/IBM%20Carbon%20Ribbon%20Cartridge%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Carbon%20Ribbon%20Cartridge/Web/IBM%20Carbon%20Ribbon%20Cartridge%2001.jpg",
@@ -2379,7 +2394,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Cartridge%20Film%20Ribbon/Web/IBM%20Cartridge%20Film%20Ribbon%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Cartridge%20Film%20Ribbon/Web/IBM%20Cartridge%20Film%20Ribbon%2001.jpg",
@@ -2393,7 +2408,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Chain%20Printer%20Ribbon/Web/IBM%20Chain%20Printer%20Ribbon-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Chain%20Printer%20Ribbon/Web/IBM%20Chain%20Printer%20Ribbon.jpg",
@@ -2403,7 +2418,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Composer%20Cartridge%20Ribbon/Web/IBM%20Composer%20Cartridge%20Ribbon-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Composer%20Cartridge%20Ribbon/Web/IBM%20Composer%20Cartridge%20Ribbon.jpg",
@@ -2413,7 +2428,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Composer%20Cartridge%20Ribbon/Web/IBM%20Composer%20Cartridge%20Ribbon%2C%20front-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Composer%20Cartridge%20Ribbon/Web/IBM%20Composer%20Cartridge%20Ribbon%2C%20front.jpg",
@@ -2423,7 +2438,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Composer%20Cartridge%20Ribbon/Web/IBM%20Composer%20Cartridge%20Ribbon%2C%20back-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Composer%20Cartridge%20Ribbon/Web/IBM%20Composer%20Cartridge%20Ribbon%2C%20back.jpg",
@@ -2433,7 +2448,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Composer%20Ribbon/Web/IBM%20Composer%20Ribbon%20Box-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Composer%20Ribbon/Web/IBM%20Composer%20Ribbon%20Box.jpg",
@@ -2466,7 +2481,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Correctable%20Film%20Ribbon/Web/IBM%20Correctable%20Film%20Ribbon%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Correctable%20Film%20Ribbon/Web/IBM%20Correctable%20Film%20Ribbon%2001.jpg",
@@ -2479,7 +2494,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Easystrike%20Fabric%20Ribbon/Web/IBM%20Easystrike%20Fabric%20Ribbon%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Easystrike%20Fabric%20Ribbon/Web/IBM%20Easystrike%20Fabric%20Ribbon%2001.jpg",
@@ -2492,7 +2507,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Easystrike%20Multipurpose%20Ribbon%20Cassette/Web/Easystrike%20Multipurpose%20Ribbon%20Cassette-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Easystrike%20Multipurpose%20Ribbon%20Cassette/Web/Easystrike%20Multipurpose%20Ribbon%20Cassette.jpg",
@@ -2502,7 +2517,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "6","6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Easystrike%20Multipurpose%20Ribbon%20Cassette%20%28unreleased%29/Web/IBM%20Easystrike%20Multipurpose%20Ribbon%20Cassette%20%28unreleased%29%2C%20front-800.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Easystrike%20Multipurpose%20Ribbon%20Cassette%20%28unreleased%29/Web/IBM%20Easystrike%20Multipurpose%20Ribbon%20Cassette%20%28unreleased%29%2C%20front.jpg",
@@ -2511,7 +2526,7 @@ block main-content
                             footnote2: "Courtesy of Tom Hardy"
                             })
                         +galleryItem-cardLink(
-                            "6","6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Easystrike%20Multipurpose%20Ribbon%20Cassette%20%28unreleased%29/Web/IBM%20Easystrike%20Multipurpose%20Ribbon%20Cassette%20%28unreleased%29%2C%20back-800.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Easystrike%20Multipurpose%20Ribbon%20Cassette%20%28unreleased%29/Web/IBM%20Easystrike%20Multipurpose%20Ribbon%20Cassette%20%28unreleased%29%2C%20back.jpg",
@@ -2521,7 +2536,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Film%20Ribbons/Web/IBM%20Film%20Ribbons%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Film%20Ribbons/Web/IBM%20Film%20Ribbons%2001.jpg",
@@ -2553,7 +2568,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Film%20Ribbons/Web/IBM%20Film%20Ribbons%2C%20sans%20serif%2007-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Film%20Ribbons/Web/IBM%20Film%20Ribbons%2C%20sans%20serif%2007.jpg",
@@ -2572,7 +2587,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Film%20Ribbon%2C%20pink%20box/Web/IBM%20Film%20Ribbon%2C%20pink%20box%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Film%20Ribbon%2C%20pink%20box/Web/IBM%20Film%20Ribbon%2C%20pink%20box%2001.jpg",
@@ -2586,7 +2601,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/High%20Yield%20Correctable%20Film%20Ribbon/Web/IBM%20High%20Yield%20Correctable%20Film%20Ribbon%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/High%20Yield%20Correctable%20Film%20Ribbon/Web/IBM%20High%20Yield%20Correctable%20Film%20Ribbon%2001.jpg",
@@ -2609,7 +2624,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Office%20System%20Ribbon/Web/IBM%20Office%20System%20Ribbon-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Office%20System%20Ribbon/Web/IBM%20Office%20System%20Ribbon.jpg",
@@ -2619,7 +2634,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Quiet%20Correcting%20Ribbon/Web/IBM%20Quiet%20Correcting%20Ribbon%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Quiet%20Correcting%20Ribbon/Web/IBM%20Quiet%20Correcting%20Ribbon%2001.jpg",
@@ -2632,7 +2647,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbon/Web/IBM%20Ribbon%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbon/Web/IBM%20Ribbon%2001.jpg",
@@ -2647,7 +2662,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbons%2C%20Blue%20and%20Gray%20Box/Web/IBM%20Ribbons%2C%20Blue%20and%20Gray%20Box%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbons%2C%20Blue%20and%20Gray%20Box/Web/IBM%20Ribbons%2C%20Blue%20and%20Gray%20Box%2001.jpg",
@@ -2670,7 +2685,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbon%2C%20Pink%20and%20Black%20Box/Web/IBM%20Ribbon%2C%20Pink%20and%20Black%20Box%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Ribbon%2C%20Pink%20and%20Black%20Box/Web/IBM%20Ribbon%2C%20Pink%20and%20Black%20Box%2001.jpg",
@@ -2696,7 +2711,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Superior%20Nylon%20Ribbon/Web/Superior%20Nylon%20Ribbon%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Superior%20Nylon%20Ribbon/Web/Superior%20Nylon%20Ribbon%2001.jpg",
@@ -2725,7 +2740,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/T-III%20RIBBON/Web/IBM%20T-III%20RIBBON-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/T-III%20RIBBON/Web/IBM%20T-III%20RIBBON.jpg",
@@ -2735,7 +2750,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Tech%20III%20Ribbon/Web/IBM%20Tech%20III%20Ribbon%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Tech%20III%20Ribbon/Web/IBM%20Tech%20III%20Ribbon%2001.jpg",
@@ -2748,7 +2763,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Typewriter%20Ribbon/Web/IBM%20Typewriter%20Ribbons%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Typewriter%20Ribbon/Web/IBM%20Typewriter%20Ribbons%2001.jpg",
@@ -2775,7 +2790,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Typewriter%20Ribbon%2C%20Pink%20and%20Black%20Box/Web/IBM%20Typewriter%20Ribbons%2C%20Pink%20and%20Black%20Box%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Ribbon/Typewriter%20Ribbon%2C%20Pink%20and%20Black%20Box/Web/IBM%20Typewriter%20Ribbons%2C%20Pink%20and%20Black%20Box%2001.jpg",
@@ -2799,7 +2814,7 @@ block main-content
                             hr
                             h4 Selectric Composer Box
                         +galleryItem-cardLink(
-                            "12","12",
+                            "12","12","12",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Selectric%20Composer%20Boxes/Web/Selectric%20Composer%20Boxes%2001-970.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Selectric%20Composer%20Boxes/Web/Selectric%20Composer%20Boxes%2001.jpg",
@@ -2815,7 +2830,7 @@ block main-content
                             hr
                             h4 Supply Kits
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Supply%20Kit/Web/IBM%20Supply%20Kit%20Stripes%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Supply%20Kit/Web/IBM%20Supply%20Kit%20Stripes%2001.jpg",
@@ -2853,7 +2868,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Supply%20Kit/Web/IBM%20Supply%20Kit%20Confetti%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Supply%20Kit/Web/IBM%20Supply%20Kit%20Confetti%2001.jpg",
@@ -2874,7 +2889,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Supply%20Kit/Web/IBM%20Supply%20Kit%20Flowers%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Supply%20Kit/Web/IBM%20Supply%20Kit%20Flowers%2001.jpg",
@@ -2884,7 +2899,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Supply%20Kit/Web/IBM%20Supply%20Kit%20Flowers%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Supply%20Kit/Web/IBM%20Supply%20Kit%20Flowers%2002.jpg",
@@ -2906,7 +2921,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Supply%20Kit/Web/IBM%20Supply%20Kit%20Logo%20Pattern-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Supply%20Kit/Web/IBM%20Supply%20Kit%20Logo%20Pattern.jpg",
@@ -2922,7 +2937,7 @@ block main-content
                             hr
                             h4 Tape
                         +galleryItem-cardLink(
-                            "6","6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Tape/Web/IBM%20Lift%20Off%20Tape%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Tape/Web/IBM%20Lift%20Off%20Tape%2001.jpg",
@@ -2932,7 +2947,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "6","6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Tape/Web/IBM%20Lift%20off%20Tape%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Tape/Web/IBM%20Lift%20off%20Tape%2002.jpg",
@@ -2948,7 +2963,7 @@ block main-content
                             hr
                             h4 Toner
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Toner/Web/IBM%20Toner%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Toner/Web/IBM%20Toner%2001.jpg",
@@ -2958,7 +2973,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Toner/Web/IBM%20Toner%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Toner/Web/IBM%20Toner%2002.jpg",
@@ -2968,7 +2983,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Toner/Web/IBM%20Toner%2003-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Toner/Web/IBM%20Toner%2003.jpg",
@@ -2978,7 +2993,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Toner/Web/IBM%20Toner%2004-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Toner/Web/IBM%20Toner%2004.jpg",
@@ -2988,7 +3003,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Toner/Web/IBM%20Toner%20Blue%20Front-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Toner/Web/IBM%20Toner%20Blue%20Front.jpg",
@@ -3002,7 +3017,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Toner/Web/IBM%20Toner%20Green%20Front-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Toner/Web/IBM%20Toner%20Green%20Front.jpg",
@@ -3018,7 +3033,7 @@ block main-content
                             hr
                             h4 Typewriter Ball
                         +galleryItem-cardLink(
-                            "12","12",
+                            "12","12","12",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Packaging/Typewriter%20Ball/Web/IBM%20Typewriter%20Ball%2001-970.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Packaging/Typewriter%20Ball/Web/IBM%20Typewriter%20Ball%2001.jpg",
@@ -3054,9 +3069,9 @@ block main-content
                     //- 
                     //- =============================================================================================
                     +projectDivider("Collateral")
-                    .grid-x.grid-margin-x.align-center.foldMe#collateral(data-magellan-target="collateral")
+                    .grid-x.grid-margin-x.align-center#collateral(data-magellan-target="collateral")
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Collateral/75th%20Anniversary%20Production%20Mechanical/Web/75th%20Anniversary%20Production%20Mechanical%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Collateral/75th%20Anniversary%20Production%20Mechanical/Web/75th%20Anniversary%20Production%20Mechanical%2001.jpg",
@@ -3073,7 +3088,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Collateral/Business%20Conduct%20Guidelines/Web/IBM%20Business%20Conduct%20Guidelines-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Collateral/Business%20Conduct%20Guidelines/Web/IBM%20Business%20Conduct%20Guidelines.jpg",
@@ -3111,7 +3126,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Collateral/Color%20for%20Computers/Web/Color%20for%20Computers%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Collateral/Color%20for%20Computers/Web/Color%20for%20Computers%2001.jpg",
@@ -3134,7 +3149,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Collateral/Engineering%20Opportunities/Web/IBM%20Engineering%20Opportunities-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Collateral/Engineering%20Opportunities/Web/IBM%20Engineering%20Opportunities.jpg",
@@ -3144,7 +3159,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Collateral/IBM%20Palisades%20Advanced%20Business%20Institute/Web/IBM%20Palisades%20Advanced%20Business%20Institute.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Collateral/IBM%20Palisades%20Advanced%20Business%20Institute/Web/IBM%20Palisades%20Advanced%20Business%20Institute.jpg",
@@ -3154,7 +3169,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Collateral/IBM%20Scarf/Web/IBM%20Scarf%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Collateral/IBM%20Scarf/Web/IBM%20Scarf%2001.jpg",
@@ -3171,7 +3186,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Collateral/IBM%20Worlds%20Fair/Web/IBM%20Worlds%20Fair%20catalog-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Collateral/IBM%20Worlds%20Fair/Web/IBM%20Worlds%20Fair%20catalog.jpg",
@@ -3207,7 +3222,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Collateral/IBM%20Worlds%20Fair/Web/IBM%20Worlds%20Fair%20pamphlet%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Collateral/IBM%20Worlds%20Fair/Web/IBM%20Worlds%20Fair%20pamphlet%2001.jpg",
@@ -3226,7 +3241,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Collateral/Post%20Graduate%20Education%20Program%20for%20Engineers%20and%20Scientists/Web/IBM%20Post%20Graduate%20Education%20Program%20for%20Engineers%20and%20Scientists%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Collateral/Post%20Graduate%20Education%20Program%20for%20Engineers%20and%20Scientists/Web/IBM%20Post%20Graduate%20Education%20Program%20for%20Engineers%20and%20Scientists%2001.jpg",
@@ -3244,7 +3259,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Collateral/The%20New%20Era%20Of%20Operational%20Control/Web/The%20New%20Era%20Of%20Operational%20Control%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Collateral/The%20New%20Era%20Of%20Operational%20Control/Web/The%20New%20Era%20Of%20Operational%20Control%2001.jpg",
@@ -3277,14 +3292,14 @@ block main-content
                     //- =============================================================================================
 
                     +projectDivider("The Rebus")
-                    //- .grid-x.grid-margin-x.align-center.foldMe
+                    //- .grid-x.grid-margin-x.align-center
                         .cell.large-7.medium-9.text-left
                             :markdown-it(html typographer plugins=['markdown-it-sup'])
                                 Rebus paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero amet deserunt, qui deleniti quo quia labore sequi recusandae cupiditate hic pariatur, necessitatibus dolorem eos natus itaque dicta quam! Quod labore amet et saepe perferendis unde soluta? Eaque nesciunt numquam, placeat, totam deleniti asperiores voluptatibus quibusdam laboriosam quo nostrum ducimus dolores optio modi unde blanditiis expedita reprehenderit eligendi, explicabo ad hic recusandae dolorem. Saepe, numquam eum minus voluptatum sapiente ipsum itaque impedit perspiciatis ut! Beatae nobis ad labore, dolores praesentium natus. Enim alias maxime odio quibusdam ea voluptatibus id pariatur, necessitatibus eos, voluptatum, aliquam aspernatur distinctio repellendus repellat omnis sit eum?
 
-                    .grid-x.grid-margin-x.align-center.foldMe#rebus(data-magellan-target="rebus")
+                    .grid-x.grid-margin-x.align-center#rebus(data-magellan-target="rebus")
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Production%20Art%2C%20marker%20sketch-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Production%20Art%2C%20marker%20sketch.jpg",
@@ -3294,7 +3309,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Production%20Art%2C%20proof%20negative-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Production%20Art%2C%20proof%20negative.jpg",
@@ -3304,7 +3319,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Production%20Art%2C%20proof%20positive-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Production%20Art%2C%20proof%20positive.jpg",
@@ -3314,7 +3329,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Poster/Web/IBM%20Rebus%20Poster%201981-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Poster/Web/IBM%20Rebus%20Poster%201981.jpg",
@@ -3324,7 +3339,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Think%20Magazine/Web/IBM%20Rebus%20Think%20Magazine%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Think%20Magazine/Web/IBM%20Rebus%20Think%20Magazine%2001.jpg",
@@ -3334,7 +3349,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Poster/Web/IBM%20Rebus%20Poster%201991-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Poster/Web/IBM%20Rebus%20Poster%201991.jpg",
@@ -3354,7 +3369,7 @@ block main-content
                         //-     })
 
                         +galleryItem-cardLink(
-                            "6","6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Environmental%20Graphics/Web/IBM%20Rebus%20Design%20Studio%2C%20Austin%20TX-970.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Environmental%20Graphics/Web/IBM%20Rebus%20Design%20Studio%2C%20Austin%20TX.jpg",
@@ -3364,7 +3379,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "6", "6",
+                            "6","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Environmental%20Graphics/Web/IBM%20Rebus%20Think%20Conference%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Environmental%20Graphics/Web/IBM%20Rebus%20Think%20Conference%2001.jpg",
@@ -3380,7 +3395,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Hand%20Cut%20Paper%20Color%20Exploration%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Hand%20Cut%20Paper%20Color%20Exploration%2001.jpg",
@@ -3391,7 +3406,7 @@ block main-content
 
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Hand%20Cut%20Paper%20Color%20Exploration%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Hand%20Cut%20Paper%20Color%20Exploration%2002.jpg",
@@ -3401,7 +3416,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Hand%20Cut%20Paper%20Color%20Exploration%2003-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Original%20Art/Web/IBM%20Rebus%20Hand%20Cut%20Paper%20Color%20Exploration%2003.jpg",
@@ -3411,7 +3426,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Banner/Web/IBM%20Rebus%20Banner-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Banner/Web/IBM%20Rebus%20Banner.jpg",
@@ -3421,7 +3436,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Recruitment%20Poster/Web/IBM%20Rebus%20On%20Campus%20recruitment%20poster-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Recruitment%20Poster/Web/IBM%20Rebus%20On%20Campus%20recruitment%20poster.jpg",
@@ -3431,7 +3446,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Keyboard/Web/IBM%20Rebus%20Keyboard%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Keyboard/Web/IBM%20Rebus%20Keyboard%2001.jpg",
@@ -3448,7 +3463,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Lunch%20Box/Web/IBM%20Rebus%20Lunchbox%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Lunch%20Box/Web/IBM%20Rebus%20Lunchbox%2001.jpg",
@@ -3463,7 +3478,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Mouse%20Pad/Web/IBM%20Rebus%20mouse%20pad%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Mouse%20Pad/Web/IBM%20Rebus%20mouse%20pad%2001.jpg",
@@ -3477,7 +3492,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v1%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v1%2001.jpg",
@@ -3492,7 +3507,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v2%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v2%2001.jpg",
@@ -3506,7 +3521,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v3%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v3%2001.jpg",
@@ -3520,7 +3535,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v4%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Mug/Web/IBM%20Rebus%20Mug%20v4%2001.jpg",
@@ -3535,7 +3550,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Clothing/Web/IBM%20Rebus%20Hat-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Clothing/Web/IBM%20Rebus%20Hat.jpg",
@@ -3545,7 +3560,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Clothing/Web/IBM%20Rebus%20Tshirt-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Clothing/Web/IBM%20Rebus%20Tshirt.jpg",
@@ -3555,7 +3570,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Clothing/Web/IBM%20Sweatshirt%201991%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Clothing/Web/IBM%20Sweatshirt%201991%2001.jpg",
@@ -3565,7 +3580,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Notebook/Web/IBM%20Rebus%20Notebook%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Notebook/Web/IBM%20Rebus%20Notebook%2001.jpg",
@@ -3575,7 +3590,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Notepad/Web/IBM%20Rebus%20Notepad%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Notepad/Web/IBM%20Rebus%20Notepad%2001.jpg",
@@ -3590,7 +3605,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Pins%20and%20Buttons/Web/IBM%20Rebus%20Button%2003-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Pins%20and%20Buttons/Web/IBM%20Rebus%20Button%2003.jpg",
@@ -3600,7 +3615,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Pins%20and%20Buttons/Web/IBM%20Rebus%20Pin%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Pins%20and%20Buttons/Web/IBM%20Rebus%20Pin%2001.jpg",
@@ -3610,7 +3625,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Scarf/Web/IBM%20Rebus%20Scarf%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Scarf/Web/IBM%20Rebus%20Scarf%2001.jpg",
@@ -3624,7 +3639,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Bee%20Doll%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Bee%20Doll%2001.jpg",
@@ -3649,7 +3664,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Teddy%20Bear%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Rebus/Stuffed%20Animals/Web/IBM%20Rebus%20Teddy%20Bear%2001.jpg",
@@ -3688,9 +3703,9 @@ block main-content
                     //- =============================================================================================
 
                     +projectDivider("IBM Gallery Exhibits")
-                    .grid-x.grid-margin-x.align-center.foldMe#galleryExhibits(data-magellan-target="galleryExhibits")
+                    .grid-x.grid-margin-x.align-center#galleryExhibits(data-magellan-target="galleryExhibits")
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/IBM%20Gallery%20Exhibits/30%20Contemporary%20Black%20Artists%201969/Web/IBM%20Gallery%20Catalog%2C%2030%20Contemporary%20Black%20Artists%201969%2C%20front-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/IBM%20Gallery%20Exhibits/30%20Contemporary%20Black%20Artists%201969/Web/IBM%20Gallery%20Catalog%2C%2030%20Contemporary%20Black%20Artists%201969%2C%20front.jpg",
@@ -3705,7 +3720,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/IBM%20Gallery%20Exhibits/American%20Folk%20Art/Web/American%20Folk%20Art-%20Pamphlet-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/IBM%20Gallery%20Exhibits/American%20Folk%20Art/Web/American%20Folk%20Art-%20Pamphlet.jpg",
@@ -3715,7 +3730,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/IBM%20Gallery%20Exhibits/American%20Painters%20of%20the%2019th%20Century/Web/American%20Painters%20of%20the%2019th%20Century-%20Pamphlet-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/IBM%20Gallery%20Exhibits/American%20Painters%20of%20the%2019th%20Century/Web/American%20Painters%20of%20the%2019th%20Century-%20Pamphlet.jpg",
@@ -3725,7 +3740,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/IBM%20Gallery%20Exhibits/Draw%2C%20Cut%2C%20Scratch%2C%20Etch%20-%20PRINT%201964/Web/Draw%2C%20Cut%2C%20Scratch%2C%20Etch%20-%20PRINT%201964-%20Pamphlet-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/IBM%20Gallery%20Exhibits/Draw%2C%20Cut%2C%20Scratch%2C%20Etch%20-%20PRINT%201964/Web/Draw%2C%20Cut%2C%20Scratch%2C%20Etch%20-%20PRINT%201964-%20Pamphlet.jpg",
@@ -3735,7 +3750,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/IBM%20Gallery%20Exhibits/Draw%2C%20Cut%2C%20Scratch%2C%20Etch%20-%20PRINT%201964/Web/IBM%20Gallery%20Exhibit-%20Draw%2C%20Cut%2C%20Scratch%2C%20Etch%20-%20PRINT%201964%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/IBM%20Gallery%20Exhibits/Draw%2C%20Cut%2C%20Scratch%2C%20Etch%20-%20PRINT%201964/Web/IBM%20Gallery%20Exhibit-%20Draw%2C%20Cut%2C%20Scratch%2C%20Etch%20-%20PRINT%201964%2001.jpg",
@@ -3754,7 +3769,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/IBM%20Gallery%20Exhibits/E%20McKnight%20Kauffer%20IBM%20Gallery%20Exhibit%20Brochure%201969/Web/E%20McKnight%20Kauffer%20IBM%20Gallery%20Exhibit%20Brochure%201969%2C%20front-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/IBM%20Gallery%20Exhibits/E%20McKnight%20Kauffer%20IBM%20Gallery%20Exhibit%20Brochure%201969/Web/E%20McKnight%20Kauffer%20IBM%20Gallery%20Exhibit%20Brochure%201969%2C%20front.jpg",
@@ -3769,7 +3784,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/IBM%20Gallery%20Exhibits/Leonardo%20DaVinci%20Catalog%201969%2C%20v1/Web/IBM%20Gallery%20Exhibit-%20Leonardo%20DaVinci%20Catalog%2C%20v1-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/IBM%20Gallery%20Exhibits/Leonardo%20DaVinci%20Catalog%201969%2C%20v1/Web/IBM%20Gallery%20Exhibit-%20Leonardo%20DaVinci%20Catalog%2C%20v1.jpg",
@@ -3798,7 +3813,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/IBM%20Gallery%20Exhibits/Leonardo%20DaVinci%20Catalog%201969%2C%20v2/Web/IBM%20Gallery%20Exhibit-%20Leonardo%20DaVinci%20Catalog%201969%2C%20v2-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/IBM%20Gallery%20Exhibits/Leonardo%20DaVinci%20Catalog%201969%2C%20v2/Web/IBM%20Gallery%20Exhibit-%20Leonardo%20DaVinci%20Catalog%201969%2C%20v2.jpg",
@@ -3831,7 +3846,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/IBM%20Gallery%20Exhibits/Mexican%20Folk%20Art%201969/Web/IBM%20Gallery-%20Mexican%20Folk%20Art%201969-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/IBM%20Gallery%20Exhibits/Mexican%20Folk%20Art%201969/Web/IBM%20Gallery-%20Mexican%20Folk%20Art%201969.jpg",
@@ -3841,7 +3856,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/IBM%20Gallery%20Exhibits/Portraits%20by%20Americans/Web/Portraits%20by%20Americans-%20Pamphlet-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/IBM%20Gallery%20Exhibits/Portraits%20by%20Americans/Web/Portraits%20by%20Americans-%20Pamphlet.jpg",
@@ -3865,9 +3880,9 @@ block main-content
                     //- =============================================================================================
 
                     +projectDivider("Stationery")
-                    .grid-x.grid-margin-x.align-center.foldMe#stationery(data-magellan-target="stationery")
+                    .grid-x.grid-margin-x.align-center#stationery(data-magellan-target="stationery")
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Business%20Card%2C%20Marion%20Swannie-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Business%20Card%2C%20Marion%20Swannie.jpg",
@@ -3877,7 +3892,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Business%20Card-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Business%20Card.jpg",
@@ -3887,7 +3902,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Folder%2001%20Design%20Program-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Folder%2001%20Design%20Program.jpg",
@@ -3897,7 +3912,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Folder%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Folder%2002.jpg",
@@ -3907,7 +3922,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Envelope%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Envelope%2001.jpg",
@@ -3917,7 +3932,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Envelope%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Envelope%2002.jpg",
@@ -3927,7 +3942,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Envelope%20Credit%20Corporation%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Envelope%20Credit%20Corporation%2001.jpg",
@@ -3937,7 +3952,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Envelope%20Internal%20Mail%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Envelope%20Internal%20Mail%2001.jpg",
@@ -3947,7 +3962,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Envelope%20Internal%20Mail%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Envelope%20Internal%20Mail%2002.jpg",
@@ -3957,7 +3972,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Letterhead%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Letterhead%2001.jpg",
@@ -3967,7 +3982,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Letterhead%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Letterhead%2002.jpg",
@@ -3977,7 +3992,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Letterhead%20Internal%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Letterhead%20Internal%2001.jpg",
@@ -3987,7 +4002,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Letterhead%20Internal%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Letterhead%20Internal%2002.jpg",
@@ -3997,7 +4012,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Letterhead%20Red-Blue-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Letterhead%20Red-Blue.jpg",
@@ -4007,7 +4022,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Letterhead%20Script%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Letterhead%20Script%2001.jpg",
@@ -4017,7 +4032,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Letterhead%20Script%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Letterhead%20Script%2002.jpg",
@@ -4027,7 +4042,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Letterhead%20Think%2001.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Letterhead%20Think%2001.jpg",
@@ -4037,7 +4052,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Envelope%20Think-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Envelope%20Think.jpg",
@@ -4047,7 +4062,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Stationary%20Suite%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Stationary%20Suite%2001.jpg",
@@ -4057,7 +4072,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Stationary%20Suite%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Stationary%20Suite%2002.jpg",
@@ -4067,7 +4082,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Mailing%20Sticker%20First%20Class%20Mail%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Mailing%20Sticker%20First%20Class%20Mail%2001.jpg",
@@ -4077,7 +4092,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Mailing%204th%20Class%20Mail-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Mailing%204th%20Class%20Mail.jpg",
@@ -4087,7 +4102,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Mailing%20Sticker%20Internal-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stationery/Web/IBM%20Mailing%20Sticker%20Internal.jpg",
@@ -4111,9 +4126,9 @@ block main-content
                     //- =============================================================================================
 
                     +projectDivider("Signage")
-                    .grid-x.grid-margin-x.align-center.foldMe#signage(data-magellan-target="signage")
+                    .grid-x.grid-margin-x.align-center#signage(data-magellan-target="signage")
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Signage/Web/IBM%20Signage-%20Exterior%2C%20Building%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Signage/Web/IBM%20Signage-%20Exterior%2C%20Building%2001.jpg",
@@ -4123,7 +4138,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Signage/Web/IBM%20Signage-%20Exterior%2C%20Division-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Signage/Web/IBM%20Signage-%20Exterior%2C%20Division.jpg",
@@ -4133,7 +4148,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Signage/Web/IBM%20Signage-%20Interior%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Signage/Web/IBM%20Signage-%20Interior%2001.jpg",
@@ -4143,7 +4158,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Signage/Web/IBM%20Signage-%20Interior%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Signage/Web/IBM%20Signage-%20Interior%2002.jpg",
@@ -4153,7 +4168,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Signage/Web/IBM%20Signage-%20Interior%2003-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Signage/Web/IBM%20Signage-%20Interior%2003.jpg",
@@ -4182,7 +4197,7 @@ block main-content
                     +projectDivider("Fabrics & Wallpaper")(class="")
                     .grid-x.grid-margin-x.align-center
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Fabrics%20and%20Wallpaper/Web/IBM%20Logo%20Drapes%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Fabrics%20and%20Wallpaper/Web/IBM%20Logo%20Drapes%2001.jpg",
@@ -4195,7 +4210,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Fabrics%20and%20Wallpaper/Web/IBM%20Wallpaper%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Fabrics%20and%20Wallpaper/Web/IBM%20Wallpaper%2001.jpg",
@@ -4205,7 +4220,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Fabrics%20and%20Wallpaper/Web/IBM%20Wallpaper%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Fabrics%20and%20Wallpaper/Web/IBM%20Wallpaper%2002.jpg",
@@ -4215,7 +4230,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Fabrics%20and%20Wallpaper/Web/IBM%20Wallpaper%2003-450.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Fabrics%20and%20Wallpaper/Web/IBM%20Wallpaper%2003.jpg",
@@ -4242,9 +4257,9 @@ block main-content
                     //- =============================================================================================
 
                     +projectDivider("Stocks")
-                    .grid-x.grid-margin-x.align-center.foldMe#stocks(data-magellan-target="stocks")
+                    .grid-x.grid-margin-x.align-center#stocks(data-magellan-target="stocks")
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Report%20to%20Stockholder%201977.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Report%20to%20Stockholder%201977.jpg",
@@ -4254,7 +4269,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stock%20Certificate%20Postcard.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stock%20Certificate%20Postcard.jpg",
@@ -4264,7 +4279,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stock%20Ownership%20Letter.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stock%20Ownership%20Letter.jpg",
@@ -4274,7 +4289,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stock%2C%20IRS%20notice%2C%20front.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stock%2C%20IRS%20notice%2C%20front.jpg",
@@ -4287,7 +4302,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stock%2C%20Quarterly%20Dividend%20Postcard%201961%2C%20front.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stock%2C%20Quarterly%20Dividend%20Postcard%201961%2C%20front.jpg",
@@ -4300,7 +4315,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stock%2C%20Quarterly%20Dividend%20Postcard%201962%2C%20front.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stock%2C%20Quarterly%20Dividend%20Postcard%201962%2C%20front.jpg",
@@ -4313,7 +4328,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stock%2C%20Quarterly%20Dividend%20Postcard%201963%2C%20front.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stock%2C%20Quarterly%20Dividend%20Postcard%201963%2C%20front.jpg",
@@ -4326,7 +4341,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stock%2C%20Quarterly%20Dividend%20Postcard%201964%2C%20front.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stock%2C%20Quarterly%20Dividend%20Postcard%201964%2C%20front.jpg",
@@ -4339,7 +4354,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stock-%20Standard%20Listed%20Stock%20Reports%201960%2C%20front.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stock-%20Standard%20Listed%20Stock%20Reports%201960%2C%20front.jpg",
@@ -4352,7 +4367,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stockholder%20Annual%20Meeting%20Invitation%2C%201961.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stockholder%20Annual%20Meeting%20Invitation%2C%201961.jpg",
@@ -4362,7 +4377,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stockholder%20Change%20of%20Address%20Postcard.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stockholder%20Change%20of%20Address%20Postcard.jpg",
@@ -4372,7 +4387,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stockholder%20Letter%201961.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stockholder%20Letter%201961.jpg",
@@ -4382,7 +4397,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stockholder%20Letter%201961%2002.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stockholder%20Letter%201961%2002.jpg",
@@ -4392,7 +4407,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stockholder%20Letter%201961%2003.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stockholder%20Letter%201961%2003.jpg",
@@ -4402,7 +4417,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stockholder%20Letter%201963.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stockholder%20Letter%201963.jpg",
@@ -4412,7 +4427,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stockholder%20Letter%201964.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stockholder%20Letter%201964.jpg",
@@ -4422,7 +4437,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stockholder%20SSN%20Request%20Postcard%2C%20front.jpg",
                             LG: "https://assets.paulrand.design/Works/IBM/Stocks/Web/IBM%20Stockholder%20SSN%20Request%20Postcard%2C%20front.jpg",

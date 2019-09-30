@@ -810,7 +810,7 @@
                     {
                         id: "UCLA",
                         text: "UCLA",
-                        thumbnail: "https://assets.paulrand.design/Works/UCLA/1990%20UCLA%20Extension%2C%20Winter%20Quarter/Web/UCLA%20Extension%2C%20Winter%20Quarter%201990-200.jpg"
+                        thumbnail: "https://assets.paulrand.design/Works/UCLA/1990%20UCLA%20Extension%2C%20Winter%20Quarter/Web/UCLA%20Extension%2C%20Winter%20Quarter%201990%2001-200.jpg"
                 },
                     {
                         id: "United-Jewish-Appeal",

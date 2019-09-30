@@ -19,7 +19,7 @@ block main-content
             .grid-x.grid-margin-x.align-center.small-mb4
                 .small-12.cell.text-center
                     //- /*==============================  CLIENT  ==============================*/
-                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    h1.text-center.small-mb2.medium-mb3.large-mb3(data-aos="fade-up")!= pageTitle
                     if dates == 'CHANGE_ME'
                     else
                         p!= dates
@@ -44,7 +44,7 @@ block main-content
                     +projectDivider("Stationery")
                     .grid-x.grid-margin-x.align-center
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/Creative%20Media%20Center/Stationery/Web/Creative%20Media%20Center%20stationery%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/Creative%20Media%20Center/Stationery/Web/Creative%20Media%20Center%20stationery%2001.jpg",
@@ -53,7 +53,7 @@ block main-content
                             footnote2: "CHANGE_ME"
                             })
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/Creative%20Media%20Center/Stationery/Web/Creative%20Media%20Center%20stationery%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/Creative%20Media%20Center/Stationery/Web/Creative%20Media%20Center%20stationery%2002.jpg",
@@ -63,7 +63,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/Creative%20Media%20Center/Stationery/Web/Creative%20Media%20Center%20envelope%20front-450.jpg",
                             LG: "https://assets.paulrand.design/Works/Creative%20Media%20Center/Stationery/Web/Creative%20Media%20Center%20envelope%20front.jpg",
@@ -74,7 +74,7 @@ block main-content
 
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/Creative%20Media%20Center/Stationery/Web/Creative%20Media%20Center%20postcard%2C%20front-450.jpg",
                             LG: "https://assets.paulrand.design/Works/Creative%20Media%20Center/Stationery/Web/Creative%20Media%20Center%20postcard%2C%20front.jpg",

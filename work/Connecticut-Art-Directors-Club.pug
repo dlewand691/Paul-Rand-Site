@@ -19,7 +19,7 @@ block main-content
             .grid-x.grid-margin-x.align-center.small-mb4
                 .small-12.cell.text-center
                     //- /*==============================  CLIENT  ==============================*/
-                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    h1.text-center.small-mb2.medium-mb3.large-mb3(data-aos="fade-up")!= pageTitle
                     if dates == 'CHANGE_ME'
                     else
                         p!= dates
@@ -37,7 +37,7 @@ block main-content
             .grid-x.grid-margin-x.align-center
 
                 +galleryItem-cardLink(
-                    "6", "6",
+                    "6","6","6",
                     {
                     SM: "https://assets.paulrand.design/Works/Connecticut%20Art%20Directors%20Club/Stationery/Web/Connecticut%20Art%20Director%27s%20Club%20letterhead-450.jpg",
                     LG: "https://assets.paulrand.design/Works/Connecticut%20Art%20Directors%20Club/Stationery/Web/Connecticut%20Art%20Director%27s%20Club%20letterhead.jpg",
@@ -47,7 +47,7 @@ block main-content
                     })
 
                 +galleryItem-cardLink(
-                    "6", "6",
+                    "6","6","6",
                     {
                     SM: "https://assets.paulrand.design/Works/Connecticut%20Art%20Directors%20Club/Stationery/Web/Connecticut%20Art%20Director%27s%20Club%20envelope%2C%20front-450.jpg",
                     LG: "https://assets.paulrand.design/Works/Connecticut%20Art%20Directors%20Club/Stationery/Web/Connecticut%20Art%20Director%27s%20Club%20envelope%2C%20front.jpg",

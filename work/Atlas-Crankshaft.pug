@@ -19,7 +19,7 @@ block main-content
             .grid-x.grid-margin-x.align-center.small-mb4
                 .small-12.cell.text-center
                     //- /*==============================  CLIENT  ==============================*/
-                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    h1.text-center.small-mb2.medium-mb3.large-mb3(data-aos="fade-up")!= pageTitle
                     if dates == 'CHANGE_ME'
                     else
                         p!= dates
@@ -142,7 +142,7 @@ block main-content
             .grid-x.grid-margin-x.align-center
                 .cell.text-center
                     +galleryItem-cardLink(
-                        "12", "12",
+                        "12","12","12",
                         {
                         SM: "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%20Coin%2C%20front-970.jpg",
                         LG: "https://assets.paulrand.design/Works/Atlas%20Crankshaft/Web/Atlas%20Crankshaft%20Coin%2C%20front.jpg",

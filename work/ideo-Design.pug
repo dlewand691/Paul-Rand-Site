@@ -18,7 +18,7 @@ block main-content
             .grid-x.grid-margin-x.align-center.small-mb4
                 .small-12.cell.text-center
                     //- /*==============================  CLIENT  ==============================*/
-                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    h1.text-center.small-mb2.medium-mb3.large-mb3(data-aos="fade-up")!= pageTitle
                     if dates == 'CHANGE_ME'
                     else
                         p!= dates
@@ -36,7 +36,7 @@ block main-content
             .grid-x.grid-margin-x.align-center
 
                 +galleryItem-cardLink(
-                    "4", "6",
+                    "4","6","6",
                     {
                     SM: "https://assets.paulrand.design/Works/ideo%20Design/Stationery/Web/ideo%20letterhead%2001-450.jpg",
                     LG: "https://assets.paulrand.design/Works/ideo%20Design/Stationery/Web/ideo%20letterhead%2001.jpg",
@@ -46,7 +46,7 @@ block main-content
                     })
 
                 +galleryItem-cardLink(
-                    "4", "6",
+                    "4","6","6",
                     {
                     SM: "https://assets.paulrand.design/Works/ideo%20Design/Stationery/Web/ideo%20letterhead%2002-450.jpg",
                     LG: "https://assets.paulrand.design/Works/ideo%20Design/Stationery/Web/ideo%20letterhead%2002.jpg",
@@ -56,7 +56,7 @@ block main-content
                     })
 
                 +galleryItem-cardLink(
-                    "4", "6",
+                    "4","6","6",
                     {
                     SM: "https://assets.paulrand.design/Works/ideo%20Design/Stationery/Web/ideo%20envelope%20front-450.jpg",
                     LG: "https://assets.paulrand.design/Works/ideo%20Design/Stationery/Web/ideo%20envelope%20front.jpg",
@@ -66,7 +66,7 @@ block main-content
                     })
 
                 +galleryItem-cardLink(
-                    "4", "6",
+                    "4","6","6",
                     {
                     SM: "https://assets.paulrand.design/Works/ideo%20Design/Stationery/Web/IDEO%20business%20card%20front-450.jpg",
                     LG: "https://assets.paulrand.design/Works/ideo%20Design/Stationery/Web/IDEO%20business%20card%20front.jpg",
@@ -76,7 +76,7 @@ block main-content
                     })
 
                 +galleryItem-cardLink(
-                    "4", "6",
+                    "4","6","6",
                     {
                     SM: "https://assets.paulrand.design/Works/ideo%20Design/Stationery/Web/ideo%20business%20card%20back-450.jpg",
                     LG: "https://assets.paulrand.design/Works/ideo%20Design/Stationery/Web/ideo%20business%20card%20back.jpg",

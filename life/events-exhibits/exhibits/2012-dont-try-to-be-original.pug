@@ -66,14 +66,14 @@ block main-content
         .grid-container
             .grid-x.grid-margin-x.small-mb3.align-center
                 .large-7.medium-8.small-12.cell.text-center
-                    h1.reveal-enter-top!= pageTitle
+                    h1(data-aos="fade-up")!= pageTitle
 
                     unless pageSubtitle1 == 'CHANGE_ME'
-                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle1
+                        em.text-gray.t16(data-aos="fade-up")!= pageSubtitle1
                         br
 
                     unless pageSubtitle2 == 'CHANGE_ME'
-                        em.text-gray.t16.reveal-enter-bottom!= pageSubtitle2
+                        em.text-gray.t16(data-aos="fade-up")!= pageSubtitle2
 
                     .small-mt3.small-mb2
                         +imageZoomSingle(
@@ -104,7 +104,7 @@ block main-content
             +projectDivider("CHANGE_ME")(class="")
             .grid-x.grid-margin-x.align-center
                 +galleryItem-cardLink(
-                    "6", "6",
+                    "6","6","6",
                     {
                     SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%20Poster%2C%20front%2001-450.jpg",
                     LG: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%20Poster%2C%20front%2001.jpg",
@@ -114,7 +114,7 @@ block main-content
                     })
 
                 +galleryItem-cardLink(
-                    "6", "6",
+                    "6","6","6",
                     {
                     SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%20Poster%2C%20back%2001-450.jpg",
                     LG: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%20Poster%2C%20back%2001.jpg",
@@ -124,7 +124,7 @@ block main-content
                     })
 
                 //- +galleryItem-cardLink(
-                //-     "6", "6",
+                //-     "6","6","6",
                 //-     {
                 //-     SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%20Poster%2C%20front%2002-450.jpg",
                 //-     LG: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%20Poster%2C%20front%2002.jpg",
@@ -134,7 +134,7 @@ block main-content
                 //-     })
                 //- 
                 //- +galleryItem-cardLink(
-                //-     "6", "6",
+                //-     "6","6","6",
                 //-     {
                 //-     SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%20Poster%2C%20back%2002-450.jpg",
                 //-     LG: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%20Poster%2C%20back%2002.jpg",
@@ -144,7 +144,7 @@ block main-content
                 //-     })
 
                 +galleryItem-cardLink(
-                    "4", "6",
+                    "4","6","6",
                     {
                     SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%20Sticker-450.jpg",
                     LG: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2012%20Curate%20and%20Design%20Edinburgh%20exhibit/Web/Curate%20and%20Design%20Exhibit%20Sticker.jpg",

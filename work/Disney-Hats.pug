@@ -19,7 +19,7 @@ block main-content
             .grid-x.grid-margin-x.align-center.small-mb4
                 .small-12.cell.text-center
                     //- /*==============================  CLIENT  ==============================*/
-                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    h1.text-center.small-mb2.medium-mb3.large-mb3(data-aos="fade-up")!= pageTitle
                     if dates == 'CHANGE_ME'
                     else
                         p!= dates
@@ -29,7 +29,13 @@ block main-content
                         "DIVIDER_yes",
                         "Logo",
                         "top","1","1",
-                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Disney-Hats-1946.svg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Disney-Hats-1946.svg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Disney-Hats-1946.svg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Disney-Hats-1946.svg", title: "", footnote: ""}
+                        )(class="darkMode-invert")
+
+                    +galleryItem-blockGrid(
+                        "DIVIDER_no",
+                        "CHANGE_ME",
+                        "top","1","1",
                         {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Disney-Hats-Gentleman-1946-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Disney-Hats-Gentleman-1946.jpg", title: "", footnote: ""}
                         )
 
@@ -37,24 +43,27 @@ block main-content
                         "DIVIDER_yes",
                         "Advertising",
                         "top","3","2",
-                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2001-450.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2001.jpg", title: "", footnote: ""},
-                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2002-450.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2002.jpg", title: "", footnote: ""},
-                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2003-450.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2003.jpg", title: "", footnote: ""},
-                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2004-450.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2004.jpg", title: "", footnote: ""},
-                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2005-450.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2005.jpg", title: "", footnote: ""},
-                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2006-450.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2006.jpg", title: "", footnote: ""},
-                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2007-450.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2007.jpg", title: "", footnote: ""},
-                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2008-450.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2008.jpg", title: "", footnote: ""},
-                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2009-450.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2009.jpg", title: "", footnote: ""},
-                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2010-450.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2010.jpg", title: "", footnote: ""},
-                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2011-450.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2011.jpg", title: "", footnote: ""},
-                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2012-450.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2012.jpg", title: "", footnote: ""},
-                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2013-450.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2013.jpg", title: "", footnote: ""},
-                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2013b-450.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2013b.jpg", title: "", footnote: ""},
-                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2014-450.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2014.jpg", title: "", footnote: ""},
-                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2015-450.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2015.jpg", title: "", footnote: ""},
-                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2016-450.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2016.jpg", title: "", footnote: ""},
-                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2017-450.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2017.jpg", title: "", footnote: ""}
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2001-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2001.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2002-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2002.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2003-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2003.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2004-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2004.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2005-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2005.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2006-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2006.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2007-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2007.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2008-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2008.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2009-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2009.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2010-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2010.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2011-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2011.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2012-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2012.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2013-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2013.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2013b-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2013b.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2014-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2014.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2015-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2015.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2016-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2016.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2017-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2017.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2018-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2018.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2019-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2019.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2020-800.jpg", LG:"https://assets.paulrand.design/Works/Disney%20Hats/Web/Disney%20Hats%2020.jpg", title: "", footnote: ""}
                         )
 
             //- /*-----  End of BODY  ------*/

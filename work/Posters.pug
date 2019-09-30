@@ -19,7 +19,7 @@ block main-content
             .grid-x.grid-margin-x.align-center.small-mb4
                 .small-12.cell
                     //- /*==============================  CLIENT  ==============================*/
-                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    h1.text-center.small-mb2.medium-mb3.large-mb3(data-aos="fade-up")!= pageTitle
                     if dates == 'CHANGE_ME'
                     else
                         p!= dates
@@ -27,7 +27,7 @@ block main-content
                     //- /*==============================  BOOK COVERS  ==============================*/
                     .grid-x.grid-margin-x
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/_Photography/Web/Abacus%20Photogram-450.jpg",
                             LG: "https://assets.paulrand.design/Works/_Photography/Web/Abacus%20Photogram.jpg",
@@ -35,7 +35,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/_Posters/Book%20Week/Web/Book%20Week-450.jpg",
                             LG: "https://assets.paulrand.design/Works/_Posters/Book%20Week/Web/Book%20Week.jpg",
@@ -44,7 +44,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/_Posters/Dada/Web/DADA%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/_Posters/Dada/Web/DADA%2001.jpg",
@@ -53,7 +53,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/_Posters/Death%20Mask/Web/Death%20Mask%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/_Posters/Death%20Mask/Web/Death%20Mask%2001.jpg",
@@ -63,7 +63,7 @@ block main-content
 
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/_Posters/Death%20Mask/Sketches/Web/Death%20Mask%20Poster%20Sketch%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/_Posters/Death%20Mask/Sketches/Web/Death%20Mask%20Poster%20Sketch%2001.jpg",
@@ -80,7 +80,7 @@ block main-content
 
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/_Posters/Earth%20Day%201995/Web/Earth%20Day%201995%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/_Posters/Earth%20Day%201995/Web/Earth%20Day%201995%2001.jpg",
@@ -89,7 +89,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/_Posters/Earth%20Day%201995/Web/Earth%20Day%201995%2002-450.jpg",
                             LG: "https://assets.paulrand.design/Works/_Posters/Earth%20Day%201995/Web/Earth%20Day%201995%2002.jpg",
@@ -98,7 +98,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/_Posters/Exposicion%20de%20pintra/Web/Exposicion%20Poster-450.jpg",
                             LG: "https://assets.paulrand.design/Works/_Posters/Exposicion%20de%20pintra/Web/Exposicion%20Poster.jpg",
@@ -107,7 +107,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/_Posters/HL%20Mencken/Web/HL%20Mencken%20Poster-450.jpg",
                             LG: "https://assets.paulrand.design/Works/_Posters/HL%20Mencken/Web/HL%20Mencken%20Poster.jpg",
@@ -116,7 +116,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/_Posters/Ice%20Cream%20Cone/Web/Ice%20Cream%20Cone%20Poster-450.jpg",
                             LG: "https://assets.paulrand.design/Works/_Posters/Ice%20Cream%20Cone/Web/Ice%20Cream%20Cone%20Poster.jpg",
@@ -125,7 +125,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/_Posters/Igor%20Stravinsky/Web/Igor%20Stravinsky%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/_Posters/Igor%20Stravinsky/Web/Igor%20Stravinsky%2001.jpg",
@@ -134,7 +134,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/_Posters/I%20Know/Web/I%20Know%20Poster-450.jpg",
                             LG: "https://assets.paulrand.design/Works/_Posters/I%20Know/Web/I%20Know%20Poster.jpg",
@@ -143,7 +143,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/_Posters/Industrial%20Arts%20Exposition/Web/Industrial%20Arts%20Exposition-450.jpg",
                             LG: "https://assets.paulrand.design/Works/_Posters/Industrial%20Arts%20Exposition/Web/Industrial%20Arts%20Exposition.jpg",
@@ -152,7 +152,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4", "6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/_Posters/Joseph%20Addison%20Quote/Web/Joseph%20Addison%20quote%20laughter-450.jpg",
                             LG: "https://assets.paulrand.design/Works/_Posters/Joseph%20Addison%20Quote/Web/Joseph%20Addison%20quote%20laughter.jpg",
@@ -162,7 +162,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/_Posters/Leger/Web/Leger-450.jpg",
                             LG: "https://assets.paulrand.design/Works/_Posters/Leger/Web/Leger.jpg",
@@ -171,7 +171,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/_Posters/Listen%21%20Listen%21/Web/Listen%20Listen%20Illustration-450.jpg",
                             LG: "https://assets.paulrand.design/Works/_Posters/Listen%21%20Listen%21/Web/Listen%20Listen%20Illustration.jpg",
@@ -180,7 +180,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/_Posters/Oil%20Lamp/Web/Oil%20Lamp%20poster%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/_Posters/Oil%20Lamp/Web/Oil%20Lamp%20poster%2001.jpg",
@@ -189,7 +189,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/_Posters/Red%20Heart%20Beige%20Circle/Web/Red%20Heart%20Beige%20Circle%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/_Posters/Red%20Heart%20Beige%20Circle/Web/Red%20Heart%20Beige%20Circle%2001.jpg",
@@ -198,7 +198,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/_Posters/Running%20Dog/Web/Running%20Dog%2001-450.jpg",
                             LG: "https://assets.paulrand.design/Works/_Posters/Running%20Dog/Web/Running%20Dog%2001.jpg",

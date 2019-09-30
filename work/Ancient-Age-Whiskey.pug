@@ -19,7 +19,7 @@ block main-content
             .grid-x.grid-margin-x.align-center.small-mb4
                 .small-12.cell.text-center
                     //- /*==============================  CLIENT  ==============================*/
-                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    h1.text-center.small-mb2.medium-mb3.large-mb3(data-aos="fade-up")!= pageTitle
                     if dates == 'CHANGE_ME'
                     else
                         p!= dates
@@ -55,7 +55,9 @@ block main-content
                         {SM: "https://assets.paulrand.design/Works/Ancient%20Age%20Whiskey/Web/Ancient%20Age%2015-450.jpg", LG:"https://assets.paulrand.design/Works/Ancient%20Age%20Whiskey/Web/Ancient%20Age%2015.jpg", title: "", footnote: ""},
                         {SM: "https://assets.paulrand.design/Works/Ancient%20Age%20Whiskey/Web/Ancient%20Age%2016-450.jpg", LG:"https://assets.paulrand.design/Works/Ancient%20Age%20Whiskey/Web/Ancient%20Age%2016.jpg", title: "", footnote: ""},
                         {SM: "https://assets.paulrand.design/Works/Ancient%20Age%20Whiskey/Web/Ancient%20Age%2017-450.jpg", LG:"https://assets.paulrand.design/Works/Ancient%20Age%20Whiskey/Web/Ancient%20Age%2017.jpg", title: "", footnote: ""},
-                        {SM: "https://assets.paulrand.design/Works/Ancient%20Age%20Whiskey/Web/Ancient%20Age%2018-450.jpg", LG:"https://assets.paulrand.design/Works/Ancient%20Age%20Whiskey/Web/Ancient%20Age%2018.jpg", title: "", footnote: ""}
+                        {SM: "https://assets.paulrand.design/Works/Ancient%20Age%20Whiskey/Web/Ancient%20Age%2018-450.jpg", LG:"https://assets.paulrand.design/Works/Ancient%20Age%20Whiskey/Web/Ancient%20Age%2018.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ancient%20Age%20Whiskey/Web/Ancient%20Age%2019-450.jpg", LG:"https://assets.paulrand.design/Works/Ancient%20Age%20Whiskey/Web/Ancient%20Age%2019.jpg", title: "", footnote: ""},
+                        {SM: "https://assets.paulrand.design/Works/Ancient%20Age%20Whiskey/Web/Ancient%20Age%2020-450.jpg", LG:"https://assets.paulrand.design/Works/Ancient%20Age%20Whiskey/Web/Ancient%20Age%2020.jpg", title: "", footnote: ""}
                         )
 
                     +galleryItem-blockGrid(

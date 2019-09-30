@@ -19,7 +19,7 @@ block main-content
             .grid-x.grid-margin-x.align-center.small-mb4
                 .small-12.cell.text-center
                     //- /*==============================  CLIENT  ==============================*/
-                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    h1.text-center.small-mb2.medium-mb3.large-mb3(data-aos="fade-up")!= pageTitle
                     if dates == 'CHANGE_ME'
                     else
                         p!= dates
@@ -62,14 +62,102 @@ block main-content
             +projectDivider("Packaging")
             .grid-x.grid-margin-x.align-center
                 +galleryItem-cardLink(
-                    "4", "6",
+                    "4","6","12",
                     {
                     SM: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Shur-Edge%20Box/Web/Shur-Edge%20Box-450.jpg",
                     LG: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Shur-Edge%20Box/Web/Shur-Edge%20Box.jpg",
                     title: "Shur-Edge Knife Box",
-                    footnote1: "CHANGE_ME",
+                    footnote1: "2 Images",
                     footnote2: "CHANGE_ME"
                     })
+                +galleryItem-imageHidden(
+                    {title: "Shur-Edge Knife Box", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Shur-Edge%20Box/Web/Shur-Edge%20Box%2002.jpg"}
+                    )
+
+                +galleryItem-cardLink(
+                    "4","6","12",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/5-Knife%20Set/Web/Shur%20Edge%205-Knife%20Set%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/5-Knife%20Set/Web/Shur%20Edge%205-Knife%20Set%2001.jpg",
+                    title: "5-Knife Set",
+                    footnote1: "7 Images",
+                    footnote2: "CHANGE_ME"
+                    })
+                +galleryItem-imageHidden(
+                    {title: "5-Knife Set", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/5-Knife%20Set/Web/Shur%20Edge%205-Knife%20Set%2002.jpg"},
+                    {title: "5-Knife Set", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/5-Knife%20Set/Web/Shur%20Edge%205-Knife%20Set%2003.jpg"},
+                    {title: "5-Knife Set", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/5-Knife%20Set/Web/Shur%20Edge%205-Knife%20Set%2004.jpg"},
+                    {title: "5-Knife Set", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/5-Knife%20Set/Web/Shur%20Edge%205-Knife%20Set%2005.jpg"},
+                    {title: "5-Knife Set", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/5-Knife%20Set/Web/Shur%20Edge%205-Knife%20Set%2006.jpg"},
+                    {title: "5-Knife Set", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/5-Knife%20Set/Web/Shur%20Edge%205-Knife%20Set%2007.jpg"}
+                    )
+
+                +galleryItem-cardLink(
+                    "4","6","12",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Carving%20Set%2C%202%20knives/Web/Shur%20Edge%20Carving%20Set%2C%202%20knives%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Carving%20Set%2C%202%20knives/Web/Shur%20Edge%20Carving%20Set%2C%202%20knives%2001.jpg",
+                    title: "Carving Set, 2 Knives",
+                    footnote1: "7 Images",
+                    footnote2: "CHANGE_ME"
+                    })
+                +galleryItem-imageHidden(
+                    {title: "Carving Set, 2 Knives", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Carving%20Set%2C%202%20knives/Web/Shur%20Edge%20Carving%20Set%2C%202%20knives%2002.jpg"},
+                    {title: "Carving Set, 2 Knives", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Carving%20Set%2C%202%20knives/Web/Shur%20Edge%20Carving%20Set%2C%202%20knives%2003.jpg"},
+                    {title: "Carving Set, 2 Knives", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Carving%20Set%2C%202%20knives/Web/Shur%20Edge%20Carving%20Set%2C%202%20knives%2004.jpg"},
+                    {title: "Carving Set, 2 Knives", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Carving%20Set%2C%202%20knives/Web/Shur%20Edge%20Carving%20Set%2C%202%20knives%2005.jpg"},
+                    {title: "Carving Set, 2 Knives", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Carving%20Set%2C%202%20knives/Web/Shur%20Edge%20Carving%20Set%2C%202%20knives%2006.jpg"},
+                    {title: "Carving Set, 2 Knives", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Carving%20Set%2C%202%20knives/Web/Shur%20Edge%20Carving%20Set%2C%202%20knives%2007.jpg"}
+                    )
+
+                +galleryItem-cardLink(
+                    "4","6","12",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Carving%20Set%2C%203%20knives/Web/Shur%20Edge%20Carving%20Set%2C%203%20knives%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Carving%20Set%2C%203%20knives/Web/Shur%20Edge%20Carving%20Set%2C%203%20knives%2001.jpg",
+                    title: "Carving Set, 3 Knives",
+                    footnote1: "7 Images",
+                    footnote2: "CHANGE_ME"
+                    })
+                +galleryItem-imageHidden(
+                    {title: "Carving Set, 3 Knives", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Carving%20Set%2C%203%20knives/Web/Shur%20Edge%20Carving%20Set%2C%203%20knives%2002.jpg"},
+                    {title: "Carving Set, 3 Knives", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Carving%20Set%2C%203%20knives/Web/Shur%20Edge%20Carving%20Set%2C%203%20knives%2003.jpg"},
+                    {title: "Carving Set, 3 Knives", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Carving%20Set%2C%203%20knives/Web/Shur%20Edge%20Carving%20Set%2C%203%20knives%2004.jpg"},
+                    {title: "Carving Set, 3 Knives", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Carving%20Set%2C%203%20knives/Web/Shur%20Edge%20Carving%20Set%2C%203%20knives%2005.jpg"},
+                    {title: "Carving Set, 3 Knives", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Carving%20Set%2C%203%20knives/Web/Shur%20Edge%20Carving%20Set%2C%203%20knives%2006.jpg"},
+                    {title: "Carving Set, 3 Knives", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Carving%20Set%2C%203%20knives/Web/Shur%20Edge%20Carving%20Set%2C%203%20knives%2007.jpg"}
+                    )
+
+                +galleryItem-cardLink(
+                    "4","6","12",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Serpentine%20Pocket%20Knife/Web/Shur%20Edge%20Serpentine%20Pocket%20Knife%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Serpentine%20Pocket%20Knife/Web/Shur%20Edge%20Serpentine%20Pocket%20Knife%2001.jpg",
+                    title: "Serpentine Pocket Knife",
+                    footnote1: "6 Images",
+                    footnote2: "CHANGE_ME"
+                    })
+                +galleryItem-imageHidden(
+                    {title: "Serpentine Pocket Knife", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Serpentine%20Pocket%20Knife/Web/Shur%20Edge%20Serpentine%20Pocket%20Knife%2002.jpg"},
+                    {title: "Serpentine Pocket Knife", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Serpentine%20Pocket%20Knife/Web/Shur%20Edge%20Serpentine%20Pocket%20Knife%2003.jpg"},
+                    {title: "Serpentine Pocket Knife", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Serpentine%20Pocket%20Knife/Web/Shur%20Edge%20Serpentine%20Pocket%20Knife%2004.jpg"},
+                    {title: "Serpentine Pocket Knife", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Serpentine%20Pocket%20Knife/Web/Shur%20Edge%20Serpentine%20Pocket%20Knife%2005.jpg"},
+                    {title: "Serpentine Pocket Knife", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Serpentine%20Pocket%20Knife/Web/Shur%20Edge%20Serpentine%20Pocket%20Knife%2006.jpg"}
+                    )
+
+                +galleryItem-cardLink(
+                    "4","6","12",
+                    {
+                    SM: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Miscellaneous%20Sets/Web/Shur%20Edge%20Knife%20Sets%2001-450.jpg",
+                    LG: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Miscellaneous%20Sets/Web/Shur%20Edge%20Knife%20Sets%2001.jpg",
+                    title: "Knife Sets",
+                    footnote1: "3 Images",
+                    footnote2: "CHANGE_ME"
+                    })
+                +galleryItem-imageHidden(
+                    {title: "Knife Sets", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Miscellaneous%20Sets/Web/Shur%20Edge%20Knife%20Sets%2002.jpg"},
+                    {title: "Knife Sets", hideMe: "https://assets.paulrand.design/Works/Shur-Edge%20Knives/Packaging/Miscellaneous%20Sets/Web/Shur%20Edge%20Knife%20Sets%2003.jpg"}
+                    )
 
 
             //- /*-----  End of BODY  ------*/

@@ -19,7 +19,7 @@ block main-content
             .grid-x.grid-margin-x.align-center.small-mb4
                 .small-12.cell.text-center
                     //- /*==============================  CLIENT  ==============================*/
-                    h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+                    h1.text-center.small-mb2.medium-mb3.large-mb3(data-aos="fade-up")!= pageTitle
                     if dates == 'CHANGE_ME'
                     else
                         p!= dates
@@ -29,7 +29,7 @@ block main-content
                     +galleryItem-blockGrid(
                         "DIVIDER_yes",
                         "Logo",
-                        "middle", "12", "12",
+                        "middle", "12","12","12",
                         {SM: "https://assets.paulrand.design/Works/Esquire/Esquire-Magazine-1938.svg", LG:"https://assets.paulrand.design/Works/Esquire/Esquire-Magazine-1938.svg", title: "", footnote: ""}
                         )
 
@@ -60,7 +60,7 @@ block main-content
                     +projectDivider("Collateral")
                     .grid-x.grid-margin-x
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20brochure%201938-200.jpg",
                             LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20brochure%201938.jpg",
@@ -70,7 +70,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20folder%2C%202%20of%2012-200.jpg",
                             LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20folder%2C%202%20of%2012.jpg",
@@ -80,7 +80,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20folder%2C%20Vacation%20Editorial%20Features-200.jpg",
                             LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20folder%2C%20Vacation%20Editorial%20Features.jpg",
@@ -90,7 +90,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20Index%20spread%2C%20v1-200.jpg",
                             LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20Index%20spread%2C%20v1.jpg",
@@ -100,7 +100,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20Index%20spread%2C%20v2-200.jpg",
                             LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20Index%20spread%2C%20v2.jpg",
@@ -110,7 +110,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20London%20Guide%20booklet-200.jpg",
                             LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20London%20Guide%20booklet.jpg",
@@ -120,7 +120,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20London%20Portfolio-200.jpg",
                             LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20London%20Portfolio.jpg",
@@ -130,7 +130,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20Program%20Cover-200.jpg",
                             LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20Program%20Cover.jpg",
@@ -140,7 +140,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20Ski-200.jpg",
                             LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20Ski.jpg",
@@ -150,7 +150,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20University%20Guide-200.jpg",
                             LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20University%20Guide.jpg",
@@ -160,7 +160,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20Wedding%20Guide-200.jpg",
                             LG: "https://assets.paulrand.design/Works/Esquire/Collateral/Web/Esquire%20Wedding%20Guide.jpg",
@@ -170,7 +170,7 @@ block main-content
                             })
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/Esquire/Illustrations/Web/Esquire%20Illustration%2001-%20Rye-200.jpg",
                             LG: "https://assets.paulrand.design/Works/Esquire/Illustrations/Web/Esquire%20Illustration%2001-%20Rye.jpg",
@@ -184,7 +184,7 @@ block main-content
                             )
 
                         +galleryItem-cardLink(
-                            "4","6",
+                            "4","6","6",
                             {
                             SM: "https://assets.paulrand.design/Works/Esquire/June%20Boon/Web/Esquire%20June%20Boon%2001-200.jpg",
                             LG: "https://assets.paulrand.design/Works/Esquire/June%20Boon/Web/Esquire%20June%20Boon%2001.jpg",

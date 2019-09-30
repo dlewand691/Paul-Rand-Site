@@ -56,13 +56,13 @@ block main-content
     //- ===============================================
     .wrapper-parallax
         .imageHeader-full
-            h1.text-center.small-mb2.medium-mb3.large-mb3.reveal-enter-bottom!= pageTitle
+            h1.text-center.small-mb2.medium-mb3.large-mb3(data-aos="fade-up")!= pageTitle
 
             p!= articleAuthor
                 br
                 != publishedInTitle + ', ' + publishedInSubtitle
 
-            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign.reveal-enter-bottom View the Original #{nextType}
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign(data-aos="fade-up") View the Original #{nextType}
 
         //- -----  End of FULL WIDTH IMAGE HEADER  ------
         .cd-main-content
