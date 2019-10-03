@@ -9,14 +9,6 @@
 	],
 "creatorBuild": "31491",
 "files": {
-	"/***MY WORKSPACE***.code-workspace": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_BUILD/***MY WORKSPACE***.code-workspace",
-		"oF": 1
-		},
 	"/__MIXINS/__ARCHIVE": {
 		"ft": 65536,
 		"oA": 1,
@@ -1043,14 +1035,6 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
-		},
-	"/Default VSCode Workspace.code-workspace": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_BUILD/Default VSCode Workspace.code-workspace",
-		"oF": 1
 		},
 	"/favicons/android-chrome-144x144.png": {
 		"ft": 32768,
