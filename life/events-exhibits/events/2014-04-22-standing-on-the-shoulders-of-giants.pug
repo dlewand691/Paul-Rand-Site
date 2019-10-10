@@ -1,0 +1,92 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Standing on Shoulders: The Presentation Books of Paul Rand'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'AIGA Minneapolis'
+    - var pageSubtitle2         = 'April 22, 2014'
+
+    - var nextType              = 'Event'
+    - var nextTitle             = 'Kit Hinrichs on Paul Rand'
+    - var nextDate              = '2014'
+    - var nextLink              = '2014-06-24-kit-hinrichs-on-paul-rand'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2012.jpg', title: ''})
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    h1(data-aos="fade-up")!= pageTitle
+
+                    unless pageSubtitle1 == 'CHANGE_ME'
+                        em.text-gray.t16(data-aos="fade-up")!= pageSubtitle1
+                        br
+
+                    unless pageSubtitle2 == 'CHANGE_ME'
+                        em.text-gray.t16(data-aos="fade-up")!= pageSubtitle2
+
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2001.jpg",
+                            "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2001.jpg"
+                            )
+
+            include ../../../__MIXINS/_include-image-carousel.pug
+
+            .grid-x.grid-margin-x.small-mb3.align-center
+                .large-7.medium-8.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        April 22nd, 5:30pm until 8:00pm
+
+                        Carmichael Lynch, Minneapolis
+
+                        Sir Isaac Newton said, “If I have seen further it is by standing on the shoulders of giants.”
+
+                        As we celebrate AIGA’s 100th anniversary, please join us in discovering the giants of design, whose pioneering efforts and profound accomplishments have influenced so many. Standing on Shoulders is a series of presentations focused on specific aspects of legendary design careers, which will connect participants with great work from the past, to appreciate and learn from it.
+
+                        ##### Michael Skjei Discusses The Presentation Books Of Paul Rand
+
+                        In our first event, Michael Skjei, Design Director at Carmichael Lynch Spong, will explore the presentation books of Paul Rand, father of modern branding. His modernist aesthetic informed his corporate identity work, and he created some of the most influential and enduring identities of the past 100 years, including IBM, Westinghouse, ABC Television, and UPS. Perhaps his greatest accomplishment was convincing businesses that design was an effective and profitable tool, which allowed all of us, in designer Lou Danziger’s words, to go from being “…commercial artists to being graphic designers largely on his [Rand’s] merits.”
+
+                        A hesitant presenter who was often uncomfortable with that aspect of our profession, Rand created presentation books for his identity clients to more thoroughly explain his process and design rationale. Skjei will show slides of and discuss the presentation books, as well as provide background and context about their impact on Rand’s clients and our industry. As a bonus, Skjei will provide actual vintage samples of these books for hands-on viewing, including those created for Ford, The Limited, Morningstar, NeXT, and English First.
+
+                        Presentation, 5:30 p.m. at Carmichael Lynch  
+                        110 Fifth Street N., 10th Floor  
+                        Minneapolis
+
+                        Happy Hour, 8:00 p.m. at Bar 508  
+                        508 1st Ave N., Lower Level  
+                        Minneapolis
+
+                        ##### About Michael Skjei
+
+                        Michael Skjei’s design work has been recognized by AIGA, AIGA Minnesota, Communication Arts, Graphis, Print, Art Director’s Club, Type Director’s Club, and D&amp;AD. Throughout his career, he has been a collector of vintage design; he has mounted shows on the work of Paul Rand, and Alvin and Elaine Lustig. The Lustig show traveled to the AIGA Gallery in Manhattan, and has since appeared in several other galleries. Skjei is currently working on a collection of Lester Beall’s designs, and hopes to mount a Beall show sometime in 2015.
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

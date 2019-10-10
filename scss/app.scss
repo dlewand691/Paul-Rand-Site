@@ -263,6 +263,56 @@ figcaption + .icon-zoom-boxed {
 }
 
 /*-----  End of UTILITY  ------------------------------------------------------------------*/
+
+// ===================================================================================
+// ███████ ██   ██  █████  ██████   ██████  ██     ██ ███████
+// ██      ██   ██ ██   ██ ██   ██ ██    ██ ██     ██ ██
+// ███████ ███████ ███████ ██   ██ ██    ██ ██  █  ██ ███████
+//      ██ ██   ██ ██   ██ ██   ██ ██    ██ ██ ███ ██      ██
+// ███████ ██   ██ ██   ██ ██████   ██████   ███ ███  ███████
+// ===================================================================================
+
+%shadow-5,
+.shadow-5 {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,0.12);
+}
+
+%shadow-4,
+.shadow-4 {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 0 2px 2px rgba(0,0,0,0.15), 0 4px 4px rgba(0,0,0,0.15), 0 8px 8px rgba(0,0,0,0.15);
+}
+
+%shadow-6,
+.shadow-6 {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 0 2px 2px rgba(0,0,0,0.11), 0 4px 4px rgba(0,0,0,0.11), 0 8px 8px rgba(0,0,0,0.11), 0 16px 16px rgba(0,0,0,0.11), 0 32px 32px rgba(0,0,0,0.11);
+}
+
+%shadow-sharp,
+.shadow-sharp {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25), 0 2px 2px rgba(0,0,0,0.20), 0 4px 4px rgba(0,0,0,0.15), 0 8px 8px rgba(0,0,0,0.10), 0 16px 16px rgba(0,0,0,0.05);
+}
+
+%shadow-diffuse,
+.shadow-diffuse {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.08), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.16), 0 8px 8px rgba(0,0,0,0.20);
+}
+
+%shadow-dreamy,
+.shadow-dreamy {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07);
+}
+
+%shadow-shorter,
+.shadow-shorter {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 0 2px 2px rgba(0,0,0,0.11), 0 4px 4px rgba(0,0,0,0.11), 0 6px 8px rgba(0,0,0,0.11), 0 8px 16px rgba(0,0,0,0.11);
+}
+
+%shadow-longer,
+.shadow-longer {
+    box-shadow: 0 2px 1px rgba(0,0,0,0.09), 0 4px 2px rgba(0,0,0,0.09), 0 8px 4px rgba(0,0,0,0.09), 0 16px 8px rgba(0,0,0,0.09), 0 32px 16px rgba(0,0,0,0.09);
+}
+// -----  End of SHADOWS  -----------------------------------
+
 /* ==========================================================================================================
 ██    ██ ██ ███████ ██ ██████  ██ ██      ██ ████████ ██ ███████ ███████
 ██    ██ ██ ██      ██ ██   ██ ██ ██      ██    ██    ██ ██      ██
@@ -2707,7 +2757,7 @@ footer {
         transition : transform 0.3s ease;
 
         &.nav-is-visible {
-            transform: translateX(-80%);
+            transform: translateX(-75%);
         }
 
         +.cd-main-content {
@@ -2729,7 +2779,7 @@ footer {
         padding: 4rem;
 
         &.nav-is-visible {
-            transform: translateX(-80%);
+            transform: translateX(-75%);
         }
     }
 
@@ -3134,30 +3184,30 @@ footer {
    ██     ███ ███  ███████ ██   ██ ██   ██ ███████
 
 ===============================================*/
-.animated {
-    animation-duration : 1s;
-    animation-fill-mode: both;
-}
-/*animation-delay: the delay before our animation will start.*/
-.delay-xs {
-    animation-delay: 0.25s;
-}
-
-.delay-sm {
-    animation-delay: 0.5s;
-}
-
-.delay-md {
-    animation-delay: 1s;
-}
-
-.delay-lg {
-    animation-delay: 2s;
-}
-
-.delay-xl {
-    animation-delay: 4s;
-}
+// .animated {
+//     animation-duration : 1s;
+//     animation-fill-mode: both;
+// }
+// /*animation-delay: the delay before our animation will start.*/
+// .delay-xs {
+//     animation-delay: 0.25s;
+// }
+// 
+// .delay-sm {
+//     animation-delay: 0.5s;
+// }
+// 
+// .delay-md {
+//     animation-delay: 1s;
+// }
+// 
+// .delay-lg {
+//     animation-delay: 2s;
+// }
+// 
+// .delay-xl {
+//     animation-delay: 4s;
+// }
 /*
  *@name fadeIn
  *@className fadeIn animated
@@ -3169,19 +3219,19 @@ footer {
  *@issues https://github.com/daneden/animate.css/issues
  *@license MIT
  */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.fadeIn {
-    animation-name: fadeIn;
-}
+// @keyframes fadeIn {
+//     0% {
+//         opacity: 0;
+//     }
+// 
+//     100% {
+//         opacity: 1;
+//     }
+// }
+// 
+// .fadeIn {
+//     animation-name: fadeIn;
+// }
 /*
  *@name fadeInLeft
  *@className fadeInLeft animated
@@ -3193,21 +3243,21 @@ footer {
  *@issues https://github.com/daneden/animate.css/issues
  *@license MIT
  */
-@keyframes fadeInLeftSmall {
-    0% {
-        opacity  : 0;
-        transform: translate3d(-15%, 0, 0);
-    }
-
-    100% {
-        opacity  : 1;
-        transform: none;
-    }
-}
-
-.fadeInLeftSmall {
-    animation-name: fadeInLeftSmall;
-}
+// @keyframes fadeInLeftSmall {
+//     0% {
+//         opacity  : 0;
+//         transform: translate3d(-15%, 0, 0);
+//     }
+// 
+//     100% {
+//         opacity  : 1;
+//         transform: none;
+//     }
+// }
+// 
+// .fadeInLeftSmall {
+//     animation-name: fadeInLeftSmall;
+// }
 /*
  *@name fadeInRight
  *@className fadeInRight animated
@@ -3219,21 +3269,21 @@ footer {
  *@issues https://github.com/daneden/animate.css/issues
  *@license MIT
  */
-@keyframes fadeInRightSmall {
-    0% {
-        opacity  : 0;
-        transform: translate3d(15%, 0, 0);
-    }
-
-    100% {
-        opacity  : 1;
-        transform: none;
-    }
-}
-
-.fadeInRightSmall {
-    animation-name: fadeInRightSmall;
-}
+// @keyframes fadeInRightSmall {
+//     0% {
+//         opacity  : 0;
+//         transform: translate3d(15%, 0, 0);
+//     }
+// 
+//     100% {
+//         opacity  : 1;
+//         transform: none;
+//     }
+// }
+// 
+// .fadeInRightSmall {
+//     animation-name: fadeInRightSmall;
+// }
 /*
  *@name fadeInUp
  *@className fadeInUp animated
@@ -3245,21 +3295,21 @@ footer {
  *@issues https://github.com/daneden/animate.css/issues
  *@license MIT
  */
-@keyframes fadeInUpSmall {
-    0% {
-        opacity  : 0;
-        transform: translate3d(0, 15%, 0);
-    }
-
-    100% {
-        opacity  : 1;
-        transform: none;
-    }
-}
-
-.fadeInUpSmall {
-    animation-name: fadeInUpSmall;
-}
+// @keyframes fadeInUpSmall {
+//     0% {
+//         opacity  : 0;
+//         transform: translate3d(0, 15%, 0);
+//     }
+// 
+//     100% {
+//         opacity  : 1;
+//         transform: none;
+//     }
+// }
+// 
+// .fadeInUpSmall {
+//     animation-name: fadeInUpSmall;
+// }
 /*
  *@name fadeOutDown
  *@className fadeOutDown animated
@@ -3271,20 +3321,21 @@ footer {
  *@issues https://github.com/daneden/animate.css/issues
  *@license MIT
  */
-@keyframes fadeOutDownSmall {
-    0% {
-        opacity: 1;
-    }
+// @keyframes fadeOutDownSmall {
+//     0% {
+//         opacity: 1;
+//     }
+// 
+//     100% {
+//         opacity  : 0;
+//         transform: translate3d(0, 15%, 0);
+//     }
+// }
+// 
+// .fadeOutDownSmall {
+//     animation-name: fadeOutDownSmall;
+// }
 
-    100% {
-        opacity  : 0;
-        transform: translate3d(0, 15%, 0);
-    }
-}
-
-.fadeOutDownSmall {
-    animation-name: fadeOutDownSmall;
-}
 /*-----  End of ANIJS ANIMATION TWEAKS  ------*/
 // /*-----  End of MAGNIFIC POPUP  ------*/
 
@@ -3335,23 +3386,11 @@ footer {
 }
 
 .select2-container {
-    width    : 100% !important;
-    max-width: 100% !important;
     @include font-size(18px);
-}
 
-@include breakpoint(small only) {
-    .select2-container {
-        // max-width: 100% !important;
-        // width    : 100% !important;
-    }
-}
-
-@include breakpoint(medium only) {
-    .select2-container {
-        // max-width: 700px !important;
-        // width    : 100% !important;
-    }
+    @include breakpoint(large) {}
+    max-width: 100% !important;
+    width    : 100% !important;
 }
 
 .select2-dropdown {
@@ -4203,6 +4242,12 @@ $darkmode-black: #121212;
     .darkMode-invert {
         filter: invert(1);
     }
+    
+    footer  {
+        a, a:link, h5 {
+            color      : $white;
+    }
+}
 }
 
 .darkmode-toggle {

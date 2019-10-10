@@ -11,7 +11,7 @@ block main-content
     - var nextTitle            = 'Learning From Rand'
     - var nextDate             = '2013'
     - var nextDescription      = 'Steven Heller visits Atlanta and discusses what he learned from Rand.'
-    - var nextLink             = '/life/videos/2013-MODA-steven-heller.html'
+    - var nextLink             = '/life/videos/2013-11-07-MODA-steven-heller.html'
 
     - var relatedItemLink1     = '/life/videos/2008-paul-rand-lecture-series.html'
     - var relatedItemTitle1    = 'Paul Rand Lecture Series'
@@ -37,8 +37,8 @@ block main-content
                 .large-8.medium-11.cell
                     .grid-x.grid-margin-x
                         .large-12.cell.text-center
-                            h1= pageTitle
-                            p.text-gray.t16: em 2013
+                            h1(data-aos="fade-up")= pageTitle
+                            p.text-gray.t16(data-aos="fade-up"): em 2013
 
                             :markdown-it(html typographer plugins=['markdown-it-sup'])
 

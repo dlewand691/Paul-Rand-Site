@@ -10,18 +10,18 @@ block main-content
     - var author                = 'Introduction by Steven Heller.'
     - var bookSubhead           = 'Edited by Eugenia Bell.'
 
-    - var library               = 'no'
-    - var libraryLink           = 'CHANGE_ME'
-    - var abe                   = 'no'
-    - var abeLink               = 'CHANGE_ME'
-    - var amazon                = 'no'
-    - var amazonLink            = 'CHANGE_ME'
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/1112622533'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=https%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3DPaul%2520Rand%253A%2520Inspiration%2520and%2520Process%2520in%2520Design'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'https://amzn.to/2ouMkmZ'
     - var modernism101          = 'no'
     - var modernism101Link      = 'CHANGE_ME'
     - var barnesnoble           = 'no'
     - var barnesnobleLink       = 'CHANGE_ME'
-    - var ebay                  = 'no'
-    - var ebayLink              = 'CHANGE_ME'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2487261.m570.l1313.TR0.TRC1.A0.H0.X.TRS5%26_nkw%3DPaul%2BRand%253A%2BInspiration%2Band%2BProcess%2Bin%2BDesign%26_sacat%3D0'
 
     - var nextType              = 'Book'
     - var nextTitle             = 'A-D Gallery Presents: Paul Rand'
@@ -57,9 +57,9 @@ block main-content
                 .large-7.medium-8.small-12.cell.text-center
                     h1(data-aos="fade-up")!= pageTitle
 
-                    em.text-gray.t16!= author
+                    em.text-gray.t16(data-aos="fade-up")!= author
                     br
-                    em.text-gray.t16!= bookSubhead
+                    em.text-gray.t16(data-aos="fade-up")!= bookSubhead
 
 
                     //- /*==============================  BOOK COVER  ==============================*/
@@ -90,7 +90,6 @@ block main-content
                         Hardcover  
                         978-1-61689-859-5  
                         $24.95 / £18.99
-
 
 
 

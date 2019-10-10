@@ -1,0 +1,72 @@
+extends ../../../__MIXINS/_layout-default.pug
+include ../../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Steven Heller Talks to Students'
+    - var bodyID    = 'life'
+    - var bodyClass = 'events-exhibits'
+
+block main-content
+    - var pageSubtitle1         = 'Museum of Design Atlanta'
+    - var pageSubtitle2         = 'Afternoon of November 7, 2013'
+
+    - var nextType              = 'Event'
+    - var nextTitle             = 'Steven Heller’s evening speech at MODA in Atlanta, GA.'
+    - var nextDate              = '2013'
+    - var nextLink              = '2013-11-07-MODA-steven-heller'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'Images courtesy of Randall Ross, modernism101.com'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: ''})
+
+    //- =============================
+    //- =            VIDEO            =
+    //- =============================
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                //- ==========  TITLE  ==========
+                .large-8.medium-11.cell
+                    .grid-x.grid-margin-x
+                        .large-12.cell.text-center
+                            h1(data-aos="fade-up")= pageTitle
+                            p.text-gray.t16(data-aos="fade-up"): em 2013
+
+
+            //- ==========  BODY  ==========
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-9.small-12.cell
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Steven Heller visited Atlanta for an afternoon speaking engagement primarily to students and educators. With over 200 people in attendance, the crowd was treated to Mr. Heller’s discussion on typography, style, aesthetics and more. 
+
+                        Afterwards he visited the Paul Rand exhibit and prepared for his evening speech. These two events were the highlight of the exhibit and Mr. Heller thoroughly enjoyed his time visiting.
+
+                        Special thanks to Portfolio Center and MODA for organizing both events.
+
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-8.small-12.cell.text-center
+                    +imageZoomSingle(
+                        "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2013%20Paul%20Rand%20Defining%20Design/Exhibit%20Photos/Steven%20Heller%20Lecture%2C%20Afternoon/Web/Paul%20Rand-%20Defining%20Design%20Steven%20Heller%20Lecture%2C%20Afternoon%2069-800.jpg",
+                        "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2013%20Paul%20Rand%20Defining%20Design/Exhibit%20Photos/Steven%20Heller%20Lecture%2C%20Afternoon/Web/Paul%20Rand-%20Defining%20Design%20Steven%20Heller%20Lecture%2C%20Afternoon%2069.jpg"
+                        )
+
+
+            +carouselImages(
+                "View More",
+                "",
+                {Title:"CHANGE_ME", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2013%20Paul%20Rand%20Defining%20Design/Exhibit%20Photos/Steven%20Heller%20Lecture%2C%20Afternoon/Web/Paul%20Rand-%20Defining%20Design%20Steven%20Heller%20Lecture%2C%20Afternoon%2038-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/2013%20Paul%20Rand%20Defining%20Design/Exhibit%20Photos/Steven%20Heller%20Lecture%2C%20Afternoon/Web/Paul%20Rand-%20Defining%20Design%20Steven%20Heller%20Lecture%2C%20Afternoon%2038.jpg"},
+                {Title:"CHANGE_ME", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2013%20Paul%20Rand%20Defining%20Design/Exhibit%20Photos/Steven%20Heller%20Lecture%2C%20Afternoon/Web/Paul%20Rand-%20Defining%20Design%20Steven%20Heller%20Lecture%2C%20Afternoon%2057-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/2013%20Paul%20Rand%20Defining%20Design/Exhibit%20Photos/Steven%20Heller%20Lecture%2C%20Afternoon/Web/Paul%20Rand-%20Defining%20Design%20Steven%20Heller%20Lecture%2C%20Afternoon%2057.jpg"},
+                {Title:"CHANGE_ME", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2013%20Paul%20Rand%20Defining%20Design/Exhibit%20Photos/Steven%20Heller%20Lecture%2C%20Afternoon/Web/Paul%20Rand-%20Defining%20Design%20Steven%20Heller%20Lecture%2C%20Afternoon%2058-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/2013%20Paul%20Rand%20Defining%20Design/Exhibit%20Photos/Steven%20Heller%20Lecture%2C%20Afternoon/Web/Paul%20Rand-%20Defining%20Design%20Steven%20Heller%20Lecture%2C%20Afternoon%2058.jpg"},
+                {Title:"CHANGE_ME", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2013%20Paul%20Rand%20Defining%20Design/Exhibit%20Photos/Steven%20Heller%20Lecture%2C%20Afternoon/Web/Paul%20Rand-%20Defining%20Design%20Steven%20Heller%20Lecture%2C%20Afternoon%2063-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/2013%20Paul%20Rand%20Defining%20Design/Exhibit%20Photos/Steven%20Heller%20Lecture%2C%20Afternoon/Web/Paul%20Rand-%20Defining%20Design%20Steven%20Heller%20Lecture%2C%20Afternoon%2063.jpg"},
+                {Title:"CHANGE_ME", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2013%20Paul%20Rand%20Defining%20Design/Exhibit%20Photos/Steven%20Heller%20Lecture%2C%20Afternoon/Web/Paul%20Rand-%20Defining%20Design%20Steven%20Heller%20Lecture%2C%20Afternoon%2083-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/2013%20Paul%20Rand%20Defining%20Design/Exhibit%20Photos/Steven%20Heller%20Lecture%2C%20Afternoon/Web/Paul%20Rand-%20Defining%20Design%20Steven%20Heller%20Lecture%2C%20Afternoon%2083.jpg"},
+                {Title:"CHANGE_ME", SM: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2013%20Paul%20Rand%20Defining%20Design/Exhibit%20Photos/Steven%20Heller%20Lecture%2C%20Afternoon/Web/Paul%20Rand-%20Defining%20Design%20Steven%20Heller%20Lecture%2C%20Afternoon%2095-800.jpg", LG:"https://assets.paulrand.design/Life/Exhibits%20and%20Events/2013%20Paul%20Rand%20Defining%20Design/Exhibit%20Photos/Steven%20Heller%20Lecture%2C%20Afternoon/Web/Paul%20Rand-%20Defining%20Design%20Steven%20Heller%20Lecture%2C%20Afternoon%2095.jpg"}
+                )
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../../__MIXINS/_include-next-work.pug
+
+        include ../../../__MIXINS/_include-social-media.pug

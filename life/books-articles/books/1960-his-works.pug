@@ -89,9 +89,9 @@ block main-content
                 .large-7.medium-8.small-12.cell.text-center
                     h1(data-aos="fade-up")!= pageTitle
 
-                    em.text-gray.t16!= 'By ' + author
+                    em.text-gray.t16(data-aos="fade-up")!= 'By ' + author
                     br
-                    em.text-gray.t16!= bookSubhead
+                    em.text-gray.t16(data-aos="fade-up")!= bookSubhead
 
 
                     //- /*==============================  BOOK COVER  ==============================*/
@@ -106,6 +106,12 @@ block main-content
             include ../../../__MIXINS/_include-image-carousel.pug
 
 
+            +galleryItem-blockGrid(
+                "DIVIDER_yes",
+                "Prospectus",
+                "middle", "1", "1",
+                {SM: "https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%20Prospectus-970.jpg", LG:"https://assets.paulrand.design/Life/Books%20and%20Articles%20About%20Rand/Books/1960%20Paul%20Rand%2C%20His%20Works%20from%201946-1958/Web/Paul%20Rand-%20His%20Works%20from%201948-1956%20Prospectus.jpg", title: "", footnote: "Image courtesy of Modernism101.com"}
+                )
 
             //- /*==============================  BODY  ==============================*/
             .grid-x.grid-margin-x.align-center
@@ -138,7 +144,6 @@ block main-content
                             Of almost equal interest is the fact that the book is a unique tribute to the universality of the work it displays, having been produced in its entirety in Japan, edited by Yusaku Kamekura (himself a distinguised designer) in close consultation with Paul Rand. There are informal texts by Bernard Rudofsky, Giovanni Pintori, and Hans Schleger, as well as Yusaku Kamerkura.
 
                             In brief, the book offers a definitive selection of the work of an artist who has consistently refused to approach commercial art on any but the highest levels of the creative imagination, where wit and intelligence, combined with the completely inventive use of symbols, are transformed into a delight for the eye and the mind. It is no exaggeration to say that there is no one in the graphics field who could not learn from this book.
-
 
 
 

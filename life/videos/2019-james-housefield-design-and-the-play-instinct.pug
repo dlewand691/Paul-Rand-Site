@@ -1,0 +1,72 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'James Housefield: Design and the Play Instinct'
+    - var bodyID    = 'life'
+    - var bodyClass = 'videos'
+
+block main-content
+    - var nextType             = 'Video'
+    - var nextTitle            = 'Graphic Design at Yale'
+    - var nextDate             = '1960'
+    - var nextDescription      = 'Rand critques students and discusses the design program at Yale.'
+    - var nextLink             = '/life/videos/1960-graphic-design-at-yale.html'
+
+    - var relatedItemLink1     = '/life/videos/1991-miggs-burroughs.html'
+    - var relatedItemTitle1    = 'Miggs Burroughs Interview'
+    - var relatedItemFootnote1 = 'Filmed for the TV show “Miggs B. on TV” in Connecticut, 1991'
+
+    - var relatedItemLink2     = '/life/videos/1994-mead-generations.html'
+    - var relatedItemTitle2    = 'Mead Generations'
+    - var relatedItemFootnote2 = 'Rand discusses various design topics from his home studio.'
+
+    - var relatedItemLink3     = '/life/videos-interviews/interviews/2001-MIT.html'
+    - var relatedItemTitle3    = 'Maeda @ Media, Interview excerpt'
+    - var relatedItemFootnote3 = 'Published in “Maeda@Media”, Universe Press, 2001'
+
+
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                //- ==========  TITLE  ==========
+                .large-8.medium-11.cell
+                    .grid-x.grid-margin-x
+                        .large-12.cell.text-center
+                            h1(data-aos="fade-up")= pageTitle
+                            p.text-gray.t16(data-aos="fade-up"): em UC Davis, January 30, 2019
+
+                            :markdown-it(html typographer plugins=['markdown-it-sup'])
+
+            //- ==========  VIDEO  ==========
+            .grid-x.grid-margin-x.align-center
+                .cell
+                    .small-mb3
+                        //- div.plyr-js(data-plyr-embed-id="CHANGE_ME" data-plyr-provider="youtube")
+                        div.responsive-embed.widescreen
+                            iframe#kaltura_player(src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=0_d8ufoqop&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_jux26odj")
+
+            //- ==========  BODY  ==========
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-9.small-12.cell
+                    .small-mt3.small-mb2
+                        +imageZoomSingle(
+                            "https://assets.paulrand.design/Life/Videos/2019%20James%20Housefield%20Paul%20Rand%2C%20Design%20and%20the%20Play%20Instinct/Web/2019-01-30%20James%20Housefield%20on%20Paul%20Rand%2C%20Design%20and%20the%20Play%20Instinct.jpg",
+                            "https://assets.paulrand.design/Life/Videos/2019%20James%20Housefield%20Paul%20Rand%2C%20Design%20and%20the%20Play%20Instinct/Web/2019-01-30%20James%20Housefield%20on%20Paul%20Rand%2C%20Design%20and%20the%20Play%20Instinct.jpg"
+                            )
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        ***January 30, 2019 - 12:15 pm - 1:00 pm***
+
+                        James Housefield will speak as part of the Campus Community Book Project on “Design and the Play Instinct: Paul Rand and Joy in Modern Art.” 
+
+                        Paul Rand, one of the most influential designers of the 20th century, is recognized for his designs of books, magazine pages, posters, and corporate identities. Rand’s iconic logos for IBM, UPS and ABC characterize a work that balanced exuberance with control. His influential essay ”Design and the Play Instinct,” first published in 1965, remains well known today; indeed, students at UC Davis continue to read it more than 50 years after its initial appearance. This talk considers the contexts of modern art  that Rand drew upon for his essay. These ranged from the irrationality of Dada, Surrealism to the cool rationality of painter Henri Matisse. Through these creators and others, the joy of play led to techniques for artistic creation that might bring joy to those audiences who experienced their art. Although the origins of modern art precede the World Wars of the 20th century, critical focus on the power of play increased dramatically during the postwar period. By emphasizing what might be learned from childhood and play, the modern artists and Rand paved the way for a new ethos. Post-war U.S. culture promoted creativity in childhood education as a path to boost innovation in art and design. By embracing the play instinct, educators and designers alike promoted a culture of joy that shaped modern society.
+
+                        The talk will take place on January 30 in Cruess Hall, room 220. The event is free and open to the public. 
+
+                        The 2018-2019 book project features a year-long program around “The Book of Joy: Lasting Happiness in a Changing World” by the Dalai Lama, Archbishop Desmond Tutu and Douglas Abrams. For a completelisting of events, visit [ccbp.ucdavis.edu](ccbp.ucdavis.edu). 
+
+
+        //- /*-----  End of BODY  ------*/
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug

@@ -33,8 +33,8 @@ block main-content
                 .large-8.medium-11.cell
                     .grid-x.grid-margin-x
                         .large-12.cell.text-center
-                            h1= pageTitle
-                            p.text-gray.t16: em 2015
+                            h1(data-aos="fade-up")= pageTitle
+                            p.text-gray.t16(data-aos="fade-up"): em 2015
 
                             :markdown-it(html typographer plugins=['markdown-it-sup'])
                                 CreativeLive unleashes your creative potential by connecting you directly with the world‘s most inspiring visionaries.

@@ -53,9 +53,9 @@ block main-content
                 .large-7.medium-8.small-12.cell.text-center
                     h1(data-aos="fade-up")!= pageTitle
 
-                    em.text-gray.t16!= 'By ' + author
+                    em.text-gray.t16(data-aos="fade-up")!= 'By ' + author
                     br
-                    em.text-gray.t16!= bookSubhead
+                    em.text-gray.t16(data-aos="fade-up")!= bookSubhead
 
 
                     //- /*==============================  BOOK COVER  ==============================*/
@@ -75,7 +75,6 @@ block main-content
             .grid-x.grid-margin-x.align-center.align-center
                 .large-7.medium-8.small-12.cell
                     :markdown-it(html typographer plugins=['markdown-it-sup'])
-
 
 
 

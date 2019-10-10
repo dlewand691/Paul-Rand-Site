@@ -339,7 +339,7 @@
                         thumbnail: "/life/img/_video-assets/video-moda.jpg"
                 },
                     {
-                        id: "2013-MODA-steven-heller.html",
+                        id: "2013-11-07-MODA-steven-heller.html",
                         text: "Learning from Rand: Steven Heller at MODA",
                         caption: "2013",
                         thumbnail: "/life/img/_video-assets/video-moda-heller.jpg"
@@ -361,6 +361,12 @@
                         text: "Philip Burton on Paul Rand at Wright",
                         caption: "2018",
                         thumbnail: "/life/img/_video-assets/video-philipBurton.jpg"
+                },
+                    {
+                        id: "2019-james-housefield-design-and-the-play-instinct.html",
+                        text: "James Housefield: Design and the Play Instinct",
+                        caption: "2019",
+                        thumbnail: "/life/img/_video-assets/video-jamesHousefield.jpg"
                 }
             ]
         }
@@ -634,76 +640,82 @@
                 text: "EVENTS",
                 children: [
                     {
-                        id: "events/1991-cooper-union.html",
+                        id: "events/1991-04-17-cooper-union.html",
                         text: "Cooper Union Event: Paul Rand Interviewed By Keith Godard",
                         caption: "1991",
                         thumbnail: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1991%20Cooper%20Union%20PAUL%20RAND%20Interviewed%20by%20Keith%20Godard%20POSTCARD%20Announcement/Web/1991%20Cooper%20Union%20Paul%20Rand%20Interviewed%20By%20Keith%20Godard%20Postcard%20Announcement-200.jpg"
                 },
+                {
+                    id: "events/1994-04-21-philadelphia-lecture.html",
+                    text: "Philadelphia Lecture",
+                    caption: "1994",
+                    thumbnail: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20Lecture%20in%20Philadelphia%20Pennsylvania/Web/Lecture%20in%20Philadelphia%20Pennsylvania%201994-200.jpg"
+                },
                     {
-                        id: "events/1994-cincinnati-art-directors-club.html",
+                        id: "events/1994-05-17-cincinnati-art-directors-club.html",
                         text: "Cincinnati Art Directors Club",
                         caption: "1994",
                         thumbnail: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20Cincinnati%20Art%20Directors%20Club/Web/1994%20Cincinnati%20Art%20Directors%20Club%20Poster-200.jpg"
                 },
                     {
-                        id: "events/1994-minneapolis.html",
+                        id: "events/1994-09-22-minneapolis.html",
                         text: "St. Paul, Minneapolis Event",
                         caption: "1994",
                         thumbnail: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20St%20Paul%20Minneapolis/Web/St%20Paul%20Minneapolis%20talk%20Poster%2C%20front-200.jpg"
                 },
                     {
-                        id: "events/1994-philadelphia-lecture.html",
-                        text: "Philadelphia Lecture",
-                        caption: "1994",
-                        thumbnail: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1994%20Lecture%20in%20Philadelphia%20Pennsylvania/Web/Lecture%20in%20Philadelphia%20Pennsylvania%201994-200.jpg"
-                },
-                    {
-                        id: "events/1996-paul-rand-milton-glaser.html",
+                        id: "events/1996-05-07-paul-rand-milton-glaser.html",
                         text: "AIGA/NY Paul Rand & Milton Glaser: A Conversation",
                         caption: "1996",
                         thumbnail: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/1996%20Paul%20Rand%20and%20Milton%20Glaser/Web/1996%20Paul%20Rand%20and%20Milton%20Glaser%20Announcement%20Postcard%2C%20front-200.jpg"
                 },
                     {
-                        id: "events/2013-MODA-steven-heller-afternoon.html",
+                        id: "events/2013-11-07-MODA-steven-heller-afternoon.html",
                         text: "Steven Heller talks to students",
                         caption: "2013",
                         thumbnail: "/life/img/_video-assets/video-moda-heller.jpg"
                 },
                     {
-                        id: "events/2013-MODA-steven-heller.html",
+                        id: "events/2013-11-07-MODA-steven-heller.html",
                         text: "Learning from Rand: Steven Heller at MODA",
                         caption: "2013",
                         thumbnail: "/life/img/_video-assets/video-moda-heller.jpg"
                 },
+                {
+                    id: "events/2014-03-31-paul-rand-workshop.html",
+                    text: "Paul Rand Workshop",
+                    caption: "2014",
+                    thumbnail: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Paul%20Rand%20Workshop/Web/RandWorkshop-200.jpg"
+                },
+                {
+                    id: "events/2014-04-22-standing-on-the-shoulders-of-giants.html",
+                    text: "Standing on the Shoulders of Giants",
+                    caption: "2014",
+                    thumbnail: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2001-200.jpg"
+                },
                     {
-                        id: "events/2014-kit-hinrichs-on-paul-rand.html",
+                        id: "events/2014-06-24-kit-hinrichs-on-paul-rand.html",
                         text: "Kit Hinrichs on Paul Rand",
                         caption: "2014",
                         thumbnail: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Kit%20Hinrichs%20on%20Paul%20Rand/Web/Kit%20Hinrichs%20on%20Paul%20Rand%2003-200.jpg"
                 },
                     {
-                        id: "events/2014-paul-rand-workshop.html",
-                        text: "Paul Rand Workshop",
-                        caption: "2014",
-                        thumbnail: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Paul%20Rand%20Workshop/Web/RandWorkshop-200.jpg"
-                },
-                    {
-                        id: "events/2014-standing-on-the-shoulders-of-giants.html",
-                        text: "Standing on the Shoulders of Giants",
-                        caption: "2014",
-                        thumbnail: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2014%20Standing%20on%20the%20Shoulders%20of%20Giants/Web/Standing%20on%20the%20Shoulders%20of%20Giants%202014%2001-200.jpg"
-                },
-                    {
-                        id: "events/2018-paul-rand-estate-auction.html",
+                        id: "events/2018-09-13-paul-rand-estate-auction.html",
                         text: "Paul Rand: The Art of Design (Estate Auction)",
                         caption: "2018",
                         thumbnail: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2018%20Wright%20Auction/Exhibit%20Space/Web/Paul%20Rand%20auction%20exhibit%2000-200.jpg"
                 },
                     {
-                        id: "events/2019-steven-heller-designers-scribbles.html",
+                        id: "events/2019-02-08-steven-heller-designers-scribbles.html",
                         text: "Steven Heller: Paul Rand: A Designer’s Scribbles",
                         caption: "2019",
                         thumbnail: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2019%20Steven%20Heller-%20A%20Designer%27s%20Scribbles/Web/Steven%20Heller%20at%20UMMA%2001-200.jpg"
+                },
+                    {
+                        id: "events/2019-03-07-chris-pullman-looking-for-clues-in-paul-rands-studio.html",
+                        text: "Chris Pullman: Looking for Clues in Paul Rand's Studio",
+                        caption: "2019",
+                        thumbnail: "https://assets.paulrand.design/Life/Exhibits%20and%20Events/2019%20Chris%20Pullman%20Looking%20for%20Clues%20in%20Paul%20Rand%E2%80%99s%20Studio/Web/Looking-for-Clues-in-Paul-Rands-Studio%2001-200.jpg"
                 }
             ]
         }

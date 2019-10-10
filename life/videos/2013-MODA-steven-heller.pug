@@ -37,8 +37,8 @@ block main-content
                 .large-8.medium-11.cell
                     .grid-x.grid-margin-x
                         .large-12.cell.text-center
-                            h1= pageTitle
-                            p.text-gray.t16: em 2013
+                            h1(data-aos="fade-up")= pageTitle
+                            p.text-gray.t16(data-aos="fade-up"): em 2013
 
                             :markdown-it(html typographer plugins=['markdown-it-sup'])
                                 Video courtesy and copyright of the [Museum of Design Atlanta (MODA)](http://www.museumofdesign.org)
