@@ -1,0 +1,140 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Object Lessons'
+    - var bodyID    = 'writing'
+    - var bodyClass = 'articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Writing/Articles/1993%20Object%20Lessons/NewCriterion-1993feb-450.jpg'
+
+    - var publishedInTitle      = 'The New Criterion'
+    - var publishedInSubtitle   = '1993'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1993%20Object%20Lessons/NewCriterion-1993feb-800.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1993%20Object%20Lessons/NewCriterion-1993feb.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/705656051'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3DFebruary%2B1993%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3DThe%2BNew%2BCriterion'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1F6HpKv'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/s/The+New+Criterion+1993?_requestid=204979'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2050601.m570.l1313.TR0.TRC0.H0.XPrint%2BMagazine%252C%2BJanuary%2BFebruary%252C%2B1964.TRS0%26_nkw%3DThe%2BNew%2BCriterion%2B1993%26_sacat%3D0'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Failure by Design'
+    - var nextDate              = '1993'
+    - var nextDescription       = 'Originally published in the New York Times'
+    - var nextLink              = '/writing/articles/1993-failure-by-design.html'
+
+
+    - var relatedItemLink1      = '/writing/articles/1985-the-politics-of-design.html'
+    - var relatedItemTitle1     = 'The Politics of Design'
+    - var relatedItemFootnote1  = 'from “A Designer’s Art”'
+
+    - var relatedItemLink2      = '/writing/articles/1952-the-trademark-as-an-illustrative-device.html'
+    - var relatedItemTitle2     = 'The Trademark as an Illustrative Device'
+    - var relatedItemFootnote2  = 'Originally published in “Seven Designers Look At Trademark Design”, 1952'
+
+    - var relatedItemLink3      = '/writing/articles/1987-observations-on-intuition.html'
+    - var relatedItemTitle3     = 'Observations on Intuition'
+    - var relatedItemFootnote3  = 'Revised and reprinted in “Design, Form and Chaos”, 1985'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: ''})
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =            FULL WIDTH IMAGE HEADER            =
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1(data-aos="fade-up")!= pageTitle
+
+            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                Originally published in The New Criterion, February 1993, Volume 11, Number 6.
+
+            //- a.button.tiny.white.text-caps.radius.down-arrow#original-article-link.bottomAlign(data-aos="fade-up") View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+    .cd-main-content
+        .grid-container
+
+
+            //- ==========  BODY  ==========
+
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-9.small-12.cell.entry-content
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        ### The Evolution of Useful Things by Henry Petroski, is a tantalizing book. 
+
+                        Here, in the engineer-author’s untechnical language, is a sample of its contents that is both amusing and revealing: 
+
+                    blockquote “It is said to have been Cardinal Richelieu’s disgust with a frequent dinner guest’s habit of picking his teeth with the pointed end of his knife that drove the prelate to order all his table knives ground down.” 
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Not only does this book tell us about the evolution of such familiar artifacts as flatware, but it also tells us about the multitudes who designed and used them. Quoting from *The Evolution of Technology* by George Basalla, the author provides us with another interesting anecdote: **“In 1867 Karl Marx was surprised to learn … that five hundred different kinds of hammers were produced in Birmingham, England, each one adapted to a specific function in industry or the crafts.”**
+
+                        This kind of information is fascinating not in spite but because of the familiar things it talks about.
+
+                        *The Evolution of Useful Things* is as much a social history as it is a technological treatise, a description that also applies to Henry Petroski’s previous books, *The Pencil and To Engineer Is Human.* All relate to everyday objects rather than exotic ones — how pins turned into paper clips; how styrofoam containers for hamburgers evolved; and how Post-it Notes came about. The list is endless, and it is easy to imagine that the author is well into his next tome.
+
+                        More, perhaps, than anything else, Petroski reminds us not to take things for granted. (His book is both an object lesson and a lesson about objects.) But this is not all he has to say. Supplying us with so many different artifacts, he has also tried to illustrate, with the help of some of his theories, the evolution of these artifacts.
+
+                        In his preface Petroski describes his book as **_“a refutation of the dictum that form follows function.”_** In its place he offers the debatable proposition that **form follows failure.** In this, I believe, he is skating on thin ice. “Here”, Petroski asserts, “is the central idea: the form of made things is always subject to change in response to their real or perceived shortcomings, their failures to function properly.” This hypothesis, it seems, is an assumption that is both too broad and too narrow. To claim, as the author does, that “this principle governs all invention, innovation and ingenuity” seems to be stretching a point, for it disregards those sources of inspiration that have nothing whatever to do with failure, mechanical or otherwise. It also fails as a unifying principle, simply because failure does not represent, as does function, the end of the design process.
+
+                        If one, incidentally, were to take the **maxim form follows failure** at face value, the Leaning Tower of Pisa would make a striking example; but this, I doubt, is what Petroski had in mind. His concept of failure, even if a bit gimmicky, is interesting, but I doubt that it can be seen as a universal truth. Sophistry, somehow, is in the air. In the evolutionary process of an artifact, failure is merely one of a long list of incentives to change. The probability of failure as part of the evolutionary process of design is certainly a valid one, but so are the probabilities of need, want, order, chance, whim, obsolescence, fancy, faith, intuition, purpose, curiosity — and so on. Once something works, once a failure is corrected, the evolutionary process is complete — but only after function is realized.
+
+                        Some of the author’s other ideas, I believe, are equally difficult. “Whereas the shortcomings of an existing thing may be expressed in terms of a need for improvement,” writes Petroski, “it is really want rather than need that drives the process of technological evolution. Thus we may need air and water, but generally we do not require air conditioning or ice water in any fundamental way.” Anyone who has spent time in a movie house on a sultry summer’s day surely will wish to spell want N-E-E-D. “We may find food indispensable,” he continues, “but it is not necessary to eat it with a fork. Luxury, rather than necessity, is the mother of invention.” The author forgets that there is such a thing as table etiquette, and countless other things, that may turn needs into wants and vice versa. This argument, carried to its logical conclusion, would eliminate the need for almost any artifact. Robinson Crusoe managed.
+
+                        Many artifacts are changed for reasons that have nothing to do with poor function, and even if they had, this might not in any way affect their appearance. Mechanical improvements do not necessarily create new forms; failure is but one contributing factor among many. Nostalgia and sentimentality are often more persuasive against change than is creativity. The old bridge on Bridge Street, near the Westport railroad station, built in 1884, is currently being restored to its original state, rather than replaced by a modern structure. (It originally replaced a wooden bridge built in 1869, which was destroyed by termites. ) Here, form follows the bridge’s original function. Postmodern design is also steeped in nostalgia, as well as old forms, and not in discovering new ones. The success of these structures is due to their appeal to sentimentality and nostalgia. Evolution that implies improvement is often no more than mere restoration.
+
+                        Here is another attempt to support the **form follows failure** thesis: “Whether self-generated or heard from others, whether couched in crass terms of coming up with a million-dollar idea or in utopian dreams of wasteless societies, whether expressed in Anglo-Saxon concretions or in Latinate, polysyllabic abstraction, dissatisfaction with existing artifact is at the core of all invention and hence all changes in made things.” If the idea of “dissatisfaction with existing artifacts” is not limited to failure of some kind, there is clearly no basis for disagreement. But in the evolution of artifacts, preferences and prejudices are powerful forces, as are innumerable other forces. Most of Thomas Jefferson’s inventions, for example, were the result of special needs that had nothing to do with failure.
+
+                        **“Whereas shape and form,” writes Petroski, “are the fundamental subjects of this book, the aesthetic qualities of things are not among its primary concerns. Aesthetic considerations may certainly influence, and in some cases even dominate, the process whereby a designed object comes finally to look the way it does, but they are seldom the first causes of shape and form, with jewelry and objets d’art being notable exceptions.”** This statement seems to imply that aesthetics, on the one hand, and shape and form, on the other hand, are mutually exclusive. In fact, though, there are many examples of artifacts besides jewelry and objets d’art that depend primarily on aesthetic considerations for their shape and form.
+
+                        We know that a knife is a knife and that its basic form to fit its function was established long ago. Therefore, aesthetic considerations are really the only ones left for the designer who is asked to create a new knife. The Queen Anne pattern, pictured next page, for instance, which was designed almost three centuries ago, is perhaps the most beautiful flatware extant. Here the designer’s problem had nothing to do with the shape of the blade, unless he chose to change it; functional considerations were not nearly as important as aesthetic ones.
+
+                        **“When aesthetic considerations dominate the design of a new silverware pattern,” Petroski continues, “the individual implements, no matter how striking and well balanced they may look on the table, can often leave much to be desired in their feel and use in the hand.”** But the author has neglected to tell us that the opposite can also be true. A sensitive designer could have affected not only the appearance but also the function of the knife, which is exactly what the designer of the Queen Anne pattern did. He could have altered the relation between blade and handle or reshaped both so that they could be more comfortable to the hand *and* more pleasing to the eye.
+
+                        But none of this tells us anything about the role or even the meaning of form — the inseparable, aesthetic side of the equation. To those who have been complacently sharing the beliefs of true believers, of the sculptor Horatio Greenough (1805-1852), for example, or of the great American architect and mentor of Frank Lloyd Wright, Louis Sullivan (1856- 1924), this must come as a surprise. Greenough says that “beauty is the promise of function,” and Sullivan tells us that *“form follows function* is a rule of discovery and experience, and its implications would have more clearly been recognized if it had been stated: function creates form … functions seek their forms.”
+
+                        Does it work? is not only a question of function, it is also a question of form. Is it beautiful? Is it appropriate? Is it useful? These are some of the other concerns. What something looks like is its aesthetic quality, regardless of its purpose or function or whether it was designed by an engineer, or an artist, or by chance, intuition, or intention. The George Washington Bridge (1927, see page 174), incidentally, is a good example of design by chance. The steel skeleton that we know was originally intended to be clad in masonry, but lack of funds, not functional failure, determined its form — its soaring silver silhouette against the New York City sky.
+
+                    blockquote 
+                        em Form follows function 
+                        | — or, more specifically, form follows the limits of restraint, simplicity, and economy.
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Is the origin of the great monuments to culture the product of *form follows failure?* The Parthenon, the Mosque of Santa Sophia in Istanbul, and the great Gothic cathedrals are true products of human ingenuity and faith. Faith, I believe, plays a far greater role than failure in the production of most artifacts. The Shakers, for example, a religious, communal, celibate sect (sometimes called Shaking Quakers), produced some of the most beautiful and useful buildings, utensils, farm equipment, tableware, furniture, and tools. The invention of the circular saw, the flat broom, and the clothespin, for example, indicate that while the Shakers’ heads were looking toward heaven their feet were on the ground. *Form follows function* was their way of life. Faith, simplicity, restraint, and honesty were their means, perfection their goal. In the secular world, the philosophy of the Bauhaus expressed similar views.
+
+                        Both the Shakers’ quest for perfection and their work ethic were shared by the Japanese, whose art and artifacts had, and still have, a profound influence on Western design, from bamboo objects to lacquerware, tools, tableware, machines, cameras, computers, automobiles, and video equipment, as well as to some of the great examples of the artisan’s and architect’s skills. Katsura Palace is the model of the spirit of form follows function.
+
+                        One can be sure that form always follows ingenuity. But one cannot be sure that form always follows failure, or that the dictum is universally valid. We can’t even be sure that the maxim *form follows function* is always valid. We can be sure that, with few exceptions, the solutions to functional problems are finite, whereas those to formal ones are infinite. The impulse to creation knows no exceptions — fashionable or practical. Cosmetics or jewelry, flatware or footware, hammers or nails — it is the urge to invent, to solve problems, visual or mechanical, that really matters.
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        //- include ../../__MIXINS/_include-image-carousel.pug
+
+        include ../../__MIXINS/_include-published-in.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        

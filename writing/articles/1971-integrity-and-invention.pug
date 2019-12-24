@@ -1,0 +1,186 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Integrity and Invention'
+    - var bodyID    = 'writing'
+    - var bodyClass = 'articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Writing/Articles/1971%20Integrity%20and%20Invention/Web/Graphis%20Annual%201971-72.jpg'
+
+    - var publishedInTitle      = 'Graphis Annual'
+    - var publishedInSubtitle   = '1971'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1971%20Integrity%20and%20Invention/Web/Graphis%20Annual%201971-72.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1971%20Integrity%20and%20Invention/Web/Graphis%20Annual%201971-72.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/11758193'
+    - var abe                   = 'yes'
+    //- - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3DGraphis%2BAnnual%2B1971%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1MeMAaZ'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/s/Graphis+Annual+1971?_requestid=202821'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2050601.m570.l1313.TR0.TRC0.H0.TRS0%26_nkw%3DGraphis%2BAnnual%2B1971%26_sacat%3D0'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Hans Schleger'
+    - var nextDate              = '1977'
+    - var nextDescription       = 'A tribute to a design legend. Originally published in Graphis 188.'
+    - var nextLink              = '/writing/articles/1977-hans-schleger.html'
+
+    - var relatedItemLink1      = '/writing/articles/1993-object-lessons.html'
+    - var relatedItemTitle1     = 'Object Lessons'
+    - var relatedItemFootnote1  = 'Originally published in The New Criterion, 1993'
+
+    - var relatedItemLink2      = '/writing/articles/1996-language-of-art.html'
+    - var relatedItemTitle2     = 'Language of Art'
+    - var relatedItemFootnote2  = 'Contributed by John Maeda'
+
+    - var relatedItemLink3      = '/writing/articles/1987-observations-on-intuition.html'
+    - var relatedItemTitle3     = 'Observations on Intuition'
+    - var relatedItemFootnote3  = 'Originally published in “STA Design Journal”, 1987'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    //- - imageCarousel.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: ''})
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =            FULL WIDTH IMAGE HEADER            =
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1(data-aos="fade-up")!= pageTitle
+
+            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                Published in the Graphis Annual, 1971
+
+            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign(data-aos="fade-up") View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+    .cd-main-content
+        .grid-container
+
+
+            //- ==========  BODY  ==========
+
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content
+                    p.footnote.text-center
+                        | Estimated reading time: 
+                        span.text-bold.reading-time
+                        |   |  Select text to share via Facebook, Twitter or Email
+                    hr.hr-red.w25.horizontal-center.small-mt3
+                    h3.text-center.small-my3 Courage and Creativity
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Like that of the spawning salmon, the artist’s life is a never-ending upstream battle. To function creatively the artist must have the courage to fight for what he believes. Courage in the face of a danger that has no element of high adventure in it-just the cold, hard possibility of losing his job. Yet the courage of his convictions is, along with his talent, his only source of strength. Frank Lloyd Wright put it this way:
+
+                    blockquote 
+                        | I’ll work as I’ll think as I am
+                        br
+                        | No thought of fashion or sham
+                        br
+                        | Nor for fortune the jade
+                        br
+                        | Serve vile Gods of trade
+                        br
+                        | My thought as beseemeth a man’
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        The businessman will never respect the professional who does not believe in what he does. The businessman under these circumstances can only ‘use’ the artist for his own ends. And why not, if the artist himself has no ends?
+
+                        In asking the artist to have courage, we must ask the same of industry. The impetus to conform, so widespread today, will, if not checked, kill all forms of creativity, scientific and technological included.
+
+                        Business has a strong tendency to wait for a few brave pioneers to produce or underwrite original work, then rush to climb on the bandwagon. The bandwagon, of course, may not even be going in the right direction. The attention and admiration evoked by the high calibre of XYZ’s advertising have induced many an advertiser to say ‘Let’s do something like XYZ’ without considering that it might not be at all suited to his needs. Specific problems require specific visual solutions. But both XYZ’s and ABC’s advertising and products can be made to fulfil their functions and also be aesthetically gratifying. Both can express respect for and concern with the broadest interests of the consumer. Against the outstanding achievements in design by some companies, there stands the great Artistic Integrity
+
+                    hr.hr-red.w25.horizontal-center.small-mt3
+                    h3.text-center.small-my3 Artistic Integrity
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        There are those who believe that the role the designer must play is fixed and determined by the socio-economic climate; that he must discover his functional niche and fit himself into it. It seems to me that this ready-made image ignores the part the artist can play in creating this climate. Whether as advertising tycoons, missile builders, public or private citizens, we are all human beings, and to endure we must, first of all, be for ourselves. It is only when man is not accepted as the centre of human concern that it becomes feasible to create a system of production which values profit out of proportion to responsible public service, or to design ads in which the only aesthetic criteria are the use of fashionable illustrations and ‘in’ type faces. The commercial artist (designer) who wants to be more than a mere stylist and who wishes to avoid being overwhelmed by the demands of clients, the idiosyncrasies of public taste, and the ambiguities of consumer research surveys must become clear as to what his cultural contribution should be. In all these areas he must try to distinguish the real from the imaginary, the sincere from the pretentious, and the objective from the biased. If the commercial artist has both talent and a commitment to aesthetic values, he will automatically try to make the product of graphic design both pleasing and visually stimulating to the user or the viewer. By stimulating I mean that this work will add something to the spectator’s experience.
+
+                        The artist must believe his work is an aesthetic statement, but he must also understand his general role in society. It is this role that justifies his spending the client’s money and his risking other people’s jobs. And it entitles him to make mistakes. He adds something to the world. He gives it new ways of feeling and of thinking. He opens doors to new experience. He provides new alternatives as solutions to old problems.
+
+                        There is nothing wrong with selling, even with ‘hard’ selling, but selling which misrepresents, condescends, relies on sheer gullibility or stupidity is wrong. Morally, it is very difficult for an artist to do a direct and creative job if dishonest claims are being made for the product he is asked to advertise, or if, as an industrial designer, he is supposed to exercise mere stylistic ingenuity to give an old product a new appearance. The artist’s sense of worth depends on his feeling of integrity. If this is destroyed, he will no longer be able to function creatively.
+
+                    hr.hr-red.w25.horizontal-center.small-mt3
+                    h3.text-center.small-my3 Art and Communication
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        The lament of the graphic designer that he is not permitted to do good work because good work is neither wanted nor understood by his employers is universal. It is indeed very often true. But if the artist honestly evaluates his work he will frequently find that the ‘good work’ the businessman has rejected is really not so ‘good’. Many times when the ‘square’ client says ‘it’s too far out’, he may be unconsciously reacting to inappropriate symbolism, obscure interpretation of an idea, poor typography, an inadequate display of his product, or simply bad communication. In a new edition of my book THOUGHTS ON DESIGN, this problem was alluded to as follows:
+
+                        **Graphic design-**
+
+                        which fulfils aesthetic needs,  
+                        complies with the laws of form  
+                        and the exigencies of two-dimensional space;  
+                        which speaks in semiotics, sans-serifs,  
+                        and geometries;  
+                        which abstracts, transforms, translates,  
+                        rotates, dilates, repeats, mirrors,  
+                        groups, and regroups-  
+                        is not good design  
+                        if it is irrelevant.  
+
+                        **Graphic design-**
+
+                        which evokes the symmetria of Vitruvius,  
+                        the dynamic symmetry of Hambidge,  
+                        the asymmetry of Mondrian;  
+                        which is a good gestalt;  
+                        which is generated by intuition or by computer,  
+                        by invention or by a system or coordinates-  
+                        is not good design  
+                        if it does not co-operate  
+                        as an instrument  
+                        in the service of communication.  
+
+                    hr.hr-red.w25.horizontal-center.small-mt3
+                    h3.text-center.small-my3 Originality and Subject-Matter
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Ideas do not need to be esoteric to be original or exciting. As H. L. Mencken says of Shaw’s plays, “The roots of each one of them are in platitude; the roots of every effective stage play are in platitude.” And when he asks why Shaw is able to ‘kick up such a pother’, he answers, “For the simplest of reasons. Because he practises with great zest and skill the fine art of exhibiting the obvious in unexpected and terrifying lights.” From Impressionism to Pop, the commonplace and the comic strip have become the ingredients for the artist’s cauldron. What Cezanne did with apples, Picasso with guitars, Leger with machines, Schwitters with rubbish, and Duchamp with urinals makes it clear that revelation does not depend upon grandiose concepts. In 1947 I wrote what I still hold to be true, ‘The problem of the artist is to make the commonplace uncommonplace.
+
+                        If artistic quality depended on exalted subject-matter, the commercial artist, as well as the advertising agency and advertiser, would be in a bad way. For years I have worked with light bulb manufacturers, cigar makers, distillers, etc., whose products visually are not in themselves unusual. A light bulb is almost as commonplace as an apple, but if I fail to make a package or an advertisement for light bulbs that is lively and original, it will not be the light bulb that is at fault.
+
+                    hr.hr-red.w25.horizontal-center.small-mt3
+                    h3.text-center.small-my3 The ‘Corporate Image’
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        In this, the speed generation, practically any corporation, large or small, can have its ‘image’ made to order. A vast army of image makers have made a business out of art large enough almost to rival the businesses they help to portray.
+
+                        Much has been touted about the virtues of corporate identification programmes. Because the corporate image so often conveys the impression that it is all-encompassing, it leaves little doubt in the mind of the onlooker that the image he sees represents a company which is really in the swim, that it’s the best, the first, and the most. However, being with it is not always being for it.
+
+                        It seems to me that a company can more easily be recognized for what it really believes not by its ‘made to order image’ (its trade mark, logotype, letterhead), nor by the number of avant-garde prints or Mies van der Rohe chairs which embellish its offices, but by its more mundane, day-to-day activities: its house organs, counter displays, trade advertisements, packaging and products. Unless it consistently represents the aims and beliefs as well as the total production and activities of a company, a corporate image is at best mere window dressing, and at worst deception.
+
+                        Things can be made and marketed without our considering their moral or aesthetic aspects; ads can convince without pleasing or heightening the spectator’s visual awareness, products can work regardless of their appearance. But should they? The world of business could function without benefit of art-but should it? I think not, if only for the simple reason that the world would be a poorer place if it did.
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        //- include ../../__MIXINS/_include-image-carousel.pug
+
+        include ../../__MIXINS/_include-published-in.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        

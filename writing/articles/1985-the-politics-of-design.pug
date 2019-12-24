@@ -1,0 +1,149 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'The Politics of Design'
+    - var bodyID    = 'writing'
+    - var bodyClass = 'articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%e2%80%99s%20Art/jpegs/designers%20art%20front-450.jpg'
+
+    - var publishedInTitle      = 'A Designer’s Art'
+    - var publishedInSubtitle   = 'Yale University, 1985'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%e2%80%99s%20Art/jpegs/designers%20art%20front-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Books/1985%20A%20Designer%e2%80%99s%20Art/jpegs/designers%20art%20front.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/12975201'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fan%3Dpaul%2Brand%26bi%3D0%26bx%3Doff%26ds%3D30%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17%26tn%3DA%2BDesigner%2527s%2BArt'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1Yh2qID'
+    - var modernism101          = 'yes'
+    - var modernism101Link      = 'http://modernism101.com/products-page/graphic-design/rand-paul-a-designers-art-new-haven-yale-university-press-1985-inscribed-to-gene-federico'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/w/paul-rand-paul-rand/1101898055?ean=9780300082821'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2050601.m570.l1313.TR0.TRC0.H0.XA%2BDesigner%25E2%2580%2599s%2BArt%2BPaul%2BRand.TRS0%26_nkw%3DA%2BDesigner%25E2%2580%2599s%2BArt%2BPaul%2BRand%26_sacat%3D0'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Observations on Intuition'
+    - var nextDate              = '1987'
+    - var nextDescription       = 'Originally published in “STA Design Journal”'
+    - var nextLink              = '/writing/articles/1987-observations-on-intuition.html'
+
+
+    - var relatedItemLink1      = '/writing/articles/1993-failure-by-design.html'
+    - var relatedItemTitle1     = 'Failure by Design'
+    - var relatedItemFootnote1  = 'Originally published in the New York Times, 1993'
+
+    - var relatedItemLink2      = '/writing/articles/1989-the-case-for-the-ampersand.html'
+    - var relatedItemTitle2     = 'The Case for the Ampersand'
+    - var relatedItemFootnote2  = 'Originally published in New York Times, September 10, 1989'
+
+    - var relatedItemLink3      = '/writing/articles/1965-design-and-the-play-instinct.html'
+    - var relatedItemTitle3     = 'Design and the Play Instinct'
+    - var relatedItemFootnote3  = 'Originally published in “Education of Vision”, 1965'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    //- - imageCarousel.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: ''})
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =            FULL WIDTH IMAGE HEADER            =
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1(data-aos="fade-up")!= pageTitle
+
+            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                from *“A Designer’s Art”*
+
+            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign(data-aos="fade-up") View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+    .cd-main-content
+        .grid-container
+
+
+            //- ==========  BODY  ==========
+
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell
+                    p.footnote.text-center
+                        | Estimated reading time: 
+                        span.text-bold.reading-time
+                        |   |  Select text to share via Facebook, Twitter or Email
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        *** It is no secret that the real world in which the designer functions is not the world of art, but the world of buying and selling.***
+
+                        For sales, and not design are the raison d’etre of any business organization. Unlike the salesman, however, the designer’s overriding motivation is art: art in the service of business, art that enhances the quality of life and deepens appreciation of the familiar world.
+
+                        **Design is a problem-solving activity. It provides a means of clarifying, synthesizing, and dramatizing a word, a picture, a product, or an event.** A serious barrier to the realization of good design, however, are the layers of management inherent in any bureaucratic structure. For aside from the sheer prejudice or simple unawareness, one is apt to encounter such absurdities as second guessing, kow-towing, posturing, nit-picking, and jockeying for position, let alone such buck-passing institutions as the committee meeting and the task force. At issue, it seems, is neither malevolence nor stupidity, but human frailty.
+
+                        The smooth functioning of the design process may be thwarted in other ways, by the imperceptive executive, who in matters of design understands neither his proper role nor that of the designer; by the eager but cautious advertising man whose principal concern is pleasing his client; and by the insecure client who depends on informal office surveys and pseudo-scientific research to deal with questions that are unanswerable and answers that are questionable.
+
+                        Unless the design function in business bureaucracy is so structured that direct access to the ultimate decision-maker is possible, trying to produce good work is very often an exercise in futility. Ignorance of the history and methodology of design — how work is conceived, produced, and reproduced — adds to the difficulties and misunderstandings. 
+
+                    blockquote Design is a way of life, a point of view. It involves the whole complex of visual communication: talent, creative ability, manual skill, and technical knowledge. Aesthetics and economics, technology and psychology are intrinsically relate to the process.
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        One of the more common problems which tends to create doubt and confusion is caused by the inexperienced and anxious executive who innocently expects, or even demands, to see not one but many solutions to a problem. These may include a number of visual and/or verbal concepts, an assortment of layouts, a variety of pictures and color schemes, as well as a choice of type styles. He needs the reassurance of numbers and the opportunity to exercise his personal preferences. He is also most likely to be the one to insist on endless revisions with unrealistic deadlines, adding to an already wasteful and time-consuming ritual. Theoretically, a great number of ideas assures a great number of choices, but such choices are essentially quantitative. This practice is as bewildering as it is wasteful. It discourages spontaneity, encourages indifference, and more often than not produces results which are neither distinguished, interesting, nor effective. In short, good ideas rarely come in bunches.
+
+                        The designer who voluntarily presents his client with a batch of layouts does so not out prolificacy, but out of uncertainty or fear. He thus encourages the client to assume the role of referee. In the event of genuine need, however, the skillful designer is able to produce a reasonable number of good ideas. But quantity by demand is quite different than quantity by choice. Design is a time-consuming occupation. Whatever his working habits, the designer fills many a wastebasket in order to produce one good idea. Advertising agencies can be especially guilty in this numbers game. Bent on impressing the client with their ardor, they present a welter of layouts, many of which are superficial interpretations of potentially good ideas, or slick renderings of trite ones.
+
+                        Frequent job reassignments within an active business are additional impediments about which management is often unaware. Persons unqualified to make design judgments are frequently shifted into design-sensitive positions. The position of authority is then used as evidence of expertise. While most people will graciously accept and appreciate criticism when it comes from a knowledgeable source, they will resent it (openly or otherwise) when it derives solely from a power position, even though the manager may be highly intelligent or have self-professed “good taste.” At issue is not the right, or even the duty, to question, but the right to make design judgment. Such misuse of privilege is a disservice to management and counterproductive to good design. Expertise in business administration, journalism, accounting, or selling, though necessary in its place, is not expertise in problems dealing with visual appearance. The salesman who can sell you the most sophisticated computer typesetting equipment is rarely one who appreciates fine typography or elegant proportions. Actually, the plethora of bad design that we see all around us can probably be attributed as much to good salesmanship as to bad taste.
+
+                    blockquote At issue is not the right, or even the duty, to question, but the right to make design judgment.
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Deeply concerned with every aspect of the production process, the designer must often contend with inexperienced production personnel and time-consuming purchasing procedures, which stifle enthusiasm, instinct, and creativity. Though peripherally involved in making aesthetic judgments (choosing printers, papermakers, typesetters and other suppliers), purchasing agents are for the most part ignorant of design practices, insensitive to subtleties that mean quality, and unaware of marketing needs. Primarily and rightly concerned with cost- cutting, they mistakenly equate elegance with extravagance and parsimony with wise business judgement.
+
+                        These problems are by no means confined to the bureaucratic corporation. Artists, writers, and others in the fields of communication and visual arts, in government or private industry, in schools or churches, must constantly cope with those who do not understand and are therefore unsympathetic to their ideas. The designer is especially vulnerable because design is grist for anybody’s mill. “I know what I like” is all the authority one needs to support one’s critical aspirations.
+
+                        Like the businessman, the designer is amply supplied with his own frailties. But unlike him, he is often inarticulate, a serious problem in an arena in which semantic difficulties so often arise. This is more pertinent in graphic design than in the industrial or architectural fields, because graphic design is more open to aesthetic than to functional preferences.
+
+                        Stubborness may be one of the designer’s admirable or notorious qualities (depending on one’s point of view) — a principled refusal to compromise, or a means to camouflage inadequacy. Design cliches, meaningless patterns, stylish illustrations, and predetermined solutions are signs of such weakness. An understanding of the significance of modernism and familiarity with the history of design, painting, architecture, and other disciplines, which distinguish the educated designer and make his role more meaningful, are not every designer’s strong points.
+
+                        **The designer, however, needs all the support he can muster, for his is a unique but unenviable position. His work is subject to every imaginable interpretation and to every piddling piece of fact- finding. Ironically, he seeks not only the applause of the connoisseur, but the approbation of the crowd.**
+
+                        A salutary working relationship is not only possible but essential. Designers are not always intransigent, nor are all purchasing agents blind to quality. Many responsible advertising agencies are not unaware of the role that design plays as a communication force. As for the person who pays the piper, the businessman who is sympathetic and understanding is not altogether illusory. He is professional, objective, and alert to new ideas. He places responsibility where it belongs and does not feel insecure enough to see himself as an expert in a field other than his own. He is, moreover, able to provide a harmonious environment in which goodwill, understanding, spontaneity, and mutual trust — qualities so essential to the accomplishment of creative work — may flourish.
+
+                        Similarly, the skilled graphic designer is a professional whose world is divided between lyricism and pragmatism. He is able to distinguish between trendiness and innovation, between obscurity and originality. He uses freedom of expression not as a license for abstruse ideas, and tenacity not as bullheadedness but as evidence of his own convictions. His is an independent spirit guided more by an “inner artistic standard of excellence” 
+                        sup [1] 
+                        | than by some external influence. At the same time as he realizes that good design must withstand the rigors of the marketplace, he believes that without good design the marketplace is a showcase of visual vulgarity.
+
+                    .sidenoteLeft 1. Anthony Storr, “The Dynamics of Creation”, (New York, 1972), 189.
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        The creative arts have always labored under adverse conditions. Subjectivity emotion, and opinion seem to be concomitants of artistic questions. The layman feels insecure and awkward about making design judgments, even though he pretends to make them with a certain measure of know-how. But, like it or not, business conditions compel many to get inextricably involved with problems in which design plays some role.
+
+                        ***For the most part, the creation or effects of design, unlike science, are neither measurable nor predictable, nor are the results necessarily repeatable. If there is any assurance, besides faith, a businessman can have, it is in choosing talented, competent, and experienced designers.***
+
+                        Meaningful design, design of quality and wit, is no small achievement, even in an environment in which good design is understood, appreciated, and ardently accepted, and in which profit is not the only motive. At best, work that has any claim to distinction is the exception, even under the most ideal circumstances. After all, our epoch can boast of only one A.M. Cassandre.
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-image-carousel.pug
+
+        include ../../__MIXINS/_include-published-in.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        

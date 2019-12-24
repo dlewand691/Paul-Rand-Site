@@ -1,0 +1,164 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'The Art of the Package'
+    - var bodyID    = 'writing'
+    - var bodyClass = 'articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960-450.jpg'
+
+    - var publishedInTitle      = 'PRINT Magazine'
+    - var publishedInSubtitle   = 'January/February, 1960'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'CHANGE_ME'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3DPRINT%2BMagazine%2BJanuary%2BFebruary%252C%2B1960%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/1F4UlRg'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/s/PRINT%20Magazine%20January/February,%201960'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2050601.m570.l1313.TR0.TRC0.H0.XPRINT%2BMagazine%2BJanuary%2BFebruary%252C%2B1960.TRS0%26_nkw%3DPRINT%2BMagazine%2BJanuary%2BFebruary%252C%2B1960%26_sacat%3D0'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'Design and the Play Instinct'
+    - var nextDate              = '1965'
+    - var nextDescription       = 'Originally published in “Education of Vision”'
+    - var nextLink              = '/writing/articles/1965-design-and-the-play-instinct.html'
+
+
+    - var relatedItemLink1      = '/writing/articles/1949-black-in-the-visual-arts.html'
+    - var relatedItemTitle1     = 'Black in the Visual Arts'
+    - var relatedItemFootnote1  = 'Originally published in “Graphic Forms: The Arts as Related to the Book”, 1949'
+
+    - var relatedItemLink2      = '/writing/articles/1989-the-case-for-the-ampersand.html'
+    - var relatedItemTitle2     = 'The Case for the Ampersand'
+    - var relatedItemFootnote2  = 'A critical review of Eric Gill’s “An Essay on Typography”'
+
+    - var relatedItemLink3      = '/writing/articles/1992-confusion-and-chaos-the-seduction-of-contemporary-graphic-design.html'
+    - var relatedItemTitle3     = 'Confusion and Chaos: The Seduction of Contemporary Graphic Design'
+    - var relatedItemFootnote3  = 'Originally published in the AIGA Journal of Graphic Design, Volume 10, Number 1, 1992'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2003.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2004-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2004.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2005-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2005.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2006-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2006.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2007-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2007.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2008-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2008.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2009-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2009.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2010-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2010.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2011-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2011.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2012-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2012.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2013-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1960%20The%20Art%20of%20the%20Package/Web/PRINT%2C%20January-February%201960%2013.jpg', title: ''})
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =            FULL WIDTH IMAGE HEADER            =
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1(data-aos="fade-up")!= pageTitle
+
+            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                Originally published in PRINT: January/February, 1960
+
+            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign(data-aos="fade-up") View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+
+        //- -----  End of FULL WIDTH IMAGE HEADER  ------
+    .cd-main-content
+        .grid-container
+
+
+            //- ==========  BODY  ==========
+
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content
+                    p.footnote.text-center
+                        | Estimated reading time: 
+                        span.text-bold.reading-time
+                        |   |  Select text to share via Facebook, Twitter or Email
+                    blockquote I’m not so concerned with the art or graphics of package design as I am with new developments in packaging technique–new materials, new construction and new applications.
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        This statement was made some years ago by a specialist in package design. Today any grocer or druggist's shelf is testimony to the fervent enthusiasm with which such views have been endorsed.
+
+                        Technical advance in the field of packaging has been impressive indeed: the one-piece “flip-top,” the push-button container, the shining array of new plastics with ingenious closures, the cleverly contrived shapes that stack, fit refrigerators or pockets, collapse, expand, etc. But does all this make a package? No! There is more to a package than convenience; it has to be looked at. How many flip-top cigarette packs or regular cigarette packs, for that matter, afford any pleasure to the eye? How consistently are we blinded by the dazzling display of vulgarity eagerly provided by most push-button cans, cereal boxes, soaps, bread wrappers, etc? Many, admittedly, are cleverly packaged. Technologically, scientifically and hygienically, packages of today are practical, but are they beautiful?
+
+                        Functionalism does not preclude beauty, but it does not guarantee it either.
+
+                    hr.w25.hr-red.small-my3.horizontal-center
+                    h3.text-center OUTSHOUT THE COMPETITION!
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Indifference to aesthetic factors and the espousal of vulgarity probably derive mainly from the advertiser's single-minded preoccupation with having his product noticed and then quickly identified. In the frantic hope of “standing out,” he tries to outshout, outcolor, and outglitter his competitor.
+
+                        He approves gaudy color schemes, oversized or misshapen lettering embellished with outlines, double or triple shadows, and other exhibitionistic devices of design. Good surface design is a complex matter. It does not automatically result from the felicitous discovery of new materials, ingenious closures or novel gimmicks, anymore than it derives from blatant display. “Surface design” should in no way imply superficiality, for it is this which often gives the designer the opportunity to enrich and personalize and articulate an otherwise bare and anonymous shape. Such a goal can be arrived at through a design as simple as the Chanel label or one more complicated like the Guinness label.
+
+                        The obsession with functional shapes and new materials is a dangerous limitation even for the conscientious designer blessed with a sensitive client. It tends to promote a misconception of simplicity, translating this admirable quality into bareness or rendering it self-conscious to the point of vapidity. This tendency is pronounced in a number of the cigarette packs which have recently invaded the market.
+
+                        It is not my intention to promote a movement towards fancy or complicated package design, but rather to stress the point that preoccupation with anyone element of a visual object at the expense of others is impoverishing, and poverty in the literal sense is not a virtue of design. It is my contention that all the formal elements which comprise a package must be treated with understanding, with love, and with an equal amount of dignity.
+
+                    hr.w25.hr-red.small-my3.horizontal-center
+                    h3.text-center DIGNITY, RESPECT AND GUIDES
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        Understanding means, among many things, that the designer must appreciate the difference between metal and plastic, glass and pottery, or paper and foil in terms of their graphic implications. “Dignity,” like understanding, is a general term, a principle of action. It does not mean that a product name should be small when a large one would be more effective or that ornaments should or shouldn’t be used. It means that a sense of dignity and the respect for work which accompanies it are indispensable guides to the designer in determining such formal problems of when, where and how. If a designer treats his work with love, he will, for instance, recognize the anecdotal or associative aspects of packages. He will know that buyers have visual memories and fondness for the familiar. He will then be better able to decide in the redesign of an old package which elements should be retained, discarded, altered or refined. He will be aware of the nostalgic appeal of old cigar boxes, Pears Soap wrappers, Victor’s barking dog and will wonder about the wisdom of streamlining the ‘White Rock girl.
+
+                        Although it is only possible to deal in generalities when it comes to a description of artistic principles, it is useful to show them in action, to make them more concrete by example. I hope, therefore, the illustrations shown here will demonstrate some of the points I have tried to make.
+
+                        Chanel packaging is perhaps a classic in its field. Each formal ingredient makes a contribution of itself and for the whole-the color and quality of the paper used, the trademark and how it is placed as well as its size and weight, the type face (traditionally considered more suitable for Mack Trucks) the black border complementing the circular trademark, and finally the shape, size and proportion of the boxes and bottles themselves. The combination of ingredients is indivisable and to remove anyone would destroy the package’s identity and beauty. The Chanel design is an excellent study in visual contrasts: here is black and white, round and straight, big and small, hard and soft.
+
+                    hr.w25.hr-red.small-my3.horizontal-center
+                    h3.text-center LABEL SHOULD ENRICH SHAPE
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        In a recent exhibition of packaging at the Museum of Modern Art, a bottle of Odol mouthwash was prominently displayed, but it could only be identified by those familiar with its unusual shape since the label, ironically, was removed. This; I imagine, was because the bottle looked better without it. The actual label is far from attractive, yet one can conceive of a label design which would not only serve its prime function-product identification but which would enhance the already beautiful form by enriching or emphasizing its shape.
+
+                        The Chinese jardiniere (Kang Hsi, 1662-1722), although not in the strictest sense a package, poses the same problems that the design of any cylindrical pack age does-namely, working on a rounded surface. It is virtually impossible to imagine this vase without the bands of calligraphy which cover its entire surface, so in harmony with its form is the applied design. True, shape and proportion would remain unchanged, but the enriching exploitation of material, the emphasizing of contour, excitement of pattern and the interest of the message (poem) would unhappily be lost.
+
+                        At first glance it is difficult to ascertain why the package of tobacco (on page 96) is so attractive. Is it the ornament, color, type, paper, texture or mere nostalgia? Looking analytically we find it is a fine study in contrasts: plain brown paper, white label, ornamental border and simple typography. It is a soft package which contrasts with the brittle ornamentation of its surface design. The package suggests its contents and does so with grace and dignity. Similar qualities characterize the Garnier Elixir wood bottle.
+
+                    hr.w25.hr-red.small-my3.horizontal-center
+                    h3.text-center RESPECT FOR MATERIALS
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        The other examples shown, both simple and complex, demonstrate that the package designer’s problem is not essentially one of looking for new materials, but of understanding the importance of the artist’s hand in relation to those materials, whether they be old or new. A good package of yesterday, today, or tomorrow as well, expresses the respect of the artist for his materials in that he neither overwhelms them with meaningless or contrived ornament nor strips them of all interest and excitement out of a kind of engineering fetish. In a good package the designer does not seek to exploit the consumer’s visual memories and attachments by sentimental distortion but to express his objective appreciation of the fact that people do have strong affective reaction to “things.” This appreciation should promote a wider view of the designer’s job-he does not seek merely to convenience the hand nor to please the eye, but he may also, however lightly, touch the emotions and gratify the human spirit.
+
+                        Rene Huyghe of the Louvre Museum has said, 
+
+                    blockquote “Art was born of man’s need to leave his mark on Things” 
+
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        and the art of the package, it too, was born of this same need. 
+
+                        END
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-image-carousel.pug
+
+        include ../../__MIXINS/_include-published-in.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        

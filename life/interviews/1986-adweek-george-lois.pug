@@ -1,0 +1,325 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Adweek: George Lois interview Paul Rand'
+    - var bodyID    = 'life'
+    - var bodyClass = 'interviews'
+
+block main-content
+    - var imageHeaderBackground = ''
+
+    - var articleAuthor         = 'George Lois'
+    - var publishedInTitle      = 'Adweek'
+    - var publishedInSubtitle   = '1986'
+    - var publishedInSubtitle2  = 'CHANGE_ME'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: ''})
+
+    - var library               = 'yes'
+    - var libraryLink           = 'CHANGE_ME'
+    - var abe                   = 'yes'
+    - var abeLink               = 'CHANGE_ME'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'CHANGE_ME'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'CHANGE_ME'
+
+    - var nextType              = 'Interview'
+    - var nextTitle             = 'CHANGE_ME'
+    - var nextDate              = 'CHANGE_ME'
+    - var nextDescription       = 'CHANGE_ME'
+    - var nextLink              = 'CHANGE_ME'
+
+    - var relatedItemLink1      = 'CHANGE_ME'
+    - var relatedItemTitle1     = 'CHANGE_ME'
+    - var relatedItemFootnote1  = 'CHANGE_ME'
+
+    - var relatedItemLink2      = 'CHANGE_ME'
+    - var relatedItemTitle2     = 'CHANGE_ME'
+    - var relatedItemFootnote2  = 'CHANGE_ME'
+
+    - var relatedItemLink3      = 'CHANGE_ME'
+    - var relatedItemTitle3     = 'CHANGE_ME'
+    - var relatedItemFootnote3  = 'CHANGE_ME'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'CHANGE_ME', linkLg: 'CHANGE_ME', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1(data-aos="fade-up")!= pageTitle
+
+            unless articleAuthor == 'CHANGE_ME'
+                p(data-aos="fade-up")!= 'By ' + articleAuthor
+
+            p(data-aos="fade-up")!= publishedInTitle
+                unless publishedInSubtitle == 'CHANGE_ME'
+                    br
+                    !=publishedInSubtitle
+                unless publishedInSubtitle2 == 'CHANGE_ME'
+                    br
+                    !=publishedInSubtitle2
+
+            a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign(data-aos="fade-up") View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+            //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        INTRO
+
+                    hr.w50.hr-red.horizontal-center.small-mt4.small-mb3
+
+                    .text-center
+                        h5.text-caps.small-m0.medium-m0.sans-serif The Original Text
+                        unless articleAuthor == 'CHANGE_ME'
+                            h6!= 'By ' + articleAuthor
+
+                    .panelCallout.small-p1.medium-p3.large-p4#original-article
+                        :markdown-it(html typographer plugins=['markdown-it-sup'])
+                            ### On Good Work: A Conversation between George Lois and Paul Rand  
+
+                            George Lois, a leader of American advertising’s “Creative Revolution,” has long credited Paul Rand as the progenitor of “Big Idea” advertising. As guest editors of a special 1986 issue of Adweek devoted to graphic design and advertising, designer and illustrator Seymour Chwast and I asked Lois to interview Rand for publication. Lois was elated to have the opportunity. The resulting conversation between these two veterans of advertising and design was candid, insightful, and revealing. This is a newly edited version of the original transcript. SH
+
+                            ---
+
+                        p.question George Lois: First of all, how do you feel about the fact that some people don’t know who you are? Does that piss you off? 
+
+                        p 
+                            strong.text-red Paul Rand: 
+                            | I don’t feel anything. There are names that I mention to people at school, at Yale, and the teachers themselves don’t know who they are. People more important than I am, the people who influence design— they simply don’t know.
+
+                        p.question GL: The influences on your life and on my life—and we could discuss [Stuart] Davis and all kinds of painters—but I’m talking about, there was a moment of birth, I think, about what great advertising and great communication is all about, and I’m prejudiced. Now obviously, you’ve gone on to an incredible career. I don’t want to dwell on the fact that you’re older than me, but while I was in high school, I had Thoughts on Design. I was sixteen, I got my tattered copy… You were God and probably do remain my hero, but why were you so far ahead of everybody else? And you were, you know. I don’t want to hear that you weren’t. 
+
+                        p 
+                            strong.text-red PR: 
+                            | I wasn’t. Don’t forget, the work being done in Europe was far ahead of what we were doing.
+
+                        p.question GL: You mean the Constructivists and the Bauhaus? 
+
+                        p 
+                            strong.text-red PR: 
+                            | No, I mean advertising. I mean in England and Germany and France. You have your influences the way I have my influences. 
+
+                        p.question GL: We all have. 
+
+                        p 
+                            strong.text-red PR: 
+                            | You obviously are the culmination of my influences because you’re a great art lover, as I am, the way we look at and think about art, and somehow without art literally being used in our work, somehow the influence is there and you can’t hardly explain it. You can see and look, and sometimes it doesn’t show in your work, but somehow you know it shows; somehow it culminated in all of that good work that you said was being done all around you. It culminated in some kind of Paul Rand American style.
+
+                        p.question GL: I think that’s silly. I think the difference between our work that Americans did and the work that was done in Europe was that we were more practical. 
+
+                        p 
+                            strong.text-red PR: 
+                            | Not ashamed of being practical.
+
+                        p.question GL: No.
+
+                        p 
+                            strong.text-red PR: 
+                            | Not ashamed of being commercial.
+
+                        p.question GL: Exactly. We were more practical and we had a sense of selling related to art, and the two were not in conflict. At least they were not in conflict negatively, they were always in conflict, and that was the basis of good work.
+
+                        p 
+                            strong.text-red PR: 
+                            | But the point is that you’ve never been ashamed of “selling.” In fact, it’s great fun.
+
+                        p.question GL: I think, on the contrary, that unless the thing is practical, it’s not art. Because the quality that makes art is the fact that it works. You can do abstract things, and everything looks lovely, but it doesn’t do a bloody thing. And I think the art and the ingenuity of the designer who is able, in a way, to conceal art is a service to business. I mean that. 
+
+                        p 
+                            strong.text-red PR: 
+                            | Absolutely.
+
+                        p.question GL: I think that the guy who can really make it work is the artist. He’s the real artist. I did a book on my work called The Art of Advertising. The title upset a lot of people. But it is an art. A lot of people got very upset that we do think of our- selves as artists, even though we know that we sell every minute of our lives. You do think of yourself as an artist? 
+
+                        p 
+                            strong.text-red PR: 
+                            | Absolutely. And that’s understanding yourself as an art- ist. And the understanding of any really truly great graphic communications as an artist is something that kind of grates on a lot of people because they don’t like anybody in this business thinking of themselves as an artist.
+
+                        p.question GL: But you know you’re an artist. 
+
+                        p 
+                            strong.text-red PR: 
+                            | Well, at least I think like one. I like to think that I someday will be. That generates my work as art, it’s not anything else.
+
+                        p.question GL: I mean, wed like to make money, but the name of the game isn’t to make money, it’s to do great work and hopefully virtue is its own reward. And I know you feel the same way. 
+
+                        p 
+                            strong.text-red PR: 
+                            | Absolutely.
+
+                        p.question GL: People think I want to be an artist, and I tell them that I am an artist. 
+
+                        p 
+                            strong.text-red PR: 
+                            | The other side of the coin is to be a Sunday painter, which is the most depressing idea there is. Because it means that the rest of the week is futile, and the only day you live for…
+
+                        p.question GL: You need Sundays to express yourself.
+
+                        p 
+                            strong.text-red PR: 
+                            | You can’t be an artist one day a week, no way. It’s very dif- ficult to explain that idea, because people think you’re being pompous by talking about art, but that’s just not so.
+
+                        p.question GL: Sure, and art does not have to be a canvas or an…
+
+                        p 
+                            strong.text-red PR: 
+                            | No, art is anything at all.
+
+                        p.question GL: Or sculpturein the round.
+
+                        p 
+                            strong.text-red PR: 
+                            | It's a question of achievement. It’s a question of doing the right thing.
+
+                        p.question GL: To what extent do you consider your work instinctive?
+
+                        p 
+                            strong.text-red PR: 
+                            | Ninety-nine percent of it is instinctive, but | still do that other percent of homework. It's something that | and any other really good designer or art director does. Anybody who's any good will get every bit of information that's possible before he or she sits down to create an answer, and then the instinct, | think, takes over as much as the intellectual.
+
+                        p.question GL: Do you think there is a less of a design approach to younger people today? I mean, are younger people being trained to become art directors, rather than the way you and I were trained? I think I was trained to be a designer, and I'm proud of it, and its something that I still talk about. People say, What are you? And I say, I'm a designer. But I thought you were in advertising? I say, Yeah, but I'm a designer, that’s my craft. I think it’s because there's a lack of formal training we're talking about.
+
+                        p 
+                            strong.text-red PR: 
+                            | Probably. Or at least the interest isn't there, or they con- sider it negligible or arty—or...
+
+                        p.question GL: I know studying art, looking at art, talking and reading about art consumes half, most, of my life, and I think it consumes most of yours. And somehow, without it literally showing in your work, that somehow drives the look of you, right?
+
+                        p 
+                            strong.text-red PR: 
+                            | Absolutely.
+
+                        p.question GL: What are the elements of the Paul Rand look?
+
+                        p 
+                            strong.text-red PR: 
+                            | I certainly know what that is. You have to be outside.
+
+                        p.question GL: Your work has the same conceptual approach, the same quality of work, each piece is a job to behold. don’t think you’ve ever done a job in your life that you’re ashamed of. 
+
+                        p 
+                            strong.text-red PR: 
+                            | Well, no, but I’ve done plenty of jobs that 
+
+                        p.question GL: Well, you’re much too modest for that. But the point is that you have managed to continue doing the kind of work you want to do and people who want that kind of work come to you. Is that true? You aren’t running around looking for work. 
+
+                        p 
+                            strong.text-red PR: 
+                            | No. have never gone out. 
+
+                        p.question GL: They come to you because they want to buy some kind of excellence. 
+
+                        p 
+                            strong.text-red PR: 
+                            | Yeah, guess so. just do it. And you know, when did the UPS trademark, my client was my daughter, who was think at that time ten years old. just did a sketch you know, because knew what they wanted. And said, Katherine, what is that? She said, Daddy, that’s a present. And knew immediately that that was perfect. 
+
+                            | You asked me earlier what conceive of as my style, or whatever you call it. And can’t tell you, except you have to extrapolate from what can tell you, which is that my orientation is strictly formal. It is not advertising and it’s not business. When do a job, if want to think of somebody, don’t think of an advertising quy, think of [A.M.] Cassandre, but he was very limited in what he did. 
+
+                        p.question GL: He was a great influence. 
+
+                        p 
+                            strong.text-red PR: 
+                            | He was, on all of us. I mean the fact that he was able to integrate pictures and text, which is always a wonderful thing to do, and so perfectly, is an amazing thing.
+
+                        p.question GL: I have even said that when I started to fall into Cassandre’s integration of picture and text more than a Stuart Davis, that’s when I knew I was hooked, when I knew I was going into communications. It was maybe only one word. 
+
+                        p 
+                            strong.text-red PR: 
+                            | Stuart Davis’s integration of text and picture is no more than the Cubist’s did. That’s’ decoration.
+
+                        p.question GL: The day I said, I’d rather be Cassandre than Stuart Davis, was the day I knew I was hooked. 
+
+                        p 
+                            strong.text-red PR: 
+                            | I think he was the greater artist. No question about it. 
+
+                        p.question GL: Can you talk about when you were starting out? What did you want to accomplish with your work? Is there a vision you have that you wanted to bring out, that hadn’t been done in this country? 
+
+                        p 
+                            strong.text-red PR: 
+                            | There’s no particular vision. I just wanted to do good work. And that one had to be independent, and you couldn’t do good work with a guy who thought in clichés. And you had to be courageous enough to a) confront other people, and b) to take the chance of losing your job, which I did quite a few times.
+
+                        p.question GL: What is good work? 
+
+                        p 
+                            strong.text-red PR: 
+                            | Great work, really good work, puts a chill up your back because something special is happening. Obviously, for that reason, great work or very good work has to be mov- ing in the sense that it gets you to act or it gets you to feel something; it gets you to have a point of view about something. The point is, it has to communicate. It has to say something and it has to say it with clarity.
+
+                        p.question GL: But in creative work, it’s instinct. How do you describe that? It’s not even question of talent. You can’t take Rauschenberg or Jasper Johns and make him a great art director.
+
+                        p 
+                            strong.text-red PR: 
+                            | It’s very much an animal instinct.
+
+                        p.question GL: You can take a man into an agency and he’s not going to be a great artist, a great art director. The point is that there is instinctiveness.
+
+                        p 
+                            strong.text-red PR: 
+                            | By definition, instinct is unexplainable. 
+
+                        p.question GL: You can sit and explain and give students, give anybody in this business, and explain the homework before you do a job, and you can intellectualize everything you do, but you can never explain why some people get it and some don’t. You can teach all your life and maybe impart a lot of knowledge to a lot of students, but you only have a great student every once in a while.
+
+                        p 
+                            strong.text-red PR: 
+                            | And not because of you either!
+
+                        p.question GL: Herschel Levitt was my teacher at Pratt. I don’t think he’s a very good designer at all. He didn’t teach me design. But somehow, he taught me about lobster. We talked about Beethoven a lot, he bought records, and he just talked. And how do you know if you’re influenced by somebody? The point is, this instinct is something that’s got to be there: the instinct of a great director, a great com- poser, the instinct has got to be there.
+
+                        p 
+                            strong.text-red PR: 
+                            | The best thing a teacher can do is keep the student from getting into art. In other words, if he does bad work, you say, Do it over.
+
+                        p.question GL: You’re humorous in a humanistic way. As a guy who does a lot of—who has a seemingly abstract pattern to his visual sense—you are probably one of the most humanistic designers that the twentieth century has seen.
+
+                        p 
+                            strong.text-red PR: 
+                            | By “humanistic,” you mean “readable,” that has meaning.
+
+                        p.question GL: Readable, understandable, but you touch the heart whether it’s El Producto or the Direction covers. You craft every opportunity to move people.
+
+                        p 
+                            strong.text-red PR: 
+                            | But another aspect of this whole business is that it’s very easy to become very cynical because, you know, people think I’m nothing but a huckster. The moment you have that idea you’re finished. I don’t consider myself a huckster. I consider myself somebody who contributes something to the quality of life. And the only way I can contribute something is by being an artist. The artist is the only man who contributes something to the world. I mean in the broad sense. Einstein was an artist. Freud. All those people were artists because they did things for perfection. If a thing takes time, if you plan something, you’re not going to force it to grow. You have to sit there and wait.
+
+
+
+
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-image-carousel.pug
+
+        include ../../__MIXINS/_include-published-in.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        

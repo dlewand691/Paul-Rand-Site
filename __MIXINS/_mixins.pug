@@ -20,9 +20,9 @@ mixin carouselImages(title, subtitle, ...carouselImages)
                                 a(href=image.LG data-fancybox="images" data-caption=pageTitle + "   |   " + image.Title)
                                     img.swiper-lazy(data-src=image.SM alt=pageTitle + "   |   " + image.Title)&attributes(attributes)
                                     .swiper-lazy-preloader
-                .swiper-pagination.swiper-pagination-white
-                .swiper-button-prev
                 .swiper-button-next
+                .swiper-button-prev
+                .swiper-pagination.swiper-pagination-white
     .grid-x.grid-margin-x.align-center.small-mb2
         .small-12.cell.text-center
             p.footnote.show-for-large (Use &larr; &rarr; keys to navigate. Click for larger view.)

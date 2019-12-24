@@ -7,11 +7,13 @@
 // @codekit-prepend "../node_modules/foundation-sites/dist/js/plugins/foundation.util.timer.min.js"
 // @codekit-prepend "../node_modules/foundation-sites/dist/js/plugins/foundation.util.imageLoader.min.js"
 // @codekit-prepend "../node_modules/foundation-sites/dist/js/plugins/foundation.util.motion.min.js"
+// @codekit-prepend "../node_modules/foundation-sites/dist/js/plugins/foundation.util.nest.min.js"
 // @codekit-prepend "../node_modules/foundation-sites/dist/js/plugins/foundation.util.touch.min.js"
 // @codekit-prepend "../node_modules/foundation-sites/dist/js/plugins/foundation.util.triggers.min.js"
 // @codekit-prepend "../node_modules/foundation-sites/dist/js/plugins/foundation.smoothScroll.min.js"
 // @codekit-prepend "../node_modules/foundation-sites/dist/js/plugins/foundation.abide.min.js"
 // @codekit-prepend "../node_modules/foundation-sites/dist/js/plugins/foundation.accordion.min.js"
+// @codekit-prepend "../node_modules/foundation-sites/dist/js/plugins/foundation.dropdownMenu.min.js"
 // @codekit-prepend "../node_modules/foundation-sites/dist/js/plugins/foundation.magellan.min.js"
 // @codekit-prepend "../node_modules/foundation-sites/dist/js/plugins/foundation.sticky.min.js"
 // @codekit-prepend "../node_modules/foundation-sites/dist/js/plugins/foundation.tabs.min.js"
@@ -25,7 +27,21 @@
 
 
 
-// @codekit-append "nav.js"
+// @codekit-append "_nav.js"
+
+
+
+// ===================================================================================
+// ██████  ██     ██  █████
+// ██   ██ ██     ██ ██   ██
+// ██████  ██  █  ██ ███████
+// ██      ██ ███ ██ ██   ██
+// ██       ███ ███  ██   ██
+// ===================================================================================
+
+// @codekit-append "_pwabuilder-sw.js"
+
+// -----  End of PWA  -----------------------------------
 
 
 
@@ -61,23 +77,23 @@ $(document).ready(function() {
     if (typeof blockAdBlock === 'undefined') {
         adBlockDetected();
     } else {
-        blockAdBlock.onDetected(adBlockDetected);
-        blockAdBlock.onNotDetected(adBlockNotDetected);
+        // blockAdBlock.onDetected(adBlockDetected);
+        // blockAdBlock.onNotDetected(adBlockNotDetected);
         // and|or
         // blockAdBlock.on(true, adBlockDetected);
         // blockAdBlock.on(false, adBlockNotDetected);
         // and|or
-        // blockAdBlock.on(true, adBlockDetected).onNotDetected(adBlockNotDetected);
+        blockAdBlock.on(true, adBlockDetected).onNotDetected(adBlockNotDetected);
     }
 
     // Change the options
-    // blockAdBlock.setOption('checkOnLoad', false);
+    blockAdBlock.setOption('checkOnLoad', false);
     // and|or
-    blockAdBlock.setOption({
-        debug: false,
-        checkOnLoad: true,
-        resetOnEnd: false
-    });
+    // blockAdBlock.setOption({
+    //     debug: false,
+    //     checkOnLoad: true,
+    //     resetOnEnd: false
+    // });
 
     // -----  End of AD BLOCK  ---------------------------------------------
 
@@ -94,8 +110,8 @@ $(document).ready(function() {
     // =============================================================================================
     // @codekit-prepend "../node_modules/aos/dist/aos.js"
     AOS.init({
-        offset: 200,
-        duration: 1000,
+        offset: 100,
+        duration: 500,
         easing: 'ease',
         disable: 'mobile',
         startEvent: 'DOMContentLoaded'
@@ -492,7 +508,7 @@ $(document).ready(function() {
         lazy: {
             loadPrevNext: true,
             loadPrevNextAmount: 5
-          },
+        },
         loadOnTransitionStart: true,
         breakpoints: {
             375: {
@@ -501,20 +517,21 @@ $(document).ready(function() {
             },
             1024: {
                 slidesPerView: 2,
-                spaceBetween: 40,
-            },
+                spaceBetween: 40
+            }
         },
         keyboard: {
-            enabled: true,
+            enabled: true
         },
         pagination: {
             el: '.swiper-pagination',
-            clickable: true,
+            type: 'bullets',
+            clickable: true
         },
         navigation: {
             nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+            prevEl: '.swiper-button-prev'
+        }
     });
 
     // -----  End of SWIPER CAROUSEL  -----------------------------------
@@ -802,17 +819,17 @@ $(document).ready(function() {
 // ██████  ██   ██ ██   ██ ██   ██     ██      ██  ██████  ██████  ███████
 // ===================================================================================
 var options = {
-  // bottom: '32px', // default: '32px'
-  // right: '32px', // default: '32px'
-  // left: 'unset', // default: 'unset'
-  // time: '0.3s', // default: '0.3s'
-  // mixColor: '#fff', // default: '#fff'
-  // backgroundColor: '#fff',  // default: '#fff'
-  buttonColorDark: '#121212',  // default: '#100f2c'
-  // buttonColorLight: '#fff', // default: '#fff'
-  // saveInCookies: true, // default: true,
-  label: '&#9680;', // default: '🌓'
-  // autoMatchOsTheme: true // default: true
+    // bottom: '32px', // default: '32px'
+    // right: '32px', // default: '32px'
+    // left: 'unset', // default: 'unset'
+    // time: '0.3s', // default: '0.3s'
+    // mixColor: '#fff', // default: '#fff'
+    // backgroundColor: '#fff',  // default: '#fff'
+    buttonColorDark: '#121212', // default: '#100f2c'
+    // buttonColorLight: '#fff', // default: '#fff'
+    // saveInCookies: true, // default: true,
+    label: '&#9680;', // default: '🌓'
+    // autoMatchOsTheme: true // default: true
 };
 
 const darkmode = new Darkmode(options);

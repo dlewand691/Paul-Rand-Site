@@ -25,8 +25,8 @@ $font-family-serif: "IBM Plex Serif", Georgia, serif;
 @include foundation-menu;
 // @include foundation-menu-icon;
 // @include foundation-drilldown-menu;
-// @include foundation-dropdown;
-// @include foundation-dropdown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
 @include foundation-responsive-embed;
 // @include foundation-label;
 // @include foundation-media-object;
@@ -108,7 +108,7 @@ $font-prefix: '/node_modules/@ibm/plex';
 //  ██████ ███████ ███████     ██ ██   ████  ██████ ███████  ██████  ██████  ███████ ███████
 // ===================================================================================
 @import "../node_modules/selection-sharer/dist/selection-sharer";
-@import '../node_modules/swiper/swiper.scss';
+@import '../node_modules/swiper/css/swiper.min';
 @import "../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css";
 // -----  End of CSS INCLUDES  -----------------------------------
 
@@ -121,7 +121,8 @@ $font-prefix: '/node_modules/@ibm/plex';
 ============================================================================================================= */
 $blue: #1463A2;
 $brown: #B2846A;
-$green: #097E44;
+$green: #00b140;
+// $green: #097E44;
 $gold: #E29D2E;
 $pink: #DD6A92;
 $red: #E34C37;
@@ -1102,12 +1103,12 @@ ul {
 
 %serif,
 .serif {
-    font-family: $font-family-serif;
+    font-family: $font-family-serif !important;
 }
 
 %sans-serif,
 .sans-serif {
-    font-family: $font-family-sans-serif;
+    font-family: $font-family-sans-serif !important;
 }
 
 %text-caps,
@@ -1725,7 +1726,8 @@ header {
     // will-change               : transform;
     // transform          : translateZ(0);
     transition                : visibility 0s 0.3s ease;
-    overflow                  : hidden;
+    // overflow                  : hidden;
+    overflow                  : visible;
     padding                   : 0 1rem;
 
     a:not(.button) {
@@ -1760,6 +1762,70 @@ header {
         height         : 100%;
         transition     : transform 0.3s ease;
         transform      : translateX(100%);
+    }
+
+    .dropdown.menu,
+    .dropdown.menu ul {
+        position  : relative;
+        transform : translateY(0px);
+        background: none;
+        flex-wrap : wrap;
+        padding   : 0;
+        top       : 0;
+        margin    : 0;
+        height    : unset;
+
+        li {
+            opacity     : 1;
+            transform   : translateY(0px);
+            display     : list-item;
+            padding-left: 0;
+            background  : none;
+
+            @include breakpoint(small only) {
+                width: 100%;
+            }
+
+            a {
+                background : none;
+                color      : $white;
+                font-family: $font-family-serif !important;
+
+                @include breakpoint(small only) {
+                    padding-left: 0;
+                }
+
+                &:after {
+                    border-top-color: $white;
+                }
+            }
+
+            ul {
+                position  : absolute;
+                background: $white;
+                padding   : 0;
+                // border: 2px solid $black;
+                // border-color: $black;
+                border    : none;
+                @extend %box-shadow-hover;
+                min-width : 250px;
+
+                a {
+                    background : none;
+                    color      : $black;
+                    padding    : 0.7rem 1rem;
+                    line-height: $global-lineheight;
+                    font-family: $font-family-serif !important;
+
+                    &:hover {
+                        background: $red;
+                        color     : $white;
+                    }
+                }
+            }
+
+        }
+
     }
 
     &.nav-is-visible {
@@ -2221,7 +2287,8 @@ header {
 ============================================================================================*/
 @mixin box-shadow-hover() {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    // transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.3s ease;
 
     &::after {
         content   : "";
@@ -2231,13 +2298,16 @@ header {
         left      : 0;
         width     : 100%;
         height    : 100%;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        // box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 1.9px 0.9px rgba(0, 0, 0, 0.016), 0 5.1px 3.6px rgba(0, 0, 0, 0.022), 0 9.4px 8.5px rgba(0, 0, 0, 0.028), 0 15.8px 17.1px rgba(0, 0, 0, 0.034), 0 33px 40px rgba(0, 0, 0, 0.05);
         opacity   : 0;
-        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        // transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.3s ease;
     }
 
     &:hover {
-        box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+        // box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+        box-shadow: 0 1.9px 0.9px rgba(0, 0, 0, 0.016), 0 5.1px 3.6px rgba(0, 0, 0, 0.022), 0 9.4px 8.5px rgba(0, 0, 0, 0.028), 0 15.8px 17.1px rgba(0, 0, 0, 0.034), 0 33px 40px rgba(0, 0, 0, 0.05);
         transform : scale(1.01);
     }
 
@@ -2246,6 +2316,7 @@ header {
     }
 }
 
+%box-shadow-hover,
 .box-shadow-hover {
     @include box-shadow-hover();
 }
@@ -3464,7 +3535,7 @@ footer {
     padding: 0.5rem !important;
 }
 
-.select2-selection__placeholder {
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
     color: $black;
 }
 
@@ -3476,8 +3547,8 @@ footer {
 }
 
 .select2-results__option[aria-selected=true] {
-    background-color: $light-gray !important;
-    color           : $black !important;
+    background-color: $light-gray;
+    color           : $black;
     font-weight     : 300;
 }
 
@@ -4162,6 +4233,11 @@ td.gsc-search-button {
     }
 }
 
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    content: '';
+}
+
 // -----  End of SWIPER  -----------------------------------
 
 // ===================================================================================
@@ -4174,6 +4250,7 @@ td.gsc-search-button {
 $darkmode-black: #121212;
 
 @mixin darkMode-settings {
+    em,
     h1,
     h2,
     h3,
@@ -4181,7 +4258,8 @@ $darkmode-black: #121212;
     h5,
     h6,
     li,
-    p {
+    p,
+    strong {
         color: $gray-light3;
     }
 
@@ -4190,7 +4268,7 @@ $darkmode-black: #121212;
     }
 
     .bg-black {
-        background: lighten($darkmode-black, 10%);
+        background: lighten($darkmode-black, 3%);
     }
 
     .bg-gray-light3 {
@@ -4213,9 +4291,21 @@ $darkmode-black: #121212;
     }
 
     .callout,
-    .card {
-        background  : rgba($white, .05);
-        border-color: rgba($white, .1);
+    .card,
+    .tabs,
+    .tabs-content,
+    .tabs-title,
+    .tabs-title > a:focus,
+    .tabs-title > a[aria-selected='true'],
+    .tabs-title.is-active {
+        // background  : rgba($white, .05);
+        background  : darken($white, 85%);
+        // border-color: rgba($white, .1);
+        border-color: darken($white, 80%);
+    }
+
+    .tabs-title > a {
+        color: $white;
     }
 
     .button {
@@ -4226,12 +4316,27 @@ $darkmode-black: #121212;
     .select2-dropdown {
         border    : 2px solid $gray-medium;
         color     : $gray-light3;
-        background: darken($white, 85%);
+        background: darken($white, 80%);
 
         *,
         .select2-selection__placeholder {
-            color: $gray-light3;
+            color: $white;
         }
+    }
+
+    .select2-search__field {
+        color: $black;
+    }
+
+    .dropdown.menu li ul,
+    .select2-container--default .select2-results__option[aria-selected=true] {
+        // background: rgba($white, .1);
+        background: darken($white, 80%);
+    }
+
+    .dropdown.menu li ul a,
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        color: $white;
     }
 
     .sidenoteLeft,
@@ -4239,15 +4344,26 @@ $darkmode-black: #121212;
         color: lighten($black, 65%);
     }
 
+    .vertical-divider {
+        color: $white;
+
+        &:after,
+        &:before {
+            border-color: rgba($white, .1);
+        }
+    }
+
     .darkMode-invert {
         filter: invert(1);
     }
-    
-    footer  {
-        a, a:link, h5 {
-            color      : $white;
+
+    footer {
+        a,
+        a:link,
+        h5 {
+            color: $white;
+        }
     }
-}
 }
 
 .darkmode-toggle {

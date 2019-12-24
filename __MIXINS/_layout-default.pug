@@ -52,9 +52,67 @@ html(lang="en")
                                 //- MAIN NAV LINKS
                                 //- ===================================================================================
                                 .cell.large-shrink.small-mb1.medium-mb1.large-mb0
-                                    a.text-bold-italic.medium-mr1(href='/life/') Life
-                                    a.text-bold-italic.medium-mr1(href='/work/') Work
-                                    a.text-bold-italic.medium-mr1(href='/writing/') Writing
+                                    //- fieldset
+                                        select.select2#select-writing-suggested-readings()
+                                            +navOption('/life/','Life')
+                                            +navOption( '/life/biography.html',          'Biography and Timeline'            )
+                                            +navOption( '/life/books-articles/',         'Books and Articles about Paul Rand')
+                                            +navOption( '/life/events-exhibits/',        'Exhibits and Events'               )
+                                            +navOption( '/life/interviews/',             'Interviews'                        )
+                                            +navOption( '/life/videos/',                 'Videos'                            )
+                                            +navOption( '/life/portraits.html',          'Portraits'                         )
+                                            +navOption( '/life/rand-house.html',         'The Rand House'                    )
+                                            +navOption( '/life/his-inspirations.html',   'Inspirations'                      )
+                                            +navOption( '/life/personal-items.html',     'Personal Items'                    )
+                                            +navOption( '/life/sketches-and-notes.html', 'Sketches and Notes'                )
+                                            +navOption( '/life/christmas-cards.html',    'Christmas Cards'                   )
+                                            +navOption( '/life/death.html',              'Death'                             )
+                                    .hide-for-large
+                                        a.serif.text-bold-italic.medium-mr1(href='/life/') Life
+                                        a.serif.text-bold-italic.medium-mr1(href='/work/') Work
+                                        a.serif.text-bold-italic.medium-mr1(href='/writing/') Writing
+                                    ul.dropdown.menu.show-for-large(data-dropdown-menu)
+                                        li 
+                                            a.text-bold-italic(href='/life/') Life
+                                            ul.menu
+                                                li
+                                                    a(href="/life/biography.html") Biography and Timeline
+                                                li
+                                                    a(href="/life/books-articles/") Books and Articles about Paul Rand
+                                                li
+                                                    a(href="/life/events-exhibits/") Exhibits and Events
+                                                li
+                                                    a(href="/life/interviews/") Interviews
+                                                li
+                                                    a(href="/life/videos/") Videos
+                                                li
+                                                    a(href="/life/portraits.html") Portraits
+                                                li
+                                                    a(href="/life/rand-house.html") The Rand House
+                                                li
+                                                    a(href="/life/his-inspirations.html") Inspirations
+                                                li
+                                                    a(href="/life/personal-items.html") Personal Items
+                                                li
+                                                    a(href="/life/sketches-and-notes.html") Sketches and Notes
+                                                li
+                                                    a(href="/life/christmas-cards.html") Christmas Cards
+                                                li
+                                                    a(href="/life/death.html") Death
+                                        li 
+                                            a.text-bold-italic(href='/work/') Work
+                                        li 
+                                            a.text-bold-italic(href='/writing/') Writing
+                                            ul.menu
+                                                li 
+                                                    a(href="/writing/books/") Books
+                                                li 
+                                                    a(href="/writing/articles/") Articles
+                                                li 
+                                                    a(href="/writing/quotes.html") Quotes
+                                                li 
+                                                    a(href="/writing/suggested-reading.html") Suggested Readings
+
 
 
                                 //- ===================================================================================
@@ -99,7 +157,7 @@ html(lang="en")
                                             span(aria-hidden="true") &times;
 
 
-                                    a.cd-subnav-trigger.small-mt1.large-m0(href='#0')
+                                    a.cd-subnav-trigger.small-mt1.large-m0
                                         .hide-for-large.text-bold.small.small-pl-half RETURN
                                         span
                         li
@@ -109,7 +167,7 @@ html(lang="en")
                                 //- MOBILE NAV BACK
                                 //- ===================================================================================
                                 li.go-back.small.text-bold
-                                    a.small-m0(href='#0') Back
+                                    a.small-m0 Back
                                 li.small-px-half
 
                                     //- ===================================================================================
@@ -135,7 +193,7 @@ html(lang="en")
                                         //- LIFE GO
                                         //- ===================================================================================
                                         .cell.shrink.small-px0
-                                            a.button.small.arrow.text-caps.radius.small-mt1.large-m0.nav-button-life(href="#") Go
+                                            a.button.small.arrow.text-caps.radius.small-mt1.large-m0.nav-button-life Go
                                         //- .cell.shrink
 
 
@@ -158,7 +216,7 @@ html(lang="en")
                                         //- WORK GO
                                         //- ===================================================================================
                                         .cell.shrink.small-px0
-                                            a.button.small.arrow.text-caps.radius.small-mt1.large-m0.nav-button-work(href="#") Go
+                                            a.button.small.arrow.text-caps.radius.small-mt1.large-m0.nav-button-work Go
                                         //- .cell.shrink
 
 
@@ -184,7 +242,7 @@ html(lang="en")
                                         //- WRITING GO
                                         //- ===================================================================================
                                         .cell.shrink.small-px0
-                                            a.button.small.arrow.text-caps.radius.small-mt1.large-m0.nav-button-writing(href="#") Go
+                                            a.button.small.arrow.text-caps.radius.small-mt1.large-m0.nav-button-writing Go
                                         //- .cell.shrink
 
 
@@ -195,7 +253,7 @@ html(lang="en")
                 //- ██  ██ ██ ██   ██  ██  ██         ██    ██   ██ ██ ██    ██ ██    ██ ██      ██   ██
                 //- ██   ████ ██   ██   ████          ██    ██   ██ ██  ██████   ██████  ███████ ██   ██
                 //- ===================================================================================
-                a.cd-nav-trigger(href='#')
+                a.cd-nav-trigger
                     //- | Menu
                     span
             //- -----  End of HEADER NAVIGATION  ------
@@ -252,4 +310,4 @@ html(lang="en")
         //- =============================================================================================
         //- INSTANT.PAGE PLUGIN
         //- =============================================================================================
-        script(src="//instant.page/2.0.0" type="module" defer integrity="sha384-D7B5eODAUd397+f4zNFAVlnDNDtO1ppV8rPnfygILQXhqu3cUndgHvlcJR2Bhig8")
+        script(src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1")

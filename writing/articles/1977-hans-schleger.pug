@@ -1,0 +1,111 @@
+extends ../../__MIXINS/_layout-default.pug
+include ../../__MIXINS/_mixins.pug
+
+block vars
+    - var pageTitle = 'Hans Schleger'
+    - var bodyID    = 'writing'
+    - var bodyClass = 'articles'
+
+block main-content
+    - var imageHeaderBackground = 'https://assets.paulrand.design/Writing/Articles/1977%20Hans%20Schleger/Web/Graphis%20188%201977%20Hans%20Schleger%2001-450.jpg'
+
+    - var publishedInTitle      = 'Graphis 188'
+    - var publishedInSubtitle   = '1977'
+    - var publishedInThumbnail  = []
+    - publishedInThumbnail.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1977%20Hans%20Schleger/Web/Graphis%20188%201977%20Hans%20Schleger%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1977%20Hans%20Schleger/Web/Graphis%20188%201977%20Hans%20Schleger%2001.jpg', title: ''})
+    - var library               = 'yes'
+    - var libraryLink           = 'http://www.worldcat.org/oclc/1751402'
+    - var abe                   = 'yes'
+    - var abeLink               = 'http://affiliates.abebooks.com/c/177653/77798/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fbi%3D0%26bx%3Doff%26ds%3D30%26kn%3Dgraphis%2B188%26servlet%3DImpactRadiusAffiliateLinkEntry%26sortby%3D17'
+    - var amazon                = 'yes'
+    - var amazonLink            = 'http://amzn.to/2hcApAP'
+    - var modernism101          = 'no'
+    - var modernism101Link      = 'CHANGE_ME'
+    - var barnesnoble           = 'no'
+    - var barnesnobleLink       = 'http://www.anrdoezrs.net/links/7937826/type/dlg/http://www.barnesandnoble.com/noresults/graphis+188'
+    - var ebay                  = 'yes'
+    - var ebayLink              = 'https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575189232&campid=5337903203&mpre=http%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2050601.m570.l1313.TR0.TRC0.H0.Xgraphis%2B188.TRS0%26_nkw%3Dgraphis%2B188%26_sacat%3D0'
+
+    - var nextType              = 'Article'
+    - var nextTitle             = 'On the RCA Ad'
+    - var nextDate              = '1981'
+    - var nextDescription       = 'from “The Design Concept”'
+    - var nextLink              = '/writing/articles/1981-on-the-rca-ad.html'
+
+    - var relatedItemLink1      = '/writing/articles/1971-integrity-and-invention.html'
+    - var relatedItemTitle1     = 'Integrity and Invention'
+    - var relatedItemFootnote1  = 'Published in the Graphis Annual, 1971'
+
+    - var relatedItemLink2      = '/writing/articles/1992-confusion-and-chaos-the-seduction-of-contemporary-graphic-design.html'
+    - var relatedItemTitle2     = 'Confusion and Chaos: The Seduction of Contemporary Graphic Design'
+    - var relatedItemFootnote2  = 'Originally published in the AIGA Journal of Graphic Design, Volume 10, Number 1, 1992'
+
+    - var relatedItemLink3      = '/writing/articles/1991-logos-flags-and-escutcheons.html'
+    - var relatedItemTitle3     = 'Logos, Flags, and Escutcheons'
+    - var relatedItemFootnote3  = 'Originally published in 1991 by AIGA'
+
+    - var imageCarouselTitle    = 'The Original ' + nextType
+    - var imageCarouselSubtitle = 'CHANGE_ME'
+    - var imageCarousel         = []
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1977%20Hans%20Schleger/Web/Graphis%20188%201977%20Hans%20Schleger%2001-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1977%20Hans%20Schleger/Web/Graphis%20188%201977%20Hans%20Schleger%2001.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1977%20Hans%20Schleger/Web/Graphis%20188%201977%20Hans%20Schleger%2002-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1977%20Hans%20Schleger/Web/Graphis%20188%201977%20Hans%20Schleger%2002.jpg', title: ''})
+    - imageCarousel.push({linkSm: 'https://assets.paulrand.design/Writing/Articles/1977%20Hans%20Schleger/Web/Graphis%20188%201977%20Hans%20Schleger%2003-450.jpg', linkLg: 'https://assets.paulrand.design/Writing/Articles/1977%20Hans%20Schleger/Web/Graphis%20188%201977%20Hans%20Schleger%2003.jpg', title: ''})
+
+
+
+    .progress-container
+        .progress-bar
+
+
+    //- ===============================================
+    //- =			FULL WIDTH IMAGE HEADER			=
+    //- ===============================================
+    .wrapper-parallax
+        .imageHeader-full
+            h1(data-aos="fade-up")!= pageTitle
+
+            :markdown-it(html typographer plugins=['markdown-it-sup'])
+                A tribute to a design legend. Originally published in Graphis 188.
+
+            //- a.button.white.text-caps.radius.down-arrow#original-article-link.bottomAlign(data-aos="fade-up") View the Original #{nextType}
+
+            img(src=imageHeaderBackground)
+
+            //- -----  End of FULL WIDTH IMAGE HEADER  ------
+
+
+    //- ==========  BODY  ==========
+    .cd-main-content
+        .grid-container
+            .grid-x.grid-margin-x.align-center
+                .large-7.medium-10.small-12.cell.entry-content
+                    p.footnote.text-center
+                        | Estimated reading time: 
+                        span.text-bold.reading-time
+                        |   |  Select text to share via Facebook, Twitter or Email
+                    :markdown-it(html typographer plugins=['markdown-it-sup'])
+                        It was at the Arts Club of Dover Street, soon after World War II, that Hans Schleger and I first met. The occasion was marked by two memorable events: on my first encounter with warm beer, the other, experiencing the warm affectionate, Hans Schleger. It was only a short time after we left the club that we were walking arm-in-arm along Piccadilly, destined to be friends. 
+
+                        Universality was one of his outstanding characteristics, manifest both in variety of styles his work exhibited and in the many kinds of art he appreciated and collected: the frescoes of Piero della Francesca, the drawings of Pascin, weavings of the ancient Copts, the masks of the Dogon. This all-embracing quality revealed itself as well in the genuine affection he showered on so many with whom he came in contact. He was generous, too, in material ways. At the slight indication of interest in a given subject he would, if he could, present an appropriate, book or object to his guest. One wondered how he could part with things that he obviously loved no less than did his lucky recipient. 
+
+                        Schleger was not a typical commercial artist. This is not to say that he lived in an ivory tower, nor that his work was merely ‘artistic’. Keenly concerned with questions of aesthetics, he was equally concerned with problems of business. He was as versed in the art of selling as he was in the art of Art. It was his practical view point which determined the diverse paths his work took. The different styles practised in no way indicate a lack of direction or an otherwise haphazard approach to a problem. They demonstrate, rather, a genuine sensitivity to the multiple needs of visual communication. 
+
+                        He was one of the first to pioneer modern design as I’ve know it today. I was still attending to my school books when he first visited America in the twenties. It was only by chance that I came across his work in 1928 in a copy of GEBRAUCHGRAPHIK. And it was only a short time before his death that I sent him the cover from that issue, which I had saved all those years. It was a drawing of a horse’s head, in gold, emerald green and black. Equally memorable to me was the trade mark he did for Weber and Heilbroner, an American men's clothier, which, I believe, is as vital today as the day it was conceived. I keep it in my treasure chest of great marks of our time. 
+
+                        Schleger believed in his craft as much as in his art. A product of the ‘old school’, he worked for many years in the time when easy methods, rub-down letters and photographic aids were not part of the artist’s tool kit. His drawings of the twenties are as fresh today as his much later work. They exude the elegance, grace and humour which distinguished not only much of his work but the man himself.
+
+
+
+
+
+            //- /*-----  End of BODY  ------*/
+
+        include ../../__MIXINS/_include-image-carousel.pug
+
+        include ../../__MIXINS/_include-published-in.pug
+
+        include ../../__MIXINS/_include-next-item.pug
+
+        include ../../__MIXINS/_include-social-media.pug
+
+        
